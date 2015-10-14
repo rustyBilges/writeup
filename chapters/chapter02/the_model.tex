@@ -1,0 +1,295 @@
+\section{Agent based simulation}
+\label{sec:method}
+
+% shift some detail from here to the model specification section - make this more of an introduction
+
+We study the effects of habitat loss on ecological communities using a spatially explicit agent-based model. This simulation model was first published by Lurgi et al in \cite{lurgi2015effects} (section \ref{sec:the_model}). The landscape consists of a homogeneous 2-dimensional grid ($200 \times 200$ cells) on which individuals of $60$ species move around and interact subject to bio-energetic constraints. Local rules define dispersal, demographic processes and interaction behaviour of the individuals. The potential for interaction between two individuals is governed by an underlying species interaction network, which is generated using the niche model \cite{williams2000simple} (section \ref{sec:niche_model}.  (GIVE A BIT MORE ABOUT NICHE HERE)   
+
+Unlike most previous \emph{in silico} studies, the model includes both trophic and mutualistic interactions. Species belong to four trophic levels. The niche model generates a trophic interaction network. Then a fraction of the links between species in the first two trophic levels are changed to define mutualisms ($-+ \rightarrow ++$). The fraction of links switched is called the mutualistic vs. antagonistic interaction (MAI) ratio.  
+
+To simulate habitat loss, a fraction of the grid cells are made inhospitable to all species. We compare two algorithms for choosing which cells to destroy: 1) random destruction and 2) contiguous destruction. For random destruction grid cells are destroyed uniformly at random, up to the desired fraction of the total landscape. For contiguous destruction a seed cell is chosen uniformly at random, then destruction spreads radially in all directions from this point.  
+
+We simulated communities with MAI values of $0, 0.1, 0.2,..., 1.0$, with habitat loss (HL) percentages of $0, 10, 20, ...,90$. For each combination of MAI and HL values, 25 replicates were simulated with different interaction networks (same species richness, same connectance).
+
+
+\subsection{The interaction network}
+\label{sec:interaction_network}
+
+
+An underlying interaction network defines which direct interactions between species are allowed. This network contains two types of link: \emph{antagonistic} (predator-prey) and \emph{mutualistic} (plant-pollinator). To construct this network a food web, containg only antagonisitc links, is generated using the niche model (section \ref{sec:niche_model}). This network cosists of 60 species belonging to 4 trophic levels, with links that define the feeding relationships between them. Species in the basal trophic level represent plants and those in the trophic level above represent herbivores. To introduce mutualism a fraction of the herbivorous links are replaced by mutualistic links (section \ref{sec:link_replacement}). 
+
+
+\subsubsection{The niche model}
+\label{sec:niche_model}
+
+% More references for niche mdoel shown to prduce realistic webs....
+
+We use the niche model (NM) of Williams \& Martinez \cite{williams2000simple} is used to generate food webs. This simple model has been shown to produce network structures that closely resmeble empirically derived food webs\footnote{FIND MORE REFS HERE.}, and has become a standard tool for creation of model food webs \cite{williams2000simple, dunne2002food, stouffer2005quantitative}. The model has two parameters: the number of species S, and the desired connectance C. The model output is an adjacency matrix $\mathbf{a}$ for which the element $a_{ij} = 1$ implies that species $i$ consumes species $j$, and $a_{ij} = 0$ implies the absence of an interaction. Connectance is defined as the proportion of the maximum possible number of links that are realised i.e. $C = L/S^2$, where $L$ is the number of links in the network.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{"diagrams/niche_model"}
+	\caption{A representation of 1-dimensional \emph{niche space} as visualised in the original publication \cite{williams2000simple}, for number of species $S=6$. The blue traingles represent the placement of species in niche space. The niche vaule of species $i$ is given by $n_i$. The width and centre of the feeding range for species $i$ are denoted by $r_i$ and $c_i$ respectively. Species $i$ consumes all species whose niche values fall within the feeding range.}
+	\label{fig:niche_model}
+\end{figure}
+
+
+Figure \ref{fig:niche_model} illustrates the ideas of niche space, niche value $n_i$ for a particular species $i$, its feeding range $r_i$. Niche space is the 1-dimensional range of real numbers $[0,1]$. Each of the $S$ species is assigned a niche value $n_i$, drawn uniformly at random from the niche space. It is then assigned a feeding range with a central value $c_i$ and a width $r_i$. Species $i$ consumes all species, including itself, whose niche vlaues fall within its feeding range.
+
+To determine the width of the feeding range, a beta function  with expectation $2C$ is used to draw a number from the range $[0,1]$. This number is then multiplied by $n_i$ to give the shosen value of $r_i$.  Since $n_i \sim U(0,1)$, we know that the expecation value $E(n_i) = 0.5$, and so $E(r_i) = C$. Therefore on average a species consumes a fraction $C$ of the total number of species, resulting in a network with close to the desired connectance.  
+
+
+A beta function has two parameters: $\alpha, \beta \in \mathbb{R^+}$ [REF]. The choice of $\alpha = 1$ simplfies the probability density function to
+
+\begin{equation*}
+f (x; 1,\beta) = \begin{cases}
+\beta (1-x)^{\beta - 1} &\mbox{ if } 0 < x < 1,  \\
+0	                    &\mbox{ otherwise. }
+\end{cases}
+\label{eq:beta_pdf}
+\end{equation*}
+
+The cumulative distribution function is derived by:
+
+\begin{eqnarray*}
+P(x) &=& \int_{0}^{x} \beta (1-x')^{\beta - 1} dx' \\
+     &=& 1 - (1-x)^\beta . 
+\label{eq:beta_cdf}                         
+\end{eqnarray*}
+
+Therefore, by choosing a probability value $y$ uniformly at random from the interval $[0,1]$, we can draw an $x$ value form our beta distribution:
+ 
+\begin{eqnarray*}
+y &=&  1 - (1-x)^\beta, \qquad \text{such that} \\[5pt]
+x &=&  1 - (1- y)^{1/\beta}.                          
+\label{eq:beta_sampling}
+\end{eqnarray*}
+
+The expectation value of this beta distribution is given by $E (x) = \frac{1}{1 + \beta}$, therefore we choose
+
+\begin{equation*}
+\beta = \frac{1}{2C} - 1
+\label{eq:beta_value}
+\end{equation*}
+
+to give the desired expecation of $E(x) = 2C$.
+
+Once the width $r_i$ has been chosen, the feeding range is placed in niche space by randomly drawing the range centre $c_i$ from the interval $[r_i/2, n_i]$. Therefore cannablism and looping are possible because up to half of the feeding range may contain niche values $\geq n_i$. In some cases the generated network may not be connected (i.e. contains one or more disconnected components), or two species may be trophically identical. In these cases the guilty species are deleted and replaced until the network is connected and without identical species. Also the species with the smallest niche value is give $r_i = 0$, such that there is at least one basal species (i.e. species with no prey). 
+
+INSERT NICE PICTURE OF A NETWORK!
+
+
+\subsubsection{Link Replacement}
+\label{sec:link_replacement}
+
+% Is this description OK?
+
+Having generated a food web with only antagonsitic links, we now introduce mutualism. The mutualistic interactions are trophic, as with antagonisms, since there is an energy flow from resource to consumer. For example pollinators receive nectar from flowering plants. However in a mutualistic interaction there is a benefit for both parties. In this example flowering plants are pollinated and can reproduce. In the simulation model the plants recieve better dispersion abilities as a result of mutualisms (section \ref{sec:CA_rules}). We impose the constraint that mutualisms can only exist between species of the first two trophic levels: plants and herbivores. Some of the antagonistic links between the first two trophic levels are replaced by mutualistic links. This changes the rules of interaction between individuals of these species in the cellular automata model (section \ref{sec:CA_rules}). The fraction of these links switched is defined as the mutualistic vs. antagonistic interaction (MAI) ratio. Figure \ref{fig:trophic_cartoon} is a schematic of a possible interaction network generated by this procedure, for a ninteen species community. In this case there are twelve links between the first two trophic levels, and six of these have been replaced by mutualistic links. The other six links remain antagonistic. Since half of the basal links have been replaced, the MAI ratio for this community is $0.5$.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{"diagrams/trophic_cartoon"}
+	\caption{Schematic of an underlying interaction network (reproduced from \cite{lurgi2015effects}). Nodes correspond to species, and arrows to trophic links (antagonistic or mutualistic), from resource to consumer. The six functional groups of species are colour coded, and named in the legend. In this case there are twelve links between the first two trophic levels, six of these have been replaced by mutualistic links giving a MAI ratio of $0.5$. Mutualistic plants and animal mutualists are defined by any species that has at least one mutualistic links. However both these groups of species may also have antagonistic links.}
+	\label{fig:trophic_cartoon}
+\end{figure}
+
+The result of link replacement is a hybrid network that defines two types of interaction between species. We can define  two functional groups in each of the first two trophic levels. In the first trophic level \emph{non-mutualistic plants} are basal species which do not have any mutualistic links. This group represents wind-dispersed plants which only have antagonistic interactions with the trophic level above. \emph{Mutualistic plants} are any basal species with at least one mutualistic link. This group are dispersed by species from the second trophic level via their mutalistic interactions and can no longer be wind dispersed. They may also be predated upon by herbivores, if they have such links. Similarly \emph{herbivores} are memebers of the second trophic level which only predate on basal species, whereas \emph{animal mutualists} may either predate or engage in mutualisms. See figure \ref{fig:trophic_cartoon} for a visualisation of these groups. 
+
+For the simulations we generated networks with eleven diffeerent MAI ratios ($[0,0.1,0.2,...,1.0]$). This is in accordance with the previous study \cite{lurgi2015effects}, and allows us to look at how communities with dirrent MAI ratios respond to habitat loss. 
+
+
+\subsection{Model specification}
+\label{sec:the_model}
+
+%% Notes (TODO):
+% Ensure figures are referenced, and state this the follwoing is partly taken from the publication.
+% Make own figures of neihbourhood, movement and habitat destruction etc.
+% Fix table: make it in latex.
+% Talk about parameter choices. And justify efficiency or assimilation rates (Ings et al 2009). Otherwise all individuals have same parameters. 
+
+%% questions to confirm with Miguel
+% Where does this model for mutualism come from?
+% What is intial energy - full?
+% Is the update synchronous?
+% Is the order of the demographic processes as outlined below?
+% What energy are new plants created with in both types of asexual reproduction? Do the parents lose energy?
+% Do predators move into the chosen cells after feeding, or stay put?
+% Does capture_probability apply to herbivores (and is the rest of the description correct)?
+% Does capture probability apply to mutualisms?
+% What if a mutualistic animal interacts with another partner before spawning?
+% What are the extinctions events written into the model?
+
+
+
+%TALK ABOUT HOW THIS MODEL DIFFERS FROM PREVIOUS MODELS? (MAYBE INTRO.)
+
+We use the model of Lurgi, Montoya \& Montoya \cite{lurgi2015effects} as the basis of our simulation model. It is a cellular automaton (CA) in which individuals belonging to different species move around, reproduce, die and interact. These actions are subject to bioenergetic constraint and the rules governing them are detailed in section \ref{sec:CA_rules} below. The CA landscape is a homogeneous 2D square lattice with toroidal boundaries. Each cell can contain up to two individuals: at most one animal and one plant individual. It may not contain more than one individual of either type. Types of individual are defined by its trophic position in the underlying interaction network (section \ref{sec:interaction_network}). All basal species are plants, all other species are animals.
+
+Distance on the lattice is defined as follows. The immediate neighbours of any given cells are the eight adjacent cells including diagonals (i.e. a Moore neighbourhood). These eight neghbours have are distance-1 from the central cell. This distance metric is used in the rules for movement and reproduction (SEE BELOW NUM?), and also in the caluclation of various spatial metrics (section SECTIONNUM).
+
+Inital conditions are defined randomly by the following setup procedure. A species is selected uniformly at random from the sixty species in the underlying network. A cell from the landscape is selected uniformly at random. If there is space in the cell, an individual belonging to the selected species is placed in the seleced cell. This is repeated until the value of parameter \emph{occupied cells} is reached.  
+
+Table \ref{tab:IBM_parameters} shows all the model parameters, their values and definitions. Where possible the parameters values are chosen to be biologically realistic. A discussion of values chosen for these parameters can be found in section \ref{sec:parameters}. 
+
+
+
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.3\textwidth]{"diagrams/IBM_movement"}
+	\caption{Example trajectories and neighbourhoods of two individuals.}
+	\label{fig:IBM_motion}
+\end{figure}
+
+
+\subsubsection{Celluar-automata rules}
+\label{sec:CA_rules}
+
+In the following description italicised words refer to model parameters, which are defined in table \ref{tab:IBM_parameters}. Each individudal stores energy (or resource), which it expends to peform actions. If the energy of an individual drops below \emph{min\_resource} it dies and is removed from the landscape. On each iteration the basic demographic processes occur in the following order  (FOR EACH SPECIES?):
+
+\begin{enumerate}
+	\item Death
+	\item Movement
+	\item Reproduction
+	\item Feeding
+	\item Immigration
+\end{enumerate}
+
+\subsubsection*{1) Death}
+As stated, if an individuals energy drops below \emph{min\_resource}, it is removed form the simulation.
+\subsubsection*{2) Movement}
+For each individual, a neighbouring cell (distance 1) is selected uniformly at random. If the cell is avaible the individual moves there. Otherwise it remains stationary.
+\subsubsection*{3) Reproduction}
+All species may only reproduce if their stored energy is greater than \emph{mating\_resource}. Animals reproduce sexually, plants reproduce asexually.
+\begin{itemize}
+	\item \textbf{Sexual reproduction}: This occurs between two memebers of the same animal species if: 1) There is a member of the same species in the immediate neighbourhood of the subject species; and 2) there is an available cell for the offspring in the distance 4 neihgbourhood of the subject individual. When these two conditions are met both parents give a fraction of their stored energy (\emph{mating\_energy}) to the offspring. The offspring is placed in a cell chosen unformly at random from the available cells within distance 4 of the subject individual.
+	\item \textbf{Asexual reproduction}: This occurs for plants via two possible mechanisms. 
+	\begin{enumerate}
+	\item Wind dispersal occurs for non-mutalistic plants, on each iteration with a probability equal to \emph{reproduction\_rate}. If reproduction occurs the offspring is placed in a randomly selected available cell in the distance 4 neighbourhood. For plants, available means empty or only occupied by an animal individual. If no cells are available the plant cannot reproduce. Again a fraction of the parent plant's stored energy (\emph{mating\_energy}) is given to the offspring to the offspring.
+	\item Mutualistic dispersal occurs for mutalistic plants. This action is carried out by the animal partner, and is done in the 'feeding' phase (see below), since it is also a trophic interaction. The 'seed' of the parent plant is carried by the animal partner, so it may be placed beyond the distance 4 neighbourhood. 
+    \end{enumerate}	 
+\end{itemize}
+\subsubsection*{3) Feeding}
+For a trophic (feeding) interaction to occur, two individuals must belong to species that are connected in the interaction network. Also the indivuduals must explicitly find each other in space - in the 'movement' phase one must choose the cell occupied by the other. If this happens there are three possibilties:
+
+\begin{enumerate}
+	\item \textbf{Predation}: If neither individual belongs to a basal species a predation event occurs with probability \emph{capture\_probability}. The prey species dies and a fraction of its energy \emph{efficiency\_transfer} is given to the predator.
+	\item \textbf{Herbivory}: If one individual is a non-mutualistic animal and the other is a plant, they interact. A fraction of the plant's energy \emph{herb\_fraction} is lost, and a fraction (\emph{herb\_efficiency}) of this energy is given to the herbivore. Both indidivuals continue living. If the animal is an omnivore and additional trade-off (\emph{omni\_tradeoff}) is applied to its energy gained, since omnivores are less efficient at digesting plant matter than straight herbivores.   
+	\item \textbf{Mutualism}: If the individuals share a mutalistic interaction they interact. A fraction of the plant's energy (\emph{mut\_fraction}) is transfered to the animal. The animal also keeps track of which plant it interacted with. If it reaches an available cell in the landscape it creates an offspring of this plant with proababiliy \emph{mut\_efficiency}. On each iteration that an offspring is not produced, the mutualistic efficiency is reduced by a fraction \emph{mut\_cooling}.  
+\end{enumerate}  
+\subsubsection*{4) Immigration}
+At each iteration there is a probability (\emph{immigration}) with which each empty cell may be colonised by an individual selected at random from the original species pool. 
+\subsubsection*{5) Energy update}
+On each iteration all animal individuals' energy stores are reduced by a fraction \emph{living\_expend}, to account for metabolic losses. Also all plant individuals autotrophically increase their energy stores by a fraction \emph{synthesis\_ability}. This is the onyl energy input to the system.
+
+\subsubsection{Model Parameters}
+\label{sec:parameters}
+
+The model paramerts were chosen blalblabla... reference Ings et al. Which parameters are most interesting, why? Also discuss sensitivity analysis from previous publications, findings. We I conduct my own version? With regard to which parameters? (Maybe discuss this lat bit somehwere else).
+
+\begin{table}[hp!]
+\centering
+%\begin{figure}	
+\includegraphics[width=0.9\textwidth]{"tables/IBM_parameters"}
+%\end{figure}
+\caption{The parameters of the model and what they mean.}
+\label{tab:IBM_parameters}
+\end{table}
+
+\subsection{Modelling habitat loss}
+\label{sec:model_HL}
+
+% How many iterations before habitat loss applied?
+% is the movement and reproduction desscription correct.
+
+The current project extends the above defined model of Lurgi, Montoya and Montoya \cite{lurgi2015effects} by implementing habitat loss algorithms. The algorithms are simple. A fraction of the cells in the landscape are made uninhabitable to all species. We denote the fraction of destroyed cells by HL. The simulations are set up and run as detailed above (section \ref{sec:the_model}), after 1000 iterations one of two habitat loss algorithms is applied to the landscape. The species inhabiting the destroyed cells are deleted. Species attempting to move into destoryed cell are unable to and remain stationary. Destroyed cells are counted as unavailable for the placement of offspring. We choose the cells to destroy using one of two habitat loss algorithms: 1) Random and 2) Contiguous.
+
+\subsubsection{Random Habitat Loss}
+\label{sec:random_algorithm}  
+
+Cells in the landscape may contain habitats in two states: pristine or destroyed. Pristine corresponds to the cells in the oringal model. To destroy habitat randomly, cells are selected and destroyed uniformally at random from the set of cells containing pristine landscape. This is repeated until the desired fraction of HL is achieved.   
+
+\subsubsection{Contiguous Habitat Loss}
+\label{sec:contiguous_algorithm}  
+
+This algorithm results in a contiguous region of cells with destroyed habitat. A 'seed cell' is selected uniformally at random from the fully pristine landscape. The seed cell is destroyed, and destruction proceeds radially from the seed cell until the desired fraction of HL is achieved. This process follows the same toroidal boundary conditions as the CA. 
+
+
+\subsection{Implementation}
+\label{sec:implementation}
+
+% How do I cite sofware e.g. python and R?
+% Also cite BlueCrystal.
+% talk about what data is saved on a simualtion run?
+
+%Outline of how the model is implemented - what is saved etc.
+
+%My contibutions 1) HL 2) Debugging 3) GEtting it running on BC3 4) MAking further edits.
+
+%
+
+The code for the simulation model was orginally written by Miguel Lurgi for research leading to the publication \cite{lurgi2015effects}. He and Daniel Montoya were responsible for the bulk of the model development, testing and parameter selection - a considerable task. My task was to take this legacy code and work with it to generate results that would allow us to study the effects of habitat loss.
+
+The model is implemented in \emph{Python}, with several switches that ensure portability between different versions of python. The programme makes extensive use of \emph{numpy} and \emph{networkx}, amongst other \emph{Python} libraries. The original code was well written to allow for the easy implementation of new mechanisms. The intention was always to extend the model for further study. For example there is a parameter for \emph{habitat type}, whereby the landscape would be heterogeneous with certain habitats best suited for different species. (In the current implementation this is not used and the landscape is homogeneous.) There was also a prototype algorithm for contiguous habitat loss.  
+
+Working with the legacy code I implemented the random habitat loss algorithm, and tested both the contiguous and random algorithms to ensure they were performing as desired. I also added methods to an already extensive library for saving simulation outputs, with a view to conducting more anaylsis on the spatial state of the system\footnote{IMPORTANT: don't write about this if you are not going to do the analysis properly.}. I then ran numerous simulations wihtout habitat loss (HL$ =0$) to ensure that the model reproduced the results presented in \cite{lurgi2015effects}. 
+
+Simulation ensembles were run on Blue Crystal Phase 3 (BC3), Bristol's computer cluster. Compatibility issues arose because only \emph{networkx} version 1.9 is avaiable on this system, which has significant differences in the return  
+
+
+
+My contribution to the model was the implementation of the random habitat loss algorithm, and running all the simulations on Bristol's comptuer cluster Blue Crystal. The former was trivial but key to this project. The latter involved a considerable amount of debugging and scripting and testing. I also made  
+
+I conducted post-simulation analyses in the statistical package \emph{R}, and in \emph{Python}. Analyses in \emph{R} used adapted legacy code from the previous project. Analysis and plotting methods implemented in \emph{Python} were written by myself.
+
+Write here about code, my contributions, Blue Crystal. Repeats runs, result format, run times etc.
+
+\section{Dynamics of the model}
+\label{sec:dynamics_results}
+
+Display and discuss several example full runs. Also with varied parameters?
+
+Well mixed approximation?
+
+\subsection{Transience}
+
+Discuss and analyse transience. How long is it? Are the general relationships? Perhaps use simplified modelling (ODEs) to try and predict the length of transience.
+
+\subsection{Long term distribution}
+
+Is the final dynamics (after transience) steady state? What can we say about this?
+
+\subsection{Diffusion behaviour}
+
+How is species movement/dispersion affected by habitat loss? Can we derive a diffusion coefficient?
+
+\section{Ecological metrics and analysis methods}
+\label{sec:metrics_explained}
+
+Introduce, define and discuss each metric.
+
+Stability - Jacobian, dynamic stability, multi-stability, CoV, reproductive stability. 
+
+Robustness - secondary extinctions, cascading effects \cite{evans2013robustness}. Re-wiring algorithms?
+
+\subsection{Biodiversity metrics}
+
+Richness, Simpsons, Shannon Entropy.
+
+\subsection{Stabilitiy metrics}
+
+Coefficient of Variation, May Stability
+
+\subsection{Network metrics}
+
+GenSd, VulSd, Gq, Vq, MTP, H2', Connectance, Nestedness, Compartmentalisation
+
+\subsection{Spatial metrics}
+
+Moran's I, Geary's C. Spatial autocorrelation. Centroids.
+
+\subsection{Interaction strength metrics}
+
+IS1, IS2, IS3 \cite{berlow2004interaction}.

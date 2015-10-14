@@ -1,0 +1,41 @@
+\BOOKMARK [0][-]{section*.4}{List of Tables}{}
+\BOOKMARK [0][-]{section*.5}{List of Figures}{}
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.1.1}{Communities of single and multiple interaction types}{section.1.1}
+\BOOKMARK [2][-]{subsection.1.1.2}{Spatially explicit model and metrics}{section.1.1}
+\BOOKMARK [2][-]{subsection.1.1.3}{Modelling Habitat Loss}{section.1.1}
+\BOOKMARK [0][-]{chapter.2}{Habitat loss: Modelling approach}{}
+\BOOKMARK [1][-]{section.2.1}{Agent based simulation}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.1.1}{The interaction network}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.2}{Model specification}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.3}{Modelling habitat loss}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.4}{Implementation}{section.2.1}
+\BOOKMARK [1][-]{section.2.2}{Dynamics of the model}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Transience}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Long term distribution}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Diffusion behaviour}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{Ecological metrics and analysis methods}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{Biodiversity metrics}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{Stabilitiy metrics}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.3}{Network metrics}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.4}{Spatial metrics}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.5}{Interaction strength metrics}{section.2.3}
+\BOOKMARK [0][-]{chapter.3}{Habitat loss with high immigration}{}
+\BOOKMARK [1][-]{section.3.1}{Response of ecological metrics}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{More preliminary results}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Further development and work to do}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Work to do}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Further development}{section.3.3}
+\BOOKMARK [0][-]{chapter.4}{Varying Immigration rate}{}
+\BOOKMARK [1][-]{section.4.1}{Assumptions of what has gone before}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Literature review for immigration}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Simulations without immigration}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{Exploration of parameter space: habitat loss and immigration}{chapter.4}
+\BOOKMARK [1][-]{section.4.5}{Further investigation of these trends - RADS, dynamics}{chapter.4}
+\BOOKMARK [1][-]{section.4.6}{Habitat loss with low immigration}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Stability}{}
+\BOOKMARK [1][-]{section.5.1}{Persistence without immigration?}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Why are some networks more stable than others?}{chapter.5}
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}
+\BOOKMARK [0][-]{section*.13}{Bibliography}{}

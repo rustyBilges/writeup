@@ -1,0 +1,6 @@
+\contentsline {chapter}{Contents}{2}
+\contentsline {section}{\numberline {0.1}Response of ecological metrics}{3}
+\contentsline {section}{\numberline {0.2}More preliminary results}{7}
+\contentsline {section}{\numberline {0.3}Further development and work to do}{7}
+\contentsline {subsection}{\numberline {0.3.1}Work to do}{7}
+\contentsline {subsection}{\numberline {0.3.2}Further development}{8}

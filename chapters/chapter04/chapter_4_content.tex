@@ -1,0 +1,50 @@
+\section{Assumptions of what has gone before}
+
+\begin{itemize}
+	\item Discussion of what we will now refer to as "default parameter values"
+	\item Conclusion that there is something unrealistic about the immigration mechanism (rate too high)
+\end{itemize}
+
+\section{Literature review for immigration}
+
+Possibly include here a summary of recent work on immigration, including IBT and meta-community theory. (Alternative is that this goes in introductory chapter.)
+
+\section{Simulations without immigration}
+\label{sec:no_immigration}
+
+One conclusion from chapter \ref{ch:3} is that the immigration mechanism is unrealistically high. As discussed, for the purposes of our investigation, it was informative to explore community responses to habitat loss that are not driven by changes in species richness. Therefore a high rate of immigration was desirable to prevent community collapse. However the result that no extinctions are observed even at 90\% habitat destruction is suspect. This is clearly representative of a special case in which the habitat is locally very close to total destruction but the community is sustained by strong immigration from, presumably less impacted, surrounding habitats. We now consider other scenarios by changing the immigration rate parameter. At the other extreme we have communities with zero immigration. This represents a closed system. Although this does not exist in nature, certain systems may come close. For example an island community that is a sufficiently distant from other land (see discussion on Island biogeography) will have very low immigration. Systems that are effectively closed may also be artificially achieved in controlled situations e.g. laboratory mesocosm, zoo/managed landscape.
+
+We present here results which demonstrate that with zero immigration community collapse is inevitable, with the current model parameters. It is observed that all non-plant species go extinct, even for pristine landscapes with zero habitat destruction. (show a figure which demonstrates this conclusively). This result is explored further in chapter \ref{ch:where} where we look at the possibility of creating stable communities without immigration. For now we accept the general result that, under the default conditions, zero immigration results in community collapse. We are then interested in the regime between these two extreme of zero immigration, where we see many extinctions even at $HL=0$, and high immigration where we see no extinctions even at $HL=90$. Is there some immigration value for which the community is stable at low levels of habitat destruction, but where collapse occurs at higher levels of destruction?
+
+
+\section{Exploration of parameter space: habitat loss and immigration}
+\label{sec:heatmaps}
+
+% In order to do what exactly...?
+Here we explore how immigration mediates the effects of habitat loss, for three different MAI values. A two dimensional slice of parameter space was explored as follows. Simulations were run for a range of different immigration values, and different levels of habitat destruction. One hundred repeat simulations were conducted at each pair value, using different network topologies generated with the niche model. All other parameters were held constant at default values (section \ref{sec:where_is_ref}). 
+
+Results of these simulations can be concisely represented as heat maps over the region of parameter space explored. Figure \ref{fig:summary_heatmaps_imvshl} shows the average response of three summary metrics to changes in immigration and habitat destruction. As was discussed in section \ref{sec:where_is}, no species extinctions are expected for sufficiently high levels of immigration. This is because the immigration mechanism provides a significant recovery effect. It allows species that have gone locally extinct (from the simulation landscape) to recover by occupying empty cells. Therefore, for immigration values close to those used in the original simulations (chapter \ref{sec:where}), the average number of species that have gone extinct at the end of a simulation is close to zero\footnote{Since it is possible for a species to go extinct and to subsequently recover it may be sensible to use another definition of 'extinct'.}. This is true for all MAI ratios as shown by the left column of heat maps in figure \ref{fig:summary_heatmaps_imvshl}. Reducing the immigration value weakens the recovery effect and therefore
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Archetypal rotated figure page:
+%% STILL BEING A PAIN IN THE ARSE - NEEDS WORKING ON!
+%\newpage
+\clearpage
+\afterpage{%
+\thispagestyle{empty}
+\begin{sidewaysfigure}
+
+%		\centering      
+		\hspace{-3cm}
+        \includegraphics[width=1.3\linewidth]{"figures/sum_maps"}
+        \caption{\textbf{Summary heat maps:} describe them.}\label{fig:summary_heatmaps_imvshl}
+        %% Note: this figure generated by Documents/IM_vs_HL_heatmap/plot_sum_maps.py
+\end{sidewaysfigure}
+
+}
+
+\section{Further investigation of these trends - RADS, dynamics}
+
+\section{Habitat loss with low immigration}
+
+

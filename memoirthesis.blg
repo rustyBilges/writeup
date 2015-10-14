@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: memoirthesis.aux
+The style file: siam.bst
+Database file #1: thesisbiblio.bib
+Repeated entry---line 453 of file thesisbiblio.bib
+ : @article{lurgi2015effects
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in tilman1994habitat
+You've used 38 entries,
+            2030 wiz_defined-function locations,
+            742 strings with 11995 characters,
+and the built_in function-call counts, 18200 in all, are:
+= -- 1789
+> -- 1043
+< -- 0
++ -- 419
+- -- 372
+* -- 1534
+:= -- 2795
+add.period$ -- 38
+call.type$ -- 38
+change.case$ -- 291
+chr.to.int$ -- 0
+cite$ -- 39
+duplicate$ -- 704
+empty$ -- 1078
+format.name$ -- 372
+if$ -- 3820
+int.to.chr$ -- 0
+int.to.str$ -- 38
+missing$ -- 39
+newline$ -- 117
+num.names$ -- 76
+pop$ -- 231
+preamble$ -- 1
+purify$ -- 254
+quote$ -- 0
+skip$ -- 702
+stack$ -- 0
+substring$ -- 1338
+swap$ -- 360
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 150
+warning$ -- 1
+while$ -- 181
+width$ -- 40
+write$ -- 340
+(There was 1 error message)

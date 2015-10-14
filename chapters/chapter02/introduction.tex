@@ -1,0 +1,127 @@
+\section{Introduction}
+\label{sec:intro}
+
+% What length should the introduction to a chapter be? Thinking to expand this to several pages - a few pages, as many as needed to undertsnad the story
+% How many references should it contain, general rule? - about the curretn density.
+% OK to cite the same papers several times in different contexts? Yes, sparingly and best with explanantion.
+
+%Research on the impacts of habitat loss are widespread in the ecological literature [REFS]. Habitat 
+%
+%\begin{itemize}
+%	\item Motivate the study of habitat loss in general- we already know that it is a major driver of ecological change [REFS]. And it is happening at an ever increasing rate due to land-use change, urbanisation, deforestation etc [REFS].
+%
+%	\item Most early studies used species richness as the response variable [REFS], however it has recently been shown both theoretically\footnote{What is the correct term here?} and empirically that habitat loss causes significant changes in community structure long before extinctions are observed \cite{albrecht2007interaction} - analogy to overall health, underlying causes of illness, presentation of symptoms, mortality. Therefore we move beyond species richness in this study (by selecting parameter values for which there is no change in species richness.)
+%	
+%	\item It has been known for a long time that changes in ecosystem structure and functioning cannot be understood at the species - we must observe pattern at the community level and crucially we must consider the interactions between species!  As Jansen wrote 40 years ago: "what escapes the eye, however, is a much more insidious kind of extinction: the extinction of ecological interactions."\cite{janzen1974} Insiduous implies a serious effect but also a difucutly in perceiving the cause. It is only with recent advances in network ecology, data collection methods, and computational modelling that we have been able to really study this properly.
+%	
+%	\item However there is still a strong focus on species level effects of environmental changes in literature [REFS] and the media [can I cite news artilces?]. This is understandable because the loss of individual species (polar bears, tigers, bees) is perhaps the most visible consequence. And higher trophic levels are usually those most affected by any kind of preturbations to a community [REFS]. Therefore large species and most visible and most affected. The recent popularity in the plight of the bee indicates a slight shift in undertsanding from high trophic level effects, to lower level effcets that are perhaps underlying these (c.f. ecosystem services and function e.g pollination). However, as (restoration, conservation and network) ecologists have known for a long time, these species level effects can only be undestood within the community context. 
+%	
+%	\item This is especially true for habitat loss. Deforestation and defaunation are the main drivers of interaction loss and their effects pervade multiple ecosystem services. \cite{valiente2015beyond, redford1992empty, janzen1974, memmott2007conservation}.
+%	
+%	\item Habitat loss studies that demonstrate the above point (go into some detail on what they demonstrate)..
+%	
+%	\item As you can see from the above, such studies make extensive use of ecological networks. However, as has been true in most of the literature, they focus on networks of only on interaction type. Early network research dominated by food webs, followed by plant-pollinator and mutuaisms, then host-parasitoid and competition (find the nice graphic that ilustrates this). However a real-world ecological community contains all of these types of interactions between species simultaneously. Research that deals with this has only entered the literature recently. This is done by constructing networks with multiple interaction types \cite{fontaine2011ecological, kefi2012more, montoya2015functional}, or by the use of multiplex networks [REFS-Kefi + others?]. It has shed new light on some finding that were obtained from studies using only one interaction type - e.g. modularity/nestedness affect on stability [REFS].
+%	
+%	\item There has been a recent surge in (empirical and computational) studies on habitat loss, and its affect of community structure \cite{tylianakis2007habitat, fortuna2013habitat, fortuna2013habitat, sole2006ecological, albrecht2007interaction, spiesman2013habitat, gonzalez2011disentangled}. Go into some detail on these - an extensive review can be foudn in \cite{hagen2012biodiversity}. However very few studies have looked at the effects of habitat loss in communities with multiple interactiontypes \cite{evans2013robustness}[others??]. So far as we no, none have done this with the used of spatially explicit models. 
+%	
+%	\item Lots of interest in stability (temporal, spatial, mutli-stability). How is this defined? Why is it important,. what do we know about it? \cite{sauve2014structure, mougi2012diversity, pocock2012robustness, o2009perturbations}. Also robustness, explain the difference.
+%	
+%	\item Framework for generating combined interaction networks \cite{mougi2012diversity, lurgi2015effects}.
+%	\item Framework for modelling mutalism - where does this come from?
+%	
+%	\item Our model can be used to generate preicitions and hypotheses which can be tested in the field e.g. \cite{ewers2011large}.
+%	
+%
+%	\item The suite of metrics used by ecologists to analyse ecosystems is continusouly being updated and developed [REVIEW PAPERS] (section \ref{sec:metrics_explained}). Some metrics, including those used for biodiversity [REFS] are functions of species abundances, some are used to analyses spatial distributions [REFS], whilst others take into account the pattern of interactions interactions between species...(weave this in nicely with the story).
+%	 
+%	\item Hard to conduct controlled emprical studies - our approach... 
+%	
+%	\item How has habitat loss been modelled and what does our approach correspond to in reality? \cite{ewers2011large}.
+%\end{itemize}
+
+
+%(Need to clean up terminology habitat loss, destruction, alteration, modification...) : paragraph discussing this?
+% Clean up use of tenses!!
+
+This project focuses on the impact of habitat destruction on communities of species. A habitat may be defined as the environment containing an organism, or collection of organisms. It has both biotic and abiotic components. Therefore habitats are constantly changing due to ongoing environmental processes. These changes may make the habitat more or less hospitable to different organisms, generating emergent effects at the species and community levels. Human activity in particular creates pronounced and significant changes in habitat. There is good evidence \cite{parmesan2003globally} that anthropogenic climate change has affected living systems by changing regional habitat suitability. An example of this is the northward shift in butterfly species ranges attributed to rising temperatures \cite{parmesan1999poleward}. Other activities such as agriculture, deforestation and urbanisation interfere directly with physical habitat components and with local flora. This alters the type of species and the community that can be supported \cite{bossio2005soil, kremen2007pollination}. Globally the scale of these man-made effects is huge. Various studies have suggested that habitat modification is the leading cause of global species extinctions \cite{foley2005global,tylianakis2007habitat}. Therefore an understanding of how ecological communities respond to changes in habitat is essential in order to mediate the destructive effects of human activity, and to create beneficial conservation, land management and restoration strategies. The subject has received much attention in the ecological literature, and this project is a continuation of that dialogue.
+
+The destruction of habitats due to human activity has also received much attention in the media. This has done a lot to raise public awareness, and to fuel a growing number of campaign groups, charities and conservation organisations. In most cases the focus is on \emph{single species effects}, especially on those threatened with extinction. The most notorious example of this may be the polar bear as the media face of global warming (see figure \ref{fig:polar_bear}). Similarly the habitat loss literature has largely focused on the loss of species \cite{tilman1994habitat, foley2005global}, and has reinforced the notion of \emph{species richness}\footnote{Simply defined as the number of different species present in a community.} as a measure of biodiversity and ecosystem health. This is perhaps because species level effects are the most visible results of ecosystem damage, and the easiest to study empirically. However they are symptomatic of underlying system processes. At least since Darwin's marvel at the complexity of the ``Tangled Bank'' \cite{darwin2009origin} ecologists have understood that species exist in highly interdependent communities. Therefore the ecological impacts of habitat destruction, and other human activities, must be approached from a systems perspective.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{"diagrams/polar_bear"}
+	\caption{Stranded polar bears on Cross Island outside Prudhoe Bay, Alaska. The plight of the polar bear has received much attention in the mdeia. The habitat loss it suffers from is very visible. However the focus of conservation strategies must be on the ecological communities, of which it is one member species. (Source: www.greenpeace.org.uk)} % (Rose Sjolander 2011)}
+	\label{fig:polar_bear}
+\end{figure}
+
+%What is a community persepctive?
+% structure
+%The community perspective has developed into a distinct field of ecology (community ecology). It involves the study of patterns and processes in ecological communities.
+
+In community ecology the system of study is the ecological community - a local collection of co-existing species. The focus is on the structure, patterns and processes within the community. A key aspect of this is the pattern of \emph{interactions between species}, which underlies many of the processes that shape the community (for more detail refer Chapter 2). Recently the habitat loss literature has begun to move away from species level effects, towards community wide effects and especially inter-specific interactions \cite{valiente2015beyond}. This has been facilitated by the wider availability of ecological network data, improved methods for data collection, and the ability to simulate large ecological networks and communities. Advances in ecological network theory have also provided many new metrics for community stability, biodiversity and for analysis of network structure (section \ref{sec:metrics_explained}). Our approach to the study of habitat loss is situated in this context.
+
+%It defines predation, mutualism, competition, biomass flows and can be used to assess stability, robustness and population dynamics.
+
+
+
+There is now a growing consensus that ecological interactions are the key to understanding the effects of habitat loss on ecological communities \cite{memmott2007conservation, hagen2012biodiversity, gonzalez2011disentangled}. In addition to the loss species, it has long been known that habitat loss also leads to the important loss of inter-specific interactions. As Janzen remarked \cite{janzen1974} in 1974: ``what escapes the eye, however, is a much more insidious kind of extinction: the extinction of ecological interactions''. It has since been demonstrated that ecosystems experiencing habitat alteration often suffer loss of interactions \emph{before} loss of species \cite{valiente2015beyond, fortuna2013habitat, albrecht2007interaction}. This can result in detectable changes in community structure, without any detectable change in species richness \cite{tylianakis2007habitat}. These structural changes have consequences for community stability, robustness and population dynamics. A significant part of the ongoing challenge is to identify meaningful measures for the structural (network) changes, and to generalise the ways in which they impact on the community. The bulk of the recent literature supports the belief of Valiente et al. \cite{valiente2015beyond} in``the importance of focusing on species interactions as the major biodiversity component on which the `health' of ecosystems depends.''     
+
+
+\subsection{Communities of single and multiple interaction types} 
+
+In the habitat loss literature most studies have looked at communities with a single type of interaction. The same has been true for network ecology in general, with the bulk of the literature focused on either antagonistic or mutualistic networks. In these networks a node represents a species, and a directed link represents a certain type of interaction (for example predation). Such networks represent the interaction structure of an idealised and closed community. For example it is common to study mutualistic communities, such as plants and their pollinators, in isolation. This is represented as a bipartite network of plant and pollinator species, with mutualistic interactions between them. Both empirical and \emph{in silico} studies have derived some apparently general results on the response of such single-interaction communities to habitat loss. We discuss some of these findings here. However in nature a single-interaction community is a subset of a larger group of species  with multiple types of interaction (predation, mutualism, competition, parasitism). There has been a recent move towards studies of communities with multiple types of interaction \cite{kefi2012more}, which are less simplistic models of natural systems. These hybrid communities are represented as networks with more than one type of link. We also discuss this body of work, some of which challenges previous finding based on single-interaction communities.     
+
+%Such a representation is useful for the study of pollination as an ecosystem service.  
+
+Perhaps most the general result, already discussed, is that habitat destruction leads to a loss of inter-specific interactions. This may be accompanied by lower interaction frequencies, changes in interaction strength, reduced connectivity, or other structural changes in the network due to rewiring. Tylianakis et al. \cite{tylianakis2007habitat} showed that empirical antagonistic communities (host-parasitoid) responded to habitat degradation with reduced evenness in interaction frequencies. This means that certain interactions became relatively more frequent, so that energy flow through the community became concentrated along certain pathways. Also, importantly, the quantitative changes in network structure that they observed were not detectable by equivalent qualitative metrics. Neither were conventional diversity metrics, based on species abundance or richness, able to distinguish between habitats at different levels of degradation. Similarly Albrecht et al. \cite{albrecht2007interaction} showed that insect food webs in a grassland system lost interaction diversity faster than species diversity, when subjected to habitat alteration. This suggests a biodiversity reduction in the interaction structure that is not measurable by metrics based on species abundance. Both of these examples highlight the sensitivity of results to the metrics used, when studying community response to habitat loss. Hence the large suite of metrics introduced and discussed in section \ref{sec:metrics_explained}.
+
+An issue of particular interest is community stability, its response to habitat loss and its relationship to network structure. Mutualistic networks tend to have a highly nested structure and low modularity \cite{bascompte2007plant}. These properties are believed to improve the stability of the community \cite{thebault2010stability}. It has been shown that habitat destruction can push mutualistic networks towards higher modularity, higher connectivity, and lower nestedness, thereby reducing stability \cite{spiesman2013habitat, hagen2012biodiversity}. Conversely antagonistic networks tend to be modular in structure, which is believed to promote stability and robustness in these communities \cite{thebault2010stability}. Habitat loss has been shown to destabilise antagonistic communities by lowering modularity and increasing interaction strengths \cite{hagen2012biodiversity}. Generally the literature suggests, as expected, that habitat loss reduces community stability, irrespective of the interaction type. However the underlying changes driving this loss in stability appears to differ between mutualistic and antagonistic communities. It should also be noted here that the definition and measurement of stability is non-trivial. Lurgi et al. \cite{lurgi2015effects} have shown that certain stability metrics may respond differently to a changing control variable, meaning that a combined, or multi-stability approach is required.
+
+
+The above examples represent attempts to understand the structural changes that occur due to habitat loss, prior to the occurrence of species extinctions. From a conservation perspective this highlights the importance of targeting inter-specific interactions and the maintenance of network structure and function, rather than focusing on species level effects \cite{memmott2007conservation}. Fortuna and Bascompte \cite{fortuna2006habitat} have demonstrated that real-world networks have better persistence against habitat loss than random networks assembled using null-models. This suggests that artificially managed ecosystems may be more vulnerable to perturbations than their `wild-type' equivalents, unless careful attention is paid to those properties that promote stability and robustness. In food webs there appear to be certain simple properties that mediate the impacts of habitat destruction \cite{melian2002food}. For example omnivory is shown to increase extinction thresholds, as is a reduction in top-down control by predators. However these numerical results are for small model networks and remain to be demonstrated empirically.     
+
+
+%Only recently have network ecologists begun to study networks of multiple interaction types [REFS]. Therefore little is known about how such communities/networks respond to habitat loss. This new approach may challenge some of the previous findings based on single interaction types. How to create such networks....
+
+Recently ecologists have realised the importance of studying ecological networks that contain multiple types of inter-specific interaction \cite{fontaine2011ecological, kefi2012more, montoya2015functional}. It is known that mutualistic communities have knock on effects on food webs, and vice versa. Indeed certain species are simultaneously involved in more than on type of network or community. A powerful example of this phenomenon was demonstrated empirically by Knight et al. \cite{knight2005trophic}. They showed the presence of a trophic cascade, crossing ecosystem and habitat boundaries, by which freshwater fish were able to facilitate terrestrial plant reproduction. The inclusion of such indirect and cascading effects is one of the many strengths of the network paradigm in ecology. However this study highlights the limitations of focusing on localised community subsets and single-interaction types.
+
+A large scale study by Pocock et al. \cite{pocock2012robustness} was one of the first to combine networks of different types into a network of ecological networks. They used empirical networks constructed over different habitats on a farm, to construct a whole farm network. This included host-parasitoid, seed-dispersal, plant-pollinator and predator-prey networks. Using quantitative robustness analysis (section \ref{sec:metrics_explained}), they were able to identify keystone plant species which generated significant cascading effects across networks, and also determined the most fragile components of the meta-network. This type of integrated analysis has different implications for conservation and restoration than an approach which looks at the individual networks in isolation.
+
+The integration of multiple interaction types has begun to shed new light on the stability of ecological communities. This is because the conventional understanding is based on studies of communities with single-interaction types. In general complex antagonistic networks with strong interactions are thought to be unstable \cite{o2009perturbations}. This presents a problem for ecological theory since natural food webs, which are inherently complex, appear to be stable. The problem may lie in the fact that antagonistic networks have been studied in isolation. It has been shown theoretically that introducing mutualistic interactions into the network can be stabilising \cite{mougi2012diversity, lurgi2015effects}. Specifically Lurgi et al. \cite{lurgi2015effects} propose that increasing the proportion of mutualistic interactions at the base of a food web reduces the overall strength of species interactions. They found that this improved the stability of their model communities, according to a spatial aggregation metric (section \ref{sec:metrics_explained}). 
+
+Recently Sauve et al. \cite{sauve2014structure} have brought into question the established wisdom on the relationship between network structure and stability. As discussed previously, the structural properties believed to promote stability differ between antagonistic and mutualistic communities. High modularity and high nestedness are thought to promote stability in antagonistic and mutualistic networks respectively. However Sauve's work suggests that, for a combined network of mutualisms and antagonisms, modularity and nestedness do not strongly affect stability. The results of Lurgi et al. also support this finding \cite{lurgi2015effects}. Therefore new metrics, accounting for diversity in interaction type, may be required in order to understand community structure and stability in hybrid networks\footnote{See suggestions in the text of \cite{sauve2014structure} and talk to Alix about possibly including these in our analysis?}.
+
+Since hybrid networks of multiple interaction type are relatively new, there are few studies relating them to habitat loss. One study, by Evans et al. \cite{evans2013robustness}, uses the same empirical network of networks as \cite{pocock2012robustness}. They employed a robustness algorithm to determine how vulnerable the hybrid network is to the loss of different habitats from the farm\footnote{Interestingly they reported that two of the most important habitats, relative to their sizes, we hedgerow and wasteland.}. Aside from this study there is a lack of empirical and theoretical results on the response of hybrid networks to habitat loss. This project aims to make a contribution towards this area. We will extend on the work of Lurgi et al. \cite{lurgi2015effects} to simulate multi-trophic communities with mutualistic and antagonistic interactions. By investigating the response of these communities to simulated habitat destruction we will be generating novel results and predictions which can be tested empirically in the future. To do this we will employ a range of metrics to quantify structural changes and community stability. We will focus on the regime before species are lost from the community, with an interest in the underlying changes that occur as a result of habitat destruction.
+
+%Various approaches have been used to incorporate more than one interaction type into a network. Most involve linking together empirical \cite{pocock2012robustness} or numerically generated \cite{sauve2014structure} networks of single-interaction types, via species that exist in both networks. There are also methods for construction of `realistic' trophic networks, which contain both mutualisms and antagonisms \cite{lurgi2015effects, mougi2012diversity}.
+
+
+
+
+\subsection{Spatially explicit model and metrics}
+
+Another novel aspect of this work is the spatially explicit modelling approach...
+And some of the spatial analysis employed...
+
+\cite{sole2006ecological}   - spatially explciti analyisis.
+
+\cite{fortuna2013habitat} mutualistic interactions decrease non-linearely. Connectance increases? Abrupt change in number of interactions, spatial skewness in number of interactions.
+
+\cite{kaartinen2011shrinking} - quantitative food web metrics did not vary between fragemented habitat pathces in different landscape contexts.
+
+\cite{o2009perturbations} - interaction strengths is focus, but also spatial stability. c.f. a,b,g stability and Lurgi et al.
+
+\subsection{Modelling Habitat Loss}
+
+Habitat loss has been modelled in various ways..Spatial auto-correlation..how does our approach fit in with the literature..
+
+\cite{ewers2011large} - controlled habitat destruction, large empirical project
+
+
+
+% habitat loss
+% ecolgical networks
+% stability
+% 
+

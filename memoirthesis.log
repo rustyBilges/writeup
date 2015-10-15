@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.10.12)  14 OCT 2015 11:47
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.10.12)  14 OCT 2015 12:16
 entering extended mode
  %&-line parsing enabled.
 **memoirthesis.tex
@@ -1408,7 +1408,12 @@ File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
-)))
+))) (/usr/share/texmf-texlive/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks61
+\AP@partial=\box49
+\AP@footins=\box50
+)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
 s.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
@@ -1464,26 +1469,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
 (/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
 ode.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box49
-\pgfnodeparttwobox=\box50
-\pgfnodepartthreebox=\box51
-\pgfnodepartfourbox=\box52
-\pgfnodeparttwentybox=\box53
-\pgfnodepartnineteenbox=\box54
-\pgfnodeparteighteenbox=\box55
-\pgfnodepartseventeenbox=\box56
-\pgfnodepartsixteenbox=\box57
-\pgfnodepartfifteenbox=\box58
-\pgfnodepartfourteenbox=\box59
-\pgfnodepartthirteenbox=\box60
-\pgfnodeparttwelvebox=\box61
-\pgfnodepartelevenbox=\box62
-\pgfnodeparttenbox=\box63
-\pgfnodepartninebox=\box64
-\pgfnodeparteightbox=\box65
-\pgfnodepartsevenbox=\box66
-\pgfnodepartsixbox=\box67
-\pgfnodepartfivebox=\box68
+\pgfnodepartlowerbox=\box51
+\pgfnodeparttwobox=\box52
+\pgfnodepartthreebox=\box53
+\pgfnodepartfourbox=\box54
+\pgfnodeparttwentybox=\box55
+\pgfnodepartnineteenbox=\box56
+\pgfnodeparteighteenbox=\box57
+\pgfnodepartseventeenbox=\box58
+\pgfnodepartsixteenbox=\box59
+\pgfnodepartfifteenbox=\box60
+\pgfnodepartfourteenbox=\box61
+\pgfnodepartthirteenbox=\box62
+\pgfnodeparttwelvebox=\box63
+\pgfnodepartelevenbox=\box64
+\pgfnodeparttenbox=\box65
+\pgfnodepartninebox=\box66
+\pgfnodeparteightbox=\box67
+\pgfnodepartsevenbox=\box68
+\pgfnodepartsixbox=\box69
+\pgfnodepartfivebox=\box70
 )))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
 ations.code.tex
@@ -1497,7 +1502,7 @@ ations.code.tex
 \pgfdecorationsegmentamplitude=\dimen217
 \pgfdecorationsegmentlength=\dimen218
 )
-\tikz@lib@dec@box=\box69
+\tikz@lib@dec@box=\box71
 )
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautom
 ata.code.tex
@@ -1506,8 +1511,8 @@ File: tikzlibraryautomata.code.tex 2008/07/14 v2.10 (rcs-revision 1.3)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackg
 rounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2010/02/08 v2.10 (rcs-revision 1.2)
-\pgf@layerbox@background=\box70
-\pgf@layerboxsaved@background=\box71
+\pgf@layerbox@background=\box72
+\pgf@layerboxsaved@background=\box73
 )
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypetri
 .code.tex
@@ -1520,8 +1525,8 @@ File: lettrine.sty 2007/08/08 v1.62 (Daniel Flipo)
 \DefaultFindent=\dimen219
 \DefaultNindent=\dimen220
 \DefaultSlope=\dimen221
-\L@lbox=\box72
-\L@tbox=\box73
+\L@lbox=\box74
+\L@tbox=\box75
 \c@L@lines=\count314
 \L@Pindent=\dimen222
 \L@Findent=\dimen223
@@ -1545,77 +1550,77 @@ Loading lettrine.cfg
  (./memoirthesis.aux)
 \openout1 = `memoirthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 324.
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 324.
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 324.
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 324.
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 324.
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 324.
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 324.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 326.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 326.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 326.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 326.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 326.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 326.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 326.
 LaTeX Font Info:    Try loading font information for FML+fncmi on input line 32
-4.
+6.
  (/usr/share/texmf-texlive/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 324.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 324
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 326.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 326
 .
 
 (/usr/share/texmf-texlive/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 324.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 324
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 326.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 326
 .
 
 (/usr/share/texmf-texlive/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 324.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 324.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 326.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 326.
 
 
 (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 324.
-LaTeX Font Info:    ... okay on input line 324.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 324.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 326.
+LaTeX Font Info:    ... okay on input line 326.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 326.
 
 (/usr/share/texmf-texlive/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 324.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 324.
+(Font)              scaled to size 10.18341pt on input line 326.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 326.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 324.
+Package layouts Warning: Layout scale set to 0.5 on input line 326.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count321
 \scratchdimen=\dimen257
-\scratchbox=\box74
+\scratchbox=\box76
 \nofMPsegments=\count322
 \nofMParguments=\count323
-\everyMPshowfont=\toks61
+\everyMPshowfont=\toks62
 \MPscratchCnt=\count324
 \MPscratchDim=\dimen258
 \MPnumerator=\count325
-\everyMPtoPDFconversion=\toks62
+\everyMPtoPDFconversion=\toks63
 )
-Package hyperref Info: Link coloring ON on input line 324.
+Package hyperref Info: Link coloring ON on input line 326.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -1624,17 +1629,17 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count326
 )
-LaTeX Info: Redefining \ref on input line 324.
-LaTeX Info: Redefining \pageref on input line 324.
+LaTeX Info: Redefining \ref on input line 326.
+LaTeX Info: Redefining \pageref on input line 326.
  (./memoirthesis.out) (./memoirthesis.out)
 \@outlinefile=\write6
 \openout6 = `memoirthesis.out'.
 
-\AtBeginShipoutBox=\box75
+\AtBeginShipoutBox=\box77
 
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \microtypecontext on input line 324.
+LaTeX Info: Redefining \microtypecontext on input line 326.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1646,15 +1651,15 @@ Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 324.
+put line 326.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 324.
+t line 326.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 324.
+t line 326.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 324.
+line 326.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 324.
+line 326.
  (./frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -1768,7 +1773,7 @@ l.18 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.349 \clearemptydoublepage
+l.351 \clearemptydoublepage
                             [2
 
 
@@ -1796,7 +1801,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
  [7])
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 361.
+(Font)              scaled to size 9.29993pt on input line 363.
  [8] (./memoirthesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
@@ -1833,7 +1838,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 
 ]
-<chapters/chapter01/"diagrams/polar_bear".jpg, id=386, 622.325pt x 414.54875pt>
+<chapters/chapter01/"diagrams/polar_bear".jpg, id=382, 622.325pt x 414.54875pt>
 File: chapters/chapter01/"diagrams/polar_bear".jpg Graphic file (type jpg)
 <use chapters/chapter01/"diagrams/polar_bear".jpg> [2 <./chapters/chapter01/dia
 grams/polar_bear.jpg>]
@@ -1860,7 +1865,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 5.57996pt on input line 27.
 
-<chapters/chapter02/"diagrams/niche_model".pdf, id=496, 845.1575pt x 313.17pt>
+<chapters/chapter02/"diagrams/niche_model".pdf, id=492, 845.1575pt x 313.17pt>
 File: chapters/chapter02/"diagrams/niche_model".pdf Graphic file (type pdf)
 
 <use chapters/chapter02/"diagrams/niche_model".pdf> [8 <./chapters/chapter02/di
@@ -1874,7 +1879,7 @@ Package nag Warning: Environment eqnarray is obsolete.
 (nag)                Use amsmath's align instead on input line 62.
 
 [9]
-<chapters/chapter02/"diagrams/trophic_cartoon".png, id=531, 991.705pt x 623.328
+<chapters/chapter02/"diagrams/trophic_cartoon".png, id=527, 991.705pt x 623.328
 75pt>
 File: chapters/chapter02/"diagrams/trophic_cartoon".png Graphic file (type png)
 
@@ -1890,7 +1895,7 @@ cmi/m/it/10.95 ; :::; \T1/fnc/m/n/10.95 (-20) 1\FML/fncmi/m/it/10.95 :\T1/fnc/m
  []
 
 
-<chapters/chapter02/"diagrams/IBM_movement".png, id=548, 771.88374pt x 814.0412
+<chapters/chapter02/"diagrams/IBM_movement".png, id=544, 771.88374pt x 814.0412
 4pt>
 File: chapters/chapter02/"diagrams/IBM_movement".png Graphic file (type png)
  <use chapters/chapter02/"diagrams/IBM_movement".png> [11]
@@ -1903,7 +1908,7 @@ File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
 (Font)              scaled to size 10.18341pt on input line 167.
  [12 <./chapters/chapter02/diagrams/IBM_movement.png>] [13]
-<chapters/chapter02/"tables/IBM_parameters".pdf, id=579, 597.23125pt x 845.1575
+<chapters/chapter02/"tables/IBM_parameters".pdf, id=575, 597.23125pt x 845.1575
 pt>
 File: chapters/chapter02/"tables/IBM_parameters".pdf Graphic file (type pdf)
  <use chapters/chapter02/"tables/IBM_parameters".pdf> [14] [15 <./chapters/chap
@@ -1916,377 +1921,116 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 ]
 (./chapters/chapter03/chap03.tex (./chapters/chapter03/chapter_3_content.tex
-<chapters/chapter03/"random_plots/Total abundance".pdf, id=626, 505.89pt x 505.
+<chapters/chapter03/"random_plots/Total abundance".pdf, id=622, 505.89pt x 505.
 89pt>
 File: chapters/chapter03/"random_plots/Total abundance".pdf Graphic file (type 
 pdf)
  <use chapters/chapter03/"random_plots/Total abundance".pdf>
-<chapters/chapter03/"contiguous_plots/Total abundance".pdf, id=627, 505.89pt x 
+<chapters/chapter03/"contiguous_plots/Total abundance".pdf, id=623, 505.89pt x 
 505.89pt>
 File: chapters/chapter03/"contiguous_plots/Total abundance".pdf Graphic file (t
 ype pdf)
  <use chapters/chapter03/"contiguous_plots/Total abundance".pdf>
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28         \begin{subfigure}
-                              [b]{0.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.28         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.28         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<chapters/chapter03/"random_plots/mean_cv".pdf, id=629, 505.89pt x 505.89pt>
+<chapters/chapter03/"random_plots/mean_cv".pdf, id=625, 505.89pt x 505.89pt>
 File: chapters/chapter03/"random_plots/mean_cv".pdf Graphic file (type pdf)
 
 <use chapters/chapter03/"random_plots/mean_cv".pdf>
-
-! LaTeX Error: \begin{figure} on input line 26 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.30         \end{subfigure}
-                            %
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32         \begin{subfigure}
-                              [b]{0.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.32         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.32         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-<chapters/chapter03/"contiguous_plots/mean_cv".pdf, id=630, 505.89pt x 505.89pt
+<chapters/chapter03/"contiguous_plots/mean_cv".pdf, id=626, 505.89pt x 505.89pt
 >
 File: chapters/chapter03/"contiguous_plots/mean_cv".pdf Graphic file (type pdf)
 
  <use chapters/chapter03/"contiguous_plots/mean_cv".pdf>
-
-! LaTeX Error: \begin{figure} on input line 26 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34         \end{subfigure}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Float too large for page by 368.2741pt on input line 36.
-
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42         \begin{subfigure}
-                              [b]{0.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.42         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.42         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<chapters/chapter03/"random_plots/IS3".pdf, id=632, 505.89pt x 505.89pt>
+<chapters/chapter03/"random_plots/IS3".pdf, id=628, 505.89pt x 505.89pt>
 File: chapters/chapter03/"random_plots/IS3".pdf Graphic file (type pdf)
 
 <use chapters/chapter03/"random_plots/IS3".pdf>
-
-! LaTeX Error: \begin{figure} on input line 40 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44         \end{subfigure}
-                            %
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.46         \begin{subfigure}
-                              [b]{0.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   }
-l.46         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.46         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-<chapters/chapter03/"contiguous_plots/IS3".pdf, id=633, 505.89pt x 505.89pt>
+<chapters/chapter03/"contiguous_plots/IS3".pdf, id=629, 505.89pt x 505.89pt>
 File: chapters/chapter03/"contiguous_plots/IS3".pdf Graphic file (type pdf)
 
 <use chapters/chapter03/"contiguous_plots/IS3".pdf>
-
-! LaTeX Error: \begin{figure} on input line 40 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.48         \end{subfigure}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Float too large for page by 368.2741pt on input line 50.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19
 
 ]
+[20pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+1}) has been already used, duplicate ignored
 
-! LaTeX Error: Environment subfigure undefined.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 
+     pdfTeX warning (ext4): destination with the same identifier (name{subfigur
+e.2}) has been already used, duplicate ignored
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56         \begin{subfigure}
-                              [b]{0.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 
+      <./chapters/chapter03/random_plots/Total abundance.pdf> <./chapters/chapt
+er03/contiguous_plots/Total abundance.pdf> <./chapters/chapter03/random_plots/m
+ean_cv.pdf> <./chapters/chapter03/contiguous_plots/mean_cv.pdf>]pdfTeX warning 
+(ext4): destination with the same identifier (name{subfigure.1}) has been alrea
+dy used, duplicate ignored
 <to be read again> 
-                   }
-l.56         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.56         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
+                   \relax 
+l.67 		\subbottom
+                 [Random destruction]{
 <chapters/chapter03/"random_plots/interaction_strength_distributions".png, id=6
-41, 586.8324pt x 442.2924pt>
+63, 586.8324pt x 442.2924pt>
 File: chapters/chapter03/"random_plots/interaction_strength_distributions".png 
 Graphic file (type png)
 
-<use chapters/chapter03/"random_plots/interaction_strength_distributions".png>
-
-! LaTeX Error: \begin{figure} on input line 54 ended by \end{subfigure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59         \end{subfigure}
-                            %
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment subfigure undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61         \begin{subfigure}
-                              [b]{0.5\textwidth}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
+<use chapters/chapter03/"random_plots/interaction_strength_distributions".png>p
+dfTeX warning (ext4): destination with the same identifier (name{subfigure.2}) 
+has been already used, duplicate ignored
 <to be read again> 
-                   }
-l.61         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   }
-l.61         \begin{subfigure}[b]{0.5\textwidth}
-                                                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
+                   \relax 
+l.72 		\subbottom
+                 [Contiguous destruction]{
 <chapters/chapter03/"contiguous_plots/interaction_strength_distributions".png, 
-id=642, 586.8324pt x 442.2924pt>
+id=664, 586.8324pt x 442.2924pt>
 File: chapters/chapter03/"contiguous_plots/interaction_strength_distributions".
 png Graphic file (type png)
 
 <use chapters/chapter03/"contiguous_plots/interaction_strength_distributions".p
-ng>
+ng> [21pdfTeX warning (ext4): destination with the same identifier (name{subfig
+ure.1}) has been already used, duplicate ignored
 
-! LaTeX Error: \begin{figure} on input line 54 ended by \end{subfigure}.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.80 
+     pdfTeX warning (ext4): destination with the same identifier (name{subfigur
+e.2}) has been already used, duplicate ignored
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.64         \end{subfigure}
-                            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Float too large for page by 174.57921pt on input line 66.
-
-
-<chapters/chapter03/"comparison_plots/compare_moransI_mean".png, id=644, 632.36
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.80 
+      <./chapters/chapter03/random_plots/IS3.pdf> <./chapters/chapter03/contigu
+ous_plots/IS3.pdf> <./chapters/chapter03/random_plots/interaction_strength_dist
+ributions.png> <./chapters/chapter03/contiguous_plots/interaction_strength_dist
+ributions.png>]
+<chapters/chapter03/"comparison_plots/compare_moransI_mean".png, id=682, 632.36
 25pt x 323.0469pt>
 File: chapters/chapter03/"comparison_plots/compare_moransI_mean".png Graphic fi
 le (type png)
 
 <use chapters/chapter03/"comparison_plots/compare_moransI_mean".png>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2351) has occurred while \output is active []
 
- [20 <./chapters/chapter03/random_plots/Total abundance.pdf> <./chapters/chapte
-r03/contiguous_plots/Total abundance.pdf>] [21 <./chapters/chapter03/random_plo
-ts/mean_cv.pdf> <./chapters/chapter03/contiguous_plots/mean_cv.pdf>] [22 <./cha
-pters/chapter03/random_plots/IS3.pdf> <./chapters/chapter03/contiguous_plots/IS
-3.pdf>]
-[23 <./chapters/chapter03/random_plots/interaction_strength_distributions.png> 
-<./chapters/chapter03/contiguous_plots/interaction_strength_distributions.png>]
-
-<chapters/chapter03/"comparison_plots/comparing_mean_IS1".png, id=700, 586.8324
+ [22 <./chapters/chapter03/comparison_plots/compare_moransI_mean.png>]
+<chapters/chapter03/"comparison_plots/comparing_mean_IS1".png, id=693, 586.8324
 pt x 442.2924pt>
 File: chapters/chapter03/"comparison_plots/comparing_mean_IS1".png Graphic file
  (type png)
 
-<use chapters/chapter03/"comparison_plots/comparing_mean_IS1".png> [24 <./chapt
-ers/chapter03/comparison_plots/compare_moransI_mean.png>]
-<chapters/chapter03/"comparison_plots/compare_shannoneq_mean".png, id=708, 672.
+<use chapters/chapter03/"comparison_plots/comparing_mean_IS1".png> [23 <./chapt
+ers/chapter03/comparison_plots/comparing_mean_IS1.png>]
+<chapters/chapter03/"comparison_plots/compare_shannoneq_mean".png, id=701, 672.
 8337pt x 347.6187pt>
 File: chapters/chapter03/"comparison_plots/compare_shannoneq_mean".png Graphic 
 file (type png)
 
 <use chapters/chapter03/"comparison_plots/compare_shannoneq_mean".png>
-<chapters/chapter03/"comparison_plots/compare_h2_mean".png, id=709, 586.8324pt 
+<chapters/chapter03/"comparison_plots/compare_h2_mean".png, id=702, 586.8324pt 
 x 442.2924pt>
 File: chapters/chapter03/"comparison_plots/compare_h2_mean".png Graphic file (t
 ype png)
@@ -2295,7 +2039,7 @@ ype png)
 pdfTeX warning: pdflatex (file ./chapters/chapter03/random_plots/RADs_mut0.pdf)
 : PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 
-<chapters/chapter03/"random_plots/RADs_mut0".pdf, id=710, 505.89pt x 505.89pt>
+<chapters/chapter03/"random_plots/RADs_mut0".pdf, id=703, 505.89pt x 505.89pt>
 File: chapters/chapter03/"random_plots/RADs_mut0".pdf Graphic file (type pdf)
 
 <use chapters/chapter03/"random_plots/RADs_mut0".pdf>
@@ -2304,74 +2048,69 @@ pdfTeX warning: pdflatex (file ./chapters/chapter03/contiguous_plots/RADS_mut0.
 pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
 
 
-<chapters/chapter03/"contiguous_plots/RADS_mut0".pdf, id=714, 505.89pt x 505.89
+<chapters/chapter03/"contiguous_plots/RADS_mut0".pdf, id=707, 505.89pt x 505.89
 pt>
 File: chapters/chapter03/"contiguous_plots/RADS_mut0".pdf Graphic file (type pd
 f)
- <use chapters/chapter03/"contiguous_plots/RADS_mut0".pdf> [25 <./chapters/chap
-ter03/comparison_plots/comparing_mean_IS1.png>])) [26 <./chapters/chapter03/com
-parison_plots/compare_shannoneq_mean.png>] [27 <./chapters/chapter03/comparison
-_plots/compare_h2_mean.png>] [28 <./chapters/chapter03/random_plots/RADs_mut0.p
-df>] [29 <./chapters/chapter03/contiguous_plots/RADS_mut0.pdf>] [30
+ <use chapters/chapter03/"contiguous_plots/RADS_mut0".pdf> [24 <./chapters/chap
+ter03/comparison_plots/compare_shannoneq_mean.png>] [25 <./chapters/chapter03/c
+omparison_plots/compare_h2_mean.png>] [26 <./chapters/chapter03/random_plots/RA
+Ds_mut0.pdf>] [27 <./chapters/chapter03/contiguous_plots/RADS_mut0.pdf>]))
+[28] (./chapters/chapter04/chap04.tex
+(./chapters/chapter04/chapter_4_content.tex
+
+LaTeX Warning: Reference `ch:3' on page 29 undefined on input line 15.
+
+[29
+
 
 ]
-(./chapters/chapter04/chap04.tex (./chapters/chapter04/chapter_4_content.tex
 
-LaTeX Warning: Reference `ch:3' on page 31 undefined on input line 15.
-
-[31
-
-]
-
-LaTeX Warning: Reference `ch:where' on page 32 undefined on input line 17.
+LaTeX Warning: Reference `ch:where' on page 30 undefined on input line 17.
 
 
-LaTeX Warning: Reference `sec:where_is_ref' on page 32 undefined on input line 
+LaTeX Warning: Reference `sec:where_is_ref' on page 30 undefined on input line 
 24.
 
 
-LaTeX Warning: Reference `sec:where_is' on page 32 undefined on input line 26.
+LaTeX Warning: Reference `sec:where_is' on page 30 undefined on input line 26.
 
 
-LaTeX Warning: Reference `sec:where' on page 32 undefined on input line 26.
+LaTeX Warning: Reference `sec:where' on page 30 undefined on input line 26.
 
-[32]
-! Undefined control sequence.
-l.33 \afterpage
-               {%
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[30])) [31
 
-<chapters/chapter04/"figures/sum_maps".png, id=778, 1675.2186pt x 919.2744pt>
-File: chapters/chapter04/"figures/sum_maps".png Graphic file (type png)
+]
 
-<use chapters/chapter04/"figures/sum_maps".png>
-Overfull \hbox (107.78264pt too wide) in paragraph at lines 38--40
-[]  [] 
- []
+! LaTeX Error: File `"figures/sum_maps"' not found.
 
-)) [33
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.388 \clearemptydoublepage
+                           
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-] [34 <./chapters/chapter04/figures/sum_maps.png>]
-(./chapters/chapter05/chap05.tex) [35
+[32] (./chapters/chapter05/chap05.tex) [33
 
 
-] [36
+] [34
 
-] (./chapters/appendices/app0A.tex
+]
+(./chapters/appendices/app0A.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 36.3328pt on input line 10.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 53.44917pt on input line 10.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 53.44917pt on input line 10.
-)
-[37
+) [35
 
-] [38
+] [36
 
 ] (./memoirthesis.bbl
 
@@ -2414,7 +2153,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 54.
 
-[39
+[37
 
 
 ]
@@ -2468,7 +2207,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 114.
 
-[40]
+[38]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 120.
@@ -2517,7 +2256,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 174.
 
-[41]
+[39]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 178.
@@ -2534,7 +2273,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 194.
 
-) [42]
+) [40]
 
 Package nag Warning: 40 complaints in total.
 
@@ -2553,13 +2292,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25629 strings out of 493848
- 452463 string characters out of 1152822
- 741870 words of memory out of 3000000
- 27675 multiletter control sequences out of 15000+50000
+ 25649 strings out of 493848
+ 452563 string characters out of 1152822
+ 742270 words of memory out of 3000000
+ 27687 multiletter control sequences out of 15000+50000
  109954 words of font info for 363 fonts, out of 3000000 for 9000
  719 hyphenation exceptions out of 8191
- 53i,12n,56p,1778b,605s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,56p,1778b,607s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/fourier/fourier-bb.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/fourier/fourier-mex.pfb></usr/share/texmf-texlive/fonts/type1/public
@@ -2569,9 +2308,9 @@ usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-t
 exlive/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/ncntrsbk/uncr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/ncntrsbk/un
 cri8a.pfb>
-Output written on memoirthesis.pdf (56 pages, 1460282 bytes).
+Output written on memoirthesis.pdf (54 pages, 1287795 bytes).
 PDF statistics:
- 892 PDF objects out of 1000 (max. 8388607)
- 182 named destinations out of 1000 (max. 500000)
- 44990 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 875 PDF objects out of 1000 (max. 8388607)
+ 178 named destinations out of 1000 (max. 500000)
+ 44985 words of extra memory for PDF output out of 51595 (max. 10000000)
 

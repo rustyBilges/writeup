@@ -8,12 +8,17 @@ For both habitat loss scenarios there is no loss of species richness up to $90 \
 
 \begin{figure} 
 		\centering      
-		\subbottom[What]{
+		%% ARCEHTYPAL SUBOTTOM CHANGES... (ADD TO PREAMBLE?)
+		\renewcommand{\thesubfigure}{}% no subfigure number
+		\tightsubcaptions % we want tight subcaptions
+		\setlength{\subfloatlabelskip}{0pt}% no space between number and caption
+		
+		\subbottom[]{
         %\begin{subfigure}[b]{0.5\textwidth}
                 \includegraphics[width=0.45\linewidth]{"random_plots/Total abundance"}}
 %
         ~
-        \subbottom[What]{
+        \subbottom[]{
         %\begin{subfigure}[b]{0.5\textwidth}
                 \includegraphics[width=0.45\linewidth]{"contiguous_plots/Total abundance"}}
         %\end{subfigure}
@@ -25,13 +30,17 @@ Although habitat destruction does not lead to extinctions, it does reduce the to
 
 \begin{figure} 
 		\centering      
-        \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{"random_plots/mean_cv"}
-        \end{subfigure}%
+		\subbottom[]{
+        %\begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=0.45\textwidth]{"random_plots/mean_cv"}
+        %\end{subfigure}%
+        }
         ~
-        \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{"contiguous_plots/mean_cv"}
-        \end{subfigure}
+		\subbottom[]{
+        %\begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=0.45\textwidth]{"contiguous_plots/mean_cv"}
+        %\end{subfigure}
+        }
         \caption{\textbf{Mean CV in total biomass} across replicate commmunities against habitat loss for selected MAI ratios. Left: random destruction leads to an increase in temporal stability, as indicated by a decrease in CV. Right: contiguous destruction drammatically reduces temporal stability.}\label{fig:temporal_stability}
 \end{figure}
 
@@ -39,13 +48,15 @@ How community stability is affected by loss of habitat is of particular interest
 
 \begin{figure} 
 		\centering      
-        \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{"random_plots/IS3"}
-        \end{subfigure}%
+		\subbottom[]{
+%        \begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=0.45\textwidth]{"random_plots/IS3"}
+        }%\end{subfigure}%
         ~
-        \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{"contiguous_plots/IS3"}
-        \end{subfigure}
+		\subbottom[]{
+%        \begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=0.45\textwidth]{"contiguous_plots/IS3"}
+        }%\end{subfigure}
         \caption{\textbf{Interaction strengths:} The sum of the elements of the interaction matrix, averaged over replicate commmunities, for selected MAI ratios. Left: random destruction reduces total interaction strength. Right: contiguous destruction drammatically increases total interaction strength.}\label{fig:IS3}
 \end{figure}
 
@@ -53,15 +64,15 @@ From figure \ref{fig:IS3} it is clear that the response in temporal stability is
 
 \begin{figure} 
 		\centering      
-        \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{"random_plots/interaction_strength_distributions"}
-                \caption{Random destruction}
-        \end{subfigure}%
+		\subbottom[Random destruction]{
+%        \begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=0.45\textwidth]{"random_plots/interaction_strength_distributions"}
+        }%\end{subfigure}%
         ~
-        \begin{subfigure}[b]{0.5\textwidth}
-                \includegraphics[width=\textwidth]{"contiguous_plots/interaction_strength_distributions"}
-                \caption{Contiguous destruction}
-        \end{subfigure}
+		\subbottom[Contiguous destruction]{
+%        \begin{subfigure}[b]{0.5\textwidth}
+                \includegraphics[width=0.45\textwidth]{"contiguous_plots/interaction_strength_distributions"}
+        }%\end{subfigure}
         \caption{\textbf{IS3 distributions:} The interaction strength distribution shifts leftwards for random habitat loss, and rightwards for contiguous loss. The extent of this shift is mediated by MAI ratio - it is most visibile for MAI$=0$, and least visbile for MAI$=1$.}\label{fig:IS3_distributions}
 \end{figure}
 

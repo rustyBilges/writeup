@@ -31,19 +31,19 @@
 \contentsline {subsection}{\numberline {2.3.5}Interaction strength metrics}{17}{subsection.2.3.5}
 \contentsline {chapter}{\chapternumberline {3}Habitat loss with high immigration}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Response of ecological metrics}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}More preliminary results}{25}{section.3.2}
-\contentsline {section}{\numberline {3.3}Further development and work to do}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Work to do}{25}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Further development}{26}{subsection.3.3.2}
-\contentsline {chapter}{\chapternumberline {4}Varying Immigration rate}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Assumptions of what has gone before}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Literature review for immigration}{31}{section.4.2}
-\contentsline {section}{\numberline {4.3}Simulations without immigration}{31}{section.4.3}
-\contentsline {section}{\numberline {4.4}Exploration of parameter space: habitat loss and immigration}{32}{section.4.4}
-\contentsline {section}{\numberline {4.5}Further investigation of these trends - RADS, dynamics}{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}Habitat loss with low immigration}{33}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Stability}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Persistence without immigration?}{35}{section.5.1}
-\contentsline {section}{\numberline {5.2}Why are some networks more stable than others?}{35}{section.5.2}
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{37}{appendix.A}
-\contentsline {chapter}{Bibliography}{39}{section*.13}
+\contentsline {section}{\numberline {3.2}More preliminary results}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}Further development and work to do}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Work to do}{24}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Further development}{25}{subsection.3.3.2}
+\contentsline {chapter}{\chapternumberline {4}Varying Immigration rate}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Assumptions of what has gone before}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Literature review for immigration}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Simulations without immigration}{29}{section.4.3}
+\contentsline {section}{\numberline {4.4}Exploration of parameter space: habitat loss and immigration}{30}{section.4.4}
+\contentsline {section}{\numberline {4.5}Further investigation of these trends - RADS, dynamics}{31}{section.4.5}
+\contentsline {section}{\numberline {4.6}Habitat loss with low immigration}{31}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}Stability}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Persistence without immigration?}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Why are some networks more stable than others?}{33}{section.5.2}
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{35}{appendix.A}
+\contentsline {chapter}{Bibliography}{37}{section*.13}

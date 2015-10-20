@@ -3,6 +3,8 @@
 \begin{itemize}
 	\item Discussion of what we will now refer to as "default parameter values"
 	\item Conclusion that there is something unrealistic about the immigration mechanism (rate too high)
+	
+	\item TODo: linear interactions? (should it be that freq/predabun should be linear in preyabun? Same gradient across species?) If so we should be able to fit a GLV, if not via Timme, then via repreated simulations and some numerical optimisation.
 \end{itemize}
 
 \section{Literature review for immigration}
@@ -25,25 +27,86 @@ Here we explore how immigration mediates the effects of habitat loss, for three 
 
 Results of these simulations can be concisely represented as heat maps over the region of parameter space explored. Figure \ref{fig:summary_heatmaps_imvshl} shows the average response of three summary metrics to changes in immigration and habitat destruction. As was discussed in section \ref{sec:where_is}, no species extinctions are expected for sufficiently high levels of immigration. This is because the immigration mechanism provides a significant recovery effect. It allows species that have gone locally extinct (from the simulation landscape) to recover by occupying empty cells. Therefore, for immigration values close to those used in the original simulations (chapter \ref{sec:where}), the average number of species that have gone extinct at the end of a simulation is close to zero\footnote{Since it is possible for a species to go extinct and to subsequently recover it may be sensible to use another definition of 'extinct'.}. This is true for all MAI ratios as shown by the left column of heat maps in figure \ref{fig:summary_heatmaps_imvshl}. Reducing the immigration value weakens the recovery effect and therefore
 
+\begin{itemize}
+	\item Low immigration -> extinctions possible, even for no HL
+	\item For these lower immigration values, the number of expected extinctions increases with habitat loss. This makes sense. However still not see community collapse, since species that have gone extinct may be rescused. Suggest that the situations may be a few very rare species, that are effectively extinct (not interacting) but rescused by occassional immigration event. (Look at RADS, and interaction frequencies.).
+	\item Interestingly the trends in extinctions described appear stronger for higher MAI ratio. That is, on average we expect a greater number of extinctions for high MAI (1.0) than for low MAI ratio (0.0), all else being equal. This can possibly be explained by looking at the second column of heat maps - we also expect on avergae a greater total number of individuals at the end of a simulation for high MAI ratio. This means that fewer landscape cells are empty, which reduces the possiblity for immigration and therefore reduces the effective immigration rate and resuce effect, leading to more extinctions (of those very rare species we had before, 'bubbling along' - unproven reasoning but makes sense).
+	
+	\item The expected biomass of a community (total number of individuals belonging to all species) shows interesting trends which are mediated by MAI ratio. For purely antagonistic communities ($MAI = 0.0$) higher levels of immigration appear to support larger biomasses, especially at low levels of habitat destruction. This may be understood as briths due to immigration supplementing births due to the reproduction of individuals in the local community. However there is also an visible trend that very low immigration levels also increase the total expected biomass. This is a non-trivial effect and requires more anlysis to explain. Since we know that at zero immigration, all non-plant species go extinct, we may expect that in this region of low immmigration non-plant species are becomming rare. Therefore we may suspect that this observed increase in biomass here is accounted for by plant biomass, which benefit from the increased rareity of animal consumers.  ..This trend extends to the response to HL - as HL increases antagonistic communities with low and high levels of immigration maintain higher total biomasses than those with intermediate immigration rates. However we may suspect that the compositions of these communities may differ..INVESTIGATE.
+	
+	\item Importanty it should ne noted that communities with higher MAI ratios support a greater number of individuals, on avergae, than those with low MAI ratio, regardless of immigration. This is especially visible at low levels of HL - considering the case of immigration $= 0.005$ : the expected number of inidiciduals for a community with $MAI=0.0$ is around $20,000$, compared to around $50,000$ for a community with $AMI=1.0$. It is not as clear (from the heatmaps) wether this difference remains as significant at high levels of habitat destruction - INVESTIAGTE THIS. We may conclude from this that, in some sense mutualism is better for the overall community than 'non-mutualism'. Is it that it is a better form of reproduction for the plants. Does it only benefit those species involved in the mutualistic interactions, such that we end up with communities dominated by mutualists (which out compete non-mutalists)? Or does mutualism benefit the wider community also?
+	
+	\item For higher MAI ratio the response of total community biomass to habitat loss does not appear to be mediated by immigration. In fact immigration rate appears to make little difference to the expected total biomass, for these hybrid antaonistic-mutualistic communities. (In the case of $MAI=0.5$ there may be some remnant of the effect discussed above.) Again we may expect that community composition is changing, without noticeable effect on total biomass. It makes sense that mutualistic communities do not respond in the same way to a reduction in the number of non-plant species (if this is what is driven the previous pattern). It may be that the benefit due to the loss in animal consumers in balanced by the harm due to the loss in mutalsistic partners. If this is the case we may expect a shift away from mutualistic dominaince towards antagonsitic dominance in the lower (basal?) trophic levels (or if not 'dominance' at least a shift in relative abundances.)  
+	
+	\item The coefficient of variation (CoV) of the overall biomass is taken as a crude measure for the stability of the dynamics. In general we see a superposition of trends in the response of CoV to immiragtion and habitat loss. In general increasing habitat destruction, decreases the stability of the dynamics (for contiguous destruction - c.f. conflicting result for random destruction). Also desceasing the immigration values, decreases the stability of the dynamics in general. This second trend makes sense -  since we know that the are stable co-existence equilibria  for this model at high levels of immigration, and that there are not for zero immigration, it is expected that the system should pass through a region of instability in switching between these regimes (bifurcation?).
+	
+	\item There is oneexception to the above - which is that at very low immigration, or very high habitat destruction, the trend appears to be disrupted. More on this? 
+	
+	\item Both trends in stability are expressed most strongly in antagonistic communities (case of $MIA=0$), and are only weakly visible in pure mutalistic communities ($MAI=0.0$). This suggests that mutualism is a stabilising influence, or at least dampens the destabilising effects of varying immigration and of habitat destruction. (This is also suggested by the abouve notes trtends in total biomass.)
+	
+\end{itemize}
+
+%\begin{figure}
+%	\includegraphics[]{"figures/sum_maps"}
+%\end{figure}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Archetypal rotated figure page:
 %% STILL BEING A PAIN IN THE ARSE - NEEDS WORKING ON!
 %\newpage
+
 \clearpage
 \afterpage{%
 \thispagestyle{empty}
 \begin{sidewaysfigure}
 
-%		\centering      
+		\centering      
 		\hspace{-3cm}
-        \includegraphics[width=1.3\linewidth]{"figures/sum_maps"}
+
+        \includegraphics[width=\linewidth]{"./chapters/chapter04/figures/sum_maps"}
         \caption{\textbf{Summary heat maps:} describe them.}\label{fig:summary_heatmaps_imvshl}
         %% Note: this figure generated by Documents/IM_vs_HL_heatmap/plot_sum_maps.py
 \end{sidewaysfigure}
 
+%\begin{figure}
+%	\includegraphics[width=\linewidth]{"figures/sum_maps"}
+%\end{figure}
 }
 
+%\begin{figure}
+%	%\centering	
+%	\hspace{-2.5cm}
+%	\includegraphics[width=1.3\linewidth]{"./chapters/chapter04/figures/init_proportions"}
+%	\caption{The mean initial number of species belogning to each functional gropup.}
+%\end{figure}
+
+
+
 \section{Further investigation of these trends - RADS, dynamics}
+
+TODO:
+
+\begin{itemize}
+	\item plot RADS (single run with TL colours, average with error bars) and RAS (relative abudnaces of trophic levels) to demonstrate some of the above arguements - are they correct in their interpretation?
+	
+	\item more heatmaps - relative abundances by trophic level/functional group
+	\item plot some example dynamics to deomnstrate changes in stability (use total biomass and by trophic level. Maybe one with all species.)
+\end{itemize}
+
+\section{Points for discussion}
+
+A comparison of the relative merits of being a mutualist versus a non-mutualist is worthwhile. Importantly it must be remembered that mutualistic interactions are also trophic interactions. In our case, energy is transferred from producer to animal. So there is some loss/detriment to the producer. However this loss is balanced or made up for by the benefit of reproduction. An assumption, in our model at least, is that the mutualistic method of reproduction must be 'better' in some sense than the non-mutualistic alternative in order to justify the cost of the trophic interaction involved. In the context of our model this means..
+
+Table \ref{tab:parameters} shows the default parameter values used for most simulations. Lets consider the potential benefit of switching a single herbivourous link for a mutualistic link, for either party. If the plant is a non-mutualist it must impart 20\% of its energy to the offsrping when reproducing (this happens with a probability of 0.01 on each iteration). It is also subject to lose 70\% when it is encountered by this herbivour. If it were to switch this herbviourous link for a mutualistic link it would only lose 25\% of its energy in the interaction, and it would pass on a seed that is almost guaranteed (really?) to generate an offspring. Therefore the cost of reproducing is slightly increased for a mutualist, but the cost of interacting with an indivdual from the trophic level above is dramtically reduced. There is an additional benefit that the mutualistic reproduction can occur over a greater distance. The net gain loss of this change depends on the probability/rate of interaction. We should investigate htis, however the results suggest that being a mutualist is of signnficiant benefit to plants - mutualistic plants oare relatively more abundant than non-mutualistic ones, except in the case of high habitat loss or low immigration (when there are few enough mutualistic partners that interactions become infrequent?) 
+
+For animals there is no cost to carrying and spawning the seed of their mutualistic partners. The only change in the switching of mutalistic links is the amount of energy that they receive from the interaction. During a herbivourous interaction, the hebivore takes 70\% of ther plant's energy, and assimilates it with an efficeincy of 80\%. Therefore it obtains ~60\% of the plants energy. During a mutualistic interaction the animal-mutualist takes and assimilates 25\% of the plants energy. Therefore on an interaction by iteraction basis there is a negative trade off for an animal in switching its link to mutualistic. However there may be an emergent benefit in that this type of interaction is much better for plants, therefore increasing the plant biomass and therefore indirectly benefiting animlal (mutualists and non-mutualists?) due to the increaed frequency of interactions (density of plants).       
+
+\begin{itemize}
+	\item Do mutualistic plants only reproduce mutualistically?
+	\item Does MATINGRESOURCE apply to mutualistic interactions?
+	\item Why are top predators able to eat plants?!! Does omnivory trade off apply??
+\end{itemize}
+
 
 \section{Habitat loss with low immigration}
 

@@ -1,51 +1,46 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 453 of file thesisbiblio.bib
- : @article{lurgi2015effects
- :                          ,
-I'm skipping whatever remains of this entry
-Warning--empty journal in tilman1994habitat
-You've used 38 entries,
+You've used 1 entry,
             2030 wiz_defined-function locations,
-            742 strings with 11995 characters,
-and the built_in function-call counts, 18200 in all, are:
-= -- 1789
-> -- 1043
+            505 strings with 3916 characters,
+and the built_in function-call counts, 420 in all, are:
+= -- 43
+> -- 13
 < -- 0
-+ -- 419
-- -- 372
-* -- 1534
-:= -- 2795
-add.period$ -- 38
-call.type$ -- 38
-change.case$ -- 291
++ -- 5
+- -- 4
+* -- 31
+:= -- 66
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 704
-empty$ -- 1078
-format.name$ -- 372
-if$ -- 3820
+cite$ -- 1
+duplicate$ -- 19
+empty$ -- 30
+format.name$ -- 4
+if$ -- 90
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 39
-newline$ -- 117
-num.names$ -- 76
-pop$ -- 231
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 6
+num.names$ -- 2
+pop$ -- 3
 preamble$ -- 1
-purify$ -- 254
+purify$ -- 4
 quote$ -- 0
-skip$ -- 702
+skip$ -- 20
 stack$ -- 0
-substring$ -- 1338
-swap$ -- 360
+substring$ -- 37
+swap$ -- 10
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
-warning$ -- 1
-while$ -- 181
-width$ -- 40
-write$ -- 340
-(There was 1 error message)
+type$ -- 4
+warning$ -- 0
+while$ -- 5
+width$ -- 2
+write$ -- 11

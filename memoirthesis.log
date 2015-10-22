@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  22 OCT 2015 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  22 OCT 2015 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1903,14 +1903,14 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 9.29993pt on input line 29.
 [2]
-<"./chapters/chapter04/figures/init_proportions".png, id=58, 1734.48pt x 922.88
-79pt>
+<"./chapters/chapter04/figures/init_proportions".png, id=58, 1445.4pt x 442.292
+4pt>
 File: "./chapters/chapter04/figures/init_proportions".png Graphic file (type pn
 g)
  <use "./chapters/chapter04/figures/init_proportions".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/init_proportions".png us
 ed on input line 36.
-(pdftex.def)             Requested size: 582.40137pt x 309.89107pt.
+(pdftex.def)             Requested size: 582.40137pt x 178.21634pt.
 
 Overfull \hbox (65.42836pt too wide) in paragraph at lines 35--37
 []  [] 
@@ -1929,12 +1929,12 @@ LaTeX Warning: Reference `sec:whereis' on page 3 undefined on input line 43.
 LaTeX Warning: Reference `ch:whereis' on page 3 undefined on input line 45.
 
 
-Underfull \vbox (badness 1448) has occurred while \output is active []
+LaTeX Warning: Reference `sec:whereis' on page 3 undefined on input line 47.
+
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
 
  [3 <./chapters/chapter04/figures/init_proportions.png>]
-
-LaTeX Warning: Reference `sec:whereis' on page 4 undefined on input line 47.
-
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 8.36993pt on input line 49.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1947,7 +1947,7 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 49.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 49.
-[4]
+ [4]
 <"./chapters/chapter04/figures/sum_maps".png, id=80, 1675.2186pt x 919.2744pt>
 File: "./chapters/chapter04/figures/sum_maps".png Graphic file (type png)
 
@@ -2035,39 +2035,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 	\subbottom
+l.161 	\subbottom
                  [The relative abundance of species belonging to each of the...
 
-<"./chapters/chapter04/figures/rel_abun_tl_mai_0".png, id=160, 578.16pt x 433.6
+<"./chapters/chapter04/figures/rel_abun_tl_mai_0".png, id=161, 578.16pt x 433.6
 2pt>
 File: "./chapters/chapter04/figures/rel_abun_tl_mai_0".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_tl_mai_0".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_tl_mai_0".png u
-sed on input line 159.
+sed on input line 161.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.160 	\subbottom
+l.162 	\subbottom
                  []{\includegraphics[width=0.8\linewidth]{"./chapters/chapte...
 
-<"./chapters/chapter04/figures/rel_abun_tl_mai_1".png, id=161, 578.16pt x 433.6
+<"./chapters/chapter04/figures/rel_abun_tl_mai_1".png, id=162, 578.16pt x 433.6
 2pt>
 File: "./chapters/chapter04/figures/rel_abun_tl_mai_1".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_tl_mai_1".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_tl_mai_1".png u
-sed on input line 160.
+sed on input line 162.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 162.
+Package nag Warning: \label in float, but not after \caption on input line 164.
 
 
 
-Package nag Warning: figure with no \caption on input line 163.
+Package nag Warning: figure with no \caption on input line 165.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2076,39 +2076,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 	\subbottom
+l.173 	\subbottom
                  [The relative abundance of species belonging to each of the...
 
-<"./chapters/chapter04/figures/rel_abun_fg_mai_5".png, id=162, 1300.86pt x 756.
+<"./chapters/chapter04/figures/rel_abun_fg_mai_5".png, id=163, 1300.86pt x 756.
 6669pt>
 File: "./chapters/chapter04/figures/rel_abun_fg_mai_5".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_fg_mai_5".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_fg_mai_5".png u
-sed on input line 171.
+sed on input line 173.
 (pdftex.def)             Requested size: 358.40137pt x 208.47083pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.172 	\subbottom
+l.174 	\subbottom
                  []{\includegraphics[width=0.8\linewidth]{"./chapters/chapte...
 
-<"./chapters/chapter04/figures/rel_abun_fg_mai_1".png, id=163, 1300.86pt x 756.
+<"./chapters/chapter04/figures/rel_abun_fg_mai_1".png, id=164, 1300.86pt x 756.
 6669pt>
 File: "./chapters/chapter04/figures/rel_abun_fg_mai_1".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_fg_mai_1".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_fg_mai_1".png u
-sed on input line 172.
+sed on input line 174.
 (pdftex.def)             Requested size: 358.40137pt x 208.47083pt.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 174.
+Package nag Warning: \label in float, but not after \caption on input line 176.
 
 
 
-Package nag Warning: figure with no \caption on input line 175.
+Package nag Warning: figure with no \caption on input line 177.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2118,24 +2118,24 @@ er04/figures/rel_abun_tl_mai_1.png>] [14 <./chapters/chapter04/figures/rel_abun
 _fg_mai_5.png> <./chapters/chapter04/figures/rel_abun_fg_mai_1.png>]
 
 LaTeX Warning: Reference `tab:parameters' on page 15 undefined on input line 21
-4.
+6.
 
 [15
 
 ]
-<"./chapters/chapter04/figures/single_rads".png, id=186, 939.51pt x 756.6669pt>
+<"./chapters/chapter04/figures/single_rads".png, id=187, 939.51pt x 756.6669pt>
 File: "./chapters/chapter04/figures/single_rads".png Graphic file (type png)
 <use "./chapters/chapter04/figures/single_rads".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/single_rads".png used on
- input line 225.
+ input line 227.
 (pdftex.def)             Requested size: 636.60028pt x 512.70245pt.
 
-<"./chapters/chapter04/figures/mean_rads".png, id=187, 939.51pt x 756.6669pt>
+<"./chapters/chapter04/figures/mean_rads".png, id=188, 939.51pt x 756.6669pt>
 File: "./chapters/chapter04/figures/mean_rads".png Graphic file (type png)
 
 <use "./chapters/chapter04/figures/mean_rads".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/mean_rads".png used on i
-nput line 225.
+nput line 227.
 (pdftex.def)             Requested size: 636.60028pt x 512.70245pt.
 )) [16] [17 <./chapters/chapter04/figures/single_rads.png>] [18 <./chapters/cha
 pter04/figures/mean_rads.png>] (./memoirthesis.bbl
@@ -2178,10 +2178,10 @@ exlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (20 pages, 1022976 bytes).
+Output written on memoirthesis.pdf (20 pages, 998735 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
  58 named destinations out of 1000 (max. 500000)
  31884 words of extra memory for PDF output out of 35830 (max. 10000000)
 

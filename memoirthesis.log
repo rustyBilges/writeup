@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  22 OCT 2015 08:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  22 OCT 2015 17:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1811,46 +1811,42 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 7.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 7.
+(Font)              scaled to size 10.18341pt on input line 9.
 
 
-LaTeX Warning: Reference `tab:parameters' on page 1 undefined on input line 7.
+LaTeX Warning: Reference `tab:parameters' on page 1 undefined on input line 9.
 
 
-LaTeX Warning: Reference `ch:3' on page 1 undefined on input line 19.
+LaTeX Warning: Reference `ch:3' on page 1 undefined on input line 21.
 
 
-LaTeX Warning: Reference `tab:parameters' on page 1 undefined on input line 19.
+LaTeX Warning: Reference `tab:parameters' on page 1 undefined on input line 21.
 
-
-
-LaTeX Warning: Reference `ch:habitat_loss' on page 1 undefined on input line 19
-.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 19.
+(Font)              scaled to size 7.71893pt on input line 21.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 19.
+(Font)              scaled to size 5.57996pt on input line 21.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 19.
+(Font)              scaled to size 10.07397pt on input line 21.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 19.
+(Font)              scaled to size 7.63599pt on input line 21.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 19.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 19.
+(Font)              scaled to size 5.51999pt on input line 21.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 19.
+(Font)              scaled to size 10.07397pt on input line 21.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 19.
+(Font)              scaled to size 7.63599pt on input line 21.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 19.
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+(Font)              scaled to size 5.51999pt on input line 21.
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1858,7 +1854,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1866,20 +1862,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 19.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 19.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 19.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1888,7 +1884,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
 
-LaTeX Warning: Reference `sec:whereis' on page 1 undefined on input line 19.
+LaTeX Warning: Reference `sec:whereis' on page 1 undefined on input line 21.
 
 [1
 
@@ -1896,135 +1892,182 @@ LaTeX Warning: Reference `sec:whereis' on page 1 undefined on input line 19.
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 25.
 
-LaTeX Warning: Reference `ch:stability' on page 2 undefined on input line 23.
+
+LaTeX Warning: Reference `ch:stability' on page 2 undefined on input line 25.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 30.
+(Font)              scaled to size 9.29993pt on input line 29.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 30.
+(Font)              scaled to size 9.29993pt on input line 29.
 [2]
-<"./chapters/chapter04/figures/sum_maps".png, id=62, 1675.2186pt x 919.2744pt>
+<"./chapters/chapter04/figures/init_proportions".png, id=58, 1734.48pt x 922.88
+79pt>
+File: "./chapters/chapter04/figures/init_proportions".png Graphic file (type pn
+g)
+ <use "./chapters/chapter04/figures/init_proportions".png>
+Package pdftex.def Info: "./chapters/chapter04/figures/init_proportions".png us
+ed on input line 36.
+(pdftex.def)             Requested size: 582.40137pt x 309.89107pt.
+
+Overfull \hbox (65.42836pt too wide) in paragraph at lines 35--37
+[]  [] 
+ []
+
+
+LaTeX Warning: Reference `sec:whereis' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Reference `sec:whereis' on page 3 undefined on input line 37.
+
+
+LaTeX Warning: Reference `sec:whereis' on page 3 undefined on input line 43.
+
+
+LaTeX Warning: Reference `ch:whereis' on page 3 undefined on input line 45.
+
+
+Underfull \vbox (badness 1448) has occurred while \output is active []
+
+ [3 <./chapters/chapter04/figures/init_proportions.png>]
+
+LaTeX Warning: Reference `sec:whereis' on page 4 undefined on input line 47.
+
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 49.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 49.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 49.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 49.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 49.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 49.
+[4]
+<"./chapters/chapter04/figures/sum_maps".png, id=80, 1675.2186pt x 919.2744pt>
 File: "./chapters/chapter04/figures/sum_maps".png Graphic file (type png)
 
 <use "./chapters/chapter04/figures/sum_maps".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/sum_maps".png used on in
-put line 38.
+put line 63.
 (pdftex.def)             Requested size: 636.60028pt x 349.3279pt.
- [3 <./chapters/chapter04/figures/sum_maps.png>]
+ [5 <./chapters/chapter04/figures/sum_maps.png>]
 
-LaTeX Warning: Reference `sec:whereis' on page 4 undefined on input line 51.
+LaTeX Warning: Reference `sec:whereis' on page 6 undefined on input line 76.
+
+[6
 
 
-LaTeX Warning: Reference `ch:whereis' on page 4 undefined on input line 53.
+]
+
+LaTeX Warning: Reference `ch:whereis' on page 7 undefined on input line 87.
 
 
-LaTeX Warning: Reference `sec:whereis' on page 4 undefined on input line 58.
+LaTeX Warning: Reference `sec:whereis' on page 7 undefined on input line 87.
 
+
+LaTeX Warning: Reference `whereis' on page 7 undefined on input line 89.
+
+[7]
+
+LaTeX Warning: Reference `sec:wehreis' on page 8 undefined on input line 97.
+
+[8]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 60.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 60.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 60.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 60.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 60.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 60.
-[4
-
-
-] [5] [6] [7]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 86.
+(Font)              scaled to size 11.15991pt on input line 105.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 86.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 86.
+(Font)              scaled to size 11.15991pt on input line 105.
 
-<"./chapters/chapter04/figures/total_biomass_dynamics_hl_0_mai_0".png, id=104, 
+<"./chapters/chapter04/figures/total_biomass_dynamics_hl_0_mai_0".png, id=120, 
 578.16pt x 433.62pt>
 File: "./chapters/chapter04/figures/total_biomass_dynamics_hl_0_mai_0".png Grap
 hic file (type png)
 
 <use "./chapters/chapter04/figures/total_biomass_dynamics_hl_0_mai_0".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/total_biomass_dynamics_h
-l_0_mai_0".png used on input line 96.
+l_0_mai_0".png used on input line 111.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
-<"./chapters/chapter04/figures/trophic_dynamics_example_hl0_mai0".png, id=105, 
+[9 <./chapters/chapter04/figures/total_biomass_dynamics_hl_0_mai_0.png>]
+<"./chapters/chapter04/figures/trophic_dynamics_example_hl0_mai0".png, id=135, 
 578.16pt x 433.62pt>
 File: "./chapters/chapter04/figures/trophic_dynamics_example_hl0_mai0".png Grap
 hic file (type png)
 
 <use "./chapters/chapter04/figures/trophic_dynamics_example_hl0_mai0".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/trophic_dynamics_example
-_hl0_mai0".png used on input line 106.
+_hl0_mai0".png used on input line 126.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <9> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 106.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 106.
+(Font)              scaled to size 8.36993pt on input line 126.
 
-<"./chapters/chapter04/figures/trophic_dynamics_example2_hl0_mai0".png, id=106,
+<"./chapters/chapter04/figures/trophic_dynamics_example2_hl0_mai0".png, id=136,
  578.16pt x 433.62pt>
 File: "./chapters/chapter04/figures/trophic_dynamics_example2_hl0_mai0".png Gra
 phic file (type png)
 
 <use "./chapters/chapter04/figures/trophic_dynamics_example2_hl0_mai0".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/trophic_dynamics_example
-2_hl0_mai0".png used on input line 109.
+2_hl0_mai0".png used on input line 129.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 111.
+Package nag Warning: \label in float, but not after \caption on input line 131.
 
 
 
-Package nag Warning: figure with no \caption on input line 113.
+Package nag Warning: figure with no \caption on input line 133.
 
-[8 <./chapters/chapter04/figures/total_biomass_dynamics_hl_0_mai_0.png>]
-[9 <./chapters/chapter04/figures/trophic_dynamics_example_hl0_mai0.png> <./chap
-ters/chapter04/figures/trophic_dynamics_example2_hl0_mai0.png>]pdfTeX warning (
-ext4): destination with the same identifier (name{subfigure.1}) has been alread
-y used, duplicate ignored
+[10] [11 <./chapters/chapter04/figures/trophic_dynamics_example_hl0_mai0.png> <
+./chapters/chapter04/figures/trophic_dynamics_example2_hl0_mai0.png>]
+
+LaTeX Warning: Reference `sec:whereis' on page 12 undefined on input line 148.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 	\subbottom
+l.159 	\subbottom
                  [The relative abundance of species belonging to each of the...
 
-<"./chapters/chapter04/figures/rel_abun_tl_mai_0".png, id=125, 578.16pt x 433.6
+<"./chapters/chapter04/figures/rel_abun_tl_mai_0".png, id=160, 578.16pt x 433.6
 2pt>
 File: "./chapters/chapter04/figures/rel_abun_tl_mai_0".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_tl_mai_0".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_tl_mai_0".png u
-sed on input line 130.
+sed on input line 159.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.131 	\subbottom
+l.160 	\subbottom
                  []{\includegraphics[width=0.8\linewidth]{"./chapters/chapte...
 
-<"./chapters/chapter04/figures/rel_abun_tl_mai_1".png, id=126, 578.16pt x 433.6
+<"./chapters/chapter04/figures/rel_abun_tl_mai_1".png, id=161, 578.16pt x 433.6
 2pt>
 File: "./chapters/chapter04/figures/rel_abun_tl_mai_1".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_tl_mai_1".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_tl_mai_1".png u
-sed on input line 131.
+sed on input line 160.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 133.
+Package nag Warning: \label in float, but not after \caption on input line 162.
 
 
 
-Package nag Warning: figure with no \caption on input line 134.
+Package nag Warning: figure with no \caption on input line 163.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2033,100 +2076,75 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 	\subbottom
+l.171 	\subbottom
                  [The relative abundance of species belonging to each of the...
 
-<"./chapters/chapter04/figures/rel_abun_fg_mai_5".png, id=127, 1300.86pt x 756.
+<"./chapters/chapter04/figures/rel_abun_fg_mai_5".png, id=162, 1300.86pt x 756.
 6669pt>
 File: "./chapters/chapter04/figures/rel_abun_fg_mai_5".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_fg_mai_5".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_fg_mai_5".png u
-sed on input line 142.
+sed on input line 171.
 (pdftex.def)             Requested size: 358.40137pt x 208.47083pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.143 	\subbottom
+l.172 	\subbottom
                  []{\includegraphics[width=0.8\linewidth]{"./chapters/chapte...
 
-<"./chapters/chapter04/figures/rel_abun_fg_mai_1".png, id=128, 1300.86pt x 756.
+<"./chapters/chapter04/figures/rel_abun_fg_mai_1".png, id=163, 1300.86pt x 756.
 6669pt>
 File: "./chapters/chapter04/figures/rel_abun_fg_mai_1".png Graphic file (type p
 ng)
  <use "./chapters/chapter04/figures/rel_abun_fg_mai_1".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/rel_abun_fg_mai_1".png u
-sed on input line 143.
+sed on input line 172.
 (pdftex.def)             Requested size: 358.40137pt x 208.47083pt.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 145.
+Package nag Warning: \label in float, but not after \caption on input line 174.
 
 
 
-Package nag Warning: figure with no \caption on input line 146.
+Package nag Warning: figure with no \caption on input line 175.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[12] [13 <./chapters/chapter04/figures/rel_abun_tl_mai_0.png> <./chapters/chapt
+er04/figures/rel_abun_tl_mai_1.png>] [14 <./chapters/chapter04/figures/rel_abun
+_fg_mai_5.png> <./chapters/chapter04/figures/rel_abun_fg_mai_1.png>]
 
-<"./chapters/chapter04/figures/init_proportions".png, id=129, 1734.48pt x 922.8
-879pt>
-File: "./chapters/chapter04/figures/init_proportions".png Graphic file (type pn
-g)
- <use "./chapters/chapter04/figures/init_proportions".png>
-Package pdftex.def Info: "./chapters/chapter04/figures/init_proportions".png us
-ed on input line 157.
-(pdftex.def)             Requested size: 582.40137pt x 309.89107pt.
+LaTeX Warning: Reference `tab:parameters' on page 15 undefined on input line 21
+4.
 
-Overfull \hbox (65.42836pt too wide) in paragraph at lines 156--158
-[]  [] 
- []
-
-
-LaTeX Warning: Reference `sec:whereis' on page 10 undefined on input line 158.
-
-
-LaTeX Warning: Reference `sec:whereis' on page 10 undefined on input line 158.
-
-[10] [11 <./chapters/chapter04/figures/rel_abun_tl_mai_0.png> <./chapters/chapt
-er04/figures/rel_abun_tl_mai_1.png>] [12 <./chapters/chapter04/figures/rel_abun
-_fg_mai_5.png> <./chapters/chapter04/figures/rel_abun_fg_mai_1.png>] [13 <./cha
-pters/chapter04/figures/init_proportions.png>]
-
-LaTeX Warning: Reference `tab:parameters' on page 14 undefined on input line 21
-2.
-
-[14
+[15
 
 ]
-<"./chapters/chapter04/figures/single_rads".png, id=161, 1734.48pt x 919.2744pt
->
+<"./chapters/chapter04/figures/single_rads".png, id=186, 939.51pt x 756.6669pt>
 File: "./chapters/chapter04/figures/single_rads".png Graphic file (type png)
- <use "./chapters/chapter04/figures/single_rads".png>
+<use "./chapters/chapter04/figures/single_rads".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/single_rads".png used on
- input line 215.
-(pdftex.def)             Requested size: 636.60028pt x 337.40497pt.
+ input line 225.
+(pdftex.def)             Requested size: 636.60028pt x 512.70245pt.
 
-<"./chapters/chapter04/figures/mean_rads".png, id=162, 1734.48pt x 919.2744pt>
+<"./chapters/chapter04/figures/mean_rads".png, id=187, 939.51pt x 756.6669pt>
 File: "./chapters/chapter04/figures/mean_rads".png Graphic file (type png)
 
 <use "./chapters/chapter04/figures/mean_rads".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/mean_rads".png used on i
-nput line 215.
-(pdftex.def)             Requested size: 636.60028pt x 337.40497pt.
-)) [15] [16 <./chapters/chapter04/figures/single_rads.png>] [17 <./chapters/cha
-pter04/figures/mean_rads.png>] [18
-
-] (./memoirthesis.bbl
+nput line 225.
+(pdftex.def)             Requested size: 636.60028pt x 512.70245pt.
+)) [16] [17 <./chapters/chapter04/figures/single_rads.png>] [18 <./chapters/cha
+pter04/figures/mean_rads.png>] (./memoirthesis.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
 
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 4.
 ) [19
+
 
 
 ] [20
@@ -2140,39 +2158,30 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
 (./memoirthesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
+(rerunfilecheck)             Checksum: 24A27342395BF622C799415F0AAEC0E7;639.
 
-
-Package rerunfilecheck Warning: File `memoirthesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `memoirthesis.out':
-(rerunfilecheck)             Before: 42DF38E18A872B6F96193E747CC3B409;709
-(rerunfilecheck)             After:  ACAE4B08BAC9D51CCC67AA5C3B45E42C;740.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 28764 strings out of 493109
- 529107 string characters out of 6135010
- 804061 words of memory out of 5000000
- 31350 multiletter control sequences out of 15000+600000
- 70951 words of font info for 233 fonts, out of 8000000 for 9000
+ 28790 strings out of 493109
+ 529375 string characters out of 6135010
+ 805324 words of memory out of 5000000
+ 31353 multiletter control sequences out of 15000+600000
+ 71707 words of font info for 243 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 54i,13n,67p,2312b,581s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,12n,67p,2312b,554s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (20 pages, 1073250 bytes).
+Output written on memoirthesis.pdf (20 pages, 1022976 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 31892 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 31884 words of extra memory for PDF output out of 35830 (max. 10000000)
 

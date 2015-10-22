@@ -1,9 +1,11 @@
 \section{Assumptions of what has gone before}
 
 \begin{itemize}
+	\item TODO: change pie chart figure size (and names of fgs!)
 	\item TODO: link up these references! (and add recent papers into bib.)
 	\item TODO: y-axis is wrong on relative abundance heat maps.	
-	\item TODO: rescale dynamics plots (reduce vertical dimension)
+	\item TODO: rescale dynamics plots (reduce vertical dimension). (Ylim on trophic dynamics plot)
+	\item change all indexing to start at 1 not 0 (TL and functional groups)
 	\item Discussion of what we will now refer to as "default parameter values" (see table \ref{tab:parameters})
 	\item Conclusion that there is something unrealistic about the immigration mechanism (rate too high)
 	
@@ -16,12 +18,35 @@ Possibly include here a summary of recent work on immigration, including IBT and
 \section{Motivation}
 \label{sec:motivate_immigration}
 
-One conclusion from chapter \ref{ch:3} is that the immigration rate, as given in the default parameter values (see table \ref{tab:parameters}) is unrealistically high. The results presented in chapter \ref{ch:habitat_loss} show that we are to expect no extinction of species, even at $90\%$ HL, when running simulations with this immigration rate. This behaviour allowed us to explore community responses to habitat loss that are not driven by changes in species richness. However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature. This is may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).  (DISCUSS NUMBERS HERE R.E. RESCUE EFFECT?)
+One conclusion from chapter \ref{ch:3} is that the immigration rate, as given in the default parameter values (see table \ref{tab:parameters}) is unrealistically high. It was shown that we are to expect no extinction of species, even at $90\%$ habitat loss (HL), when running simulations with this immigration rate (IR). This behaviour allowed us to explore community responses to habitat loss that are not driven by changes in species richness. However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature. This is may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).  (DISCUSS NUMBERS HERE R.E. RESCUE EFFECT?)
   
 In this chapter we consider other scenarios by changing the immigration rate parameter. At one extreme we have the above scenario of high immigration, where extinction is impossible. At the other extreme we have closed communities with zero immigration. In this case there is no rescue effect from surrounding habitats and we may expect to see extinctions in response to habitat loss. Although a totally closed system does not exist in nature certain systems may come close. For example an island community that is a sufficiently distant from other land (see discussion on Island bio-geography theory) will have very low immigration rates, and systems that are effectively closed may also be artificially achieved in controlled situations (e.g. laboratory mesocosm).
 
-For the default parameter values zero immigration results in the inevitable extinction of all non-plant species, in our simulated communities. Even for pristine habitats ($0\%$ HL) we do not see stable and persistent communities without some non-zero immigration. This result is demonstrated in chapter \ref{ch:stability}, where we explore factors contributing to stability and attempt to construct persistent closed-communities. For now we accept the general result that, under the default conditions, zero immigration results in community collapse. Therefore in this chapter we are interested in the regime between these two extremes of zero immigration, where we see many extinctions even at $HL=0$, and high immigration where we see no extinctions even at $HL=90$. In particular we look for some immigration value for which the communities are stable at low levels of habitat destruction, but where collapse is initiated as destruction is increased.
+For the default parameter values zero immigration results in the inevitable extinction of all non-plant species, in our simulated communities. We will refer to this scenario as \emph{community collapse}. Even for pristine habitats ($0\%$ HL) we do not see stable and persistent communities without some non-zero immigration. This result is demonstrated in chapter \ref{ch:stability}, where we explore factors contributing to stability and attempt to construct persistent closed-communities. For now we accept the general result that, under the default conditions, zero immigration results in community collapse. Therefore in this chapter we are interested in the regime between these two extremes of zero immigration, where we see many extinctions even at $HL=0$, and high immigration where we see no extinctions even at $HL=90$. In particular we look for some immigration value for which the communities are stable at low levels of habitat destruction, but where collapse is initiated as destruction is increased.
 
+Also interested in community composition, diversity and stability.
+
+\newpage
+\section{Exploration of parameter space: habitat loss and immigration}
+\label{sec:heatmaps}
+
+\begin{figure}
+	%\centering	
+	\hspace{-2.5cm}
+	\includegraphics[width=1.3\linewidth]{"./chapters/chapter04/figures/init_proportions"}
+	\caption{These diagrams indicate the mean number of species belonging to each functional group for the three MAI ratios in consideration. The results are averaged over one thousand simulations with the given MAI ratio, selected from the total ensemble of simulations (used to generate e.g. fig \ref{fig:summary_heatmaps_imvshl}). The numbers are independent all simulations parameters other than those used in the construction of the intial network (as outlined in section \ref{sec:whereis}) i.e. connectance, number of species, MAI ratio, and trophic constraints. }
+	\label{fig:initial_proportions}
+\end{figure}
+
+
+% In order to do what exactly...?
+Motivated by the above we explore a two dimensional slice of parameter space. The immigration rate (IR) and the level of habitat destruction (HL) are varied and one hundred repeat simulations are conducted at each pair value. Therefore were are able to look estimate how the average community behaves across this region of parameter space. These simulations are run for three different MAI ratios: 0.0, 0.5 and 1.0. As in previous simulations each repeat uses a different underlying network topology, generated with the same procedure as described in section \ref{sec:whereis}.  All other parameters are held constant at their default values, inclunding the number of iterations which remains at 5000. 
+
+In order to speed up the simulations certain metrics used in the previous analysis (chapter \ref{ch:whereis}) are not calculated. Only two pieces of information are saved as output from these simulations: the underlying network structure and the abundance time-series for each species. The abundance time-series is simply a record of the abundance of each species at every simulation iteration. By limiting the simulation output the scope for analysis is restricted but the parameter space can be explored in more detail (higher resolution, greater number of repeats). This 'first pass' scan of the parameter space allows us to construct a general picture of how the model behaves. It may also be used to identify regions of parameter space on which to focus further computational effort for e.g. spatial analysis.
+
+The entire range of habitat destruction is explored from pristine landscape ($HL=0\%$) to near total destruction ($HL=90\%$). In the current chapter all habitat is destroyed using the contiguous algorithm (see chapter \ref{sec:whereis}, since it was decided that this is more realistic. Ranges for the immigration rate were chosen based on previous simulations. Since $IR=0.005$ is sufficiently high to prevent any extinctions, this was taken as the maximum of the range. Simulations using $IR=0$ have already determined that this leads to community collapse, therefore these were not repeated. A value of $IR=0.0001$ was heuristically selected as the lower bound, at which some extinctions are expected in prisinte habitat for all MAI ratios.
+
+The choice of MAI ratios allows us to comapre purely antagonsitic ($MAI=0.0$), mixed ($MAI=0.5$) and purely mutualistic ($MAI=1.0$) communties. Figure \ref{fig:initial_proportions} shows the expected fraction of species belonging to each of the six functional groups in the interaction networks for these communities. The consraints placed upon the niche model are that at least $25\%$, $25\%$ and $5\%$ belong to the first, second and fourth trophic levels respectively. In particular it is know that the unconstrained niche model struggles to generate realistic number of species in the second trophic level [REF]. The figure shows that the interaction networks meet these constraints and that, as expected, the largest number of species is expected in the third trophic level\footnote{Perhaps these constraints should be changed in future simulations - discuss with Daniel.} i.e. the functional group labelled \emph{predators}. Antagonistic communities are missing the two mutualist functional groups from the first two trophic levels, whereas the mixed communities have a roughly $50:50$ split between mutualists and non-mutualists as expected. Importantly although the purely mutualistic communities contain no herbivores (since all their links to plants have been switched), they do contain non-mutualist plants. These plants are those that share no interactions with the first trophic level\footnote{Is this realistic - Daniel?}, therefore the link replacement procedure does not give them any mutualist partners. These plants remain wind dispersed and are predated upon by animals from trophic levles three and four\footnote{Should there be a constraint that top predators do not consume plants? Not in origial niche model.}.   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Archetypal rotated figure page:
@@ -44,51 +69,41 @@ For the default parameter values zero immigration results in the inevitable exti
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Exploration of parameter space: habitat loss and immigration}
-\label{sec:heatmaps}
+The results of these simulations can be concisely represented as heat maps over the region of parameter space explored. Figure \ref{fig:summary_heatmaps_imvshl} shows how the expected value of three summary metrics varies across this space: 1) the number of extinct species, 2) community biomass (total number of individuals) and 3) temporal variability in total biomass. The latter is used as a proxy for stability and is measured by the coefficient of variation (CoV) of the community biomass about its mean during the final thousand iterations of a simulation. This metric is often used to assess dynamic stability, but should not be confused with rigourous mathematical metrics relating to the stability of the equilibrium state of the system [REF]. It should be noted that the other two metrics, and all abundances measures in the follwoing analysis, are calculated from a snapshot of the system state on the final iteration of a simulation. We may question this approach in regions of high CoV since this variability is not accounted for in the snapshot.     
 
-% In order to do what exactly...?
-Motivated by the above we explore a two dimensional slice of parameter space. The immigration rate (IR) and the level of habitat destruction (HL) are varied and one hundred repeat simulations are conducted at each pair value. As previously each repeat uses a different underlying network topology, generated by the same procedure as described in section \ref{sec:whereis}. This procedure is repeated for three different MAI ratios: 0.0, 0.5 and 1.0. All other parameters are held constant at their default values. 
+\subsubsection*{1. Extinctions}
 
-In order to speed up the simulations certain metrics used in the previous analysis (chapter \ref{ch:whereis}) are not calculated. Only two pieces of information are saved as output from these simulations: the underlying network structure and the abundance time-series for each species at each simulation iteration. By limiting the simulation output the scope for analysis is restricted but the parameter space can be explored in more detail (higher resolution, greater number of repeats). This 'first pass' scan of the parameter space allows us to construct a general picture of how the model behaves. It may also be used to identify regions of parameter space on which to focus further computational effort for e.g. spatial analysis.
-
-The entire range of habitat destruction is explored from pristine landscape ($HL=0\%$) to near total destruction ($HL=90\%$). Ranges for the immigration rate were chosen based on previous simulations. Since $IM=0.005$ is sufficiently high to prevent any extinctions, this was taken as the maximum of the range. Simulations using $IM=0$ have already determined that this leads to community collapse, therefore these were not repeated. A value of $IM=0.0001$ was heuristically selected as lower bound.
+No species extinctions are expected for sufficiently high levels of IR, across the whole range of HL values and for all MAI ratios. This results is visible in the left column of figure \ref{fig:summary_heatmaps_imvshl} and was already disucussed in section \ref{sec:whereis}. It is found that reducing the IR leads to an increasing number of extinctions. At low IR extinctions are possible, even in pristine landscape. This fits the previous observation that zero IR leads to community collapse, even at zero HL.
 
 
-The results of these simulations can be concisely represented as heat maps over the region of parameter space explored. Figure \ref{fig:summary_heatmaps_imvshl} shows how the expected value of three summary metrics varies across this space. As was discussed in section \ref{sec:whereis}, no species extinctions are expected for sufficiently high levels of immigration. As seen in the left column of figure \ref{fig:summary_heatmaps_imvshl} the expected number of extinctions is zero at high IR, across the range of HL values. It is found that reducing the IR leads to an increasing number of extinctions. At low IR extinctions are possible, even in pristine landscape. This fits the previous observation that zero immigration leads to high numbers of extinctions. 
+Increasing HL generally increases the number of expected extinctions, as does reducing the IR. However nowhhere in the parameter space do we see community collapse. In the most extreme case of low IR and high HL ($MAI=1.0,HL=90,IR=0.0001$) an average of close to thirty extinctions may be expected. Although this expected loss of half of the species is fairly catastrophic, it does not guarantee total collapse of the community. The trophic constraints imposed in the food-web generation procedure ensure that at least $25\%$ of species belong in the first (basal) trophic level (figure \ref{fig:initial_proportions}). In practice this very rarely (quantify) reaches above $30\%$. Therefore a loss of thirty species suggests that at least $40\%$ of the remaining species are non-basal\footnote{If all thirty species lost are non-basal we are left with $3/5$ basal species to $2/5$ non-basal.}. In other words, despite significant loss of species, there is some persistence in higher trophic levels. 
 
-Increasing HL generally increases the number of expected extinctions. In the most extreme case of low immigration and high habitat destruction ($MAI=1.0,HL=90,IR=0.0001$) an average of close to thirty extinctions may be expected. Although this expected loss of half of the species is fairly catastrophic, it does not guarantee total collapse of the community. The trophic constraints imposed in the food-web generation procedure ensure that at least $25\%$ of species belong in the first (basal) trophic level. In practice it very rarely (quantify) reaches above $30\%$. Therefore a loss of thirty species suggests that least $40\%$ of the remaining species are non-basal\footnote{If all thirty species lost are non-basal we are left with $3/5$ basal species to $2/5$ non-basal.}. In other words, despite significant loss of species, there is some persistence in higher trophic levels. It is important to note that even at low IR species which go extinct during the simulation may be rescued. Therefore it is interesting to ask how much of this persistence in higher trophic levels is due immigration rescue effects. These could lead to a situation with a number of very rare species 'bubbling along' close to zero (becoming extinct and then being rescued), with a small core of more abundant species meaningfully engaged in interaction dynamics and demographic processes\footnote{If this is the case it leads intuitively to the concept of 'viable' species, possibly more useful here than 'non-extinct'.}.
+THIS FOR LATER: (WHERE?) It is important to note that even at low IR species which go extinct during the simulation may be rescued. Therefore it is interesting to ask how much of this persistence in higher trophic levels is due immigration rescue effects. These could lead to a situation with a number of very rare species 'bubbling along' close to zero (becoming extinct and then being rescued), with a small core of more abundant species meaningfully engaged in interaction dynamics and demographic processes\footnote{If this is the case it leads intuitively to the concept of 'viable' species, possibly more useful here than 'non-extinct'.}.
 
-For all three MAI ratios there exists an IR where the expected number of extinctions is zero in pristine landscape, but increases with HL. So although the immigration rescue effect prevents total community collapse, we do have a situation where HL can initiate species extinctions. The IR at which this occurs is greater for high MAI ratio. This effect of MAI ratio on extinctions is general. On average we expect a greater number of extinctions for high MAI (1.0) than for low MAI ratio (0.0), all else being equal. At the lowest IR and with pristine habitat we may expect about one extinction with a MAI ratio of 0.0, compared to about ten extinctions with a MAI ratio of 1.0. This can possibly be explained by looking at the second column in figure \ref{fig:summary_heatmaps_imvshl}. On average a higher MAI ratio leader to a greater total number of individuals at the end of a simulation\footnote{Mechanism behind this?}. This means that there are fewer empty landscape cells into which an individual may immigrate at random. This reduces the effective immigration rate and so weakens the rescue effect. If it is the case that there were previously rare species, only made viable by immigration, it is these that will be hit by this\footnote{To determine if this is what is happening need to look at total abundances?}. 
+For all three MAI ratios there exists an IR where the expected number of extinctions is zero in pristine landscape, but increases with HL. So although the immigration rescue effect prevents total community collapse, we do have a situation where HL can initiate species extinctions. The IR at which this occurs is greater for high MAI ratio. This effect of MAI ratio on extinctions is general. On average we expect a greater number of extinctions for high MAI (1.0) than for low MAI ratio (0.0), all else being equal. At the lowest IR and with pristine habitat we may expect about one extinction with a MAI ratio of 0.0, compared to about ten extinctions with a MAI ratio of 1.0. This can possibly be explained by looking at the second column in figure \ref{fig:summary_heatmaps_imvshl}. On average a higher MAI ratio lead to a greater total number of individuals at the end of a simulation\footnote{Mechanism behind this?}. This means that there are fewer empty landscape cells into which an individual may immigrate at random. This reduces the \emph{effective immigration rate} and so weakens the rescue effect. Any very rare species, only made viable by immigration, be hit by this and are likely to go extinct\footnote{To determine if this is what is happening need to look at total abundances?}. 
 
-The are interesting trends in the expected total biomass of a community. As noted communities with higher MAI ratio support more individuals on average. Also a high MAI ratio seems to make the total biomass of a community insensitive to IR. In the case of purely antagonistic communities (MAI=0.0) the greatest number of individuals is supported by those with either very low or very high IR. The latter is an intuitive result of births due to immigration supplementing births due to reproduction in the local community. This supplementary effect reduces with IR, leading to fewer individuals. The increase in total individuals at very low IR is harder to explain. We know that at zero immigration all non-plant species go extinct. So we may expect that, in this region of low immigration, non-plant species become increasingly rare. In an antagonistic community the plant species would benefit from the rarity of their animal consumers. Therefore we may expect that this increase in the biomass is accounted for by an increased abundance of plants\footnote{This proposed mechanism may be working in reverse in the MAI=1.0 communities.}.   
+\subsubsection*{2. Community biomass}
+\label{sec:com_bio}
+There are interesting trends in expected community biomass. Increasing HL has a negative effect on community biomass. This is intuitive and has been seen before. Also previoulsy discussed (chapter \ref{ch:whereis}) is the result that, on average, communities with higher MAI ratio can support a greater biomass. However this effect is striking in these results, especially at low levels of HL. In a prisinte habitat with an IR of 0.005, the expected number of inidividuals for a community with $MAI=0.0$ is around $20,000$, compared to around $50,000$ for a community with $AMI=1.0$. In fact, across the parameter space, purely mutualistic communitites have around twice the biomass of purely antagonistic ones. Therefore in some sense mutualism appears to be 'better' for the community. In section \ref{sec:whereis} we discuss whether it is better for the community as a whole, or only for those species that engage in mutualistic interactions.
 
- ..This trend extends to the response to HL - as HL increases antagonistic communities with low and high levels of immigration maintain higher total biomasses than those with intermediate immigration rates. However we may suspect that the compositions of these communities may differ..INVESTIGATE.
+For antagonsitic communites ($MAI=0.0$) the biomass is dependent on IR. Both very high and very low IRs support high biomass, whereas intermediate IRs support less (central panel, top row, figure \ref{fig:summary_heatmaps_imvshl}). The effect of high IR is intuitive - births due to high immigration supplement births due to reproduction in the local community. This supplementary effect is greater at higer IR. However the increase in biomass at very low IR is harder to explain. We know that at zero immigration all non-plant species go extinct. So we may expect that in the region of low IR non-plant species become increasingly rare\footnote{This can be checked later..}. In an antagonistic community this rarity of herbivores would benefit plant species. Therefore we may propose that the increase in the biomass at low IR is accounted for by an increased abundance of plants\footnote{This proposed mechanism may be working in reverse in the MAI=1.0 communities.}. This reasoning suggests that we should expect a difference in compositon between the abundant antagonistic commuinities see at low and high IR (see section \ref{whereis}).    
 
+Mutualism removes the dependence of community biomass on IR. Although the total biomass does not vary with IR for these communities ($MAI=0.5,1.0$) there may be changes in community composition. For example it is still reasonable to suspect that non-plant species become increasingly rare at low IR. However in a mutulaistic community this has a different effect. It will benefit those plants that still have antagonistic interactions, but it will be detrimental to mutualist platns since they will be less likely to interact with a partner and therefore less likely to reproduce. So we may expect a shift in the relative abundances of plants in favour of antagonists at low IR.
 
 %% INCLUDE ELSEWHERE?? This is because the immigration mechanism provides a significant recovery effect.   It allows species that have gone locally extinct (from the simulation landscape) to recover by occupying empty cells. Therefore, for immigration values close to those used in the original simulations (chapter \ref{sec:where}), the average number of species that have gone extinct at the end of a simulation is close to zero\footnote{Since it is possible for a species to go extinct and to subsequently recover it may be sensible to use another definition of 'extinct'.}. This is true for all MAI ratios as shown by the left 
 
-\begin{itemize}	
-	
-	\item Importanty it should ne noted that communities with higher MAI ratios support a greater number of individuals, on avergae, than those with low MAI ratio, regardless of immigration. This is especially visible at low levels of HL - considering the case of immigration $= 0.005$ : the expected number of inidiciduals for a community with $MAI=0.0$ is around $20,000$, compared to around $50,000$ for a community with $AMI=1.0$. It is not as clear (from the heatmaps) wether this difference remains as significant at high levels of habitat destruction - INVESTIAGTE THIS. We may conclude from this that, in some sense mutualism is better for the overall community than 'non-mutualism'. Is it that it is a better form of reproduction for the plants. Does it only benefit those species involved in the mutualistic interactions, such that we end up with communities dominated by mutualists (which out compete non-mutalists)? Or does mutualism benefit the wider community also?
-	
-	\item For higher MAI ratio the response of total community biomass to habitat loss does not appear to be mediated by immigration. In fact immigration rate appears to make little difference to the expected total biomass, for these hybrid antaonistic-mutualistic communities. (In the case of $MAI=0.5$ there may be some remnant of the effect discussed above.) Again we may expect that community composition is changing, without noticeable effect on total biomass. It makes sense that mutualistic communities do not respond in the same way to a reduction in the number of non-plant species (if this is what is driven the previous pattern). It may be that the benefit due to the loss in animal consumers in balanced by the harm due to the loss in mutalsistic partners. If this is the case we may expect a shift away from mutualistic dominaince towards antagonsitic dominance in the lower (basal?) trophic levels (or if not 'dominance' at least a shift in relative abundances.)  
-	
-	\item The coefficient of variation (CoV) of the overall biomass is taken as a crude measure for the stability of the dynamics. In general we see a superposition of trends in the response of CoV to immiragtion and habitat loss. In general increasing habitat destruction, decreases the stability of the dynamics (for contiguous destruction - c.f. conflicting result for random destruction). Also desceasing the immigration values, decreases the stability of the dynamics in general. This second trend makes sense -  since we know that the are stable co-existence equilibria  for this model at high levels of immigration, and that there are not for zero immigration, it is expected that the system should pass through a region of instability in switching between these regimes (bifurcation?).
-	
-	\item There is oneexception to the above - which is that at very low immigration, or very high habitat destruction, the trend appears to be disrupted. More on this? 
-	
-	\item Both trends in stability are expressed most strongly in antagonistic communities (case of $MIA=0$), and are only weakly visible in pure mutalistic communities ($MAI=0.0$). This suggests that mutualism is a stabilising influence, or at least dampens the destabilising effects of varying immigration and of habitat destruction. (This is also suggested by the abouve notes trtends in total biomass.)
-	
-\end{itemize}
+\subsubsection*{3. Temporal variation}
+\label{sec:temp_var} 
+In general increasing HL increases the temporal variablity of the dynamics. This result only holds in the case of contiguous habitat destruction and is discussed in more detail in section \ref{sec:wehreis} where it was found to be associated with increased interaction strengths. Also communities are less stable at lower IR. This fits with previous results. It has been shown that communities are very stable and resistent to HL at high IR. It has also been shown thatthey are unstable at zero IR, exhibiting community collapse. This suggests that the model has a stable and an unstable regime, and a transition between the two when moving towards low immigration. The right hand column of figure \ref{fig:summary_heatmaps_imvshl} shows the signature of this. Interestingly the loss of dynamic stability is greatest for antagonsitic communities and weakest for purely mutualistic communities. This suggests that mutualism has a stabilising affect on community dynamics - it appears to confer better dynamics stability in the face of HL and changing IR.
 
+Another interesting feature of the CoV plots is that the trends described above appear to be broken at very low IR and high HL, where an increase in stability is visibile. It is possible that this is an averaging effect. If some communities are totally collapsing in this region they would exhibit stable dominance of plant species, which would contribute positively to avergae community stability. However it may be that this effect is due to another mechanism.
+
+As mentioned previously the loss of dynamic stability is troubling since it calls into question the way that we calculate abundance metrics. Therefore the conclusions drawn in the following discussion may not be general and may not hold if the metrics were averaged over a number of iterations.
+ 
+ 
 \newpage
 \subsection{Example dynamics}
 \label{sec:example_dynamics}
-
-Figure \ref{fig:total_biomass_dynamics} illustrates the loss of stability in passing from a high to a low IR regime. The dynamics of three example antagonistic communities are depicted for each regime. The increase in temporal variability is greater for antagonistic communities than for those with mutualism (again we see mutualism to be a stabilising force), as is clear from the right-hand column of figure \ref{fig:summary_heatmaps_imvshl}. In the left-hand panel of figure \ref{fig:total_biomass_dynamics} we see that the total biomass of each community is fairly constant, after an initial transience. It appears that the system undergoes stochastic fluctuations about its stable equilibrium\footnote{Test for this?}. In the right-hand panel, which has very low IR, we see that this stability is reduced. It may be that the reduction in IR increases the time it takes for the system to reach equilibrium, or it may be that the effect of the stochastic fluctuations is amplified because of a reduction in the stability of the equilibrium.        
-
-Is the increased abundance, recorded in the heat maps, due to a shift in the equilibrium population or the oscillations (transient or otherwise?). 
 
 \begin{figure}[h!]
 	\centering	
@@ -97,6 +112,11 @@ Is the increased abundance, recorded in the heat maps, due to a shift in the equ
 	\caption{Temporal dynamics of the total biomass of communities over the course of six simulations. Each panels shows the dyanmics for three distinct siulations, each in a different colour. The left panels shows communities with a high immmigration rate, and the right paenl for a low immigration rate. In all cases there is no habitat destruction $HL=0$.}
 	\label{fig:total_biomass_dynamics}
 \end{figure}
+
+
+Figure \ref{fig:total_biomass_dynamics} illustrates the loss of stability in passing from a high to a low IR regime. This transition was proposed in section \ref{sec:temp_var}. The dynamics of three example antagonistic communities are depicted for each regime. These communitites were selected at random from the one hundred repeat simulations at these parameter values. Antagonistic communities are shown because the increase in temporal variability is greater for these than for those with mutualism (as was seen in figure \ref{fig:summary_heatmaps_imvshl}). 
+
+In the high IR regime, shown in the left-hand panel of figure \ref{fig:total_biomass_dynamics}, we see that the total biomass of each community undergoes an intial transience followed by a period of relative stability. It appears that, during this second period, the system is undergoing stochastic fluctuations about its stable equilibrium\footnote{Test for this?}. In the low IR regime, shown in the right hand panel, we see that this community biomass exhibits large scale fluctuations throughout the course of the simulations. It is not clear from inspection that the system is being perturbed about a stable equilibirum. It may be that the reduction in IR increases the length of the intial transience, and that the communities illustrated are yet to reach steady-state after 5000 iterations. Or it may be that these communities reach their steady-state, but that the stochastic fluctuations are amplified because the equilibria are less stable\footnote{Further mathmatical anyalisis to try and determine this? - Final chapter on model fitting?}. 
 
 \begin{figure}
 	\centering	
@@ -112,15 +132,26 @@ Is the increased abundance, recorded in the heat maps, due to a shift in the equ
 	
 \end{figure}
 
-Figures \ref{fig:trophic_dynamics_example} show example dynamics by trophic level, for both antagonistic and mutualistic communities, in the high and low IR regimes. 
+Figure \ref{fig:trophic_dynamics_example} shosw example dynamics by trophic level of four antagonistic communities in the high and low IR regimes. The left-hand panels depict two communities in the high IR regime. Again the intial transience is followed by a period of relative stability, which is consistent across trophic levels. It is clear from these two plots that the position of the system equilibria and the size of the fluctuations about it vary between simulations.  
 
-It is important to note the large amplitude fluctuations in biomass that are induced by the reduction in IR. \textbf{Dynamics such as these bring into question the validity of the results, which take a snapshot of species abundances at the end of the simulation, under the assumption of steady state.} 
+The right-hand panel of figure \ref{fig:trophic_dynamics_example} depicts two communities in the high IR regime. It is clear from inspection that the mean and the variance of the biomasses varies between trophic level, and between simulation. The lower plot shows dynamics dominated by species from the first trophic level, with large scale but decreasing amplitude fluctuations in the second trophic level. The upper plot shows perhaps even less stable dynamics with increasing amplitude fluctuations in the first and fourth trophic levels, and very low abundances in the intermediate trophic levels. In both simulations there are several instances where the biomass of an entire trophic level comes close to zero. It is likely  that the rescue effect due to immigration is preventing stochastic extinctions here, and providing some buffering to populations at the low end of their biomass fluctuations\footnote{It would be interesting to look at the breakdown of these trophic dynamics by species - e.g. how synchronous are the different species in the same torphic level with each other.}.
 
+The breakdown of dynamics bt trohpic level demonstrates that the timing of measurement will affect the caculcation of relative abundance metrics, and not just that of the aggregate community biomass. If the fluctuation in trophic biomass were more synchronous between levels, the timing of the measurement would be less significant. However the figure shows that even the ordering of trophic levels by abundance is dependent on time\footnote{This is beginning to look make the results seem invalid.}. Therefore further analysis should attempt to remove this time dependance by averaging biomasses over a number of iterations. The plots suggest that the increase in community biomass at low IR (discussed in section \ref{sec:com_bio}) may be a genuine effect. However it is hard to determine the contribution of the increased fluctuations without averaging the abundances over time.
 
+(There may be other points in parameter space where it would be informative to plots the dynamics...e.g. high mutualism region, temporally stable)
+(Could plot biomass dynamics, averaged over replicates?)
+
+\newpage
 \subsection{Relative abundances}
 \label{sec:rel_abun}
 
-Figure \ref{fig:rel_abun_tl_mai_01} shows the relative abundance of each trophic level for antagonistic and mutualistic communities, across the parameter space.  For purely antagonsitisc communites the proportion of indivudals in each trophic level varies storngly with IR and weakly with HL.  The mutualistic communities (MAI=1.0) show much less variation in their trophic composition. Of particular interest is that, with very little disturbance, antagonistic communities become dominated by plants. This does not happen for mutualistic communities, except at very high levels of disturbance. This again suggests that mutualism is a stabilising force, and that it benefits all species in the community not just those that engage in mutualistic interactions - or maybe not judging by the following figure, and the fact that TL2 and TL3 are consistently low.
+Figure \ref{fig:rel_abun_tl_mai_01} shows the mean relative abundance of each trophic level for antagonistic and mutualistic communities, across the parameter space.  For purely antagonsitisc communites the proportion of indivudals in each trophic level varies storngly with IR and weakly with HL. At low IR antagonistic communities become dominated by plant species. This is in agreement with the mechanism proposed in section \ref{sec:com_bio}, whereby plants benefit from a scarcity of animal consumers at low IR. At high IR the distribution of biomass is much more even across trophic levels. In this region of parameter space the biomass of trophic levels one and four are roughly equal at around $30\%$, with the remaining $40\%$ of the biomass split fairly evenly between trophic levels two and three. This biomass distribution is not necessarily unrealistic for a community in nature, however it does not conform to the classic \emph{biomass pyramid} (see discussion in section \ref{sec:whereis}). In fact the distribution at low IR is much closer to the standard pyramid.
+
+Mutualistic communities (MAI=1.0) show much less variation in their trophic composition across the parameter space. The first two trophic levels are most abundant, with slightly more biomass in the first trophic level than the second. The thrid and the fourth trophic levels are much less abundant with around $20-30\%$ of the biomass split fairly evenly between them. This distribution is remarkably constant over the parameter space. Only at extreme levels of disturbance ($IR=0.0001, HL\geq 70 \%$) do the communities begin to be dominated by plants. 
+
+Figure \ref{fig:rel_abun_fg_mai_51} shows the mean relative abundance by funtional group for multualistic communities with $MAI=0.5$ and $MAI=1.0$.    BLa bla bla....
+
+
 
 \begin{figure}[h!]
 	\centering	
@@ -145,19 +176,6 @@ Figure \ref{fig:rel_abun_tl_mai_01} shows the relative abundance of each trophic
 	\label{fig:rel_abun_fg_mai_51}
 \end{figure}
 
-
-%\begin{figure}
-%	\includegraphics[]{"figures/sum_maps"}
-%\end{figure}
-
-
-\begin{figure}
-	%\centering	
-	\hspace{-2.5cm}
-	\includegraphics[width=1.3\linewidth]{"./chapters/chapter04/figures/init_proportions"}
-	\caption{These diagrams indicate the mean number of species belonging to each functional group for the three MAI ratios in consideration. The results are averaged over one thousand simulations with the given MAI ratio, selected from the total ensemble of simulations (used to generate e.g. fig \ref{fig:summary_heatmaps_imvshl}). The numbers are independent all simulations parameters other than those used in the construction of the intial network (as outlined in section \ref{sec:whereis}) i.e. connectance, number of species, MAI ratio, and trophic constraints. }
-	\label{fig:initial_proportions}
-\end{figure}
 
 
 \clearpage
@@ -189,21 +207,7 @@ Figure \ref{fig:rel_abun_tl_mai_01} shows the relative abundance of each trophic
         %% Note: this figure generated by Documents/IM_vs_HL_heatmap/plot_sum_maps.py
 \end{sidewaysfigure}
 }
-%\begin{figure}
-%	\includegraphics[width=\linewidth]{"figures/sum_maps"}
-%\end{figure}
 
-
-\section{Further investigation of these trends - RADS, dynamics}
-
-TODO:
-
-\begin{itemize}
-	\item plot RADS (single run with TL colours, average with error bars) and RAS (relative abudnaces of trophic levels) to demonstrate some of the above arguements - are they correct in their interpretation?
-	
-	\item more heatmaps - relative abundances by trophic level/functional group
-	\item plot some example dynamics to deomnstrate changes in stability (use total biomass and by trophic level. Maybe one with all species.)
-\end{itemize}
 
 \section{Points for discussion}
 
@@ -233,8 +237,13 @@ It could be argued that the RADS are realistic, and the some immigration is a re
 	\item Since the dynamics do not neccessariliy reach steady state should I re-do analysis with average over a time window?
 	\item Can I use "we"??
 	\item Tense?
-	\item Figure 1.1 summary heatmaps: too much information in one figure (feels that way from discussion).
-		
+	\item Figure 1.1 summary heatmaps: too much information in one figure? (feels that way from discussion).
+	\item OK to use plant, basal and prodcuer interchangeably?
+
+	\item The ability of the top predator to survivie almost entirely on plant matter is troubling.
+	
+	\item Is it in fact OK to use biomass and number of individuals interchangeably? 	
+	
 	\item TODo: linear interactions? (should it be that freq/predabun should be linear in preyabun? Same gradient across species?) If so we should be able to fit a GLV, if not via Timme, then via repreated simulations and some numerical optimisation.
 
 \end{itemize}

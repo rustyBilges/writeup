@@ -40,10 +40,38 @@ Here we shows that reproduction rate, synthesis ability, and MAI ratio have some
 
 Plots done today:
 \begin{itemize}
-\item hist_species_per_trophic_level
-\item mvp_22rep
-\item proportion of individuals per functionla group (plot_mutualism_breakdown) all * plots have P < 0.001
+\item histspeciespertrophiclevel
+\item mvp22rep
+\item proportion of individuals per functionla group (plotmutualismbreakdown) all * plots have P < 0.001
 \end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\linewidth]{"figures/mvp1_22reps"}
+	\caption{Persistence is plotted against for 22 repeat simulations at each MAI ratio. Persistence is measured as the fraction of the initial 60 species that have not gone extinct by the end of a simulation (5000 iterations). Each blue dot gives the number of persistent species for a single simulation. The red line shows a linear regression fit with slope and p-value given in the inset.}
+	\label{fig:mai_vs_persistence}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/mean_trophic_dynamics"}
+	\caption{Mean dynamics by functional group for four different MAI ratios. The coloured lines represent the abundance dynamics of the different functional groups, as indiciated in the legend. Abundance, at each simualtion iteration is measured by the total number of individuals belonging to all species of a given functional group.}
+	\label{fig:mvp_mean_dynamics}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/species_richness_per_trophic_level"}
+	\caption{SRPTL}
+	\label{fig:mvp_species_per_tl}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/proportion_per_functional_group"}
+	\caption{PPFG}
+	\label{fig:mvp_prop_per_fg}
+\end{figure}
 
 \section{Why are some networks more stable than others?}
 

@@ -1,0 +1,57 @@
+
+***************************************************************************************************
+
+Contact with Daniel this week. His main points were:
+
+> Top predators should not eat plants (rare cases, life stages)
+
+> Suggest running lower IR (based on a paper, and desire for extinctions?)
+
+> Wants interaction frequencies
+
+> In nature higher trophic levels more vulnerable to exintction (test for this?)
+
+> Check James McCann work on Omnivory
+
+> Discussion section, after results, link our findings with current literature (contextualise)
+
+***************************************************************************************************
+
+From literature overview:
+
+> Loreau theoretical and experimental results on "propagule rain" - IR good for plant diversity, reduction in competition.
+> Dispersal maintains diversity in fragemented habitats (dispersal limitation versus edge effects) - several papers on this sort of thing
+> Island Biogeography theory can contextualise our model nicely. (regional species pool) Doesn not limit relevance to island systems.
+> Species-area relationship (SAR)
+> Importance of immigration in Barro Isalnd (Hubbel)
+> Metacommunity theory: heterogenous at regional scale can provide a constant species pool for local immigration
+
+***************************************************************************************************
+
+Specific questions for Alan:
+
+> RDSF
+
+> Steady state analysis? See figures.
+
+> Am I an ecologist or an engineer?
+
+> Look at a single networks:
+	+ For long vs short runs: steady state 
+	+ For comparison of RADS
+	+ perturbation experiements (later - stability chapter)
+
+	How to choose an average network?
+
+***************************************************************************************************
+
+Language issues (ecology versus engineering?):
+
+<< "On average a higher MAI ratio leads to a greater total number of individuals at the end of a simulation."
+
+>> "On average, a higher proportion of mutualistic interactions leads to a greater total number of individuals in the community."
+
+
+<< "This means that there are fewer empty landscape cells into which an individual may immigrate at random."
+
+>> "The community is saturated to a certain extent as more individuals inhabit the landscape."

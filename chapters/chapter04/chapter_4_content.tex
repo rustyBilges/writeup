@@ -1,16 +1,22 @@
+This chapter explores the interactions between immigration rate, habitat loss and MAI ratios - choose a better title.
+
 TODO: link up these section references. (and add recent papers into .bib file) \\
 TODO: finish discussion of results. But first redo analysis with averaging? 
+TODO: look at "effective immigration" rates..? (inversley proportional to total biomass)
+TODO: show some results here for 0 HL
 
 \section{Assumptions of what has gone before}
 
+% Daniel's main feedback is 1) be more assertive and positive about the work, 2) be more explicit about it relationship the nature.
 
 \begin{itemize}
 
 	\item Discussion of what we will now refer to as "default parameter values" (see table \ref{tab:parameters})
-	\item Conclusion that there is something unrealistic about the immigration mechanism (rate too high)
+	\item Conclusion that the ddefault immigration rate is high and this is an open system. This represents a restricted scenario where the regional species pool is constant and high (60 species), all species are equally likely to immigrate and dispersal from outside our 'world' is not heavily constrained. In this chapter we look at varying immigration rates, habitat loss and MAI.
 	\item A discussion of the "rescue effect" due to immigration. Probability of species spawning. Effective immigration, although currently that concept is first mentioned in this chapter.
 	\item Context of `viable species' as opposed to those that only remain due to immigration `bubbling' along close to zero. (note that this is quite realistic)
-	\item Snapshots of system versus averaging of metrics over a number of iterations (seems a bit late in the thesis to realise that this is a problem in chapter 4!)
+	\item Snapshots of system versus averaging of metrics over a number of iterations (seems a bit late in the thesis to realise that this is a problem in chapter 4!) - averaging over replicates can justify this to some extent (25 in previous chapters, 100 here).
+	
 	\item Discussion of the functional groups and their names. These assumed below.
 
 	\item It may be that this model is well approximated by GLV. If so it would make sense to discuss the results with reference to that? Should try to fit?
@@ -25,14 +31,67 @@ TODO: finish discussion of results. But first redo analysis with averaging?
 
 Possibly include here a summary of recent work on immigration, including IBT and meta-community theory. (Alternative is that this goes in introductory chapter.) 
 
+IBT -> species area relationship (SAR), does high immmigration reduce this effect. \cite{warren2015islands} - Search for immigration.
+
+\cite{klausmeier2001habitat} Many studies or dispersal/immigration take a metacommunity appraoach. In general higher dispersal between communities is found to promote better species richness, and lower variation between communities. However we are interested in...
+
+\cite{loreau1999immigration} shows, using a metapopulation model, that competitive plant communities benefit from high immigration. In these communities competition for space would lead to the exintction of all but one species. Therefore some immigration is required for diversity to exist. (Similiar to our case of zero IR. Is there evidence for spatial competition in our simualtions?) SOme mterics chage with IR some do not (check whihc ones, do they agree with their experiment, and ours?)	They have species specific immigration rates, and an intensity parameter (otherewise same as ours with effective rate proportional to number of vacant sites...nice). Our simple case is simpler than their simple case 1 (IBT -size of regional pool and degree of isolation). They call the immigration a `propagule rain'.
+
+Their model displays classical competitive exclusion: "This result is different from that usually found in
+metapopulation competition models (Levins and Culver
+1971; Horn and MacArthur 1972; Slatkin 1974; Hastings
+1980; Nee and May 1992; Tilman 1994). These models
+implicitly or explicitly allow interference competition be-
+tween species within sites, and coexistence is obtained
+when there is a trade-off between competitive superiority
+and colonization ability. Because we do not consider in-
+terference, there is no possibility for such a trade-off in
+our model and, hence, coexistence in a closed community
+is impossible. As mentioned earlier, we deliberately ignore
+trade-offs associated with interference competition be-
+cause we wish to explore the effects of immigration from
+an external source on their own."
+
+They never get stochastic extinctions because thier model is continuous, therefore use an extinction threshold.
+
+"Thus, there is always stable coexistence in a community
+with a propagule rain." (Interesting dicussion at end : where does the propagule rain come from?)
+
+As immigration goes to zero they find that most species have a density close to zero (therefore likely extinct) and that dominance is determined by  basic reproductive rate ($r=c/m$). Also space is mre fully occupied as IR increases. (Figure 1 nice plot of expeced number of species versus immigration intensity). Interesting change in dominance relationships (relative abundances) with IR. 
+
+Experimental results by Mouquet and Loreau \cite{mouquet2004immigration} sugesst that immigration has a positive impact on plant community diversity. (Maniplulation of seed rain.) However  it also shows that certain community-level properties do not depend on IR e.g. total biomass (check others). Also local competition effects..\footnote{Nice structure here - theoretical results, follwed up a few years later be experiemntal study. Talk about this somewhere.}
+
+\cite{foster2004propagule} importance of the propagule pool in determining local diversity, and shifting limitations hypothesis (SLH)
+\cite{cadotte2006dispersal} dispersal as a community structuring mechanism, immigration increasing locxal diversity, effect difers between plants and animals, intermidiate dispersla rates best?
+
+\cite{zartman2006habitat} Importance of dispersal in maintaining diversity in fragmented habitat patches (small tropical forest fragments). Dispersal limitation versus edges effects. Must be other REFS for this as well?
+
+\cite{condit2012thirty} Obviously proponenets of neutral theory, but suggests the importance of immigration, and measures immigration rate close to ours..
+
+\cite{drury2015immigration} mathematical treatment of 3D predtion model, effect of immigration rates. 
+
+\cite{puettker2011immigration} "Although previous studies as far as we are aware did not investigate the effects of landscape context on immigration rates, immigration has consistently been shown to increase population size in patches both in field studies and simulation models [44]–[47]."  Importance of landscape context.
+
+\cite{korfanta2012long} Changes in demographic rates due to HFrag, in addition to population sizes and extinctions.
+
+\cite{haddad2015habitat} 70per cent of remaining forest within 1km of forest edges. Fragmentation effects. Smallest and most isolated patches most vulnerable. Reduce biodiversity by 13 to 75 per cent (metrics?) and reduce biomass, affecting ecosystem functions. 
+
+\cite{teyssedre2014contrasting} Testing different HL scenarios on neutral and non-neutral communites. Habitat alteration reduces avergae level of specialisation - `functional homogenisation'.
+
+\cite{ai2012immigration} Communities are more repeatable (similar between repeats) for high immigration rates. Use IBM model. Immigration from regional species pool. Zero sum netural theory dynamics. 
+
+\cite{hanski2013species} SAR updated to account for habitat fragmentation i.e. habitat loss that is not contgiuous. Veyr relevant for discussion somewhere.
+
+
 \section{Motivation}
 \label{sec:motivate_immigration}
 
-One conclusion from chapter \ref{ch:3} is that the immigration rate (IR), as given in the default parameter values (see table \ref{tab:parameters}) is unrealistically high. It was shown that we are to expect no extinction of species, even at $90\%$ habitat loss (HL), when running simulations with this IR. This behaviour allowed us to explore community responses to habitat loss that are not driven by changes in species richness. However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature [REF]. This may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).
-  
-In this chapter we consider other scenarios by changing the immigration rate parameter. At one extreme we have the above scenario of high immigration, where extinction is impossible. At the other extreme we have closed communities with zero immigration. In this case there is no rescue effect from surrounding habitats, and we may expect to see extinctions in response to habitat loss. Although a totally closed system does not exist in nature certain systems may come close to this ideal. For example an island community that is a sufficiently distant from other land (see discussion on Island bio-geography theory in section \ref{sec:whereis}) will have very low immigration rates, and systems that are effectively closed may be artificially achieved in controlled situations (e.g. laboratory mesocosm).
+In chapter \ref{ch:3} it is shown that the default immigration rate (IR), as given in the default parameter values (see table \ref{tab:parameters}) is relatively high, corresponding to an open community. In particular, at the IR, we expect no extinction of species, even at $90\%$ habitat loss (HL). This behaviour allowed us to explore community responses to habitat loss that are not driven by changes in species richness (control for species richness). However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature [REF]. This may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).
 
-For the default parameter values (see table \ref{tab:whereis}) zero IR results in the inevitable extinction of all non-plant species, in our simulated communities. We will refer to this scenario as \emph{community collapse}. Even for pristine habitats ($0\%$ HL) we do not see stable and persistent communities without some non-zero IR. This result is demonstrated in chapter \ref{ch:stability}, where we explore factors contributing to stability. For now we accept the general result that, with the default parameters, zero IR results in community collapse. In this chapter we are interested in the regime between these two extremes of zero IR, where we see many extinctions even at $0\% HL$, and high IR where we see no extinctions even at $90\% HL$. We are particularly interested in finding IRs for which communities are stable at low levels of HL, but where collapse is initiated as HL is increased. This is a scenario that we see in real-world communities. We are also interested in how community composition and stability vary with HL and IR, and how this is mediated by MAI ratio.
+% more on what the different scenarios represent, or is that already discussed?
+In this chapter we further investigate the impacts of habitat loss (HL)  on multi-species communities with different proportions of mutualistic and antagonistic interactions (MAI ratios). We now consider other realistic scenarios by varying the immigration rate parameter. At one extreme we have the above scenario of high immigration, where extinction is prevented. At the other extreme we have closed communities with zero immigration. In this case there is no rescue effect from surrounding habitats, and we may expect to see extinctions in response to habitat loss. Although a totally closed system does not exist in nature certain systems may come close to this ideal. For example an island community that is a sufficiently distant from other land (see discussion on Island bio-geography theory in section \ref{sec:whereis}) will have very low immigration rates, and systems that are effectively closed may be artificially achieved in controlled situations (e.g. laboratory mesocosm). Although extremely open and extremely closed systems are possible, most real-world communities lie within these two extremes. By changing immigration rates, the approach followed here allow us to explore the entire range of possible responses\footnote{Not sure about this..} of biological communities to habitat loss.
+
+For the default parameter values (see table \ref{tab:whereis}) zero IR results in the inevitable extinction of all non-plant species, in our simulated communities. We will refer to this scenario as \emph{community collapse}. Even for pristine habitats ($0\%$ HL) we do not see stable and persistent communities without some non-zero IR (some increase in persistence with MAI ratio - see chapter \ref{ch:whereis}). This result is demonstrated in chapter \ref{ch:stability}, where we explore factors contributing to stability. For now we accept the general result that, with the default parameters, zero IR results in community collapse \footnote{weaken this statement, parameter dependent, or at least refer forwards again to next chapter}. In this chapter we are interested in the regime between these two extremes of zero IR, where we see many extinctions even at $0\% HL$, and high IR where we see no extinctions even at $90\% HL$. We are particularly interested in finding IRs for which communities are stable at low levels of HL, but where collapse is initiated as HL is increased. This is a scenario that we see in real-world communities. We are also interested in how community composition and stability vary with HL and IR, and how this is mediated by MAI ratio. (And interaction strength distributions.)
 
 \newpage
 \section{Exploration of parameter space: habitat loss and immigration}
@@ -50,7 +109,7 @@ For the default parameter values (see table \ref{tab:whereis}) zero IR results i
 % In order to do what exactly...?
 Motivated by the above we explore a two dimensional slice of parameter space. The immigration rate (IR) and the level of habitat destruction (HL) are varied and one hundred repeat simulations are conducted at each pair value. Therefore were are able to estimate how the simulated communities are expected to behave across this region of parameter space, by averaging over the repeats. These simulation are run for three different MAI ratios: 0.0, 0.5 and 1.0. As in previous simulations each repeat uses a different interaction network topology, generated with the procedure described in section \ref{sec:whereis}.  All other parameters are held constant at their default values (table \ref{tab:wehereis}), including the number of iterations which remains at 5000. 
 
-In order to speed up the simulations certain metrics used in the previous analysis (chapter \ref{ch:whereis}) are not calculated. Only two pieces of information are saved as output from these simulations: the underlying network structure and the abundance time-series for each species. The abundance time-series is simply a record of the abundance of each species at every simulation iteration. By limiting the simulation output the scope for analysis is restricted but the parameter space can be explored in more detail (higher resolution, greater number of repeats)\footnote{The changes to the model output reduced run times by up to a factor of 10. This required changes in how the interaction network is represented and therefore previously used network metrics could not be calculated. However it would be easy to modify the code to save some information on interaction frequencies and spatial states, which could be used in later analysis. This has not been done yet.}. This `first pass' scan of the parameter space allows us to construct a general picture of how the model behaves in this region. It may also be used to identify subsets of the  region of parameter space on which to focus further computational effort for e.g. spatial analysis.
+In order to speed up the simulations certain metrics used in the previous analysis (chapter \ref{ch:whereis}) are not calculated. Particulary the spatial stability metrics are computationally expensive. Only two pieces of information are saved as output from these simulations: the underlying network structure and the abundance time-series for each species. The abundance time-series is simply a record of the abundance of each species at every simulation iteration. (What do we calculate from these and why..) By limiting the simulation output the scope for analysis is restricted but the parameter space can be explored in more detail (higher resolution, greater number of repeats)\footnote{The changes to the model output reduced run times by up to a factor of 10. This required changes in how the interaction network is represented and therefore previously used network metrics could not be calculated. However it would be easy to modify the code to save some information on interaction frequencies and spatial states, which could be used in later analysis. This has not been done yet.}. This `first pass' scan of the parameter space allows us to construct a general picture of how the model behaves in this region. It may also be used to identify subsets of the  region of parameter space on which to focus further computational effort for e.g. spatial analysis.
 
 The entire range of habitat destruction is explored from pristine landscape ($0\% HL$) to near total destruction ($90\%HL$) in steps of $10\%$. In the current chapter all habitat is destroyed using the contiguous algorithm since it was decided that this is more realistic (see discussion in section \ref{sec:whereis}). Ranges for the IR were chosen based on previous simulations. Since $IR=0.005$ is sufficiently high to prevent any extinctions, this was taken as the maximum of the range. Simulations using $IR=0$ have already determined that this leads to community collapse, therefore these were not repeated. A value of $IR=0.0001$ was heuristically selected as the lower bound, at which some non-zero extinction is expected in pristine habitat for all MAI ratios.
 

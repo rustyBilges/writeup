@@ -1,0 +1,52 @@
+TODO: Stability is implicitly involved in all the work up to this point, so does not constitute a separate chapter? How to reconcile this? CHange order?
+
+\section{Motivation}
+\label{sec:motivate_stability}
+
+At the begining of chapter \ref{chap:varying_immigration_rate} we saw that our simulated communities collapse in the case of no immigration. We defined the term \emph{community collapse} as the extinction of all non-basal species from the landscape\footnote{Although we can imagine the more extreme form of collapse, where all species go extinct due to over-feeding. Will we look at this?}. It appears that immigration is required for the persistence of non-basal species, at least for the default parameters. This already tells us something interesting about the model, and potentially has something more profound to say about the real world (see discussion in sections \ref{sec:lit_review_stability}, \ref{sec:discussion_stability}. 
+In this chapter we use the individual-based model (IBM) to explore other factors contributing to the stability of simulated communities. As previously we contextualise the results using the current literature, and attempt to draw conculsions about mechanisms that may be present in the real-world\footnote{Hypothesis generation. Suggest experimental work?}    
+
+To investigate factors contributing to community stability, we must define what is meant by stability. This is not an easy task and is far beyond the scope of a single thesis. In fact, as we shall see in section \ref{sec:lit_review_stability}, there is much disagreement between eocloigists from different backgrounds as to what is meant by stability. In the work up to this point, stability has been a key consideration and we have defined and used a number of different metrics that are commonly used to measure stability. In what follows we explicitly compare to different stability concepts used in ecology.
+
+Before going into the details we note that the most general point about stability is that it is a common property of real-world ecosystems, and that it is a good thing. A lack of stability implies the loss of speices, wildly varying population dynamics, extreme responses to extrinsic disturbances. Thinking about these prpereties, ecosystems seem remarkably stable through time, and able to abosrb large disturbances before we see damage beiong done\footnote{Of course nature is complex and there are counter examples to all of these e.g. wild population dynmics of plankton, and yet marine communites appear stbale and constant in other way.} We do not undertsand how nature is able to do this.
+
+\section{Literature Review}
+\label{sec:lit_review_stability}
+
+\begin{itemize}
+
+\item What is stability!! (big topic)
+
+\item Immigration as an important mechanism behind stability/persistence
+
+\item Network structure as a contributing factor to stability
+
+\end{itemize}
+
+
+Coming from a background in physics, me two underlying images associated with stabilty were that of the stable isotope and that of a stable dynamical system. In the former case the idea is a system that is unlikely to change it's current states...deterministic system that has an attracting point or limit-cycle. Stochastic systems, steady state. Robustness to perturbations. Peristence. 
+
+
+Conclude section: To summarise there are several key factors that may be of interest. Immigration (meta-communities, see previous chapter.) Community structure (interaction network, static, re-wiring). Spatial effects (may or may not be able to study. e..g. larger scale, heterogeneity).  Demographic rates (i.e. parameters in the model. Can vary but cannot intriduce heterogenity). Things beyond the scope of our model...?
+
+
+\section{Model parameters versus persistence}
+
+First: show that zero immigration results in extinction of all non-plant species.
+
+Justify first focusing on persistence, since these mass extinctions are a problem!!
+
+Here we shows that reproduction rate, synthesis ability, and MAI ratio have some small effect on perisitence. 
+
+Plots done today:
+\begin{itemize}
+\item hist_species_per_trophic_level
+\item mvp_22rep
+\item proportion of individuals per functionla group (plot_mutualism_breakdown) all * plots have P < 0.001
+\end{itemize}
+
+\section{Why are some networks more stable than others?}
+
+
+
+From Dani re: community collpase at low IR : This may be different for different parameter values or if we assume that phenotypic plasticity (which can lead to plasticity in the interactions, so that the 1 and 0 in the interaction matrix can change) in closed systems occurs. However, these mechanisms are not in place in our model.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  3 NOV 2015 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  3 NOV 2015 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1938,6 +1938,15 @@ file (type png)
 Package pdftex.def Info: chapters/chapter05/"figures/proportion_per_functional_
 group".png used on input line 71.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
+
+<chapters/chapter05/"figures/hist_species_per_tl_zeroIR".png, id=51, 578.16pt x
+ 433.62pt>
+File: chapters/chapter05/"figures/hist_species_per_tl_zeroIR".png Graphic file 
+(type png)
+ <use chapters/chapter05/"figures/hist_species_per_tl_zeroIR".png>
+Package pdftex.def Info: chapters/chapter05/"figures/hist_species_per_tl_zeroIR
+".png used on input line 78.
+(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 9.29993pt on input line 9.
@@ -1947,15 +1956,17 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 [2]) [3 <./chapters/chapter05/figures/mvp1_22reps.png>] [4 <./chapters/chapter0
 5/figures/mean_trophic_dynamics.png>] [5 <./chapters/chapter05/figures/species_
 richness_per_trophic_level.png>] [6 <./chapters/chapter05/figures/proportion_pe
-r_functional_group.png>] (./memoirthesis.bbl
+r_functional_group.png>] [7 <./chapters/chapter05/figures/hist_species_per_tl_z
+eroIR.png>] [8
+
+] (./memoirthesis.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [7
+) [9
 
 
-
-] [8
+] [10
 
 ]
 No complaints by nag.
@@ -1975,21 +1986,22 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 28573 strings out of 493109
- 525775 string characters out of 6135010
- 799747 words of memory out of 5000000
- 31292 multiletter control sequences out of 15000+600000
- 54719 words of font info for 157 fonts, out of 8000000 for 9000
+ 28598 strings out of 493109
+ 526247 string characters out of 6135010
+ 803066 words of memory out of 5000000
+ 31297 multiletter control sequences out of 15000+600000
+ 58882 words of font info for 170 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 54i,12n,67p,1036b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,12n,67p,1037b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (8 pages, 268056 bytes).
+exlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (10 pages, 305506 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 28753 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 27 named destinations out of 1000 (max. 500000)
+ 28758 words of extra memory for PDF output out of 29859 (max. 10000000)
 

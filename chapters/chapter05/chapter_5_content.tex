@@ -48,7 +48,7 @@ Plots done today:
 \begin{figure}
 	\centering
 	\includegraphics[width=0.6\linewidth]{"figures/mvp1_22reps"}
-	\caption{Persistence is plotted against for 22 repeat simulations at each MAI ratio. Persistence is measured as the fraction of the initial 60 species that have not gone extinct by the end of a simulation (5000 iterations). Each blue dot gives the number of persistent species for a single simulation. The red line shows a linear regression fit with slope and p-value given in the inset.}
+	\caption{Species persistence is plotted for 22 repeat simulations at each MAI ratio. Persistence is measured as the fraction of the initial 60 species that have not gone extinct by the end of a simulation (5000 iterations). Each blue dot gives the number of persistent species for a single simulation. The red line shows a linear regression fit with slope and p-value given in the inset.}
 	\label{fig:mai_vs_persistence}
 \end{figure}
 
@@ -62,16 +62,24 @@ Plots done today:
 \begin{figure}
 	\centering
 	\includegraphics[width=1.0\linewidth]{"figures/species_richness_per_trophic_level"}
-	\caption{SRPTL}
+	\caption{Species persistence by trophic level over a range of MAI ratios. Each blue dot corresponds to the number of remaining species from that trophic level at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. The red lines show linear regression fits, with slopes and p-values given in the insets.}
 	\label{fig:mvp_species_per_tl}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=1.0\linewidth]{"figures/proportion_per_functional_group"}
-	\caption{PPFG}
+	\caption{Relative abundance (RA) by functional group for a range of MAI ratios. RA is measured as the fraction of the total individuals that belong to a given functional group. Each blue dot corresponds to the RA at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. Red lines show linear regression fits. Panels marked with an asterix * (A,B,D,E,F) have fits with p-value $< 0.0001$.}
 	\label{fig:mvp_prop_per_fg}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{"figures/hist_species_per_tl_zeroIR"}
+	\caption{Fractional persistence by trophic level for three different MAI ratios. Fractional persistence is measured by the fraction of speices intially belonging to a trophic level which have not gone extinct by the end of a simulation (5000 iterations). The solid bars give the mean value, taken  from 22 repeat simulations. Error bars show $\pm$ one standard deviation.}
+	\label{fig:mvp_hist_zeroIR}
+\end{figure}
+
 
 \section{Why are some networks more stable than others?}
 

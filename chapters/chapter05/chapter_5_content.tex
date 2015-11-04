@@ -80,6 +80,84 @@ Plots done today:
 	\label{fig:mvp_hist_zeroIR}
 \end{figure}
 
+\paragraph*{Reproduction rate}
+
+
+
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/rr_hist_species_per_tl_mai00"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/rr_hist_species_per_tl_mai05"}}
+	\caption{Response of overall species persistence to chaning RR.}
+	\label{fig:rr_histograms}
+\end{figure}
+
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/rrvp_22reps_mai0"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/rrvp_22reps_mai05"}}
+	\caption{Response of overall species persistence to chaning RR.}
+	\label{fig:rr_v_species_persistence}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/rr_species_richness_per_trophic_level_mai00"}
+	\caption{RR prop}
+	\label{fig:rr_species_per_trophic_level_mai0}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/rr_species_richness_per_trophic_level_mai05"}
+	\caption{RR prop}
+	\label{fig:rr_species_per_trophic_level_mai05}
+\end{figure}
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/rr_proportion_per_functional_group_mai00"}
+	\caption{RR prop}
+	\label{fig:rr_prop_per_fg_mai0}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/rr_proportion_per_functional_group_mai05"}
+	\caption{RR prop}
+	\label{fig:rr_prop_per_fg_mai05}
+\end{figure}
+
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/rr_mean_trophic_dynamics_mai00"}
+	\caption{RR prop}
+	\label{fig:rr_mean_troph_dynamics_mai0}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/rr_mean_trophic_dynamics_mai05"}
+	\caption{RR prop}
+	\label{fig:rr_mean_troph_dynamics_mai05}
+\end{figure}
+
+
 \section{Prunning for stability}
 %% NEW TITLE OBVS.
 
@@ -89,11 +167,81 @@ Problem with constraints for greater than 60 species. Discuss niche model. We im
 
 The total abundance increases by around 100 fold, as the width of the landscape is icnreased by 10. i.e. Total biomass scales approximately linearly with area\footnote{Need plot to show this?}. For MAI=0.0 it goes from 10586 to 1015475 individuals on avergae. 
 
-The number of initial species does not appear to effect the total abundance. (again plot?)\footnote{Could include some plots in an appendix. e.g. the equivalent of the parameter fiddling plots, that show all results instead of the condensed versions shown in this section.} 
+The number of initial species does not appear to effect the total abundance. (again plot?)\footnote{Could include some plots in an appendix. e.g. the equivalent of the parameter fiddling plots, that show all results instead of the condensed versions shown in this section.}
 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/ls_v_comp_mai00_standard"}
+	\caption{RR prop}
+	\label{fig:ls_v_comp_mai00}
+\end{figure}
+ 
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\linewidth]{"figures/ls_v_comp_mai05_standard"}
+	\caption{RR prop}
+	\label{fig:ls_v_comp_mai05}
+\end{figure}
+
+
+\paragraph*{Number of initial species}
+
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai00_niche"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai00_rewired"}}
+	\caption{Response of overall species persistence to chaning RR.}
+	\label{fig:rr_v_species_persistence}
+\end{figure}
+
+
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai05_niche"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai05_rewired"}}
+	\caption{Response of overall species persistence to chaning RR.}
+	\label{fig:nsp_v_comp_mai05}
+\end{figure}
 
 \section{Why are some networks more stable than others?}
 
+Here we looks "good" and "bad" network structures...
 
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.8\linewidth]{"figures/temp/bad_network_rewired"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.8\linewidth]{"figures/temp/good_network_rewired"}}
+	\caption{Response of overall species persistence to chaning RR.}
+	\label{fig:rr_v_species_persistence}
+\end{figure}
+
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.8\linewidth]{"figures/temp/example_pruned_bad_network_rewired"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.8\linewidth]{"figures/temp/example_pruned_good_network_rewired"}}
+	\caption{Response of overall species persistence to chaning RR.}
+	\label{fig:rr_v_species_persistence}
+\end{figure}
 
 From Dani re: community collpase at low IR : This may be different for different parameter values or if we assume that phenotypic plasticity (which can lead to plasticity in the interactions, so that the 1 and 0 in the interaction matrix can change) in closed systems occurs. However, these mechanisms are not in place in our model.

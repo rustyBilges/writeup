@@ -94,12 +94,31 @@ Experimental results by Mouquet and Loreau \cite{mouquet2004immigration} sugesst
 \section{Motivation}
 \label{sec:motivate_immigration}
 
-In chapter \ref{ch:3} it is shown that the default immigration rate (IR), as given in the default parameter values (see table \ref{tab:parameters}) is relatively high, corresponding to an open community. In particular, at the IR, we expect no extinction of species, even at $90\%$ habitat loss (HL). This behaviour allowed us to explore community responses to habitat loss that are not driven by changes in species richness (control for species richness). However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature [REF]. This may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).
+In chapter \ref{whereis} we saw that no species go extinct, even at extreme levels of habitat destruction ($HL=90\%$), when using the default parameter set (see table \ref{tab:parameters}). Motivated by \cite{tylianakis2007habitat}, this allowed us to explore community responses to habitat loss that are not associated with, or may preceed, the loss of species. The lack of extinctions produced by the model were shown to be due to a resuce effect from immigration. Even species which go locally extinct from the landscape may be replaced by this immigraiton.    
+
+The simulations presented so far represent \emph{open} communities with a strong influx of individuals belonging to all species.
+
+the default immigration rate (IR), as given in the default parameter values  is relatively high, corresponding to an open community. In particular, at the IR, we expect no extinction of species
+
+This behaviour  (control for species richness). However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature [REF]. This may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).
+
+\begin{itemize}
+	\item propagule rain
+	\item Require a uniform species pool to be maintained (trad IBT -> continent), or hetegeneity at landscape level [REF]
+\end{itemize}
 
 % more on what the different scenarios represent, or is that already discussed?
 In this chapter we further investigate the impacts of habitat loss (HL)  on multi-species communities with different proportions of mutualistic and antagonistic interactions (MAI ratios). We now consider other realistic scenarios by varying the immigration rate parameter. At one extreme we have the above scenario of high immigration, where extinction is prevented. At the other extreme we have closed communities with zero immigration. In this case there is no rescue effect from surrounding habitats, and we may expect to see extinctions in response to habitat loss. Although a totally closed system does not exist in nature certain systems may come close to this ideal. For example an island community that is a sufficiently distant from other land (see discussion on Island bio-geography theory in section \ref{sec:whereis}) will have very low immigration rates, and systems that are effectively closed may be artificially achieved in controlled situations (e.g. laboratory mesocosm). Although extremely open and extremely closed systems are possible, most real-world communities lie within these two extremes. By changing immigration rates, the approach followed here allow us to explore the entire range of possible responses\footnote{Not sure about this..} of biological communities to habitat loss.
 
 For the default parameter values (see table \ref{tab:whereis}) zero IR results in the inevitable extinction of all non-plant species, in our simulated communities. We will refer to this scenario as \emph{community collapse}. Even for pristine habitats ($0\%$ HL) we do not see stable and persistent communities without some non-zero IR (some increase in persistence with MAI ratio - see chapter \ref{ch:whereis}). This result is demonstrated in chapter \ref{ch:stability}, where we explore factors contributing to stability. For now we accept the general result that, with the default parameters, zero IR results in community collapse \footnote{weaken this statement, parameter dependent, or at least refer forwards again to next chapter}. In this chapter we are interested in the regime between these two extremes of zero IR, where we see many extinctions even at $0\% HL$, and high IR where we see no extinctions even at $90\% HL$. We are particularly interested in finding IRs for which communities are stable at low levels of HL, but where collapse is initiated as HL is increased. This is a scenario that we see in real-world communities. We are also interested in how community composition and stability vary with HL and IR, and how this is mediated by MAI ratio. (And interaction strength distributions.)
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\linewidth]{"figures/hist_species_per_tl_zeroIR"}
+	\caption{Fractional persistence by trophic level for three different MAI ratios. Fractional persistence is measured by the fraction of speices intially belonging to a trophic level which have not gone extinct by the end of a simulation (5000 iterations). The solid bars give the mean value, taken  from 22 repeat simulations. Error bars show $\pm$ one standard deviation. (Simulations from chapter \ref{chap:stability}}
+	\label{fig:mvp_hist_zeroIR}
+\end{figure}
+
 
 \newpage
 \section{Exploration of parameter space: habitat loss and immigration}

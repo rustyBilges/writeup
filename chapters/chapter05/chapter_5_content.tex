@@ -1,101 +1,124 @@
-TODO: Stability is implicitly involved in all the work up to this point, so does not constitute a separate chapter? How to reconcile this? CHange order?
+TODO: These results also have trophic links between bottom and top levels. Need to re-run these simulations?
 
 \section{Motivation}
 \label{sec:motivate_stability}
 
-At the begining of chapter \ref{chap:varying_immigration_rate} we saw that our simulated communities collapse in the case of no immigration. We defined the term \emph{community collapse} as the extinction of all non-basal species from the landscape\footnote{Although we can imagine the more extreme form of collapse, where all species go extinct due to over-feeding. Will we look at this?}. It appears that immigration is required for the persistence of non-basal species, at least for the default parameters. This already tells us something interesting about the model, and potentially has something more profound to say about the real world (see discussion in sections \ref{sec:lit_review_stability}, \ref{sec:discussion_stability}. 
-In this chapter we use the individual-based model (IBM) to explore other factors contributing to the stability of simulated communities. As previously we contextualise the results using the current literature, and attempt to draw conculsions about mechanisms that may be present in the real-world\footnote{Hypothesis generation. Suggest experimental work?}    
+At the begining of chapter \ref{chap:varying_immigration_rate} we saw that species persistence is low in communities without immigration (figure \ref{fig:mvp_hist_zeroIR}). We defined the term \emph{community collapse} as the extinction of all non-basal species from the landscape. With a zero immigration rate (IR) anatagonistic communities collapsed in all simulations, whilst mutualistic communities ($MAI=0.5,1.0$) sometimes show persistence of a few species in higher trophic levels. It appears that our model struggles to produce stable and persistent communities without immigration. This may also be the case in the real-world. It certainly appears that immigration plays an important role in shaping natural communities [REFS]. In the previous chapter we saw that the IR can alter the structure of simulated communities and affect how they respond to habitat loss. In this chapter we fix the IR at zero, and explore other factors contributing to the stability of simulated communities. In particular we ask whether it is possible to obtain stable and persistent communites without immigration. We begin with a discussion (section \ref{sec:lit_review_stability}) on the conecpt of stability and why it is important in ecology. We then explore how certain model parameters\footnote{We could include more parameters in this analysis e.g. synthesis ability} impact on persistence (Section \ref{sec:parameters_v_stability}), and ask what role is played by the structure of the interaction network (section \ref{sec:network_structure}).  
 
-To investigate factors contributing to community stability, we must define what is meant by stability. This is not an easy task and is far beyond the scope of a single thesis. In fact, as we shall see in section \ref{sec:lit_review_stability}, there is much disagreement between eocloigists from different backgrounds as to what is meant by stability. In the work up to this point, stability has been a key consideration and we have defined and used a number of different metrics that are commonly used to measure stability. In what follows we explicitly compare to different stability concepts used in ecology.
-
-Before going into the details we note that the most general point about stability is that it is a common property of real-world ecosystems, and that it is a good thing. A lack of stability implies the loss of speices, wildly varying population dynamics, extreme responses to extrinsic disturbances. Thinking about these prpereties, ecosystems seem remarkably stable through time, and able to abosrb large disturbances before we see damage beiong done\footnote{Of course nature is complex and there are counter examples to all of these e.g. wild population dynmics of plankton, and yet marine communites appear stbale and constant in other way.} We do not undertsand how nature is able to do this.
-
-\section{Literature Review}
+\section{Stability in ecology}
 \label{sec:lit_review_stability}
 
+Sability is an important concept in ecology. However there is no single coherent deifintion that ecologists use. In the work up to this point stability has been a key consideration - we have defined, and used in our analysis, a number of different metrics relating to it. In what follows we explicitly compare the different stability concepts used in ecology. Before going into the details we note the key point that real-world ecosystems generally apear to be stable, in some sense. A lack of stability may suggest wildly varying population dynamics, extreme responses to extrinsic disturbances, or the extinction of speices, depending on your definition of stability. Although there are examples of these phenomena in nature (e.g. spring bloom in plankton abundances, desertification, mass extinction events), luckily they are the exception not the norm. Therefore stability has become a key property of ecological communities (and meta-communities) that we must try to understand. 
+
+
+To incude here:
+
 \begin{itemize}
 
-\item What is stability!! (big topic)
+\item Influence of dynamical systems (population modelling) - Lyapunov stability. Steady-state/Equilibrium assumption vs Plasticity, adaptivity.
 
-\item Immigration as an important mechanism behind stability/persistence
+\item Limitations with what can be measured in the field. Other metrics used instead: 
 
-\item Network structure as a contributing factor to stability
+\item Resilience, Robustness, Persistence, Temporal variability. 
+
+\item Spatial stability metrics (alpha,beta,gamma). Issue of scale. 
+
+\item Immigration as an important mechanism behind stability/persistence - see previous chapter
+
+\item Network structure as a contributing factor to stability (large body of literature, also hybrid-networks)
 
 \end{itemize}
 
 
-Coming from a background in physics, me two underlying images associated with stabilty were that of the stable isotope and that of a stable dynamical system. In the former case the idea is a system that is unlikely to change it's current states...deterministic system that has an attracting point or limit-cycle. Stochastic systems, steady state. Robustness to perturbations. Peristence. 
+Argue that the metric/concept of stability used depends on the conext/questions you are asking. Here we choose to focus mainly on peristence and on species extinctions. Specifically we try to over come the problem that most non-plant species go extinct with there is no immigration. 
 
+%Coming from a background in physics, me two underlying images associated with stabilty were that of the stable isotope and that of a stable dynamical system. In the former case the idea is a system that is unlikely to change it's current states...deterministic system that has an attracting point or limit-cycle. Stochastic systems, steady state. Robustness to perturbations. Peristence. 
+%
+%
+%Conclude section: To summarise there are several key factors that may be of interest. Immigration (meta-communities, see previous chapter.) Community structure (interaction network, static, re-wiring). Spatial effects (may or may not be able to study. e..g. larger scale, heterogeneity).  Demographic rates (i.e. parameters in the model. Can vary but cannot intriduce heterogenity). Things beyond the scope of our model...?
 
-Conclude section: To summarise there are several key factors that may be of interest. Immigration (meta-communities, see previous chapter.) Community structure (interaction network, static, re-wiring). Spatial effects (may or may not be able to study. e..g. larger scale, heterogeneity).  Demographic rates (i.e. parameters in the model. Can vary but cannot intriduce heterogenity). Things beyond the scope of our model...?
-
-
+\newpage
 \section{Model parameters versus persistence}
+\label{sec:parameters_v_stability}
 
-First: show that zero immigration results in extinction of all non-plant species.
+We first attempt to improve the persistence of our simulated communites by varying certain model parameters. The parameter space of the model is large (see table \ref{whereis}), therefore we do not attempt to explore all of it. Previous work by Lurgi et al. \cite{lurgi2015effects} in developing the model has ensured the realism of the bio-energetic parameters (where possisble they are derived from literature - more on this). Therefore we restrict our exploration to the region of the default parameters. It may be that there exists somewhere a region of stable coexistence of all species for zero IR. If there does, we will not find it. However we may attemp to improve persistence and assess the impact of varying sensibly chosen model parameters.
 
-Justify first focusing on persistence, since these mass extinctions are a problem!!
-
-Here we shows that reproduction rate, synthesis ability, and MAI ratio have some small effect on perisitence. 
-
-Plots done today:
-\begin{itemize}
-\item histspeciespertrophiclevel
-\item mvp22rep
-\item proportion of individuals per functionla group (plotmutualismbreakdown) all * plots have P < 0.001
-\end{itemize}
-
-\begin{figure}
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{"figures/mvp1_22reps"}
+	\includegraphics[width=0.5\linewidth]{"figures/mvp1_22reps"}
 	\caption{Species persistence is plotted for 22 repeat simulations at each MAI ratio. Persistence is measured as the fraction of the initial 60 species that have not gone extinct by the end of a simulation (5000 iterations). Each blue dot gives the number of persistent species for a single simulation. The red line shows a linear regression fit with slope and p-value given in the inset.}
 	\label{fig:mai_vs_persistence}
 \end{figure}
 
-\begin{figure}
+
+\subsection{Mutualistic to antagonistic interaction (MAI) ratio}
+\label{sec:mvp}
+
+A key theme throughout this thesis, and one of the main novel aspects of this research, is the inclusion of mutualistic interactions into simulatied of trophic dynamics. In some cases we have seen that these mutualistic interactions play a stabilising role in the community (in contrast to May's classic `orgy of mutual benefaction'). Therefore is seems natural to aks what role the MAI ratio plays in the persistence of communities are zero IR.
+
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/mean_trophic_dynamics"}
-	\caption{Mean dynamics by functional group for four different MAI ratios. The coloured lines represent the abundance dynamics of the different functional groups, as indiciated in the legend. Abundance, at each simualtion iteration is measured by the total number of individuals belonging to all species of a given functional group.}
+	\includegraphics[width=0.8\linewidth]{"figures/mean_trophic_dynamics"}
+	\caption{Mean dynamics by functional group for four different MAI ratios. The coloured lines represent the abundance dynamics of the different functional groups, as indiciated in the legend. Abundance at each simualtion iteration is measured by the total number of individuals belonging to all species of a given functional group.}
 	\label{fig:mvp_mean_dynamics}
 \end{figure}
 
+
+Figure \ref{fig:mai_vs_persistence} shows that there is an increase in overall species persistence with MAI ratio. Although the trend is statistically signficant it is small, with an expected increase of about twelve to fourteen species over the whole range of MAI ratios. For antagonistic communities ($MAI=0.0$) we know to expect community collapse. This is observed in figure \ref{fig:mvp_mean_dynamics}, which shows the expected abundance dynamics of each functional group (FG). In panel A we see that the abundance of producers rises to fill the whole landscape ($200 \times 200=40,000$), whilst the abundance of all other FGs is at or near zero. From the other panels (B-D) we see that increasing the MAI ratio particularly benefits the mutualistic speices (both producers and animals) as expected, and apears to also confer some benefit to memebers of the other FGs. Ecologically this makes sense - if mutualism strongly benefits mutualistic species, it will also benefit those speices that feed on them. (It also appears that increasing the MAI ratio increases the time taken to reach steady state - the abundance of producers in panel D is clearly still rising.) 
+
+As we have seen previously (sections \ref{whereis}, \ref{sec:rel_abun}) the MAI ratio affects community composition as measured by the relative abundances of the FGs. Figure \ref{fig:mvp_prop_per_fg} shows us that the relative abundance of non-mutualist producers falls sharply as the relative abundance of mutualist species, both plants and animals, increases. It appears that the mutualist-producers outcompete the non-mutualists, thanks to the benefit gained by a plant in switching to mutualism (section \ref{sec:whereis}). Interestingly this also benefits the mutualist-animals, but not the herbivores, which show no significant increase in relative abundance \footnote{perhaps there is competition between these two FGs? Would have thought that those herbivores which feed on mutualistic plants would benefit from their increased availability? - only in absolute numbers, some suggestion of this in panel D of figure \ref{fig:mvp_prop_per_fg}. Why do they then die out?}. 
+
+Despite the changes in the distribution of abundances, there is little change in the species richness of each trophic level. Figure \ref{fig:mvp_species_per_tl} shows that the overall increase in species persistence is due to an increase in the species richness from zero to about one or two, in trophic levels two, three and four (panels B,C,D). We may have expected a greater increase in persistence, especially in the second trophic level, where the expected absolute and relative abundance increases considerably. The fact that less than two species are expected in this trophic level at $MAI = 1.0$ suggests that either competition or stochastic effects are important\footnote{Since cannot recover from extinctions.} here.    
+
+
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/species_richness_per_trophic_level"}
+	\includegraphics[width=0.8\linewidth]{"figures/species_richness_per_trophic_level"}
 	\caption{Species persistence by trophic level over a range of MAI ratios. Each blue dot corresponds to the number of remaining species from that trophic level at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. The red lines show linear regression fits, with slopes and p-values given in the insets.}
 	\label{fig:mvp_species_per_tl}
 \end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/proportion_per_functional_group"}
+	\includegraphics[width=0.8\linewidth]{"figures/proportion_per_functional_group"}
 	\caption{Relative abundance (RA) by functional group for a range of MAI ratios. RA is measured as the fraction of the total individuals that belong to a given functional group. Each blue dot corresponds to the RA at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. Red lines show linear regression fits. Panels marked with an asterix * (A,B,D,E,F) have fits with p-value $< 0.0001$.}
 	\label{fig:mvp_prop_per_fg}
 \end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.8\linewidth]{"figures/hist_species_per_tl_zeroIR"}
-	\caption{Fractional persistence by trophic level for three different MAI ratios. Fractional persistence is measured by the fraction of speices intially belonging to a trophic level which have not gone extinct by the end of a simulation (5000 iterations). The solid bars give the mean value, taken  from 22 repeat simulations. Error bars show $\pm$ one standard deviation.}
-	\label{fig:mvp_hist_zeroIR}
-\end{figure}
+\newpage
+\subsection{Reproduction rate (RR)}
+\label{sec:rr_v_p}
 
-\paragraph*{Reproduction rate}
+The problem of low persistence in high trophic levels remains. Mutualism has some small effect, but even at $MAI = 1.0$ we expect only one or two species on average in the non-basal trophic level. The initial transience in the abundance dyanmics (figure \ref{fig:mvp_mean_dynamics}) is charactersied by a sharp decline in plant abundance (mutualist and non-mutualist), which reaches a minimum and then rises again. It was hypothesised that this overconsumption and therefore limited availability of plant individuals, causes many of the extinctions. Indeed in these simulations $\sim 85\%$ of the extinctions occur during the first 500 iterations. Therefore we look at the possibility of improving persistence by increasing the reproduction rate (RR). This parameter defines that rate at which non-mutualist producers reproduce (via the wind-dispersal mechanism, see chapter \ref{whereis}). Therefore this increasing this mechanism should improve the availability of plant biomass in the system, with potentially cascading effects. The RR parameter does not affect mutualist-producers, which only reproduce via their interactions with mutualist-animals and not via wind-dispersal.
+
+Simulation results are presented for $MAI=0.0$ and $MAI=0.5$. The main results are as follows:
+
+\begin{itemize}
+	\item Increasing RR increases overall species persistence (figure \ref{fig:rr_v_species_persistence}). The effect is greater for antagonsitic communities.
+
+	\item The sharp decline in plant abundance during the transience is reduced (figures \ref{fig:rr_mean_troph_dynamics_mai0}, \ref{fig:rr_mean_troph_dynamics_mai05}). As we reasoned, this does results in increased abdolute abundances of all FGs at both MAI ratios. This is visibile in these figures.\footnote{Look at when extinctions occur? Plot cummulative extinctions against time?}
+	
+	\item The relative abundances by FG indicate that top-predators do very well out of the increase in RR (figures \ref{fig:rr_prop_per_fg_mai0}, \ref{fig:rr_prop_per_fg_mai0}). This is due to the flaw in the niche modle already discussed. 
+	
+	\item As before the increased abundance by FG does not necessarily translate into increased species richness (figures \ref{fig:rr_species_per_trophic_level_mai0}, \ref{fig:rr_species_per_trophic_level_mai05}). Again there is a weak trend - increasing the RR by a factor of twenty, results in one or two more species on average in the higher trophic levels. In the mutualistic communities ($MAI=0.5$) increasing the reproduction rate is bad for persistence in the second trophic level.
+	
+	\item We choose a higher reproduction rate for the further simualtions in this chapter because overall it improves persistence in all FGs. It is not unrealistic to imporves the reproductive ability of plants. Importantly it does affect the trade-off between mutualism/non-mutualism for plants.
+	
+\end{itemize}
 
 
-
-\begin{figure}
-	\centering	
-	\renewcommand{\thesubfigure}{}
-	\setlength{\subfloatlabelskip}{0pt}
-	%\hspace{-2.5cm}
-	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/rr_hist_species_per_tl_mai00"}}
-	%\caption{The mean initial number of species belogning to each functional gropup.}
-	%\label{fig:trophic_dynamics_example}
-	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/rr_hist_species_per_tl_mai05"}}
-	\caption{Response of overall species persistence to chaning RR.}
-	\label{fig:rr_histograms}
-\end{figure}
+%\begin{figure}
+%	\centering	
+%	\renewcommand{\thesubfigure}{}
+%	\setlength{\subfloatlabelskip}{0pt}
+%	%\hspace{-2.5cm}
+%	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/rr_hist_species_per_tl_mai00"}}
+%	%\caption{The mean initial number of species belogning to each functional gropup.}
+%	%\label{fig:trophic_dynamics_example}
+%	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/rr_hist_species_per_tl_mai05"}}
+%	\caption{Response of overall species persistence to chaning RR.}
+%	\label{fig:rr_histograms}
+%\end{figure}
 
 \begin{figure}
 	\centering	
@@ -106,22 +129,22 @@ Plots done today:
 	%\caption{The mean initial number of species belogning to each functional gropup.}
 	%\label{fig:trophic_dynamics_example}
 	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/rrvp_22reps_mai05"}}
-	\caption{Response of overall species persistence to chaning RR.}
+	\caption{Species persistence against reproduction rate (RR), with 22 repeat simulations at each RR. Persistence is measured as the fraction of the initial 60 species that have not gone extinct by the end of a simulation (5000 iterations). Each blue dot gives the number of persistent species for a single simulation. The red line shows a linear regression fit with slope and p-value given in the inset.}
 	\label{fig:rr_v_species_persistence}
 \end{figure}
 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/rr_species_richness_per_trophic_level_mai00"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/rr_species_richness_per_trophic_level_mai00"}
+	\caption{\textbf{MAI = 0.0}. Species persistence by trophic level over a range of reproduction rates. Each blue dot corresponds to the number of remaining species from that trophic level at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. The red lines show linear regression fits, with slopes and p-values given in the insets.}
 	\label{fig:rr_species_per_trophic_level_mai0}
 \end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/rr_species_richness_per_trophic_level_mai05"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/rr_species_richness_per_trophic_level_mai05"}
+	\caption{\textbf{MAI = 0.5}. Species persistence by trophic level over a range of reproduction rates. Each blue dot corresponds to the number of remaining species from that trophic level at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. The red lines show linear regression fits, with slopes and p-values given in the insets.}
 	\label{fig:rr_species_per_trophic_level_mai05}
 \end{figure}
 
@@ -129,15 +152,15 @@ Plots done today:
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/rr_proportion_per_functional_group_mai00"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/rr_proportion_per_functional_group_mai00"}
+	\caption{\textbf{MAI = 0.0}. Relative abundance (RA) by functional group for a range of reproduction rates. RA is measured as the fraction of the total individuals that belong to a given functional group. Each blue dot corresponds to the RA at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. Red lines show linear regression fits. Panels marked with an asterix * (A,B,D,E,F) have fits with p-value $< 0.0001$.}
 	\label{fig:rr_prop_per_fg_mai0}
 \end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/rr_proportion_per_functional_group_mai05"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/rr_proportion_per_functional_group_mai05"}
+	\caption{\textbf{MAI = 0.5}. Relative abundance (RA) by functional group for a range of reproduction rates. RA is measured as the fraction of the total individuals that belong to a given functional group. Each blue dot corresponds to the RA at the end of a single simulation. There are 22 repeat simualtions at each MAI ratio, each using a different interaction network. Red lines show linear regression fits. Panels marked with an asterix * (A,B,D,E,F) have fits with p-value $< 0.0001$.}
 	\label{fig:rr_prop_per_fg_mai05}
 \end{figure}
 
@@ -145,59 +168,65 @@ Plots done today:
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/rr_mean_trophic_dynamics_mai00"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/rr_mean_trophic_dynamics_mai00"}
+	\caption{\textbf{MAI = 0.0}. Mean dynamics by functional group for four different reproduction rates. The coloured lines represent the abundance dynamics of the different functional groups, as indiciated in the legend. Abundance at each simualtion iteration is measured by the total number of individuals belonging to all species of a given functional group.}
 	\label{fig:rr_mean_troph_dynamics_mai0}
 \end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/rr_mean_trophic_dynamics_mai05"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/rr_mean_trophic_dynamics_mai05"}
+	\caption{\textbf{MAI = 0.5}. Mean dynamics by functional group for four different reproduction rates. The coloured lines represent the abundance dynamics of the different functional groups, as indiciated in the legend. Abundance at each simualtion iteration is measured by the total number of individuals belonging to all species of a given functional group.}
 	\label{fig:rr_mean_troph_dynamics_mai05}
 \end{figure}
 
+\newpage
+\subsection{Landscape size}
+\label{sec:lsvp}
 
-\section{Prunning for stability}
-%% NEW TITLE OBVS.
+Another hypothesis was that spatial competition was causing the community collapse. Simulations run to test persistence response to both the size of the landscape. This was done for MAI = 0.0 and 0.5, with 25 repeat networks at each landscaep size. Increasing the size of the landscape should reduce the effect of spatial competition and therefore increase persistence.  
 
-Simulations run to test persistence response to both the size of the landscape and the number of intial species. This was done for MAI = 0.0 and 0.5. 25 repeat networks (except for nsvp, 240 species, only 14 repeats, and lsvp only 7 and 15 repeats for mai = 0 and 0.5 respectively.). 
+The total abundance increases by around 100 fold, as the width of the landscape is increased from 100 to 1000. For MAI=0.0 it goes from 10586 to 1015475 individuals on average. Figures \ref{fig:ls_v_comp_mai00} and \ref{fig:ls_v_comp_mai05} summarise the results for antagonistic and mutualistic communities respectively. In both cases there is an overall increase in species persistence with landscape size, driven by small increases in the species richness of all trophic levels. However the effect is small and it does not appear that it would resolve the species persistence problem for a landscape of a size we could realistically simulate. Therefore further simulations use the same landscape size of 200.
 
-Problem with constraints for greater than 60 species. Discuss niche model. We implement rewiring. Describe how this works. (Shows plots of niche and rewired networks).  
+%and the number of intial species. This was done for MAI = 0.0 and 0.5. 25 repeat networks (except for nsvp, 240 species, only 14 repeats, and lsvp only 7 and 15 repeats for mai = 0 and 0.5 respectively.). 
+\newpage
+\subsection{Number of initial species}
+\label{sec:numsp_vp}
 
-The total abundance increases by around 100 fold, as the width of the landscape is icnreased by 10. i.e. Total biomass scales approximately linearly with area\footnote{Need plot to show this?}. For MAI=0.0 it goes from 10586 to 1015475 individuals on avergae. 
+All previous simulations have been run with an interaction network and initial species pool consisting of 60 species. We consider the possibility that beginning the simualtion with a larger network may result in a greater number of persistent species. (In fact increasing the number of possible interaction networks and therefore making it less likely to find a stable one?).
+ 
+With more than around 70 species it became impossible to use the network generation procedure (discuss why). Therefore we used the pure niche model, and an implemented an algorithm to re-wire niche model networks such that the original trophic constraints could be met. We refer to the pure niche model networks and the re-wired networks as \emph{niche} and \emph{rewired} respectively. 
 
-The number of initial species does not appear to effect the total abundance. (again plot?)\footnote{Could include some plots in an appendix. e.g. the equivalent of the parameter fiddling plots, that show all results instead of the condensed versions shown in this section.}
+
+The number of initial species does not appear to effect the total abundance \footnote{Need to plot this? Could include some plots in an appendix.} There is an increase in overall persistence, in the case of the rewired networks. As shown in figures \ref{fig:nsp_v_comp_mai00} and \ref{fig:nsp_v_comp_mai05} this increase is almost entriely due to plants. Therefore this does not overcome the problem that very few species persist at higher trophic level. We are still include to propose that this is due to competition, combined with stochastic extinctions during transience.
 
 
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/ls_v_comp_mai00_standard"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/ls_v_comp_mai00_standard"}
+	\caption{\textbf{MAI = 0.0}. Landscape size against species persistence, total and broken down by trophic level. The points show the mean value over 25 replciates and the error bars show $\pm$ one standard deviation.}
 	\label{fig:ls_v_comp_mai00}
 \end{figure}
  
 \begin{figure}
 	\centering
-	\includegraphics[width=1.0\linewidth]{"figures/ls_v_comp_mai05_standard"}
-	\caption{RR prop}
+	\includegraphics[width=0.8\linewidth]{"figures/ls_v_comp_mai05_standard"}
+	\caption{\textbf{MAI = 0.5}. Landscape size against species persistence, total and broken down by trophic level. The points show the mean value over 25 replciates and the error bars show $\pm$ one standard deviation.}
 	\label{fig:ls_v_comp_mai05}
 \end{figure}
 
 
-\paragraph*{Number of initial species}
-
 \begin{figure}
 	\centering	
 	\renewcommand{\thesubfigure}{}
 	\setlength{\subfloatlabelskip}{0pt}
 	%\hspace{-2.5cm}
-	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai00_niche"}}
+	\subbottom[\textbf{Niche model}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai00_niche"}}
 	%\caption{The mean initial number of species belogning to each functional gropup.}
 	%\label{fig:trophic_dynamics_example}
-	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai00_rewired"}}
-	\caption{Response of overall species persistence to chaning RR.}
-	\label{fig:rr_v_species_persistence}
+	\subbottom[\textbf{Re-wired networks}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai00_rewired"}}
+	\caption{\textbf{MAI = 0.0}. Number of initial species against species persistence, total and broken down by trophic level. The points show the mean value over 25 replciates and the error bars show $\pm$ one standard deviation.}
+	\label{fig:nsp_v_comp_mai00}
 \end{figure}
 
 
@@ -206,48 +235,64 @@ The number of initial species does not appear to effect the total abundance. (ag
 	\renewcommand{\thesubfigure}{}
 	\setlength{\subfloatlabelskip}{0pt}
 	%\hspace{-2.5cm}
-	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai05_niche"}}
+	\subbottom[\textbf{Niche model}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai05_niche"}}
 	%\caption{The mean initial number of species belogning to each functional gropup.}
 	%\label{fig:trophic_dynamics_example}
-	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai05_rewired"}}
-	\caption{Response of overall species persistence to chaning RR.}
+	\subbottom[\textbf{Re-wired networks}]{\includegraphics[width=0.49\linewidth]{"figures/nsp_v_comp_mai05_rewired"}}
+	\caption{\textbf{MAI = 0.5}. Number of initial species against species persistence, total and broken down by trophic level. The points show the mean value over 25 replciates and the error bars show $\pm$ one standard deviation.}
 	\label{fig:nsp_v_comp_mai05}
 \end{figure}
 
-\section{Why are some networks more stable than others?}
+\newpage
+\section{Why are some communities more stable than others?}
 
-Here we looks "good" and "bad" network structures...
+%From Dani re: community collpase at low IR : This may be different for different parameter values or if we assume that phenotypic plasticity (which can lead to plasticity in the interactions, so that the 1 and 0 in the interaction matrix can change) in closed systems occurs. However, these mechanisms are not in place in our model.
 
-\begin{figure}
-	\centering	
-	\renewcommand{\thesubfigure}{}
-	\setlength{\subfloatlabelskip}{0pt}
-	%\hspace{-2.5cm}
-	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.8\linewidth]{"figures/temp/bad_network_rewired"}}
-	%\caption{The mean initial number of species belogning to each functional gropup.}
-	%\label{fig:trophic_dynamics_example}
-	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.8\linewidth]{"figures/temp/good_network_rewired"}}
-	\caption{Response of overall species persistence to chaning RR.}
-	\label{fig:rr_v_species_persistence}
-\end{figure}
-
-\begin{figure}
-	\centering	
-	\renewcommand{\thesubfigure}{}
-	\setlength{\subfloatlabelskip}{0pt}
-	%\hspace{-2.5cm}
-	\subbottom[\textbf{MAI ratio = 0.0}]{\includegraphics[width=0.8\linewidth]{"figures/temp/example_pruned_bad_network_rewired"}}
-	%\caption{The mean initial number of species belogning to each functional gropup.}
-	%\label{fig:trophic_dynamics_example}
-	\subbottom[\textbf{MAI ratio = 0.5}]{\includegraphics[width=0.8\linewidth]{"figures/temp/example_pruned_good_network_rewired"}}
-	\caption{Response of overall species persistence to chaning RR.}
-	\label{fig:rr_v_species_persistence}
-\end{figure}
-
-From Dani re: community collpase at low IR : This may be different for different parameter values or if we assume that phenotypic plasticity (which can lead to plasticity in the interactions, so that the 1 and 0 in the interaction matrix can change) in closed systems occurs. However, these mechanisms are not in place in our model.
-
-\section{Questions}
+Despite extensive investigation of model parameters persistence at zero IR is remains poor. However in the results presented above one thing stands out - there considerable variation in the results between simulations. 
 
 \begin{itemize}
-	\item How dense with figures can it be? (Figure to text ratio)
+	\item Is this variation due to noise, or inherent differences between each simulation? (Below we show that it is inherent by repeating simulations with the same network.)
+
+	\item Therefore the difference must be due to interaction network. Accepted in the field that network structure affects stability (see section \ref{sec:lit_review_stability}). Is this true in the real world?
+	
+	\item We choose one 'good' and one 'bad' network each with 120 species. Chosen by looking at the 25 repeats and picking the one with the highest/lowest number of species in all trophic levels. We show that this difference between the two networks is repeatable - that there is ecidence for a systematic difference between how many species persist and therefore one is better than the other (see figure \ref{fig:good_bad_nets_pruned}).
+	
 \end{itemize}
+
+We need to extend this anlysis and crucially work out \textbf{where this chapter is going!}. ToDo:
+
+\begin{itemize}
+	\item Re-do this analysis for 30 species (easier to visualise than 120)
+
+	\item Look at individual speices. Do they go extinct in the same order?
+	
+	\item Look at network metrics that have been associated with stability. E.g. are modular networks more stable?
+
+\end{itemize}
+
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{Bad network}]{\includegraphics[width=0.8\linewidth]{"figures/temp/bad_network_rewired"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{Good network}]{\includegraphics[width=0.8\linewidth]{"figures/temp/good_network_rewired"}}
+	\caption{Two 120 species interaction network. One produces better persistence than the other, although in both cases most species go extinct.}
+	\label{fig:good_bad_nets_120}
+\end{figure}
+
+\begin{figure}
+	\centering	
+	\renewcommand{\thesubfigure}{}
+	\setlength{\subfloatlabelskip}{0pt}
+	%\hspace{-2.5cm}
+	\subbottom[\textbf{Bad network}]{\includegraphics[width=0.8\linewidth]{"figures/temp/example_pruned_bad_network_rewired"}}
+	%\caption{The mean initial number of species belogning to each functional gropup.}
+	%\label{fig:trophic_dynamics_example}
+	\subbottom[\textbf{Good network}]{\includegraphics[width=0.8\linewidth]{"figures/temp/example_pruned_good_network_rewired"}}
+	\caption{Examples of the networks of species that remain at the end of a simualtion.}
+	\label{fig:good_bad_nets_pruned}
+\end{figure}
+

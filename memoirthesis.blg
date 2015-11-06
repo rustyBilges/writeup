@@ -5,45 +5,45 @@ The style file: siam.bst
 Database file #1: thesisbiblio.bib
 Warning--empty journal in ai2012immigration
 Warning--empty journal in condit2012thirty
-You've used 16 entries,
+You've used 18 entries,
             2030 wiz_defined-function locations,
-            602 strings with 7344 characters,
-and the built_in function-call counts, 6980 in all, are:
-= -- 689
-> -- 371
+            615 strings with 7872 characters,
+and the built_in function-call counts, 8163 in all, are:
+= -- 805
+> -- 447
 < -- 0
-+ -- 146
-- -- 130
-* -- 571
-:= -- 1070
-add.period$ -- 16
-call.type$ -- 16
-change.case$ -- 111
++ -- 176
+- -- 158
+* -- 674
+:= -- 1250
+add.period$ -- 18
+call.type$ -- 18
+change.case$ -- 130
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 296
-empty$ -- 424
-format.name$ -- 130
-if$ -- 1476
+cite$ -- 20
+duplicate$ -- 338
+empty$ -- 488
+format.name$ -- 158
+if$ -- 1724
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 16
-newline$ -- 51
-num.names$ -- 32
-pop$ -- 88
+int.to.str$ -- 18
+missing$ -- 18
+newline$ -- 57
+num.names$ -- 36
+pop$ -- 103
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 112
 quote$ -- 0
-skip$ -- 290
+skip$ -- 335
 stack$ -- 0
-substring$ -- 479
-swap$ -- 152
+substring$ -- 569
+swap$ -- 176
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
+type$ -- 72
 warning$ -- 2
-while$ -- 70
-width$ -- 18
-write$ -- 142
+while$ -- 80
+width$ -- 20
+write$ -- 160
 (There were 2 warnings)

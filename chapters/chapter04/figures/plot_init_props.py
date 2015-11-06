@@ -6,19 +6,20 @@ textb = 'x-large'
 fs = 20
 data = np.genfromtxt('initial_proportions_by_fg_raw.csv', delimiter=',')
 
-fig, axes = plt.subplots(1,3, figsize=(20,6))
+fig, axes = plt.subplots(1,3, figsize=(26,8))
 AX = axes.flatten()
 
 #plt.subplot(1,3,1)
 # The slices will be ordered and plotted counter-clockwise.
-labels = 'Producers', 'Animals', 'Predators', 'Top-predators'
+labels = 'Producers', 'Herbivores', 'Omnivores', 'Top-predators'
 temp_sizes = data[:,0]#[15, 30, 45, 1]
 sizes = []
 sizes.append(temp_sizes[0])
 sizes.append(temp_sizes[2])
 sizes.append(temp_sizes[4])
 sizes.append(temp_sizes[5])
-colors = ['green','yellow', 'blue', 'red']
+#colors = ['green','yellow', 'blue', 'red']
+colors = ['MediumSeaGreen','LemonChiffon', 'CornflowerBlue', 'IndianRed']
 
 #explode = (0, 0.1, 0, 0) # only "explode" the 2nd slice (i.e. 'Hogs')
 
@@ -39,8 +40,9 @@ AX[0].set_title('MAI = 0.0', size=fs)
 
 #plt.subplot(1,3,2)
 sizes = data[:,2]#[15, 30, 45, 1]
-labels = 'Producers', 'Mutualist-producers', 'Animals', 'Mutualist-animals', 'Predators', 'Top-predators'
-colors = ['green', 'yellowgreen','yellow', 'gold', 'blue', 'red']
+labels = 'Producers', 'Mutualist-producers', 'Herbivores', 'Mutualist-animals', 'Omnivores', 'Top-predators'
+#colors = ['green', 'yellowgreen','yellow', 'gold', 'blue', 'red']
+colors = ['MediumSeaGreen', 'PaleGreen','LemonChiffon', 'Khaki', 'CornflowerBlue', 'IndianRed']
 
 patches, texts, autotexts = AX[1].pie(sizes, labels=labels, colors=colors,
         autopct='%1.1f%%', shadow=True, startangle=90)
@@ -56,8 +58,10 @@ AX[1].set_title('MAI = 0.5', size=fs)
 
 #plt.subplot(1,3,3)
 sizes = data[:,4]#[15, 30, 45, 1]
-labels = 'Producers', 'Mutualist-producers', 'Animals', 'Mutualist-animals', 'Predators', 'Top-predators'
-colors = ['green', 'yellowgreen','yellow', 'gold', 'blue', 'red']
+#labels = 'Producers', 'Mutualist-producers', 'Animals', 'Mutualist-animals', 'Predators', 'Top-predators'
+labels = 'Producers', 'Mutualist-producers', 'Herbivores', 'Mutualist-animals', 'Omnivores', 'Top-predators'
+#colors = ['green', 'yellowgreen','yellow', 'gold', 'blue', 'red']
+colors = ['MediumSeaGreen', 'PaleGreen','LemonChiffon', 'Khaki', 'CornflowerBlue', 'IndianRed']
 
 patches, texts, autotexts = AX[2].pie(sizes, labels=labels, colors=colors,
         autopct='%1.1f%%', shadow=True, startangle=90)

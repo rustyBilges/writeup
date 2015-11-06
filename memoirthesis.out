@@ -1,7 +1,9 @@
-\BOOKMARK [0][-]{chapter.1}{Stability}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Literature Review}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Model parameters versus persistence}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.4}{Prunning for stability}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.5}{Why are some networks more stable than others?}{chapter.1}% 6
-\BOOKMARK [0][-]{section*.4}{Bibliography}{}% 7
+\BOOKMARK [0][-]{chapter.1}{Varying Immigration rate}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Assumptions of what has gone before}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Literature review for immigration}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Motivation}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.4}{Exploration of parameter space: habitat loss and immigration}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.5}{Points for discussion \(Rough Notes\)}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.6}{Habitat loss with low immigration}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.7}{Questions for Alan or Daniel}{chapter.1}% 8
+\BOOKMARK [0][-]{section*.5}{Bibliography}{}% 9

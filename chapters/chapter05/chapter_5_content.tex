@@ -1,4 +1,6 @@
 TODO: These results also have trophic links between bottom and top levels. Need to re-run these simulations?
+TODO: Come back to this chapter having done work on stability... e.g. Are the presistent communtities stationary?
+TODO: Look at Thilo's reference on constructing stable GLM topologies (distinct pairs approach..)
 
 \section{Motivation}
 \label{sec:motivate_stability}
@@ -7,6 +9,8 @@ At the begining of chapter \ref{chap:varying_immigration_rate} we saw that speci
 
 \section{Stability in ecology}
 \label{sec:lit_review_stability}
+
+Stability as a fundamental property of ecological community? - but we do not know how they manage to be stable - our mathemtical representations do not always suggest that they are stable - examples. Also do not even really know in which ways they are stable, and to what etexnt they are - there are clearly points of instability - mass extinctions, community collapse... 
 
 Sability is an important concept in ecology. However there is no single coherent deifintion that ecologists use. In the work up to this point stability has been a key consideration - we have defined, and used in our analysis, a number of different metrics relating to it. In what follows we explicitly compare the different stability concepts used in ecology. Before going into the details we note the key point that real-world ecosystems generally apear to be stable, in some sense. A lack of stability may suggest wildly varying population dynamics, extreme responses to extrinsic disturbances, or the extinction of speices, depending on your definition of stability. Although there are examples of these phenomena in nature (e.g. spring bloom in plankton abundances, desertification, mass extinction events), luckily they are the exception not the norm. Therefore stability has become a key property of ecological communities (and meta-communities) that we must try to understand. 
 
@@ -21,16 +25,52 @@ To incude here:
 
 \item Resilience, Robustness, Persistence, Temporal variability. 
 
-\item Spatial stability metrics (alpha,beta,gamma). Issue of scale. 
+\item Spatial stability metrics (alpha,beta,gamma). Issue of scale. \cite{wang2014ecosystem}
 
 \item Immigration as an important mechanism behind stability/persistence - see previous chapter
 
+\item Competitive exclusion
+
 \item Network structure as a contributing factor to stability (large body of literature, also hybrid-networks)
 
+\item Biodiversity thought to be good for stability - insurance hypothesis [ref], others?
+
+\item Functional stability - see iee paper. Is this a widespread conecpt?
 \end{itemize}
 
 
 Argue that the metric/concept of stability used depends on the conext/questions you are asking. Here we choose to focus mainly on peristence and on species extinctions. Specifically we try to over come the problem that most non-plant species go extinct with there is no immigration. 
+
+\paragraph{Resilience}
+\paragraph{Robustness}
+
+
+\subsection{Dynamical systems and stability}
+
+The mathematics of dynamical systems has made a major contribution to the field of ecology, and the paradigm of an ecolgoical community as a complex dynamical system is remains prevelant amongst theoretical eoclogists. As discussed in sectioin \ref{sec:whereis}, there are some theoreticla ecologists who question the use of the conecpt. In this context stability has a rgiourous meaning that relates to the dynamics of the mathematical system. This stability concept is often refered to as dynamical stability or asymtptotic stability, and is derieved from the eigenvalues of the linearised system close to equilbirum. Conceptually it tells us if the system will return to the equilibirum if pertrubed a small way. Related concepcts tell us...\cite{arnoldi2015} 
+
+\cite{may1972will} - compelxity versus stability debate. Random matric theory. Important misinterpretation of his equation..
+
+\cite{gross2009generalized} - the ensemble of possible networks scales combinatorialy with number of species. Variation in interaction strengths is shown to destabilise large networks. For a 50 species network proabablity of stability is $\sim 10^-3$ with connectance 0.1. This suggests that our sample size for repeat simulations is very small indeed. (Does it exaplin why dynamics without immigration is unstable?) 
+
+\subsection{Network structure and stability}
+\label{sec:lit_ns_stab}
+
+The popularity of the network perspective in community ecology makes it natural to ask what effect the interaction structure has on stabiilty. This question represents a large body of literature. As we saw, the dynamical sytems approach makes explicit the relationship between network structure and stability (section \ref{whereis}). This is not so easy with natural communities and empirical data..for various reasons..lack of information, do not have knowledge of underlying dynamics, unclear if there is an underlying dynamic model with fixed stability [REFs]. Therefore some communityt propoerties must be understood in terms of plasticity...  
+
+As disucssed in section \ref{sec:whereis}, the bulk of network ecology has focussed on networks of single interaction types. The same is true whe it comes to stability. The general consensus has been that the properties conferring stability on atagonisitc and mutualistic networks differs. This is discussed in the introduction. 
+
+\cite{thebault2010stability} simulated 7200 mutualistic and trophic networks, with varying diversity, connectance, nestedness, and modularity. During simulations species become extinct, which changes the intial network structure, and therefore changes these metrics also. Results confirmed by looking empirical networks. Attributed to perhaps indirect effctes: apparent competition and apparent facilitation.    
+
+\cite{sauve2014structure} later shows that these findings do not hold when combining interactions types into a single network. 
+
+\cite{mougi2012diversity} and \cite{lurgi2015effects} ...
+
+\cite{o2009perturbations} - experiemental manipulation of strong and weak interactors.
+
+\subsection{Spatial stability}
+
+alpha beta gamma stability metrics?? ref??
 
 %Coming from a background in physics, me two underlying images associated with stabilty were that of the stable isotope and that of a stable dynamical system. In the former case the idea is a system that is unlikely to change it's current states...deterministic system that has an attracting point or limit-cycle. Stochastic systems, steady state. Robustness to perturbations. Peristence. 
 %

@@ -1,103 +1,26 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
-\bibitem{ai2012immigration}
-{\sc D.~Ai, P.~Desjardins-Proulx, C.~Chu, and G.~Wang}, {\em Immigration, local
-  dispersal limitation, and the repeatability of community composition under
-  neutral and niche dynamics},  (2012).
+\bibitem{beninca2008chaos}
+{\sc E.~Beninc{\`a}, J.~Huisman, R.~Heerkloss, K.~D. J{\"o}hnk, P.~Branco,
+  E.~H. Van~Nes, M.~Scheffer, and S.~P. Ellner}, {\em Chaos in a long-term
+  experiment with a plankton community}, Nature, 451 (2008), pp.~822--825.
 
-\bibitem{cadotte2006dispersal}
-{\sc M.~W. Cadotte}, {\em Dispersal and species diversity: A meta-analysis},
-  The American Naturalist, 167 (2006), pp.~913--924.
+\bibitem{brock1967ecosystem}
+{\sc T.~D. Brock}, {\em The ecosystem and the steady state}, Bioscience, 17
+  (1967), pp.~166--169.
 
-\bibitem{condit2012thirty}
-{\sc R.~Condit, R.~A. Chisholm, and S.~P. Hubbell}, {\em Thirty years of forest
-  census at barro colorado and the importance of immigration in maintaining
-  diversity},  (2012).
+\bibitem{saul09phd}
+{\sc S.~Hazledine}, {\em {The Analysis and modelling of chaotic calcium
+  oscillations}}, PhD thesis, Department for Computational Systems Biology,
+  John Innes Centre, 2009.
 
-\bibitem{drury2015immigration}
-{\sc K.~L. Drury, J.~D. Suter, J.~B. Rendall, A.~M. Kramer, and J.~M. Drake},
-  {\em Immigration can destabilize tri-trophic interactions: implications for
-  conservation of top predators}, Theoretical Ecology,  (2015), pp.~1--12.
+\bibitem{lurgi2015effects}
+{\sc M.~Lurgi, D.~Montoya, and J.~M. Montoya}, {\em The effects of space and
+  diversity of interaction types on the stability of complex ecological
+  networks}, Theoretical Ecology,  (2015), pp.~1--11.
 
-\bibitem{eveleigh2007fluctuations}
-{\sc E.~S. Eveleigh, K.~S. McCann, P.~C. McCarthy, S.~J. Pollock, C.~J.
-  Lucarotti, B.~Morin, G.~A. McDougall, D.~B. Strongman, J.~T. Huber,
-  J.~Umbanhowar, et~al.}, {\em Fluctuations in density of an outbreak species
-  drive diversity cascades in food webs}, Proceedings of the National Academy
-  of Sciences, 104 (2007), pp.~16976--16981.
-
-\bibitem{foster2004propagule}
-{\sc B.~L. Foster, T.~L. Dickson, C.~A. Murphy, I.~S. Karel, and V.~H. Smith},
-  {\em Propagule pools mediate community assembly and diversity-ecosystem
-  regulation along a grassland productivity gradient}, Journal of Ecology, 92
-  (2004), pp.~435--449.
-
-\bibitem{freckleton2009measuring}
-{\sc R.~P. Freckleton, A.~R. Watkinson, and M.~Rees}, {\em Measuring the
-  importance of competition in plant communities}, Journal of ecology, 97
-  (2009), pp.~379--384.
-
-\bibitem{haddad2015habitat}
-{\sc N.~M. Haddad, L.~A. Brudvig, J.~Clobert, K.~F. Davies, A.~Gonzalez, R.~D.
-  Holt, T.~E. Lovejoy, J.~O. Sexton, M.~P. Austin, C.~D. Collins, et~al.}, {\em
-  Habitat fragmentation and its lasting impact on earth’s ecosystems},
-  Science Advances, 1 (2015), p.~e1500052.
-
-\bibitem{hanski2013species}
-{\sc I.~Hanski, G.~A. Zurita, M.~I. Bellocq, and J.~Rybicki}, {\em
-  Species--fragmented area relationship}, Proceedings of the National Academy
-  of Sciences, 110 (2013), pp.~12715--12720.
-
-\bibitem{klausmeier2001habitat}
-{\sc C.~Klausmeier}, {\em Habitat destruction and extinction in competitive and
-  mutualistic metacommunities}, Ecology Letters, 4 (2001), pp.~57--63.
-
-\bibitem{korfanta2012long}
-{\sc N.~M. Korfanta, W.~D. Newmark, and M.~J. Kauffman}, {\em Long-term
-  demographic consequences of habitat fragmentation to a tropical understory
-  bird community}, Ecology, 93 (2012), pp.~2548--2559.
-
-\bibitem{loreau1999immigration}
-{\sc M.~Loreau and N.~Mouquet}, {\em Immigration and the maintenance of local
-  species diversity}, The American Naturalist, 154 (1999), pp.~427--440.
-
-\bibitem{mouquet2004immigration}
-{\sc N.~Mouquet, P.~Leadley, J.~M{\'e}riguet, and M.~Loreau}, {\em Immigration
-  and local competition in herbaceous plant communities: a three-year
-  seed-sowing experiment}, Oikos, 104 (2004), pp.~77--90.
-
-\bibitem{puettker2011immigration}
-{\sc T.~Puettker, A.~A. Bueno, C.~dos Santos~de Barros, S.~Sommer, and
-  R.~Pardini}, {\em Immigration rates in fragmented landscapes-empirical
-  evidence for the importance of habitat amount for species persistence}, PLoS
-  One, 6 (2011), p.~e27963.
-
-\bibitem{ripple2012trophic}
-{\sc W.~J. Ripple and R.~L. Beschta}, {\em Trophic cascades in yellowstone: The
-  first 15years after wolf reintroduction}, Biological Conservation, 145
-  (2012), pp.~205--213.
-
-\bibitem{teyssedre2014contrasting}
-{\sc A.~Teyss{\`e}dre and A.~Robert}, {\em Contrasting effects of habitat
-  reduction, conversion and alteration on neutral and non neutral biological
-  communities}, Oikos, 123 (2014), pp.~857--865.
-
-\bibitem{tylianakis2007habitat}
-{\sc J.~M. Tylianakis, T.~Tscharntke, and O.~T. Lewis}, {\em Habitat
-  modification alters the structure of tropical host--parasitoid food webs},
-  Nature, 445 (2007), pp.~202--205.
-
-\bibitem{warren2015islands}
-{\sc B.~H. Warren, D.~Simberloff, R.~E. Ricklefs, R.~Aguil{\'e}e, F.~L.
-  Condamine, D.~Gravel, H.~Morlon, N.~Mouquet, J.~Rosindell, J.~Casquet,
-  et~al.}, {\em Islands as model systems in ecology and evolution: prospects
-  fifty years after macarthur-wilson}, Ecology letters, 18 (2015),
-  pp.~200--217.
-
-\bibitem{zartman2006habitat}
-{\sc C.~E. Zartman and H.~E. Nascimento}, {\em Are habitat-tracking
-  metacommunities dispersal limited? inferences from abundance-occupancy
-  patterns of epiphylls in amazonian forest fragments}, Biological
-  Conservation, 127 (2006), pp.~46--54.
+\bibitem{simberloff1974equilibrium}
+{\sc D.~S. Simberloff}, {\em Equilibrium theory of island biogeography and
+  ecology}, Annual review of Ecology and Systematics,  (1974), pp.~161--182.
 
 \end{thebibliography}

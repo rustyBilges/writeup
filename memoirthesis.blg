@@ -3,47 +3,53 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Warning--empty journal in ai2012immigration
-Warning--empty journal in condit2012thirty
-You've used 19 entries,
+Repeated entry---line 465 of file thesisbiblio.bib
+ : @article{lurgi2015effects
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--string name "december" is undefined
+--line 787 of file thesisbiblio.bib
+Warning--I didn't find a database entry for "ref:nason2013test"
+Warning--I didn't find a database entry for "BOOKONDESK"
+You've used 5 entries,
             2030 wiz_defined-function locations,
-            623 strings with 8075 characters,
-and the built_in function-call counts, 8594 in all, are:
-= -- 850
-> -- 465
+            536 strings with 4692 characters,
+and the built_in function-call counts, 1890 in all, are:
+= -- 188
+> -- 82
 < -- 0
-+ -- 183
-- -- 164
-* -- 708
-:= -- 1313
-add.period$ -- 19
-call.type$ -- 19
-change.case$ -- 136
++ -- 35
+- -- 28
+* -- 150
+:= -- 299
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 357
-empty$ -- 517
-format.name$ -- 164
-if$ -- 1818
+cite$ -- 5
+duplicate$ -- 82
+empty$ -- 127
+format.name$ -- 28
+if$ -- 395
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 19
-newline$ -- 60
-num.names$ -- 38
-pop$ -- 107
+int.to.str$ -- 5
+missing$ -- 4
+newline$ -- 18
+num.names$ -- 10
+pop$ -- 22
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 24
 quote$ -- 0
-skip$ -- 354
+skip$ -- 74
 stack$ -- 0
-substring$ -- 606
-swap$ -- 186
+substring$ -- 142
+swap$ -- 38
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
-warning$ -- 2
-while$ -- 85
-width$ -- 21
-write$ -- 169
-(There were 2 warnings)
+type$ -- 20
+warning$ -- 0
+while$ -- 22
+width$ -- 6
+write$ -- 47
+(There was 1 error message)

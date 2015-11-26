@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  10 NOV 2015 10:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  26 NOV 2015 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1784,7 +1784,7 @@ Package nag Info: Command \hc@caption not defined, skipping amendment on input
 line 4.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 4.
- (./chapters/chapter04/chap04.tex
+ (./chapters/chapter04b/chap04b.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 5.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1798,69 +1798,70 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 (Font)              scaled to size 13.39188pt on input line 5.
 
-(./chapters/chapter04/c4temp.tex
-<"./chapters/chapter04/figures/mean_rads".png, id=27, 939.51pt x 756.6669pt>
-File: "./chapters/chapter04/figures/mean_rads".png Graphic file (type png)
-
-<use "./chapters/chapter04/figures/mean_rads".png>
-Package pdftex.def Info: "./chapters/chapter04/figures/mean_rads".png used on i
-nput line 8.
-(pdftex.def)             Requested size: 358.40137pt x 288.6448pt.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 8.
-
-<"./chapters/chapter04/figures/mean_rads_with_averaging".png, id=29, 939.51pt x
- 756.6669pt>
-File: "./chapters/chapter04/figures/mean_rads_with_averaging".png Graphic file 
-(type png)
- <use "./chapters/chapter04/figures/mean_rads_with_averaging".png>
-Package pdftex.def Info: "./chapters/chapter04/figures/mean_rads_with_averaging
-".png used on input line 9.
-(pdftex.def)             Requested size: 358.40137pt x 288.6448pt.
+(./chapters/chapter04b/chapter_4b_content.tex
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 10.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 10.
+(Font)              scaled to size 10.18341pt on input line 11.
 
 
-LaTeX Warning: Float too large for page by 57.31978pt on input line 11.
+LaTeX Warning: Reference `arnolid2015' on page 1 undefined on input line 11.
 
-[1
+
+LaTeX Warning: Reference `sec:whereis' on page 1 undefined on input line 11.
+
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 16.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 16.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fnc' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \vbox (badness 1014) has occurred while \output is active []
+
+ [1
 
 
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 14.
-LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 14.
 
-[2 <./chapters/chapter04/figures/mean_rads.png> <./chapters/chapter04/figures/m
-ean_rads_with_averaging.png>]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 17.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 17.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 17.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 17.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 17.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 17.
+LaTeX Warning: Reference `whereis' on page 2 undefined on input line 24.
 
+
+Package natbib Warning: Citation `ref:nason2013test' on page 2 undefined on inp
+ut line 33.
+
+
+Package natbib Warning: Citation `BOOKONDESK' on page 2 undefined on input line
+ 38.
+
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.71893pt on input line 40.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 40.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 40.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 40.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 40.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 40.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 17.
+(Font)              scaled to size 10.07397pt on input line 40.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 17.
+(Font)              scaled to size 7.63599pt on input line 40.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 17.
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+(Font)              scaled to size 5.51999pt on input line 40.
+LaTeX Font Info:    Try loading font information for U+msa on input line 40.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1868,7 +1869,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 40.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1876,20 +1877,20 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 17.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 40.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 40.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 17.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 40.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 17.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 40.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
@@ -1897,114 +1898,199 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-<"./chapters/chapter04/figures/steadystate/hi_rw_ns_dynamics".png, id=47, 722.7
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.71893pt on input line 41.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 5.57996pt on input line 41.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 46.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 46.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 46.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 9.29993pt on input line 51.
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 9.29993pt on input line 51.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+<"./chapters/chapter04/figures/steadystate/hi_rw_ns_dynamics".png, id=55, 722.7
 pt x 433.62pt>
 File: "./chapters/chapter04/figures/steadystate/hi_rw_ns_dynamics".png Graphic 
 file (type png)
 
 <use "./chapters/chapter04/figures/steadystate/hi_rw_ns_dynamics".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/steadystate/hi_rw_ns_dyn
-amics".png used on input line 21.
+amics".png used on input line 74.
 (pdftex.def)             Requested size: 358.40137pt x 215.04286pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.29     \subbottom
-                   [Sample size = 1000 iterations]{\includegraphics[width=0....
 
-<"./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl1000".png, id=48, 
-722.7pt x 433.62pt>
-File: "./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl1000".png Gra
-phic file (type png)
 
-<use "./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl1000".png>
-Package pdftex.def Info: "./chapters/chapter04/figures/steadystate/hi_rw_ns_zsc
-ore_wl1000".png used on input line 29.
-(pdftex.def)             Requested size: 358.40137pt x 215.04286pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30     \subbottom
-                   [Sample size = 5000 iterations]{\includegraphics[width=0....
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 79.
 
-<"./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl5000".png, id=49, 
-722.7pt x 433.62pt>
-File: "./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl5000".png Gra
-phic file (type png)
 
-<use "./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl5000".png>
-Package pdftex.def Info: "./chapters/chapter04/figures/steadystate/hi_rw_ns_zsc
-ore_wl5000".png used on input line 30.
-(pdftex.def)             Requested size: 358.40137pt x 215.04286pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.38     \subbottom
-                   [Sample size = 1000 iterations]{\includegraphics[width=0....
+Package nag Warning: \label in float, but not after \caption on input line 81.
 
-<"./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl1000".png, id=50, 9
-39.51pt x 361.35pt>
+[3] [4 <./chapters/chapter04/figures/steadystate/hi_rw_ns_dynamics.png>]
+<"./chapters/chapter04b/figures/Rtests/stat_tests_v_wl".png, id=75, 731.3724pt 
+x 442.2924pt>
+File: "./chapters/chapter04b/figures/Rtests/stat_tests_v_wl".png Graphic file (
+type png)
+ <use "./chapters/chapter04b/figures/Rtests/stat_tests_v_wl".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/Rtests/stat_tests_v_wl"
+.png used on input line 111.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+
+[5 <./chapters/chapter04b/figures/Rtests/stat_tests_v_wl.png>]
+<"./chapters/chapter04b/figures/Rtests/stat_tests_v_time".png, id=89, 731.3724p
+t x 442.2924pt>
+File: "./chapters/chapter04b/figures/Rtests/stat_tests_v_time".png Graphic file
+ (type png)
+
+<use "./chapters/chapter04b/figures/Rtests/stat_tests_v_time".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/Rtests/stat_tests_v_tim
+e".png used on input line 122.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+
+<"./chapters/chapter04b/figures/Rtests/tl_stat_tests_v_wl".png, id=93, 731.3724
+pt x 442.2924pt>
+File: "./chapters/chapter04b/figures/Rtests/tl_stat_tests_v_wl".png Graphic fil
+e (type png)
+
+<use "./chapters/chapter04b/figures/Rtests/tl_stat_tests_v_wl".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/Rtests/tl_stat_tests_v_
+wl".png used on input line 133.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+ [6 <./chapters/chapter04b/figures/Rtests/stat_tests_v_time.png>]
+<"./chapters/chapter04b/figures/hi_trophic_dynamics".png, id=104, 731.3724pt x 
+442.2924pt>
+File: "./chapters/chapter04b/figures/hi_trophic_dynamics".png Graphic file (typ
+e png)
+ <use "./chapters/chapter04b/figures/hi_trophic_dynamics".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/hi_trophic_dynamics".pn
+g used on input line 146.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+
+<"./chapters/chapter04b/figures/hi_sp_by_tl".png, id=105, 731.3724pt x 442.2924
+pt>
+File: "./chapters/chapter04b/figures/hi_sp_by_tl".png Graphic file (type png)
+ <use "./chapters/chapter04b/figures/hi_sp_by_tl".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/hi_sp_by_tl".png used o
+n input line 154.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 154.
+
+<"./chapters/chapter04b/figures/hi_sp_by_tl_part10000".png, id=106, 731.3724pt 
+x 442.2924pt>
+File: "./chapters/chapter04b/figures/hi_sp_by_tl_part10000".png Graphic file (t
+ype png)
+ <use "./chapters/chapter04b/figures/hi_sp_by_tl_part10000".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/hi_sp_by_tl_part10000".
+png used on input line 155.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+
+<"./chapters/chapter04b/figures/Rtests/sp_ma_stat_tests_v_wl".png, id=107, 731.
+3724pt x 442.2924pt>
+File: "./chapters/chapter04b/figures/Rtests/sp_ma_stat_tests_v_wl".png Graphic 
+file (type png)
+
+<use "./chapters/chapter04b/figures/Rtests/sp_ma_stat_tests_v_wl".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/Rtests/sp_ma_stat_tests
+_v_wl".png used on input line 162.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+
+<"./chapters/chapter04b/figures/Rtests/sp_la_stat_tests_v_wl".png, id=108, 731.
+3724pt x 442.2924pt>
+File: "./chapters/chapter04b/figures/Rtests/sp_la_stat_tests_v_wl".png Graphic 
+file (type png)
+
+<use "./chapters/chapter04b/figures/Rtests/sp_la_stat_tests_v_wl".png>
+Package pdftex.def Info: "./chapters/chapter04b/figures/Rtests/sp_la_stat_tests
+_v_wl".png used on input line 163.
+(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
+ [7 <./chapters/chapter04b/figures/Rtests/tl_stat_tests_v_wl.png>]
+<"./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl1000".png, id=119, 
+939.51pt x 361.35pt>
 File: "./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl1000".png Grap
 hic file (type png)
 
 <use "./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl1000".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/steadystate/lowIR_v_high
-IR_wl1000".png used on input line 38.
+IR_wl1000".png used on input line 173.
 (pdftex.def)             Requested size: 358.40137pt x 137.84375pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39     \subbottom
-                   [Sample size = 5000 iterations]{\includegraphics[width=0....
 
-<"./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl5000".png, id=51, 9
-39.51pt x 361.35pt>
+<"./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl5000".png, id=120, 
+939.51pt x 361.35pt>
 File: "./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl5000".png Grap
 hic file (type png)
 
 <use "./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl5000".png>
 Package pdftex.def Info: "./chapters/chapter04/figures/steadystate/lowIR_v_high
-IR_wl5000".png used on input line 39.
+IR_wl5000".png used on input line 174.
 (pdftex.def)             Requested size: 358.40137pt x 137.84375pt.
 
-[3 <./chapters/chapter04/figures/steadystate/hi_rw_ns_dynamics.png>] [4 <./chap
-ters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl1000.png> <./chapters/chap
-ter04/figures/steadystate/hi_rw_ns_zscore_wl5000.png>] [5] [6 <./chapters/chapt
-er04/figures/steadystate/lowIR_v_highIR_wl1000.png> <./chapters/chapter04/figur
-es/steadystate/lowIR_v_highIR_wl5000.png>]
-<"./chapters/chapter04/figures/sum_maps".png, id=77, 1675.2186pt x 919.2744pt>
-File: "./chapters/chapter04/figures/sum_maps".png Graphic file (type png)
 
-<use "./chapters/chapter04/figures/sum_maps".png>
-Package pdftex.def Info: "./chapters/chapter04/figures/sum_maps".png used on in
-put line 59.
-(pdftex.def)             Requested size: 636.60028pt x 349.3279pt.
- [7 <./chapters/chapter04/figures/sum_maps.png>]
+LaTeX Warning: Reference `whereis' on page 8 undefined on input line 183.
 
-! LaTeX Error: File `"./chapters/chapter04/figures/sum_maps_noveg"' not found.
+)) [8 <./chapters/chapter04b/figures/hi_trophic_dynamics.png>] [9 <./chapters/c
+hapter04b/figures/hi_sp_by_tl.png> <./chapters/chapter04b/figures/hi_sp_by_tl_p
+art10000.png>] [10pdfTeX warning (ext4): destination with the same identifier (
+name{subfigure.1}) has been already used, duplicate ignored
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...hapters/chapter04/figures/sum_maps_noveg"}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.70 \clearemptydoublepage
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{subfigure.2}) has been already used, duplicate ignored
 
-[8])) (./memoirthesis.bbl
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.70 \clearemptydoublepage
+                           <./chapters/chapter04b/figures/Rtests/sp_ma_stat_tes
+ts_v_wl.png> <./chapters/chapter04b/figures/Rtests/sp_la_stat_tests_v_wl.png>]
+[11pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.70 \clearemptydoublepage
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{subfigure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.70 \clearemptydoublepage
+                           <./chapters/chapter04/figures/steadystate/lowIR_v_hi
+ghIR_wl1000.png> <./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl500
+0.png>] [12
+
+] (./memoirthesis.bbl
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 4.
 
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 4.
+(Font)              scaled to size 10.18341pt on input line 5.
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 9.
@@ -2021,103 +2107,52 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 23.
 
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 30.
+) [13
 
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 36.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 41.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 47.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 52.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 56.
-
-[9
-
-
-
-
-
+] [14
 
 ]
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 61.
+Package natbib Warning: There were undefined citations.
 
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 65.
+Package nag Warning: 6 complaints in total.
 
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 70.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 76.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 81.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 86.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 91.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 98.
-
-) [10]
-
-Package nag Warning: 19 complaints in total.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
 (./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8E78C744CB506432AA51D24F090DFB0A;325.
+(rerunfilecheck)             Checksum: D0EC280B97F2FB8016775718EE5C63C6;341.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 28693 strings out of 493109
- 528417 string characters out of 6135010
- 801375 words of memory out of 5000000
- 31290 multiletter control sequences out of 15000+600000
- 54318 words of font info for 201 fonts, out of 8000000 for 9000
+ 28700 strings out of 493109
+ 528698 string characters out of 6135010
+ 805913 words of memory out of 5000000
+ 31308 multiletter control sequences out of 15000+600000
+ 63753 words of font info for 204 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 54i,12n,67p,2340b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,13n,67p,1704b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/tex
 mf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (10 pages, 789203 bytes).
+Output written on memoirthesis.pdf (14 pages, 1092143 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 27741 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 31860 words of extra memory for PDF output out of 35830 (max. 10000000)
 

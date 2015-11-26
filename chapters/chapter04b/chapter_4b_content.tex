@@ -1,0 +1,197 @@
+TODO: not forget this useful link :) jasss.soc.surrey.ac.uk/15/2/7.html !!
+\\
+TODO: how do metrics vary with measurement length/through time...
+
+
+\section{Motivation}
+\label{sec:motivate_stationarity}
+
+We look here at stationairty because it was seen in previous chapter that in certain circumstances the population dynamcis become highly variable, as measured by the temporal variability metric.  
+
+Ecological relevance...There has been a strong tradition of understanding ecosystems as existing at of near some stochastic equilbirium or steady state \cite{brock1967ecosystem} (issue of short time scale fluctuations and thermodynamics systems). This is motivated partly by obersvation of constancy in ecological communties through time [REFS] and also by thoereitcal considerations - for examples various stability metrics require the assumption of a stable eqilibrium.. stability people \ref{arnolid2015} and section \ref{sec:whereis}. 
+
+There is also the concern that high variability affects the results we present...previously results were collected..but averaged over replicates...here we look for stationarity..if stationary..we also look at how results differ depending on how they are measured for a highgly viriable simulation...OUTLINE WHAT IS TO FOLLOW:
+
+\begin{itemize}
+	\item Thermodynamic equilibrium is...therefore can talk about extrinsic state variables..
+	\item Different concepts of equilibirium in ecology - IBT suggest that island communities exists in a dynamic equilibirum between immigration and local extinctions..\cite{simberloff1974equilibrium}.
+	\item Steady-state can mean different things in different contexts. In general we define it as a condition under which certain properties of the system can be defined which are unchanging in time. For example..a chaotic attractor can be considered a steady-state
+	\item Whether or not real we consider... 
+	\item Chaotic attractor could be steady-state..
+\end{itemize}
+
+
+In the previous work (\cite{lurgi2015effects} and section \ref{whereis}) the results presenetd were mainly taken as a final value at the end of the simulation. This is true for the Diversity and Abundance metrics, taken form outputecosystem. This is also true of mutualistic subnetwork - which is only taken at the final iteration (over period of 200 iterations). And Network properties are all caculated from the final 200 iterations of the simultion i.e 4800 to 5000. Here we investigate this, the assumptions behind it and the potential affect on results. This invesitgation is in part inspired by the result that the CoV in the total biomass increases as the IR is dreceased, bringing into question the assumptions behind taking `snapshot results'.
+
+%  iteration, total_sp, total_count, prod_sp, prod_count, mut_prod_sp, mut_prod_count, herb_sp, herb_count, mut_sp, mut_count, prim_pred_sp, prim_pred_count, sec_pred_sp, sec_pred_count, shannon_index, shannon_eq, shannon_index_prods, shannon_eq_prods, shannon_index_herbs, shannon_eq_herbs, shannon_index_interm, shannon_eq_interm, shannon_index_top, shannon_eq_top.
+
+
+\section{Second order stationarity}
+
+\begin{itemize}
+	\item Justify choice of weak-stationarity
+	\item discuss tests for weak stationarity e.g. Nason \cite{ref:nason2013test}. PSR. ADF. KPSS. define them.
+	\item mention use of wavelets in ecological time series - reffer to PSR test 		
+	\item Choice of metric to look at : total number of individuals, or by species?? (justify both..)
+\end{itemize}
+
+The first question we can ask is whether the time-series is stationary, which is defined as the time invariance of certain statistical properties of the time-series. We focus here on weak stationarity, or second-order stationarity, so-called because it requires the time invariance of the first and second moments of the series. Specifically it is defined as \cite{BOOKONDESK}:
+
+\begin{equation}
+	\mathbf{E}(x(t)) = m(t) = m(t + \tau)  \tau \in \mathbf{R},
+\end{equation}
+
+for a process $x(t)$. Intuitively this is the definition of stationarity we are looking for in the model output - if the generated time series is weakly stationary then the simulation has reached a steady state distribution, and the results that we take involve sampling from this distribution. The repeatability of the results then only depends on the properties of this dsitribution (we also need to look at individual species..see later). 
+
+\subsection{Tests for stationarity}
+\label{sec:stat_tests}
+
+We compare three different tests of stationarity: KPSS, ADF, PSR. \\
+
+The ADF test is...\\
+
+The PSR test is...\\
+
+The KPSS test is...\\
+
+\subsection{Characterising the tests}
+\label{sec:characterising_stat_tests}
+
+
+We run 100 repeats of long 50,000 iteration simualtions, for the base case of zero HL and no mutualism. This is done for a high level of IR (0.001) and a low level of IR (0.0001). We will refer to these two cases here as high immigration (HI) and low immigration (LI) respectively. Since the temporal variation is greater, on average, for lower IR, we will first focus on the HI scenario - this is closer to the previous work that has been done using the model and is more likely to reach a steady-state as desired. For the intial analysis we select a single HI simulation run. The total abundance dynamics of this simualtion is shown in panel (A) of figure \ref{fig:adf}. The total abundance has a mean and standard deviation of 15915.8 and 1545.6 respectively. 
+
+To check to functioning of these tests we also generate two time-series of know stationarity. The first (panel B figure \ref{fig:adf}) is a simple one-dimensional random walk defined by the series:
+
+\begin{equation}
+	x(t) = \Sigma_{t}^{i=1} Z_i, 
+\end{equation}   
+
+where $Z_i$ are independent random variables that may take values of $-10$ or $+10$, both with probabaility a half. An ensemble of random walks was generated and a single instance was chosen with mean and variance closest to the HI simualtion run. These values are 15525.2 and 1549.8. We know that such a series is non-stationary in general (although it may appear stationary by chance?). The second series (panel C figure \ref{fig:adf}) is stationary. The value at each time point is independently drawn from a normal distribution with mean and variance equal to the original HI series.  
+
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{"./chapters/chapter04/figures/steadystate/hi_rw_ns_dynamics"}
+     \caption{The three time series used to characterise the performance of the stationarity tests. The intial 1000 points removed such that all are 49,000 points long. \textbf{(A) HI}: total abundance dynamics of an IBM simualtion with high immigration rate; \textbf{(B) RW}: a random walk without drift, as described in the text; and \textbf{(C) NS}: a series generated by independent sampling from a normal distribution.} 
+     \label{fig:adf}   
+\end{figure}
+
+\begin{table}[]
+\centering
+\label{tab:adf_psr_kpss_whole}
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}c |c|
+>{\columncolor[HTML]{9AFF99}}c |c|c|c|c|}
+\hline
+   & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}A.D.F.}                 & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}P.S.R.}              & \multicolumn{2}{c|}{\cellcolor[HTML]{C0C0C0}K.P.S.S.}                  \\ \hline
+   & \cellcolor[HTML]{C0C0C0}stat & \cellcolor[HTML]{C0C0C0}p-value      & \cellcolor[HTML]{C0C0C0}stat & \cellcolor[HTML]{C0C0C0}p-value   & \cellcolor[HTML]{C0C0C0}stat & \cellcolor[HTML]{C0C0C0}p-value         \\ \hline
+HI & -15.401                      & {\color[HTML]{333333} \textless0.01} & -                            & 0.0004782808                      & 0.5395                       & 0.03277                                 \\ \hline
+RW & -4.0386                      & {\color[HTML]{333333} \textless0.01} & -                            & \cellcolor[HTML]{9AFF99}0.9929773 & 18.7453                      & \textless0.01                           \\ \hline
+NS & -37.5348                     & {\color[HTML]{333333} \textless0.01} & -                            & \cellcolor[HTML]{9AFF99}0.811097  & 0.0466                       & \cellcolor[HTML]{9AFF99}\textgreater0.1 \\ \hline
+\end{tabular}
+\caption{Results of applying the three stationarity tests to the example time series shown in figure \ref{fig:adf}. P-values that indicate evidence for stationarity at $95\%$ are highlighted in green. The test statistics are also given for the ADF and KPSS tests.}
+\end{table}
+
+The ADF test states for all three time-series we can reject the null-hypothesis of stationarity at $99\%$ confidence. Looking at the ADF statistics in table \ref{tab:adf_psr_kpss_whole} we see that the ranking of these series is as expected. The more negative the tests statistic, the more evidence there is to reject the null hypothesis of stationarity. According to the ADF test the NS series is most likely to be stationary, followed by the HI series and then the RW. This seems like the correct order although the evidence for stationarity of the random walk may be too strong. The KPSS test also ranks the series in this order. According to this test the NS is clearly stationary (accept h0) and the RW is clearly non-stationary. However the HI series is borderline. There is sufficeint evidence to reject the null-hypothesis at $95\%$, but not at  $99\%$.  The PSR test, which is based on the time variability of the frequency spectrum of the signal, appears to fail completely. Therefore we do not trust it. (But we may come back to this in the wavelet discussion  below)..but it does suggest that...  Ref Nason paper (above) - Grouse populations mode of oscillation varies..Also good way to see transience!
+
+
+%% WUOLD BE NICE BUT ANALYSIS NEEDS RE-DOING...
+%\begin{figure}[hp]
+%	\centering
+%    \subbottom[Sample size = 1000 iterations]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl1000"}}
+%    \subbottom[Sample size = 5000 iterations]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04/figures/steadystate/hi_rw_ns_zscore_wl5000"}}
+%        \caption{The z-statistic used to test the null hypothesis that sample means are drawn from the stationary distribution. Each dot indicates a sample from the dynamics, which is tested.}    
+%    \label{fig:zscore}
+%\end{figure}
+
+\newpage
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.80\linewidth]{"./chapters/chapter04b/figures/Rtests/stat_tests_v_wl"}
+     \caption{Two tests for stationarity applied to samples of varying size (window length). Samples are taken from the three time series shown in figure \ref{fig:adf} - the total number of species of the high immigration (HI) simulation run, and the two control time series (RW and NS). All three time series contain 50,000 points. Sample windows begin at the 1000th time point (since this removes the initial transience from the HI simulation), and increase in length up to 49,000 points. (A) ADF test, with p-values capped at 0.20. 95th and 99th percentile in yellow and green respectively, indicating significant vidence for stationarity. (B) KPSS test, with p-values capped at 0.01. 95th and 99th percentile in orange and red respectively, indicating significant evidence for non-stationarity.} 
+     \label{fig:stat_tests_v_wl}   
+\end{figure}
+
+The ADF and KPSS are tested for varying sampling sizes, using the three example time series shown in figure \ref{fig:adf}. The two tests again to perform differently (refer to table \ref{tab:adf_psr_kpss_whole}). The KPSS test correctly identifies the RW and NS series as non-stationary and stationary respectively, for all sample sizes ($1000 - 49,000)$. This is shown in panel B of figure \ref{fig:stat_tests_v_wl}. The ADF test (panel A figure \ref{fig:stat_tests_v_wl}) correctly identifies the NS series as stationary for all sample sizes. For short sample sizes it also idetifies the RW series as non-stationary. However, for sample sizes much above 20,000 the ADF test finds sufficient evidence to reject the null hypotheis that the RW series is non-stationary, at $95\%$. This is an interesting result because the RW is generated by a non-stationary process. However it is a specific instance of this process, which to the eye does appear quite constant, especially over the central part of the time series. Therefore it is not clear if the time series should be classified as stationary or non-stationary. It is interesting that the result of the tests depends on the length of sample used, suggesting that.. 
+
+There is mixed evidence for the stationarity of the HI series, as shown in figure \ref{fig:stat_tests_v_wl}. The ADF test, for all sample sizes above 2000, finds significant evidence that the HI series is stationary. Whereas the KPSS test, on the whole, gives significant evidence that the HI series is non-stationary. (There are only seven cases where there is insufficient evidence to reject the null hypothesis that the HI series is stationary, and these occur at sample sizes between 24,000 and 34,000.) It appears that the KPSS test is a more stringent test for stationarity , whereas the ADF test is more easy to fool by series that appear stationary [REPHRASE - USE ENSEMBLE TO JUSTIFY THIS?? ALAN?]. This knowledge is useful, and we will continue to use both tests.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{"./chapters/chapter04b/figures/Rtests/stat_tests_v_time"}
+     \caption{Similar to figure \ref{fig:stat_tests_v_wl} but with samples of fixed sample size taken from different parts of the time series. To sample windows of given length (wl) are moved along the series and the tests are applied to the sub-series that falls within the window. Results are plotted against the mid-point of the window.}
+     \label{fig:stat_tests_v_time}   
+\end{figure}
+
+From inspection of the dynamics, there is a quick initial transience ($\sim 500$ iterations) followed by a long period of relatively constant number of individuals. This pattern appears to be ubitquitous at high immigration rates, however it does not necessarly hold for low immigration rates. In these cases we noted a high temporal variability in abundances. Therefore we look next at the case of low IR..
+
+In the case of high IR we saw that the evidence for stationarity increases with window length. We also tested for the possibility that the simulation only reaches stationarity after a certain number of iterations - the results were qualiotively similar when sampling in reverse. Figure \ref{fig:stat_tests_v_time} shows the tests applied to the HI series for three different window lengths. The hypothesis would be shown by initially no evidence for stationarity, followed by increased evidence towards the end. This is not seen. 
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{"./chapters/chapter04b/figures/Rtests/tl_stat_tests_v_wl"}
+     \caption{Similar to figure \ref{fig:stat_tests_v_wl}, but here the tests are applied separately to each trophic level of the HI simulation. The four time series (TL$1-4$) represent the total number of individual belonging to each trophic level at every iteration.} 
+     \label{fig:tl_stat_tests_v_wl}   
+\end{figure}
+
+The time series is further broken down by trophic level and by species. It may be the case that the total number of individuals is stationary, but that the trophic or species level dynamics cause changes in community composition over time. It is also  likely that different species may exhibit different types of dynamics, and therefore it makes more sense to test individual species. Furthurmore...biomass argument.  
+
+There is an apparent difference in the stationarity of the four trophic levels. Figure \ref{fig:tl_stat_tests_v_wl} shows 
+
+There is also apparent differen between species...as in figure \ref{fig:sp_stat_tests_v_wl}..
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{"./chapters/chapter04b/figures/hi_trophic_dynamics"}
+     \caption{Dynamics by trophic level for HI simulation.} 
+     \label{fig:hi_trophic_dynamics}   
+\end{figure}
+
+
+\begin{figure}[hp]
+	\centering
+    \subbottom[Sample size = 1000 iterations]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04b/figures/hi_sp_by_tl"}}
+    \subbottom[Sample size = 5000 iterations]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04b/figures/hi_sp_by_tl_part10000"}}
+        \caption{The dynamics of individual species.}    
+    \label{fig:dynamics_by_species}
+\end{figure}
+
+\begin{figure}[hb]
+	\centering
+	\subbottom[Three most abundant species]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04b/figures/Rtests/sp_ma_stat_tests_v_wl"}}
+		\subbottom[Three least abundant species]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04b/figures/Rtests/sp_la_stat_tests_v_wl"}}
+     \caption{Similar to figure \ref{fig:stat_tests_v_wl}, but here the tests are applied separately to individual species from the HI simulation. (A) The abundance time series of three species with highest average abundances. (B) The three species with lowest average abundance.} 
+     \label{fig:sp_stat_tests_v_wl}   
+\end{figure}
+
+\newpage
+
+
+\begin{figure}[hp]
+	\centering
+    \subbottom[Sample size = 1000 iterations]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl1000"}}
+    \subbottom[Sample size = 5000 iterations]{\includegraphics[width=0.8\linewidth]{"./chapters/chapter04/figures/steadystate/lowIR_v_highIR_wl5000"}}
+        \caption{The effect of using different sample sizes on the sample mean and standard deviation. Dynamics generated using IBM simulation model with low and high IR (green and red respectively).}    
+    \label{fig:low_v_hi}
+\end{figure}
+
+
+\section{Chaotic dynamics?}
+\label{sec:chaos}
+
+Although in many cases a statistical steady-state appears to be reached, there are complex dynamics and fluctuations within that state (see section \ref{whereis}).  Here we look at if these are due to noise or deterministic dynamics. We follow work presented by Saul in his PhD thesis \cite{saul09phd}. We also draw inspiration from the demonstration that plankton communities may undergo chaotic dynamics - \cite{beninca2008chaos}, and their focus on the Lyapunov exponent.
+
+
+\section{Discussion}
+
+This behaviour may or may not be seen in real communitites - chaotic dynamics have been demonstrated in plankton, how about terrestrial ecosystems? HOwever we come back again to limititations - snapshot measurements are taken - with replicate in time. Average over these? Check for differences between them - what is the actual procedure? Can we comment here? 
+
+Computationally we should perhaps compare the appraoches of taking snapshots and averaging over many iterations...DISCUSS WTIH ALAN.
+
+Other question - does it reach the same steady-ish state every time? Is it always the same species that dominate/just bubble along.
+
+
+%% Note : simulations for the longer runs use 100 repeats with different networks. But the same networks are used for hi and lo IR simulations. Network 7 (simulation 8) was selected and run 50 repeats at hi immigration. Also a single repeat at each hi and lo IR were run with this network. We will also run:
+%% > a simulation where everything is saved at every iteration (for video)
+%% > this network for chaning HL and changing MAI ratio. All the above for an emprical food web!

@@ -9,47 +9,47 @@ Repeated entry---line 465 of file thesisbiblio.bib
 I'm skipping whatever remains of this entry
 Warning--string name "december" is undefined
 --line 787 of file thesisbiblio.bib
-Warning--I didn't find a database entry for "ref:nason2013test"
 Warning--I didn't find a database entry for "BOOKONDESK"
-You've used 5 entries,
+Warning--empty journal in tilman1994habitat
+You've used 53 entries,
             2030 wiz_defined-function locations,
-            536 strings with 4692 characters,
-and the built_in function-call counts, 1890 in all, are:
-= -- 188
-> -- 82
+            834 strings with 14637 characters,
+and the built_in function-call counts, 23921 in all, are:
+= -- 2374
+> -- 1276
 < -- 0
-+ -- 35
-- -- 28
-* -- 150
-:= -- 299
-add.period$ -- 5
-call.type$ -- 5
-change.case$ -- 28
++ -- 515
+- -- 450
+* -- 1976
+:= -- 3658
+add.period$ -- 53
+call.type$ -- 53
+change.case$ -- 373
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 82
-empty$ -- 127
-format.name$ -- 28
-if$ -- 395
+cite$ -- 54
+duplicate$ -- 963
+empty$ -- 1473
+format.name$ -- 450
+if$ -- 5049
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 4
-newline$ -- 18
-num.names$ -- 10
-pop$ -- 22
+int.to.str$ -- 53
+missing$ -- 52
+newline$ -- 162
+num.names$ -- 106
+pop$ -- 290
 preamble$ -- 1
-purify$ -- 24
+purify$ -- 323
 quote$ -- 0
-skip$ -- 74
+skip$ -- 948
 stack$ -- 0
-substring$ -- 142
-swap$ -- 38
+substring$ -- 1794
+swap$ -- 486
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 0
-while$ -- 22
-width$ -- 6
-write$ -- 47
+type$ -- 210
+warning$ -- 1
+while$ -- 248
+width$ -- 55
+write$ -- 475
 (There was 1 error message)

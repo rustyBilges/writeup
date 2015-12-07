@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {1.2.1}Tests for stationarity}{3}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Characterising the tests}{3}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Stationarity results}{11}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Discussion}{14}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.4}Discussion (`skeleton')}{14}{subsection.1.2.4}
 \contentsline {section}{\numberline {1.3}Reliability of results}{15}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Abundances}{15}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Variability: CoV}{15}{subsection.1.3.2}

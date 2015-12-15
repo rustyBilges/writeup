@@ -4,14 +4,27 @@
 
 Temporary appendix to discuss plots suggested by Daniel and Jose (see email dated November 9th)
 
+%% TODO:
+%% 	DegreeDistributions:
+%% 		> better DD plots: p-links calculated from replicas with mean and avriance...
+%%		> talk to Dani about network metrics being based only on abundance...
+
 %% Notes:
 %% Figure \ref{fig:sdj} was produced using the original simulation results, stored on my laptop. 
 %% Plot script: Documents/phd files/habitat_loss_project/IBM/new_analysis/links_v_hl.py
 %% 
-%% 
+%% Figure \ref{fig:numlinks_heatmaps} : .csv files compiled on BC3 w: IM_vs_HL_heatmap/coarse_grained/compile_heatmaps_numlinks.py
+%%   then transferred to rusty and plotted:
+%% /home/rusty/Documents/phd files/habitat_loss_project/python_analysis_scripts/interaction_strenghts/num_links 
 %%
 %% Figure \ref{fig:example_dd}, same as \ref{fig:sdj} above. PLot script: Documents/phd files/habitat_loss_project/IBM/new_analysis/dd_v_hl.py
-\section{Degree Distributions (and Number of Links)}
+
+\section{RADs [2]}
+\label{sec:rads}
+
+For information on model fitting to RADs see attachment in email from Daniel with information on model the Vegan R package.
+
+\section{Degree Distributions (and Number of Links) [3]}
 \label{sec:dd}
 
 Suggestions were to plot number of links versus habitat loss (HL), and to try plotting degree distributions (DD) at different levels of habitat destruction. Can the DDs tell us which species are most effected by HL?
@@ -47,3 +60,11 @@ Figure \ref{fig:example_dd} shows example degree distributions for 8 individual 
 	\caption{Example degree distributions for individual simulated communities. These degree distributions are calculated using the realised networks, as described in the caption to figure \ref{fig:sdj}.}
 	\label{fig:example_dd}
 \end{figure}
+
+
+\section{Heatmaps of total abundance [6]}
+\label{sec:tot_tl_abun}
+
+Here we plot the more results form the simulations presented in chapter 4. This time we show the total abundance by trophic level, instead of relative abundance as was used in the previous plots.
+
+For comparison we calculate these plots in two different ways: 1) From snapshot of abundances at final iteration, 2) from averaged abundances over final 4000 iterations. 

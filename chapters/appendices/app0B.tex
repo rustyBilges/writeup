@@ -18,7 +18,9 @@ Temporary appendix to discuss plots suggested by Daniel and Jose (see email date
 %% /home/rusty/Documents/phd files/habitat_loss_project/python_analysis_scripts/interaction_strenghts/num_links 
 %%
 %% Figure \ref{fig:example_dd}, same as \ref{fig:sdj} above. PLot script: Documents/phd files/habitat_loss_project/IBM/new_analysis/dd_v_hl.py
-
+%%
+%% Figures \  : heatmaps compiled on BC3 (IM_vs_HL/coarse_grained), beware of otpions re averaging etc!
+%%				Plotting done on uni computer (MyFiles/cm1788/Documents/IM_vs_HL_heatmap/non_vegetarian/mut_1.0_hl_type_1)
 \section{RADs [2]}
 \label{sec:rads}
 
@@ -68,3 +70,28 @@ Figure \ref{fig:example_dd} shows example degree distributions for 8 individual 
 Here we plot the more results form the simulations presented in chapter 4. This time we show the total abundance by trophic level, instead of relative abundance as was used in the previous plots.
 
 For comparison we calculate these plots in two different ways: 1) From snapshot of abundances at final iteration, 2) from averaged abundances over final 4000 iterations. 
+
+\begin{figure}
+	\centering
+	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{"tl_abs_abun_mai0"}}
+	\subbottom[`Averaged' results]{\includegraphics[width=0.7\textwidth]{"tl_abs_av_abun_mai0"}}
+	\caption{Example .}
+	\label{fig:example}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_abun_mai0.5}}}}
+	\subbottom[`Averaged' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_av_abun_mai0.5}}}}
+	\caption{Example .}
+	\label{fig:example}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_abun_mai1.0}}}}
+	\subbottom[`Averaged' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_av_abun_mai1.0}}}}
+	\caption{Example .}
+	\label{fig:example}
+\end{figure}

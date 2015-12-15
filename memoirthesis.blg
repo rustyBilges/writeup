@@ -1,11 +1,11 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 I found no \citation commands---while reading file memoirthesis.aux
 Database file #1: thesisbiblio.bib
 You've used 0 entries,
             2030 wiz_defined-function locations,
+<<<<<<< HEAD
             497 strings with 3738 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
@@ -37,6 +37,39 @@ skip$ -- 1
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
+=======
+            589 strings with 6292 characters,
+and the built_in function-call counts, 4722 in all, are:
+= -- 465
+> -- 208
+< -- 0
++ -- 87
+- -- 70
+* -- 370
+:= -- 739
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 71
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 211
+empty$ -- 327
+format.name$ -- 70
+if$ -- 996
+int.to.chr$ -- 0
+int.to.str$ -- 13
+missing$ -- 12
+newline$ -- 42
+num.names$ -- 26
+pop$ -- 59
+preamble$ -- 1
+purify$ -- 61
+quote$ -- 0
+skip$ -- 186
+stack$ -- 0
+substring$ -- 338
+swap$ -- 94
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0

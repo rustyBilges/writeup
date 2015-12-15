@@ -1,3 +1,20 @@
+<<<<<<< HEAD
 \BOOKMARK [0][-]{appendix.A}{Appendix B}{}% 1
 \BOOKMARK [1][-]{section.A.1}{Degree Distributions \(and Number of Links\)}{appendix.A}% 2
 \BOOKMARK [0][-]{section*.2}{Bibliography}{}% 3
+=======
+\BOOKMARK [0][-]{chapter.1}{Stationarity}{}
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Second-order stationarity}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.2.1}{Tests for stationarity}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.2}{Characterising the tests}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.3}{Stationarity results}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.4}{Discussion \(`skeleton'\)}{section.1.2}
+\BOOKMARK [1][-]{section.1.3}{Reliability of results}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.3.1}{Abundances}{section.1.3}
+\BOOKMARK [2][-]{subsection.1.3.2}{Variability: CoV}{section.1.3}
+\BOOKMARK [2][-]{subsection.1.3.3}{Repeatability}{section.1.3}
+\BOOKMARK [1][-]{section.1.4}{Determinism and Chaos}{chapter.1}
+\BOOKMARK [1][-]{section.1.5}{Discussion}{chapter.1}
+\BOOKMARK [0][-]{section*.4}{Bibliography}{}
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa

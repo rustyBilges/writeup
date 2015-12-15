@@ -4,7 +4,6 @@
 %TODO: ensemble RW and NS with boxplots? \\
 %TODO: Fix RAS plots (ordering) \\
 %TODO: Test for determinism and chaos\\
-%TODO: Conclude! \\
 %TODO: how do metrics vary with measurement length/through time - how likely get wrong result from snapshot (distribution of results?) \\
 %TODO: Add species labels (most abundant) to species dynamics figure \\
 %TODO: Fix labelling on least/most abundant stat test figure. Shuold be A-D. And in caption.  \\
@@ -252,10 +251,50 @@ Regarding the PSR test - The test attempts to detect a time-varying power spectr
 \section{Reliability of results}
 \label{sec:reliability}
 
-Since we cannot be certain over stationartiy, especially within 5000 iterations with variable IR!..we now look at..
+Since we cannot be certain over stationartiy, especially within 5000 iterations with variable IR!..we now look at what this means for reliability our results..
 
 \subsection{Abundances}
+
+This analysis uses two metrics, both of which require the hypothesis that each species has an equilibirum abundance or long-term average abundance, which is well approximated by the mean abundance between 1000 and 50,000 iteration in the long simulations. (This is related to the idea of repeatability, which we look at below - is this long term average the same...RAS etc. for NM1)
+
+Ideally we need to look at HI ensemble for IR=0.005 to justify original `snapshot' sampling - ask Alan.\\
+**Need a plot to show how MRE is calculated..
+%% These plots are a bit crap - how to improve?
+\begin{figure}[hp]
+	\centering
+	\subbottom[]{\includegraphics[width=1.0\linewidth]{"./chapters/chapter04b/figures/Reliability/LI/most_and_least_abun_species_dynamics"}}
+	\subbottom[]{\includegraphics[width=1.0\linewidth]{"./chapters/chapter04b/figures/Reliability/LI/most_and_least_abun_species_dynamics_maf_wl4000"}}
+		
+    \caption{Example of speices dynamics with and without averaging.}    
+    \label{fig:maf_example}
+\end{figure}
+
+\begin{figure}[hp]
+	\centering
+	\subbottom[HI ensemble]{\includegraphics[width=1.0\linewidth]{"./chapters/chapter04b/figures/Reliability/LI/three_estimator_regression"}}
+	\subbottom[LI ensemble]{\includegraphics[width=1.0\linewidth]{"./chapters/chapter04b/figures/Reliability/HI/three_estimator_regression"}}    
+    \caption{Example of linear regression with the three estimators.}    
+    \label{fig:regression_exmaple}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\linewidth]{"./chapters/chapter04b/figures/Reliability/error_versus_estimator"}
+    \caption{Abundance estimator performance - use this to justify the way we take our measurements from simulations! The first estimator is a `snapshot' at 5000th iteration, the rest are averages of windows ranging from legnth 1000 to 50,000 in steps of 1000.}    
+    \label{fig:error_versus_estimator}
+\end{figure}
+
+In this section we look at how reliable results are, how sensitive they are to different ways of measuring, and different lengths of averaging. 
+
+At the end of the section we also look at repeatability using the ensemble NM1. And introduce RAS spectra.
+
 \subsection{Variability: CoV}
+
+Here we look at the CoV - how does it depends on the length of window used? 200 was used initially..
+
+We may also look at CoV (or stationarity again) versus mean species abundance - do the more abundant species have higher temporal variability?
+
+\subsection{Repeatability}
 
 \begin{figure}[hp]
 	\centering
@@ -264,11 +303,6 @@ Since we cannot be certain over stationartiy, especially within 5000 iterations 
     \label{fig:ras_3examples}
 \end{figure}
 
-In this section we look at how reliable results are, how sensitive they are to different ways of measuring, and different lengths of averaging. 
-
-At the end of the section we also look at repeatability using the ensemble NM1. And introduce RAS spectra.
-
-\subsection{Repeatability}
 
 Repeats communites - do they always do the same things...NM1
 

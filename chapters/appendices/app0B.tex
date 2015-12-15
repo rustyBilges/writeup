@@ -1,0 +1,49 @@
+
+\chapter{Appendix B}
+\label{app:app0b}
+
+Temporary appendix to discuss plots suggested by Daniel and Jose (see email dated November 9th)
+
+%% Notes:
+%% Figure \ref{fig:sdj} was produced using the original simulation results, stored on my laptop. 
+%% Plot script: Documents/phd files/habitat_loss_project/IBM/new_analysis/links_v_hl.py
+%% 
+%% 
+%%
+%% Figure \ref{fig:example_dd}, same as \ref{fig:sdj} above. PLot script: Documents/phd files/habitat_loss_project/IBM/new_analysis/dd_v_hl.py
+\section{Degree Distributions (and Number of Links)}
+\label{sec:dd}
+
+Suggestions were to plot number of links versus habitat loss (HL), and to try plotting degree distributions (DD) at different levels of habitat destruction. Can the DDs tell us which species are most effected by HL?
+
+Figure \ref{fig:sdj} shows the change in the number of links (L) in the realised network for the cases of random and contiguous HL. Both cases show a decrease in L in response to HL. For contiguous loss this is most noticeable for high MAI ratio. However there is large variability in the results, and only 25 replicate communities are used here. In the case of random destruction the change in L is only visible at $90\%$ HL.  
+
+\begin{figure}
+
+	\centering
+	\includegraphics[width=\textwidth]{"L_v_HL_sdj5000"}
+	\caption{The number of links L in the \emph{realised network}, plotted against habitat loss. Here the realised network is caculated from the interactions that occur during the final 200 iterations of a simulation. The simulations used are those from chapter 3 (I.R.$=0.05$, default parameters). The solid lines show the mean value of L over 25 replicate simulations, and the error bars show $\pm 1$ standard deviation.}
+	\label{fig:sdj}
+\end{figure}
+
+The decrease in the number of links seen in figure \ref{fig:sdj} is not due to species extinctions, since we know that the high immmigration rate prevents species from going extinct. Therefore it must be due to low abundances meaning that species which could interact (they are connected in the underlying interaction network) do not meet each other in space, and therefore these interaction do not show up in the realised network. Clearly the method for sampling the realised network how many links will be missing. Currently only the final 200 iterations (4800 to 5000) are used to construct the adjacency matrices\footnote{The adjacecny for IS1 counts the frequency of interactions between species during these 200 iterations.} If a longer time period were used we would probably find that more of the rarer species would encounter each other and interact, by chance, and therefore fewer links would be missing from the network. It should be possible to calculate the network metrics, or at least predict them, using the probability of encounter based only on species abundances in the landscape. We should probably look into this.
+
+When we consider changes in immigration rate we start to see species extinctions and therefore it becomes not just unlikely but impossible for species to interact. However it is important to note that no species goes permanently extinct from the simulations - if there is a non-zero immigration rate then it is always possible for a species to recover from extinction. In figure \ref{fig:numlinks_heatmaps} we see the combined effect of IR and HL on the number of links in the realised networks, for the case of contiguous HL. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{"numlinks_ir_v_hl"}
+	\caption{The mean number of links over the slice of parameter space investigated in chapter 4, for three MAI ratios. Here the realised networks are calculated in the same way as for figure \ref{fig:sdj}. However in this case there are 50 replicate simulations for each point in the heatmap.}
+	\label{fig:numlinks_heatmaps}
+\end{figure}
+
+
+Figure \ref{fig:example_dd} shows example degree distributions for 8 individual communities. It is not immediately clear how best to present these and to look for trends..
+
+\begin{figure}
+
+	\centering
+	\includegraphics[width=\textwidth]{"example_degree_distribution"}
+	\caption{Example degree distributions for individual simulated communities. These degree distributions are calculated using the realised networks, as described in the caption to figure \ref{fig:sdj}.}
+	\label{fig:example_dd}
+\end{figure}

@@ -1,0 +1,15 @@
+These figures were generated with the follwoing scripts:
+
+Most_least abundant species dynamics: python_analysis_scripts/steady_state/test_files/highIM/find_species.py
+
+Comparison of estimators (need fisnishing off): python_analysis_scripts/steady_state/test_files/highIM/compare_estimators.py AND LOWIR
+
+Error versus estimator, calculated for esemble on BC3 with: habitat_loss/miguel_IBM/IM_vs_HL_heatmap/longer_runs/IM_0.0001_HL_0_mut_0/error_versus_estimator.py
+
+
+
+
+
+**To justify use of snapshots in original analysis need ot look at a long time series (or ensemble) with IR=0.005
+
+

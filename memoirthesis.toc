@@ -1,5 +1,10 @@
 \select@language {english}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\textbf {Page}}\par \penalty \@M 
+<<<<<<< HEAD
+\contentsline {appendix}{\chapternumberline {A}Appendix B}{1}{appendix.A}
+\contentsline {section}{\numberline {A.1}Degree Distributions}{1}{section.A.1}
+\contentsline {chapter}{Bibliography}{3}{section*.2}
+=======
 \contentsline {chapter}{\chapternumberline {1}Stationarity}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Second-order stationarity}{2}{section.1.2}
@@ -14,3 +19,4 @@
 \contentsline {section}{\numberline {1.4}Determinism and Chaos}{15}{section.1.4}
 \contentsline {section}{\numberline {1.5}Discussion}{17}{section.1.5}
 \contentsline {chapter}{Bibliography}{19}{section*.4}
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa

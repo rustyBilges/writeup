@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+\begin{thebibliography}{}
+=======
 \begin{thebibliography}{10}
 
 \bibitem{arnoldi2015}
@@ -63,5 +66,6 @@
 {\sc S.~E. Said and D.~A. Dickey}, {\em Testing for unit roots in
   autoregressive-moving average models of unknown order}, Biometrika, 71
   (1984), pp.~599--607.
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 
 \end{thebibliography}

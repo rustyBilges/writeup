@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  14 DEC 2015 22:07
+=======
 This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2015.10.12)  7 DEC 2015 10:01
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 entering extended mode
  %&-line parsing enabled.
 **memoirthesis.tex
@@ -1657,43 +1661,42 @@ Package nag Info: Command \hc@caption not defined, skipping amendment on input
 line 4.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
 line 4.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 40.
-LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 40.
-LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 40.
-LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 13.39188pt on input line 40.
- (./memoirthesis.toc
-LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+ (./chapters/appendices/app0B.tex
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.71893pt on input line 3.
+(Font)              scaled to size 13.39188pt on input line 2.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 13.39188pt on input line 2.
+LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
+LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
+(Font)              scaled to size 13.39188pt on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 5.57996pt on input line 3.
+(Font)              scaled to size 7.71893pt on input line 19.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 5.57996pt on input line 19.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
+(Font)              scaled to size 10.07397pt on input line 19.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
+(Font)              scaled to size 7.63599pt on input line 19.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Try loading font information for FML+fncm on input line 3.
+(Font)              scaled to size 5.51999pt on input line 19.
+LaTeX Font Info:    Try loading font information for FML+fncm on input line 19.
+
 
 (/usr/share/texmf-texlive/tex/latex/fouriernc/fmlfncm.fd
 File: fmlfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncm.
 )
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 3.
+(Font)              scaled to size 10.07397pt on input line 19.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 3.
+(Font)              scaled to size 7.63599pt on input line 19.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 3.
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+(Font)              scaled to size 5.51999pt on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
@@ -1701,7 +1704,7 @@ File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 (/usr/share/texmf-texlive/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -1709,26 +1712,36 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 (/usr/share/texmf-texlive/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 3.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 19.
 
+<<<<<<< HEAD
+(/usr/local/texlive/2014/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 19.
+=======
 (/usr/share/texmf-texlive/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Try loading font information for U+lasy on input line 3.
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 
 (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 3.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 19.
 
 (/usr/share/texmf-texlive/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 3.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 19.
 
 (/usr/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 (/usr/share/texmf-texlive/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+<<<<<<< HEAD
+)
+<chapters/appendices/"L_v_HL_sdj5000".png, id=20, 578.16pt x 433.62pt>
+File: chapters/appendices/"L_v_HL_sdj5000".png Graphic file (type png)
+=======
 )) [1
 
 
@@ -1750,18 +1763,32 @@ LaTeX Warning: Reference `sec:whereis' on page 1 undefined on input line 17.
 
 
 LaTeX Warning: Reference `chap:whereis' on page 1 undefined on input line 17.
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 
+<use chapters/appendices/"L_v_HL_sdj5000".png>
+Package pdftex.def Info: chapters/appendices/"L_v_HL_sdj5000".png used on input
+ line 24.
+(pdftex.def)             Requested size: 448.0pt x 335.9991pt.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 25.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 17.
+(Font)              scaled to size 8.36993pt on input line 29.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 17.
+(Font)              scaled to size 7.06795pt on input line 29.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
+(Font)              scaled to size 8.27998pt on input line 29.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 17.
+(Font)              scaled to size 6.99199pt on input line 29.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
+(Font)              scaled to size 8.27998pt on input line 29.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
+<<<<<<< HEAD
+(Font)              scaled to size 6.99199pt on input line 29.
+ [1
+
+
+
+=======
 (Font)              scaled to size 6.99199pt on input line 17.
 [1
 
@@ -1772,12 +1799,34 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 7.71893pt on input line 43.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 5.57996pt on input line 43.
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<chapters/appendices/"numlinks_ir_v_hl".png, id=34, 1445.4pt x 442.2924pt>
+File: chapters/appendices/"numlinks_ir_v_hl".png Graphic file (type png)
 
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 45.
+<use chapters/appendices/"numlinks_ir_v_hl".png>
+Package pdftex.def Info: chapters/appendices/"numlinks_ir_v_hl".png used on inp
+ut line 35.
+(pdftex.def)             Requested size: 448.0pt x 137.08897pt.
 
+<chapters/appendices/"example_degree_distribution".png, id=38, 578.16pt x 433.6
+2pt>
+File: chapters/appendices/"example_degree_distribution".png Graphic file (type 
+png)
+ <use chapters/appendices/"example_degree_distribution".png>
+Package pdftex.def Info: chapters/appendices/"example_degree_distribution".png 
+used on input line 46.
+(pdftex.def)             Requested size: 448.0pt x 335.9991pt.
+)
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+<<<<<<< HEAD
+(Font)              scaled to size 9.29993pt on input line 84.
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 9.29993pt on input line 84.
+ [2 <./chapters/appendices/L_v_HL_sdj5000.png>] [3 <./chapters/appendices/numli
+nks_ir_v_hl.png> <./chapters/appendices/example_degree_distribution.png>] [4
+=======
 (Font)              scaled to size 9.29993pt on input line 53.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 9.29993pt on input line 53.
@@ -2004,9 +2053,14 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 [19
 
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 
 ]
+(./memoirthesis.bbl
 
+<<<<<<< HEAD
+Package natbib Warning: Empty `thebibliography' environment on input line 3.
+=======
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 59.
 
@@ -2015,12 +2069,43 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 (nag)                Use \scshape or \textsc instead on input line 63.
 
 ) [20]
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 
-Package nag Warning: 15 complaints in total.
+) [5
 
-\tf@toc=\write7
-\openout7 = `memoirthesis.toc'.
+] [6
 
+<<<<<<< HEAD
+]
+No complaints by nag.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+(./memoirthesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
+(rerunfilecheck)             Checksum: 3D54836F6D01763F6C199A80C50BB31C;185.
+ ) 
+Here is how much of TeX's memory you used:
+ 28513 strings out of 493109
+ 524310 string characters out of 6135010
+ 797694 words of memory out of 5000000
+ 31252 multiletter control sequences out of 15000+600000
+ 55934 words of font info for 155 fonts, out of 8000000 for 9000
+ 1146 hyphenation exceptions out of 8191
+ 54i,12n,67p,1236b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (6 pages, 224252 bytes).
+PDF statistics:
+ 91 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 27700 words of extra memory for PDF output out of 29859 (max. 10000000)
+=======
 (./memoirthesis.aux)
 
 LaTeX Warning: There were undefined references.
@@ -2045,4 +2130,5 @@ PDF statistics:
  327 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
  33465 words of extra memory for PDF output out of 35830 (max. 10000000)
+>>>>>>> 205e25b4ac2e2d84c24bee8ea4a528f60ad29aaa
 

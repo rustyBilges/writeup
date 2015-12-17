@@ -2,48 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
+I found no \citation commands---while reading file memoirthesis.aux
 Database file #1: thesisbiblio.bib
-Warning--empty journal in ai2012immigration
-Warning--empty journal in condit2012thirty
-You've used 19 entries,
+You've used 0 entries,
             2030 wiz_defined-function locations,
-            623 strings with 8075 characters,
-and the built_in function-call counts, 8594 in all, are:
-= -- 850
-> -- 465
+            497 strings with 3738 characters,
+and the built_in function-call counts, 18 in all, are:
+= -- 0
+> -- 0
 < -- 0
-+ -- 183
-- -- 164
-* -- 708
-:= -- 1313
-add.period$ -- 19
-call.type$ -- 19
-change.case$ -- 136
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 357
-empty$ -- 517
-format.name$ -- 164
-if$ -- 1818
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 19
-newline$ -- 60
-num.names$ -- 38
-pop$ -- 107
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 0
 quote$ -- 0
-skip$ -- 354
+skip$ -- 1
 stack$ -- 0
-substring$ -- 606
-swap$ -- 186
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
-warning$ -- 2
-while$ -- 85
-width$ -- 21
-write$ -- 169
-(There were 2 warnings)
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There was 1 error message)

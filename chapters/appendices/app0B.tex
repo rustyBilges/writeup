@@ -23,11 +23,31 @@ Temporary appendix to discuss plots suggested by Daniel and Jose (see email date
 %%				Plotting done on uni computer (MyFiles/cm1788/Documents/IM_vs_HL_heatmap/non_vegetarian/mut_1.0_hl_type_1)
 
 
-%\section{RADs [2]}
-%\label{sec:rads}
-%
+\section{RADs [2]}
+\label{sec:rads}
 %For information on model fitting to RADs see attachment in email from Daniel with information on model the Vegan R package.
-%
+
+Here we look at model fitting to rank abundance distributions (RADs). The R package vegan has methods for doing this. Two of the model with parameters that are easy to interpet are the preemption model and the Zipf model. We look here at how the parameters of these two models varies with habitat loss (HL) and MAI ratio. More details on the models themselves and what the parameters mean are to follow.
+
+Important note: the model fitting of the vegan package does not work for relative abundances. So currently these RADs use absolute abundances. But in figure \ref{fig:example_radfits} the y-axis scales are the same so that we can make a visual comparison. 
+
+Figure \ref{fig:radfit_params} shows how the model fit parameters vary in the case of random and contiguous habitat loss. There are some interesting trends here which are worth looking into and also it demonstrates that this model fitting method could be useful - just need ot clarify exactly what the parameters mean.
+
+\begin{figure}[h]
+	\centering
+	\subbottom[Preemption model fit]{\includegraphics[width=0.6\textwidth]{{{contiguous_mai0.0_preemptionfit_examples}}}}
+	\subbottom[Zipf model fit]{\includegraphics[width=0.6\textwidth]{{{contiguous_mai0_zipf_fit_examples}}}}	
+	\caption{RADs for selected individual communities, at three different levels of habitat destruction as inidicated. (A) The top nine plots RADs with preemption model fits. (B) The bottom nine plots show the same RADs with Zipf model fits.}
+	\label{fig:example_radfits}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\textwidth]{{{radfit_params_v_hl}}}
+	\caption{Changes in the parameters of model fitted to RADs with habitat loss. Solid lines show the mean values over n=25 replicate communities, errobars show $\pm$ one standard deviation.}
+	\label{fig:radfit_params}
+\end{figure}
+
 %\section{Degree Distributions (and Number of Links) [3]}
 %\label{sec:dd}
 %
@@ -65,44 +85,72 @@ Temporary appendix to discuss plots suggested by Daniel and Jose (see email date
 %	\label{fig:example_dd}
 %\end{figure}
 
+%\section{Generality (and Vulnerability) [4]}
+%\label{sec:gensd}
+%
+%Here we plot the standard deviations of generality and vulnerability. (Vulnerability is only included for completeness.) Generality cannot be calculated for TL=0, since basal species have not prey. Liekwise vulnerability cannot be calculated for TL=3. There is a high variability in the results (large error bars) and the trends do not appear clear. Perhaps linear regreesion can tell us if there are significant trends? 
+%
+%\begin{figure}
+%	\centering
+%	\subbottom[Gen SD]{\includegraphics[width=0.7\textwidth]{{{gensd_v_hl}}}}
+%	\subbottom[Vul SD]{\includegraphics[width=0.7\textwidth]{{{vulsd_v_hl}}}}
+%	\caption{Standard deviations of generality and vulnerability. (For simulations run in chapter 3)}
+%	\label{fig:gensd_vulsd_v_hl}
+%\end{figure}
+%
+%
+%\begin{figure}[hp!]
+%	\centering
+%	\includegraphics[width=\textwidth]{{{gensd_tl}}}
+%	\caption{Standard deviation of generality by trophic level.}
+%	\label{fig:gensd_tl}
+%\end{figure}
+%
+%
+%\begin{figure}[hp!]
+%	\centering
+%	\includegraphics[width=\textwidth]{{{vulsd_tl}}}
+%	\caption{Standard deviation of vulnerability by trophic level.}
+%	\label{fig:vulsd_tl}
+%\end{figure}
 
-\section{Heatmaps of total abundance [6]}
-\label{sec:tot_tl_abun}
-
-Here we plot again results from the simulations presented in chapter 4. This time we show \emph{total abundances} instead of relative abundances. These are plotted by trophic level and functional group.
-
-For comparison we calculate these plots in two different ways: 1) From snapshot of abundances at final iteration, 2) from averaged abundances over final 4000 iterations. We find that these two ways of calculating the results are very similar - this is good news! (And will go into the chapter on stationarity to prove the our sampling method is OK).
-
-\begin{figure}
-	\centering
-	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{"tl_abs_abun_mai0"}}
-	\subbottom[`Averaged' results (4000 iterations)]{\includegraphics[width=0.7\textwidth]{"tl_abs_av_abun_mai0"}}
-	\caption{\textbf{MAI=0.0}: The number of invdividuals belonging to each trophic level, across the region of parameter space explored in chapter 4. (A) Calculated from snapshots. (B) Calculated by averaging species abundances over the last 4000 iterations of the simulations.}
-	\label{fig:tl_abs_abun_mai0}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_abun_mai0.5}}}}
-	\subbottom[`Averaged' results (4000 iterations)]{\includegraphics[width=0.7\textwidth]{{{tl_abs_av_abun_mai0.5}}}}
-	\caption{\textbf{MAI=0.5}: Absolute abundance plots, as described in caption of figure \ref{fig:tl_abs_abun_mai0}.}
-	\label{fig:tl_abs_abun_mai0.5}
-\end{figure}
-
-\begin{figure}
-	\centering
-	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_abun_mai1.0}}}}
-	\subbottom[`Averaged' results (4000 iterations)]{\includegraphics[width=0.7\textwidth]{{{tl_abs_av_abun_mai1.0}}}}
-	\caption{\textbf{MAI=1.0}: Absolute abundance plots, as described in caption of figure \ref{fig:tl_abs_abun_mai0}.}
-	\label{fig:tl_abs_abun_mai1.0}
-\end{figure}
-
-
-\begin{figure}
-	\centering
-	\subbottom[MAI = 0.5]{\includegraphics[width=0.7\textwidth]{{{fg_abs_av_abun_mai0.5}}}}
-	\subbottom[MAi = 1.0]{\includegraphics[width=0.7\textwidth]{{{fg_abs_av_abun_mai1.0}}}}
-	\caption{Number of individuals belonging to each functional group (FG).}
-	\label{fig:fg_abs_av}
-\end{figure}
+%\section{Heatmaps of total abundance [6]}
+%\label{sec:tot_tl_abun}
+%
+%Here we plot again results from the simulations presented in chapter 4. This time we show \emph{total abundances} instead of relative abundances. These are plotted by trophic level and functional group.
+%
+%For comparison we calculate these plots in two different ways: 1) From snapshot of abundances at final iteration, 2) from averaged abundances over final 4000 iterations. We find that these two ways of calculating the results are very similar - this is good news! (And will go into the chapter on stationarity to prove the our sampling method is OK).
+%
+%\begin{figure}
+%	\centering
+%	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{"tl_abs_abun_mai0"}}
+%	\subbottom[`Averaged' results (4000 iterations)]{\includegraphics[width=0.7\textwidth]{"tl_abs_av_abun_mai0"}}
+%	\caption{\textbf{MAI=0.0}: The number of invdividuals belonging to each trophic level, across the region of parameter space explored in chapter 4. (A) Calculated from snapshots. (B) Calculated by averaging species abundances over the last 4000 iterations of the simulations.}
+%	\label{fig:tl_abs_abun_mai0}
+%\end{figure}
+%
+%
+%\begin{figure}
+%	\centering
+%	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_abun_mai0.5}}}}
+%	\subbottom[`Averaged' results (4000 iterations)]{\includegraphics[width=0.7\textwidth]{{{tl_abs_av_abun_mai0.5}}}}
+%	\caption{\textbf{MAI=0.5}: Absolute abundance plots, as described in caption of figure \ref{fig:tl_abs_abun_mai0}.}
+%	\label{fig:tl_abs_abun_mai0.5}
+%\end{figure}
+%
+%\begin{figure}
+%	\centering
+%	\subbottom[`Snapshot' results]{\includegraphics[width=0.7\textwidth]{{{tl_abs_abun_mai1.0}}}}
+%	\subbottom[`Averaged' results (4000 iterations)]{\includegraphics[width=0.7\textwidth]{{{tl_abs_av_abun_mai1.0}}}}
+%	\caption{\textbf{MAI=1.0}: Absolute abundance plots, as described in caption of figure \ref{fig:tl_abs_abun_mai0}.}
+%	\label{fig:tl_abs_abun_mai1.0}
+%\end{figure}
+%
+%
+%\begin{figure}
+%	\centering
+%	\subbottom[MAI = 0.5]{\includegraphics[width=0.7\textwidth]{{{fg_abs_av_abun_mai0.5}}}}
+%	\subbottom[MAi = 1.0]{\includegraphics[width=0.7\textwidth]{{{fg_abs_av_abun_mai1.0}}}}
+%	\caption{Number of individuals belonging to each functional group (FG).}
+%	\label{fig:fg_abs_av}
+%\end{figure}

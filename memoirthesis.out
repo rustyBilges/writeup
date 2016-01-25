@@ -1,3 +1,19 @@
-\BOOKMARK [0][-]{appendix.A}{Appendix B}{}% 1
-\BOOKMARK [1][-]{section.A.1}{Heatmaps of total abundance [6]}{appendix.A}% 2
-\BOOKMARK [0][-]{section*.2}{Bibliography}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Infering species interactions}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Methodology}{chapter.1}% 3
+\BOOKMARK [2][-]{subsection.1.2.1}{Population models}{section.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.2.2}{Simulation procedure}{section.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.2.3}{Interaction strength}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.4}{Inference method}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.5}{Examples}{section.1.2}% 8
+\BOOKMARK [1][-]{section.1.3}{Results}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.3.1}{Lotka-Volterra system}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.2}{Holling system}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.3}{Range sampling}{section.1.3}% 12
+\BOOKMARK [1][-]{section.1.4}{TEMP : other results}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.5}{Application to IBM \(optional\)}{chapter.1}% 14
+\BOOKMARK [2][-]{subsection.1.5.1}{Testing functionl response}{section.1.5}% 15
+\BOOKMARK [2][-]{subsection.1.5.2}{Extend methodology \(3 and 4 species\)}{section.1.5}% 16
+\BOOKMARK [2][-]{subsection.1.5.3}{Results}{section.1.5}% 17
+\BOOKMARK [1][-]{section.1.6}{Discussion}{chapter.1}% 18
+\BOOKMARK [0][-]{section*.5}{Bibliography}{}% 19

@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+
+
+A general form for ODE predator prey modelling in $\mathbb{R}^{N}$ (i.e. $N$ species) is given by the autonomous system:
+
+\begin{equation}
+\mathbf{\dot{x}} = F(\mathbf{x}), 
+\end{equation}
+%
+where $\mathbf{x}, \mathbf{\dot{x}} \in \mathbb{R}^N$ and $F: \mathbb{R}^N \rightarrow \mathbb{R}^N$ such that:
+
+\begin{equation}
+F(\mathbf{x}) = 
+\begin{pmatrix}
+	f_1(\mathbf{x}) \\
+	f_2(\mathbf{x}) \\
+	\vdots \\
+    f_N(\mathbf{x})
+\end{pmatrix}
+\end{equation}
+%
+We may write the elements of $F$ in terms of an intrinsic growth term and an interaction term:
+
+\begin{equation}
+f_i(\mathbf{x}) = g_i(x_i) + \Sigma_{j=1}^N a_{ij} \left( x_jh_j(x_i) + x_ih_i(x_j) \right),
+\end{equation}
+%
+where $g_i$ is the intrinsic growth function; $a_{ij} \in \mathbb{R}$ is the interaction coefficient; and $h_k(x_l)$ is the functional response of species $k$ when it predates on species $l$. The terms $g_i, a_{ij}$ and $h_k(x_l)$ take the following conditional values:
+
+\begin{equation}
+g_i(x_i) =   
+\begin{cases}
+r_ix_i\left(1 - \frac{x_i}{K_i} \right) &\mbox{if i is basal} \\
+-r_ix_i &\mbox{if i is non-basal}
+\end{cases}
+\end{equation}
+%
+and
+\begin{equation}
+a_{ij}  
+\begin{cases}
+> 0 &\mbox{if i eats j} \\
+< 0 &\mbox{if j eats i} \\
+= 0 &\mbox{if no interaction}
+\end{cases}
+\end{equation}
+%
+and
+\begin{equation}
+h_k{x_l} =  
+\begin{cases}
+0 &\mbox{if k is basal} \\
+x_l  &\mbox{if k is type I predator} \\
+\frac{x_l}{x_l + S_k} &\mbox{if k is type II predator}
+\end{cases},
+\end{equation}
+%
+where $r_i \in \mathbb{R}^+$ is the intrinsic growth rate; $K_i$ is the carrying capacity for species $i$; and $S_k$ is the predator saturation constant of species $k$.  
+
+
+I think that this is general enough? From this I can derive the rescaled equations for the 2,3,4 species systems that I simulated.%
+
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{exp_block} = [rectangle, draw, fill=blue!20, text width = 21em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, text width=10em, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+%\tikzstyle{words} = [draw] %, ellipse,fill=red!20, node distance=3cm,    minimum height=2em]
+    
+\begin{tikzpicture}[node distance = 5cm, auto]
+    % Place nodes
+    \node [block] (wild_eco) {Natural ecosystem};
+    \node [block, left of=wild_eco] (lab_exp) {Laboratory experiment };
+    \node [block, left of=lab_exp] (comp_sim) {Computer simulation};
+    \node [block, above of=comp_sim] (im_calc) {$\mathbf{\alpha} \in \mathbb{R}^{NxN}$};
+    
+    \node [align=left, left of = comp_sim] (dat_gen) {\textbf{Data generator}};
+    \node [align=left, below of = dat_gen] (dat_stream) {\textbf{Data stream}};
+
+    \node [align=left, above of = dat_gen] (im) {\textbf{Interaction matrix}};
+%\begin{scope}[node distance=5cm]
+    \node [exp_block, below of=lab_exp] (pop_dyn) {\begin{itemize}
+	\item Population dynamics data
+    \item $N$-species system
+    \item Discrete time series $x_i(t)$ for $i=1,...,N$
+
+    \end{itemize}
+%	\begin{figure}
+%	\centering
+%	\includegraphics[width=0.5\textwidth]{"../figures/IBM_dynamics"}
+%	\end{figure}	    
+    };
+    
+
+    \node [align=left, below of = dat_stream] (num_est) {\textbf{Inference method} };
+    \node [exp_block, below of=pop_dyn] (glv) {
+	\begin{itemize}
+	\item Generalised Lotka-Volterra (GLV) model: \\ $\frac{dy_i}{dt} = r_iy_i + \Sigma_{j=1}^N J_{i,j}y_iy_j$
+	\item Fitted  to data stream $x_i(t)$
+	\item Returns best fit estimates of:
+		\begin{enumerate}
+			\item Interaction strengths: $\hat{\mathbf{J}} \in \mathbb{R}^{NxN}$		
+			\item Intrinsic growth rates: $\hat{\mathbf{r}} \in \mathbb{R}^{1xN}$		
+		\end{enumerate}
+
+\end{itemize}	    
+    };
+    \node [right of=glv] (empty){};
+    \node [cloud, right of=empty] (compare) {Compare estimated interaction strength to those computed from data generator (if possible): \\ $\hat{\mathbf{J}}$ vs $\mathbf{\alpha}$};
+%\end{scope}
+    %\node [cloud, right of=init] (system) {system};
+    %\node [block, below of=init] (identify) {identify candidate models};
+%    \node [block, below of=identify] (evaluate) {evaluate candidate models};
+%    \node [block, left of=evaluate, node distance=3cm] (update) {update model};
+%    \node [decision, below of=evaluate] (decide) {is best candidate better?};
+%    \node [block, below of=decide, node distance=3cm] (stop) {stop};
+%    % Draw edges
+    \path [line,dashed] (comp_sim) -- node {compute} (im_calc);
+    \path [line] (comp_sim) -- node {sample} (pop_dyn);
+    \path [line] (wild_eco) -- node {sample} (pop_dyn);
+    \path [line] (lab_exp) -- node {sample} (pop_dyn);
+    \path [line] (pop_dyn) -- (glv);
+    \path [line] (glv) -- (compare);
+    \path [line] (compare) |- (im_calc);
+%    \path [line] (update) |- (identify);
+    \path [line] (dat_gen) -- (im);
+    \path [line] (dat_gen) -- (dat_stream);
+    \path [line] (dat_stream) -- (num_est);
+%    \path [line] (decide) -- node {no}(stop);
+%    \path [line,dashed] (expert) -- (init);
+%    \path [line,dashed] (system) -- (init);
+%    \path [line,dashed] (system) |- (evaluate);
+\end{tikzpicture}
+
+
+\end{document}

@@ -3,44 +3,54 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-You've used 1 entry,
+Repeated entry---line 465 of file thesisbiblio.bib
+ : @article{lurgi2015effects
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--string name "december" is undefined
+--line 787 of file thesisbiblio.bib
+Warning--empty journal in ai2012immigration
+Warning--empty journal in condit2012thirty
+Warning--empty journal in tilman1994habitat
+You've used 69 entries,
             2030 wiz_defined-function locations,
-            505 strings with 3897 characters,
-and the built_in function-call counts, 381 in all, are:
-= -- 38
-> -- 13
+            913 strings with 17966 characters,
+and the built_in function-call counts, 31116 in all, are:
+= -- 3078
+> -- 1684
 < -- 0
-+ -- 5
-- -- 4
-* -- 23
-:= -- 59
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 5
++ -- 674
+- -- 594
+* -- 2564
+:= -- 4754
+add.period$ -- 69
+call.type$ -- 69
+change.case$ -- 489
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 23
-empty$ -- 24
-format.name$ -- 4
-if$ -- 85
+cite$ -- 72
+duplicate$ -- 1267
+empty$ -- 1901
+format.name$ -- 594
+if$ -- 6573
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 6
-num.names$ -- 2
-pop$ -- 4
+int.to.str$ -- 69
+missing$ -- 69
+newline$ -- 210
+num.names$ -- 138
+pop$ -- 389
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 424
 quote$ -- 0
-skip$ -- 25
+skip$ -- 1249
 stack$ -- 0
-substring$ -- 17
-swap$ -- 14
+substring$ -- 2266
+swap$ -- 644
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
-warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 11
+type$ -- 272
+warning$ -- 3
+while$ -- 315
+width$ -- 71
+write$ -- 614
+(There was 1 error message)

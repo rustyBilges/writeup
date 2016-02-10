@@ -1,19 +1,85 @@
-\BOOKMARK [0][-]{chapter.1}{Infering species interactions}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Methodology}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.2.1}{Population models}{section.1.2}% 4
-\BOOKMARK [2][-]{subsection.1.2.2}{Simulation procedure}{section.1.2}% 5
-\BOOKMARK [2][-]{subsection.1.2.3}{Interaction strength}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.4}{Inference method}{section.1.2}% 7
-\BOOKMARK [2][-]{subsection.1.2.5}{Examples}{section.1.2}% 8
-\BOOKMARK [1][-]{section.1.3}{Results}{chapter.1}% 9
-\BOOKMARK [2][-]{subsection.1.3.1}{Lotka-Volterra system}{section.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.3.2}{Holling system}{section.1.3}% 11
-\BOOKMARK [2][-]{subsection.1.3.3}{Range sampling}{section.1.3}% 12
-\BOOKMARK [1][-]{section.1.4}{TEMP : other results}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.5}{Application to IBM \(optional\)}{chapter.1}% 14
-\BOOKMARK [2][-]{subsection.1.5.1}{Testing functionl response}{section.1.5}% 15
-\BOOKMARK [2][-]{subsection.1.5.2}{Extend methodology \(3 and 4 species\)}{section.1.5}% 16
-\BOOKMARK [2][-]{subsection.1.5.3}{Results}{section.1.5}% 17
-\BOOKMARK [1][-]{section.1.6}{Discussion}{chapter.1}% 18
-\BOOKMARK [0][-]{section*.5}{Bibliography}{}% 19
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Communities of single and multiple interaction types}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Spatially explicit model and metrics}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Modelling Habitat Loss}{section.1.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Habitat loss: Modelling approach}{}% 6
+\BOOKMARK [1][-]{section.2.1}{Agent based simulation}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.1.1}{The interaction network}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.2}{Model specification}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.3}{Modelling habitat loss}{section.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.1.4}{Implementation}{section.2.1}% 11
+\BOOKMARK [1][-]{section.2.2}{Dynamics of the model}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.1}{Transience}{section.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.2}{Long term distribution}{section.2.2}% 14
+\BOOKMARK [2][-]{subsection.2.2.3}{Diffusion behaviour}{section.2.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Ecological metrics and analysis methods}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.3.1}{Biodiversity metrics}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.2}{Stabilitiy metrics}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.3}{Network metrics}{section.2.3}% 19
+\BOOKMARK [2][-]{subsection.2.3.4}{Spatial metrics}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.5}{Interaction strength metrics}{section.2.3}% 21
+\BOOKMARK [0][-]{chapter.3}{Habitat loss with high immigration}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Response of ecological metrics}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{More preliminary results}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Further development and work to do}{chapter.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.1}{Work to do}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.2}{Further development}{section.3.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Varying Immigration rate}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Assumptions of what has gone before}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Literature review for immigration}{chapter.4}% 30
+\BOOKMARK [1][-]{section.4.3}{Motivation}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.4}{Exploration of parameter space: habitat loss and immigration}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.1}{Summary heat-maps}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.2}{Example dynamics}{section.4.4}% 34
+\BOOKMARK [2][-]{subsection.4.4.3}{Relative abundances and abundance distributions}{section.4.4}% 35
+\BOOKMARK [2][-]{subsection.4.4.4}{Rank abundance distributions}{section.4.4}% 36
+\BOOKMARK [1][-]{section.4.5}{Points for discussion \(Rough Notes\)}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.6}{Habitat loss with low immigration}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.7}{Questions for Alan or Daniel}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.8}{RADS with averaging}{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.9}{New results: without vegetarian predators}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{Stationarity}{}% 42
+\BOOKMARK [1][-]{section.5.1}{Motivation}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.2}{Second-order stationarity}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.2.1}{Tests for stationarity}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.2}{Characterising the tests}{section.5.2}% 46
+\BOOKMARK [2][-]{subsection.5.2.3}{Stationarity results}{section.5.2}% 47
+\BOOKMARK [2][-]{subsection.5.2.4}{Discussion \(`skeleton'\)}{section.5.2}% 48
+\BOOKMARK [1][-]{section.5.3}{Reliability of results}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.3.1}{Abundances}{section.5.3}% 50
+\BOOKMARK [2][-]{subsection.5.3.2}{Variability: CoV}{section.5.3}% 51
+\BOOKMARK [2][-]{subsection.5.3.3}{Repeatability}{section.5.3}% 52
+\BOOKMARK [1][-]{section.5.4}{Determinism and Chaos}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 54
+\BOOKMARK [0][-]{chapter.6}{Persistence in closed communities}{}% 55
+\BOOKMARK [1][-]{section.6.1}{Motivation}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.2}{Stability in ecology}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.2.1}{Dynamical systems and stability}{section.6.2}% 58
+\BOOKMARK [2][-]{subsection.6.2.2}{Network structure and stability}{section.6.2}% 59
+\BOOKMARK [2][-]{subsection.6.2.3}{Spatial stability}{section.6.2}% 60
+\BOOKMARK [1][-]{section.6.3}{Model parameters versus persistence}{chapter.6}% 61
+\BOOKMARK [2][-]{subsection.6.3.1}{Mutualistic to antagonistic interaction \(MAI\) ratio}{section.6.3}% 62
+\BOOKMARK [2][-]{subsection.6.3.2}{Reproduction rate \(RR\)}{section.6.3}% 63
+\BOOKMARK [2][-]{subsection.6.3.3}{Landscape size}{section.6.3}% 64
+\BOOKMARK [2][-]{subsection.6.3.4}{Number of initial species}{section.6.3}% 65
+\BOOKMARK [1][-]{section.6.4}{Why are some communities more stable than others?}{chapter.6}% 66
+\BOOKMARK [0][-]{chapter.7}{Inferring species interactions}{}% 67
+\BOOKMARK [1][-]{section.7.1}{Motivation}{chapter.7}% 68
+\BOOKMARK [1][-]{section.7.2}{Methodology}{chapter.7}% 69
+\BOOKMARK [2][-]{subsection.7.2.1}{Interaction strength}{section.7.2}% 70
+\BOOKMARK [2][-]{subsection.7.2.2}{Population models}{section.7.2}% 71
+\BOOKMARK [2][-]{subsection.7.2.3}{Simulation procedure}{section.7.2}% 72
+\BOOKMARK [2][-]{subsection.7.2.4}{Numerical estimation method}{section.7.2}% 73
+\BOOKMARK [2][-]{subsection.7.2.5}{Examples}{section.7.2}% 74
+\BOOKMARK [1][-]{section.7.3}{Results}{chapter.7}% 75
+\BOOKMARK [2][-]{subsection.7.3.1}{Linear model}{section.7.3}% 76
+\BOOKMARK [2][-]{subsection.7.3.2}{Holling model}{section.7.3}% 77
+\BOOKMARK [2][-]{subsection.7.3.3}{Range sampling}{section.7.3}% 78
+\BOOKMARK [1][-]{section.7.4}{TEMP : other results}{chapter.7}% 79
+\BOOKMARK [1][-]{section.7.5}{Application to IBM \(optional\)}{chapter.7}% 80
+\BOOKMARK [2][-]{subsection.7.5.1}{Testing functionl response}{section.7.5}% 81
+\BOOKMARK [2][-]{subsection.7.5.2}{Extend methodology \(3 and 4 species\)}{section.7.5}% 82
+\BOOKMARK [2][-]{subsection.7.5.3}{Results}{section.7.5}% 83
+\BOOKMARK [1][-]{section.7.6}{Discussion}{chapter.7}% 84
+\BOOKMARK [0][-]{section*.21}{Bibliography}{}% 85

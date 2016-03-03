@@ -9,48 +9,46 @@ Repeated entry---line 465 of file thesisbiblio.bib
 I'm skipping whatever remains of this entry
 Warning--string name "december" is undefined
 --line 787 of file thesisbiblio.bib
-Warning--empty journal in ai2012immigration
-Warning--empty journal in condit2012thirty
-Warning--empty journal in tilman1994habitat
-You've used 69 entries,
+Warning--I didn't find a database entry for "newbold2015global"
+You've used 11 entries,
             2030 wiz_defined-function locations,
-            913 strings with 17966 characters,
-and the built_in function-call counts, 31116 in all, are:
-= -- 3078
-> -- 1684
+            578 strings with 5973 characters,
+and the built_in function-call counts, 4252 in all, are:
+= -- 413
+> -- 214
 < -- 0
-+ -- 674
-- -- 594
-* -- 2564
-:= -- 4754
-add.period$ -- 69
-call.type$ -- 69
-change.case$ -- 489
++ -- 88
+- -- 74
+* -- 343
+:= -- 673
+add.period$ -- 11
+call.type$ -- 11
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 1267
-empty$ -- 1901
-format.name$ -- 594
-if$ -- 6573
+cite$ -- 11
+duplicate$ -- 179
+empty$ -- 280
+format.name$ -- 74
+if$ -- 887
 int.to.chr$ -- 0
-int.to.str$ -- 69
-missing$ -- 69
-newline$ -- 210
-num.names$ -- 138
-pop$ -- 389
+int.to.str$ -- 11
+missing$ -- 10
+newline$ -- 36
+num.names$ -- 22
+pop$ -- 57
 preamble$ -- 1
-purify$ -- 424
+purify$ -- 58
 quote$ -- 0
-skip$ -- 1249
+skip$ -- 159
 stack$ -- 0
-substring$ -- 2266
-swap$ -- 644
+substring$ -- 293
+swap$ -- 80
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 272
-warning$ -- 3
-while$ -- 315
-width$ -- 71
-write$ -- 614
+type$ -- 42
+warning$ -- 0
+while$ -- 46
+width$ -- 13
+write$ -- 100
 (There was 1 error message)

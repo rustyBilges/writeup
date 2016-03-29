@@ -1,3 +1,13 @@
+
+\section{Context (temp)}
+
+\begin{itemize}
+	\item Make sure introduce realised network.
+\end{itemize}
+
+%% TODO: include discussion of default parameters - and probably "defautl behaviour" based on previous publication.
+
+
 \section{Agent based simulation}
 \label{sec:method}
 
@@ -275,18 +285,58 @@ Stability - Jacobian, dynamic stability, multi-stability, CoV, reproductive stab
 Robustness - secondary extinctions, cascading effects \cite{evans2013robustness}. Re-wiring algorithms?
 
 \subsection{Biodiversity metrics}
-
+\label{sec:define_dviersity}
 Richness, Simpsons, Shannon Entropy.
 
-\subsection{Stabilitiy metrics}
+\subsection{Stability metrics}
+\label{sec:def_stability_metrics}
 
 Coefficient of Variation, May Stability
 
 \subsection{Network metrics}
+\label{sec:define_network_metrics}
 
-GenSd, VulSd, Gq, Vq, MTP, H2', Connectance, Nestedness, Compartmentalisation
+We use a number of \emph{qualitative} and \emph{quantitative} descriptors to characterise the realised interaction networks. Good definitions of the suite of network metrics available to community ecologists, including quantitative metrics for network with links weights, can be found in \cite{}. Our choice of metrics is the same as in \cite{lurgi2015effects}.
+
+
+Various quantitative network metrics are based on the \emph{Shannon entropy} of link weights - analogous to the way it is used to measure diversity of species abundances. It is common practice to use interaction frequency to define link weights, in part because this is easier to measure empirically than, for example, biomass flow\footnote{Refer forwards to discussion on IS!}. We present here the standard definitions of the Shannon network metrics, 
+
+
+
+using the notation of Bluthgen et al \cite{bluthgen2008interaction}. The base of the logarithm used various between the studies cited, here we use the natural logarithm (base \emph{e}) for all metrics. 
+ Interaction frequency $a_{ij}$ is the number of interaction events recorded between species $i$ and $j$. 
+
+It is necessary in what follows to define $0log(0)=0$, which is equivalent to excluding zero elements in the interaction matrix from the calculations. Rows or columns with sum equal to zero are removed, to avoid division by zero.    
+ 
+As discussed we use interaction frequency instead of biomass, giving us an asymmetric weighted matrix of interaction frequencies $\mathbb{B}$, where element $b_{ij}$ is the number of individuals of species $i$ consumed by species $j$ during the sampling period. Therefore we can define interaction diversities for the links coming into a species $k$ from its prey, and the links going it $k$ to its predators:  
+
+\begin{eqnarray}
+H_{N,k} &=& -\Sigma_{i=1}^{s} \left( \frac{b_{ik}}{b_{.k}} log \left( \frac{b_{ik}}{b_{.k}} \right) \right) \label{eq:prey_div} \\
+H_{P,k} &=& -\Sigma_{j=1}^{s} \left( \frac{b_{kj}}{b_{k.}} log \left( \frac{b_{kj}}{b_{k.}} \right) \right) \label{eq:pred_div}
+\end{eqnarray}
+%
+where $H_{N,k}$ is the diversity of inflows from prey; $H_{P,k}$ is the diversity of outflows to predators; $s$ is the total number of species; and $b_{.k}$, $b_{k.}$ are column and row sums giving the total number of interactions that species $k$ has with its prey and predators respectively. The interaction diversity metrics behave just as the Shannon entropy - the higher the number of interaction partners and the more even the interaction frequencies across these partners, the higher the interaction diversities. The exponents of \eqref{eq:prey_div} and \eqref{eq:pred_div} are used to calculate the \emph{effective number} of prey and predators respectively:
+
+\begin{eqnarray}
+n_{N,k} &=& \begin{cases} e^{H_{N,k}}  \\ 0 \mbox{     if } b_{.k}=0 \end{cases} \label{eq:effective_prey} \\
+n_{P,k} &=& \begin{cases} e^{H_{P,k}}  \\ 0 \mbox{     if } b_{k.}=0 \end{cases} \label{eq:effective_pred}
+\end{eqnarray}
+%
+where the symbols have the same meaning previously. These metrics have the property that if the interaction frequencies of species $k$ are distributed equally amongst its interaction partners, then the effective number of prey/predators is equal to the actual number. However, if the interaction frequencies are not equal between partners, the effective number of prey/predators is reduced, since there is some preferential interaction. These effective number of species are used to calculate \emph{weighted quantitative generality and vulnerability}, which are defined as:  
+\begin{eqnarray}
+G_q &=& \Sigma_{k=1}^{s} \left( \frac{b_{.k}}{b_{..}} n_{N,k} \right) \label{eq:G_q} \\
+V_q &=& \Sigma_{k=1}^{s} \left( \frac{b_{k.}}{b_{..}} n_{P,k} \right) \label{eq:V_q}
+\end{eqnarray}
+%
+where $b_{..}$ is the total number of interactions. So the metrics in \eqref{eq:G_q} and \eqref{eq:V_q} give a weighted average of the effective numbers of prey and predators respectively. They are weighted by the fraction of the total interactions the species $k$ is involved, such that species with more interactions contribute most to the average.
+Gq, Vq, MTP, H2'
+
+We use the standard network metrics, such as connectance and number of links. 
+
+GenSd, VulSd, , Connectance, Nestedness, Compartmentalisation
 
 \subsection{Spatial metrics}
+\label{sec:def_spatial_metrics}
 
 Moran's I, Geary's C. Spatial autocorrelation. Centroids.
 

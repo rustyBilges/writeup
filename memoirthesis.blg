@@ -3,52 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 465 of file thesisbiblio.bib
+Repeated entry---line 508 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
-Warning--string name "december" is undefined
---line 787 of file thesisbiblio.bib
-Warning--I didn't find a database entry for "newbold2015global"
-You've used 11 entries,
+Warning--I didn't find a database entry for ""
+You've used 12 entries,
             2030 wiz_defined-function locations,
-            578 strings with 5973 characters,
-and the built_in function-call counts, 4252 in all, are:
-= -- 413
-> -- 214
+            589 strings with 6288 characters,
+and the built_in function-call counts, 5513 in all, are:
+= -- 540
+> -- 299
 < -- 0
-+ -- 88
-- -- 74
-* -- 343
-:= -- 673
-add.period$ -- 11
-call.type$ -- 11
-change.case$ -- 66
++ -- 121
+- -- 106
+* -- 460
+:= -- 849
+add.period$ -- 12
+call.type$ -- 12
+change.case$ -- 88
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 179
-empty$ -- 280
-format.name$ -- 74
-if$ -- 887
+cite$ -- 12
+duplicate$ -- 220
+empty$ -- 340
+format.name$ -- 106
+if$ -- 1158
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 10
-newline$ -- 36
-num.names$ -- 22
-pop$ -- 57
+int.to.str$ -- 12
+missing$ -- 13
+newline$ -- 39
+num.names$ -- 24
+pop$ -- 70
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 76
 quote$ -- 0
-skip$ -- 159
+skip$ -- 211
 stack$ -- 0
-substring$ -- 293
-swap$ -- 80
+substring$ -- 410
+swap$ -- 110
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 46
 warning$ -- 0
-while$ -- 46
-width$ -- 13
-write$ -- 100
+while$ -- 54
+width$ -- 14
+write$ -- 110
 (There was 1 error message)

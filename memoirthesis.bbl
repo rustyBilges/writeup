@@ -1,56 +1,63 @@
 \begin{thebibliography}{10}
 
-\bibitem{arnoldi2015}
-{\sc J.-F. Arnoldi, M.~Loreau, and B.~Haegeman}, {\em Resilience, reactivity
-  and variability: A mathematical comparison of ecological stability measures},
-  Journal of theoretical biology, 389 (2016), pp.~47--59.
+\bibitem{python}
+{\sc E.~Anderson, Z.~Bai, C.~Bischof, S.~Blackford, J.~Demmel, J.~Dongarra,
+  J.~Du~Croz, A.~Greenbaum, S.~Hammarling, A.~McKenney, and D.~Sorensen}, {\em
+  {LAPACK} Users' Guide}, Society for Industrial and Applied Mathematics,
+  Philadelphia, PA, third~ed., 1999.
 
-\bibitem{beninca2008chaos}
-{\sc E.~Beninc{\`a}, J.~Huisman, R.~Heerkloss, K.~D. J{\"o}hnk, P.~Branco,
-  E.~H. Van~Nes, M.~Scheffer, and S.~P. Ellner}, {\em Chaos in a long-term
-  experiment with a plankton community}, Nature, 451 (2008), pp.~822--825.
+\bibitem{berlow2004interaction}
+{\sc E.~L. Berlow, A.-M. Neutel, J.~E. Cohen, P.~C. De~Ruiter, B.~Ebenman,
+  M.~Emmerson, J.~W. Fox, V.~A. Jansen, J.~Iwan~Jones, G.~D. Kokkoris, et~al.},
+  {\em Interaction strengths in food webs: issues and opportunities}, Journal
+  of animal ecology, 73 (2004), pp.~585--598.
 
-\bibitem{brock1967ecosystem}
-{\sc T.~D. Brock}, {\em The ecosystem and the steady state}, Bioscience, 17
-  (1967), pp.~166--169.
+\bibitem{bluthgen2008interaction}
+{\sc N.~Bl{\"u}thgen, J.~Fr{\"u}nd, D.~P. V{\'a}zquez, and F.~Menzel}, {\em
+  What do interaction network metrics tell us about specialization and
+  biological traits}, Ecology, 89 (2008), pp.~3387--3399.
 
-\bibitem{foley2005global}
-{\sc J.~A. Foley, R.~DeFries, G.~P. Asner, C.~Barford, G.~Bonan, S.~R.
-  Carpenter, F.~S. Chapin, M.~T. Coe, G.~C. Daily, H.~K. Gibbs, et~al.}, {\em
-  Global consequences of land use}, science, 309 (2005), pp.~570--574.
+\bibitem{dunne2002food}
+{\sc J.~A. Dunne, R.~J. Williams, and N.~D. Martinez}, {\em Food-web structure
+  and network theory: the role of connectance and size}, Proceedings of the
+  National Academy of Sciences, 99 (2002), pp.~12917--12922.
 
-\bibitem{saul09phd}
-{\sc S.~Hazledine}, {\em {The Analysis and modelling of chaotic calcium
-  oscillations}}, PhD thesis, Department for Computational Systems Biology,
-  John Innes Centre, 2009.
-
-\bibitem{hsu1997schaum}
-{\sc H.~P. Hsu}, {\em Schaum's outline of theory and problems of probability,
-  random variables, and random processes}, McGraw-Hill, 1997.
-
-\bibitem{kwiatkowski1992testing}
-{\sc D.~Kwiatkowski, P.~C. Phillips, P.~Schmidt, and Y.~Shin}, {\em Testing the
-  null hypothesis of stationarity against the alternative of a unit root: How
-  sure are we that economic time series have a unit root?}, Journal of
-  econometrics, 54 (1992), pp.~159--178.
+\bibitem{evans2013robustness}
+{\sc D.~M. Evans, M.~J. Pocock, and J.~Memmott}, {\em The robustness of a
+  network of ecological networks to habitat loss}, Ecology letters, 16 (2013),
+  pp.~844--852.
 
 \bibitem{lurgi2015effects}
 {\sc M.~Lurgi, D.~Montoya, and J.~M. Montoya}, {\em The effects of space and
   diversity of interaction types on the stability of complex ecological
   networks}, Theoretical Ecology,  (2015), pp.~1--11.
 
-\bibitem{priestley1969test}
-{\sc M.~Priestley and T.~S. Rao}, {\em A test for non-stationarity of
-  time-series}, Journal of the Royal Statistical Society. Series B
-  (Methodological),  (1969), pp.~140--149.
+\bibitem{o2009perturbations}
+{\sc E.~J. O'Gorman and M.~C. Emmerson}, {\em Perturbations to trophic
+  interactions and the stability of complex food webs}, Proceedings of the
+  National Academy of Sciences, 106 (2009), pp.~13393--13398.
 
-\bibitem{Rlanguage}
-{\sc {R Core Team}}, {\em R: A Language and Environment for Statistical
-  Computing}, R Foundation for Statistical Computing, Vienna, Austria, 2013.
+\bibitem{oksanen2007vegan}
+{\sc J.~Oksanen, R.~Kindt, P.~Legendre, B.~O’Hara, M.~H.~H. Stevens, M.~J.
+  Oksanen, and M.~Suggests}, {\em The vegan package}, Community ecology
+  package, 10 (2007).
 
-\bibitem{said1984testing}
-{\sc S.~E. Said and D.~A. Dickey}, {\em Testing for unit roots in
-  autoregressive-moving average models of unknown order}, Biometrika, 71
-  (1984), pp.~599--607.
+\bibitem{stouffer2005quantitative}
+{\sc D.~Stouffer, J.~Camacho, R.~Guimera, C.~Ng, and L.~Nunes~Amaral}, {\em
+  Quantitative patterns in the structure of model and empirical food webs},
+  Ecology, 86 (2005), pp.~1301--1311.
+
+\bibitem{whittaker1965dominance}
+{\sc R.~H. Whittaker}, {\em Dominance and diversity in land plant communities
+  numerical relations of species express the importance of competition in
+  community function and evolution}, Science, 147 (1965), pp.~250--260.
+
+\bibitem{williams2000simple}
+{\sc R.~J. Williams and N.~D. Martinez}, {\em Simple rules yield complex food
+  webs}, Nature, 404 (2000), pp.~180--183.
+
+\bibitem{wilson1991methods}
+{\sc J.~B. Wilson}, {\em Methods for fitting dominance/diversity curves},
+  Journal of Vegetation Science, 2 (1991), pp.~35--46.
 
 \end{thebibliography}

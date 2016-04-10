@@ -1,17 +1,23 @@
 \select@language {english}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\textbf {Page}}\par \penalty \@M 
-\contentsline {chapter}{\chapternumberline {1}Habitat loss with high immigration}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Methods}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Simulation procedure}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Rank abundance distributions}{2}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Sampling and analysis}{3}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Invariability}{4}{subsection.1.2.4}
-\contentsline {section}{\numberline {1.3}Results}{4}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Diversity}{4}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Network properties}{12}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Stability and Space}{17}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Invariability}{22}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}Synthesis}{24}{subsection.1.3.5}
-\contentsline {section}{\numberline {1.4}Discussion}{30}{section.1.4}
-\contentsline {chapter}{Bibliography}{31}{section*.2}
+\contentsline {chapter}{\chapternumberline {1}Inferring species interactions}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Methodology}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Interaction strength}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Population models}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Simulation procedure}{7}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Numerical estimation method}{8}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Examples}{11}{subsection.1.2.5}
+\contentsline {section}{\numberline {1.3}Results}{14}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Linear model}{14}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Holling model}{17}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Range sampling}{17}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}TEMP : other results}{17}{section.1.4}
+\contentsline {section}{\numberline {1.5}Application to IBM (optional)}{18}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Testing functional response (and intrinsic growth functions)}{20}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}2 Species IBM model}{21}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Extend methodology (3, 4 and 5 species)}{22}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Results}{22}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}2 species}{22}{subsection.1.5.5}
+\contentsline {section}{\numberline {1.6}Discussion}{22}{section.1.6}
+\contentsline {chapter}{Bibliography}{25}{section*.9}

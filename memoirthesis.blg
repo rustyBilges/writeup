@@ -3,50 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 508 of file thesisbiblio.bib
- : @article{lurgi2015effects
- :                          ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
-You've used 12 entries,
+You've used 1 entry,
             2030 wiz_defined-function locations,
-            589 strings with 6288 characters,
-and the built_in function-call counts, 5513 in all, are:
-= -- 540
-> -- 299
+            505 strings with 3897 characters,
+and the built_in function-call counts, 381 in all, are:
+= -- 38
+> -- 13
 < -- 0
-+ -- 121
-- -- 106
-* -- 460
-:= -- 849
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 88
++ -- 5
+- -- 4
+* -- 23
+:= -- 59
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 220
-empty$ -- 340
-format.name$ -- 106
-if$ -- 1158
+cite$ -- 1
+duplicate$ -- 23
+empty$ -- 24
+format.name$ -- 4
+if$ -- 85
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 13
-newline$ -- 39
-num.names$ -- 24
-pop$ -- 70
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 6
+num.names$ -- 2
+pop$ -- 4
 preamble$ -- 1
-purify$ -- 76
+purify$ -- 4
 quote$ -- 0
-skip$ -- 211
+skip$ -- 25
 stack$ -- 0
-substring$ -- 410
-swap$ -- 110
+substring$ -- 17
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 46
+type$ -- 4
 warning$ -- 0
-while$ -- 54
-width$ -- 14
-write$ -- 110
-(There was 1 error message)
+while$ -- 3
+width$ -- 2
+write$ -- 11

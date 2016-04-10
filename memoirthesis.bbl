@@ -1,63 +1,7 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{1}
 
-\bibitem{python}
-{\sc E.~Anderson, Z.~Bai, C.~Bischof, S.~Blackford, J.~Demmel, J.~Dongarra,
-  J.~Du~Croz, A.~Greenbaum, S.~Hammarling, A.~McKenney, and D.~Sorensen}, {\em
-  {LAPACK} Users' Guide}, Society for Industrial and Applied Mathematics,
-  Philadelphia, PA, third~ed., 1999.
-
-\bibitem{berlow2004interaction}
-{\sc E.~L. Berlow, A.-M. Neutel, J.~E. Cohen, P.~C. De~Ruiter, B.~Ebenman,
-  M.~Emmerson, J.~W. Fox, V.~A. Jansen, J.~Iwan~Jones, G.~D. Kokkoris, et~al.},
-  {\em Interaction strengths in food webs: issues and opportunities}, Journal
-  of animal ecology, 73 (2004), pp.~585--598.
-
-\bibitem{bluthgen2008interaction}
-{\sc N.~Bl{\"u}thgen, J.~Fr{\"u}nd, D.~P. V{\'a}zquez, and F.~Menzel}, {\em
-  What do interaction network metrics tell us about specialization and
-  biological traits}, Ecology, 89 (2008), pp.~3387--3399.
-
-\bibitem{dunne2002food}
-{\sc J.~A. Dunne, R.~J. Williams, and N.~D. Martinez}, {\em Food-web structure
-  and network theory: the role of connectance and size}, Proceedings of the
-  National Academy of Sciences, 99 (2002), pp.~12917--12922.
-
-\bibitem{evans2013robustness}
-{\sc D.~M. Evans, M.~J. Pocock, and J.~Memmott}, {\em The robustness of a
-  network of ecological networks to habitat loss}, Ecology letters, 16 (2013),
-  pp.~844--852.
-
-\bibitem{lurgi2015effects}
-{\sc M.~Lurgi, D.~Montoya, and J.~M. Montoya}, {\em The effects of space and
-  diversity of interaction types on the stability of complex ecological
-  networks}, Theoretical Ecology,  (2015), pp.~1--11.
-
-\bibitem{o2009perturbations}
-{\sc E.~J. O'Gorman and M.~C. Emmerson}, {\em Perturbations to trophic
-  interactions and the stability of complex food webs}, Proceedings of the
-  National Academy of Sciences, 106 (2009), pp.~13393--13398.
-
-\bibitem{oksanen2007vegan}
-{\sc J.~Oksanen, R.~Kindt, P.~Legendre, B.~O’Hara, M.~H.~H. Stevens, M.~J.
-  Oksanen, and M.~Suggests}, {\em The vegan package}, Community ecology
-  package, 10 (2007).
-
-\bibitem{stouffer2005quantitative}
-{\sc D.~Stouffer, J.~Camacho, R.~Guimera, C.~Ng, and L.~Nunes~Amaral}, {\em
-  Quantitative patterns in the structure of model and empirical food webs},
-  Ecology, 86 (2005), pp.~1301--1311.
-
-\bibitem{whittaker1965dominance}
-{\sc R.~H. Whittaker}, {\em Dominance and diversity in land plant communities
-  numerical relations of species express the importance of competition in
-  community function and evolution}, Science, 147 (1965), pp.~250--260.
-
-\bibitem{williams2000simple}
-{\sc R.~J. Williams and N.~D. Martinez}, {\em Simple rules yield complex food
-  webs}, Nature, 404 (2000), pp.~180--183.
-
-\bibitem{wilson1991methods}
-{\sc J.~B. Wilson}, {\em Methods for fitting dominance/diversity curves},
-  Journal of Vegetation Science, 2 (1991), pp.~35--46.
+\bibitem{shandilya2011inferring}
+{\sc S.~G. Shandilya and M.~Timme}, {\em Inferring network topology from
+  complex dynamics}, New Journal of Physics, 13 (2011), p.~013004.
 
 \end{thebibliography}

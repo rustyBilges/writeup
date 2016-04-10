@@ -1,6 +1,8 @@
 %% TODO: finish application to IBM. 2 (and maybe 3 and 4 species). Habitat loss. Single pp-pair from large simulation, and functional grouping.
 %%  			> 3 species Jhat not wokring (for chain - ensemble_K estimates are too large. Why? Try other 3sp nets? Other options...)
 
+%% TODO: ODE application to Holling model - quaility versus noise and sampling, and Range sampling (conclude nice concept but very sucetible to noise)
+
 %% TODO:  fill in [REF]S
 %% TODO:  sort out noise: check equations(outline.pdf and email to MG dated 12/12/14) & simulations.
 %% TODO:  edit FR example figure
@@ -543,9 +545,73 @@ This section shows some plots which I was not planning to put into the thesis bu
 \section{Application to IBM (optional)}
 \label{sec:ibm}
 
-\subsection{Testing functionl response}
-\subsection{Extend methodology (3 and 4 species)}
+In this section we apply the methodology for inferring species interactions to the IBM simulations. In the previous section we have seen that the method works well when fitting the GLV to two species predator-prey dynamics simulated with ODE models. In the case that the dynamics is governed by the Lotkva-Volterra equations, and in the absence of noise, fitting the GLV model produces true estimates of the underlying parameters which include the inter-specific interaction strengths. The estimates require relatively few samples in order to achieve high accuracy, and which converge on the true parameter values as the sampling intensity increases. However as noise is added to the simulations the accuracy of the estimates decreases. In particular we found that, in the presence of noise, the estimates do not converge on the true parameter values - that is, noise introduces systematic error in to the estimates. In the case that the dynamics are governed by the Holling II model matters are complicated - but in general we find that the GLV can approximately capture the strength of species interactions (and also the dynamics?), provided there is not too much noise, and the FR is not too non-linear\footnote{This is all need to be demonstrated - WORK TO DO!}.
+
+Can the IBM dynamics by approximated by the GLV model? The hypothesis is that is can. Argue this..and refer to previous mention of LV type dynamics. Refer forward to testing linearity of FR. Exponential growth and decay, linear FR. However there are certain problem/factors that may hinder this approach/represent a departure from GLV dynamics...Noise, spatial effects, bioenergetic model - time delay? Immigration (one component of noise).
+
+The issue of noise is important since, as we have shown in chapter REF, there is a strong stochastic component to the IBM simulations. 
+
+Modelling individuals, not biomass or energy. Is this problematic? Set herb-frac to 1. Other issues?
+
+\subsection{Testing functional response (and intrinsic growth functions)}
+
+Here we demonstrate the linearity of the predator functional response for animal predators in the second and third trophic levels (using 2sp and 3sp chain) - demonstrate that there is a slight difference. But basically linear. Other issues that may arise - high noise and low abundances create error. 
+
+We also conduct an experiment to test the intrinsic growth and death rates of plant and animal species - by setting herb-frac=0.0. Demonstrate they are well approximated by exponential. In the absence of immigration. 
+
+Carrying capacity: is there evidence for density dependent birth/death? - use this fact in later analysis. Also discuss that the carrying capacity will vary with the number of species, not just a single species thing (non-pairwise interactions in competition for space - argghh!)
+
+\subsection{2 Species IBM model}
+
+IMPORTANT: carrying capacity depends on other species...introduce a new term into the model and test it?
+
+Define the model and what the inferred parameters represent:
+
+\begin{itemize}
+	\item $J_{01}$: per-capita of rate consumption of the prey
+	\item $J_{10}$: per-capita of rate reproduction of predator, due to consumption of prey. Not as well defined. But only source of predator births? Numerical response! (get REF)
+	
+	\item $J_{00}$: intra-specific regulation of prey growth - see carrying capacity experiment.
+	
+	\item $J_{11}$: intra-specific regulation of predator mortality? Check this. Expect zero? Or expect high number of predator means more reproduction because easier to find partner, therefore reduce mortality? Or increase birth rate. Not clear. Again SEE EXPERIMENT. 
+	
+	\item $r_0$: prey intrinsic growth rate. Estimate from exp?
+	
+	\item $r_1$: predator intrinsic mortality rate. Estimate from exp?
+\end{itemize}
+
+So we know what values to expect, or at least the signs. We can evaluate the model fit by comparing the values of these estimates with birth/death rates from the simulations. Although not totally fair. We can also simulate GLV with the inferred parameters - does it match. Is the equilibrium the same? And check the error function of the fit. We show all this in the results section below.
+
+\paragraph*{Dynamics of the model} we two species is a new thing. Here we show that with the default parameters we get relaxation-type oscillations. This is interesting, we try fitting to these in the two species case. But they become problematic for larger number of species. Argue why. Therefore we increase the reproduction rate (refer to previous chapter), which creates more WORD dynamics. We also fit to these. 
+
+PLOT: DYNAMICS UNDER IR, RR AND HL.
+
+Also show dependence on immigration (show that it is low and what happens if it is high), concede that this is a limitation. 
+
+\subsection{Extend methodology (3, 4 and 5 species)}
+
+MULTI-SPECIES DENSITY DEPENDENCE?!
+
+This does not require much since we presented a general framework previously. 
+
+Show 3 species dynamics with the two different RR. Conclude which is better. 
+
 \subsection{Results}
+
+\subsection{2 species}
+
+Here we compare the results of two species. 
+
+For a single IR we look at convergence of all 6 parameters (over the ensemble) - correct signs, correct magnitudes?
+
+Maybe repeat for other IRs and HL.
+
+We then show rate estimates as time series and introduce quality metric for this\footnote{Still not sure about this}.
+
+Demonstrate the quality decreases with IR and HL (box plot?).
+And how estimated parameters respond to the two HL scenarios (refer to previous findings). Hopefully support!
+
+
 
 %% TOD DISCUSS RE IBM APPLICATION:
 
@@ -565,4 +631,10 @@ Points referenced in text above, make sure to discuss them!..
 	\item good GLV fit to LV even with 100 sample points - realistic?
 	
 	\item how good is the method of model fitting. Discuss more computationally expensive options (mentioned in section on Timme method)
+	
+	\item Spatial heterogeneity - we do not explore this here, but acknowledge that it represents are source of error. Gives example in extremis - 2 species only interacting on boundary. Also we know that there is some level of spatial aggregation, especially at low IR - possibly show one plot of this?
+	
+	\item Could introduce prey handling to IBM to create non-linear FR.
+	
+	\item Our method could be used to pick out coupling to other variables e.g evironmental (temperature) if expressed in a certain way.
 \end{itemize}

@@ -561,6 +561,27 @@ We also conduct an experiment to test the intrinsic growth and death rates of pl
 
 Carrying capacity: is there evidence for density dependent birth/death? - use this fact in later analysis. Also discuss that the carrying capacity will vary with the number of species, not just a single species thing (non-pairwise interactions in competition for space - argghh!)
 
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/plant_FR}}}
+	\caption{Plant functional response}
+	\label{fig:plantFR}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/predator_FR}}}
+	\caption{Herbivore functional response}
+	\label{fig:herbFR}
+\end{figure} 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/intrinsic_fn}}}
+	\caption{Intrinsic growth/mortality.}
+	\label{fig:intrinsic}
+\end{figure}
+
+
 \subsection{2 Species IBM model}
 
 IMPORTANT: carrying capacity depends on other species...introduce a new term into the model and test it?
@@ -586,7 +607,15 @@ So we know what values to expect, or at least the signs. We can evaluate the mod
 
 PLOT: DYNAMICS UNDER IR, RR AND HL.
 
-Also show dependence on immigration (show that it is low and what happens if it is high), concede that this is a limitation. 
+Also show dependence on immigration (show that it is low and what happens if it is high), concede that this is a limitation.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/example_dynamics_2sp_ir_rr}}}
+	\caption{2 species dynamics}
+	\label{fig:2sp_dynamics}
+\end{figure}
+
 
 \subsection{Extend methodology (3, 4 and 5 species)}
 
@@ -597,7 +626,7 @@ This does not require much since we presented a general framework previously.
 Show 3 species dynamics with the two different RR. Conclude which is better. 
 
 \subsection{Results}
-
+\clearpage
 \subsection{2 species}
 
 Here we compare the results of two species. 
@@ -611,12 +640,203 @@ We then show rate estimates as time series and introduce quality metric for this
 Demonstrate the quality decreases with IR and HL (box plot?).
 And how estimated parameters respond to the two HL scenarios (refer to previous findings). Hopefully support!
 
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1}}}
+	\caption{Convergence of estimates. 2 species.}
+	\label{fig:2sp_convergence_LI}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.1}}}
+	\caption{Convergence of estimates. 2 species.}
+	\label{fig:2sp_convergence_HI}
+\end{figure}
 
 
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/rate_estimate_series_2sp_hr_li}}}
+	\caption{Predicted births/deaths. Low IR.}
+	\label{fig:rate_estimates_2sp_li}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/rate_estimate_series_2sp_hr_hi}}}
+	\caption{Predicted births/deaths. High IR.}
+	\label{fig:rate_estimates_2sp_hi}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/inferred_dynamics_2sp}}}
+	\caption{Fitted dynamics. }
+	\label{fig:inferred_dynamics_2sp}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/estimate_quality_2sp_lowIR}}}
+	\caption{Quality. LI.}
+	\label{fig:quality_2sp_li}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/estimate_quality_2sp_highIR}}}
+	\caption{Fitted dynamics. }
+	\label{fig:quality_2sp_hi}
+\end{figure}
+
+\clearpage
+\subsection{3 species}
+
+The two species results suggest that intra-specific interactions contribute to predator deaths, whereas they contribute to prey births. This is problematic for rate estimation since we are starting from the position of not knowing which species are basal. For the purposes of calculating the rate we pretend that we know...This is in agreement with the Lotka-Volterra formulation.
+
+The alternative convention is that intra-specific interactions are 
+
+Extra term does not improve the estimates.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/example_dynamics_3sp}}}
+	\caption{3 species dynamics}
+	\label{fig:3sp_dynamics}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/convergence_3sp_length_lowIR}}}
+	\caption{Convergence of estimates. 3 species.}
+	\label{fig:3sp_convergence_LI}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/convergence_3sp_length_highIR}}}
+	\caption{Convergence of estimates. 3 species.}
+	\label{fig:3sp_convergence_HI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/rate_estimates_3speices_li}}}
+	\caption{Predicted births/deaths. Low IR.}
+	\label{fig:rate_estimates_3sp_li}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/rate_estimates_3speices_hi}}}
+	\caption{Predicted births/deaths. High IR.}
+	\label{fig:rate_estimates_3sp_hi}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/inferred_dynamics_3sp}}}
+	\caption{Fitted dynamics. }
+	\label{fig:inferred_dynamics_3sp}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/stability_and_error_3sp_LI}}}
+	\caption{Stability and error }
+	\label{fig:stability_and_error_3sp_LI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/stability_and_error_3sp_HI}}}
+	\caption{Stability and error }
+	\label{fig:stability_and_error_3sp_HI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/estimate_quality_3sp_LI}}}
+	\caption{Quality 3sp LI}
+	\label{fig:estimate_quality_3sp_LI}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/estimate_quality_3sp_HI}}}
+	\caption{Quality 3sp HI}
+	\label{fig:estimate_quality_3sp_HI}
+\end{figure}
 %% TOD DISCUSS RE IBM APPLICATION:
 
 % > could introduce non-linearities to IS. E.g. hanlding time?
 % > discuss application to larger system. Functional groupings...etc.
+
+\clearpage
+\subsection{5 species}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/example_dynamics_5sp}}}
+	\caption{5 species dynamics}
+	\label{fig:5sp_dynamics}
+\end{figure}
+
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_num_stable_nets}}}
+	\caption{5 species: number of stable models}
+	\label{fig:5sp_stable_nets}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_stable_models}}}
+	\caption{5 species: stability of selected models}
+	\label{fig:5sp_stable_models}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_eq_err}}}
+	\caption{5 species: error in equilibrium}
+	\label{fig:5speqerr}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_errfn}}}
+	\caption{5 species: error in gradient fit function}
+	\label{fig:5sp_errfn}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_rate_errors}}}
+	\caption{5 species: errors in rate estimates}
+	\label{fig:5s_rate_errors}
+\end{figure}
+
+\clearpage
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_fitted_FR}}}
+	\caption{5 species: functional response (High IR)}
+	\label{fig:5sp_FR_fit_highIR}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/lowIR_fitted_FR}}}
+	\caption{5 species: functional response (Low IR)}
+	\label{fig:5sp_FR_fit_lowIR}
+\end{figure}
+
+\clearpage
 \section{Discussion}
 \label{sec:discussion}
 
@@ -637,4 +857,6 @@ Points referenced in text above, make sure to discuss them!..
 	\item Could introduce prey handling to IBM to create non-linear FR.
 	
 	\item Our method could be used to pick out coupling to other variables e.g evironmental (temperature) if expressed in a certain way.
+	
+	\item In real application would not have luxury of selecting the section of time series with best fit! Would be lucky to have 1000 time points at all! 
 \end{itemize}

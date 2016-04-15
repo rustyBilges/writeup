@@ -1,7 +1,122 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{shandilya2011inferring}
-{\sc S.~G. Shandilya and M.~Timme}, {\em Inferring network topology from
-  complex dynamics}, New Journal of Physics, 13 (2011), p.~013004.
+\bibitem{python}
+{\sc E.~Anderson, Z.~Bai, C.~Bischof, S.~Blackford, J.~Demmel, J.~Dongarra,
+  J.~Du~Croz, A.~Greenbaum, S.~Hammarling, A.~McKenney, and D.~Sorensen}, {\em
+  {LAPACK} Users' Guide}, Society for Industrial and Applied Mathematics,
+  Philadelphia, PA, third~ed., 1999.
+
+\bibitem{coyte2015ecology}
+{\sc K.~Z. Coyte, J.~Schluter, and K.~R. Foster}, {\em The ecology of the
+  microbiome: Networks, competition, and stability}, Science, 350 (2015),
+  pp.~663--666.
+
+\bibitem{dobson2006habitat}
+{\sc A.~Dobson, D.~Lodge, J.~Alder, G.~S. Cumming, J.~Keymer, J.~McGlade,
+  H.~Mooney, J.~A. Rusak, O.~Sala, V.~Wolters, et~al.}, {\em Habitat loss,
+  trophic collapse, and the decline of ecosystem services}, Ecology, 87 (2006),
+  pp.~1915--1924.
+
+\bibitem{evans2013robustness}
+{\sc D.~M. Evans, M.~J. Pocock, and J.~Memmott}, {\em The robustness of a
+  network of ecological networks to habitat loss}, Ecology letters, 16 (2013),
+  pp.~844--852.
+
+\bibitem{fontaine2011ecological}
+{\sc C.~Fontaine, P.~R. Guimar{\~a}es, S.~K{\'e}fi, N.~Loeuille, J.~Memmott,
+  W.~H. Van Der~Putten, F.~J. Van~Veen, and E.~Th{\'e}bault}, {\em The
+  ecological and evolutionary implications of merging different types of
+  networks}, Ecology Letters, 14 (2011), pp.~1170--1181.
+
+\bibitem{jager2006simulated}
+{\sc H.~I. Jager, E.~A. Carr, and R.~A. Efroymson}, {\em Simulated effects of
+  habitat loss and fragmentation on a solitary mustelid predator}, Ecological
+  Modelling, 191 (2006), pp.~416--430.
+
+\bibitem{kefi2012more}
+{\sc S.~K{\'e}fi, E.~L. Berlow, E.~A. Wieters, S.~A. Navarrete, O.~L. Petchey,
+  S.~A. Wood, A.~Boit, L.~N. Joppa, K.~D. Lafferty, R.~J. Williams, et~al.},
+  {\em More than a meal… integrating non-feeding interactions into food
+  webs}, Ecology letters, 15 (2012), pp.~291--300.
+
+\bibitem{kokkoris1999patterns}
+{\sc G.~Kokkoris, A.~Troumbis, and J.~Lawton}, {\em Patterns of species
+  interaction strength in assembled theoretical competition communities},
+  Ecology Letters, 2 (1999), pp.~70--74.
+
+\bibitem{lurgi2015effects}
+{\sc M.~Lurgi, D.~Montoya, and J.~M. Montoya}, {\em The effects of space and
+  diversity of interaction types on the stability of complex ecological
+  networks}, Theoretical Ecology,  (2015), pp.~1--11.
+
+\bibitem{may1972will}
+{\sc R.~M. May}, {\em Will a large complex system be stable?}, Nature, 238
+  (1972), pp.~413--414.
+
+\bibitem{may1981patterns}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Patterns in
+  multi-species communities}, Theoretical ecology: principles and applications,
+   (1981), pp.~197--227.
+
+\bibitem{mccann1998weak}
+{\sc K.~McCann, A.~Hastings, and G.~R. Huxel}, {\em Weak trophic interactions
+  and the balance of nature}, Nature, 395 (1998), pp.~794--798.
+
+\bibitem{montoya2016invariability}
+{\sc J.~Montoya, J.~Arnoldi, and M.~Loreua}, {\em Resilience, invariability,
+  and ecological stability across levels of organization}, WHICH JOURNAL,  (in
+  press).
+
+\bibitem{mougi2012diversity}
+{\sc A.~Mougi and M.~Kondoh}, {\em Diversity of interaction types and
+  ecological community stability}, Science, 337 (2012), pp.~349--351.
+
+\bibitem{neutel2002stability}
+{\sc A.-M. Neutel, J.~A. Heesterbeek, and P.~C. de~Ruiter}, {\em Stability in
+  real food webs: weak links in long loops}, Science, 296 (2002),
+  pp.~1120--1123.
+
+\bibitem{o2009perturbations}
+{\sc E.~J. O'Gorman and M.~C. Emmerson}, {\em Perturbations to trophic
+  interactions and the stability of complex food webs}, Proceedings of the
+  National Academy of Sciences, 106 (2009), pp.~13393--13398.
+
+\bibitem{oksanen2007vegan}
+{\sc J.~Oksanen, R.~Kindt, P.~Legendre, B.~O’Hara, M.~H.~H. Stevens, M.~J.
+  Oksanen, and M.~Suggests}, {\em The vegan package}, Community ecology
+  package, 10 (2007).
+
+\bibitem{ovaskainen2002metapopulation}
+{\sc O.~Ovaskainen, K.~Sato, J.~Bascompte, and I.~Hanski}, {\em Metapopulation
+  models for extinction threshold in spatially correlated landscapes}, Journal
+  of Theoretical Biology, 215 (2002), pp.~95--108.
+
+\bibitem{pocock2012robustness}
+{\sc M.~J. Pocock, D.~M. Evans, and J.~Memmott}, {\em The robustness and
+  restoration of a network of ecological networks}, Science, 335 (2012),
+  pp.~973--977.
+
+\bibitem{raffaelli2004extinction}
+{\sc D.~Raffaelli}, {\em How extinction patterns affect ecosystems}, Science,
+  306 (2004), pp.~1141--1142.
+
+\bibitem{sauve2014structure}
+{\sc A.~Sauve, C.~Fontaine, and E.~Th{\'e}bault}, {\em Structure--stability
+  relationships in networks combining mutualistic and antagonistic
+  interactions}, Oikos, 123 (2014), pp.~378--384.
+
+\bibitem{tylianakis2007habitat}
+{\sc J.~M. Tylianakis, T.~Tscharntke, and O.~T. Lewis}, {\em Habitat
+  modification alters the structure of tropical host--parasitoid food webs},
+  Nature, 445 (2007), pp.~202--205.
+
+\bibitem{whittaker1965dominance}
+{\sc R.~H. Whittaker}, {\em Dominance and diversity in land plant communities
+  numerical relations of species express the importance of competition in
+  community function and evolution}, Science, 147 (1965), pp.~250--260.
+
+\bibitem{wilson1991methods}
+{\sc J.~B. Wilson}, {\em Methods for fitting dominance/diversity curves},
+  Journal of Vegetation Science, 2 (1991), pp.~35--46.
 
 \end{thebibliography}

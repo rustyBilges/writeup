@@ -3,44 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-You've used 1 entry,
+Repeated entry---line 557 of file thesisbiblio.bib
+ : @article{lurgi2015effects
+ :                          ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "sole2006self"
+You've used 24 entries,
             2030 wiz_defined-function locations,
-            505 strings with 3897 characters,
-and the built_in function-call counts, 381 in all, are:
-= -- 38
-> -- 13
+            663 strings with 8421 characters,
+and the built_in function-call counts, 10566 in all, are:
+= -- 1054
+> -- 534
 < -- 0
-+ -- 5
-- -- 4
-* -- 23
-:= -- 59
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 5
++ -- 217
+- -- 187
+* -- 869
+:= -- 1607
+add.period$ -- 24
+call.type$ -- 24
+change.case$ -- 164
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 23
-empty$ -- 24
-format.name$ -- 4
-if$ -- 85
+cite$ -- 24
+duplicate$ -- 435
+empty$ -- 669
+format.name$ -- 187
+if$ -- 2239
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 6
-num.names$ -- 2
-pop$ -- 4
+int.to.str$ -- 24
+missing$ -- 25
+newline$ -- 75
+num.names$ -- 47
+pop$ -- 125
 preamble$ -- 1
-purify$ -- 4
+purify$ -- 140
 quote$ -- 0
-skip$ -- 25
+skip$ -- 419
 stack$ -- 0
-substring$ -- 17
-swap$ -- 14
+substring$ -- 812
+swap$ -- 217
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 94
 warning$ -- 0
-while$ -- 3
-width$ -- 2
-write$ -- 11
+while$ -- 110
+width$ -- 26
+write$ -- 217
+(There was 1 error message)

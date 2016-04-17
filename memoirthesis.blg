@@ -7,46 +7,57 @@ Repeated entry---line 557 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 872 of file thesisbiblio.bib
+ : @article{bossio2005soil
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--string name "december" is undefined
+--line 964 of file thesisbiblio.bib
 Warning--I didn't find a database entry for "sole2006self"
-You've used 24 entries,
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "newbold2015global"
+Warning--empty journal in ai2012immigration
+Warning--empty journal in condit2012thirty
+Warning--empty journal in tilman1994habitat
+You've used 80 entries,
             2030 wiz_defined-function locations,
-            663 strings with 8421 characters,
-and the built_in function-call counts, 10566 in all, are:
-= -- 1054
-> -- 534
+            979 strings with 20192 characters,
+and the built_in function-call counts, 35810 in all, are:
+= -- 3535
+> -- 1941
 < -- 0
-+ -- 217
-- -- 187
-* -- 869
-:= -- 1607
-add.period$ -- 24
-call.type$ -- 24
-change.case$ -- 164
++ -- 777
+- -- 685
+* -- 2961
+:= -- 5479
+add.period$ -- 80
+call.type$ -- 80
+change.case$ -- 567
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 435
-empty$ -- 669
-format.name$ -- 187
-if$ -- 2239
+cite$ -- 83
+duplicate$ -- 1457
+empty$ -- 2194
+format.name$ -- 685
+if$ -- 7556
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 25
-newline$ -- 75
-num.names$ -- 47
-pop$ -- 125
+int.to.str$ -- 80
+missing$ -- 81
+newline$ -- 243
+num.names$ -- 159
+pop$ -- 452
 preamble$ -- 1
-purify$ -- 140
+purify$ -- 491
 quote$ -- 0
-skip$ -- 419
+skip$ -- 1422
 stack$ -- 0
-substring$ -- 812
-swap$ -- 217
+substring$ -- 2597
+swap$ -- 733
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
-warning$ -- 0
-while$ -- 110
-width$ -- 26
-write$ -- 217
-(There was 1 error message)
+type$ -- 314
+warning$ -- 3
+while$ -- 360
+width$ -- 82
+write$ -- 712
+(There were 2 error messages)

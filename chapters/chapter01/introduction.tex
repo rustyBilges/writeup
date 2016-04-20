@@ -1,25 +1,6 @@
 
 % TODO: get material from first year report 
 
-\section{Prefix}
-
-It is a prevalent stance, in our society, to consider oneself separate from Nature. Somehow the natural world gives rise to a consciousness that is above and distinct from that of all other organisms - the human consciousness. And this particular consciousness is able to bend Nature to its will. At least that is the premise of the modern, secular society. Prior, and concurrent, to these societies, are those that 
-
-Our relationship with Nature has been one of asking what 
-
-The human relationship with Nature is purely extractive..
-
-
-Indeed this has been the story of   
-
-The history of modern civilisation has been a tale of removing ourselves from the natural world  
-
-Here we study nature in a very separate way, from behind the computer screen..
-
-Ecosystems are the foundation on which human society 
-
-This thesis explores the effects of habitat loss, and the role of species interactions in mediating these effects, on ecological communities. In the introduction we address, in turn, 
-
 \section{Motivation}
 \label{sec:intro_motivation}
 
@@ -27,26 +8,59 @@ An ecosystem is a subset of the \emph{biosphere} - the entirety of the living sy
 
 Habitat loss/alteration and climate change as the main anthropogenic drivers..Focus here on habitat loss. Community ecology - tools for the study of localised groups of species. Computational approach - hypothesis generation - defend bottom-up modelling of complex systems - make clear what it can and cannot do..
 
+The topic of the current thesis falls under the generously sized umbrella that is \emph{complexity science}. Ladyman, Lammbert and Weisner review the various definitions of a complex system \cite{ladyman2013complex}. They attempt to synthesise a concrete definition of this concept, which has previously been rather loosely and carelessly applied. The authors arrive at the following tentative  definition of physical complexity:
+\begin{quotation}
+\emph{"A  complex  system  is  an  ensemble  of  many  elements which are interacting in a disordered way, resulting in robust organisation and memory."}
+\end{quotation}
+They assert that this definition contains conditions necessary, but perhaps not sufficient for complexity, and propose an alternative \emph{data driven} definition under which a complex system is one that generates data with high Statistical Complexity \cite{crutchfield1989inferring}. Indeed to define a complex system is no easy task. Depending on who you ask there may be further necessary conditions such as \emph{emergence}, \emph{hierarchical organisation}, \emph{de-centralised control} and even anti-reductionist properties such as \emph{top-down causation}. If a definition may be reached then complexity science can be easily understood as the study of such systems. However, given the lack of a concrete definition of complex systems, many of my contemporaries (if concerned with the question at all) prefer a more \emph{pragmatic approach} to the question - what is complexity science? A fair summary of the consensus view is that complexity science represents a broad set of mathematical and computational tools which find application in increasingly diverse areas of the natural and social sciences. This expansion is driven by the ever increasing availability of data; advances in high performance computing; and the development of the tools themselves. For some the tools used and the fields of study are too disjoint to call complexity science a unified field. It is my view that this pragmatic approach is not dissimilar to the \emph{instrumentalist}, or "shut-up-and-calculate", interpretation of quantum mechanics\cite{norris2002quantum}, which finds popular support in the face of the difficult and unresolved philosophical questions posed by that theory. Further discussion on the nature of complexity is not relevant to this thesis other than to say that, if an accepted definition of a complex system did exist, then its criteria would surely be met by the \emph{ecological community}\footnote{Actually this may not be quite right! E.g. neutral theory. We treat is as a comlpex systems thogh..}.
 
 
+We now introduce key areas of theory??
+  
 \section{Community ecology}
 \label{sec:intro_community_ecology}
 
-An ecological community may be broadly defined as a collection of species that coexist in time and space. The study of these collections - \emph{community ecology} - attempts to understand their structure, dynamics and function, following the tenet that these three properties are related (see section \ref{sec:intro_role_of_sturcture}).
+An ecological community may be broadly defined as a collection of species that coexist in time and space. The study of these collections, \emph{community ecology}, attempts to understand their structure, dynamics and function. The field is too large to give a coherent overview. In this section we introduce some keys themes from community ecology that are relevant to the current project. Key to community ecology is the understanding that coexisting species interact with one another. These interactions generate a \emph{tangled} web of inter-dependence between species that has been discussed at least since Darwin \cite{darwin2009origin} (see quote in front matter), and probably long before. This inter-dependence between species can make communities sensitive to perturbation - if a species, upon which another species is strongly dependent, goes extinct it is likely that the dependant species will be lost also. These \emph{co-extinctions} and other knock-on effects, such as \emph{trophic cascades}, have been empirically observed \cite{knight2005trophic,ripple2012trophic}, giving evidence to the importance of species interactions in shaping communities.   However the tangled web may also generate communities which are remarkably robust to perturbation, and which persist through time despite varying environmental conditions. The story of community ecology has been one of trying to understand the general mechanisms and factors that shape communities, generating the observed patterns of biodiversity. This task is far from complete, and urgently required given the crisis facing life on this planet.
 
-Importance of networks..interactions..archetypal complex system (definition form Ladyman?) where emergent properties are generated by the many interacting agents...Obviously other factors - environmental, abiotic..  
+(Mention language of community ecology - versus e.g. network sciecne. Robustness, modularity - see next section.)
+(Mention metacommunities?)
+(neutral versus niche?)
+(figure - trophic cascade? Yellowstone?)
+% following the tenet that these three properties are related (see section \ref{sec:intro_role_of_sturcture}). A general theme in community ecology has been to look for
+
+%Importance of networks..interactions..archetypal complex system (definition form Ladyman?) where emergent properties are generated by the many interacting agents...Obviously other factors - environmental, abiotic..  
 
 \subsection{Species interactions}
 \label{sec:intro_interactions}
 
-Basic introduction: different types of interaction - antagonism, mutualism, competition (see first year review)
+Individuals interact with individuals belonging to either the same or different species, as well as with their abiotic environment. The interactions with other individuals are classed as intra- and inter-specific respectively. Inter-specific interactions broadly fall into three groups based on the effect that each species has on the other: antagonism, mutualism and competition (strictly this list also includes commensalism and ammensalism). Antagonisms being interactions where there is benefit to one species and detriment to the other, whereas mutualisms and antagonsisms give  benefit and detriment to both parties respectively. Such interactions may easily be represented as a network, which codifies the pattern of interactions between the species in a community. This is useful because tools taken from network science, and developed specifically for application in community ecology, may be used to analyse the community (see section [REFS] for more details on these methods). There are various conventions used for the network representation, but all of them use some kind of interaction or \emph{community matrix}. We will call this matrix $\mathbf{A}$ such that the elements $a_{ij}$ give some measure of the effect that species $j$ has on species $i$. Therefore a two species predator-prey system may be represented as:
+\begin{equation}
+A = 
+\begin{pmatrix}
+0 & -1 \\
+1 & 0
+\end{pmatrix},
+\label{eq:example_adj}
+\end{equation}
+where it is clear that species 1 is the predator since it has a negative impact on species 0 ($a_{01}<0$), whilst receiving benefit itself ($a_{10}>0$). Notably here $a_{00}$ and $a_{11}$ represent intra-specific interactions, or self-loops in the network, which may be non-zero due to mechanisms such as competition for space, predator-interference, or Allee effects [REFS]. In this representation the matrix is binary, and therefore the network is directed but unweighted. Conventionally ecologists have used unweighted networks since it is much easier to identify the presence or absence of an interaction than it is to quantify its strength. Therefore the `first wave' of ecological network metrics were developed without reference to interaction strengths, whereas subsequent quantitative metrics took interaction strength into account \cite{bersier2002quantitative}. Several studies highlighted the importance or quantitative metrics over qualitative ones. For example.. Interactions may also be classified as \emph{trophic} or non-trophic. Trophic interactions, such as predation, represent a directional flow of energy from one species to another. Therefore a food web can be thought of as a map of trophic energy or biomass flows through a community. In such case the link weight can take the natural units of energy flow rate, although this is not necessarily easy to measure. It is common in empirical studies to use the observed frequency of interaction as a proxy for the interaction strength. This is reasonable - if lynx are observed to prey on hares more frequently than on lemmings, then we may conclude that there is more biomass flow along one pathway than the other. Similar procedure are applied to pollination a mutualistic interaction which is also trophic..However the measurement of interaction strength is not simple, and as discussed by Berlow \cite{berlow2004interaction} there is no single definition or method. (return to this issue)
 
-Multiple types of interaction as a new area of study.
+In nature all the types of interaction mentioned above have the potential to coexist. In fact it is not necessarily clear which interaction belong to which type. For example the interaction between a bee and a flower is trophic - the bee takes nectar from the plant. This has an energetic cost to the plant. There is also the potential for benefit to the plant since it may be pollinated, and also gives up pollen which will later go on to pollinate a mate. Therefore we expect the species in a single community to be engaged in multiple interaction types. Until recently most community ecology has focused on single interaction types in isolation. - that is they have studies subsets of the full community. So, for example, pollination studies have sampled interactions between plants and pollinators to construct mutualistic networks \cite{gibson2011sampling}, whilst parasitism studies have sampled rates of parasitism on each host to construct antagonistic networks \cite{tylianakis2007habitat}. It is also worth noting here that such focus on single interaction types has often meant that the network being studies is \emph{bipartite} - i.e. one type of species linked to another via the interaction in question (host-parasitoid, plant-pollinator etc.) The single interaction focus has generated interesting results on the structure and functioning of such networks and sub-communities (see section \ref{sec:intro_role_of_sturcture}). However more recently there has a move towards integration of multiple interaction types as they are found in nature.        
+
+(Worth noting that May's classic study involves multiple interaction types, other theoretical studies have..in stablity section?)
+
+(Include figure!)-Pocock or Kefi?
 
 \subsection{The role of structure}
 \label{sec:intro_role_of_sturcture}
 
-Structure versus dynamics - refer to ODEs, simple example. Jacobian, relates to...
+Structure in this context refers to the topology of a community's network of interactions. The question we ask, as have many before, is to what extent are patterns observed in the community dependent on this structure? These patterns may be temporal (e.g. population dynamics) or spatial or may relate to biodiversity properties such as the distribution of biomass across species. This is a key goal of community ecology. But in attempting to answer this question (and, in fact, many of those posed in this introduction/thesis) there is often a gulf between theory and empirical observation, which is largely due to relative easy and frequency with which mathematical models have been applied compared with the relative difficulty of designing and carrying out experiments to answer such questions. To give a simple, but well known, example - \emph{population dynamics} models such as the Lotka-Volterra model use ordinary differential equations (ODE) to describe how species abundances change over time. The theoretical field itself is well advanced and the properties of such models have been studied as mathematical objects in their own right. Yet this has almost always been done with the belief that these models are ecologically meaningful and useful. Many would argue that this field in particular is divorced from reality because it has continued to develop these models with disregard for empirical validation (REF:rebutatlpaper). One consensus reached from this type of modelling is that predator-prey systems may exhibit stable oscillatory dynamics in which there is a phase lag between the prey and predator populations. Eventually this effect was able to be demonstrated in laboratory experiments conducted by Luckinbill [REF], although his systems required constant inflow of individuals from an external source for the oscillations to persist. Although the laboratory demonstration made it possible that such a mechanism exists in nature it has not be conclusively demonstrated [REF]. The best known example of possibly predator-prey cycles is the hare and lynx dataset from the Hudson Bay Company. However it has not been demonstrated conclusively that this represents a genuine predator-prey dynamic. For example it has been demonstrated that hare population may oscillate in the absence of predation [REF], lending credibility to the hypothesis that the hare oscillations at least may be intrinsic (self-governed)\cite{sinclair2003mammal}, and that the lynx population oscillate passively in response. An alternative hypothesis involves a third species, implicit in the data - the hunters that caught the animals. This hypothesis states that the hunter preferred hunting the larger and lynx, but would switch to hare when they were very abundant, thus leading to oscillations in the number of lynx pelts that are synchronised with the hare oscillations, but phase shifted. Finally another study concludes that hare eat lynx based on the phase relationship between the two populations at certain points in the time series\footnote{We will actually return to this in the final chapter. Phase difference appears to be very relevant, and may shift of be in apparently the wrong order due to interactions with other species.}. This is not an altogether series conclusion, rather it serves to remind us that the wrong results can be obtained by an apparently sensible analysis, demonstrates that extreme care must be taken , especially given the propensity for human confirmation-bias [REF] and the tendency for large bodies of theory to be proven incorrect or incomplete.     
+
+The hare-lynx example shows us that even the simplest structure - a single prey connected to a single predator - can pose problems when we try to relate it to observed patterns (in this case population dynamics). One reason for this is that nature is messy and complex. In fact the hare and lynx populations are embedded in a larger community \cite{stenseth1997population} and the observed dynamics is likely to be the results of a combinations of extrinsic and intrinsic factors \cite{andreassen2013new}. Fairly conclusive that predation plays a role \cite{krebs2011lemmings}. The point is that a vast amount of research has gone into understanding just two species and whether the interaction between plays and important role in the observed dynamics. We can understand then the challenges faced when attempting to answer similar questions of a whole community.
+
+
+(Need to work space and climate into the above discussion. Also include picture of hare-lynx food web? Use hare-lynx model fit plot form first year report?)
+
+%Structure versus dynamics - refer to ODEs, simple example. Jacobian, relates to...
 
 Structure-stability : antagonism, mutualism, combined - general May, Thilo - does appear that structure plays a role, but this role is not yet understood - what is clear is that stability seems unlikely, and yet ecosystems appear stable - something fishy!
 
@@ -66,6 +80,28 @@ Network inference - brief reference to methods for doing this, and why you would
 \section{Ecology \emph{in silico}}
 \label{sec:intro_computers}
 
+Define: IBM and CA and spatially expliciti modelling.
+
+ As discussed in section \ref{sec:intro_computers} such models have become increasingly popular in ecology \cite{judson1994rise}, but have rarely been to used to model multi-trophic communities with many species \cite{lurgi2015effects,grimm2013individual}.
+
+%From lurgi: This individual-based, bioenergetic model is more
+realistic than previous models of complex food web dynamics
+(e.g. (Pimm 1979; McCann et al. 2005; Brose et al. 2006)) in the
+following aspects: (i) individuals within species have different
+extinction rates, which are not dependant on stochastic events,
+thus eliminating the need to define fixed extinction probabilities
+for all species in the community (e.g. (Sol and Montoya 2006;
+Fortuna et al. 2013)); (ii) more complex demographic processes
+such as reproductive ability and immigration based on available
+space are taken into account; and (iii) bioenergetic constraints
+such as energy gathering efficiency and energy l
+
+In section\ref{sec:intro_role_of_sturcture} we touched on the gap between theory and experiment in the field of population dynamics. Barraquand \cite{barraquand2014functional} provides a useful  discussion of some pressing issues regarding this problem. One issue cited is poor feedback between studies conducted by theoreticians and empiricists. The fault does not lie with either group but rather in the nature of their subject matter. Traditionally physical matter has proven more amenable to the rigorous application of mathematical theory because of the relative ease with which theoretical predictions can be tested with controlled experiments. As such applied and theoretical physics have been able to proceed, more or less, hand in hand. Numerous problems faced by field ecologists have hampered such smooth progress in the field of ecology. As we saw previously, the result is a tremendously advanced field of theoretical population dynamics, which is not closely tied to reality and certainly not useful as predictive models for natural systems. Perhaps this in itself is not a problem, it is simply that in some cases theory has advanced beyond the point at which it can be properly tested with data. To draw another analogy with physics, this is not dissimilar to the development of string theory [REF]. Coming from a background in physics, but with a desire to work on theoretical problems that are relevant to the application area, and testable, this is an important point to note.      
+
+Promote ties and discussion between theorists and empiricists! Invariability is a good example. Do no be too critical of the field!
+
+However, this is not to say that theoretical work is not important. It is just to realise the challenges faced in this field. In fact, given the difficulty and expense of ecological field work, theoretical studies are perhaps even more important.
+
 Justify modelling - bottom-up modelling of complex systems, what it can and cannot help us with.
 
 BUT - must make a very clear distinction between modelling and empirical work, one which is not clear enough in Ecology.(find examples) Rift between theoreticians and empiricists, must make clear what each can reasonably ask of the other and how best to advance the field as a whole (how has this been done so successfully in physics.
@@ -78,10 +114,14 @@ Perhaps one good definition of complex system - one for which we do not have a c
 
 IBM models - popularity in ecology...get references on history, development, refer to common ways they are used.. whole community? And of course, habitat loss - refer forwards to section \ref{sec:intro_habitat_loss}. 
 
+The importance of using theoretical models to generate testable predictions...
+
 \section{Habitat loss}
 \label{sec:intro_habitat_loss}
 
 More facts and figures - if not included above?
+
+Importance of considering full multi-trophic strucutre: \cite{sole2006ecological}
 
 \subsection{Modelling HL}
 \label{sec:intro_modelling_HL}
@@ -94,6 +134,8 @@ Especially random versus contiguous...
 \label{sec:intro_beyond}
 
 Many empirical studies, and most of the theoretical studies cited above focus on richness and extinctions. Are there exceptions (in the theory ones)?
+
+The loss of interactions...
 
 However certain studies have stressed to importance of other effects - loss of interactions, which as we have seen are important for ecosystem functioning...Tylianakis. Why is this interesting?
 
@@ -113,8 +155,7 @@ What we hope to achieve..?
 	\item Fourth: Estimating species interactions
 \end{itemize}
 
-%Research on the impacts of habitat loss are widespread in the ecological literature [REFS]. Habitat 
-%
+
 %\begin{itemize}
 %	\item Motivate the study of habitat loss in general- we already know that it is a major driver of ecological change [REFS]. And it is happening at an ever increasing rate due to land-use change, urbanisation, deforestation etc [REFS].
 %
@@ -151,7 +192,9 @@ What we hope to achieve..?
 %(Need to clean up terminology habitat loss, destruction, alteration, modification...) : paragraph discussing this?
 % Clean up use of tenses!!
 
-This project focuses on the impact of habitat destruction on communities of species. A habitat may be defined as the environment containing an organism, or collection of organisms. It has both biotic and abiotic components. Therefore habitats are constantly changing due to ongoing environmental processes. These changes may make the habitat more or less hospitable to different organisms, generating emergent effects at the species and community levels. Human activity in particular creates pronounced and significant changes in habitat. There is good evidence \cite{parmesan2003globally} that anthropogenic climate change has affected living systems by changing regional habitat suitability. An example of this is the northward shift in butterfly species ranges attributed to rising temperatures \cite{parmesan1999poleward}. Other activities such as agriculture, deforestation and urbanisation interfere directly with physical habitat components and with local flora. This alters the type of species and the community that can be supported \cite{bossio2005soil, kremen2007pollination}. Globally the scale of these man-made effects is huge. Various studies have suggested that habitat modification is the leading cause of global species extinctions \cite{foley2005global,tylianakis2007habitat}. Therefore an understanding of how ecological communities respond to changes in habitat is essential in order to mediate the destructive effects of human activity, and to create beneficial conservation, land management and restoration strategies. The subject has received much attention in the ecological literature, and this project is a continuation of that dialogue.
+%This project focuses on the impact of habitat destruction on communities of species. 
+
+A habitat may be defined as the environment containing an organism, or collection of organisms. It has both biotic and abiotic components. Therefore habitats are constantly changing due to ongoing environmental processes. These changes may make the habitat more or less hospitable to different organisms, generating emergent effects at the species and community levels. Human activity in particular creates pronounced and significant changes in habitat. There is good evidence \cite{parmesan2003globally} that anthropogenic climate change has affected living systems by changing regional habitat suitability. An example of this is the northward shift in butterfly species ranges attributed to rising temperatures \cite{parmesan1999poleward}. Other activities such as agriculture, deforestation and urbanisation interfere directly with physical habitat components and with local flora. This alters the type of species and the community that can be supported \cite{bossio2005soil, kremen2007pollination}. Globally the scale of these man-made effects is huge. Various studies have suggested that habitat modification is the leading cause of global species extinctions \cite{foley2005global,tylianakis2007habitat}. Therefore an understanding of how ecological communities respond to changes in habitat is essential in order to mediate the destructive effects of human activity, and to create beneficial conservation, land management and restoration strategies. The subject has received much attention in the ecological literature, and this project is a continuation of that dialogue.
 
 The destruction of habitats due to human activity has also received much attention in the media. This has done a lot to raise public awareness, and to fuel a growing number of campaign groups, charities and conservation organisations. In most cases the focus is on \emph{single species effects}, especially on those threatened with extinction. The most notorious example of this may be the polar bear as the media face of global warming (see figure \ref{fig:polar_bear}). Similarly the habitat loss literature has largely focused on the loss of species \cite{tilman1994habitat, foley2005global}, and has reinforced the notion of \emph{species richness}\footnote{Simply defined as the number of different species present in a community.} as a measure of biodiversity and ecosystem health. This is perhaps because species level effects are the most visible results of ecosystem damage, and the easiest to study empirically. However they are symptomatic of underlying system processes. At least since Darwin's marvel at the complexity of the ``Tangled Bank'' \cite{darwin2009origin} ecologists have understood that species exist in highly interdependent communities. Therefore the ecological impacts of habitat destruction, and other human activities, must be approached from a systems perspective.
 

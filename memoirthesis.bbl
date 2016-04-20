@@ -17,10 +17,19 @@
   {LAPACK} Users' Guide}, Society for Industrial and Applied Mathematics,
   Philadelphia, PA, third~ed., 1999.
 
+\bibitem{andreassen2013new}
+{\sc H.~P. Andreassen, P.~Glorvigen, A.~R{\'e}my, and R.~A. Ims}, {\em New
+  views on how population-intrinsic and community-extrinsic processes interact
+  during the vole population cycles}, Oikos, 122 (2013), pp.~507--515.
+
 \bibitem{aparicio2008detecting}
 {\sc T.~Aparicio, E.~F. Pozo, and D.~Saura}, {\em Detecting determinism using
   recurrence quantification analysis: Three test procedures}, Journal of
   Economic Behavior \& Organization, 65 (2008), pp.~768--787.
+
+\bibitem{barraquand2014functional}
+{\sc F.~Barraquand}, {\em Functional responses and predator--prey models: a
+  critique of ratio dependence}, Theoretical ecology, 7 (2014), pp.~3--20.
 
 \bibitem{bascompte2007plant}
 {\sc J.~Bascompte and P.~Jordano}, {\em Plant-animal mutualistic networks: the
@@ -44,6 +53,11 @@
   microbial community response to land use change in an agricultural landscape
   of western kenya}, Microbial ecology, 49 (2005), pp.~50--62.
 
+\bibitem{c2008food}
+{\sc B.~C~Rall, C.~Guill, and U.~Brose}, {\em Food-web connectance and predator
+  interference dampen the paradox of enrichment}, Oikos, 117 (2008),
+  pp.~202--213.
+
 \bibitem{cadotte2006dispersal}
 {\sc M.~W. Cadotte}, {\em Dispersal and species diversity: A meta-analysis},
   The American Naturalist, 167 (2006), pp.~913--924.
@@ -57,6 +71,10 @@
 {\sc K.~Z. Coyte, J.~Schluter, and K.~R. Foster}, {\em The ecology of the
   microbiome: Networks, competition, and stability}, Science, 350 (2015),
   pp.~663--666.
+
+\bibitem{crutchfield1989inferring}
+{\sc J.~P. Crutchfield and K.~Young}, {\em Inferring statistical complexity},
+  Physical Review Letters, 63 (1989), p.~105.
 
 \bibitem{darwin2009origin}
 {\sc C.~Darwin and W.~F. Bynum}, {\em The origin of species by means of natural
@@ -133,6 +151,10 @@
   loss of habitat fragments and disassembles ecological networks}, American
   Journal of Botany, 98 (2011), pp.~503--516.
 
+\bibitem{grimm2013individual}
+{\sc V.~Grimm and S.~F. Railsback}, {\em Individual-based modeling and
+  ecology}, Princeton university press, 2013.
+
 \bibitem{haddad2015habitat}
 {\sc N.~M. Haddad, L.~A. Brudvig, J.~Clobert, K.~F. Davies, A.~Gonzalez, R.~D.
   Holt, T.~E. Lovejoy, J.~O. Sexton, M.~P. Austin, C.~D. Collins, et~al.}, {\em
@@ -159,6 +181,12 @@
 {\sc H.~P. Hsu}, {\em Schaum's outline of theory and problems of probability,
   random variables, and random processes}, McGraw-Hill, 1997.
 
+\bibitem{ings2009review}
+{\sc T.~C. Ings, J.~M. Montoya, J.~Bascompte, N.~Bl{\"u}thgen, L.~Brown, C.~F.
+  Dormann, F.~Edwards, D.~Figueroa, U.~Jacob, J.~I. Jones, et~al.}, {\em
+  Review: Ecological networks--beyond food webs}, Journal of Animal Ecology, 78
+  (2009), pp.~253--269.
+
 \bibitem{jager2006simulated}
 {\sc H.~I. Jager, E.~A. Carr, and R.~A. Efroymson}, {\em Simulated effects of
   habitat loss and fragmentation on a solitary mustelid predator}, Ecological
@@ -167,6 +195,10 @@
 \bibitem{janzen1974}
 {\sc D.~H. Janzen}, {\em {The deflowering of central America}}, Nat. Hist, 83
   (1974), pp.~48--53.
+
+\bibitem{judson1994rise}
+{\sc O.~P. Judson}, {\em The rise of the individual-based model in ecology},
+  Trends in Ecology \& Evolution, 9 (1994), pp.~9--14.
 
 \bibitem{kaartinen2011shrinking}
 {\sc R.~Kaartinen and T.~Roslin}, {\em Shrinking by numbers: landscape context
@@ -197,6 +229,11 @@
   demographic consequences of habitat fragmentation to a tropical understory
   bird community}, Ecology, 93 (2012), pp.~2548--2559.
 
+\bibitem{krebs2011lemmings}
+{\sc C.~J. Krebs}, {\em Of lemmings and snowshoe hares: the ecology of northern
+  canada}, Proceedings of the Royal Society of London B: Biological Sciences,
+  278 (2011), pp.~481--489.
+
 \bibitem{kremen2007pollination}
 {\sc C.~Kremen, N.~M. Williams, M.~A. Aizen, B.~Gemmill-Herren, G.~LeBuhn,
   R.~Minckley, L.~Packer, S.~G. Potts, I.~Steffan-Dewenter, D.~P. Vazquez,
@@ -209,6 +246,10 @@
   null hypothesis of stationarity against the alternative of a unit root: How
   sure are we that economic time series have a unit root?}, Journal of
   econometrics, 54 (1992), pp.~159--178.
+
+\bibitem{ladyman2013complex}
+{\sc J.~Ladyman, J.~Lambert, and K.~Wiesner}, {\em What is a complex system?},
+  European Journal for Philosophy of Science, 3 (2013), pp.~33--67.
 
 \bibitem{loreau1999immigration}
 {\sc M.~Loreau and N.~Mouquet}, {\em Immigration and the maintenance of local
@@ -257,6 +298,10 @@
   and ecological stability across levels of organization}, WHICH JOURNAL,  (in
   press).
 
+\bibitem{montoya2006ecological}
+{\sc J.~M. Montoya, S.~L. Pimm, and R.~V. Sol{\'e}}, {\em Ecological networks
+  and their fragility}, Nature, 442 (2006), pp.~259--264.
+
 \bibitem{mougi2012diversity}
 {\sc A.~Mougi and M.~Kondoh}, {\em Diversity of interaction types and
   ecological community stability}, Science, 337 (2012), pp.~349--351.
@@ -270,6 +315,10 @@
 {\sc A.-M. Neutel, J.~A. Heesterbeek, and P.~C. de~Ruiter}, {\em Stability in
   real food webs: weak links in long loops}, Science, 296 (2002),
   pp.~1120--1123.
+
+\bibitem{norris2002quantum}
+{\sc C.~Norris}, {\em Quantum theory and the flight from realism: Philosophical
+  responses to quantum mechanics}, Routledge, 2002.
 
 \bibitem{o2009perturbations}
 {\sc E.~J. O'Gorman and M.~C. Emmerson}, {\em Perturbations to trophic
@@ -339,6 +388,11 @@
 {\sc S.~G. Shandilya and M.~Timme}, {\em Inferring network topology from
   complex dynamics}, New Journal of Physics, 13 (2011), p.~013004.
 
+\bibitem{sinclair2003mammal}
+{\sc A.~R. Sinclair, D.~Chitty, C.~I. Stefan, and C.~J. Krebs}, {\em Mammal
+  population cycles: evidence for intrinsic differences during snowshoe hare
+  cycles}, Canadian Journal of Zoology, 81 (2003), pp.~216--220.
+
 \bibitem{sole2006ecological}
 {\sc R.~V. Sole and J.~M. Montoya}, {\em Ecological network meltdown from
   habitat loss and fragmentation}, Ecological Networks: Linking Structure to
@@ -348,6 +402,17 @@
 {\sc B.~J. Spiesman and B.~D. Inouye}, {\em Habitat loss alters the
   architecture of plant-pollinator interaction networks}, Ecology, 94 (2013),
   pp.~2688--2696.
+
+\bibitem{staniczenko2010structural}
+{\sc P.~Staniczenko, O.~T. Lewis, N.~S. Jones, and F.~Reed-Tsochas}, {\em
+  Structural dynamics and robustness of food webs}, Ecology Letters, 13 (2010),
+  pp.~891--899.
+
+\bibitem{stenseth1997population}
+{\sc N.~C. Stenseth, W.~Falck, O.~N. Bj{\o}rnstad, and C.~J. Krebs}, {\em
+  Population regulation in snowshoe hare and canadian lynx: asymmetric food web
+  configurations between hare and lynx}, Proceedings of the National Academy of
+  Sciences, 94 (1997), pp.~5147--5152.
 
 \bibitem{stouffer2005quantitative}
 {\sc D.~Stouffer, J.~Camacho, R.~Guimera, C.~Ng, and L.~Nunes~Amaral}, {\em
@@ -395,6 +460,11 @@
 \bibitem{williams2000simple}
 {\sc R.~J. Williams and N.~D. Martinez}, {\em Simple rules yield complex food
   webs}, Nature, 404 (2000), pp.~180--183.
+
+\bibitem{williams2008success}
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Success and its
+  limits among structural models of complex food webs}, Journal of Animal
+  Ecology, 77 (2008), pp.~512--519.
 
 \bibitem{wilson1991methods}
 {\sc J.~B. Wilson}, {\em Methods for fitting dominance/diversity curves},

@@ -1,7 +1,10 @@
+% TODO: CHANGE REFERENCES TO OMNIVORES. CHANGE REFS TO DIERVISTY -> EVENNESS
 % TODO: write intro
-% TODO: describe ecologicla metrics  RADs and INVARIABILITY to previous chapter...
-
+% Relate discussion to stability concept in previous chapter. In particular - random HL -> is it really more stable?
 %% ITERATION -> TIMESTEP
+
+%% Check all reference to Invar and RADS (moved to previouscha[ter)
+%% Check reference to MI and GC, as stated in previous chater.
 
 % write introduction
 % write discussion
@@ -90,30 +93,6 @@ Here we outline the experimental procedure used to generate the results presente
 
 For this chapter we ran two ensembles of simulations using the IBM model described in section \ref{sec:method}. One ensemble employed the random habitat loss algorithm, and the other employed the contiguous algorithm, both of which were defined in section \ref{sec:model_HL}. In both ensembles the level of habitat loss (HL) is varied between $0\%$ and $90\%$ in steps of $10\%$. At each value of HL there are 25 repeat simulations at each of the 11 MAI ratios ($MAI=[0.0,0.1,...,0.9,1.0]$). Therefore there are a total of 2750 ($=25 \times 11 \times 10$) simulations in each ensemble. Each simulation uses a unique interaction network, generated using the method described in section \ref{sec:interaction_network}. The ensembles use the same simulations at $HL=0\%$, since no habitat is destroyed and all else is held constant. All model parameters use the \emph{default values} as given in table \ref{tab:IBM_parameters} and published in \cite{lurgi2015effects}. The model, as stated previously, is implemented in the programming language \emph{Python} \cite{python}. Simulations were run on BlueCrystal, the university's high performance computer cluster\footnote{Transience, refer back? Habitat loss after 1000 time steps, already mentioned?}.   
 
-\subsection{Rank abundance distributions}
-\label{sec:define_rads}
-
-Rank abundance distributions (RADs) are used to study the pattern of abundances across numerous species. They are sometimes referred to as Whittaker plots, after his 1965 paper on species abundances in plant communities \cite{whittaker1965dominance}. To construct the RAD, species are simply ranked from most to least abundant, such that the distribution is monotonically decreasing. It is typical to use the logarithm of the relative abundance of each species. In natural communities it has been observed that these distributions tend to be \emph{long-tailed} - with relatively few species of high abundance, and relatively many species of low abundance. As such RADs have often been found to fit well to a \emph{log-normal} distribution \cite{lurgi2015effects,whittaker1965dominance}. However numerous alternative models have been proposed \cite{wilson1991methods}, and are implemented in the \emph{vegan} package \cite{oksanen2007vegan} of the programming language \emph{R}. We use this package to fit models to RADs constructed from the simulated communities, with the particular goal of determining how the \emph{evenness} of species abundances changes under HL (see predictions in section \ref{sec:intro}). Therefore we chose to use two models from those available in \emph{vegan}: the \emph{Zipf} and the \emph{preemption} model, because both have a parameter which is easily interpreted as a measure of the evenness of the distribution. The Zipf model is given by the power law: 
-
-\begin{equation}
-\hat{a}_r = N\hat{p}_1r^{\gamma}
-\label{eq:zipf}
-\end{equation}
-%
-where $\hat{a}_r$ is the predicted abundance of the species rank $r$; $N$ is the total number of individuals; $\hat{p}_1$ is the estimated proportion of the most abundant species (rank 1); and $\gamma \in \mathbf{R}^-$ is estimated exponent of the power law. So $\gamma$ gives the gradient of the line defined by \eqref{eq:zipf} in log-log space. Therefore a smaller value of $\left| \gamma \right|$ indicates a shallower line and more even distribution of abundances (see for example figure \ref{fig:example_rads_random}). The preemption model is given by a geometric sequence:
-
-\begin{equation}
-\hat{a}_r = N\alpha(1-\alpha)^{r-1}
-\label{eq:preemption}
-\end{equation}
-%  
-where $\alpha \in [0,1]$ is the single model parameter, and other symbols have the same meaning as in \eqref{eq:zipf}. Therefore the estimated abundance decreases by a fraction $(1-\alpha)$ for each rank, and the choice of $\alpha$ is constrained such that the estimated abundances sum to $N$. In semi-log space, as is used to plot the RADs, the preemption model gives a straight line, since \eqref{eq:preemption} implies:
-\begin{equation}
-log\left(\hat{a}_r\right) = log\left(1-\alpha\right)r + C,
-\label{eq:preemption}
-\end{equation}
-%  
-where $C$ is constant. Therefore the smaller the value of $\alpha$, the closer the gradient of the line is to zero, and the more even the distribution of abundances. In our case, as is common \cite{oksanen2007vegan}, we use relative abundances to allow comparison of the RADs between communities with a different total number of individuals. Therefore $N=1$ in \eqref{eq:zipf} and \eqref{eq:preemption}. The models are fitted using \emph{R}, and the parameters $\gamma$ and $\alpha$ used as complementary metrics for evenness - in both cases \emph{the smaller the absolute value of the parameter, the more even the distribution of abundances is between the species in the community}.   
 
 \subsection{Sampling and analysis}
 \label{sec:sampling}
@@ -121,11 +100,6 @@ where $C$ is constant. Therefore the smaller the value of $\alpha$, the closer t
 To calculate the analysis metrics from the simulation output we follow the precedent set in \cite{lurgi2015effects}. Metrics based only on species abundances are calculated from a `snapshot' of the simulation state on the final time step. Other metrics (for example temporal variability and network metrics) are calculated from samples aggregated over the final 200 iterations of the simulation. For these metrics we use mean species abundances over the 200 time steps, where measures of abundance are required. The \emph{realised network} of interactions is constructed by counting the total number of interactions between each pair of species during the 200 time steps. The assumptions behind this sampling methodology, and their validity, are investigated in chapter \ref{chap:stationairty}\footnote{Refer to plots in previous chapter, transience.}.
 
 Throughout the analysis we look for robust changes of the metrics evaluated in response to HL. Therefore, as in \cite{lurgi2015effects}, we fit linear models to identify statistically significant trends, and where necessary we log-transform the data to attempt to linearise the response (see for example figure \ref{fig:strong_fig})\footnote{Check this! And refer forwards to SEM modelling?}. The linear models are fitted using the \emph{ordinary least squares} method of the \emph{statsmodels} package in \emph{Python}. The \emph{p-value} of the fits are given as a measure for statistical significance\footnote{More on this..}.
-
-\subsection{Invariability}
-\label{sec:stability}
-
-Here we discuss stability and the interpretation the invariability metrics...or do this in the previous chapter?
 
 \section{Results}
 \label{sec:results}

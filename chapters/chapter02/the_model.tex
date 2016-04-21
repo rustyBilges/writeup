@@ -228,29 +228,11 @@ In order to study the effect of habitat loss (HL) on simulated communities we ex
 
 % How do I cite sofware e.g. python and R?
 % Also cite BlueCrystal.
-% talk about what data is saved on a simualtion run?
 
-%Outline of how the model is implemented - what is saved etc.
+The code for the simulation model was originally written by Miguel Lurgi for research leading to the publication \cite{lurgi2015effects}. He and Daniel Montoya were responsible for the bulk of the model development, testing and parameter selection - a considerable task. My task was to take this `legacy code' and apply it to a study of habitat loss. The model is implemented in \emph{Python} \cite{python}, with several switches that ensure portability between different versions of the language. The programme makes extensive use of \emph{numpy} and \emph{networkx}, amongst other \emph{Python} libraries. A change in the return value of some methods in \emph{networkx} (specifically some methods from v1.9 return \emph{generator} objects, whereas in v1.7 they return \emph{lists}) forced me to make some amendments to the code. During this process I profiled the code using \emph{cProfile} and \emph{pstats}, because I noticed it was running very slowly. I noticed that the cause was repeated calls to methods of the \emph{networkx} library, which were made every time an interaction needed to be checked in the network (for example to see if two individuals are able to interact). By storing two representations of the network - one as a \emph{networkx} object and one as a simple \emph{numpy} array - I was able to speed up the simulations by almost an order of magnitude. The \emph{networkx} methods need only be called when some network metric needs to be calculated. Having made the above changes I ran an ensemble of test simulations. Cross-checking the results with those in \cite{lurgi2015effects} confirmed that the simulations were behaving as expected.    
 
-%My contibutions 1) HL 2) Debugging 3) GEtting it running on BC3 4) MAking further edits.
+The original code was well written to be extendible, and there was a prototype algorithm for contiguous habitat loss. Therefore my job of implementing and testing the habitat loss algorithms (section \ref{sec:model_HL}) was made easy. I also added methods save the spatial state of the system. This allows for \emph{post-hoc} spatial analysis, and also facilitated the creation of spatial animations of the evolution of the system (see animations at \cite{mcwilliams2015anim}). All results presented in this thesis are from simulation ensembles run on \emph{Blue Crystal Phase 3} \cite{BC3}, the university's high performance computer cluster. Ensembles were run as parallel job arrays, and output save in pre-constructed directory trees. I conducted post-simulation analyses in the statistical package \emph{R} \cite{Rlanguage}and in \emph{Python} making extensive use of the \emph{open source} libraries available.
 
-%
-
-The code for the simulation model was orginally written by Miguel Lurgi for research leading to the publication \cite{lurgi2015effects}. He and Daniel Montoya were responsible for the bulk of the model development, testing and parameter selection - a considerable task. My task was to take this legacy code and work with it to generate results that would allow us to study the effects of habitat loss.
-
-The model is implemented in \emph{Python}, with several switches that ensure portability between different versions of python. The programme makes extensive use of \emph{numpy} and \emph{networkx}, amongst other \emph{Python} libraries. The original code was well written to allow for the easy implementation of new mechanisms. The intention was always to extend the model for further study. For example there is a parameter for \emph{habitat type}, whereby the landscape would be heterogeneous with certain habitats best suited for different species. (In the current implementation this is not used and the landscape is homogeneous.) There was also a prototype algorithm for contiguous habitat loss.  
-
-Working with the legacy code I implemented the random habitat loss algorithm, and tested both the contiguous and random algorithms to ensure they were performing as desired. I also added methods to an already extensive library for saving simulation outputs, with a view to conducting more anaylsis on the spatial state of the system\footnote{IMPORTANT: don't write about this if you are not going to do the analysis properly.}. I then ran numerous simulations wihtout habitat loss (HL$ =0$) to ensure that the model reproduced the results presented in \cite{lurgi2015effects}. 
-
-Simulation ensembles were run on Blue Crystal Phase 3 (BC3), Bristol's computer cluster. Compatibility issues arose because only \emph{networkx} version 1.9 is avaiable on this system, which has significant differences in the return  
-
-
-
-My contribution to the model was the implementation of the random habitat loss algorithm, and running all the simulations on Bristol's comptuer cluster Blue Crystal. The former was trivial but key to this project. The latter involved a considerable amount of debugging and scripting and testing. I also made  
-
-I conducted post-simulation analyses in the statistical package \emph{R}, and in \emph{Python}. Analyses in \emph{R} used adapted legacy code from the previous project. Analysis and plotting methods implemented in \emph{Python} were written by myself.
-
-Write here about code, my contributions, Blue Crystal. Repeats runs, result format, run times etc.
 
 \section{Dynamics of the model}
 \label{sec:dynamics_results}
@@ -259,32 +241,139 @@ Display and discuss several example full runs. Also with varied parameters?
 
 Well mixed approximation?
 
+Figure such as 4.15 in peristence and stationarity. Other analysis?
+
 \subsection{Transience}
 
 Discuss and analyse transience. How long is it? Are the general relationships? Perhaps use simplified modelling (ODEs) to try and predict the length of transience.
 
+Steady-state assumption - revisited in chapter..
+
+Cite spatial animations..
 
 \section{Ecological metrics and analysis methods}
 \label{sec:metrics_explained}
 
-Introduce, define and discuss each metric.
+In this section we introduce the metrics and methods used to analyse simulation output, which are standard tools of community ecology. These methods fall nicely into three categories. \emph{Biodiversity} metrics (section \ref{sec:define_dviersity}) capture some aspect of the diversity of species, based on the distribution of abundances. \emph{Stability} metrics (section \ref{sec:def_stability_metrics}) try to quantify stability - a task that is fraught with confusion and therefore given some thought here. \emph{Network metrics} use properties of the \emph{realised} interaction network to provide insight about the community.      
 
-Stability - Jacobian, dynamic stability, multi-stability, CoV, reproductive stability. 
+% NOT EXHAUSTIVE, e.g. ... To a large extent our choice of metrics was defined by Lurgi, but we also use..
+% Unless otherwise cited metrics are defined as in...
+%% Do mention use of abundance rather than e.g. biomass!
+% Mention here sampling and steady-state assumption?
 
-Robustness - secondary extinctions, cascading effects \cite{evans2013robustness}. Re-wiring algorithms?
+%Stability - Jacobian, dynamic stability, multi-stability, CoV, reproductive stability. 
+%Robustness - secondary extinctions, cascading effects \cite{evans2013robustness}. Re-wiring algorithms?
 
 \subsection{Biodiversity metrics}
 \label{sec:define_dviersity}
-Richness, Simpsons, Shannon Entropy.
 
-\subsection{Rank abundance distributions}
-\label{sec:def_RADs}
+\textbf{Species richness} is very simply defined as the number of different species present (in a sample). As discussed in section \ref{sec:intro_habitat_loss}, many HL studies have focused in species richness. However this metric only changes when species become locally extinct, or sufficiently rare that they are not present in samples. Therefore this metric is insensitive to many ways that a community may respond to perturbation. We define the \textbf{relative abundance} of a species $i$ by:
+\begin{equation}
+r_i = \frac{N_i}{\Sigma_{j=1}^S N_j},
+\label{eq:rel_abun}
+\end{equation}
+%
+where $N_i$ is the number of individuals belonging to species $i$, $S$ is the number of species. Unless otherwise stated the sum in \eqref{eq:rel_abun} is taken over all species, such that the relative abundance is the proportion of individuals in the whole community that belong to species $i$. The relative abundance of species within a subset of the whole community (such as a functional group) may also be calculated. In this case the sum is only over the subset of species, giving the abundance relative to the other species in the group. The relative abundance is used to calculate the \textbf{Shannon diversity index}:
+\begin{equation}
+D_{Sh} = -\Sigma_{i=1}^S r_i log( r_i),
+\label{eq:rel_abun}
+\end{equation}
+%
+which is simply the Shannon entropy of species relative abundances. Therefore diversity, by this metric is maximal when all species have the same relative abundance, and approaches zero if one species out competes all others. There is no standard convention for base of the logarithm. Throughout this thesis we use the natural logarithm (base $e$) for all information theoretic measures. Normalising $D_Sh$ by the maximum diversity gives us the \textbf{Shannon evenness index}:
+\begin{equation}
+E_{Sh} = \frac{D_{Sh}}{log(S)},
+\label{eq:rel_abun}
+\end{equation}
+%
+since the maximum diversity is equal to the logarithm of the number of species $S$. The metric is constrained between 0 and 1, and is maximal when all species have the same relative abundance. Both the Shannon metrics can be computed for a subsets of the community (for example a functional group) by using the relative abundance within the subset \eqref{eq:rel_abun}, and reducing $S$ accordingly. 
+%Richness, Simpsons, Shannon Entropy
+
+\subsubsection{Rank abundance distributions}
+\label{sec:define_rads}
+
+Rank abundance distributions (RADs) provide another tool to study the patterns in species abundances. They are sometimes referred to as Whittaker plots, after his 1965 paper on species abundances in plant communities \cite{whittaker1965dominance}. To construct the RAD, species are simply ranked from most to least abundant, such that the distribution is monotonically decreasing. It is conventional to use the logarithm of the abundance measure when plotting. We use RADS to \emph{visually inspect} the distribution of species abundances, and to develop \emph{alternative measures of evenness}. Example RADs for simulated communities can be seen in figure \ref{fig:example_rads_random}.
+
+In natural communities it has been observed that RADs tend to be \emph{long-tailed} - with relatively few species of high abundance, and relatively many species of low abundance. As such RADs have often been found to fit well to a \emph{log-normal} distribution \cite{lurgi2015effects,whittaker1965dominance}. However numerous alternative models have been proposed \cite{wilson1991methods}, and are implemented in the \emph{vegan} package \cite{oksanen2007vegan} of the programming language \emph{R}. \textbf{We propose two measures of evenness}, calculated by fitting two alternative models to a RAD. We use two models from those available in \emph{vegan}: the \emph{Zipf} and the \emph{preemption} model, because both have a parameter which is easily interpreted as a measure of the evenness of the distribution. The \textbf{Zipf model} is given by the power law: 
+% use this package to fit models to RADs constructed from the simulated communities, with the particular goal of determining how the \emph{evenness} of species abundances changes under HL (see predictions in section \ref{sec:intro}). 
+\begin{equation}
+\hat{a}_r = N\hat{p}_1r^{\gamma}
+\label{eq:zipf}
+\end{equation}
+%
+where $\hat{a}_r$ is the predicted abundance of the species rank $r$; $N$ is the total number of individuals; $\hat{p}_1$ is the estimated proportion of the most abundant species (rank 1); and $\gamma \in \mathbf{R}^-$ is the estimated exponent of the power law. So $\gamma$ gives the gradient of the line defined by \eqref{eq:zipf} in log-log space. Therefore a smaller value of $\left| \gamma \right|$ indicates a shallower line and more even distribution of abundances (see for example figure \ref{fig:example_rads_random}). The \textbf{preemption model} is given by a geometric sequence:
+
+\begin{equation}
+\hat{a}_r = N\alpha(1-\alpha)^{r-1}
+\label{eq:preemption}
+\end{equation}
+%  
+where $\alpha \in [0,1]$ is the single model parameter, and other symbols have the same meaning as in \eqref{eq:zipf}. Therefore the estimated abundance decreases by a fraction $(1-\alpha)$ for each rank, and the choice of $\alpha$ is constrained such that the estimated abundances sum to $N$. In semi-log space, as is used to plot the RADs, the preemption model gives a straight line, since \eqref{eq:preemption} implies:
+\begin{equation}
+log\left(\hat{a}_r\right) = log\left(1-\alpha\right)r + C,
+\label{eq:preemption}
+\end{equation}
+%  
+where $C$ is constant. Therefore the smaller the value of $\alpha$, the closer the gradient of the line is to zero, and the more even the distribution of abundances. In our case, as is common \cite{oksanen2007vegan}, we use relative abundances to allow comparison of the RADs between communities with a different total number of individuals. Therefore $N=1$, and $\hat{a}_r$ are fractions, in \eqref{eq:zipf} and \eqref{eq:preemption}. The models are fitted using \emph{R}, and the parameters $\gamma$ and $\alpha$ used as complementary metrics for evenness - in both cases \emph{the smaller the absolute value of the parameter, the more even the distribution of abundances in the community}. As with the Shannon metrics, RADs may be produced for subsets of the community.   
 
 
 \subsection{Stability metrics}
 \label{sec:def_stability_metrics}
 
-Coefficient of Variation, May Stability
+There are various different theoretical concepts relating to stability in ecosystems, which can lead to confusion \cite{arnoldi2015,mumby2014ecological}. It is remarkable that complex ecosystems are able to function with relative consistency in the face of extrinsic variability and perturbations (e.g. due to environmental factors and human activity). Ecological theory does not yet fully explain this phenomenon. Here we outline certain key results and issues, and outline our approach to stability. First we must introduce two key concepts which are related to, but distinct from, what we mean by stability. \textbf{Persistence} simply means lack of extinction i.e. a population of the species continues to exist through time \cite{dytham1995effect}. In the current context persistence is defined by the presence of individuals belonging to the species in the artificial landscape. This concept plays an key role in chapter \ref{chap:peristence}. \textbf{Robustness} is a measure of how resistant a community is to perturbation. It is often used in the context of species extinctions, with robustness metrics measuring the expected extent of cascading extinctions after removal of some species \cite{evans2013robustness}. \textbf{Stability}, in the current context, refers to properties of the dynamics of the system. Its definition requires further clarification.    
+
+A seminal work on ecosystem stability is May's 1972 paper \cite{may1972will}. Here he showed, using random matrix theory, that high connectance and strong interactions lead to instability. This lead to the conclusion that ecosystem \emph{complexity} reduces stability, which contradicts observations of Nature and has been the subject of ongoing debate ever since (see discussion in section \ref{sec:intro_role_of_sturcture}). The measure of stability used in this body of literature is derived from the mathematics of dynamical systems. The assumption is that the dynamics of an ecosystem can be modelled as a system of non-linear ordinary differential equations (ODEs). It is possible to calculate the local stability of the equilibrium state of this system - it is stable if all eigenvalues of the Jacobian have negative real parts. Therefore this commonly used theoretical concept of stability relates to the stability of ecosystem models. It is often referred to as \emph{asymptotic resilience} \cite{arnoldi2015} because the magnitude of the real parts of the eigenvalues determine the rate of return to equilibrium after perturbation. 
+
+Asymptotic resilience is used to measure stability in chapter \ref{chap:inferring_interactions}. However, in practical applications, this measure cannot be used because of the difficulty in estimating the elements of the Jacobian from empirical data (see the aforementioned chapter). Therefore empiricists use an alternative measure that can be computed directly from population dynamic time-series \cite{campbell2011experimental, donohue2013dimensionality}. \textbf{Temporal variability} is measured as the coefficient of variation in the abundance time-series of a species. So for species $i$: 
+\begin{equation}
+CV_i = \frac{\sigma_i}{\mu_i},
+\label{eq:cov}
+\end{equation}
+%
+where $\sigma_i$ and $\mu_i$ are the standard deviation and mean of the species abundance respectively, over the time period in question. To derive a community level measure we average $CV_i$ over all species, and in all subsequent analysis refer to the resulting metric as \textbf{mean\_CV}. The metric captures the variability of population dynamics, with the assumption that \emph{higher variability implies lower stability}. However the relationship to asymptotic resilience (AR) is not clear. For example a system may exhibit a limit-cycle which is globally stable such that all trajectories approach it asymptotically (an attractor). Therefore AR classifies the system as stable. However the \emph{mean\_CV} may be high, depending on the amplitude of the limit cycle, suggesting instability. It appears that the two stability concepts are incompatible.
+
+
+\subsubsection{Invariability}
+\label{sec:def_invariability}
+
+%% regarding sync mechanisms: loreau2008species
+
+A group of theoreticians at the \emph{Station d'Ecologie Th\'eorique et Exp\'erimentale} in Moulis are currently attempting the clarify the issues surrounding stability, and characterise the relationship between AR and stability metrics based on variability \cite{arnoldi2015,montoya2016invariability}. Their work is currently restricted to the case of systems with a stable equilibrium point, rather than an attractor. They introduce four new stability metrics based on \emph{invariability}, which are named: ecosystem, population and minimum invariability, and ecosystem synchrony. These are defined, respectively, as follows:
+\begin{eqnarray}
+I_{eco} &=& \frac{1}{CV(X_{tot})^2}, \\[5pt] 
+I_{pop} &=& \frac{(X_{tot}^*)^2}{(\Sigma_i \sqrt{Var(X_i)})^2}, \\[5pt]
+I_{min} &=& \underaccent{i}{min} \frac{(X_i^*)^2}{Var(X_i)}, \\[5pt]
+Sync    &=& \frac{Var(X_{tot})}{(\Sigma_i \sqrt{Var(X_i)})^2},
+\end{eqnarray}
+where $X_i$ is the abundance time-series vector of species $i$; $X_{tot}$ is the total abundance time-series (i.e.  $\Sigma_i X_i$);  $CV$ is the coefficient of variation (as defined in \eqref{eq:cov}); and $X_i^*$, $X_{tot}^*$ are the species level and total abundance values of the stable equilibrium point respectively. Therefore $I_{eco}$ is the squared inverse of the metric $mean\_CV$, whilst $I_{min}$ is the squared inverse of the coefficient of variation of the \emph{most variable species}. $I_{pop}$ is a weighted sum of the species level invariabilities, and $Sync$ is given by the ratio $I_{pop} / I_{eco}$. In \cite{montoya2016invariability} it is shown that AR is strongly dependent on species composition, and is closely related to $I_{min}$ - it is often dominated by the least abundant and most variable species. Therefore they conclude that AR is not a reliable metric, and advocate some combination of invariability metrics to characterise stability. We implement and test these metrics in our analysis (chapter \ref{chap:high_immigration}\footnote{And chapter 5?}), and note here the following relevant properties:
+
+\begin{itemize}
+	\item $I_{eco}$ is a measure of system level stability, and should behave similarly to $mean\_CV$.
+	\item $I_{min}$ is the stability of the most variable species, which is often the least abundant \cite{montoya2016invariability}
+	\item $I_{pop}$ is weighted in favour of the more abundant species, to reduce sensitivity to very rare species.
+	\item $Sync$ is always less than equal to one. If all species abundances vary in perfect synchrony $Sync=1$. However any deviation from synchrony results in some cancellation in variability when abundance is aggregated over species, meaning that invariability is greater at the ecosystem level, than when summed over species i.e. $Sync<1$.
+\end{itemize}
+
+Worth noting: spatial stability...a,b,g : and mean cv area etc.
+
+\subsubsection{Spatial metrics}
+\label{sec:def_spatial_metrics}
+%% INCLUDE HERE OR AS OWN SUBSECTION? (CHECK FIRST PARAGRAPH OF SECTION REFERS CORRECTLY)
+The spatially explicit nature of the IBM allows us to study the spatial structure of the communities. We use the spatial-autocorrelation metrics Moran's I and Geary's C to measure aggregation in species spatial distributions \cite{dale2014spatial, lurgi2015effects}. \textbf{Moran's I} is a measure of global correlation, and for a single species $s$ is given by:
+\begin{equation}
+MI_s = \frac{N}{\Sigma_{i=1}^N \Sigma_{j=1}^N w_{ij}}  \frac{\Sigma_{i=1}^N \Sigma_{j=1}^N w_{ij}(X_i - \bar{X})(X_j - \bar{X})}{\Sigma_{i=1}^N (X_i - \bar{X})^2},
+\label{eq:morans}
+\end{equation}
+%
+where $N$ is the total number of cells; $X_i$ is equal to 1 if the species is present in cells $i$ and equal to 0 if not; $\bar{X}$ is the mean of $X_i$ over all cells; and $w_{ij}$ is spatial weight between cells $i$ and $j$. We take $w_{ij}$ equal to 1 if the cells are neighbours (distance-1), and 0 otherwise. In the extreme of total aggregation, when every cell containing the species is surrounded by other cells containing the species, $MI_s=1$. In the opposite extreme, when no cells containing the species are adjacent to each other, $MI_s=-1$. For a random distribution of individuals the expected value $E(MI_s) = -1/(N-1)$, which is close to zero for large $N$. For a single species $s$, \textbf{Geary's C} is given by:
+\begin{equation}
+GC_s = \frac{(N-1)\Sigma_{i=1}^N \Sigma_{j=1}^N w_{ij}(X_i - X_j)^2}{2W \Sigma_{i=1}^N (X_i - \bar{X})^2},
+\label{eq:gearys}
+\end{equation}
+%
+where $W$ is the sum over all $w_{ij}$, and all other symbols have the same meaning as in \eqref{eq:morans}. GC is a measure of local aggregation and is constrained between maximum aggregation at $GC_s=0$, and minimum aggregation at $GC_s=2$. The expected value for a random distribution is $E(GC_s)=1$, indicating no local correlation structure. To obtain community level metrics, the species level aggregation values are averaged over all species. In \cite{lurgi2015effects} the aggregation metrics were associated with stability, since higher aggregation may confer species with greater reproductive stability and reduced vulnerability to predation. However this relationship is not concrete.
+
+Three further spatial metrics are used to characterise species \emph{spatial ranges}. The \textbf{species range centroid} is calculated as the two-dimensional centre of mass of all individuals on the lattice. The \textbf{species range area} is calculated as the area of the circle, centred on the centroid, that contains $97\%$ of the individuals of that species. \textbf{Species density} is then defined as the number of individuals divided by the area of the range. These three metrics are used to calculate the temporal variability of species spatial ranges, by taking the coefficient of variation in each metric (as defined in \eqref{eq:cov}) over the time period of interest. The coefficients of variation are averaged over all species to obtain \textbf{community level metrics for spatial variability}: $mean\_CV\_centroid$, $mean\_CV\_area$, and $mean\_CV\_density$. These metrics provide an interesting comparison with variability in species abundance, and represent another alternative component of system stability.
+
 
 \subsection{Network metrics}
 \label{sec:define_network_metrics}
@@ -328,11 +417,12 @@ We use the standard network metrics, such as connectance and number of links.
 
 GenSd, VulSd, , Connectance, Nestedness, Compartmentalisation
 
-\subsection{Spatial metrics}
-\label{sec:def_spatial_metrics}
 
-Moran's I, Geary's C. Spatial autocorrelation. Centroids.
-
-\subsection{Interaction strength metrics}
+\subsubsection{Interaction strength metrics}
 
 IS1, IS2, IS3 \cite{berlow2004interaction}.
+
+\section{Conclusion}
+\label{sec:methods_conclusion}
+
+Clear up which methods we actually use: (refer to this in the intro? Then people can avoid reading all the nonsense..)

@@ -3,65 +3,67 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 716 of file thesisbiblio.bib
+Repeated entry---line 791 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1117 of file thesisbiblio.bib
+Repeated entry---line 1192 of file thesisbiblio.bib
  : @article{bossio2005soil
  :                        ,
 I'm skipping whatever remains of this entry
+Warning--string name "december" is undefined
+--line 1284 of file thesisbiblio.bib
 Warning--entry type for "mcwilliams2015anim" isn't style-file defined
---line 1362 of file thesisbiblio.bib
+--line 1437 of file thesisbiblio.bib
 Warning--entry type for "BC3" isn't style-file defined
---line 1380 of file thesisbiblio.bib
+--line 1455 of file thesisbiblio.bib
 Warning--I didn't find a database entry for "ceballos2015accelerated"
-Warning--I didn't find a database entry for "bersier2002quantitative"
 Warning--I didn't find a database entry for "gibson2011sampling"
 Warning--I didn't find a database entry for "sole2006self"
-Warning--I didn't find a database entry for "lurgi2015efffects"
 Warning--I didn't find a database entry for "lurgi2015"
-Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "newbold2015global"
+Warning--empty journal in ai2012immigration
+Warning--empty journal in condit2012thirty
 Warning--empty journal in tilman1994habitat
-You've used 80 entries,
+You've used 112 entries,
             2030 wiz_defined-function locations,
-            976 strings with 19360 characters,
-and the built_in function-call counts, 35134 in all, are:
-= -- 3463
-> -- 1876
+            1139 strings with 25657 characters,
+and the built_in function-call counts, 48554 in all, are:
+= -- 4791
+> -- 2558
 < -- 0
-+ -- 754
-- -- 661
-* -- 2902
-:= -- 5382
-add.period$ -- 80
-call.type$ -- 80
-change.case$ -- 557
++ -- 1025
+- -- 897
+* -- 3983
+:= -- 7425
+add.period$ -- 112
+call.type$ -- 112
+change.case$ -- 765
 chr.to.int$ -- 0
-cite$ -- 81
-duplicate$ -- 1421
-empty$ -- 2198
-format.name$ -- 661
-if$ -- 7412
+cite$ -- 115
+duplicate$ -- 2000
+empty$ -- 3051
+format.name$ -- 897
+if$ -- 10267
 int.to.chr$ -- 0
-int.to.str$ -- 80
-missing$ -- 81
-newline$ -- 243
-num.names$ -- 158
-pop$ -- 451
+int.to.str$ -- 112
+missing$ -- 114
+newline$ -- 339
+num.names$ -- 222
+pop$ -- 623
 preamble$ -- 1
-purify$ -- 481
+purify$ -- 660
 quote$ -- 0
-skip$ -- 1374
+skip$ -- 1928
 stack$ -- 0
-substring$ -- 2570
-swap$ -- 698
+substring$ -- 3524
+swap$ -- 986
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 312
-warning$ -- 1
-while$ -- 363
-width$ -- 82
-write$ -- 711
+type$ -- 436
+warning$ -- 3
+while$ -- 500
+width$ -- 115
+write$ -- 993
 (There were 2 error messages)

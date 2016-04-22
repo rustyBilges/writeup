@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  21 APR 2016 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  22 APR 2016 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1667,13 +1667,34 @@ LaTeX Warning: Label `sec:intro_habitat_loss' multiply defined.
 LaTeX Warning: Label `sec:intro_modelling_HL' multiply defined.
 
 
-LaTeX Warning: Label `eq:rel_abun' multiply defined.
+LaTeX Warning: Label `fig:mvp_hist_zeroIR' multiply defined.
 
 
-LaTeX Warning: Label `eq:rel_abun' multiply defined.
+LaTeX Warning: Label `fig:summary_heatmaps_imvshl' multiply defined.
 
 
-LaTeX Warning: Label `eq:preemption' multiply defined.
+LaTeX Warning: Label `sec:methods' multiply defined.
+
+
+LaTeX Warning: Label `eq:two_species' multiply defined.
+
+
+LaTeX Warning: Label `eq:h2' multiply defined.
+
+
+LaTeX Warning: Label `sec:results' multiply defined.
+
+
+LaTeX Warning: Label `fig:hii_ep_v_ns' multiply defined.
+
+
+LaTeX Warning: Label `fig:ep_v_n' multiply defined.
+
+
+LaTeX Warning: Label `fig:ep_v_ns' multiply defined.
+
+
+LaTeX Warning: Label `sec:discussion' multiply defined.
 
 )
 \openout1 = `memoirthesis.aux'.
@@ -1885,130 +1906,264 @@ LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
  [1
 
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 60.
+(Font)              scaled to size 9.29993pt on input line 69.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 60.
+(Font)              scaled to size 9.29993pt on input line 69.
  [2]
-(./chapters/chapter01/chap01.tex
+Overfull \hbox (1.20142pt too wide) detected at line 69
+ \T1/fnc/m/n/10.95 100
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 70
+ \T1/fnc/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 71
+ \T1/fnc/m/n/10.95 103
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 72
+ \T1/fnc/m/n/10.95 103
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 73
+ \T1/fnc/m/n/10.95 105
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 74
+ \T1/fnc/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 75
+ \T1/fnc/b/n/10.95 111
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 76
+ \T1/fnc/m/n/10.95 111
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 77
+ \T1/fnc/m/n/10.95 112
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 78
+ \T1/fnc/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 79
+ \T1/fnc/m/n/10.95 115
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 80
+ \T1/fnc/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 81
+ \T1/fnc/m/n/10.95 121
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 82
+ \T1/fnc/m/n/10.95 125
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 83
+ \T1/fnc/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 84
+ \T1/fnc/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 85
+ \T1/fnc/m/n/10.95 132
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 86
+ \T1/fnc/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 87
+ \T1/fnc/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 88
+ \T1/fnc/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 89
+ \T1/fnc/m/n/10.95 138
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 90
+ \T1/fnc/b/n/10.95 141
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 91
+ \T1/fnc/m/n/10.95 141
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 92
+ \T1/fnc/m/n/10.95 142
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 93
+ \T1/fnc/m/n/10.95 143
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 94
+ \T1/fnc/m/n/10.95 144
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 95
+ \T1/fnc/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 96
+ \T1/fnc/m/n/10.95 148
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 97
+ \T1/fnc/m/n/10.95 151
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 98
+ \T1/fnc/m/n/10.95 154
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 99
+ \T1/fnc/m/n/10.95 154
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 100
+ \T1/fnc/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 101
+ \T1/fnc/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 102
+ \T1/fnc/m/n/10.95 156
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 103
+ \T1/fnc/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 104
+ \T1/fnc/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 105
+ \T1/fnc/m/n/10.95 160
+ []
+
+[3]
+Overfull \hbox (1.20142pt too wide) detected at line 106
+ \T1/fnc/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 107
+ \T1/fnc/m/n/10.95 163
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 108
+ \T1/fnc/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 109
+ \T1/fnc/m/n/10.95 172
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 110
+ \T1/fnc/m/n/10.95 180
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 111
+ \T1/fnc/m/n/10.95 189
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 112
+ \T1/fnc/b/n/10.95 191
+ []
+
+) [4] (./chapters/chapter02/chap02.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 5.
- (./chapters/chapter01/introduction.tex
-
-Package natbib Warning: Citation `ceballos2015accelerated' on page 1 undefined 
-on input line 7.
+ (./chapters/chapter02/the_model.tex
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 9.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 9.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 9.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 9.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 9.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 9.
 
 [1
 
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 15.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 15.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 15.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 15.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 15.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 15.
- [2]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 33.
+(Font)              scaled to size 11.15991pt on input line 26.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 33.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 33.
+(Font)              scaled to size 11.15991pt on input line 26.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.71893pt on input line 36.
+(Font)              scaled to size 7.71893pt on input line 33.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 5.57996pt on input line 36.
+(Font)              scaled to size 5.57996pt on input line 33.
 
-
-Package natbib Warning: Citation `bersier2002quantitative' on page 3 undefined 
-on input line 45.
-
-[3]
-
-Package natbib Warning: Citation `gibson2011sampling' on page 4 undefined on in
-put line 47.
-
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 56.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.06795pt on input line 56.
-[4] [5]
-LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 81.
-LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 13.39188pt on input line 81.
- [6]
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 125.
- [7]
-LaTeX Font Info:    Try loading font information for TS1+fnc on input line 153.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 153.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fnc' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [8]
-<chapters/chapter01/"diagrams/polar_bear".jpg, id=373, 622.325pt x 414.54875pt>
-File: chapters/chapter01/"diagrams/polar_bear".jpg Graphic file (type jpg)
-<use chapters/chapter01/"diagrams/polar_bear".jpg>
-Package pdftex.def Info: chapters/chapter01/"diagrams/polar_bear".jpg used on i
-nput line 205.
-(pdftex.def)             Requested size: 448.0pt x 298.43059pt.
- [9]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10 <./chapters/chapter01/diagrams/polar_bear.jpg>]
-Underfull \vbox (badness 7613) has occurred while \output is active []
-
- [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
-[13]
-
-Package natbib Warning: Citation `sole2006self' on page 14 undefined on input l
-ine 274.
-
-)) [14] (./chapters/chapter02/chap02.tex (./chapters/chapter02/the_model.tex
-
-LaTeX Warning: Reference `chap:inferring_interactions' on page 15 undefined on 
-input line 9.
-
-
-LaTeX Warning: Reference `sec:model_spec' on page 15 undefined on input line 9.
-
-
-
-LaTeX Warning: Reference `sec:example_dynmaics' on page 15 undefined on input l
-ine 9.
-
-
-LaTeX Warning: Reference `chap:persistence' on page 15 undefined on input line 
-9.
-
-
-LaTeX Warning: Reference `chap:inferring_interactions' on page 15 undefined on 
-input line 9.
-
-[15
-
-
-]
-<chapters/chapter02/"diagrams/niche_space".png, id=509, 1038.12843pt x 320.6981
+<chapters/chapter02/"diagrams/niche_space".png, id=608, 1038.12843pt x 320.6981
 2pt>
 File: chapters/chapter02/"diagrams/niche_space".png Graphic file (type png)
  <use chapters/chapter02/"diagrams/niche_space".png>
@@ -2018,7 +2173,7 @@ input line 37.
 
 Underfull \vbox (badness 1184) has occurred while \output is active []
 
- [16]
+ [2]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 56.
@@ -2027,433 +2182,134 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 64.
 
-[17 <./chapters/chapter02/diagrams/niche_space.png>]
+[3 <./chapters/chapter02/diagrams/niche_space.png>]
+<chapters/chapter02/random_plots/example_food_web.png, id=635, 578.16pt x 433.6
+2pt>
+File: chapters/chapter02/random_plots/example_food_web.png Graphic file (type p
+ng)
+ <use chapters/chapter02/random_plots/example_food_web.png>
+Package pdftex.def Info: chapters/chapter02/random_plots/example_food_web.png u
+sed on input line 83.
+(pdftex.def)             Requested size: 448.0pt x 335.9991pt.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 8.36993pt on input line 92.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.06795pt on input line 92.
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:WHERE' on page 18 undefined on input line 86.
-
-[18]
-<chapters/chapter02/"diagrams/trophic_cartoon".png, id=544, 991.705pt x 623.328
+ [5 <./chapters/chapter02/random_plots/example_food_web.png>]
+<chapters/chapter02/"diagrams/trophic_cartoon".png, id=660, 991.705pt x 623.328
 75pt>
 File: chapters/chapter02/"diagrams/trophic_cartoon".png Graphic file (type png)
 
  <use chapters/chapter02/"diagrams/trophic_cartoon".png>
 Package pdftex.def Info: chapters/chapter02/"diagrams/trophic_cartoon".png used
- on input line 101.
+ on input line 107.
 (pdftex.def)             Requested size: 268.80273pt x 168.94777pt.
- [19]
-
-Package natbib Warning: Citation `lurgi2015efffects' on page 20 undefined on in
-put line 115.
-
-[20 <./chapters/chapter02/diagrams/trophic_cartoon.png>]
-<chapters/chapter02/"diagrams/IBM_movement".png, id=569, 771.88374pt x 814.0412
+ [6 <./chapters/chapter02/diagrams/trophic_cartoon.png>]
+<chapters/chapter02/"diagrams/IBM_movement".png, id=678, 771.88374pt x 814.0412
 4pt>
 File: chapters/chapter02/"diagrams/IBM_movement".png Graphic file (type png)
  <use chapters/chapter02/"diagrams/IBM_movement".png>
 Package pdftex.def Info: chapters/chapter02/"diagrams/IBM_movement".png used on
- input line 145.
+ input line 139.
 (pdftex.def)             Requested size: 134.40137pt x 141.7389pt.
- [21 <./chapters/chapter02/diagrams/IBM_movement.png>] [22]
-
-Package natbib Warning: Citation `lurgi2015' on page 23 undefined on input line
- 199.
+ [7] [8 <./chapters/chapter02/diagrams/IBM_movement.png>]
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 167.
 
 
-LaTeX Warning: Reference `sec:def_RADs' on page 23 undefined on input line 199.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 167.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fnc' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [9]
 
+Package natbib Warning: Citation `lurgi2015' on page 10 undefined on input line
+ 193.
 
-[23]
-
-LaTeX Warning: Reference `chap:persistence' on page 24 undefined on input line 
-203.
-
-
-LaTeX Warning: Reference `chap:varrying_iR' on page 24 undefined on input line 
-203.
-
-
-<chapters/chapter02/"tables/IBM_parameters".pdf, id=612, 597.23125pt x 845.1575
+[10]
+<chapters/chapter02/"tables/IBM_parameters".pdf, id=732, 597.23125pt x 845.1575
 pt>
 File: chapters/chapter02/"tables/IBM_parameters".pdf Graphic file (type pdf)
  <use chapters/chapter02/"tables/IBM_parameters".pdf>
 Package pdftex.def Info: chapters/chapter02/"tables/IBM_parameters".pdf used on
- input line 210.
+ input line 204.
 (pdftex.def)             Requested size: 403.19727pt x 570.57277pt.
- [24] [25 <./chapters/chapter02/tables/IBM_parameters.pdf>] [26] [27] [28]
 
-LaTeX Warning: Reference `chap:peristence' on page 29 undefined on input line 3
-22.
+Underfull \vbox (badness 1888) has occurred while \output is active []
 
+ [11]
+[12 <./chapters/chapter02/tables/IBM_parameters.pdf>] [13]
+<chapters/chapter02/random_plots/example_trophic_dynamics_default.png, id=789, 
+722.7pt x 433.62pt>
+File: chapters/chapter02/random_plots/example_trophic_dynamics_default.png Grap
+hic file (type png)
 
-LaTeX Warning: Reference `chap:inferring_interactions' on page 29 undefined on 
-input line 326.
+<use chapters/chapter02/random_plots/example_trophic_dynamics_default.png>
+Package pdftex.def Info: chapters/chapter02/random_plots/example_trophic_dynami
+cs_default.png used on input line 235.
+(pdftex.def)             Requested size: 448.0pt x 268.80193pt.
 
-[29]
+<chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai1.png
+, id=790, 722.7pt x 433.62pt>
+File: chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai
+1.png Graphic file (type png)
+
+<use chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai1
+.png>
+Package pdftex.def Info: chapters/chapter02/random_plots/example_trophic_dynami
+cs_default_HL40_mai1.png used on input line 242.
+(pdftex.def)             Requested size: 448.0pt x 268.80193pt.
+
+<chapters/chapter02/random_plots/space/spatial_state_mai0.5.png, id=793, 831.10
+5pt x 1300.86pt>
+File: chapters/chapter02/random_plots/space/spatial_state_mai0.5.png Graphic fi
+le (type png)
+
+<use chapters/chapter02/random_plots/space/spatial_state_mai0.5.png>
+Package pdftex.def Info: chapters/chapter02/random_plots/space/spatial_state_ma
+i0.5.png used on input line 249.
+(pdftex.def)             Requested size: 358.40137pt x 560.96672pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <./chapters/chapter02/random_plots/example_trophic_dynamics_default.png>] 
+[15 <./chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_ma
+i1.png>]
+[16 <./chapters/chapter02/random_plots/space/spatial_state_mai0.5.png>]
+[17] [18]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 341.
 
+[19] [20]
+Underfull \vbox (badness 2189) has occurred while \output is active []
 
-LaTeX Warning: Reference `chap:high_immigration' on page 30 undefined on input 
-line 347.
-
-[30]
-
-Package natbib Warning: Citation `dale2014spatial' on page 31 undefined on inpu
-t line 361.
-
-[31] [32]
+ [21]
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 395.
+(nag)                Use amsmath's align instead on input line 392.
 
+[22]
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 402.
+(nag)                Use amsmath's align instead on input line 412.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 408.
+(nag)                Use amsmath's align instead on input line 419.
 
-)) [33] [34] (./chapters/chapter03/chap03.tex
-(./chapters/chapter03/chapter_3_content.tex
 
-LaTeX Warning: Reference `sec:method' on page 35 undefined on input line 57.
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 425.
 
-
-Package natbib Warning: Citation `sole2006self' on page 35 undefined on input l
-ine 59.
-
-
-Underfull \vbox (badness 6708) has occurred while \output is active []
-
- [35
-
-
-]
-
-LaTeX Warning: Reference `sec:method' on page 36 undefined on input line 89.
-
-
-LaTeX Warning: Reference `sec:stability' on page 36 undefined on input line 89.
-
-
-
-LaTeX Warning: Reference `sec:method' on page 36 undefined on input line 94.
-
-[36]
-
-LaTeX Warning: Reference `chap:stationairty' on page 37 undefined on input line
- 100.
-
-[37]
-<chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png, id=826, 867.24pt 
-x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png Graphic file 
-(type png)
- <use chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_count_3ma
-i.png used on input line 117.
-(pdftex.def)             Requested size: 448.0pt x 268.80191pt.
-
-<chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png, id=827, 867.24pt x
- 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png Graphic file (
-type png)
- <use chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai
-.png used on input line 125.
-(pdftex.def)             Requested size: 448.0pt x 268.80191pt.
-
-[38 <./chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>]
-
-LaTeX Warning: Reference `eq:shannon_eq' on page 39 undefined on input line 137
-.
-
-
-<chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png, id=839, 1487.55
-75pt x 550.055pt>
-File: chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png Graphic fil
-e (type png)
-
-<use chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_random_mai
-0.5.png used on input line 141.
-(pdftex.def)             Requested size: 448.0pt x 165.65564pt.
- [39 <./chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>]
-<chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png, id=848, 148
-7.5575pt x 550.055pt>
-File: chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png Graphic
- file (type png)
-
-<use chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_contiguous
-_mai0.5.png used on input line 149.
-(pdftex.def)             Requested size: 448.0pt x 165.65564pt.
-
-[40 <./chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png (PNG copy)
-> <./chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png (PNG cop
-y)>]
-<chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png, id=861, 1040.688pt x 
-624.4128pt>
-File: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png Graphic file (typ
-e png)
- <use chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.pn
-g used on input line 160.
-(pdftex.def)             Requested size: 448.0pt x 268.80669pt.
-
-[41 <./chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>]
-<chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png, id=
-879, 867.24pt x 1300.86pt>
-File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png
- Graphic file (type png)
-
-<use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_random_3mai.png used on input line 175.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
-
-<chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.png,
- id=880, 867.24pt x 1300.86pt>
-File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai
-.png Graphic file (type png)
-
-<use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.
-png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_contiguous_3mai.png used on input line 182.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
- [42] [43 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3
-mai.png>] [44 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_cont
-iguous_3mai.png>]
-
-LaTeX Warning: Reference `sec:WHEREIS' on page 45 undefined on input line 191.
-
-
-LaTeX Warning: Reference `chap:inferring_interactions' on page 45 undefined on 
-input line 191.
-
-
-<chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png, id=908, 867.2
-4pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png Graphic f
-ile (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_number_of_links
-_3mai.png used on input line 198.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-<chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png, id=913, 86
-7.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png Graphi
-c file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_interacti
-ons_3mai.png used on input line 205.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-[45
-
- <./chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>]
-[46 <./chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png, id=944, 8
-67.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png Graph
-ic file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_genera
-lity_3mai.png used on input line 222.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-<chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png, id=949
-, 867.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png Gr
-aphic file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_vulner
-ability_3mai.png used on input line 229.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-[47 <./chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png, id=968,
- 867.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png Gra
-phic file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_interaction_div
-ersity_3mai.png used on input line 240.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-<chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png, id=973, 867.24
-pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png Graphic fi
-le (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_specialisation_
-3mai.png used on input line 254.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
- [48 <./chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
-] [49 <./chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
- <./chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png, id=991, 867.24pt
- x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png Graphic file
- (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3m
-ai.png used on input line 266.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-<chapters/chapter03/clean_figs/strong_fig.png, id=996, 867.24pt x 1300.86pt>
-File: chapters/chapter03/clean_figs/strong_fig.png Graphic file (type png)
-
-<use chapters/chapter03/clean_figs/strong_fig.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/strong_fig.png used on i
-nput line 273.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
-
-
-LaTeX Warning: Float too large for page by 11.91661pt on input line 276.
-
-
-LaTeX Warning: Reference `sec:stability' on page 50 undefined on input line 280
-.
-
-[50
-
- <./chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>] [51 <./chapt
-ers/chapter03/clean_figs/strong_fig.png>]
-<chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png, id=1024, 867.24pt x 
-520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png Graphic file (ty
-pe png)
- <use chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.p
-ng used on input line 290.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-<chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png, id=1029, 867.24pt x 
-520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png Graphic file (ty
-pe png)
- <use chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.p
-ng used on input line 297.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-[52] [53 <./chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png> <./chapte
-rs/chapter03/clean_figs/clean_lm_gearys_c_3mai.png>] [54]
-
-LaTeX Warning: Reference `sec:stability' on page 55 undefined on input line 311
-.
-
-
-<chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png, id=1063, 867.
-24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png Graphic f
-ile (type png)
-
-<use chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_minimum_invariability
-_3mai.png used on input line 315.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-<chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png, id=1068, 867.24pt x 
-520.344pt>
-File: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png Graphic file (ty
-pe png)
- <use chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.p
-ng used on input line 322.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-[55
-
- <./chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>]
-[56 <./chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png>]
-
-LaTeX Warning: Reference `sec:stability' on page 57 undefined on input line 335
-.
-
-
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
- [57
-
-]
-<chapters/chapter03/clean_figs/normalised_IS3_dist_random.png, id=1115, 1300.86
-pt x 722.7pt>
-File: chapters/chapter03/clean_figs/normalised_IS3_dist_random.png Graphic file
- (type png)
-
-<use chapters/chapter03/clean_figs/normalised_IS3_dist_random.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_rand
-om.png used on input line 345.
-(pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
-
-<chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png, id=1116, 130
-0.86pt x 722.7pt>
-File: chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png Graphic 
-file (type png)
-
-<use chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_cont
-iguous.png used on input line 353.
-(pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
-
-
-LaTeX Warning: Reference `sec:method' on page 58 undefined on input line 358.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
-[59 <./chapters/chapter03/clean_figs/normalised_IS3_dist_random.png> <./chapter
-s/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>]
-<chapters/chapter03/clean_figs/diffusion_example.png, id=1136, 1164.9924pt x 76
-0.2804pt>
-File: chapters/chapter03/clean_figs/diffusion_example.png Graphic file (type pn
-g)
- <use chapters/chapter03/clean_figs/diffusion_example.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/diffusion_example.png us
-ed on input line 364.
-(pdftex.def)             Requested size: 448.0pt x 292.36662pt.
-LaTeX Font Info:    Font shape `TS1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `TS1/fnc/b/n' tried instead on input line 365.
-LaTeX Font Info:    Font shape `TS1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 365.
-
-<chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png, id=1137
-, 867.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png Gra
-phic file (type png)
-
-<use chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_mean_proportion_immig
-ration_3mai.png used on input line 371.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60]
-[61 <./chapters/chapter03/clean_figs/diffusion_example.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62 <./chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>]
-
-
-LaTeX Warning: Reference `chap:WHEREIS' on page 63 undefined on input line 384.
-
-
-[63])) [64
+[23])) [24] [25] [26
 
 ] (./memoirthesis.bbl
 
@@ -2462,11 +2318,11 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 10.
+(nag)                Use \scshape or \textsc instead on input line 9.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 16.
+(nag)                Use \scshape or \textsc instead on input line 15.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2474,36 +2330,35 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 26.
+(nag)                Use \scshape or \textsc instead on input line 27.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 30.
+(nag)                Use \scshape or \textsc instead on input line 32.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 35.
+(nag)                Use \scshape or \textsc instead on input line 37.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 41.
+(nag)                Use \scshape or \textsc instead on input line 42.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 46.
+(nag)                Use \scshape or \textsc instead on input line 47.
 
-[65
 
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 51.
+
+[27
 
 
 ]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 52.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 57.
+(nag)                Use \scshape or \textsc instead on input line 56.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2511,7 +2366,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 67.
+(nag)                Use \scshape or \textsc instead on input line 66.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2519,27 +2374,31 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 76.
+(nag)                Use \scshape or \textsc instead on input line 75.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 82.
+(nag)                Use \scshape or \textsc instead on input line 81.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 88.
+(nag)                Use \scshape or \textsc instead on input line 86.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 93.
+(nag)                Use \scshape or \textsc instead on input line 90.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 97.
+(nag)                Use \scshape or \textsc instead on input line 95.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 102.
+(nag)                Use \scshape or \textsc instead on input line 100.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 105.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2547,28 +2406,24 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 114.
+(nag)                Use \scshape or \textsc instead on input line 113.
 
-[66]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 120.
+(nag)                Use \scshape or \textsc instead on input line 118.
 
+[28]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 124.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 128.
+(nag)                Use \scshape or \textsc instead on input line 130.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 131.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 136.
+(nag)                Use \scshape or \textsc instead on input line 135.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2576,15 +2431,15 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 146.
+(nag)                Use \scshape or \textsc instead on input line 145.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 152.
+(nag)                Use \scshape or \textsc instead on input line 149.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 157.
+(nag)                Use \scshape or \textsc instead on input line 154.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2592,34 +2447,32 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 165.
+(nag)                Use \scshape or \textsc instead on input line 168.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 169.
+(nag)                Use \scshape or \textsc instead on input line 173.
+
+[29]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 179.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 174.
-
-LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 176.
-[67]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 180.
+(nag)                Use \scshape or \textsc instead on input line 183.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 184.
+(nag)                Use \scshape or \textsc instead on input line 187.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 189.
+(nag)                Use \scshape or \textsc instead on input line 193.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 194.
+(nag)                Use \scshape or \textsc instead on input line 198.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2627,7 +2480,7 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 205.
+(nag)                Use \scshape or \textsc instead on input line 206.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2635,52 +2488,54 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 219.
+(nag)                Use \scshape or \textsc instead on input line 216.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 223.
+(nag)                Use \scshape or \textsc instead on input line 222.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 226.
+(nag)                Use \scshape or \textsc instead on input line 227.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 230.
+(nag)                Use \scshape or \textsc instead on input line 232.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 236.
 
+[30]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 241.
-
-[68]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 246.
+(nag)                Use \scshape or \textsc instead on input line 242.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 250.
+(nag)                Use \scshape or \textsc instead on input line 247.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 254.
+(nag)                Use \scshape or \textsc instead on input line 251.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 260.
+(nag)                Use \scshape or \textsc instead on input line 255.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 265.
+(nag)                Use \scshape or \textsc instead on input line 259.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 269.
+(nag)                Use \scshape or \textsc instead on input line 264.
+
+LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 266.
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 270.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2688,52 +2543,48 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 279.
+(nag)                Use \scshape or \textsc instead on input line 278.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 284.
+(nag)                Use \scshape or \textsc instead on input line 283.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 290.
+(nag)                Use \scshape or \textsc instead on input line 288.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 294.
+(nag)                Use \scshape or \textsc instead on input line 293.
+
+[31]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 300.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 299.
+(nag)                Use \scshape or \textsc instead on input line 306.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 303.
+(nag)                Use \scshape or \textsc instead on input line 310.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 307.
-
-[69]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 312.
+(nag)                Use \scshape or \textsc instead on input line 314.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 317.
+(nag)                Use \scshape or \textsc instead on input line 319.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 322.
+(nag)                Use \scshape or \textsc instead on input line 324.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 327.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 332.
+(nag)                Use \scshape or \textsc instead on input line 333.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
@@ -2741,94 +2592,497 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 343.
+(nag)                Use \scshape or \textsc instead on input line 340.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 348.
+(nag)                Use \scshape or \textsc instead on input line 344.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 353.
+(nag)                Use \scshape or \textsc instead on input line 350.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 359.
+(nag)                Use \scshape or \textsc instead on input line 355.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 363.
+(nag)                Use \scshape or \textsc instead on input line 360.
 
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 364.
+
+[32]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
 (nag)                Use \scshape or \textsc instead on input line 368.
 
-[70]
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 375.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 380.
+(nag)                Use \scshape or \textsc instead on input line 373.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 385.
+(nag)                Use \scshape or \textsc instead on input line 379.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 394.
+(nag)                Use \scshape or \textsc instead on input line 384.
 
-) [71] [72
 
-]
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 388.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 393.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 398.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 403.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 409.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 413.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 418.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 423.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 429.
+
+[33]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 433.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 437.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 442.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 447.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 452.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 456.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 461.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 466.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 471.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 476.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 482.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 487.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 492.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 497.
+
+[34]
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 503.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 507.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 512.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 519.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 524.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 531.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 536.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 541.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 550.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 554.
+
+[35]) [36]
 
 Package natbib Warning: There were undefined citations.
 
 
-Package nag Warning: 84 complaints in total.
+Package nag Warning: 117 complaints in total.
 
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
-(./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
-Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: F4EA9832F8DA5B246ECDADA34737B827;3562.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+(./memoirthesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `memoirthesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `memoirthesis.out':
+(rerunfilecheck)             Before: CF916310427540E65422526042ED27B3;7999
+(rerunfilecheck)             After:  4E2E8546C4E6CCCBEEB8912FDB55AD0F;1652.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29786 strings out of 493109
- 550116 string characters out of 6135010
- 826513 words of memory out of 5000000
- 31855 multiletter control sequences out of 15000+600000
- 94241 words of font info for 402 fonts, out of 8000000 for 9000
+ 29978 strings out of 493109
+ 550960 string characters out of 6135010
+ 869947 words of memory out of 5000000
+ 32060 multiletter control sequences out of 15000+600000
+ 88449 words of font info for 397 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 54i,14n,67p,3716b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (74 pages, 3712570 bytes).
+ 54i,14n,67p,2396b,911s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.3.3} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.22} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.6.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.6.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.6} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.5.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.3.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.3.3.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.3.3.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.3.2.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.3.2.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.3.1.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.3.1.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.3.1.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.4.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.5.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.5.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.5.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.1.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (40 pages, 911056 bytes).
 PDF statistics:
- 1304 PDF objects out of 1440 (max. 8388607)
- 1117 compressed objects within 12 object streams
- 292 named destinations out of 1000 (max. 500000)
- 39473 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1196 PDF objects out of 1200 (max. 8388607)
+ 1110 compressed objects within 12 object streams
+ 319 named destinations out of 1000 (max. 500000)
+ 34725 words of extra memory for PDF output out of 35830 (max. 10000000)
 

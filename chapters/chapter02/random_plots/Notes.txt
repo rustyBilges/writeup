@@ -1,0 +1,4 @@
+The population files for plotting trophic dynamics come from:
+habitat_loss_project/IBM/random_results/run1/HL_0/mut_0/2602892_1
+
+and therefore have IR=0.005

@@ -1,10 +1,21 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
+
+\bibitem{ai2012immigration}
+{\sc D.~Ai, P.~Desjardins-Proulx, C.~Chu, and G.~Wang}, {\em Immigration, local
+  dispersal limitation, and the repeatability of community composition under
+  neutral and niche dynamics},  (2012).
 
 \bibitem{albrecht2007interaction}
 {\sc M.~Albrecht, P.~Duelli, B.~Schmid, and C.~B. M{\"u}ller}, {\em Interaction
   diversity within quantified insect food webs in restored and adjacent
   intensively managed meadows}, Journal of Animal Ecology, 76 (2007),
   pp.~1015--1025.
+
+\bibitem{almeida2008consistent}
+{\sc M.~Almeida-Neto, P.~Guimaraes, P.~R. Guimar{\~a}es, R.~D. Loyola, and
+  W.~Ulrich}, {\em A consistent metric for nestedness analysis in ecological
+  systems: reconciling concept and measurement}, Oikos, 117 (2008),
+  pp.~1227--1239.
 
 \bibitem{python}
 {\sc E.~Anderson, Z.~Bai, C.~Bischof, S.~Blackford, J.~Demmel, J.~Dongarra,
@@ -17,10 +28,20 @@
   views on how population-intrinsic and community-extrinsic processes interact
   during the vole population cycles}, Oikos, 122 (2013), pp.~507--515.
 
+\bibitem{aparicio2008detecting}
+{\sc T.~Aparicio, E.~F. Pozo, and D.~Saura}, {\em Detecting determinism using
+  recurrence quantification analysis: Three test procedures}, Journal of
+  Economic Behavior \& Organization, 65 (2008), pp.~768--787.
+
 \bibitem{arnoldi2015}
 {\sc J.-F. Arnoldi, M.~Loreau, and B.~Haegeman}, {\em Resilience, reactivity
   and variability: A mathematical comparison of ecological stability measures},
   Journal of theoretical biology, 389 (2016), pp.~47--59.
+
+\bibitem{banavsek2004sampling}
+{\sc C.~Bana{\v{s}}ek-Richter, M.-F. Cattin, and L.-F. Bersier}, {\em Sampling
+  effects and the robustness of quantitative and qualitative food-web
+  descriptors}, Journal of Theoretical Biology, 226 (2004), pp.~23--32.
 
 \bibitem{barraquand2014functional}
 {\sc F.~Barraquand}, {\em Functional responses and predator--prey models: a
@@ -37,10 +58,18 @@
   {\em Interaction strengths in food webs: issues and opportunities}, Journal
   of animal ecology, 73 (2004), pp.~585--598.
 
+\bibitem{bersier2002quantitative}
+{\sc L.-F. Bersier, C.~Banašek-Richter, and M.-F. Cattin}, {\em Quantitative
+  descriptors of food-web matrices}, Ecology, 83 (2002), pp.~2394--2407.
+
 \bibitem{bluthgen2008interaction}
 {\sc N.~Bl{\"u}thgen, J.~Fr{\"u}nd, D.~P. V{\'a}zquez, and F.~Menzel}, {\em
   What do interaction network metrics tell us about specialization and
   biological traits}, Ecology, 89 (2008), pp.~3387--3399.
+
+\bibitem{bluthgen2006measuring}
+{\sc N.~Bl{\"u}thgen, F.~Menzel, and N.~Bl{\"u}thgen}, {\em Measuring
+  specialization in species interaction networks}, BMC ecology, 6 (2006), p.~1.
 
 \bibitem{bossio2005soil}
 {\sc D.~Bossio, M.~S. Girvan, L.~Verchot, J.~Bullimore, T.~Borelli,
@@ -53,10 +82,19 @@
   interference dampen the paradox of enrichment}, Oikos, 117 (2008),
   pp.~202--213.
 
+\bibitem{cadotte2006dispersal}
+{\sc M.~W. Cadotte}, {\em Dispersal and species diversity: A meta-analysis},
+  The American Naturalist, 167 (2006), pp.~913--924.
+
 \bibitem{campbell2011experimental}
 {\sc V.~Campbell, G.~Murphy, and T.~N. Romanuk}, {\em Experimental design and
   the outcome and interpretation of diversity--stability relations}, Oikos, 120
   (2011), pp.~399--408.
+
+\bibitem{condit2012thirty}
+{\sc R.~Condit, R.~A. Chisholm, and S.~P. Hubbell}, {\em Thirty years of forest
+  census at barro colorado and the importance of immigration in maintaining
+  diversity},  (2012).
 
 \bibitem{coyte2015ecology}
 {\sc K.~Z. Coyte, J.~Schluter, and K.~R. Foster}, {\em The ecology of the
@@ -66,6 +104,10 @@
 \bibitem{crutchfield1989inferring}
 {\sc J.~P. Crutchfield and K.~Young}, {\em Inferring statistical complexity},
   Physical Review Letters, 63 (1989), p.~105.
+
+\bibitem{dale2014spatial}
+{\sc M.~R. Dale and M.-J. Fortin}, {\em Spatial analysis: a guide for
+  ecologists}, Cambridge University Press, 2014.
 
 \bibitem{darwin2009origin}
 {\sc C.~Darwin and W.~F. Bynum}, {\em The origin of species by means of natural
@@ -84,6 +126,16 @@
   the dimensionality of ecological stability}, Ecology letters, 16 (2013),
   pp.~421--429.
 
+\bibitem{dormann2008introducing}
+{\sc C.~F. Dormann, B.~Gruber, and J.~Fr{\"u}nd}, {\em Introducing the
+  bipartite package: analysing ecological networks}, interaction, 1 (2008),
+  pp.~0--2413793.
+
+\bibitem{drury2015immigration}
+{\sc K.~L. Drury, J.~D. Suter, J.~B. Rendall, A.~M. Kramer, and J.~M. Drake},
+  {\em Immigration can destabilize tri-trophic interactions: implications for
+  conservation of top predators}, Theoretical Ecology,  (2015), pp.~1--12.
+
 \bibitem{dunne2002food}
 {\sc J.~A. Dunne, R.~J. Williams, and N.~D. Martinez}, {\em Food-web structure
   and network theory: the role of connectance and size}, Proceedings of the
@@ -97,6 +149,13 @@
 {\sc D.~M. Evans, M.~J. Pocock, and J.~Memmott}, {\em The robustness of a
   network of ecological networks to habitat loss}, Ecology letters, 16 (2013),
   pp.~844--852.
+
+\bibitem{eveleigh2007fluctuations}
+{\sc E.~S. Eveleigh, K.~S. McCann, P.~C. McCarthy, S.~J. Pollock, C.~J.
+  Lucarotti, B.~Morin, G.~A. McDougall, D.~B. Strongman, J.~T. Huber,
+  J.~Umbanhowar, et~al.}, {\em Fluctuations in density of an outbreak species
+  drive diversity cascades in food webs}, Proceedings of the National Academy
+  of Sciences, 104 (2007), pp.~16976--16981.
 
 \bibitem{ewers2011large}
 {\sc R.~M. Ewers, R.~K. Didham, L.~Fahrig, G.~Ferraz, A.~Hector, R.~D. Holt,
@@ -124,6 +183,17 @@
 {\sc M.~A. Fortuna, A.~Krishna, and J.~Bascompte}, {\em Habitat loss and the
   disassembly of mutalistic networks}, Oikos, 122 (2013), pp.~938--942.
 
+\bibitem{foster2004propagule}
+{\sc B.~L. Foster, T.~L. Dickson, C.~A. Murphy, I.~S. Karel, and V.~H. Smith},
+  {\em Propagule pools mediate community assembly and diversity-ecosystem
+  regulation along a grassland productivity gradient}, Journal of Ecology, 92
+  (2004), pp.~435--449.
+
+\bibitem{freckleton2009measuring}
+{\sc R.~P. Freckleton, A.~R. Watkinson, and M.~Rees}, {\em Measuring the
+  importance of competition in plant communities}, Journal of ecology, 97
+  (2009), pp.~379--384.
+
 \bibitem{BC3}
 {\sc C.~Gardiner}, {\em Blue crystal}, 2016.
 
@@ -136,11 +206,31 @@
 {\sc V.~Grimm and S.~F. Railsback}, {\em Individual-based modeling and
   ecology}, Princeton university press, 2013.
 
+\bibitem{haddad2015habitat}
+{\sc N.~M. Haddad, L.~A. Brudvig, J.~Clobert, K.~F. Davies, A.~Gonzalez, R.~D.
+  Holt, T.~E. Lovejoy, J.~O. Sexton, M.~P. Austin, C.~D. Collins, et~al.}, {\em
+  Habitat fragmentation and its lasting impact on earth’s ecosystems},
+  Science Advances, 1 (2015), p.~e1500052.
+
 \bibitem{hagen2012biodiversity}
 {\sc M.~Hagen, W.~D. Kissling, C.~Rasmussen, D.~Carstensen, Y.~Dupont,
   C.~Kaiser-Bunbury, E.~O'Gorman, J.~Olesen, M.~De~Aguiar, L.~Brown, et~al.},
   {\em Biodiversity, species interactions and ecological networks in a
   fragmented world}, Advances in Ecological Research, 46 (2012), pp.~89--120.
+
+\bibitem{hanski2013species}
+{\sc I.~Hanski, G.~A. Zurita, M.~I. Bellocq, and J.~Rybicki}, {\em
+  Species--fragmented area relationship}, Proceedings of the National Academy
+  of Sciences, 110 (2013), pp.~12715--12720.
+
+\bibitem{saul09phd}
+{\sc S.~Hazledine}, {\em {The Analysis and modelling of chaotic calcium
+  oscillations}}, PhD thesis, Department for Computational Systems Biology,
+  John Innes Centre, 2009.
+
+\bibitem{hsu1997schaum}
+{\sc H.~P. Hsu}, {\em Schaum's outline of theory and problems of probability,
+  random variables, and random processes}, McGraw-Hill, 1997.
 
 \bibitem{ings2009review}
 {\sc T.~C. Ings, J.~M. Montoya, J.~Bascompte, N.~Bl{\"u}thgen, L.~Brown, C.~F.
@@ -176,6 +266,10 @@
   {\em More than a meal… integrating non-feeding interactions into food
   webs}, Ecology letters, 15 (2012), pp.~291--300.
 
+\bibitem{klausmeier2001habitat}
+{\sc C.~Klausmeier}, {\em Habitat destruction and extinction in competitive and
+  mutualistic metacommunities}, Ecology Letters, 4 (2001), pp.~57--63.
+
 \bibitem{knight2005trophic}
 {\sc T.~M. Knight, M.~W. McCoy, J.~M. Chase, K.~A. McCoy, and R.~D. Holt}, {\em
   Trophic cascades across ecosystems}, Nature, 437 (2005), pp.~880--883.
@@ -184,6 +278,11 @@
 {\sc G.~Kokkoris, A.~Troumbis, and J.~Lawton}, {\em Patterns of species
   interaction strength in assembled theoretical competition communities},
   Ecology Letters, 2 (1999), pp.~70--74.
+
+\bibitem{korfanta2012long}
+{\sc N.~M. Korfanta, W.~D. Newmark, and M.~J. Kauffman}, {\em Long-term
+  demographic consequences of habitat fragmentation to a tropical understory
+  bird community}, Ecology, 93 (2012), pp.~2548--2559.
 
 \bibitem{krebs2011lemmings}
 {\sc C.~J. Krebs}, {\em Of lemmings and snowshoe hares: the ecology of northern
@@ -197,14 +296,29 @@
   organisms: a conceptual framework for the effects of land-use change},
   Ecology Letters, 10 (2007), pp.~299--314.
 
+\bibitem{kwiatkowski1992testing}
+{\sc D.~Kwiatkowski, P.~C. Phillips, P.~Schmidt, and Y.~Shin}, {\em Testing the
+  null hypothesis of stationarity against the alternative of a unit root: How
+  sure are we that economic time series have a unit root?}, Journal of
+  econometrics, 54 (1992), pp.~159--178.
+
 \bibitem{ladyman2013complex}
 {\sc J.~Ladyman, J.~Lambert, and K.~Wiesner}, {\em What is a complex system?},
   European Journal for Philosophy of Science, 3 (2013), pp.~33--67.
+
+\bibitem{loreau1999immigration}
+{\sc M.~Loreau and N.~Mouquet}, {\em Immigration and the maintenance of local
+  species diversity}, The American Naturalist, 154 (1999), pp.~427--440.
 
 \bibitem{lurgi2015effects}
 {\sc M.~Lurgi, D.~Montoya, and J.~M. Montoya}, {\em The effects of space and
   diversity of interaction types on the stability of complex ecological
   networks}, Theoretical Ecology,  (2015), pp.~1--11.
+
+\bibitem{marwan2007recurrence}
+{\sc N.~Marwan, M.~C. Romano, M.~Thiel, and J.~Kurths}, {\em Recurrence plots
+  for the analysis of complex systems}, Physics reports, 438 (2007),
+  pp.~237--329.
 
 \bibitem{may1972will}
 {\sc R.~M. May}, {\em Will a large complex system be stable?}, Nature, 238
@@ -249,6 +363,11 @@
 \bibitem{mougi2012diversity}
 {\sc A.~Mougi and M.~Kondoh}, {\em Diversity of interaction types and
   ecological community stability}, Science, 337 (2012), pp.~349--351.
+
+\bibitem{mouquet2004immigration}
+{\sc N.~Mouquet, P.~Leadley, J.~M{\'e}riguet, and M.~Loreau}, {\em Immigration
+  and local competition in herbaceous plant communities: a three-year
+  seed-sowing experiment}, Oikos, 104 (2004), pp.~77--90.
 
 \bibitem{mumby2014ecological}
 {\sc P.~J. Mumby, I.~Chollett, Y.-M. Bozec, and N.~H. Wolff}, {\em Ecological
@@ -295,6 +414,17 @@
   restoration of a network of ecological networks}, Science, 335 (2012),
   pp.~973--977.
 
+\bibitem{priestley1969test}
+{\sc M.~Priestley and T.~S. Rao}, {\em A test for non-stationarity of
+  time-series}, Journal of the Royal Statistical Society. Series B
+  (Methodological),  (1969), pp.~140--149.
+
+\bibitem{puettker2011immigration}
+{\sc T.~Puettker, A.~A. Bueno, C.~dos Santos~de Barros, S.~Sommer, and
+  R.~Pardini}, {\em Immigration rates in fragmented landscapes-empirical
+  evidence for the importance of habitat amount for species persistence}, PLoS
+  One, 6 (2011), p.~e27963.
+
 \bibitem{Rlanguage}
 {\sc {R Core Team}}, {\em R: A Language and Environment for Statistical
   Computing}, R Foundation for Statistical Computing, Vienna, Austria, 2013.
@@ -308,10 +438,19 @@
   first 15years after wolf reintroduction}, Biological Conservation, 145
   (2012), pp.~205--213.
 
+\bibitem{said1984testing}
+{\sc S.~E. Said and D.~A. Dickey}, {\em Testing for unit roots in
+  autoregressive-moving average models of unknown order}, Biometrika, 71
+  (1984), pp.~599--607.
+
 \bibitem{sauve2014structure}
 {\sc A.~Sauve, C.~Fontaine, and E.~Th{\'e}bault}, {\em Structure--stability
   relationships in networks combining mutualistic and antagonistic
   interactions}, Oikos, 123 (2014), pp.~378--384.
+
+\bibitem{shandilya2011inferring}
+{\sc S.~G. Shandilya and M.~Timme}, {\em Inferring network topology from
+  complex dynamics}, New Journal of Physics, 13 (2011), p.~013004.
 
 \bibitem{sinclair2003mammal}
 {\sc A.~R. Sinclair, D.~Chitty, C.~I. Stefan, and C.~J. Krebs}, {\em Mammal
@@ -343,6 +482,11 @@
 {\sc D.~Stouffer, J.~Camacho, R.~Guimera, C.~Ng, and L.~Nunes~Amaral}, {\em
   Quantitative patterns in the structure of model and empirical food webs},
   Ecology, 86 (2005), pp.~1301--1311.
+
+\bibitem{teyssedre2014contrasting}
+{\sc A.~Teyss{\`e}dre and A.~Robert}, {\em Contrasting effects of habitat
+  reduction, conversion and alteration on neutral and non neutral biological
+  communities}, Oikos, 123 (2014), pp.~857--865.
 
 \bibitem{thebault2010stability}
 {\sc E.~Th{\'e}bault and C.~Fontaine}, {\em Stability of ecological communities
@@ -376,6 +520,18 @@
   and weighted connectance: the complexity-stability debate revisited},
   Theoretical Ecology,  (2016), pp.~1--10.
 
+\bibitem{warren2015islands}
+{\sc B.~H. Warren, D.~Simberloff, R.~E. Ricklefs, R.~Aguil{\'e}e, F.~L.
+  Condamine, D.~Gravel, H.~Morlon, N.~Mouquet, J.~Rosindell, J.~Casquet,
+  et~al.}, {\em Islands as model systems in ecology and evolution: prospects
+  fifty years after macarthur-wilson}, Ecology letters, 18 (2015),
+  pp.~200--217.
+
+\bibitem{west1997general}
+{\sc G.~B. West, J.~H. Brown, and B.~J. Enquist}, {\em A general model for the
+  origin of allometric scaling laws in biology}, Science, 276 (1997),
+  pp.~122--126.
+
 \bibitem{whittaker1965dominance}
 {\sc R.~H. Whittaker}, {\em Dominance and diversity in land plant communities
   numerical relations of species express the importance of competition in
@@ -393,5 +549,11 @@
 \bibitem{wilson1991methods}
 {\sc J.~B. Wilson}, {\em Methods for fitting dominance/diversity curves},
   Journal of Vegetation Science, 2 (1991), pp.~35--46.
+
+\bibitem{zartman2006habitat}
+{\sc C.~E. Zartman and H.~E. Nascimento}, {\em Are habitat-tracking
+  metacommunities dispersal limited? inferences from abundance-occupancy
+  patterns of epiphylls in amazonian forest fragments}, Biological
+  Conservation, 127 (2006), pp.~46--54.
 
 \end{thebibliography}

@@ -1,23 +1,13 @@
-\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 1
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 2
-\BOOKMARK [1][-]{section.2.2}{The interaction network}{chapter.2}% 3
-\BOOKMARK [2][-]{subsection.2.2.1}{The niche model}{section.2.2}% 4
-\BOOKMARK [2][-]{subsection.2.2.2}{Trophic constraints}{section.2.2}% 5
-\BOOKMARK [2][-]{subsection.2.2.3}{Link replacement}{section.2.2}% 6
-\BOOKMARK [1][-]{section.2.3}{Individual-based model}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.3.1}{Local rules}{section.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.3.2}{Model Parameters}{section.2.3}% 9
-\BOOKMARK [1][-]{section.2.4}{Modelling habitat loss}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.5}{Implementation}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.6}{Dynamics of the model}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.7}{Ecological metrics and analysis methods}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.7.1}{Biodiversity metrics}{section.2.7}% 14
-\BOOKMARK [3][-]{subsubsection.2.7.1.1}{Rank abundance distributions}{subsection.2.7.1}% 15
-\BOOKMARK [2][-]{subsection.2.7.2}{Stability metrics}{section.2.7}% 16
-\BOOKMARK [3][-]{subsubsection.2.7.2.1}{Invariability}{subsection.2.7.2}% 17
-\BOOKMARK [2][-]{subsection.2.7.3}{Spatial metrics}{section.2.7}% 18
-\BOOKMARK [2][-]{subsection.2.7.4}{Network metrics}{section.2.7}% 19
-\BOOKMARK [3][-]{subsubsection.2.7.4.1}{Qualitative network descriptors}{subsection.2.7.4}% 20
-\BOOKMARK [3][-]{subsubsection.2.7.4.2}{Quantitative network descriptors}{subsection.2.7.4}% 21
-\BOOKMARK [3][-]{subsubsection.2.7.4.3}{Interaction strength metrics}{subsection.2.7.4}% 22
-\BOOKMARK [0][-]{section*.10}{Bibliography}{}% 23
+\BOOKMARK [0][-]{chapter.3}{Habitat loss with high immigration}{}% 1
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 2
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 3
+\BOOKMARK [2][-]{subsection.3.2.1}{Simulation procedure}{section.3.2}% 4
+\BOOKMARK [2][-]{subsection.3.2.2}{Sampling and analysis}{section.3.2}% 5
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 6
+\BOOKMARK [2][-]{subsection.3.3.1}{Diversity}{section.3.3}% 7
+\BOOKMARK [2][-]{subsection.3.3.2}{Network properties}{section.3.3}% 8
+\BOOKMARK [2][-]{subsection.3.3.3}{Stability and spatial metrics}{section.3.3}% 9
+\BOOKMARK [2][-]{subsection.3.3.4}{Invariability}{section.3.3}% 10
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 12
+\BOOKMARK [0][-]{section*.2}{Bibliography}{}% 13

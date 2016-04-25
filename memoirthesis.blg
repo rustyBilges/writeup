@@ -7,63 +7,48 @@ Repeated entry---line 791 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1192 of file thesisbiblio.bib
- : @article{bossio2005soil
- :                        ,
-I'm skipping whatever remains of this entry
-Warning--string name "december" is undefined
---line 1284 of file thesisbiblio.bib
 Warning--entry type for "mcwilliams2015anim" isn't style-file defined
 --line 1437 of file thesisbiblio.bib
-Warning--entry type for "BC3" isn't style-file defined
---line 1455 of file thesisbiblio.bib
-Warning--I didn't find a database entry for "ceballos2015accelerated"
-Warning--I didn't find a database entry for "gibson2011sampling"
 Warning--I didn't find a database entry for "sole2006self"
-Warning--I didn't find a database entry for "lurgi2015"
-Warning--I didn't find a database entry for "newbold2015global"
-Warning--empty journal in ai2012immigration
-Warning--empty journal in condit2012thirty
-Warning--empty journal in tilman1994habitat
-You've used 112 entries,
+You've used 22 entries,
             2030 wiz_defined-function locations,
-            1139 strings with 25657 characters,
-and the built_in function-call counts, 48554 in all, are:
-= -- 4791
-> -- 2558
+            649 strings with 7940 characters,
+and the built_in function-call counts, 9688 in all, are:
+= -- 965
+> -- 489
 < -- 0
-+ -- 1025
-- -- 897
-* -- 3983
-:= -- 7425
-add.period$ -- 112
-call.type$ -- 112
-change.case$ -- 765
++ -- 198
+- -- 171
+* -- 792
+:= -- 1468
+add.period$ -- 22
+call.type$ -- 22
+change.case$ -- 150
 chr.to.int$ -- 0
-cite$ -- 115
-duplicate$ -- 2000
-empty$ -- 3051
-format.name$ -- 897
-if$ -- 10267
+cite$ -- 22
+duplicate$ -- 397
+empty$ -- 620
+format.name$ -- 171
+if$ -- 2058
 int.to.chr$ -- 0
-int.to.str$ -- 112
-missing$ -- 114
-newline$ -- 339
-num.names$ -- 222
-pop$ -- 623
+int.to.str$ -- 22
+missing$ -- 22
+newline$ -- 69
+num.names$ -- 43
+pop$ -- 120
 preamble$ -- 1
-purify$ -- 660
+purify$ -- 128
 quote$ -- 0
-skip$ -- 1928
+skip$ -- 386
 stack$ -- 0
-substring$ -- 3524
-swap$ -- 986
+substring$ -- 745
+swap$ -- 199
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 436
-warning$ -- 3
-while$ -- 500
-width$ -- 115
-write$ -- 993
-(There were 2 error messages)
+type$ -- 86
+warning$ -- 0
+while$ -- 100
+width$ -- 24
+write$ -- 198
+(There was 1 error message)

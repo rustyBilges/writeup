@@ -2,6 +2,7 @@
 %% Is the line still missing in NM diagram when printed out?
 %% Mention spatial stability? alpha,beta,gamma?
 %% Discuss neutrality!
+%% Adress network sampling more explcitly..(or next chapter? need to state how many iterations used..)
 
 \section{Introduction}
 \label{sec:methods_intro}
@@ -109,7 +110,7 @@ The second stage in network creation, having obtained a food web from the niche 
 	\label{fig:trophic_cartoon}
 \end{figure}
 
-The result of link replacement is a hybrid network that defines two types of interaction between species (although only one between any given pair). We can identify two functional groups in each of the first two trophic levels, based on the way species interact. In the first trophic level \emph{non-mutualistic plants} are basal species which do not have any mutualistic links. This group represents wind-dispersed plants which only have antagonistic interactions with the trophic level above. \emph{Mutualistic plants} are any basal species with at least one mutualistic link. This group are dispersed by species from the second trophic level via their mutualistic interactions and can no longer be wind dispersed. They may also be predated upon by herbivores, if they have such links. Similarly \emph{herbivores} are members of the second trophic level which only predate on basal species, whereas \emph{animal mutualists} are any species in the second trophic level with at least one mutualistic link. See figure \ref{fig:trophic_cartoon} for a visualisation of these functional groups. 
+The result of link replacement is a hybrid network that defines two types of interaction between species (although only one between any given pair). We can identify two functional groups in each of the first two trophic levels, based on the way species interact. In the first trophic level \emph{non-mutualistic plants} are basal species which do not have any mutualistic links. This group represents wind-dispersed plants which only have antagonistic interactions with the trophic level above. \emph{Mutualistic plants} are any basal species with at least one mutualistic link. This group are dispersed by species from the second trophic level via their mutualistic interactions and can no longer be wind dispersed. They may also be predated upon by herbivores, if they have such links. Similarly \emph{herbivores} are members of the second trophic level which only predate on basal species, whereas \emph{animal mutualists} are any species in the second trophic level with at least one mutualistic link. The top two trophic levels represent distinct functional groups, which we refer to as \emph{primary predators} and \emph{top predators}. See figure \ref{fig:trophic_cartoon} for a visualisation of these functional groups. 
 
 For most of the results presented we generated networks with eleven different MAI ratios in the range: $[0,0.1,0.2,...,1.0]$. Communities with MAI$=0.0$ contain no mutualism, whereas those with MAI$=1.0$ contain only mutualistic interactions between the first two trophic levels. This is in accordance with the previous study \cite{lurgi2015effects}, and allows us to look at how communities with different MAI ratios respond to habitat loss. 
 
@@ -279,13 +280,13 @@ D_{Sh} = -\Sigma_{i=1}^S r_i log( r_i),
 \label{eq:shan_div}
 \end{equation}
 %
-which is simply the Shannon entropy of species relative abundances. Therefore diversity, by this metric is maximal when all species have the same relative abundance, and approaches zero if one species out competes all others. There is no standard convention for base of the logarithm. Throughout this thesis we use the natural logarithm (base $e$) for all information theoretic measures. Normalising $D_Sh$ by the maximum diversity gives us the \textbf{Shannon evenness index}:
+which is simply the Shannon entropy of species relative abundances. Therefore diversity, by this metric is maximal when all species have the same relative abundance, and approaches zero if one species out competes all others. There is no standard convention for base of the logarithm. Throughout this thesis we use the natural logarithm (base $e$) for all information theoretic measures. Normalising $D_Sh$ by the maximum diversity gives us the \textbf{Shannon equitability index}:
 \begin{equation}
 E_{Sh} = \frac{D_{Sh}}{log(S)},
 \label{eq:shan_eq}
 \end{equation}
 %
-since the maximum diversity is equal to the logarithm of the number of species $S$. The metric is constrained between 0 and 1, and is maximal when all species have the same relative abundance. Both the Shannon metrics can be computed for a subsets of the community (for example a functional group) by using the relative abundance within the subset \eqref{eq:rel_abun}, and reducing $S$ accordingly. 
+since the maximum diversity is equal to the logarithm of the number of species $S$. The metric is constrained between 0 and 1, and is maximal when all species have the same relative abundance. Both the Shannon metrics can be computed for a subsets of the community (for example a functional group) by using the relative abundance within the subset \eqref{eq:rel_abun}, and reducing $S$ accordingly. Throughout the thesis we use only the Shannon equitability index because it controls for the number of species present, and therefore changes in this metric are not driven by changes in species richness that may be induced by HL. Hereafter \emph{we use the terms equitability and diversity interchangeably} to refer to the normalised metric given in \eqref{eq:shan_eq}.  
 %Richness, Simpsons, Shannon Entropy
 
 \subsubsection{Rank abundance distributions}
@@ -355,7 +356,7 @@ where $X_i$ is the abundance time-series vector of species $i$; $X_{tot}$ is the
 
 \subsection{Spatial metrics}
 \label{sec:def_spatial_metrics}
-%% INCLUDE HERE OR AS OWN SUBSECTION? (CHECK FIRST PARAGRAPH OF SECTION REFERS CORRECTLY)
+
 The spatially explicit nature of the IBM allows us to study the spatial structure of the communities. We use the spatial-autocorrelation metrics Moran's I and Geary's C to measure aggregation in species spatial distributions \cite{dale2014spatial, lurgi2015effects}. \textbf{Moran's I} is a measure of global correlation, and for a single species $s$ is given by:
 \begin{equation}
 MI_s = \frac{N}{\Sigma_{i=1}^N \Sigma_{j=1}^N w_{ij}}  \frac{\Sigma_{i=1}^N \Sigma_{j=1}^N w_{ij}(X_i - \bar{X})(X_j - \bar{X})}{\Sigma_{i=1}^N (X_i - \bar{X})^2},
@@ -450,8 +451,10 @@ where $H2_{max}$ and $H2_{min}$ are the extremes of the diversity values that ca
 
 
 \subsubsection{Interaction strength metrics}
+\label{sec:def_iss}
+A key feature of ecological communities, and a central theme of this thesis, is the strength of interactions between species. As with stability (section \ref{sec:def_stability_metrics}), there are numerous ways to define the strength on an interaction \cite{berlow2004interaction}. We have already seen that interaction frequency ($b_{ij}$) serves as one proxy for interaction strength. In the IBM we may expect that the frequency of an interaction will be largely determined by the abundances of the interacting species. If two species are very abundant then the individuals of these two species are more likely to encounter each other in space. However other factors may contribute. The distribution of species in space may affect how often they interact. For example two species may be abundant but highly aggregated in different regions of the landscape, and so are unable to interact. Factors such as competition and stochasticity may also influence interaction frequencies.   
 
-A key feature of ecological communities, and a central theme of this thesis, is the strength of interactions between species. As with stability (section \ref{sec:def_stability_metrics}), there are numerous ways to define the strength on an interaction \cite{berlow2004interaction}. We have already seen that interaction frequency ($b_{ij}$) serves as one proxy. In addition we define a metric $IS3$, which for the interaction between species $i$ and $j$ takes the value:
+In addition to frequency we define an interaction strength metric $IS3$, which for the interaction between species $i$ and $j$ takes the value:
 \begin{equation}
 IS3_{ij} = \frac{b_{ij}}{N_iN_j},
 \label{eq:is3}

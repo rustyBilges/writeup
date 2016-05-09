@@ -1,5 +1,7 @@
 
 % TODO: get material from first year report 
+%% TODO: furnish discussions and introduction throughout thesis with new citations from intro..
+
 
 \section{Motivation}
 \label{sec:intro_motivation}
@@ -17,12 +19,72 @@ They assert that this definition contains conditions necessary, but perhaps not 
 
 We now introduce key areas of theory??
   
+\section{Literature review for immigration}
+(From chapter 5)
+Possibly include here a summary of recent work on immigration, including IBT and meta-community theory. (Alternative is that this goes in introductory chapter.) 
+
+IBT -> species area relationship (SAR), does high immmigration reduce this effect. \cite{warren2015islands} - Search for immigration.
+
+\cite{klausmeier2001habitat} Many studies or dispersal/immigration take a metacommunity appraoach. In general higher dispersal between communities is found to promote better species richness, and lower variation between communities. However we are interested in...
+
+\cite{loreau1999immigration} shows, using a metapopulation model, that competitive plant communities benefit from high immigration. In these communities competition for space would lead to the exintction of all but one species. Therefore some immigration is required for diversity to exist. (Similiar to our case of zero IR. Is there evidence for spatial competition in our simualtions?) SOme mterics chage with IR some do not (check whihc ones, do they agree with their experiment, and ours?)	They have species specific immigration rates, and an intensity parameter (otherewise same as ours with effective rate proportional to number of vacant sites...nice). Our simple case is simpler than their simple case 1 (IBT -size of regional pool and degree of isolation). They call the immigration a `propagule rain'.
+
+Their model displays classical competitive exclusion: "This result is different from that usually found in
+metapopulation competition models (Levins and Culver
+1971; Horn and MacArthur 1972; Slatkin 1974; Hastings
+1980; Nee and May 1992; Tilman 1994). These models
+implicitly or explicitly allow interference competition be-
+tween species within sites, and coexistence is obtained
+when there is a trade-off between competitive superiority
+and colonization ability. Because we do not consider in-
+terference, there is no possibility for such a trade-off in
+our model and, hence, coexistence in a closed community
+is impossible. As mentioned earlier, we deliberately ignore
+trade-offs associated with interference competition be-
+cause we wish to explore the effects of immigration from
+an external source on their own."
+
+They never get stochastic extinctions because thier model is continuous, therefore use an extinction threshold.
+
+"Thus, there is always stable coexistence in a community
+with a propagule rain." (Interesting dicussion at end : where does the propagule rain come from?)
+
+As immigration goes to zero they find that most species have a density close to zero (therefore likely extinct) and that dominance is determined by  basic reproductive rate ($r=c/m$). Also space is mre fully occupied as IR increases. (Figure 1 nice plot of expeced number of species versus immigration intensity). Interesting change in dominance relationships (relative abundances) with IR. 
+
+Experimental results by Mouquet and Loreau \cite{mouquet2004immigration} sugesst that immigration has a positive impact on plant community diversity. (Maniplulation of seed rain.) However  it also shows that certain community-level properties do not depend on IR e.g. total biomass (check others). Also local competition effects..\footnote{Nice structure here - theoretical results, follwed up a few years later be experiemntal study. Talk about this somewhere.}
+
+\cite{foster2004propagule} importance of the propagule pool in determining local diversity, and shifting limitations hypothesis (SLH)
+\cite{cadotte2006dispersal} dispersal as a community structuring mechanism, immigration increasing locxal diversity, effect difers between plants and animals, intermidiate dispersla rates best?
+
+\cite{zartman2006habitat} Importance of dispersal in maintaining diversity in fragmented habitat patches (small tropical forest fragments). Dispersal limitation versus edges effects. Must be other REFS for this as well?
+
+\cite{condit2012thirty} Obviously proponenets of neutral theory, but suggests the importance of immigration, and measures immigration rate close to ours..
+
+\cite{drury2015immigration} mathematical treatment of 3D predtion model, effect of immigration rates. 
+
+\cite{puettker2011immigration} "Although previous studies as far as we are aware did not investigate the effects of landscape context on immigration rates, immigration has consistently been shown to increase population size in patches both in field studies and simulation models [44]–[47]."  Importance of landscape context.
+
+\cite{korfanta2012long} Changes in demographic rates due to HFrag, in addition to population sizes and extinctions.
+
+\cite{haddad2015habitat} 70per cent of remaining forest within 1km of forest edges. Fragmentation effects. Smallest and most isolated patches most vulnerable. Reduce biodiversity by 13 to 75 per cent (metrics?) and reduce biomass, affecting ecosystem functions. 
+
+\cite{teyssedre2014contrasting} Testing different HL scenarios on neutral and non-neutral communites. Habitat alteration reduces avergae level of specialisation - `functional homogenisation'.
+
+\cite{ai2012immigration} Communities are more repeatable (similar between repeats) for high immigration rates. Use IBM model. Immigration from regional species pool. Zero sum netural theory dynamics. 
+
+\cite{hanski2013species} SAR updated to account for habitat fragmentation i.e. habitat loss that is not contgiuous. Veyr relevant for discussion somewhere.
+
+\cite{freckleton2009measuring} spatial competition.
+
+\cite{eveleigh2007fluctuations} food web plasticity, stabilising and predictable.
+  
+  
 \section{Community ecology}
 \label{sec:intro_community_ecology}
 
 An ecological community may be broadly defined as a collection of species that coexist in time and space. The study of these collections, \emph{community ecology}, attempts to understand their structure, dynamics and function. The field is too large to give a coherent overview. In this section we introduce some keys themes from community ecology that are relevant to the current project. Key to community ecology is the understanding that coexisting species interact with one another. These interactions generate a \emph{tangled} web of inter-dependence between species that has been discussed at least since Darwin \cite{darwin2009origin} (see quote in front matter), and probably long before. This inter-dependence between species can make communities sensitive to perturbation - if a species, upon which another species is strongly dependent, goes extinct it is likely that the dependant species will be lost also. These \emph{co-extinctions} and other knock-on effects, such as \emph{trophic cascades}, have been empirically observed \cite{knight2005trophic,ripple2012trophic}, giving evidence to the importance of species interactions in shaping communities.   However the tangled web may also generate communities which are remarkably robust to perturbation, and which persist through time despite varying environmental conditions. The story of community ecology has been one of trying to understand the general mechanisms and factors that shape communities, generating the observed patterns of biodiversity. This task is far from complete, and urgently required given the crisis facing life on this planet.
 
-Mention metacommunities? - and IBT (referred to here from conclusion in chapter 3)
+Mention metacommunities? - and IBT (referred to here from conclusion in chapter 3) And summary on persistence - put more refs here on stabilising role of dispersal..
 
 (Mention language of community ecology - versus e.g. network sciecne. Robustness, modularity - see next section.)
 
@@ -54,6 +116,8 @@ In nature all the types of interaction mentioned above have the potential to coe
 
 \subsection{The role of structure}
 \label{sec:intro_role_of_sturcture}
+
+SEE DISCUSSION ON STABILITY IN (NOW DEPRICATED) CHAPTER 5!
 
 Structure in this context refers to the topology of a community's network of interactions. The question we ask, as have many before, is to what extent are patterns observed in the community dependent on this structure? These patterns may be temporal (e.g. population dynamics) or spatial or may relate to biodiversity properties such as the distribution of biomass across species. This is a key goal of community ecology. But in attempting to answer this question (and, in fact, many of those posed in this introduction/thesis) there is often a gulf between theory and empirical observation, which is largely due to relative easy and frequency with which mathematical models have been applied compared with the relative difficulty of designing and carrying out experiments to answer such questions. To give a simple, but well known, example - \emph{population dynamics} models such as the Lotka-Volterra model use ordinary differential equations (ODE) to describe how species abundances change over time. The theoretical field itself is well advanced and the properties of such models have been studied as mathematical objects in their own right. Yet this has almost always been done with the belief that these models are ecologically meaningful and useful. Many would argue that this field in particular is divorced from reality because it has continued to develop these models with disregard for empirical validation (REF:rebutatlpaper). One consensus reached from this type of modelling is that predator-prey systems may exhibit stable oscillatory dynamics in which there is a phase lag between the prey and predator populations. Eventually this effect was able to be demonstrated in laboratory experiments conducted by Luckinbill [REF], although his systems required constant inflow of individuals from an external source for the oscillations to persist. Although the laboratory demonstration made it possible that such a mechanism exists in nature it has not be conclusively demonstrated [REF]. The best known example of possibly predator-prey cycles is the hare and lynx dataset from the Hudson Bay Company. However it has not been demonstrated conclusively that this represents a genuine predator-prey dynamic. For example it has been demonstrated that hare population may oscillate in the absence of predation [REF], lending credibility to the hypothesis that the hare oscillations at least may be intrinsic (self-governed)\cite{sinclair2003mammal}, and that the lynx population oscillate passively in response. An alternative hypothesis involves a third species, implicit in the data - the hunters that caught the animals. This hypothesis states that the hunter preferred hunting the larger and lynx, but would switch to hare when they were very abundant, thus leading to oscillations in the number of lynx pelts that are synchronised with the hare oscillations, but phase shifted. Finally another study concludes that hare eat lynx based on the phase relationship between the two populations at certain points in the time series\footnote{We will actually return to this in the final chapter. Phase difference appears to be very relevant, and may shift of be in apparently the wrong order due to interactions with other species.}. This is not an altogether series conclusion, rather it serves to remind us that the wrong results can be obtained by an apparently sensible analysis, demonstrates that extreme care must be taken , especially given the propensity for human confirmation-bias [REF] and the tendency for large bodies of theory to be proven incorrect or incomplete.     
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  24 APR 2016 17:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  28 APR 2016 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -293,90 +293,58 @@ Overfull \hbox (6.13179pt too wide) in paragraph at lines 30--30
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<../figures/clean_analysis/random/heatmap1.png, id=8, 1589.94pt x 1300.86pt>
-File: ../figures/clean_analysis/random/heatmap1.png Graphic file (type png)
+<../figures/clean_analysis/heatmap_ttest.png, id=8, 1589.94pt x 867.24pt>
+File: ../figures/clean_analysis/heatmap_ttest.png Graphic file (type png)
 
-<use ../figures/clean_analysis/random/heatmap1.png>
-Package pdftex.def Info: ../figures/clean_analysis/random/heatmap1.png used on 
-input line 35.
-(pdftex.def)             Requested size: 390.0pt x 319.0807pt.
+<use ../figures/clean_analysis/heatmap_ttest.png>
+Package pdftex.def Info: ../figures/clean_analysis/heatmap_ttest.png used on in
+put line 38.
+(pdftex.def)             Requested size: 390.0pt x 212.72047pt.
 
-<../figures/clean_analysis/contiguous/heatmap1.png, id=10, 1589.94pt x 1300.86p
-t>
-File: ../figures/clean_analysis/contiguous/heatmap1.png Graphic file (type png)
 
- <use ../figures/clean_analysis/contiguous/heatmap1.png>
-Package pdftex.def Info: ../figures/clean_analysis/contiguous/heatmap1.png used
- on input line 40.
-(pdftex.def)             Requested size: 390.0pt x 319.0807pt.
- [2 <../figures/clean_analysis/random/heatmap1.png>] [3 <../figures/clean_analy
-sis/contiguous/heatmap1.png>]
-Overfull \hbox (7.73778pt too wide) in paragraph at lines 46--46
-[]\OT1/cmr/bx/n/17.28 Interaction strengths, in-ter-ac-tion fre-quency,
- []
+LaTeX Warning: Reference `eq:shan_eq' on page 2 undefined on input line 43.
 
-<../figures/clean_analysis/random/heatmap3.png, id=21, 1589.94pt x 1300.86pt>
-File: ../figures/clean_analysis/random/heatmap3.png Graphic file (type png)
 
-<use ../figures/clean_analysis/random/heatmap3.png>
-Package pdftex.def Info: ../figures/clean_analysis/random/heatmap3.png used on 
-input line 49.
-(pdftex.def)             Requested size: 390.0pt x 319.0807pt.
+LaTeX Warning: Reference `chap:' on page 2 undefined on input line 43.
 
-<../figures/clean_analysis/contiguous/heatmap3.png, id=22, 1589.94pt x 1300.86p
-t>
-File: ../figures/clean_analysis/contiguous/heatmap3.png Graphic file (type png)
+[2 <../figures/clean_analysis/heatmap_ttest.png>]
 
- <use ../figures/clean_analysis/contiguous/heatmap3.png>
-Package pdftex.def Info: ../figures/clean_analysis/contiguous/heatmap3.png used
- on input line 54.
-(pdftex.def)             Requested size: 390.0pt x 319.0807pt.
- [4
+LaTeX Warning: Reference `sec:convergence' on page 3 undefined on input line 45
+.
 
- <../figures/clean_analysis/random/heatmap3.png>] [5 <../figures/clean_analysis
-/contiguous/heatmap3.png>]
-<../figures/clean_analysis/random/heatmap_inv.png, id=31, 1589.94pt x 1300.86pt
->
-File: ../figures/clean_analysis/random/heatmap_inv.png Graphic file (type png)
- <use ../figures/clean_analysis/random/heatmap_inv.png>
-Package pdftex.def Info: ../figures/clean_analysis/random/heatmap_inv.png used 
-on input line 64.
-(pdftex.def)             Requested size: 390.0pt x 319.0807pt.
 
-<../figures/clean_analysis/contiguous/heatmap_inv.png, id=32, 1589.94pt x 1300.
-86pt>
-File: ../figures/clean_analysis/contiguous/heatmap_inv.png Graphic file (type p
-ng)
- <use ../figures/clean_analysis/contiguous/heatmap_inv.png>
-Package pdftex.def Info: ../figures/clean_analysis/contiguous/heatmap_inv.png u
-sed on input line 69.
-(pdftex.def)             Requested size: 390.0pt x 319.0807pt.
+LaTeX Warning: Reference `chap:habitat_loss_high_immigration' on page 3 undefin
+ed on input line 45.
 
 
 Package caption Warning: Unused \captionsetup[sub] on input line 23.
 See the caption package documentation for explanation.
 
-[6
+[3] (./development.aux)
 
- <../figures/clean_analysis/random/heatmap_inv.png>] [7 <../figures/clean_analy
-sis/contiguous/heatmap_inv.png>] (./development.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4280 strings out of 493109
- 65451 string characters out of 6135010
- 125749 words of memory out of 5000000
- 7689 multiletter control sequences out of 15000+600000
- 8088 words of font info for 31 fonts, out of 8000000 for 9000
+ 4294 strings out of 493109
+ 64755 string characters out of 6135010
+ 128767 words of memory out of 5000000
+ 7698 multiletter control sequences out of 15000+600000
+ 14038 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,38p,264b,330s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on development.pdf (7 pages, 1104572 bytes).
+ 38i,6n,38p,1524b,367s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on development.pdf (3 pages, 231994 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

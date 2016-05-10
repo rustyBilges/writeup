@@ -3,6 +3,7 @@
 
 %% REMBER C4 TEMP! RADS.
 
+%% TODO: intro to initial results: do we refer forwards to dependence on IR?
 %% TODO: comment on random but not systematic error - related to Alan's comment in email.
 %TODO: nonte on veg predators - fixed  here
 %TODO: link up these section references. (and add recent papers into .bib file) \\
@@ -42,7 +43,7 @@
 %	\item Snapshots of system versus averaging of metrics over a number of iterations (seems a bit late in the thesis to realise that this is a problem in chapter 4!) - averaging over replicates can justify this to some extent (25 in previous chapters, 100 here).
 %	\item It may be that this model is well approximated by GLV. If so it would make sense to discuss the results with reference to that? Should try to fit?
 	
-\cite{ripple2012trophic}
+%\cite{ripple2012trophic}
 
 %% RESUCE EFFECT:
 %%THIS FOR LATER: (WHERE?) It is important to note that even at low IR species which go extinct during the simulation may be rescued. Therefore it is interesting to ask how much of this persistence in higher trophic levels is due immigration rescue effects. These could lead to a situation with a number of very rare species 'bubbling along' close to zero (becoming extinct and then being rescued), with a small core of more abundant species meaningfully engaged in interaction dynamics and demographic processes\footnote{If this is the case it leads intuitively to the concept of 'viable' species, possibly more useful here than 'non-extinct'.}.
@@ -52,13 +53,13 @@
 
 In chapter \ref{chap:habitat_loss_high_immigration} we discovered that the immigration mechanism provides a \emph{rescue effect} for all species, preventing extinctions even at high levels of habitat loss (HL$=90\%$). This allowed us to study community responses to HL in the absence of extinctions. However in nature it is common that HL does lead to the local loss of species \cite{foley2005global}. Therefore we are motivated to reduce the immigration rate (IR), weakening the rescue effect, to study communities in which HL results in extinctions. In chapter \ref{chap:stress_testing} we found that communities at zero IR - \emph{closed communities} - displayed many extinctions, even in pristine landscape. We concluded that some immigration is required for the IBM to produce persistent and diverse communities. Therefore in this chapter we study the response of communities to HL at IRs between zero and the \emph{default value} ($IR=0.005$). We expect that varying the immigration rate will cause community responses to HL to differ from those observed in chapter \ref{chap:habitat_loss_high_immigration}. In particular we are interested to study the loss of species due to HL.
 
-In the previous analysis we have demonstrated that immigration is a key determinant of the dynamics and structure of simulated communities. In chapter \ref{chap:stress_testing} we saw that high IR reduces both the temporal variability and the determinism of population dynamics. In chapter \ref{chap:habitat_loss_high_immigration} we demonstrated that immigration acts to increase the evenness in the distribution of species abundances and that this can affect network properties, for example by making interaction frequencies for even. In particular we saw that the \emph{dependence of a community on immigration} (measured by the relative contribution of immigration to total births) could account for the different structural responses of communities under the two HL scenarios. The contiguous HL scenario did not produce significant changes in many of the metrics analysed, and it was argued that this was due to the constant dependence of communities on immigration across the HL gradient. In contrast random HL increased community dependence on immigration, and produced significant changes in most of the metrics analysed. In this chapter we employ the same two HL algorithms (section \ref{sec:model_HL}), \emph{random} and \emph{contiguous}, at a range of different IRs. We anticipate that there may exist an IR at which HL \emph{reduces community dependence on immigration}. Reduced dependence on immigration is not an effect we have seen previously. In such a case we hypothesise that communities will become less even, and that there will be corresponding changes in network properties. It is most likely that such an effect will be found in the contiguous scenario, because intra- and inter-specific interactions remain strong under contiguous HL. This observation was discussed in detail in section \ref{sec:res_synthesis}, but the main arguments are summarised below.
+In the previous analysis we have demonstrated that immigration is a key determinant of the dynamics and structure of simulated communities. In chapter \ref{chap:stress_testing} we saw that high IR reduces both the temporal variability and the determinism of population dynamics. In chapter \ref{chap:habitat_loss_high_immigration} we demonstrated that immigration acts to increase the evenness in the distribution of species abundances and that this can affect network properties, for example by making interaction frequencies for even. In particular we saw that the \emph{dependence of a community on immigration} (measured by the relative contribution of immigration to total births) could account for the different structural responses of communities under the two HL scenarios. The contiguous HL scenario did not produce significant changes in many of the metrics analysed, and it was argued that this was due to the constant dependence of communities on immigration across the HL gradient. In contrast random HL increased community dependence on immigration, and produced significant changes in most of the metrics analysed. In this chapter we employ the same two HL algorithms (section \ref{sec:model_HL}), \emph{random} and \emph{contiguous}, at a range of different IRs. We anticipate that reduced IR may effectively reduce community dependence on immigration in some cases. In such a cases we hypothesise that HL will make communities less even, and that there will be corresponding changes in network properties. It is most likely that such an effect will be found in the contiguous scenario, because intra- and inter-specific interactions remain strong under contiguous HL. This observation was discussed in detail in section \ref{sec:res_synthesis}, but the main arguments are summarised below.
 
-Species interactions have proven to be another key driver of population dynamics and community structure, as expected. In chapter \ref{chap:habitat_loss_high_immigration} strong inter-specific interactions, as measured by IS, were shown to produce high temporal variability. In chapter \ref{chap:stress_testing} it was demonstrated that this variability was due to deterministic oscillations, characteristic of predator-prey interactions. We have also found that the two HL scenarios have different effects on species interactions due to changes in the mobility of individuals (figure \ref{fig:diffusion_example}). Random HL presents a barrier to motion making both inter- and intra-specific interactions less likely. This accounts for the increased dependence on immigration in the random scenario, since sexual and mutualistic reproduction is hindered by the destroyed cells, which act as physical barriers and make it difficult for individuals to find a mate. Contiguous HL makes interactions more likely because all individuals are contained within a smaller region of space and maintain the same dispersal ability. Therefore in the contiguous scenario at low IR we may expect to see a reduced dependence on immigration, and increase in the effects associated with strong species interactions. Conversely we may expect low IR to weaken the effects of random HL, associated with increased dependence on immigration, that were observed at the default IR.   
+Species interactions have proven to be another key driver of population dynamics and community structure, as expected. In chapter \ref{chap:habitat_loss_high_immigration} strong inter-specific interactions, as measured by IS, were shown to produce high temporal variability. In chapter \ref{chap:stress_testing} it was demonstrated that this variability was due to deterministic oscillations, characteristic of predator-prey interactions. We have also found that the two HL scenarios have different effects on species interactions due to changes in the mobility of individuals (figure \ref{fig:diffusion_example}). Random HL presents a barrier to motion making both inter- and intra-specific interactions less likely. This accounts for the increased dependence on immigration in the random scenario, since sexual and mutualistic reproduction is hindered by the destroyed cells, which act as physical barriers and make it difficult for individuals to find a mate. Contiguous HL makes interactions more likely because all individuals are contained within a smaller region of space and maintain the same dispersal ability. Therefore in the contiguous scenario at low IR we may expect to see a reduced dependence on immigration, and increase in the effects associated with strong species interactions. Conversely we may expect low IR to weaken the effects of random HL, which were associated with increased dependence on immigration at the default IR value.   
 
-In general we anticipate that reducing IR will strengthen the effects associated with species interactions, and weaken those associated with immigration. In particular we expect communities to become less even and more temporally variable as IR is reduced. There may also be an increase in \emph{ecosystem synchrony} as the stochastic component of the dynamics is reduced compared to the deterministic component. Such effects should be visible at any given HL value under both scenarios. Finally we expect that at lower IRs, HL will induce species extinctions under both scenarios. In section \ref{sec:exp_method} we discuss alternative ways to define extinction in the current model.
+In general we anticipate that reducing IR will strengthen the effects associated with species interactions, and weaken those associated with immigration. In particular we expect communities to become less even and more temporally variable as IR is reduced. There may also be an increase in \emph{ecosystem synchrony} as the stochastic component of the dynamics is reduced relative to the deterministic component. Such effects should be visible at any given HL value under both scenarios. Finally we expect that at lower IRs both HL scenarios will generate species extinctions. 
 
-AFTER PREDICTIONS! - OUTLINE OF CHAPTER...
+In section \ref{sec:exp_method} we detail the experimental methodology for the chapter, including an experiment to determine how to sample from the simulation output (section \ref{sec:estimators}) given the increased variability expected from reduced IR (see chapter \ref{chap:stress_testing}). Section \ref{sec:init_res} presents an initial analysis of certain key metrics over a slice of the IBM parameter space defined by varying IR and HL. Sections \ref{sec:biv_fixIR} and \ref{sec:biv_fixHL} develop the initial analysis further by conducting bivariate analyses at selected IR and HL values respectively.  We summarise the main findings of the chapter in section \ref{sec:vir_discussion}, before concluding in section \ref{sec:vir_conclusion} with an ecological interpretation of the perspectives gained from our simulations of the IBM.
 
 %It may be possible to detect the stabilising role of immigration explicitly. That is, at a given HL value, IS may be constant as IR is reduced, but the dynamics becomes more variable.
 
@@ -74,24 +75,22 @@ AFTER PREDICTIONS! - OUTLINE OF CHAPTER...
 \section{Experimental approach}
 \label{sec:exp_method}
 
-As in chapter \ref{chap:habitat_loss_high_immigration} we run two ensembles of simulations, one for random and one for contiguous HL. The value of HL  is vaired between $0\%$ and $90\%$ in steps of $10\%$, as before. At each value of HL we run replicates at 10 different immigration rates: IR$ = 1 \times 10^{-4},2 \times 10^{-4},3 \times 10^{-4},4 \times 10^{-4},5 \times 10^{-4},1 \times 10^{-3},2 \times 10^{-3},3 \times 10^{-3},4 \times 10^{-3},5 \times 10^{-3}$. Therefore each ensemble explores a two-dimensional slice of the parameter space, defined by the axes HL and IR. This same region of parameter space was visualised in figure \ref{fig:nssp_ir_v_hl} during the stationarity testing. The inclusion of variable IR increases the number of required simulations by a factor of ten, compared to the simulation ensemble of chapter \ref{chap:habitat_loss_high_immigration}. To reduce the computational cost we make two savings. Simulations are only run for three MAI ratios ($0.0,0.5,1.0$) instead of eleven, giving the full range between antagonism and mutualism but with lower resolution. Additionally we restrict the number of metrics that are calculated during each simulation. The spatial metrics in particular are computationally expensive. Therefore all of the metrics defined in section \ref{sec:def_spatial_metrics}, which characterise spatial aggregation and variability, are discarded. This speeds up the simulation run times by about a factor of five, but means that we cannot characterise spatial patterns without \emph{post-hoc} analysis.
+As in chapter \ref{chap:habitat_loss_high_immigration} we run two ensembles of simulations, one for random and one for contiguous HL. The value of HL  is vaired between $0\%$ and $90\%$ in steps of $10\%$, as before. At each value of HL we run replicates at 10 different immigration rates: IR$ = 1 \times 10^{-4},2 \times 10^{-4},3 \times 10^{-4},4 \times 10^{-4},5 \times 10^{-4},1 \times 10^{-3},2 \times 10^{-3},3 \times 10^{-3},4 \times 10^{-3},5 \times 10^{-3}$. Therefore each ensemble explores a two-dimensional slice of the parameter space, defined by the axes HL and IR. This same region of parameter space was visualised in figure \ref{fig:nssp_ir_v_hl} during the stationarity testing. The inclusion of variable IR increases the number of required simulations by a factor of ten, compared to the simulation ensemble of chapter \ref{chap:habitat_loss_high_immigration}. To reduce the computational cost we make two savings. Simulations are only run for three MAI ratios ($0.0,0.5,1.0$) instead of eleven, giving the full range between antagonism and mutualism but with lower resolution. Additionally we restrict the number of metrics that are calculated during each simulation. The spatial metrics in particular are computationally expensive. Therefore all of the metrics defined in section \ref{sec:def_spatial_metrics}, which characterise spatial aggregation and variability, are not calculated. This speeds up the simulation run times by about a factor of five, but means that we cannot characterise spatial patterns without \emph{post-hoc} analysis.
 
-In section \ref{sec:reliability} it was shown that the increased temporal variability resulting from reduced IR can make results more sensitive to sampling procedure. It may be desirable to run the simulations for an increased number of time steps, allowing for longer samples from which to calculate results. However it was decided that this is an unnecessary computational expense. The regression analysis of estimator quality suggested that a sample length of 4000 characterises species abundances with good accuracy ($E(R^2) > 0.9$) in pristine landscape at low IR ($1 \times 10^{-4}$). Therefore all simulations in this chapter were run for 5000 time steps, with the first 1000 time steps discarded before analysis (as in chapters \ref{chap:habitat_loss_high_immigration}, \ref{chap:stress_testing}). In the initial analysis in section \ref{sec:init_res} we further address the issue of sampling by statistically comparing results obtained using two different sampling methods. Also the number of replicate simulations is increased from 25 (use in chapter \ref{chap:habitat_loss_high_immigration}) to 50 to account for the increased variability. Therefore each ensemble contains $15,000$ ($= 50 \times 10 \times 10 \times 3$) simulations. As previously these were run on the Blue Crystal cluster \cite{BC3}.
+In section \ref{sec:reliability} it was shown that the increased temporal variability resulting from reduced IR can make results more sensitive to the sampling procedure. It may be desirable to run the simulations for an increased number of time steps, allowing for longer samples from which to calculate results. However it was decided that this is an unnecessary computational expense. The regression analysis of estimator quality suggested that a sample length of 4000 characterises species abundances with reasonable accuracy ($E(R^2) > 0.9$) in pristine landscape at low IR ($1 \times 10^{-4}$). Therefore all simulations in this chapter were run for 5000 time steps, with the first 1000 time steps discarded before analysis (as in chapters \ref{chap:habitat_loss_high_immigration}, \ref{chap:stress_testing}). In section \ref{sec:init_res}, before presenting the main results, we further address the issue of sampling procedure by statistically comparing results obtained using two different sampling methods. 
 
-We have seen that immigration provides a rescue effect that is common to all species. A species may be extinct at some time in the simulation, but later recover due to immigration. Especially at low IR we expect that some species abundances will hover close to zero. We make the assertion that such species are effectively locally extinct because they fail to maintain a viable local population and are only sustained by immigration. Indeed in empirical studies sufficiently rare species are unlikely to be detected and therefore do not contribute to estimates of species richness. 
-Therefore our previous definition of extinction, as the absence of any individuals belonging to a given species, proves problematic. Snapshot measurements of species on the border of extinction will be particularly sensitive to the time at which the measurement is taken. Measurements of abundance made by averaging over a number of time steps will result in small but non-zero population sizes for borderline species. Requiring that a species population size is at zero will therefore mean we again detect no extinctions. In the initial analysis (section \ref{sec:init_res}) we set an \emph{arbitrary threshold} of three individuals, defining any species with population sizes smaller than this as extinct. In subsequent analysis\footnote{Where?! And what exactly do we do?!} we revisit this definition of extinction with more rigour. 
+In this chapter the number of replicate simulations is increased from 25 (used in chapter \ref{chap:habitat_loss_high_immigration}) to 50. The use of a higher number of replicates reflects the previous observation of increased variability, and therefore a larger source of random error in the results. With 50 replicates at every value of HL, IR and MAI ratio, each ensemble contains $15,000$ ($= 50 \times 10 \times 10 \times 3$) simulations. Each replicate uses a distinct interaction network generated using the same procedure as in chapter \ref{chap:habitat_loss_high_immigration}, that is a niche model with trophic constraints and link replacement to introduce mutualisms (details in section \ref{sec:interaction_network}). The only modification is that here links between top-predators and basal species are removed from the network, so that top-predators only feed on other animal species. On average such links represented less than five percent of the total links in a network (calculated from the ensemble of simulations used in chapter \ref{chap:habitat_loss_high_immigration}). Therefore we not expect a qualitative change in the main findings presented in chapters \ref{chap:habitat_loss_high_immigration} and \ref{chap:stress_testing}. As previously all simulations were run on the Blue Crystal cluster \cite{BC3}.
 
-NOTE: on vegetarian predators! $<5\%$ of links on average, so should not make too much difference\footnote{Need to recalculate proportions.}.
-ALSO: will be used RADs, or just Shannon? Why?
+Given that we are interested in species extinctions induced by HL, in this chapter we redefine the definition of a local \emph{extinction}. Previously a species was said to be extinct if there were no individuals belonging to that species in the landscape at the end of the simulation. However we have seen that immigration provides a \emph{rescue effect} that is common to all species. A species may go extinct at some time in the simulation, but later recover due to immigration. For example a species may be extinct for most of the simulation and then an immigrant belonging to this species is created on the final time step. The previous definition of extinction would not count such a species as extinct. Especially at low IR we expect many species to have abundances that hover close to zero. We make the assertion that such species are effectively locally extinct because they fail to maintain a viable local population and are only sustained by immigration. Indeed, in an empirical study sufficiently rare species are unlikely to be detected and therefore do not contribute to estimates of species richness. Therefore it is felt that the previous definition of species extinction does not correctly characterise the state of the system. We propose a new definition of extinction as follows. A species  is declared extinct if its population size (or average population size if sampling over a number of time steps) is lower than a specified \emph{threshold value}. In section \ref{sec:init_res} we set an \emph{arbitrary threshold} of three individuals. Subsequently in section \ref{sec:extinction} we revisit this definition of extinction and the choice of the threshold value.
+
+%Therefore our previous definition of extinction, as the absence of any individuals belonging to a given species, proves problematic. Snapshot measurements of species on the border of extinction will be particularly sensitive to the time at which the measurement is taken. Measurements of abundance made by averaging over a number of time steps will result in small but non-zero population sizes for borderline species. Requiring that a species population size is at zero will therefore mean we again detect no extinctions. In the initial analysis (section
+
+%NOTE: on vegetarian predators! $<5\%$ of links on average, so should not make too much difference\footnote{Need to recalculate proportions.}.
+%ALSO: will be used RADs, or just Shannon? Why?
 
 %From previous chapter we know that need long term averages. Problem: network metrics still only calculated over 200 iterations. Do a comparison of some results 200 vs 4000 iterations?
 
-\section{Initial analysis}
-\label{sec:init_res}
-
-In this section we provide an overview of the results for both the random and contiguous scenarios, over the region of parameter space explored. Results are presented as heat-maps over parameter space. Each pixel corresponds to a unique pair of HL and IR values, with the temperature (colour) given by the corresponding value of the metric in question. In this way it is possible to gain a qualitative impression of how the various metrics respond as HL and IR are varied. We begin in section \ref{sec:estimators} with a comparison of results obtained using two different sampling methods. In sections \ref{sec:vir_diversity} and \ref{sec:vir_variability} we then provide results for selected metrics associated with diversity, and variability respectively. 
-
-\subsection{Estimator comparison}
+\subsection{Sampling procedure}
 \label{sec:estimators}
 %% This figure produce by:(uni)/MyFiles/cm1788/Documents/IM_vs_HL_heatmap/clean_results/random/plot_pval.py
 \begin{figure}
@@ -100,11 +99,18 @@ In this section we provide an overview of the results for both the random and co
 	\label{fig:ttest}
 \end{figure}
 
-The \emph{Shannon equitability} metric (equation \eqref{eq:shan_eq}) is calculated for all simulations using two different sampling methods. The first method uses snapshot sampling (as in chapter \ref{chap:}) i.e. species abundances are measured on the last time step of the simulation. The second method takes the mean species abundance over the final 4000 time steps of the simulation. Results obtained using the two sampling methods are referred to as \emph{snapshot} and \emph{averaged}, correspondingly. We compare the results obtained using a \emph{two-sided t-test}, which is implemented in the \emph{Python} package \emph{scipy}. The test is used to compare two datasets of independent samples, testing the null hypothesis that the expected value of the two datasets are equal. If the \emph{p-value} of the test is smaller than the confidence threshold then there is sufficient evidence to reject the null hypothesis and conclude that the means of the two datasets are significantly different. For each test we are comparing the \emph{snapshot} and \emph{averaged} equitability results, calculated from the 50 replicate simulations at a given HL and IR value. If the test is significant then we conclude that the two sampling methods give significantly different results in calculation of the average Shannon equitability at that value of HL and IR. We conduct tests for all HL and IR values, and all three MAI ratios, under random and contiguous HL. The \emph{p-values} of these tests are depicted in figure \ref{fig:ttest}.  
+The \emph{Shannon equitability} metric (equation \eqref{eq:shan_eq}) is calculated for all simulations using two different sampling methods. The first method uses snapshot sampling (as in chapter \ref{chap:}), i.e. species abundances are measured on the last time step of the simulation. The second method takes the mean species abundance over the final 4000 time steps of the simulation. Results obtained using the two sampling methods are referred to as \emph{snapshot} and \emph{averaged}, correspondingly. We compare the results obtained using a \emph{two-sided t-test}, which is implemented in the \emph{Python} package \emph{scipy}. The test is used to compare two datasets of independent samples, testing the null hypothesis that the expected value of the two datasets are equal. If the \emph{p-value} of the test is smaller than the confidence threshold then there is sufficient evidence to reject the null hypothesis and conclude that the means of the two datasets are significantly different. For each test we are comparing the \emph{snapshot} and \emph{averaged} equitability results, calculated from the 50 replicate simulations at a given HL and IR value. If the test is significant then we conclude that the two sampling methods give significantly different results in calculation of the average Shannon equitability at that value of HL and IR. We conduct tests for all HL and IR values, and all three MAI ratios, under random and contiguous HL. The \emph{p-values} of these tests are depicted in figure \ref{fig:ttest}.  
 
-In general figure \ref{fig:ttest} shows that there is strong support for the conclusion that the two sampling methods produce the same average equitability results. The worst case is random HL at MAI$=0.0$ (panel A). In this case there is a region of parameter space, above HL$=60\%$, where the p-values are significant. Therefore in this region the methods appear to give statistically different results. However, as stated, most of the tests suggest that the two methods produce statistically similar results. The similarity between the two methods is surprising given the results of the estimator analysis in section \ref{sec:convergence}. Presumably averaging over 50 replicate simulations provides some reduction in noise. It may also be that a high level of precision in the estimates of species abundances is not required to calculate community level metrics. Based on the comparison presented here we conclude that snapshot sampling is sufficient to draw general conclusions about community structure over the ensemble of simulations. This allows consistency with the analysis in chapter \ref{chap:habitat_loss_high_immigration}. However we acknowledge that the use of snapshot samples may introduce some error, and increased variability, into our calculations. We treat the region of parameter space in which the equitability results proved dissimilar (panel A: random HL. MAI$=0.0$) with particular caution.
+In general figure \ref{fig:ttest} shows that there is strong support for the conclusion that the two sampling methods produce the same average equitability results. The worst case is random HL at MAI$=0.0$ (panel A). In this case there is a region of parameter space, above HL$=60\%$, where the p-values are significant. Therefore in this region the methods appear to give statistically different results. However, as stated, most of the tests suggest that the two methods produce statistically similar results. The similarity between the two methods is surprising given the results of the estimator analysis in section \ref{sec:convergence}. In part the success of the snapshot method is likely due to averaging over 50 replicates, which effectively represent samples from the same noise distribution. It may also be that a high level of precision in the estimates of species abundances is not required to calculate community level metrics. Based on the comparison presented here we conclude that snapshot sampling is sufficient to draw general conclusions about community structure over the ensemble of simulations. This allows consistency with the analysis in chapter \ref{chap:habitat_loss_high_immigration}. However we acknowledge that the use of snapshot samples may introduce some error, and increased variability, into our calculations. We treat the region of parameter space in which the equitability results proved dissimilar (panel A: random HL. MAI$=0.0$) with particular caution.
 
 NOTE: on network and diversity metrics - sample length of 200.
+NOTE: remember to caution the stated area!
+
+\section{Initial analysis}
+\label{sec:init_res}
+\footnote{Looking at the default IR, patterns are qualitatively the same as those seen in chapter 3: so removing links between top-predators and basal species is OK.}
+In this section we provide an overview of the results for both the random and contiguous scenarios, over the region of parameter space explored. Results are presented as \emph{heat-maps} over parameter space. Each pixel corresponds to a unique pair of HL and IR values, with the temperature (colour) given by the corresponding mean value of the metric in question (averaged over the 50 replicates). In this way it is possible to gain a qualitative impression of how the various metrics respond as HL and IR are varied. In sections \ref{sec:vir_diversity} and \ref{sec:vir_variability} we provide results for selected metrics associated with diversity, and variability respectively. In subsequent sections we look in more detail at key features identified from the initial analysis presented here. All results presented use the same sampling procedure as in chapter \ref{chap:habitat_loss_high_immigration}, i.e. snapshot samples for abundance metrics and sample lengths of 200 for variability and network metrics\footnote{Are there any network metrics presented?}.  The continued use of this sampling procedure is justified by the statistical analysis in section \ref{sec:estimators} above.
+
 
 \subsection{Diversity}
 \label{sec:vir_diversity}
@@ -121,20 +127,29 @@ NOTE: on network and diversity metrics - sample length of 200.
 	\label{fig:vir_diversity_contiguous_hp}
 \end{figure}
 
-Figures \ref{fig:vir_diversity_random_hp} and \ref{fig:vir_diversity_contiguous_hp} illustrate the mean value of three metrics over the region of parameter space, \emph{number of extinctions}, \emph{total number of individuals} and \emph{Shannon equitability}, for the random and contiguous scenarios respectively. All results shown are calculated from snapshot samples. As stated in section \ref{sec:exp_method}, an extinction is defined as the presence of less than three individuals in the landscape. The three metrics show broadly similar pattern across the region of parameter space in both HL scenarios. We highlight to following general observations:
-\begin{itemize}
-	\item Reducing IR increases the number of extinctions (panels A,D,G, both figures). In the contiguous case there are, on average, more extinctions than the random case. These extinction are clearly induced by habitat loss, appearing to increase monotonically along the HL gradient. Communities under random HL exhibit fewer extinctions. And, especially in mutualistic communities the number of extinctions appears to be less sensitive to HL.
-	\item In antagonistic communities the total number of individuals varies with IR (panel B, both figures). Initially reducing IR reduces the number of individuals, but at the lowest IR values the number of individuals increases again. In mutualistic communities the dependence of total individuals on IR is greatly reduced, if not removed altogether (panels E,H, both figures). In all cases HL reduces the number of individuals, as expected and in agreement with the results from chapter \ref{chap:habitat_loss_high_immigration}.
-	\item In general mutualistic communities have higher total abundance than antagonistic ones. Under contiguous HL they exhibit more extinctions.
-	\item In all cases reducing the IR reduces the Shannon equitability i.e. communities become less even. On the whole communities become more even under random HL (panels C,F,I, figure \ref{fig:vir_diversity_random_hp}), as observed in chapter \ref{chap:habitat_loss_high_immigration}. However at some IRs random HL appears to make antagonistic communities more even (IR$=0.0003$ to $0.002$, panel C, figure \ref{fig:vir_diversity_random_hp}). Also in the contiguous scenario, at certain IRs, antagonistic communities become less even along the HL gradient (IR$=0.0002$ to $0.003$, panel C, figure \ref{fig:vir_diversity_contiguous_hp}). This effect is not clear in the case of mutualistic communities, where there is little visible dependence of equitability on HL (panels F,I figures \ref{fig:vir_diversity_random_hp}).
-\end{itemize}
+In this section we consider three metrics associated with community diversity: \emph{number of extinctions}, \emph{total number of individuals} and \emph{Shannon equitability}. The mean value of these metrics over the region of parameter space is depicted in figures \ref{fig:vir_diversity_random_hp} and \ref{fig:vir_diversity_contiguous_hp}, for the random and contiguous scenarios respectively. As discussed in section \ref{sec:exp_method}, an extinction is defined as the presence of less than three individuals in the landscape. The main features of these two figures are summarised below.\footnote{Mention that Shannon is associated with evenness, and that it is normalised so extinctions don't matter.}
 
-The observations listed above confirm some of our predictions from section \ref{sec:motivate_immigration}. The role of immigration in driving evenness is clear, since reducing IR reduces the Shannon equitability in all cases. In the random scenario there is some evidence that lower IRs reduces the magnitude of the change in evenness, as predicted. And in both scenarios there appear to be some cases where the evenness of the communities decrease with HL. This requires further analysis. Also the predicted extinctions are observed at low IR, due to a smaller \emph{rescue effect}. However in the random scenario the number of extinctions does appear very sensitive sensitive to HL, which is unexpected. This, and the fact that the random scenario produces fewer extinctions than the contiguous, suggest that the mechanisms behind the species extinctions differ between the two scenarios. Based on what we saw in chapter \ref{chap:habitat_loss_high_immigration} we propose that extinctions in the contiguous scenario are due to strong predation driven by high IS, whereas in the random scenario they are likely due to a collapse in the trophic structure of the community due to low IS.
+\paragraph*{Extinctions} increase as IR is reduced (panels A,D,G, both figures). On average mutualistic communities exhibit more extinctions than antagonistic communities, and contiguous HL produces more extinctions than random HL. In the contiguous scenario the number of extinctions increases along the HL gradient, whereas this trend is less clear in the random scenario. Under random HL the dependence of extinctions  on the level of HL  appears to be reduced, especially for mutualistic communities (figure \ref{fig:vir_diversity_random_hp}, panels D,G). In agreement with the results from chapter \ref{chap:habitat_loss_high_immigration} there are no extinctions at high IR, despite the change in the way extinctions are defined. 
 
-The diversity results also highlight certain other new and unexpected features. In particular we find that MAI ratio play an important role in mediating how communities respond to HL across the range of IR values. This role is most clearly visible in the total number of individuals, which becomes insensitive to IR at high MAI ratios. In this sense at least mutualism can be said to confer robustness on communities in the face of variable IR. However, based on the persistence analysis in section \ref{sec:mvp}, we may expect that the mutualistic communities at low IR are dominated by a small number of species in the non-basal trophic levels. It is perhaps the increased dominance of these species which accounts for the constant total abundance across the range of IR values. From the equitability results we know that, although abundance may not change, mutualistic communities do become less even at low IR. It will be informative to study community composition in more detail for such cases.
+\paragraph*{The total number of individuals} decreases with HL ((panels A,D,G, both figures), which is consistent with chapter \ref{chap:habitat_loss_high_immigration}. In general mutualistic communities contain more individuals than antagonistic communities. Again this observation is consistent with previous findings. However here we observe that increasing mutualism changes the dependence of the total number of individuals on IR. In antagonistic communities the total number of individuals varies with IR (panel B, both figures). Initially reducing IR from the default value reduces the number of individuals, but at the lowest IR values the number of individuals increases again. In mutualistic communities the number of individuals is less sensitive to IR (panels E,H, both figures). At MAI$ =1.0$ changing the IR does not appears to alter the number of individuals in either HL scenario.
 
+\paragraph*{The Shannon equitability} decreases with IR in all cases (panels A,D,G, both figures). That is, reducing immigration causes communities to become less even. In general antagonistic communities are more even than mutualistic ones, which is consistent with chapter \ref{chap:habitat_loss_high_immigration}. Also consistent with previous findings is the observation that mutualistic communities (MAI$=0.5,1.0$) do not exhibit changes in evenness under contiguous HL, but become more even under random HL. These patterns appear to hold across all IR values, although at low IR the increase in evenness due to random HL is less than at high IR. The evenness of antagonistic communities responds differently. At some IRs random HL appears to make antagonistic communities less even (IR$=0.0003$ to $0.002$, panel C, figure \ref{fig:vir_diversity_random_hp}). Similarly in the contiguous scenario at certain IRs antagonistic communities become less even along the HL gradient (IR$=0.0002$ to $0.003$, panel C, figure \ref{fig:vir_diversity_contiguous_hp}). These reductions in evenness represent a departure from the results of chapter \ref{chap:habitat_loss_high_immigration}, and correspond to one of the predicted effects of reducing the immigration rate (section \ref{sec:motivate_immigration}).
+%\begin{itemize}
+%	\item Reducing IR increases the number of extinctions (panels A,D,G, both figures). In the contiguous case there are, on average, more extinctions than the random case. These extinction are clearly induced by habitat loss, appearing to increase monotonically along the HL gradient. Communities under random HL exhibit fewer extinctions. And, especially in mutualistic communities the number of extinctions appears to be less sensitive to HL.
+%	\item In antagonistic communities . Initially reducing IR from the default value reduces the number of individuals, but at the lowest IR values the number of individuals increases again. In mutualistic communities the dependence of total individuals on IR is greatly reduced, if not removed altogether (panels E,H, both figures). In all cases HL reduces the number of individuals, as expected and in agreement with the results from chapter \ref{chap:habitat_loss_high_immigration}.
+%	\item In general mutualistic communities have higher total abundance than antagonistic ones. Under contiguous HL they exhibit more extinctions.
+%	\item In all cases reducing the IR reduces the Shannon equitability i.e. communities become less even. On the whole communities become more even under random HL (panels C,F,I, figure \ref{fig:vir_diversity_random_hp}), as observed in chapter \ref{chap:habitat_loss_high_immigration}. However at some IRs random HL appears to make antagonistic communities more even (IR$=0.0003$ to $0.002$, panel C, figure \ref{fig:vir_diversity_random_hp}). Also in the contiguous scenario, at certain IRs, antagonistic communities become less even along the HL gradient (IR$=0.0002$ to $0.003$, panel C, figure \ref{fig:vir_diversity_contiguous_hp}). This effect is not clear in the case of mutualistic communities, where there is little visible dependence of equitability on HL (panels F,I figures \ref{fig:vir_diversity_random_hp}).
+%\end{itemize}
 
-\subsection{Variability and interaction strengths}
+\paragraph*{In summary} the diversity results presented in this section confirm some of the predictions from section \ref{sec:motivate_immigration}, but also highlight certain new and unexpected features of the model. The role of immigration in driving evenness is clear, since reducing IR reduces the Shannon equitability in all cases. As predicted there is less of a change in evenness along the random HL gradient at low IR than at high IR. Also in both HL scenarios there appear to be some cases where evenness decreases with HL. This effect was predicted for contiguous but not random HL, and is only observed for antagonistic communities. The reduced evenness is most visible between IR$ =0.0003$ and $0.002$.
+
+Reducing IR increases the number of extinctions due to a weaker rescue effect, as predicted. Two features of the extinction response were unexpected: that more extinctions are produced by contiguous than by random HL, and that the number of extinctions under the random scenario is less sensitive to the level of HL. These observations suggest that the mechanism behind species extinctions differs between the HL two scenarios. Based on what we saw in chapter \ref{chap:habitat_loss_high_immigration} we propose that extinctions in the contiguous scenario are due to strong predation driven by high IS, whereas in the random scenario they are likely due to a collapse in the trophic structure of the community due to low IS\footnote{i.e. starvation? Refer forward from here to the correct section where we look at extinctions in more detail. Also other refs forwards from this section?}.
+
+A key unexpected feature of these results is the role of mutualism. We find that the MAI ratio plays an important role in mediating how communities respond to changes in HL and IR. This role is most clearly visible in the total number of individuals, which becomes insensitive to IR at high MAI ratios. In this sense at least mutualism can be said to confer robustness on communities in the face of variable IR. However mutualistic communities exhibit more extinctions than antagonistic ones, so in this sense mutualism is detrimental for robustness. Based on the persistence analysis in section \ref{sec:mvp}, we may expect that the mutualistic communities at low IR are dominated by a small number of species in the non-basal trophic levels\footnote{Refer forward to section..}. It is perhaps an increased dominance of these few species which accounts for the constant total abundance across the range of IR values. This would be consistent with the observation that mutualistic communities become less even at low IR. Mutualism is also found to mediate the response of evenness to HL. In particular both types of HL make antagonistic communities less even at some IR values, but this effect is not present for mutualistic communities.  
+
+%It will be informative to study community composition in more detail for such cases.
+
+\subsection{Variability and species interactions}
 \label{sec:vir_variability}
 
 \begin{figure}
@@ -149,28 +164,64 @@ The diversity results also highlight certain other new and unexpected features. 
 	\label{fig:vir_var_contiguous}
 \end{figure}
 
-Figures \ref{fig:vir_var_random} and \ref{fig:vir_var_contiguous} show the mean value of three variability and interaction strength metrics for the random and contiguous scenarios respectively. Panels A,D, and G show the natural-logarithm of the mean interaction strength (IS, defined in section \ref{:sec:def_iss}). Panels B,E, and H show the total number of (inter-specific) interaction events between all individuals, and the remaining panels show the natural-logarithm of the temporal variability metric (mean CV) (defined in section \ref{sec:def_stability_metrics}). The results for the contiguous scenario are simplest (figure \ref{fig:vir_var_random}), and are summarised as follows:
-\begin{itemize}
-	\item Interaction strength and temporal variability increase with contiguous HL in all cases. So varying IR does not change the response of these metrics that was observed in chapter \ref{chap:habitat_loss_high_immigration}.
-	\item Reducing IR increases temporal variability, as predicted. The increase in variability is associated with a slight increase in interaction strengths, which is weaker at high MAI.
-	\item For antagonistic communities the number of interactions decreases with both IR and HL. For mutualistic communities the the number of interactions decreases with HL, but is less sensitive to IR.
-\end{itemize}
+In this section we consider three metrics associated with variability and species interactions: \emph{mean interaction strength} (mean IS), \emph{total number of interactions} and \emph{mean temporal variability} (mean CV). The mean value of these metrics over the region of parameter space is depicted in figures \ref{fig:vir_var_random} and \ref{fig:vir_var_contiguous}, for the random and contiguous scenarios respectively. The metric IS is the same as used previously, and is defined in section \ref{sec:def_iss}. The metric for temporal variability is the coefficient of temporal variation (CV) in species abundance, and is defined in section \ref{sec:def_stability_metrics}. Both IS and CV are averaged over all species in the community to give \emph{mean IS} and \emph{mean CV}. The natural-logarithm of these two metrics is plotted, based on the observation in chapter \ref{chap:habitat_loss_high_immigration} that they vary exponentially in response to HL. The total number of interactions is the sum total of all inter-specific interaction events between individuals during the sampling period. All three metrics use a sample length of 200 time steps, taken from the end of the simulations. At the end of the section we also look at the metric for \emph{ecosystem synchrony} (Sync), which is defined in section \ref{sec:def_invariability}. The inclusion of this metrics and its interpretation  is based on findings in the previous chapter that reducing IR increases the determinism of population dynamics (section \ref{sec:determinism}). In section \ref{sec:motivate_immigration} we predicted that reducing IR would increase the effects associated with species interactions, increasing both temporal variability and ecosystem synchrony. Key features of figures \ref{fig:vir_var_random} and \ref{fig:vir_var_contiguous} differ according to HL type. Therefore we comment on the two HL scenarios in turn, before looking at ecosystem synchrony and summarising the results as a whole.
 
-In the random scenario there is a more subtle interaction between HL and IR. We observe the following from figure \ref{fig:vir_var_contiguous}:
-\begin{itemize}
-	\item The response of the total number of interactions is qualitatively the same as in the contiguous case. However slightly more interactions are lost due to random HL than contiguous HL, in agreement with the results from chapter \ref{chap:habitat_loss_high_immigration}
-	\item As in the contiguous case, reducing IR increases variability, with an associated increase in IS. However, especially at intermediate IR values, increasing HL initially reduces variability but causes variability to increase at high levels of destruction. Visually the profile of changing variability along the HL gradient appears to be approximately but not exactly correlated with changes in IS.   
-\end{itemize}
+\paragraph*{Contiguous HL} increases both interaction strengths and temporal variability in all cases (figure \ref{fig:vir_var_contiguous}, panels A,D,G and C,F,I). Therefore varying IR does not alter the response of these metrics to contiguous HL that was observed in chapter \ref{chap:habitat_loss_high_immigration}. As predicted reducing IR increases temporal variability. Unexpectedly reducing IR also increases the mean interaction strength, an effect that is more pronounced in antagonistic communities. For antagonistic communities the number of interactions decreases with both IR and HL. For mutualistic communities the the number of interactions decreases with HL, but is less sensitive to IR. These changes broadly match the those in the number of individuals, as shown in figure \ref{fig:vir_diversity_contiguous_hp}, supporting the previous conclusion that interaction frequency is largely determined by species abundances (section \ref{sec:res_synthesis}). The one anomaly is that antagonistic communities do not display an increase in interaction frequencies at low IR, where the number of individuals is observed to increase. This suggests that said increase, previously unexplained, is due to species which are unable to interact. The obvious explanation is that plants come to dominate antagonistic communities at low IR\footnote{Refer forwards to somewhere where we confirm this?}.
 
-The results can largely be extrapolated form those in the previous two chapters and confirm our predictions. There are no surprises in the contiguous case. Although we note the variability and IS responses are consistent with, and therefore support conclusions drawn from, previous analysis. Also the similarity between the results for number of interactions and number of individuals, in both HL scenarios, supports our assertion from chapter \ref{chap:habitat_loss_high_immigration} that interaction frequencies are largely driven by abundance. We did not expect to see an increase in IS as IR is reduced, an effect which is present in all cases. However we did predict that effects due to species interaction would come to play a more important role as immigration was reduced. It is not clear why reducing IR increases the mean probability of trophic interactions between species (see discussion in section \ref{sec:res_synthesis} for interpretation of IS in terms of probability). We suggest that it may be due to the dominance of communities by abundant and strongly interacting species. This hypothesis is investigated in section \ref{sec:WHERE}. 
+\paragraph*{The random scenario} produces qualitatively the same patterns in the number of interactions (figure \ref{fig:vir_var_contiguous}, panels B,E,H) as seen in the contiguous scenario. However random HL results in a greater decline in interaction frequency, in agreement with the findings of chapter \ref{chap:habitat_loss_high_immigration}. As in the contiguous scenario reducing IR increases temporal variability, with an associated increase in interaction strength (panels A,D,G and C,F,I). However the random scenario displays a more subtle interaction between variability and IS. At all IR values the gradient of increasing HL causes variability to first decrease, but then increase at extreme HL values. The role of IR is such that the \emph{net change} in variability across the HL gradient shifts from a decrease (at high IR) to an increase (low IR). This effect holds across all three MAI ratios. Broadly these changes in variability correlate with the changes in IS, with a notable exception at the top right corner of panel A. However this corresponds to the region of parameter space identified as most sensitive to sampling error (section \ref{sec:estimators}) and therefore may be a spurious result.
 
-The variability response under random HL is another unexpected feature. In many instances random HL causes an initial decline, followed by a subsequent increase in temporal variability. This pattern appears robust across IRs and MAI ratios (panels C,F,I, figure \ref{fig:vir_var_random}). In fact, returning to figure \ref{fig:strong_fig} the same effect is present in our original results. The temporal variability increases at $90\%$ HL. We explore this feature further in section \ref{sec:whereis} below.
+%\begin{itemize}
+%	\item Interaction strength and temporal variability increase with contiguous HL in all cases. So varying IR does not change the response of these metrics that was observed in chapter \ref{chap:habitat_loss_high_immigration}.
+%	\item Reducing IR increases temporal variability, as predicted. The increase in variability is associated with a slight increase in interaction strengths, which is weaker at high MAI.
+%	\item For antagonistic communities the number of interactions decreases with both IR and HL. For mutualistic communities the the number of interactions decreases with HL, but is less sensitive to IR.
+%\end{itemize}
+
+%In the random scenario there is a more subtle interaction between HL and IR. We observe the following from figure \ref{fig:vir_var_contiguous}:
+%\begin{itemize}
+%	\item The response of the total number of interactions is qualitatively the same as in the contiguous case. However slightly more interactions are lost due to random HL than contiguous HL, in agreement with the results from chapter \ref{chap:habitat_loss_high_immigration}
+%	\item As in the contiguous case, . However, especially at intermediate IR values, increasing HL initially reduces variability but causes variability to increase at high levels of destruction. Visually the profile of changing variability along the HL gradient appears to be approximately but not exactly correlated with changes in IS.   
+%\end{itemize}
 
 \begin{figure}
 	\includegraphics[width=\textwidth]{{{figures/clean_analysis/heatmap_sync}}}
 	\caption{Natural logarithm of \emph{ecosystem synchrony} (ln($Sync$), defined in section \ref{sec:def_invariability} for both HL scenarios, and all three MAI ratios.}
 	\label{fig:vir_sync_hm}
 \end{figure}
+
+\paragraph*{Ecosystem synchrony}\footnote{Need to recap on what sync is and what it means?} is plotted for both HL scenarios and all three MAI ratios in figure \ref{fig:vir_sync_hm}. These results confirm our prediction that reducing IR increases synchrony in the population dynamics. From the analysis in chapter \ref{chap:stress_testing} we can now be confident that this is due to an increase in the deterministic component (due to species interactions) relative to the stochastic component (due to immigration). Less clear from this figure is the dependence of synchrony on HL. In the random scenario HL \emph{mainly} reduces synchrony, while in the contiguous scenario HL appears to \emph{mainly} have no effect on synchrony. However both of these observations are less clear at MAI$=1.0$.
+
+\paragraph*{In summary} the results presented in this section are generally consistent with those of chapter \ref{chap:habitat_loss_high_immigration}, i.e. community responses to HL do not change when IR is varied. The notable exception to this is that at low IR random HL results in a \emph{net increase} in temporal variability, rather than a net decrease. The increase in variability occurs at high levels of HL ($>70\%$), and is most visible at HL$=90\%$ where the number of individuals is lowest. It is worth noting that the metric CV (equation \eqref{eq:cov}) tends to infinity as the number of individuals tends to zero. This property of the metric may explain the apparent increase in variability in highly impacted landscapes\footnote{Do we explore this later?} at low IR.
+
+The results also confirm our prediction that reducing IR would increase the effects associated with species interactions. Temporal variability and ecosystem synchrony increase and decrease with IR respectively. Therefore the conclusion from chapter \ref{chap:stress_testing}, that reduced immigration increases the determinism and variability of population dynamics, is robust across this region of parameter space under both HL scenarios. We did not anticipate an increase in interaction strengths due to reduced IR, an effect which is present in all cases. It is not clear why reducing IR increases the mean probability of trophic interactions between species (see discussion in section \ref{sec:res_synthesis} for interpretation of IS in terms of probability). We suggest that this is again due to the limit behaviour of the metric. The metric IS (equation \eqref{eq:is3}) tends to infinity when the number of individuals belonging to one of the interacting species tends to zero. Therefore the increase in mean IS due to reduced IR may be the result of interaction strength distributions skewed by species with very low abundance.
+
+%We suggest that it may be due to the dominance of communities by abundant and strongly interacting species. However it is also worth noting again the limit behaviour of the metric IS (equation \eqref{eq:is3}). This metric tends to infinity when the number of individuals belonging to one of the interacting species tends to zero. Therefore the increase in mean IS due to reduced IR may be the result of interaction strength distributions skewed by species with very low abundance. Both hypotheses about the unexpected change in IS are investigated in section \ref{sec:WHERE}. 
+
+\subsection{Key points and outstanding questions}
+\label{sec:questions}
+
+%complete the section after writing up rest of chapter. 
+
+The initial analysis of results presented in this section (\ref{sec:init_res}) highlights certain key features of community responses to varying IR and HL, which we explore further in the rest of this chapter. The aforementioned key features are as follows:
+
+\begin{itemize}
+	\item Mutualistic communities exhibit more extinctions than antagonistic communities.
+	\item The total number of individuals becomes less sensitive to IR at high MAI ratios.
+	%\item Mutualistic communities do not decrease in evenness at any IR, whereas antagonistic communities do*
+	\item At the lowest IR values the total number of individuals increases in antagonistic communities.
+	\item Contiguous HL produces more extinctions than random HL. Also, in the random scenario, the number of extinctions is less sensitive HL, especially for mutualistic communities.
+	\item In certain cases the evenness of communities decrease along the HL gradient.
+	%\item Why does IS increase with IR? (see two hypotheses above)
+	%\item Why does variability increase (net) across the random HL gradient at low IR? (study up-tick)
+	%\item How does community dependence on immigration vary?
+	%\item How do network properties vary?
+	%\item Is our definition of extinction OK? Which species go extinct and why? (relates to difference between contiguous and random HL)
+\end{itemize}
+
+To investigate these features further we conduct bivariate analyses similar to those in chapter \ref{chap:habitat_loss_high_immigration}. The relevant metrics are plotted against ether HL or IR, with the other variable held constant, and linear models are fitted to identify significant trends (see section \ref{sec:sampling}). To conduct the bivariate analyses we select two perpendicular transects from the region of parameter space, one at fixed IR value and one at fixed HL value. The transect at fixed IR allows use to study trends in response to HL only (section \ref{sec:biv_fixIR}), while the transect at fixed HL allows us to study trends in response to IR (section \ref{sec:biv_fixHL}). In section \ref{sec:biv_fixIR} we select a fixed IR value of $0.0005$, representing an intermediate IR at which we have observed that communities may become less even in response to HL (figures \ref{fig:vir_diversity_random_hp}, and \ref{fig:vir_diversity_contiguous_hp}). This observation indicates that community responses to HL are different at this IR value from those presented in chapter \ref{chap:habitat_loss_high_immigration}, and are therefore of particular interest. In section \ref{sec:biv_fixHL} we select a fixed HL value of $40\%$.  This represents an intermediate level of HL at which community responses may be detected (for example species extinctions at low IR), and therefore allows us to compare differences between the two HL scenarios along an IR gradient.
+
+% can largely be extrapolated form those in the previous two chapters and confirm our predictions. There are no surprises in the contiguous case. Although we note the variability and IS responses are consistent with, and therefore support conclusions drawn from, previous analysis. Also the similarity between the results for number of interactions and number of individuals, in both HL scenarios, supports our assertion from chapter \ref{chap:habitat_loss_high_immigration} that interaction frequencies are largely driven by abundance. We did not expect to see an increase in IS as IR is reduced, an effect which is present in all cases. However we did predict that effects due to species interaction would come to play a more important role as immigration was reduced. 
+%The variability response under random HL is another unexpected feature. In many instances random HL causes an initial decline, followed by a subsequent increase in temporal variability. This pattern appears robust across IRs and MAI ratios (panels C,F,I, figure \ref{fig:vir_var_random}). In fact, returning to figure \ref{fig:strong_fig} the same effect is present in our original results. The temporal variability increases at $90\%$ HL. We explore this feature further in section \ref{sec:whereis} below.
+%
 
 
 %% Don't necessarliy want to analyse invariability metrics:
@@ -184,67 +235,77 @@ The variability response under random HL is another unexpected feature. In many 
 %	\caption{Contiguous HL. Ecosystem synchrony. Ecosystem invariability. Population invariability.}
 %\end{figure}
 
-
-\subsection{Dependence on immigration}
-\label{sec:dependence_on_im}
-
-%% This figure produce by: /MyFiles/cm1788/Documents/IM_vs_HL_heatmap/clean_results/random/plot_immap.py
-%% Might need to re-scale if colours not clear when printed?
-\begin{figure}[hb]
-	\includegraphics[width=\textwidth]{{{figures/clean_analysis/heatmap_proportion_im}}}
-	\caption{Similar to figure \ref{fig:vir_sync_hm}, but displaying the proportion of the total number of individuals born that come from immigration, calculated as in figure \ref{fig:res_proportion_immigrants}.}
-	\label{fig:proportion_im_heatmap}
-\end{figure}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%% For now we do not look gere at dependence on immigration..maybe later?
+%\subsection{Dependence on immigration}
+%\label{sec:dependence_on_im}
+%
+%%% This figure produce by: /MyFiles/cm1788/Documents/IM_vs_HL_heatmap/clean_results/random/plot_immap.py
+%%% Might need to re-scale if colours not clear when printed?
+%\begin{figure}[hb]
+%	\includegraphics[width=\textwidth]{{{figures/clean_analysis/heatmap_proportion_im}}}
+%	\caption{Similar to figure \ref{fig:vir_sync_hm}, but displaying the proportion of the total number of individuals born that come from immigration, calculated as in figure \ref{fig:res_proportion_immigrants}.}
+%	\label{fig:proportion_im_heatmap}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Bivariate analysis: fixed IR}
 \label{sec:biv_fixIR}
-In this section we will present results for a fixed, low IR value against HL. And for a fixed intermediate HL value against IR.
 
-\begin{itemize}
-	\item Differential response of mutualistic and antagonistic communities - needs investigating. Community composition, esp MAI ratios under changing IR.
-	\item Do communities really become less even at some IRs (bivariate analysis), and is this associated by a reduced dependence on immigration...
-	\item Why does abundance suddenly increase at low IR in antagonistic communities?
-	\item Why does contiguous HL generate more extinctions? And why are extinctions not dependent on HL in the random case?
-	\item Why does IS increase as IR reduced? Dominant species? Check distribtuions..
-	\item What is going on with variability in the random scenario? (Does new metric meancv\_sqaured solve it?)
-	
-	\item Proportion of immigration not as as simple as expected..
-\end{itemize}
+%\begin{itemize}
+%	\item Differential response of mutualistic and antagonistic communities - needs investigating. Community composition, esp MAI ratios under changing IR.
+%	\item Do communities really become less even at some IRs (bivariate analysis), and is this associated by a reduced dependence on immigration...
+%	\item Why does abundance suddenly increase at low IR in antagonistic communities?
+%	\item Why does contiguous HL generate more extinctions? And why are extinctions not dependent on HL in the random case?
+%	\item Why does IS increase as IR reduced? Dominant species? Check distribtuions..
+%	\item What is going on with variability in the random scenario? (Does new metric meancv\_sqaured solve it?)
+%	\item Proportion of immigration not as as simple as expected..
+%\end{itemize}
 
-In this section we look in more detail at the results summarised in section \ref{sec:init_res} by conducting bivariate analysis of certain key metrics\footnote{Which ones. Also this section, and the following one?}, as we did in chapter \ref{chap:habitat_loss_high_immigration}. From the depiction of how metrics vary across the slice of parameter space we select an immigration rate (IR) of $0.0005$ at which to study the response of communities to HL. The IR is an order of magnitude below the \emph{default value} of $0.005$ used in chapter \ref{chap:habitat_loss_high_immigration}. The choice of such an IR here is justified by..
+%CHANGE THIS: In this section we look in more detail at the results summarised in section \ref{sec:init_res} by conducting bivariate analysis of certain key metrics, as we did in chapter \ref{chap:habitat_loss_high_immigration}. From the depiction of how metrics vary across the slice of parameter space we select an immigration rate (IR) of $0.0005$ at which to study the response of communities to HL. 
+
+Here we study community response to HL at IR$=0.0005$. This IR is an order of magnitude below the \emph{default value} of $0.005$ used in chapter \ref{chap:habitat_loss_high_immigration}. Therefore some significant differences in community response are expected, and are anticipated from the results of section \ref{sec:init_res} as discussed above.
+
+%The choice of such an IR here is justified by..We focus on evenness..and community composition..extinctions later?
 
 \subsection{Evenness}
 \label{sec:biv_HL_evenness}
 
-In chapter \ref{chap:hhl} we saw that species abundances became more even under random HL, while they evenness did not change significantly under contiguous HL. These changes we attributed to the dependence of communities on immigration, which acts to make the distribution of individuals across species more even. Therefore we expected that at low IR we may observe a change in the evenness response. The IR of $0.0005$ was chosen because it appeared to generate communities that became less even under contiguous HL, especially in the case of MAI$=0.0$.
-
-From figure \ref{fig:biv_HL_proportion_im} we see that the dependence on immigration is lower across the HL gradient than was observed when using the default IR. This can 
-
-Figure \ref{fig:biv_HL_shannon_eq} shows how the \emph{Shannon equitability} metric, calculated at the community level, changes across the HL gradient under both HL scenarios. This metric (equation \eqref{eq:shan_eq}) measures how evenly abundance is distributed between all species in the community. From the figure we see the characteristic feature that low MAI communities are more even than high MAI communities (chapter \ref{chap:} and \cite{lurgi2015effects}). We also observe that under both types of HL antagonistic communities (MAI$=0.0$) \emph{become less even}. This is a new observation, which we seek to explain below\footnote{HOw?}. Communities with mixed interactions between the first two trophic levels (MAI$=0.5$) do not become significantly more or less even under either type of HL, while mutualistic communities (MAI$=1.0$) respond in opposite directions. Mutualistic communities become more even and less even under random and contiguous HL respectively. The observation that varying the level of mutualism causes communities to respond differently to HL is a new and interesting feature of these results. 
-
-We explore the evenness response further by calculating the Shannon equitability within each trophic level. These results are shown in figure \ref{fig:biv_HL_shannon_eq_TL}. These plots reveal that there is a difference between the  equitability response at the community level compared to the that within trophic levels, especially under random HL. In the random scenario (panels A,C,E,G) the distribution of abundances within all trophic levels become more even, except for the top trophic level of the antagonistic communities (panel G). In the contiguous scenario antagonistic communities  become less even within trophic levels, whereas mutualistic communities (MAI$=0.5,1.0$) do not exhibit changes in evenness within trophic levels.   
-
 \begin{figure}
 	\centering	
 	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/clean_lm_shannon_eq_3mai}}}
-	\caption{\textbf{Shannon equitability} against percentage habitat loss, for both scenarios: (A) Random HL, and (B) Contiguous HL. Circles represent the Shannon index value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:WHEREFIRST}).}
+	\caption{\textbf{Shannon equitability} against percentage habitat loss, for both scenarios: (A) Random HL, and (B) Contiguous HL. The format of these bivariate plots is standardised, and consistent with those in chapter \ref{chap:habitat_loss_high_immigration}. Circles represent the metric value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. The markers ***, **, * and + corresponds to linear model fit p-values of $<0.001$, $<0.01$, $<0.05$ and $<0.1$ (marginal significance) respectively.}
 	\label{fig:biv_HL_shannon_eq}
 \end{figure}
+
+Figure \ref{fig:biv_HL_shannon_eq} shows how the \emph{Shannon equitability} metric, calculated at the community level, changes across the HL gradient under both HL scenarios. This metric (equation \eqref{eq:shan_eq}) measures how evenly abundance is distributed between all species present in the community. Maximum evenness is achieved when all species have the same abundance, in which case the metric is equal to one. From the figure we see a characteristic feature of the model, that low MAI communities are more even than high MAI communities (previously explained in chapter \ref{chap:habitat_loss_high_immigration} and \cite{lurgi2015effects}). We also observe from the figure that communities in pristine landscape have similar evenness as those simulated with the default IR value (compare to figure \ref{fig:shannon_eq}). This similarity is surprising given that we have argued previously that immigration drives evenness, and that here the magnitude of IR is an order of magnitude lower than the default value. The linear models confirm the trends in evenness, observed in section \ref{sec:vir_diversity}, that inspired this choice of IR value to study. Under both types of HL antagonistic communities (MAI$=0.0$) \emph{become significantly less even}. Communities at intermediate MAI ratio ($0.5$) do not become significantly more or less even under either type of HL, while high MAI communities ($1.0$) respond in opposite directions. At MAI$=1.0$ communities become more even and less even under random and contiguous HL respectively, although the p-value and the slope of the trend is lower in the contiguous case. The observation that varying the level of mutualism can change the qualitative response of communities to HL is novel to this chapter\footnote{Really? Check.}.
+
+%This is a new observation, which we seek to explain below\footnote{HOw?}
+
+The evenness responses are explored further by calculating the Shannon equitability within each trophic level. These results are shown in figure \ref{fig:biv_HL_shannon_eq_TL} for both HL scenarios. The plots reveal that there is a difference between the  equitability response at the community level compared to that within trophic levels, especially under random HL. In the random scenario (panels A,C,E,G) the distribution of abundances within all trophic levels becomes more even, except for the top trophic level of antagonistic communities (MAI$=0.0$, panel G). Therefore antagonistic communities become less even on aggregate, but more even within three out of the four trophic levels. Communities at intermediate MAI ratio ($0.5$) become more even within all trophic levels but do not change on aggregate, whereas high MAI communities ($1.0$) become more every at every level. In the contiguous scenario antagonistic communities  become less even within trophic levels, which is consistent with the community level response. Mutualistic communities (MAI$=0.5,1.0$) do not exhibit changes in evenness within any trophic level. For MAI$=0.5$ this is consistent with the community level, but for MAI$=1.0$ community level evenness decreases despite constant evenness within the trophic levels.   
+
 
 \begin{figure}
 	\centering	
 	\includegraphics[width=0.7\textwidth]{{{figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_3mai}}}
-	\caption{\textbf{Shannon equitability} against percentage habitat loss, for each trophic level. Left column: random HL. Right column: contiguous HL. Circles represent the Shannon index value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:WHEREFIRST}).}
+	\caption{\textbf{Shannon equitability} against percentage habitat loss, for each trophic level. Left column: random HL. Right column: contiguous HL. Format of individual plots is the same as in figure \ref{fig:biv_HL_shannon_eq}.}
 	\label{fig:biv_HL_shannon_eq_TL}
 \end{figure}
 
-The above changes in evenness can be understood by looking at example rank-abundance distributions (RADs - section \ref{sec:define_rads}) for single communities at different levels of HL. Figure \ref{fig:biv_HL_rads_mai0_random} shows the RADs for three antagonistic communities (MAI$=0.0$) under random HL. Firstly the discontinuity in the distribution at HL$=90\%$ makes the interpretation of the model fits problematic. Therefore we use only the Shannon metric in the current analysis:
-\begin{itemize}
-	\item Being an antagonistic community, the RAD at HL$=0\%$ is quite even.
-	\item  At the community level the distribution becomes less even due to HL. The RAD at HL$=90\%$ is dominated by 16 plant species, with all other species having a relative abundance of less than 0.01.
-	\item  However within trophic levels, as indicated by the colours, the increase in evenness is visually clear (except for the top trophic level). This is especially visible for the plant communities.
-\end{itemize}
+
+\subsection{Rank-abundance distributions}
+\label{sec:biv_HL_RADs}
+
+In this section we present rank-abundance distributions (RADs) for example communities. Each RAD plotted is for single community selected from the 50 replicates to characterise the general features of the distributions at given HL values and MAI ratios. Together the RADs help to explain the observed evenness responses from section \ref{sec:biv_HL_evenness}, especially the discrepancy between some community level and trophic level responses. In some cases the RADs contain discontinuities (for example figure \ref{fig:biv_HL_rads_mai0_random},panel C). The \emph{Zipf} and \emph{pre-emption} model fits to the RADs, illustrated in the plots as solid red and blue lines respectively, are unable to characterise the discontinuities. Therefore the fitted model parameters (alpha and gamma) are not used as complementary measures of community evenness, as they were in chapter \ref{chap:habitat_loss_high_immigration}.
+
+\begin{figure}
+	\centering	
+	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/example_RADS_mai0_random}}}
+	\caption{\textbf{Example rank-abundance distributions} (RADs) for three communities with MAI$=0.0$, under random habitat loss. (A) HL=$0\%$, (B) HL=$50\%$, (C) HL=$90\%$. Species abundances are relative to the total number of individuals in the community, and plotted on a logarithmic scale. Circles represent species, coloured according to trophic level: green=basal; blue=herbivore/animal-mutualist; yellow=primary predator; red=top predator. Blue and red lines give the pre-emption and Zipf model fits respectively (see text in section \ref{sec:define_rads} for definitions), best fit parameter value for each model given as annotations on plot.}
+	\label{fig:biv_HL_rads_mai0_random}
+\end{figure}
+
+Figure \ref{fig:biv_HL_rads_mai0_random} shows RADs for antagonistic communities (MAI$=0.0$) under random HL. Such communities were observed (section \ref{sec:vir_diversity}) to become less even at the community level, but more even within trophic levels, in response to HL. Comparing panels A and C it is clear that the decrease in community level evenness is due to an increased dominance of plant species. The RAD at at HL$=90\%$ is dominated by 16 plant species, with all other species having a relative abundance of less than 0.01. The discontinuity observed here, between the groups of most and least abundant species, is characteristic of communities under random HL at this value of IR. This observation leads us to define the terms \emph{core} and \emph{tail} to refer to the two groups of relatively high and low abundance species. In what follows we use 0.01 as the threshold relative abundance that separates the two groups. The core and tail sections of the RAD at HL$=90\%$ are relatively even when considered separately. Therefore the increased evenness within trophic levels one, two and three follows intuitively. In the RAD at HL$=0\%$ species belonging to these three trophic levels are interspersed along the distribution, whereas at HL$=90\%$ each trophic level is contained within either the core or tail section only\footnote{..`trophic sorting', top predators v.low abundance. One species is totally extinct here at HL90.}.
 
 %% Not sure about this plot: interesting, but may confuse the message, just see example RADs
 %\begin{figure}
@@ -254,178 +315,252 @@ The above changes in evenness can be understood by looking at example rank-abund
 %	\label{fig:biv_HL_radfit}
 %\end{figure}
 
-
-\begin{figure}
-	\centering	
-	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/example_RADS_mai0_random}}}
-	\caption{\textbf{Example RADs} MAI 0. Random}
-	\label{fig:biv_HL_rads_mai0_random}
-\end{figure}
-
-Figure \ref{fig:biv_HL_rads_mai1_random} shows RADs for mutualistic communities (MAI$=1.0$) under random HL:
-\begin{itemize}
-	\item Mutualistic, therefore less even in pristine habitat. In fact dominated by 10 abundant species, as seen at zero IR (chapter \ref{chap:stress_testing}).
-	\item RAD flattens out due to HL - becoming more even at community level, and within trophic levels. Although there is still a discontinuity at HL$=90\%$. 
-	\item Species in this tail sustained only by immigration? But not subject to predation pressure and therefore not driven to extinction?
-\end{itemize}
-
 \begin{figure}
 	\centering	
 	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/example_RADS_mai1_random}}}
-	\caption{\textbf{Example RADs} MAI 1. Random}
+	\caption{Similar to figure \ref{fig:biv_HL_rads_mai0_random}, but for mutualistic communities (MAI$=1.0$), under random HL.}
 	\label{fig:biv_HL_rads_mai1_random}
 \end{figure}
 
-Figure \ref{fig:biv_HL_rads_mai0_contiguous} shows RADs for antagonistic communities (MAI$=0.0$) under contiguous HL:
-\begin{itemize}
-	\item Relatively even in pristine landscape, like figure \ref{fig:biv_HL_rads_mai0_random}.
-	\item Becomes slightly less even at community and trophic levels. 
-	\item However the discontinuity characteristic of the random scenario is not present. Presumably in the contiguous case these rare species are still able to interact, therefore reproduce and feed, and are fed upon.
-\end{itemize}
+Figure \ref{fig:biv_HL_rads_mai1_random} shows RADs for mutualistic communities (MAI$=1.0$) under random HL. Such communities were observed (section \ref{sec:vir_diversity}) to become more even at the community level, and within all trophic levels, in response to HL. Here the role of mutualism in reducing community evenness is very clear. In pristine habitat (panel A) the community is uneven with a core of ten abundant species. The difference between this mutualistic community and the equivalent antagonistic one (\ref{fig:biv_HL_rads_mai0_random}, panel A) is striking. Here the dominance of the core species must be due to the benefit of mutualism, which is not solely conferred on species that interact mutualistically (i.e. plant and animal mutualists). The core contains species belonging to all trophic levels. In agreement with our observations at zero IR (chapter \ref{chap:stress_testing}) some species in higher trophic levels, presumably those feeding on mutualists, benefit from the presence of mutualism in the community. However other species appear to suffer as a result of the increased fitness of their competitors. These species form a tail of low abundance resulting in a very uneven community. In fact 15 species are totally extinct (zero individuals) from this community, in a landscape without HL. Increasing HL to $50\%$ (panel B) creates a flatter distribution with no clear distinction between core and tail, and no extinct species. The result that increasing random HL can reduce extinctions at MAI$=1.0$ is present in some but not all replicate communities at this IR value. At HL$=90\%$ (panel C) the RAD is more even than at $0\%$, although there is once again a discontinuity between core and tail. In this instance the core consists of only species belonging to trophic levels one and two. This suggests that, in highly impacted random landscapes, mutualistic-animals may still benefit directly from their mutualistic interactions, but that this benefit is not passed up the food chains\footnote{Mention that tail species not go extinct in this case - weak interactions.}. 
 
 \begin{figure}
 	\centering	
 	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/example_RADS_mai0_contiguous}}}
-	\caption{\textbf{Example RADs} MAI 0. Contiguous}
+	\caption{Similar to figure \ref{fig:biv_HL_rads_mai0_random}, but for antagonistic communities (MAI$=0.0$), under contiguous HL.}
 	\label{fig:biv_HL_rads_mai0_contiguous}
 \end{figure}
 
-Figure \ref{fig:biv_HL_rads_mai1_contiguous} shows RADs for mutualistic communities (MAI$=1.0$) under contiguous HL:
-\begin{itemize}
-	\item Less even in pristine landscape, although discontinuity not extreme in this community.
-	\item Becomes slightly less even at community and trophic levels. 
-	\item No clear change in evenness due to HL.
-	\item Again do distinct `tail' of low abundance species, as in the random scenario.
-\end{itemize}
+Figure \ref{fig:biv_HL_rads_mai0_contiguous} shows RADs for antagonistic communities (MAI$=0.0$) under contiguous HL. Such communities were observed (section \ref{sec:vir_diversity}) to become less even on average at both the community level and within trophic levels. Panel A is a replicate of the community in the same panel of figure \ref{fig:biv_HL_rads_mai0_random}, since HL$=0\%$ in both cases. The RADs are qualitatively similar. From figure \ref{fig:biv_HL_rads_mai0_contiguous} the communities do appear to become less even along the contiguous HL gradient. HL is also seen to cause extinctions, which we know from figure \ref{fig:vir_diversity_contiguous_hp} is a general feature of the contiguous scenario at this IR. At $90\%$ HL two species have an absolute abundance of zero, while a number of other species have low relative abundances in discrete steps (presumably corresponding to absolute abundances of one,two three individuals etc.). This pattern suggests that many species are on the border of total extinction in this community, as predicted in section \ref{sec:motivate_immigration}. However the discontinuity that was characteristic of RADs in the random scenario is not present, such that there is no clear distinction between core and tail species.
+%
+%\begin{itemize}
+%	\item Relatively even in pristine landscape, like figure \ref{fig:biv_HL_rads_mai0_random}.
+%	\item Becomes slightly less even at community and trophic levels. 
+%	\item However the discontinuity characteristic of the random scenario is not present. Presumably in the contiguous case these rare species are still able to interact, therefore reproduce and feed, and are fed upon.
+%\end{itemize}
 
 \begin{figure}
 	\centering	
 	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/example_RADS_mai1_contiguous}}}
-	\caption{\textbf{Example RADs} MAI 1. Contiguous}
+	\caption{Similar to figure \ref{fig:biv_HL_rads_mai0_random}, but for mutualistic communities (MAI$=1.0$), under contiguous HL.}
 	\label{fig:biv_HL_rads_mai1_contiguous}
 \end{figure}
 
-Figure \ref{fig:biv_HL_proportion_im} shows the mean dependence on immigration:
-\begin{itemize}
-	\item In both cases dependence on immigration is lower than in chapter \ref{chap:}, which makes sense since the IR is lower.
-	\item In the random scenario HL increases dependence on immigration for all MAI ratios. As in first chapter.
-	\item This explains the increase in evenness within trophic levels, and the community level response of the antagonistic communities. However it does not explain the community level decrease in evenness of antagonistic communities  - this must be due to differences between trophic levels (or functional groups). For example plants become much more abundant relative to other groups. (See relative abundance plots below). 
-	\item In the contiguous scenario there is a very slight increase in dependence on immigration. 
-	\item Therefore we cannot explain the decrease in evenness under contiguous HL, which is especially pronounced for antagonistic communities. It is also clear the dependence on immigration \emph{is not to only determinant of evenness}.\footnote{The converse is that dependence in interactions reduces evenness? Also we know that mutualism reduces evenness..but these communities don't get less even. They are less even to start off with.}  
-\end{itemize}
+Figure \ref{fig:biv_HL_rads_mai1_contiguous} shows RADs for mutualistic communities (MAI$=1.0$) under contiguous HL. Such communities were observed (section \ref{sec:vir_diversity}) to become slightly less even on average at the community level, but the evenness did not change significantly within functional groups. Panel A is a replicate of the community in the same panel of figure \ref{fig:biv_HL_rads_mai1_random}, since HL$=0\%$ in both cases. In figure \ref{fig:biv_HL_rads_mai1_contiguous} there is less of a distinction between core and tail, and there are fewer extinct species, but otherwise the RADs are qualitatively similar. These mutualistic communities are less even than the antagonistic communities in figure \ref{fig:biv_HL_rads_mai0_contiguous} because of the effect of mutualism already discussed. The communities also decrease in evenness along the HL gradient, and exhibit more species extinctions than the mutualistic equivalents.  We suggest that the reason evenness does not decrease within trophic levels due to HL, is partly that these communities already have low evenness in pristine landscape. A wide range of relative abundances for all four trophic levels is visible in panel A of the figure. Once again there is not a clear discontinuity between core and tail species. However at $90\%$ HL the tail-end of the distribution again displays discrete steps in relative abundances characteristic of species on the border of extinction.
+
+%\begin{itemize}
+%	\item Less even in pristine landscape, although discontinuity not extreme in this community.
+%	\item Becomes slightly less even at community and trophic levels. 
+%	\item No clear change in evenness due to HL.
+%	\item Again do distinct `tail' of low abundance species, as in the random scenario.
+%\end{itemize}
+
+
+
+\subsection{Relative abundance by functional group}
+\label{sec:biv_HL_RAFG}
 
 \begin{figure}
 	\centering	
-	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/lm_mean_proportion_immigration_3mai}}}
-	\caption{\textbf{Number of immigrants} as a fraction of the total number of new individuals created over the course of a simulation. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:WHEREFIRST}).}
-	\label{fig:biv_HL_proportion_im}
-\end{figure}
-
-Figure \ref{fig:biv_HL_proportion_by_fg_random} shows the relative abundance of each functional group under random HL:
-\begin{itemize}
-	\item Top predator much lower in abundance than with default IR, even in pristine landscape. Partly due to removal of feeding links. Also due to lower IR - less food available, hits this group hardest?
-	\item Basal species benefit, relatively, from random HL - reduced predation pressure
-	\item All other functional groups suffer - same reasoning given in first chapter: less feeding, less mating.
-	\item Plant come to dominate antagonistic communities at more than 0.9 RA. This explains the loss of evenness at the community level - it is due to the differential response of plant and other FGs.
-	\item In mutualistic communities, although plant abundance increase relative to other groups they do not totally dominate - combined both types of plant is about 0.7 at MAI=$1.0$. This is because mutualistic animals retain their abundance quite well - about 0.3 and MAI$=1.0$. This partly explains why evenness response is different in mutualistic communities.
-	\item Although RAs fall very low under random HL, this does not translate into extinctions,as we saw.
-\end{itemize}
-
-Figure \ref{fig:biv_HL_proportion_by_fg_contiguous} shows the relative abundance of each functional group under contiguous HL:
-\begin{itemize}
-	\item Slight decrease in both predator groups. Realistic. But why, when trophic interaction remain strong?
-	\item Increase in non-mutualistic plants - reduced predation??
-	\item Increase in mutualistic animals at MAI$=1.0$ - reduced predation while plant resource remains strong. But why no benefit other groups?
-	\item Otherwise first two trophic level pretty constant (as in first chapter)
-	\item These patterns hard to explain. Also relate to extinctions??
-\end{itemize}
-\begin{figure}
-	\centering	
-	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/lm_fg_relative_abundance_hl_random_3mai}}}
-	\caption{\textbf{Relative abundance by FG}. Random}
+	\includegraphics[width=0.8\textwidth]{{{figures/bivariate_v_HL/lm_fg_relative_abundance_hl_random_3mai}}}
+	\caption{\textbf{Relative abundance} by functional group for \textbf{random HL}. Abundance relative to total number of individuals in the community. Format of individual plots is the same as in figure \ref{fig:biv_HL_shannon_eq}.}
 	\label{fig:biv_HL_proportion_by_fg_random}
 \end{figure}
 
+In this section we briefly consider how the relative abundance of the functional groups responds to HL at the same IR value (0.0005). Figure \ref{fig:biv_HL_proportion_by_fg_random} shows the relative abundance of each functional group under random HL. The main feature of these plots is that random HL causes a shift in biomass towards the basal trophic level. The same type of shift was observed at the default IR value in chapter \ref{chap:habitat_loss_high_immigration}, however it is more extreme at this low IR. The only non-basal functional group which retains any appreciable abundance up to high levels of HL ($90\%$) are mutualistic-animals. At $90\%$ HL antagonistic communities become almost completely dominated by plants (relative abundance $<0.9$), while communities with mutualism become dominated by plants (mutualistic and non-mutualistic) and mutualistic-animals. Both these observations are consistent with the RADs presented in section \ref{sec:biv_HL_RADs}. The shift towards basal species under random HL is due to weaker trophic interactions, which in turn is related to the decreased mobility of individuals in a randomly impacted landscape (as argued in section \ref{sec:res_synthesis}). 
+
+At the default IR value we saw that the relative abundance of primary-predators was constant along the random HL gradient. This, it was argued, is because primary-predators are the largest functional group in terms of species and therefore receive the most input from immigration. Here we see that the relative abundance of primary-predators decreases, and we associate this difference with reduced input from immigration due to the low IR value. Also figure \ref{fig:biv_HL_proportion_by_fg_random} reveals that in pristine landscape top-predators have a lower relative abundance than at the default IR value, while plants have a higher relative abundance (especially at MAI$=0.0$, see figure \ref{fig:rel_abun_random} for comparison). We conclude that this difference is partly due to the removal of feeding links between top-predators and basal species, links which were not removed in chapter \ref{chap:habitat_loss_high_immigration}. However there may also be an effect of reduced IR. Since immigration provides a food source for all non-basal species, the reduction of IR will affect species at the top of food chain the most, whilst benefiting basal species which do not require food\footnote{Confirm this observation in section with fixed HL value?}.
+%
+%\begin{itemize}
+%	\item Top predator much lower in abundance than with default IR, even in pristine landscape. Partly due to removal of feeding links. Also due to lower IR - less food available, hits this group hardest?
+%	\item Basal species benefit, relatively, from random HL - reduced predation pressure
+%	\item All other functional groups suffer - same reasoning given in first chapter: less feeding, less mating.
+%	\item Plant come to dominate antagonistic communities at more than 0.9 RA. This explains the loss of evenness at the community level - it is due to the differential response of plant and other FGs.
+%	\item In mutualistic communities, although plant abundance increase relative to other groups they do not totally dominate - combined both types of plant is about 0.7 at MAI=$1.0$. This is because mutualistic animals retain their abundance quite well - about 0.3 and MAI$=1.0$. This partly explains why evenness response is different in mutualistic communities.
+%	\item Although RAs fall very low under random HL, this does not translate into extinctions,as we saw.
+%\end{itemize}
+
 \begin{figure}
 	\centering	
-	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/lm_fg_relative_abundance_hl_contiguous_3mai}}}
-	\caption{\textbf{Relative abundance by FG}. Contiguous}
+	\includegraphics[width=0.8\textwidth]{{{figures/bivariate_v_HL/lm_fg_relative_abundance_hl_contiguous_3mai}}}
+	\caption{\textbf{Relative abundance} by functional group for \textbf{contiguous HL}. Abundance relative to total number of individuals in the community. Format of individual plots is the same as in figure \ref{fig:biv_HL_shannon_eq}.}
 	\label{fig:biv_HL_proportion_by_fg_contiguous}
 \end{figure}
 
+Figure \ref{fig:biv_HL_proportion_by_fg_contiguous} shows the relative abundance of each functional group under contiguous HL. There is a slight decrease in the relative abundance of both predator groups at all MAI ratios. We know that mobility (section \ref{sec:res_synthesis}) and trophic interactions (figure \ref{fig:vir_var_contiguous}) are high under contiguous HL. Despite this predator species suffer as a result of contiguous HL at this IR value, suggesting that most extinctions occur in the top two trophic levels\footnote{Refer forwards..}. At MAI$=0.0$ and $0.5$ there is an increase in the relative abundance of non-mutualistic plants, presumably due to decline in the abundance (or extinctions of) grazing species. However mutualistic-plants do not benefit, perhaps because they are grazed on by mutualistic-animals which either remain relatively abundant (MAI$=0.5$) or increase in relative abundance (MAI$=1.0$).
+%
+%\begin{itemize}
+%	\item Slight decrease in both predator groups. Realistic. But why, when trophic interaction remain strong?
+%	\item Increase in non-mutualistic plants - reduced predation??
+%	\item Increase in mutualistic animals at MAI$=1.0$ - reduced predation while plant resource remains strong. But why no benefit other groups?
+%	\item Otherwise first two trophic level pretty constant (as in first chapter)
+%	\item These patterns hard to explain. Also relate to extinctions??
+%\end{itemize}
+
+
+
+
+\subsection{Network properties}
+\label{sec:biv_netprops}
+
 \begin{figure}
 	\centering	
-	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/dependence_IR_core_tail}}}
-	\caption{\textbf{Dependence on immigration} at HL$=90\%$, split into tail, core and whole community.}
-	\label{fig:biv_HL_tail_core}
+	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/clean_lm_weighted_generality_3mai}}}
+	\caption{Similar to figure \ref{fig:biv_HL_shannon_eq}, but for \emph{weighted quantitative generality} (defined in section \ref{sec:define_network_metrics})}
+	\label{fig:biv_HL_gen}
+\end{figure}
+\begin{figure}
+	\centering	
+	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/clean_lm_weighted_vulnerability_3mai}}}
+	\caption{Similar to figure \ref{fig:biv_HL_shannon_eq}, but for \emph{weighted quantitative vulnerability} (defined in section \ref{sec:define_network_metrics})}
+	\label{fig:biv_HL_vul}
 \end{figure}
 
+We now consider changes in network properties in response to HL. For simplicity results are only presented for quantitative generality and vulnerability (defined in section \ref{sec:define_network_metrics}). In chapter \ref{chap:habitat_loss_high_immigration} we saw that the response of these metrics was associated with changes in the evenness of species abundances, or lack thereof. Therefore we may expect responses that correspond to the changes in evenness discussed in section \ref{sec:biv_HL_evenness}. However the lower IR used here (0.0005) produces species extinctions, as we have seen. The loss of species may also drive changes in network properties.
 
-Why do mutualistic communities display more extinctions? - less even..
-Why do mutualistic communities display fewer changes in evenness?
+Figure \ref{fig:biv_HL_gen} shows the response of generality under random and contiguous HL. We see that generality decrease significantly in all cases, except at MAI$=1.0$ under random HL. In general the change in generality is less for communities with mutualism, and they tend to have lower generality than antagonistic communities across the HL gradient. This difference relates to the lower evenness of mutualistic communities. A decrease in the generality metric corresponds to a drop in the \emph{number of effective prey per predator}, which may be associated with a reduced number of \emph{actual} prey, a reduced evenness in interaction frequencies, or both. In the random scenario we expect a drop in the actual number of prey because of the restriction on mobility presented by destroyed cells. In the contiguous scenario a drop in the actual number of prey may be produced by species extinctions or extreme scarcity. Also some cases at this IR value we have seen that communities become less even, which acts to reduce the evenness of interaction frequencies.
+
+Figure \ref{fig:biv_HL_vul} shows the response of vulnerability under random and contiguous HL. A decrease in vulnerability represents a decrease in the \emph{number of effective predators per prey}, and an increase represents the converse. A MAI$=1.0$ random HL produces a significant increase in vulnerability (panel A). This corresponds to the increase in evenness observed for these communities (figures \ref{fig:biv_HL_shannon_eq} and \ref{fig:biv_HL_shannon_eq_TL}). In all other case vulnerability either decreases or does not change significantly, in ways that correspond directly to the observed changes in evenness. Therefore, as in chapter \ref{chap:habitat_loss_high_immigration}, the results for the quantitative network are consistent with the conclusion that they are predominantly driven by changes in evenness. 
+ 
+%% MAybe include dependence on immigration, maybe not?? This is alread yqqutie rambling..
+%
+%\begin{figure}
+%	\centering	
+%	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/dependence_IR_core_tail}}}
+%	\caption{\textbf{Dependence on immigration} at HL$=90\%$, split into tail, core and whole community.}
+%	\label{fig:biv_HL_tail_core}
+%\end{figure}
+%
+%
+%
+%From figure \ref{fig:biv_HL_proportion_im} we see that the dependence on immigration is lower across the HL gradient than was observed when using the default IR. This can 
+%
+%Figure \ref{fig:biv_HL_proportion_im} shows the mean dependence on immigration:
+%\begin{itemize}
+%	\item In both cases dependence on immigration is lower than in chapter \ref{chap:}, which makes sense since the IR is lower.
+%	\item In the random scenario HL increases dependence on immigration for all MAI ratios. As in first chapter.
+%	\item This explains the increase in evenness within trophic levels, and the community level response of the antagonistic communities. However it does not explain the community level decrease in evenness of antagonistic communities  - this must be due to differences between trophic levels (or functional groups). For example plants become much more abundant relative to other groups. (See relative abundance plots below). 
+%	\item In the contiguous scenario there is a very slight increase in dependence on immigration. 
+%	\item Therefore we cannot explain the decrease in evenness under contiguous HL, which is especially pronounced for antagonistic communities. It is also clear the dependence on immigration \emph{is not to only determinant of evenness}.\footnote{The converse is that dependence in interactions reduces evenness? Also we know that mutualism reduces evenness..but these communities don't get less even. They are less even to start off with.}  
+%\end{itemize}
+%
+%\begin{figure}
+%	\centering	
+%	\includegraphics[width=\textwidth]{{{figures/bivariate_v_HL/lm_mean_proportion_immigration_3mai}}}
+%	\caption{\textbf{Number of immigrants} as a fraction of the total number of new individuals created over the course of a simulation. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:WHEREFIRST}).}
+%	\label{fig:biv_HL_proportion_im}
+%\end{figure}
+%Why do mutualistic communities display more extinctions? - less even..
+%Why do mutualistic communities display fewer changes in evenness?
 
 \section{Bivariate analysis: fixed HL}
 \label{sec:biv_fixHL}
 
-There are certain features of the summary results from section \ref{sec:init_res} that make it desirable to study communities along an IR gradient at fixed HL. In particular the observation that mutualistic communities do not change total abundance with IR is interesting. We are also interested in why interaction strengths change in response to IR, and why total abundance increases at low IR for antagonistic communities.
+In this section we study communities along a gradient of IR, at fixed HL. An intermediate HL value of $40\%$ was selected such that \emph{some} of the effects of habitat loss are present in the communities studied (see section \ref{sec:questions}. For an intuition of the extent of the state of the landscape at $40\%$ HL see figure \ref{fig:diffusion_example} (and the relevant animations at \cite{mcwilliams2015anim}). The analysis in this section addresses the following two observations from earlier in the chapter:
+% This allows us to draw comparisons between the two HL scenarios, without being at the extreme of either scenario. 
+\begin{enumerate}
+	\item The total number of individuals in mutualistic communities appears to be insensitive to IR (figures \ref{fig:vir_diversity_random_hp} and \ref{fig:vir_diversity_contiguous_hp}).
+	\item The total number of individuals in antagonistic communities increases at the lowest IR values (section \ref{sec:vir_diversity}), but this is not matched by a corresponding increase in the total number of interactions (section \ref{sec:vir_variability}).
+\end{enumerate}
 
-We may also be interested in the fact that reducing the IR does not necessarily reduce the dependence in immigration in a linear way - this is more subtle than we had previously imagined. It does reduce dependence until very low IR, when dependence suddenly increases again -perhaps due to the fact that there are too few individuals in the landscape to interact? Or perhaps because at these very low IRs a few species dominate, the majority of species just depend on immigrations.
-
-Plots to produce:
-\begin{itemize}
-	\item Relative abundance by FG
-	\item Possibly: RADs -> show that plants dominate, causing increase in abundance
-	\item Interaction strength distributions for shifting IR - probably conclude that this is the same feature is variability - metrics tends to infinity at low abundance
-\end{itemize}
+%There are certain features of the summary results from section \ref{sec:init_res} that make it desirable to study communities along an IR gradient at fixed HL. In particular the observation that mutualistic communities do not change total abundance with IR is interesting. We are also interested in why interaction strengths change in response to IR, and why total abundance increases at low IR for antagonistic communities.
+%
+%We may also be interested in the fact that reducing the IR does not necessarily reduce the dependence in immigration in a linear way - this is more subtle than we had previously imagined. It does reduce dependence until very low IR, when dependence suddenly increases again -perhaps due to the fact that there are too few individuals in the landscape to interact? Or perhaps because at these very low IRs a few species dominate, the majority of species just depend on immigrations.
+%
+%Plots to produce:
+%\begin{itemize}
+%	\item Relative abundance by FG
+%	\item Possibly: RADs -> show that plants dominate, causing increase in abundance
+%	\item Interaction strength distributions for shifting IR - probably conclude that this is the same feature is variability - metrics tends to infinity at low abundance
+%\end{itemize}
 
 \begin{figure}
 	\centering	
 	\includegraphics[width=\textwidth]{{{figures/bivariate_v_IR/example_RADS_mai0_random}}}
-	\caption{\textbf{Example RADs} MAI$=0.0$ Random HL.}
+	\caption{Similar to figure \ref{fig:biv_HL_rads_mai0_random}, but for three different IR values. In all cases HL$=40\%$. These RADs are for antagonistic communities (MAI$=0.0$), under random HL.}
 	\label{fig:biv_IR_rads_mai0_random}
+\end{figure}
+\begin{figure}
+	\centering	
+	\includegraphics[width=\textwidth]{{{figures/bivariate_v_IR/example_RADS_mai0_contiguous}}}
+	\caption{Similar to figure \ref{fig:biv_HL_rads_mai0_random}, but for three different IR values. In all cases HL$=40\%$. These RADs are for antagonistic communities (MAI$=0.0$), under contiguous HL.}
+	\label{fig:biv_IR_rads_mai0_contiguous}
 \end{figure}
 
 \begin{figure}
 	\centering	
 	\includegraphics[width=\textwidth]{{{figures/bivariate_v_IR/example_RADS_mai1_random}}}
-	\caption{\textbf{Example RADs} MAI$=1.0$ Random HL.}
+	\caption{Similar to figure \ref{fig:biv_HL_rads_mai0_random}, but for three different IR values. In all cases HL$=40\%$. These RADs are for mutualistic communities (MAI$=1.0$), under random HL.}
 	\label{fig:biv_IR_rads_mai1_random}
 \end{figure}
-
 \begin{figure}
 	\centering	
 	\includegraphics[width=\textwidth]{{{figures/bivariate_v_IR/example_RADS_mai1_contiguous}}}
-	\caption{\textbf{Example RADs} MAI$=0.0$ Contiguous HL.}
-	\label{fig:biv_IR_rads_mai0_contiguous}
-\end{figure}
-\begin{figure}
-	\centering	
-	\includegraphics[width=\textwidth]{{{figures/bivariate_v_IR/example_RADS_mai1_contiguous}}}
-	\caption{\textbf{Example RADs} MAI$=1.0$ Contiguous HL.}
+	\caption{Similar to figure \ref{fig:biv_HL_rads_mai0_random}, but for three different IR values. In all cases HL$=40\%$. These RADs are for mutualistic communities (MAI$=1.0$), under contiguous HL.}
 	\label{fig:biv_IR_rads_mai1_contiguous}
 \end{figure}
+
+Both observations can be understood by looking at rank-abundance distributions (RADs) for communities at different IR values. RADs are plotted at three IR values: the lowest IR (0.0001), the highest IR (0.005), and the intermediate IR (0.0005) which was used in the previous section. Figures \ref{fig:biv_IR_rads_mai0_random} and \ref{fig:biv_IR_rads_mai0_contiguous} show RADs for antagonistic communities at $40\%$ random and contiguous HL respectively. At the lowest IR (panel A) the RADs are uneven and discontinuous, and the communities are dominated by plant species. This confirms our prediction from section \ref{sec:vir_variability} that the increase in abundance of antagonistic communities at very low IRs is due to an increased dominance of plants. At IR$=0.0001$ in both types of habitat (random and contiguous), non-basal species struggle to maintain viable populations that can interact with and make use of the high availability of plant biomass. This is consistent with results from section \ref{sec:closed_communities} where it was observed that communities without immigration are characterised by mass extinctions in non-basal levels, even in pristine landscapes. Increasing the IR makes the RADs more even. At IR$=0.0005$  (panel B) communities are still dominated by plant species, but the discontinuity between core and tail species is reduced. At IR$=0.005$ the communities are more even still and more non-basal species are present in the lowest ranks.  
+
+Figures \ref{fig:biv_IR_rads_mai1_random} and \ref{fig:biv_IR_rads_mai1_contiguous} show RADs for mutualistic communities at $40\%$ random and contiguous HL respectively. At the lowest IR (panel A) the RADs are uneven and species persistent is low. In both types of landscape there are only around 30 species present in the community. In the random landscape the core of species consists only of plants and a single species from the second trophic level, which must be a mutualistic-animal. None of the benefit of mutualism is conferred to other species due to the nature of random HL, as we have seen previously (section \ref{sec:biv_HL_RADs}). In the contiguous landscape the core is more diverse, with species from all trophic levels, as we would expect due to the stronger species interactions in such a landscape. In both the random and contiguous cases we again see that increasing IR makes the RADs more even, which by now is a familiar result. Despite the very different characteristics of the RADs, the total number of individuals is approximately equal in all six communities displayed (as discussed in section \ref{sec:vir_diversity}). We see that the constant number of individuals in mutualistic communities is due to the dominance of a core of species, which may or may not contain species from all trophic levels depending on the type of HL. Increasing the immigration rate serves to increase diversity by reducing the dominance of the mutualistic core, and promoting evenness in the RADs, whilst maintaining the same total abundance.
 
 \section{Alternative definition of extinction}
 \label{sec:extinction}
 
-As stated we will investigate alternative definitions of extinction. These are the possible definitions:
-\begin{itemize}
-	\item Species that do no have any natural births (during a time period) i.e. only immigration, if any
-	\item Species that do not interact with other species during a time period
-	\item Species that are below a certain threshold (relative) abundance
-\end{itemize}
+In this section we \emph{maybe} will explore different definitions of extinction. We would also look at compare which species go extinct in the random and contiguous scenarios, to shed more light on the different mechanisms of extinction. Alternatively maybe just delete this section because there is already a lot of information in this chapter.
 
-We suspect that these different metrics will given similar results. Here we plot heatmaps based on the above three definitions.
+%As stated we will investigate alternative definitions of extinction. These are the possible definitions:
+%\begin{itemize}
+%	\item Species that do no have any natural births (during a time period) i.e. only immigration, if any
+%	\item Species that do not interact with other species during a time period
+%	\item Species that are below a certain threshold (relative) abundance
+%\end{itemize}
+%
+%We suspect that these different metrics will given similar results. Here we plot heatmaps based on the above three definitions.
 
 \section{Discussion}
 \label{sec:vir_discussion}
 
-Are species `in the tail' interacting at all?
+%Are species `in the tail' interacting at all?
 
-Random HL appears to be beneficial to low abundance species, in that they are not driven to extinction by predation/competition. However this benefit is only realised in the presence of immigration. As we saw in chapter \ref{chap:}, without immigration these species would be driven to extinction.
+The main goal of this chapter was to determine how community responses to the two habitat loss (HL) scenarios differed from those seen in chapter \ref{chap:habitat_loss_high_immigration} when the immigration rate parameter (IR) was reduced. In particular, given that the loss of habitat in nature leads to the loss of species, we were interested to find IR values at which HL produced species extinctions. Also, given the importance of the immigration mechanism in driving structural properties such as evenness (chapter \ref{chap:habitat_loss_high_immigration}), and dynamical properties such as variability and determinism (chapter \ref{chap:stress_testing}), we were motivated to study such properties systematically over a large region of parameter space. The analysis has generally furthered our understanding of communities simulated using the IBM model. We have found certain results to be consistent with those of chapter \ref{chap:habitat_loss_high_immigration}, and which therefore appear to represent robust features of the model. We have also presented certain new and unexpected results, which provide fresh insight into the workings of the model. The key results, falling into both of the aforementioned categories, are discussed in turn below before considering the ecological significance of these results in the conclusion (section \ref{sec:vir_conclusion}). 
 
-\section{Conclusion}
+Strong species interactions are associated with high temporal variability in population dynamics. This results was evident from the previous two chapters, and is robust across the region of parameter space explored here (section \ref{sec:vir_variability}). Random HL serves to reduce species interaction strengths, and therefore reduces temporal variability. The converse holds for contiguous HL. Both the metric for temporal variability (mean CV) and for interaction strength (IS) tend to infinity in the limit that species abundance tends to zero. This property of the metrics must be considered in situations where species abundances are low, especially given the discrete nature of the model (species abundance must be integer valued). Specifically this appears to be an issue for \emph{IS} at the lowest IR value (both scenarios), and for \emph{mean CV} at high levels of random HL.
+
+Immigration is a key feature of the model. The roles of immigration in promoting evenness and reducing temporal variability were first observed in chapters \ref{chap:habitat_loss_high_immigration} and \ref{chap:stress_testing}. Both observations hold across this region of parameter space (sections \ref{sec:vir_diversity}, \ref{sec:vir_variability} and \ref{sec:biv_HL_evenness}). The fact that immigration prevents species extinctions has also been confirmed, since lowering IR was found to produce species extinctions (section \ref{sec:vir_diversity}). However extinction patterns were found to differ between the contiguous and random scenario. 
+
+In general contiguous HL produces more extinctions than random HL (section \ref{sec:vir_diversity}). Also the number of extinctions due to contiguous HL is clearly dependent on the level of destruction, whereas under random HL this is only the case for antagonistic communities. At the reduced IR of $0.0005$ random HL does result in uneven communities with discontinuous RADs (section \ref{sec:biv_HL_RADs}). And under both types of habitat loss predator species (top two trophic levels) suffer due to increase levels destruction (section \ref{sec:biv_HL_RAFG}). However the low abundance species in the tail of the RAD are less vulnerable to extinction under random HL than contiguous. Under contiguous HL communities became less even (at the IR$=0.0005$) and many species in the tail go extinct. This results from the strong trophic interactions, characteristic of the contiguous scenario, which drive species to extinction. In contrast random HL produces weak interactions, and as such rare species are subject to less predation pressure from the more abundant species. 
+
+In this chapter we have seen marked difference between mutualistic and antagonistic communities. As discussed previously mutualistic communities are less even (chapter \ref{chap:habitat_loss_high_immigration} and \cite{lurgi2015effects}). One consequence of this is that mutualistic communities exhibit more extinctions that antagonistic ones (section \ref{sec:vir_diversity}. Under random HL at low IR these extinctions are seen even in pristine landscape, where trophic interactions remain strong, and may be reduced by the onset of HL which reduces interaction strengths. Under contiguous HL mutualistic communities only exhibit more extinctions from increased HL, since trophic interaction strengths are increased. Extending the findings of chapter \ref{chap:stress_testing}, it is now clear that the lower evenness of mutualistic communities results from the dominance of a core group of species (section \ref{sec:biv_HL_RADs}, \ref{sec:biv_fixHL}). Depending on the context this core group may contain non-mutualistic species which benefit as a by-product of mutualism. The core group is also able to maintain the total abundance of the community as a whole in the face of changing IR (section \ref{sec:vir_diversity}), by increasing its dominance (section \ref{sec:biv_fixHL}). Increased IR serves to reduce the dominance of the core group and allow competing species to prosper\footnote{Have not mentioned network properties - needs a brief comment.}.
+
+%In contrast 
+%
+%Random HL appears to be beneficial to low abundance species, in that they are not driven to extinction by predation/competition. However this benefit is only realised in the presence of immigration. As we saw in chapter \ref{chap:}, without immigration these species would be driven to extinction.
+%
+%..In chapter \ref{chap:hhl} we saw that species abundances became more even under random HL, while they evenness did not change significantly under contiguous HL. These changes we attributed to the dependence of communities on immigration, which acts to make the distribution of individuals across species more even. Therefore we expected that at low IR we may observe a change in the evenness response. The IR of $0.0005$ was chosen because it appeared to generate communities that became less even under contiguous HL, especially in the case of MAI$=0.0$.
+%
+%Given what we know about random HL to dominance of plants at high HL is easily explained by lack of grazing!
+%
+%We conclude that mutualism benefits some species, and not just those that interact mutualistically, but also those that feed on them. However this benefit is restricted to a few species, while others suffer from the increased fitness of their competitors. Immigration acts to reduce the disprecpacny between the two groups. And random HL reduces the benefit of mutualism to species in higher trophic levels, because less energy is passed up the food chains. 
+%
+%In mutualistic community random HL can reduce extinctions by..
+%
+%The drivers of changes in network properties are numerous, and mechanism behind the same changes may differn between HL scenraio and MAi ratios, making interpretation difficult.
+
+\section{Conclusion and perspectives}
 \label{sec:vir_conclusion}
+
+From an ecological perspective\footnote{I will fill this out and furnish it with references, that is a nice job near the end :)}:
+\begin{itemize}
+	\item Importance of immigration may hold true (ref. meta-community theory)
+	\item Similarly the role of species interactions as a destabilising force (reduce evenness, create competition, increase variability), may also hold true. Ref: competitive exclusion. Although mention other other resolutions: endogenous factors due to interactions suggested weak compared to exogenous factors (e.g. environmental variability). Differential species traits. Phylogeny.
+	\item The role of mutualism in reducing evenness is unclear. Does this have empirical support? Certainly a strong feature of our model. Creates dominance amongst a core group of species. In our model immigration is required to reduce this dominance. Perhaps in nature another mechanism could play the same role?
+	\item Regarding extinctions our findings disagree with many theoretical studies - we get more extinctions due to contiguous than random HL. 
+	\item Also mutualism results in more extinctions than antagonism (due to less even communities).
+	\item Network metrics did not prove particularly informative in understanding community responses, disagreeing with many other studies. 
+	\item On the whole the response of communities at low IR (0.0005) seems more realistic than at high IR (0.005) - species go extinct, evenness can decrease, predator suffer in both random and contiguous scenario.
+	\item However there are certain limitations in the model that may see a departure from our results in future empirical studies - these are discussed in (conclusion chapter?) 
+\end{itemize}
 
 %\newpage
 %\section{Exploration of parameter space: habitat loss and immigration}

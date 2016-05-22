@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  3 MAY 2016 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  20 MAY 2016 09:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -276,13 +276,11 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-Overfull \hbox (3.30792pt too wide) in paragraph at lines 30--31
-[]\OT1/cmr/m/n/12 In the pre-vi-ous anal-y-sis we have char-ac-terised the per-
-for-mance of the \OT1/cmr/m/it/12 gradient-
- []
-
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no “ in font cmr12!
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 32.
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -324,35 +322,114 @@ File: 3species/3sp_fourier_corr.png Graphic file (type png)
 Package pdftex.def Info: 3species/3sp_fourier_corr.png used on input line 56.
 (pdftex.def)             Requested size: 390.0pt x 259.99536pt.
 
+<2species/old/example_dynamics_2sp_nohl.png, id=18, 1156.32pt x 722.7pt>
+File: 2species/old/example_dynamics_2sp_nohl.png Graphic file (type png)
+
+<use 2species/old/example_dynamics_2sp_nohl.png>
+Package pdftex.def Info: 2species/old/example_dynamics_2sp_nohl.png used on inp
+ut line 66.
+(pdftex.def)             Requested size: 390.0pt x 243.74081pt.
+
+<2species/old/convergence_highIR.png, id=19, 867.24pt x 433.62pt>
+File: 2species/old/convergence_highIR.png Graphic file (type png)
+
+<use 2species/old/convergence_highIR.png>
+Package pdftex.def Info: 2species/old/convergence_highIR.png used on input line
+ 73.
+(pdftex.def)             Requested size: 390.0pt x 195.00148pt.
+
+<2species/old/convergence_lowIR.png, id=20, 867.24pt x 433.62pt>
+File: 2species/old/convergence_lowIR.png Graphic file (type png)
+
+<use 2species/old/convergence_lowIR.png>
+Package pdftex.def Info: 2species/old/convergence_lowIR.png used on input line 
+80.
+(pdftex.def)             Requested size: 390.0pt x 195.00148pt.
+
+<2species/old/J01_ensemble_estimates_2sp_nohl.png, id=21, 1300.86pt x 867.24pt>
+File: 2species/old/J01_ensemble_estimates_2sp_nohl.png Graphic file (type png)
+<use 2species/old/J01_ensemble_estimates_2sp_nohl.png>
+Package pdftex.def Info: 2species/old/J01_ensemble_estimates_2sp_nohl.png used 
+on input line 88.
+(pdftex.def)             Requested size: 390.0pt x 260.00198pt.
+
+<2species/old/J10_ensemble_estimates_2sp_nohl.png, id=22, 1300.86pt x 867.24pt>
+File: 2species/old/J10_ensemble_estimates_2sp_nohl.png Graphic file (type png)
+<use 2species/old/J10_ensemble_estimates_2sp_nohl.png>
+Package pdftex.def Info: 2species/old/J10_ensemble_estimates_2sp_nohl.png used 
+on input line 96.
+(pdftex.def)             Requested size: 390.0pt x 260.00198pt.
+
+<2species/old/back_check_highIR_4463199_4.png, id=23, 1084.05pt x 1300.86pt>
+File: 2species/old/back_check_highIR_4463199_4.png Graphic file (type png)
+
+<use 2species/old/back_check_highIR_4463199_4.png>
+Package pdftex.def Info: 2species/old/back_check_highIR_4463199_4.png used on i
+nput line 104.
+(pdftex.def)             Requested size: 390.0pt x 467.99165pt.
+
+<2species/old/back_check_lowIR_4463195_3.png, id=24, 1084.05pt x 1300.86pt>
+File: 2species/old/back_check_lowIR_4463195_3.png Graphic file (type png)
+
+<use 2species/old/back_check_lowIR_4463195_3.png>
+Package pdftex.def Info: 2species/old/back_check_lowIR_4463195_3.png used on in
+put line 112.
+(pdftex.def)             Requested size: 390.0pt x 467.99165pt.
+ [3] [4 <./3species/3sp_fourier_corr.png>] [5 <./2species/old/example_dynamics_
+2sp_nohl.png> <./2species/old/convergence_highIR.png>] [6 <./2species/old/conve
+rgence_lowIR.png>] [7 <./2species/old/J01_ensemble_estimates_2sp_nohl.png>] [8 
+<./2species/old/J10_ensemble_estimates_2sp_nohl.png>] [9 <./2species/old/back_c
+heck_highIR_4463199_4.png>]
+[10 <./2species/old/back_check_lowIR_4463195_3.png>]
+<2species/old/example_dynamics_2sp_contiguous.png, id=62, 1156.32pt x 722.7pt>
+File: 2species/old/example_dynamics_2sp_contiguous.png Graphic file (type png)
+
+<use 2species/old/example_dynamics_2sp_contiguous.png>
+Package pdftex.def Info: 2species/old/example_dynamics_2sp_contiguous.png used 
+on input line 123.
+(pdftex.def)             Requested size: 390.0pt x 243.74081pt.
+
+<2species/old/example_dynamics_2sp_random.png, id=63, 1156.32pt x 722.7pt>
+File: 2species/old/example_dynamics_2sp_random.png Graphic file (type png)
+
+<use 2species/old/example_dynamics_2sp_random.png>
+Package pdftex.def Info: 2species/old/example_dynamics_2sp_random.png used on i
+nput line 130.
+(pdftex.def)             Requested size: 390.0pt x 243.74081pt.
+
 
 Package caption Warning: Unused \captionsetup[sub] on input line 22.
 See the caption package documentation for explanation.
 
-[3] [4 <./3species/3sp_fourier_corr.png>] (./development.aux)
+[11
+
+] [12 <./2species/old/example_dynamics_2sp_contiguous.png>] [13 <./2species/old
+/example_dynamics_2sp_random.png>] (./development.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4304 strings out of 493109
- 64917 string characters out of 6135010
- 133776 words of memory out of 5000000
- 7703 multiletter control sequences out of 15000+600000
- 11284 words of font info for 44 fonts, out of 8000000 for 9000
+ 4368 strings out of 493109
+ 67226 string characters out of 6135010
+ 134208 words of memory out of 5000000
+ 7756 multiletter control sequences out of 15000+600000
+ 13138 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,38p,2081b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,38p,2081b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on development.pdf (4 pages, 419069 bytes).
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on development.pdf (13 pages, 1840558 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  10 MAY 2016 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  22 MAY 2016 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1659,103 +1659,107 @@ Package: accents 2006/05/12 v1.3 Math Accent Tools
 \cc@group=\count339
 \cc@skewchar=\count340
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count341
+\l_MT_multwidth_dim=\dimen268
+\origjot=\skip260
+\l_MT_shortvdotswithinadjustabove_dim=\dimen269
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen270
+\l_MT_above_intertext_sep=\dimen271
+\l_MT_below_intertext_sep=\dimen272
+\l_MT_above_shortintertext_sep=\dimen273
+\l_MT_below_shortintertext_sep=\dimen274
+)
 (./memoirthesis.aux
 
-LaTeX Warning: Label `sec:intro_habitat_loss' multiply defined.
+LaTeX Warning: Label `eq:jac2' multiply defined.
 
 
-LaTeX Warning: Label `sec:intro_modelling_HL' multiply defined.
+LaTeX Warning: Label `sec:discussion' multiply defined.
 
 
-LaTeX Warning: Label `eq:lta' multiply defined.
-
-
-LaTeX Warning: Label `sec:methods' multiply defined.
-
-
-LaTeX Warning: Label `eq:two_species' multiply defined.
-
-
-LaTeX Warning: Label `eq:h2' multiply defined.
-
-
-LaTeX Warning: Label `fig:hii_ep_v_ns' multiply defined.
-
-
-LaTeX Warning: Label `fig:ep_v_n' multiply defined.
-
-
-LaTeX Warning: Label `fig:ep_v_ns' multiply defined.
+LaTeX Warning: Label `fig:3sp_phase' multiply defined.
 
 )
 \openout1 = `memoirthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 7.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 7.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 11.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 11
+.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 7.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 7.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 11.
+
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 7.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 7.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 11.
+
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 7.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 11.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 7.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 11.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 7.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 7.
+(Font)              scaled to size 10.18341pt on input line 11.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 11.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 7.
+Package layouts Warning: Layout scale set to 0.5 on input line 11.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
-\scratchdimen=\dimen268
+\scratchcounter=\count342
+\scratchdimen=\dimen275
 \scratchbox=\box79
-\nofMPsegments=\count342
-\nofMParguments=\count343
+\nofMPsegments=\count343
+\nofMParguments=\count344
 \everyMPshowfont=\toks64
-\MPscratchCnt=\count344
-\MPscratchDim=\dimen269
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
+\MPscratchCnt=\count345
+\MPscratchDim=\dimen276
+\MPnumerator=\count346
+\makeMPintoPDFobject=\count347
 \everyMPtoPDFconversion=\toks65
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1773,7 +1777,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring ON on input line 7.
+Package hyperref Info: Link coloring ON on input line 11.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1781,19 +1785,19 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count347
+\c@section@level=\count348
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 7.
-LaTeX Info: Redefining \ref on input line 7.
-LaTeX Info: Redefining \pageref on input line 7.
-LaTeX Info: Redefining \nameref on input line 7.
+LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
 (./memoirthesis.out) (./memoirthesis.out)
 \@outlinefile=\write6
 \openout6 = `memoirthesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 7.
+LaTeX Info: Redefining \microtypecontext on input line 11.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1810,25 +1814,25 @@ Package microtype Info: Loading generic settings for font family
 
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 7.
+put line 11.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 7.
+t line 11.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 7.
+t line 11.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 7.
+line 11.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 7.
+line 11.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 13.39188pt on input line 43.
+(Font)              scaled to size 13.39188pt on input line 47.
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 43.
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 13.39188pt on input line 43.
+(Font)              scaled to size 13.39188pt on input line 47.
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 43.
+(Font)              Font shape `T1/fnc/b/sc' tried instead on input line 47.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
-(Font)              scaled to size 13.39188pt on input line 43.
+(Font)              scaled to size 13.39188pt on input line 47.
  (./memoirthesis.toc
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
@@ -1891,2179 +1895,744 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-)
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 10.
+))
+Underfull \vbox (badness 5533) has occurred while \output is active []
+
  [1
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (1.20142pt too wide) detected at line 68
- \T1/fnc/m/n/10.95 103
- []
-
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 9.29993pt on input line 69.
+(Font)              scaled to size 9.29993pt on input line 80.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 69.
-[2]
-Overfull \hbox (1.20142pt too wide) detected at line 69
- \T1/fnc/m/n/10.95 103
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 70
- \T1/fnc/m/n/10.95 104
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 71
- \T1/fnc/m/n/10.95 105
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 72
- \T1/fnc/m/n/10.95 107
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 73
- \T1/fnc/m/n/10.95 108
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 74
- \T1/fnc/m/n/10.95 113
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 75
- \T1/fnc/b/n/10.95 115
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 76
- \T1/fnc/m/n/10.95 115
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 77
- \T1/fnc/m/n/10.95 117
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 78
- \T1/fnc/m/n/10.95 118
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 79
- \T1/fnc/m/n/10.95 120
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 80
- \T1/fnc/m/n/10.95 120
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 81
- \T1/fnc/m/n/10.95 124
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 82
- \T1/fnc/m/n/10.95 127
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 83
- \T1/fnc/m/n/10.95 128
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 84
- \T1/fnc/m/n/10.95 128
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 85
- \T1/fnc/m/n/10.95 130
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 86
- \T1/fnc/m/n/10.95 134
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 87
- \T1/fnc/m/n/10.95 136
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 88
- \T1/fnc/m/n/10.95 139
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 89
- \T1/fnc/m/n/10.95 142
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 90
- \T1/fnc/m/n/10.95 142
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 91
- \T1/fnc/m/n/10.95 143
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 92
- \T1/fnc/b/n/10.95 145
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 93
- \T1/fnc/m/n/10.95 145
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 94
- \T1/fnc/m/n/10.95 146
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 95
- \T1/fnc/m/n/10.95 147
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 96
- \T1/fnc/m/n/10.95 148
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 97
- \T1/fnc/m/n/10.95 151
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 98
- \T1/fnc/m/n/10.95 152
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 99
- \T1/fnc/m/n/10.95 155
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 100
- \T1/fnc/m/n/10.95 158
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 101
- \T1/fnc/m/n/10.95 158
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 102
- \T1/fnc/m/n/10.95 161
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 103
- \T1/fnc/m/n/10.95 161
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 104
- \T1/fnc/m/n/10.95 161
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 105
- \T1/fnc/m/n/10.95 162
- []
-
-[3]
-Overfull \hbox (1.20142pt too wide) detected at line 106
- \T1/fnc/m/n/10.95 164
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 107
- \T1/fnc/m/n/10.95 165
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 108
- \T1/fnc/m/n/10.95 167
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 109
- \T1/fnc/m/n/10.95 167
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 110
- \T1/fnc/m/n/10.95 169
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 111
- \T1/fnc/m/n/10.95 176
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 112
- \T1/fnc/m/n/10.95 184
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 113
- \T1/fnc/m/n/10.95 193
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 114
- \T1/fnc/b/n/10.95 195
- []
-
-) [4] (./chapters/chapter01/chap01.tex
+(Font)              scaled to size 9.29993pt on input line 80.
+ [2]
+(./chapters/chapter06/chap06.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 10.18341pt on input line 5.
- (./chapters/chapter01/introduction.tex
-
-Package natbib Warning: Citation `ceballos2015accelerated' on page 1 undefined 
-on input line 9.
-
-[1
-
-
-]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 17.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 17.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 17.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 17.
- [2] [3] [4]
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 11.15991pt on input line 97.
-LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 97.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 11.15991pt on input line 97.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.71893pt on input line 100.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 5.57996pt on input line 100.
- [5]
-
-Package natbib Warning: Citation `gibson2011sampling' on page 6 undefined on in
-put line 111.
-
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 122.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.06795pt on input line 122.
-[6] [7]
-LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 147.
-LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 13.39188pt on input line 147.
- [8] [9]
-LaTeX Font Info:    Try loading font information for TS1+fnc on input line 222.
-
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
-File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
-)
-LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 222.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `fnc' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [10]
-<chapters/chapter01/"diagrams/polar_bear".jpg, id=737, 622.325pt x 414.54875pt>
-File: chapters/chapter01/"diagrams/polar_bear".jpg Graphic file (type jpg)
-<use chapters/chapter01/"diagrams/polar_bear".jpg>
-Package pdftex.def Info: chapters/chapter01/"diagrams/polar_bear".jpg used on i
-nput line 274.
-(pdftex.def)             Requested size: 448.0pt x 298.43059pt.
- [11] [12 <./chapters/chapter01/diagrams/polar_bear.jpg>]
-Underfull \vbox (badness 7613) has occurred while \output is active []
-
- [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-[15]
-
-Package natbib Warning: Citation `sole2006self' on page 16 undefined on input l
-ine 343.
-
-)) [16] (./chapters/chapter02/chap02.tex (./chapters/chapter02/the_model.tex
-[17
-
-
-]
-<chapters/chapter02/"diagrams/niche_space".png, id=875, 1038.12843pt x 320.6981
-2pt>
-File: chapters/chapter02/"diagrams/niche_space".png Graphic file (type png)
- <use chapters/chapter02/"diagrams/niche_space".png>
-Package pdftex.def Info: chapters/chapter02/"diagrams/niche_space".png used on 
-input line 40.
-(pdftex.def)             Requested size: 448.0pt x 138.39174pt.
- [18]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 59.
-
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 67.
-
-[19 <./chapters/chapter02/diagrams/niche_space.png>]
-<chapters/chapter02/random_plots/example_food_web.png, id=896, 578.16pt x 433.6
-2pt>
-File: chapters/chapter02/random_plots/example_food_web.png Graphic file (type p
-ng)
- <use chapters/chapter02/random_plots/example_food_web.png>
-Package pdftex.def Info: chapters/chapter02/random_plots/example_food_web.png u
-sed on input line 86.
-(pdftex.def)             Requested size: 448.0pt x 335.9991pt.
-
-Underfull \vbox (badness 6220) has occurred while \output is active []
-
- [20 <./chapters/chapter02/random_plots/example_food_web.png>] [21]
-<chapters/chapter02/"diagrams/trophic_cartoon".png, id=920, 991.705pt x 623.328
-75pt>
-File: chapters/chapter02/"diagrams/trophic_cartoon".png Graphic file (type png)
-
- <use chapters/chapter02/"diagrams/trophic_cartoon".png>
-Package pdftex.def Info: chapters/chapter02/"diagrams/trophic_cartoon".png used
- on input line 110.
-(pdftex.def)             Requested size: 268.80273pt x 168.94777pt.
-
-Underfull \vbox (badness 2903) has occurred while \output is active []
-
- [22 <./chapters/chapter02/diagrams/trophic_cartoon.png>]
-<chapters/chapter02/"diagrams/IBM_movement".png, id=938, 771.88374pt x 814.0412
-4pt>
-File: chapters/chapter02/"diagrams/IBM_movement".png Graphic file (type png)
- <use chapters/chapter02/"diagrams/IBM_movement".png>
-Package pdftex.def Info: chapters/chapter02/"diagrams/IBM_movement".png used on
- input line 142.
-(pdftex.def)             Requested size: 134.40137pt x 141.7389pt.
- [23] [24 <./chapters/chapter02/diagrams/IBM_movement.png>] [25]
-
-Package natbib Warning: Citation `lurgi2015' on page 26 undefined on input line
- 196.
-
-[26]
-<chapters/chapter02/"tables/IBM_parameters".pdf, id=992, 597.23125pt x 845.1575
-pt>
-File: chapters/chapter02/"tables/IBM_parameters".pdf Graphic file (type pdf)
- <use chapters/chapter02/"tables/IBM_parameters".pdf>
-Package pdftex.def Info: chapters/chapter02/"tables/IBM_parameters".pdf used on
- input line 207.
-(pdftex.def)             Requested size: 403.19727pt x 570.57277pt.
- [27] [28 <./chapters/chapter02/tables/IBM_parameters.pdf>] [29]
-<chapters/chapter02/random_plots/example_trophic_dynamics_default.png, id=1049,
- 722.7pt x 433.62pt>
-File: chapters/chapter02/random_plots/example_trophic_dynamics_default.png Grap
-hic file (type png)
-
-<use chapters/chapter02/random_plots/example_trophic_dynamics_default.png>
-Package pdftex.def Info: chapters/chapter02/random_plots/example_trophic_dynami
-cs_default.png used on input line 238.
-(pdftex.def)             Requested size: 448.0pt x 268.80193pt.
-
-<chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai1.png
-, id=1050, 722.7pt x 433.62pt>
-File: chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai
-1.png Graphic file (type png)
-
-<use chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai1
-.png>
-Package pdftex.def Info: chapters/chapter02/random_plots/example_trophic_dynami
-cs_default_HL40_mai1.png used on input line 245.
-(pdftex.def)             Requested size: 448.0pt x 268.80193pt.
-
-<chapters/chapter02/random_plots/space/spatial_state_mai0.5.png, id=1053, 831.1
-05pt x 1300.86pt>
-File: chapters/chapter02/random_plots/space/spatial_state_mai0.5.png Graphic fi
-le (type png)
-
-<use chapters/chapter02/random_plots/space/spatial_state_mai0.5.png>
-Package pdftex.def Info: chapters/chapter02/random_plots/space/spatial_state_ma
-i0.5.png used on input line 252.
-(pdftex.def)             Requested size: 358.40137pt x 560.96672pt.
- [30 <./chapters/chapter02/random_plots/example_trophic_dynamics_default.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31 <./chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_m
-ai1.png>]
-[32 <./chapters/chapter02/random_plots/space/spatial_state_mai0.5.png>]
-[33] [34] [35]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 344.
-
-[36] [37]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 395.
-
-[38]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 415.
-
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 422.
-
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 428.
-
-[39] [40])) [41] [42
-
-] (./chapters/chapter03/chap03.tex
-(./chapters/chapter03/chapter_3_content.tex
-
-LaTeX Warning: Reference `sec:method' on page 43 undefined on input line 46.
-
-
-Underfull \vbox (badness 6708) has occurred while \output is active []
-
- [43
-
-]
-Underfull \vbox (badness 3029) has occurred while \output is active []
-
- [44]
-[45]
-<chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png, id=1288, 867.24pt
- x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png Graphic file 
-(type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_count_3ma
-i.png used on input line 94.
-(pdftex.def)             Requested size: 448.0pt x 268.80191pt.
-
-<chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png, id=1289, 867.24pt 
-x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png Graphic file (
-type png)
- <use chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai
-.png used on input line 102.
-(pdftex.def)             Requested size: 448.0pt x 268.80191pt.
-
-<chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png, id=1290, 72
-2.7pt x 1300.86pt>
-File: chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png Graphic
- file (type png)
-
-<use chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_rand
-om_3mai.png used on input line 109.
-(pdftex.def)             Requested size: 313.59863pt x 564.48007pt.
-
-
-LaTeX Warning: Float too large for page by 11.59282pt on input line 112.
-
-[46 <./chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>]
-<chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png, id=1304, 1487.5
-575pt x 550.055pt>
-File: chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png Graphic fil
-e (type png)
-
-<use chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_random_mai
-0.5.png used on input line 126.
-(pdftex.def)             Requested size: 448.0pt x 165.65564pt.
- [47 <./chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>] [48 <./cha
-pters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>]
-<chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png, id=1319, 14
-87.5575pt x 550.055pt>
-File: chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png Graphic
- file (type png)
-
-<use chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_contiguous
-_mai0.5.png used on input line 134.
-(pdftex.def)             Requested size: 448.0pt x 165.65564pt.
-
-[49 <./chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png (PNG copy)
-> <./chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png (PNG cop
-y)>]
-<chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png, id=1332, 1040.688pt x
- 624.4128pt>
-File: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png Graphic file (typ
-e png)
- <use chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.pn
-g used on input line 145.
-(pdftex.def)             Requested size: 448.0pt x 268.80669pt.
-
-[50 <./chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>]
-<chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png, id=
-1351, 867.24pt x 1300.86pt>
-File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png
- Graphic file (type png)
-
-<use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_random_3mai.png used on input line 160.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
-
-<chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.png,
- id=1352, 867.24pt x 1300.86pt>
-File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai
-.png Graphic file (type png)
-
-<use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.
-png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_contiguous_3mai.png used on input line 167.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
- [51] [52 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3
-mai.png>] [53 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_cont
-iguous_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png, id=1382, 867.
-24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png Graphic f
-ile (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_number_of_links
-_3mai.png used on input line 182.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-<chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png, id=1387, 8
-67.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png Graphi
-c file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_interacti
-ons_3mai.png used on input line 189.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-[54
-
- <./chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>]
-[55 <./chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png, id=1420, 
-867.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png Graph
-ic file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_genera
-lity_3mai.png used on input line 207.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-<chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png, id=142
-5, 867.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png Gr
-aphic file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_vulner
-ability_3mai.png used on input line 214.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-[56] [57 <./chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png
-> <./chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png, id=1450
-, 867.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png Gra
-phic file (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_interaction_div
-ersity_3mai.png used on input line 225.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
-
-<chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png, id=1455, 867.2
-4pt x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png Graphic fi
-le (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_specialisation_
-3mai.png used on input line 239.
-(pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
- [58 <./chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png> 
-<./chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png, id=1467, 867.24p
-t x 520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png Graphic file
- (type png)
-
-<use chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3m
-ai.png used on input line 251.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-<chapters/chapter03/clean_figs/strong_fig.png, id=1472, 867.24pt x 1300.86pt>
-File: chapters/chapter03/clean_figs/strong_fig.png Graphic file (type png)
-
-<use chapters/chapter03/clean_figs/strong_fig.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/strong_fig.png used on i
-nput line 258.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
-
-
-LaTeX Warning: Float too large for page by 11.91661pt on input line 261.
-
-[59
-
- <./chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>] [60 <./chapt
-ers/chapter03/clean_figs/strong_fig.png>]
-<chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png, id=1502, 867.24pt x 
-520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png Graphic file (ty
-pe png)
- <use chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.p
-ng used on input line 275.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-<chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png, id=1507, 867.24pt x 
-520.344pt>
-File: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png Graphic file (ty
-pe png)
- <use chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.p
-ng used on input line 282.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-[62 <./chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png> <./chapters/ch
-apter03/clean_figs/clean_lm_gearys_c_3mai.png>] [63]
-<chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png, id=1542, 867.
-24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png Graphic f
-ile (type png)
-
-<use chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_minimum_invariability
-_3mai.png used on input line 299.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-<chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png, id=1547, 867.24pt x 
-520.344pt>
-File: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png Graphic file (ty
-pe png)
- <use chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.p
-ng used on input line 306.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-Underfull \vbox (badness 5105) has occurred while \output is active []
-
- [64
-
- <./chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>] [65 <./ch
-apters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png>]
-Underfull \vbox (badness 1142) has occurred while \output is active []
-
- [66
-
-]
-<chapters/chapter03/clean_figs/normalised_IS3_dist_random.png, id=1595, 1300.86
-pt x 722.7pt>
-File: chapters/chapter03/clean_figs/normalised_IS3_dist_random.png Graphic file
- (type png)
-
-<use chapters/chapter03/clean_figs/normalised_IS3_dist_random.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_rand
-om.png used on input line 329.
-(pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
-
-<chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png, id=1596, 130
-0.86pt x 722.7pt>
-File: chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png Graphic 
-file (type png)
-
-<use chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_cont
-iguous.png used on input line 337.
-(pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
- [67]
-[68 <./chapters/chapter03/clean_figs/normalised_IS3_dist_random.png> <./chapter
-s/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>]
-<chapters/chapter03/clean_figs/diffusion_example.png, id=1617, 1164.9924pt x 76
-0.2804pt>
-File: chapters/chapter03/clean_figs/diffusion_example.png Graphic file (type pn
-g)
- <use chapters/chapter03/clean_figs/diffusion_example.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/diffusion_example.png us
-ed on input line 348.
-(pdftex.def)             Requested size: 448.0pt x 292.36662pt.
-LaTeX Font Info:    Font shape `TS1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `TS1/fnc/b/n' tried instead on input line 349.
-LaTeX Font Info:    Font shape `TS1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 349.
-
-<chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png, id=1618
-, 867.24pt x 520.344pt>
-File: chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png Gra
-phic file (type png)
-
-<use chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>
-Package pdftex.def Info: chapters/chapter03/clean_figs/lm_mean_proportion_immig
-ration_3mai.png used on input line 355.
-(pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [69]
-[70 <./chapters/chapter03/clean_figs/diffusion_example.png>]
-
-LaTeX Warning: Reference `fig:example_food_Web' on page 71 undefined on input l
-ine 364.
-
-
-Underfull \vbox (badness 3954) has occurred while \output is active []
-
- [71 <./chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>]
- [72]
-[73
-
-]
-
-LaTeX Warning: Reference `chap:inferring_interactions' on page 74 undefined on 
-input line 386.
-
-
-LaTeX Warning: Reference `chap:varrying_immigration' on page 74 undefined on in
-put line 386.
-
-)) [74] (./chapters/chapter13/chap13.tex
-(./chapters/chapter13/chapter_13_content.tex
-
-Package natbib Warning: Citation `newbold2015global' on page 75 undefined on in
-put line 18.
-
-
-<chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png, id=16
-89, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png G
-raphic file (type png)
-
-<use chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/hist_species_p
-er_tl_zeroIR".png used on input line 30.
-(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [75
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76 <./chapters/chapter13/figures/persistence/hist_species_per_tl_zeroIR.png>]
-
-<chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png, id=1714, 5
-78.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png Graphi
-c file (type png)
-
-<use chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/mean_trophic_d
-ynamics".png used on input line 60.
-(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[77]
-<chapters/chapter13/"figures/persistence/species_richness_per_trophic_level".pn
-g, id=1723, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/species_richness_per_trophic_leve
-l".png Graphic file (type png)
-
-<use chapters/chapter13/"figures/persistence/species_richness_per_trophic_level
-".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/species_richne
-ss_per_trophic_level".png used on input line 81.
-(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
- [78 <./chapters/chapter13/figures/persistence/mean_trophic_dynamics.png>]
-<chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai00".png, id=
-1730, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai00".png
- Graphic file (type png)
-
-<use chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai00".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/rr_hist_specie
-s_per_tl_mai00".png used on input line 102.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <9> not available
-(Font)              Font shape `T1/fnc/b/n' tried instead on input line 102.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 102.
-
-<chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png, id=
-1731, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png
- Graphic file (type png)
-
-<use chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/rr_hist_specie
-s_per_tl_mai05".png used on input line 105.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-
-Underfull \vbox (badness 2932) has occurred while \output is active []
-
- [79 <./chapters/chapter13/figures/persistence/species_richness_per_trophic_lev
-el.png>]
-<chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai00".png, i
-d=1743, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai00".p
-ng Graphic file (type png)
-
-<use chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai00".pn
-g>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/rr_mean_trophi
-c_dynamics_mai00".png used on input line 178.
-(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
-
-<chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai05".png, i
-d=1744, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai05".p
-ng Graphic file (type png)
-
-<use chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai05".pn
-g>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/rr_mean_trophi
-c_dynamics_mai05".png used on input line 187.
-(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
- [80 <./chapters/chapter13/figures/persistence/rr_hist_species_per_tl_mai00.png
-> <./chapters/chapter13/figures/persistence/rr_hist_species_per_tl_mai05.png>] 
-[81 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai00.pn
-g>] [82 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai0
-5.png>]pdfTeX warning (ext4): destination with the same identifier (name{subfig
-ure.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.215 	\subbottom
-                 [\textbf{ MAI=0.0}]{\includegraphics[width=0.49\linewidth]{...
-
-<chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png, id=1766
-, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png Gra
-phic file (type png)
-
-<use chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/ls_v_comp_mai0
-0_standard".png used on input line 215.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.218 	\subbottom
-                 [\textbf{ MAI=0.5}]{\includegraphics[width=0.49\linewidth]{...
-
-<chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png, id=1767
-, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png Gra
-phic file (type png)
-
-<use chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/ls_v_comp_mai0
-5_standard".png used on input line 218.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-
-[83
-
- <./chapters/chapter13/figures/persistence/ls_v_comp_mai00_standard.png> <./cha
-pters/chapter13/figures/persistence/ls_v_comp_mai05_standard.png>]
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
- [84]pdfTeX warning (ext4): destination with the same identifier (name{subfigur
-e.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.243 	\subbottom
-                 [\textbf{Niche model}]{\includegraphics[width=0.49\linewidt...
-
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png, id=1787, 
-578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png Graph
-ic file (type png)
-
-<use chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/nsp_v_comp_mai
-00_niche".png used on input line 243.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.246 	\subbottom
-                 [\textbf{Re-wired networks}]{\includegraphics[width=0.49\li...
-
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png, id=1788
-, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png Gra
-phic file (type png)
-
-<use chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/nsp_v_comp_mai
-00_rewired".png used on input line 246.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 	\subbottom
-                 [\textbf{Niche model}]{\includegraphics[width=0.49\linewidt...
-
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png, id=1789, 
-578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png Graph
-ic file (type png)
-
-<use chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/nsp_v_comp_mai
-05_niche".png used on input line 256.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.259 	\subbottom
-                 [\textbf{Re-wired networks}]{\includegraphics[width=0.49\li...
-
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png, id=1790
-, 578.16pt x 433.62pt>
-File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png Gra
-phic file (type png)
-
-<use chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png>
-Package pdftex.def Info: chapters/chapter13/"figures/persistence/nsp_v_comp_mai
-05_rewired".png used on input line 259.
-(pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-
-[85 <./chapters/chapter13/figures/persistence/nsp_v_comp_mai00_niche.png> <./ch
-apters/chapter13/figures/persistence/nsp_v_comp_mai00_rewired.png> <./chapters/
-chapter13/figures/persistence/nsp_v_comp_mai05_niche.png> <./chapters/chapter13
-/figures/persistence/nsp_v_comp_mai05_rewired.png>]
-<chapters/chapter13/figures/persistence/net_struct/good_network_page.png, id=18
-06, 1445.4pt x 722.7pt>
-File: chapters/chapter13/figures/persistence/net_struct/good_network_page.png G
-raphic file (type png)
-
-<use chapters/chapter13/figures/persistence/net_struct/good_network_page.png>
-Package pdftex.def Info: chapters/chapter13/figures/persistence/net_struct/good
-_network_page.png used on input line 295.
-(pdftex.def)             Requested size: 448.0pt x 224.0016pt.
-
-<chapters/chapter13/figures/persistence/net_struct/bad_network_page.png, id=180
-7, 1445.4pt x 722.7pt>
-File: chapters/chapter13/figures/persistence/net_struct/bad_network_page.png Gr
-aphic file (type png)
-
-<use chapters/chapter13/figures/persistence/net_struct/bad_network_page.png>
-Package pdftex.def Info: chapters/chapter13/figures/persistence/net_struct/bad_
-network_page.png used on input line 302.
-(pdftex.def)             Requested size: 448.0pt x 224.0016pt.
-
-[86] [87 <./chapters/chapter13/figures/persistence/net_struct/good_network_page
-.png> <./chapters/chapter13/figures/persistence/net_struct/bad_network_page.png
->] [88]
-<chapters/chapter13/"figures/stationarity/cov_vs_ir".png, id=1837, 578.16pt x 4
-33.62pt>
-File: chapters/chapter13/"figures/stationarity/cov_vs_ir".png Graphic file (typ
-e png)
- <use chapters/chapter13/"figures/stationarity/cov_vs_ir".png>
-Package pdftex.def Info: chapters/chapter13/"figures/stationarity/cov_vs_ir".pn
-g used on input line 401.
-(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
- [89
-
- <./chapters/chapter13/figures/stationarity/cov_vs_ir.png>]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 436.
-
-[90]
-
-LaTeX Warning: Reference `sec:stationarity_discussion' on page 91 undefined on 
-input line 452.
-
-[91]
-<chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png, id=1885, 731.37
-24pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png Graphic fil
-e (type png)
-
-<use chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_rw_ns_dynam
-ics.png used on input line 479.
-(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
- [92 <./chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png>]
-
-LaTeX Warning: Reference `sec:stationarity_discussion' on page 93 undefined on 
-input line 503.
-
-
-<chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png, id=1896, 7
-31.3724pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png Graphi
-c file (type png)
-
-<use chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/stat_te
-sts_v_wl.png used on input line 518.
-(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
-
-[93 <./chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png>]
-<chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png, id=1911, 731.
-3724pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png Graphic f
-ile (type png)
-
-<use chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_trophic_dyn
-amics.png used on input line 541.
-(pdftex.def)             Requested size: 313.59863pt x 189.64886pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[94]
-<chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png, id=1922
-, 731.3724pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png Gra
-phic file (type png)
-
-<use chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/tl_stat
-_tests_v_wl.png used on input line 556.
-(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 3428) has occurred while \output is active []
-
- [95 <./chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png>]
-<chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png, id=1936, 72
-2.7pt x 433.62pt>
-File: chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png Graphic
- file (type png)
-
-<use chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_sp_by_tl_pa
-rt10000.png used on input line 566.
-(pdftex.def)             Requested size: 448.0pt x 268.80193pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.585 	\subbottom
-                 [Three most abundant species]{\includegraphics[width=0.8\li...
-
-<chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png, id=1
-941, 731.3724pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png 
-Graphic file (type png)
-
-<use chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/sp_ma_s
-tat_tests_v_wl.png used on input line 585.
-(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.586 		\subbottom
-                  [Three least abundant species]{\includegraphics[width=0.8\...
-
-<chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png, id=1
-942, 731.3724pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png 
-Graphic file (type png)
-
-<use chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/sp_la_s
-tat_tests_v_wl.png used on input line 586.
-(pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
-
-[96 <./chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png>]
-Underfull \vbox (badness 1701) has occurred while \output is active []
-
- [97 <./chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png>] [98
- <./chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png> <
-./chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png>]
-<chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png, id=1971, 72
-2.7pt x 433.62pt>
-File: chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png Graphic
- file (type png)
-
-<use chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_v_li_net7_e
-nsemble.png used on input line 609.
-(pdftex.def)             Requested size: 448.0pt x 268.80193pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `chap:varrying_immigration_rate' on page 99 undefined 
-on input line 615.
-
-
-<chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png, id=1977, 722.7pt x 7
-56.6669pt>
-File: chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png Graphic file (ty
-pe png)
- <use chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/nssp_ir_v_hl.p
-ng used on input line 619.
-(pdftex.def)             Requested size: 448.0pt x 469.05936pt.
-
-
-LaTeX Warning: Reference `chap:varrying_immigration_rate' on page 99 undefined 
-on input line 620.
-
-
-LaTeX Warning: Reference `chap:varrying_immigration_rate' on page 99 undefined 
-on input line 620.
-
-
-<chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png, id=1978, 578.16p
-t x 433.62pt>
-File: chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png Graphic file
- (type png)
-
-<use chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/nssp_v_ir_and_
-hl.png used on input line 628.
-(pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[99] [100 <./chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png>
-] [101 <./chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png>] [102 <./ch
-apters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png>] [103
-
-] [104]
-<chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png, id=204
-1, 1300.86pt x 1300.86pt>
-File: chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png Gr
-aphic file (type png)
-
-<use chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/RP_high_low_sh
-uffle_random.png used on input line 688.
-(pdftex.def)             Requested size: 448.0pt x 448.0032pt.
-
-<chapters/chapter13/figures/stationarity/percentage_determinism.png, id=2044, 1
-300.86pt x 722.7pt>
-File: chapters/chapter13/figures/stationarity/percentage_determinism.png Graphi
-c file (type png)
-
-<use chapters/chapter13/figures/stationarity/percentage_determinism.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/percentage_det
-erminism.png used on input line 696.
-(pdftex.def)             Requested size: 448.0pt x 248.89066pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[105] [106 <./chapters/chapter13/figures/stationarity/RP_high_low_shuffle_rando
-m.png>] [107 <./chapters/chapter13/figures/stationarity/percentage_determinism.
-png>]pdfTeX warning (ext4): destination with the same identifier (name{subfigur
-e.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.781 	\subbottom
-                 [HI simulation (IR$=0.001$)]{\includegraphics[width=1.0\lin...
-
-<chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_regress
-ion.png, id=2072, 1309.5324pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_re
-gression.png Graphic file (type png)
-
-<use chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_reg
-ression.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/Reliability/HI
-/three_estimator_regression.png used on input line 781.
-(pdftex.def)             Requested size: 448.0pt x 151.30876pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.782 	\subbottom
-                 [LI simulation (IR$=0.0001$)]{\includegraphics[width=1.0\li...
-
-<chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_regress
-ion.png, id=2073, 1309.5324pt x 442.2924pt>
-File: chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_re
-gression.png Graphic file (type png)
-
-<use chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_reg
-ression.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/Reliability/LI
-/three_estimator_regression.png used on input line 782.
-(pdftex.def)             Requested size: 448.0pt x 151.30876pt.
-
-<chapters/chapter13/figures/stationarity/Reliability/error_versus_estimator.png
-, id=2074, 578.16pt x 433.62pt>
-File: chapters/chapter13/figures/stationarity/Reliability/error_versus_estimato
-r.png Graphic file (type png)
-
-<use chapters/chapter13/figures/stationarity/Reliability/error_versus_estimator
-.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/Reliability/er
-ror_versus_estimator.png used on input line 791.
-(pdftex.def)             Requested size: 448.0pt x 335.9991pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[108]
-<chapters/chapter13/figures/stationarity/ras_3examples.png, id=2090, 722.7pt x 
-722.7pt>
-File: chapters/chapter13/figures/stationarity/ras_3examples.png Graphic file (t
-ype png)
- <use chapters/chapter13/figures/stationarity/ras_3examples.png>
-Package pdftex.def Info: chapters/chapter13/figures/stationarity/ras_3examples.
-png used on input line 820.
-(pdftex.def)             Requested size: 448.0pt x 448.0032pt.
-
-[109] [110 <./chapters/chapter13/figures/stationarity/Reliability/HI/three_esti
-mator_regression.png> <./chapters/chapter13/figures/stationarity/Reliability/LI
-/three_estimator_regression.png>] [111 <./chapters/chapter13/figures/stationari
-ty/Reliability/error_versus_estimator.png>] [112 <./chapters/chapter13/figures/
-stationarity/ras_3examples.png>]
-
-LaTeX Warning: Reference `chap:varrying_immigration' on page 113 undefined on i
-nput line 893.
-
-)) [113
-
-] [114
-
-] (./chapters/chapter04/chap04.tex
-(./chapters/chapter04/chapter_4_content.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [115
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [116]
-[117]
-<chapters/chapter04/figures/clean_analysis/heatmap_ttest.png, id=2180, 1589.94p
-t x 867.24pt>
-File: chapters/chapter04/figures/clean_analysis/heatmap_ttest.png Graphic file 
-(type png)
-
-<use chapters/chapter04/figures/clean_analysis/heatmap_ttest.png>
-Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/heatmap_ttes
-t.png used on input line 97.
-(pdftex.def)             Requested size: 448.0pt x 244.36058pt.
-
-
-LaTeX Warning: Reference `chap:' on page 118 undefined on input line 102.
-
-[118]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [119 <./chapters/chapter04/figures/clean_analysis/heatmap_ttest.png>]
-<chapters/chapter04/figures/clean_analysis/random/heatmap1.png, id=2202, 1589.9
-4pt x 1300.86pt>
-File: chapters/chapter04/figures/clean_analysis/random/heatmap1.png Graphic fil
-e (type png)
-
-<use chapters/chapter04/figures/clean_analysis/random/heatmap1.png>
-Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/random/heatm
-ap1.png used on input line 119.
-(pdftex.def)             Requested size: 448.0pt x 366.54086pt.
-
-<chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png, id=2203, 15
-89.94pt x 1300.86pt>
-File: chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png Graphic
- file (type png)
-
-<use chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png>
-Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/contiguous/h
-eatmap1.png used on input line 125.
-(pdftex.def)             Requested size: 448.0pt x 366.54086pt.
-
-[120] [121 <./chapters/chapter04/figures/clean_analysis/random/heatmap1.png>]
-[122 <./chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png>]
-<chapters/chapter04/figures/clean_analysis/random/heatmap3.png, id=2246, 1589.9
-4pt x 1300.86pt>
-File: chapters/chapter04/figures/clean_analysis/random/heatmap3.png Graphic fil
-e (type png)
-
-<use chapters/chapter04/figures/clean_analysis/random/heatmap3.png>
-Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/random/heatm
-ap3.png used on input line 156.
-(pdftex.def)             Requested size: 448.0pt x 366.54086pt.
- [123]
-<chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png, id=2257, 15
-89.94pt x 1300.86pt>
-File: chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png Graphic
- file (type png)
-
-<use chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png>
-Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/contiguous/h
-eatmap3.png used on input line 162.
-(pdftex.def)             Requested size: 448.0pt x 366.54086pt.
-
-Underfull \vbox (badness 4543) has occurred while \output is active []
-
- [124 <./chapters/chapter04/figures/clean_analysis/random/heatmap3.png>] [125 <
-./chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png>]
-<chapters/chapter04/figures/clean_analysis/heatmap_sync.png, id=2291, 1589.94pt
- x 867.24pt>
-File: chapters/chapter04/figures/clean_analysis/heatmap_sync.png Graphic file (
-type png)
- <use chapters/chapter04/figures/clean_analysis/heatmap_sync.png>
-Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/heatmap_sync
-.png used on input line 186.
-(pdftex.def)             Requested size: 448.0pt x 244.36058pt.
-
-[126] [127 <./chapters/chapter04/figures/clean_analysis/heatmap_sync.png>]
-<chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png, id=233
-1, 867.24pt x 520.344pt>
-File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png Gr
-aphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/clean_lm_sha
-nnon_eq_3mai.png used on input line 276.
-(pdftex.def)             Requested size: 448.0pt x 268.80191pt.
-
-[128] [129 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3ma
-i.png>]
-<chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_3mai.
-png, id=2355, 722.7pt x 1300.86pt>
-File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_
-3mai.png Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_3
-mai.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/lm_fg_shanno
-n_eq_hl_contiguous_3mai.png used on input line 290.
-(pdftex.def)             Requested size: 313.59863pt x 564.48007pt.
-
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png, id=236
-1, 1182.4175pt x 440.64626pt>
-File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png Gr
-aphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/example_RADS
-_mai0_random.png used on input line 303.
-(pdftex.def)             Requested size: 448.0pt x 166.94975pt.
-
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png, id=236
-7, 1421.31pt x 550.055pt>
-File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png Gr
-aphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/example_RADS
-_mai1_random.png used on input line 320.
-(pdftex.def)             Requested size: 448.0pt x 173.37735pt.
-
-Underfull \vbox (badness 3364) has occurred while \output is active []
-
- [130]
-[131 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguou
-s_3mai.png>] [132 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai
-0_random.png (PNG copy)> <./chapters/chapter04/figures/bivariate_v_HL/example_R
-ADS_mai1_random.png (PNG copy)>]
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous.png, id
-=2392, 1421.31pt x 550.055pt>
-File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous.pn
-g Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous.png
->
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/example_RADS
-_mai0_contiguous.png used on input line 329.
-(pdftex.def)             Requested size: 448.0pt x 173.37735pt.
- [133 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous
-.png (PNG copy)>]
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous.png, id
-=2407, 1179.40625pt x 440.64626pt>
-File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous.pn
-g Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous.png
->
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/example_RADS
-_mai1_contiguous.png used on input line 344.
-(pdftex.def)             Requested size: 448.0pt x 167.38007pt.
-
-<chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_random_3
-mai.png, id=2415, 867.24pt x 1300.86pt>
-File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_ran
-dom_3mai.png Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_rand
-om_3mai.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relati
-ve_abundance_hl_random_3mai.png used on input line 365.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
- [134 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous
-.png (PNG copy)>] [135 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_relat
-ive_abundance_hl_random_3mai.png>]
-<chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_contiguo
-us_3mai.png, id=2438, 867.24pt x 1300.86pt>
-File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_con
-tiguous_3mai.png Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_cont
-iguous_3mai.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relati
-ve_abundance_hl_contiguous_3mai.png used on input line 385.
-(pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
-
-<chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality_3mai.pn
-g, id=2445, 867.24pt x 520.344pt>
-File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality_3m
-ai.png Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality_3ma
-i.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/clean_lm_wei
-ghted_generality_3mai.png used on input line 408.
-(pdftex.def)             Requested size: 448.0pt x 268.80191pt.
-
-<chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_vulnerability_3mai
-.png, id=2450, 867.24pt x 520.344pt>
-File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_vulnerability
-_3mai.png Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_vulnerability_
-3mai.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/clean_lm_wei
-ghted_vulnerability_3mai.png used on input line 414.
-(pdftex.def)             Requested size: 448.0pt x 268.80191pt.
- [136] [137 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundan
-ce_hl_contiguous_3mai.png>] [138 <./chapters/chapter04/figures/bivariate_v_HL/c
-lean_lm_weighted_generality_3mai.png> <./chapters/chapter04/figures/bivariate_v
-_HL/clean_lm_weighted_vulnerability_3mai.png>]
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png, id=249
-0, 1179.40625pt x 440.64626pt>
-File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png Gr
-aphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
-_mai0_random.png used on input line 479.
-(pdftex.def)             Requested size: 448.0pt x 167.38007pt.
-
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_contiguous.png, id
-=2493, 1179.40625pt x 440.64626pt>
-File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_contiguous.pn
-g Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_contiguous.png
->
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
-_mai0_contiguous.png used on input line 485.
-(pdftex.def)             Requested size: 448.0pt x 167.38007pt.
-
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png, id=249
-6, 1179.40625pt x 440.64626pt>
-File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png Gr
-aphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png>
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
-_mai1_random.png used on input line 492.
-(pdftex.def)             Requested size: 448.0pt x 167.38007pt.
-
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_contiguous.png, id
-=2499, 1179.40625pt x 440.64626pt>
-File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_contiguous.pn
-g Graphic file (type png)
-
-<use chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_contiguous.png
->
-Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
-_mai1_contiguous.png used on input line 498.
-(pdftex.def)             Requested size: 448.0pt x 167.38007pt.
- [139] [140 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_rand
-om.png (PNG copy)> <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_ma
-i0_contiguous.png (PNG copy)>] [141 <./chapters/chapter04/figures/bivariate_v_I
-R/example_RADS_mai1_random.png (PNG copy)> <./chapters/chapter04/figures/bivari
-ate_v_IR/example_RADS_mai1_contiguous.png (PNG copy)>] [142] [143])) [144]
-(./chapters/chapter06/chap06.tex (./chapters/chapter06/chapter_6_content.tex
-
-LaTeX Warning: Reference `sec:introduction' on page 145 undefined on input line
- 20.
-
-[145
-
-
-]
-<chapters/chapter06/flow_chart/flow_chart.pdf, id=2577, 637.55487pt x 505.49654
-pt>
+ (./chapters/chapter06/chapter_6_temp.tex
+<chapters/chapter06/flow_chart/flow_chart.pdf, id=163, 637.55487pt x 505.49654p
+t>
 File: chapters/chapter06/flow_chart/flow_chart.pdf Graphic file (type pdf)
  <use chapters/chapter06/flow_chart/flow_chart.pdf>
 Package pdftex.def Info: chapters/chapter06/flow_chart/flow_chart.pdf used on i
-nput line 70.
+nput line 32.
 (pdftex.def)             Requested size: 448.0pt x 355.2104pt.
- [146 <./chapters/chapter06/flow_chart/flow_chart.pdf>] [147]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 37.
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 37.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 37.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 37.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 37.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 37.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 37.
+
+Underfull \vbox (badness 1242) has occurred while \output is active []
+
+ [1
+
+
+]
+
+LaTeX Warning: Reference `sec:def_iss' on page 2 undefined on input line 41.
+
+
+Underfull \vbox (badness 3189) has occurred while \output is active []
+
+ [2 <./chapters/chapter06/flow_chart/flow_chart.pdf>]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 11.15991pt on input line 45.
+LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
+(Font)              Font shape `T1/fnc/b/n' tried instead on input line 45.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 11.15991pt on input line 45.
+
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 113.
+(nag)                Use amsmath's align instead on input line 60.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 121.
+(nag)                Use amsmath's align instead on input line 70.
 
-[148]
+[3]
 
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 131.
-
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 143.
+LaTeX Warning: Reference `sec:intro_population_dynamics' on page 4 undefined on
+ input line 78.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 150.
-
-[149]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 169.
+(nag)                Use amsmath's align instead on input line 80.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 176.
+(nag)                Use amsmath's align instead on input line 90.
 
-<chapters/chapter06/figures/FR_example.png, id=2678, 722.7pt x 433.62pt>
+[4]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 104.
+
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 111.
+
+
+LaTeX Warning: Reference `sec:closed_communities' on page 5 undefined on input 
+line 124.
+
+[5]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 137.
+
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 152.
+
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 159.
+
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 166.
+
+[6]
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.71893pt on input line 193.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 5.57996pt on input line 193.
+
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 198.
+
+[7]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 219.
+
+[8] [9]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 306.
+
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 313.
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{equation.6
+.2.34}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.348 
+      ]
+<chapters/chapter06/figures/FR_example.png, id=357, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/FR_example.png Graphic file (type png)
 
 <use chapters/chapter06/figures/FR_example.png>
 Package pdftex.def Info: chapters/chapter06/figures/FR_example.png used on inpu
-t line 195.
+t line 356.
 (pdftex.def)             Requested size: 358.40137pt x 215.04286pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[150] [151 <./chapters/chapter06/figures/FR_example.png>] [152]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 257.
-
-[153]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 347.
-
-[154]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 354.
+LaTeX Warning: Reference `sec:intro_interactions' on page 11 undefined on input
+ line 361.
 
 
+Underfull \vbox (badness 4673) has occurred while \output is active []
+
+ [11 <./chapters/chapter06/figures/FR_example.png>] [12]
+
+LaTeX Warning: Reference `sec:the_model' on page 13 undefined on input line 417
+.
+
+[13] [14]
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 8.36993pt on input line 449.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.06795pt on input line 449.
+
+
+LaTeX Warning: Reference `eq:jac1' on page 15 undefined on input line 450.
+
+
+LaTeX Warning: Reference `eq:lin_mod_sp1' on page 15 undefined on input line 46
+4.
+
+
+LaTeX Warning: Reference `eq:lin_mod_sp2' on page 15 undefined on input line 46
+4.
+
+
+LaTeX Warning: Reference `eq:lin_mod_sp1' on page 15 undefined on input line 46
+4.
+
+
+LaTeX Warning: Reference `eq:lin_mod_sp2' on page 15 undefined on input line 46
+4.
+
+[15]
 <chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.000000.png, 
-id=2757, 1084.05pt x 433.62pt>
+id=451, 1084.05pt x 433.62pt>
 File: chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.000000.
 png Graphic file (type png)
 
 <use chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.000000.p
 ng>
 Package pdftex.def Info: chapters/chapter06/figures/example_dynamics_pID_0_and_
-87_noise_20.000000.png used on input line 397.
+87_noise_20.000000.png used on input line 484.
 (pdftex.def)             Requested size: 448.0pt x 179.20128pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[155pdfTeX warning (ext4): destination with the same identifier (name{equation.
-6.2.34}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.402 \clearpage
-                ] [156 <./chapters/chapter06/figures/example_dynamics_pID_0_and
-_87_noise_20.000000.png>]
-<chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png, id=2771, 1734
-.48pt x 867.24pt>
+LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/fnc/b/it' tried instead on input line 485.
+LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
+(Font)              scaled to size 10.18341pt on input line 485.
+ [16]
+<chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png, id=464, 1734.
+48pt x 867.24pt>
 File: chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png Graphic f
 ile (type png)
 
 <use chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png>
 Package pdftex.def Info: chapters/chapter06/figures/example_dynamics_HII_pID_7_
-and_0.png used on input line 411.
+and_0.png used on input line 503.
 (pdftex.def)             Requested size: 636.60028pt x 318.30658pt.
- [157 <./chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png>]
-
-LaTeX Warning: Reference `eq:WHEREIS' on page 158 undefined on input line 432.
-
-[158
-
-
-]
-<chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png, id=27
-98, 1084.05pt x 433.62pt>
+ [17 <./chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.00000
+0.png>]
+[18 <./chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png>]
+<chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png, id=48
+7, 1084.05pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png G
 raphic file (type png)
 
 <use chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png>
 Package pdftex.def Info: chapters/chapter06/figures/single_params_v_noise_pID_0
-_nsamples_100.png used on input line 438.
+_nsamples_100.png used on input line 518.
 (pdftex.def)             Requested size: 448.0pt x 179.20128pt.
 
-<chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_10000.png, id=
-2801, 1084.05pt x 433.62pt>
-File: chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_10000.png
- Graphic file (type png)
+[19
 
-<use chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_10000.png>
-Package pdftex.def Info: chapters/chapter06/figures/single_params_v_noise_pID_0
-_nsamples_10000.png used on input line 445.
-(pdftex.def)             Requested size: 448.0pt x 179.20128pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+ <./chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png>]
 <chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000000.png,
- id=2806, 722.7pt x 433.62pt>
+ id=505, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000000
 .png Graphic file (type png)
 
 <use chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000000.
 png>
 Package pdftex.def Info: chapters/chapter06/figures/single_params_v_nsamples_pI
-D_0_noise_10.000000.png used on input line 455.
+D_0_noise_10.000000.png used on input line 527.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
+Underfull \vbox (badness 6157) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+ [20 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.0000
+00.png>]
 <chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000000.png,
- id=2807, 722.7pt x 433.62pt>
+ id=522, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000000
 .png Graphic file (type png)
 
 <use chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000000.
 png>
 Package pdftex.def Info: chapters/chapter06/figures/single_params_v_nsamples_pI
-D_0_noise_50.000000.png used on input line 462.
+D_0_noise_50.000000.png used on input line 536.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png, id=2810
-, 722.7pt x 433.62pt>
+ [21 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.0000
+00.png>]
+<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png, id=539,
+ 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png Gra
 phic file (type png)
 
 <use chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png>
 Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_noise_ns
-amples_1000.png used on input line 473.
+amples_1000.png used on input line 562.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [159 <./chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.pn
-g>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 <chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS.png,
- id=2817, 722.7pt x 433.62pt>
+ id=540, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS
 .png Graphic file (type png)
 
 <use chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS.
 png>
 Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_nsamples
-_noise_50.000000.IS.png used on input line 480.
+_noise_50.000000.IS.png used on input line 569.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+ [22 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png> 
+<./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS.pn
+g>]
 <chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.HII.png
-, id=2818, 722.7pt x 433.62pt>
+, id=551, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.HI
 I.png Graphic file (type png)
 
 <use chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.HII
 .png>
 Package pdftex.def Info: chapters/chapter06/figures/single_params_v_noise_pID_8
-7_nsamples_10000.HII.png used on input line 493.
+7_nsamples_10000.HII.png used on input line 582.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<chapters/chapter06/figures/single_params_v_nsamples_pID_87_noise_50.000000.HII
-.png, id=2819, 722.7pt x 433.62pt>
-File: chapters/chapter06/figures/single_params_v_nsamples_pID_87_noise_50.00000
-0.HII.png Graphic file (type png)
-
-<use chapters/chapter06/figures/single_params_v_nsamples_pID_87_noise_50.000000
-.HII.png>
-Package pdftex.def Info: chapters/chapter06/figures/single_params_v_nsamples_pI
-D_87_noise_50.000000.HII.png used on input line 500.
-(pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png, id=28
-20, 722.7pt x 433.62pt>
+<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png, id=56
+0, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png G
 raphic file (type png)
 
 <use chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png>
 Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_noise_ns
-amples_1000.B.png used on input line 507.
+amples_1000.B.png used on input line 591.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
+Underfull \vbox (badness 4819) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+ [23 <./chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.
+HII.png>]
 <chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.IS.pn
-g, id=2821, 722.7pt x 433.62pt>
+g, id=574, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.
 IS.png Graphic file (type png)
 
 <use chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.I
 S.png>
 Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_nsamples
-_noise_50.000000.B.IS.png used on input line 514.
+_noise_50.000000.B.IS.png used on input line 618.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
+ [24 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png
+>]
+<chapters/chapter06/figures/example_FR_linear_nonlinear.png, id=588, 867.24pt x
+ 433.62pt>
+File: chapters/chapter06/figures/example_FR_linear_nonlinear.png Graphic file (
+type png)
+ <use chapters/chapter06/figures/example_FR_linear_nonlinear.png>
+Package pdftex.def Info: chapters/chapter06/figures/example_FR_linear_nonlinear
+.png used on input line 632.
+(pdftex.def)             Requested size: 448.0pt x 224.0016pt.
+
+<chapters/chapter06/figures/nonlinearity_predicts_quality.png, id=591, 867.24pt
+ x 433.62pt>
+File: chapters/chapter06/figures/nonlinearity_predicts_quality.png Graphic file
+ (type png)
+
+<use chapters/chapter06/figures/nonlinearity_predicts_quality.png>
+Package pdftex.def Info: chapters/chapter06/figures/nonlinearity_predicts_quali
+ty.png used on input line 645.
+(pdftex.def)             Requested size: 448.0pt x 224.0016pt.
+ [25 <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.
+B.IS.png>]
+<chapters/chapter06/figures/range_sample_didactic.png, id=605, 578.16pt x 433.6
+2pt>
+File: chapters/chapter06/figures/range_sample_didactic.png Graphic file (type p
+ng)
+ <use chapters/chapter06/figures/range_sample_didactic.png>
+Package pdftex.def Info: chapters/chapter06/figures/range_sample_didactic.png u
+sed on input line 654.
+(pdftex.def)             Requested size: 268.80273pt x 201.59813pt.
+
+<chapters/chapter06/figures/range_sample.png, id=606, 867.24pt x 433.62pt>
+File: chapters/chapter06/figures/range_sample.png Graphic file (type png)
+
+<use chapters/chapter06/figures/range_sample.png>
+Package pdftex.def Info: chapters/chapter06/figures/range_sample.png used on in
+put line 665.
+(pdftex.def)             Requested size: 448.0pt x 224.0016pt.
+
+Underfull \vbox (badness 3302) has occurred while \output is active []
+
+ [26 <./chapters/chapter06/figures/example_FR_linear_nonlinear.png>] [27 <./cha
+pters/chapter06/figures/nonlinearity_predicts_quality.png> <./chapters/chapter0
+6/figures/range_sample_didactic.png>] [28 <./chapters/chapter06/figures/range_s
+ample.png>]
+LaTeX Font Info:    Try loading font information for TS1+fnc on input line 686.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 686.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `fnc' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [29]
+Underfull \vbox (badness 1107) has occurred while \output is active []
 
-
-<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.ALL.png, id=
-2822, 722.7pt x 433.62pt>
-File: chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.ALL.png
- Graphic file (type png)
-
-<use chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.ALL.png>
-Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_noise_ns
-amples_1000.ALL.png used on input line 533.
-(pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [160 <./chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_10000.
-png> <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.0000
-00.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.ALL.png
-, id=2830, 722.7pt x 433.62pt>
-File: chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.AL
-L.png Graphic file (type png)
-
-<use chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.ALL
-.png>
-Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_nsamples
-_noise_50.000000.ALL.png used on input line 540.
-(pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [161 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000
-000.png> <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.p
-ng>]
-Underfull \vbox (badness 3058) has occurred while \output is active []
-
- [162 <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000
-.IS.png> <./chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10
-000.HII.png>] [163 <./chapters/chapter06/figures/single_params_v_nsamples_pID_8
-7_noise_50.000000.HII.png> <./chapters/chapter06/figures/ensemble_params_vs_noi
-se_nsamples_1000.B.png>] [164 <./chapters/chapter06/figures/ensemble_params_vs_
-nsamples_noise_50.000000.B.IS.png> <./chapters/chapter06/figures/ensemble_param
-s_vs_noise_nsamples_1000.ALL.png>]
-<chapters/chapter06/figures/IBM/2species/plant_FR.png, id=2865, 867.24pt x 433.
-62pt>
+ [30]
+<chapters/chapter06/figures/IBM/2species/plant_FR.png, id=650, 867.24pt x 433.6
+2pt>
 File: chapters/chapter06/figures/IBM/2species/plant_FR.png Graphic file (type p
 ng)
  <use chapters/chapter06/figures/IBM/2species/plant_FR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/plant_FR.png u
-sed on input line 566.
+sed on input line 743.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-<chapters/chapter06/figures/IBM/2species/predator_FR.png, id=2866, 867.24pt x 4
-33.62pt>
+<chapters/chapter06/figures/IBM/2species/predator_FR.png, id=651, 867.24pt x 43
+3.62pt>
 File: chapters/chapter06/figures/IBM/2species/predator_FR.png Graphic file (typ
 e png)
  <use chapters/chapter06/figures/IBM/2species/predator_FR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/predator_FR.pn
-g used on input line 572.
+g used on input line 749.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-<chapters/chapter06/figures/IBM/2species/intrinsic_fn.png, id=2867, 867.24pt x 
-433.62pt>
+<chapters/chapter06/figures/IBM/2species/intrinsic_fn.png, id=654, 867.24pt x 4
+33.62pt>
 File: chapters/chapter06/figures/IBM/2species/intrinsic_fn.png Graphic file (ty
 pe png)
  <use chapters/chapter06/figures/IBM/2species/intrinsic_fn.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/intrinsic_fn.p
-ng used on input line 579.
+ng used on input line 756.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-[165 <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.
-ALL.png> <./chapters/chapter06/figures/IBM/2species/plant_FR.png>] [166 <./chap
-ters/chapter06/figures/IBM/2species/predator_FR.png> <./chapters/chapter06/figu
-res/IBM/2species/intrinsic_fn.png>]
-<chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png, id=288
-5, 1300.86pt x 1300.86pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <./chapters/chapter06/figures/IBM/2species/plant_FR.png>] [32 <./chapters/
+chapter06/figures/IBM/2species/predator_FR.png> <./chapters/chapter06/figures/I
+BM/2species/intrinsic_fn.png>]
+<chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png, id=669
+, 1300.86pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png Gr
 aphic file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/example_dynami
-cs_2sp_ir_rr.png used on input line 614.
+cs_2sp_ir_rr.png used on input line 791.
 (pdftex.def)             Requested size: 448.0pt x 448.0032pt.
 
-[167] [168 <./chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_r
-r.png>]
+[33] [34 <./chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.
+png>]
 <chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1.png,
- id=2898, 867.24pt x 867.24pt>
+ id=682, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1
 .png Graphic file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1.
 png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/convergence_2s
-p_M0_M1_lowIR_rr0.1.png used on input line 645.
+p_M0_M1_lowIR_rr0.1.png used on input line 825.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
 
 <chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.1.png
-, id=2899, 867.24pt x 867.24pt>
+, id=683, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.
 1.png Graphic file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.1
 .png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/convergence_2s
-p_M0_M1_highIR_rr0.1.png used on input line 652.
+p_M0_M1_highIR_rr0.1.png used on input line 832.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
 
 <chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.png, id
-=2900, 1084.05pt x 1300.86pt>
+=686, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.pn
 g Graphic file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.png
 >
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/rate_estimate_
-series_2sp_hr_li.png used on input line 660.
+series_2sp_hr_li.png used on input line 840.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
 <chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.png, id
-=2901, 1084.05pt x 1300.86pt>
+=687, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.pn
 g Graphic file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.png
 >
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/rate_estimate_
-series_2sp_hr_hi.png used on input line 667.
+series_2sp_hr_hi.png used on input line 847.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
-<chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png, id=2902, 86
-7.24pt x 433.62pt>
+<chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png, id=688, 867
+.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png Graphic
  file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/inferred_dynam
-ics_2sp.png used on input line 674.
+ics_2sp.png used on input line 854.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png, id=290
-3, 578.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png, id=689
+, 578.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png Gr
 aphic file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/estimate_quali
-ty_2sp_lowIR.png used on input line 682.
+ty_2sp_lowIR.png used on input line 862.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png, id=29
-04, 578.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png, id=69
+0, 578.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png G
 raphic file (type png)
 
 <use chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/estimate_quali
-ty_2sp_highIR.png used on input line 688.
+ty_2sp_highIR.png used on input line 868.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-[169
+[35
 
-] [170 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_r
-r0.1.png>] [171 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M
-1_highIR_rr0.1.png>] [172 <./chapters/chapter06/figures/IBM/2species/rate_estim
-ate_series_2sp_hr_li.png>] [173 <./chapters/chapter06/figures/IBM/2species/rate
-_estimate_series_2sp_hr_hi.png>] [174 <./chapters/chapter06/figures/IBM/2specie
-s/inferred_dynamics_2sp.png> <./chapters/chapter06/figures/IBM/2species/estimat
-e_quality_2sp_lowIR.png>] [175 <./chapters/chapter06/figures/IBM/2species/estim
-ate_quality_2sp_highIR.png>]
-<chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png, id=2949, 130
-0.86pt x 722.7pt>
+] [36 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr
+0.1.png>] [37 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_
+highIR_rr0.1.png>] [38 <./chapters/chapter06/figures/IBM/2species/rate_estimate
+_series_2sp_hr_li.png>] [39 <./chapters/chapter06/figures/IBM/2species/rate_est
+imate_series_2sp_hr_hi.png>] [40 <./chapters/chapter06/figures/IBM/2species/inf
+erred_dynamics_2sp.png> <./chapters/chapter06/figures/IBM/2species/estimate_qua
+lity_2sp_lowIR.png>] [41 <./chapters/chapter06/figures/IBM/2species/estimate_qu
+ality_2sp_highIR.png>]
+<chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png, id=738, 1300
+.86pt x 722.7pt>
 File: chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png Graphic 
 file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/example_dynami
-cs_3sp.png used on input line 704.
+cs_3sp.png used on input line 884.
 (pdftex.def)             Requested size: 448.0pt x 248.89066pt.
 
-<chapters/chapter06/figures/IBM/3species/convergence_3sp_length_lowIR.png, id=2
-950, 867.24pt x 867.24pt>
+<chapters/chapter06/figures/IBM/3species/convergence_3sp_length_lowIR.png, id=7
+39, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/3species/convergence_3sp_length_lowIR.png 
 Graphic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/convergence_3sp_length_lowIR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/convergence_3s
-p_length_lowIR.png used on input line 712.
+p_length_lowIR.png used on input line 892.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
 
 <chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.png, id=
-2951, 867.24pt x 867.24pt>
+740, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.png
  Graphic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/convergence_3s
-p_length_highIR.png used on input line 719.
+p_length_highIR.png used on input line 899.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
 
-<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png, id=295
-2, 1084.05pt x 1300.86pt>
+<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png, id=741
+, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png Gr
 aphic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/rate_estimates
-_3speices_li.png used on input line 727.
+_3speices_li.png used on input line 907.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
-<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png, id=295
-3, 1084.05pt x 1300.86pt>
+<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png, id=742
+, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png Gr
 aphic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/rate_estimates
-_3speices_hi.png used on input line 734.
+_3speices_hi.png used on input line 914.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
-<chapters/chapter06/figures/IBM/3species/inferred_dynamics_3sp.png, id=2954, 13
-00.86pt x 505.89pt>
+<chapters/chapter06/figures/IBM/3species/inferred_dynamics_3sp.png, id=743, 130
+0.86pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/inferred_dynamics_3sp.png Graphic
  file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/inferred_dynamics_3sp.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/inferred_dynam
-ics_3sp.png used on input line 741.
+ics_3sp.png used on input line 921.
 (pdftex.def)             Requested size: 448.0pt x 174.22346pt.
 
-<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png, id=295
-5, 867.24pt x 505.89pt>
+<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png, id=744
+, 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png Gr
 aphic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/stability_and_
-error_3sp_LI.png used on input line 748.
+error_3sp_LI.png used on input line 928.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png, id=295
-6, 867.24pt x 505.89pt>
+<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png, id=745
+, 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png Gr
 aphic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/stability_and_
-error_3sp_HI.png used on input line 756.
+error_3sp_HI.png used on input line 936.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png, id=2957, 
-867.24pt x 505.89pt>
+<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png, id=746, 8
+67.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png Graph
 ic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/estimate_quali
-ty_3sp_LI.png used on input line 764.
+ty_3sp_LI.png used on input line 944.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png, id=2958, 
-867.24pt x 505.89pt>
+<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png, id=747, 8
+67.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png Graph
 ic file (type png)
 
 <use chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/estimate_quali
-ty_3sp_HI.png used on input line 770.
+ty_3sp_HI.png used on input line 950.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-[176
+[42
 
  <./chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png>]
-[177 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_lowIR.pn
-g>] [178 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_high
-IR.png>] [179 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speice
-s_li.png>] [180 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3spei
-ces_hi.png>] [181 <./chapters/chapter06/figures/IBM/3species/inferred_dynamics_
-3sp.png> <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.
-png>] [182 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_H
-I.png> <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png>]
-[183 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png>]
-<chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png, id=3013, 130
-0.86pt x 722.7pt>
+[43 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_lowIR.png
+>] [44 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR
+.png>] [45 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_l
+i.png>] [46 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_
+hi.png>] [47 <./chapters/chapter06/figures/IBM/3species/inferred_dynamics_3sp.p
+ng> <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png>]
+[48 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png> 
+<./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png>]
+[49 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png>]
+<chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png, id=802, 1300
+.86pt x 722.7pt>
 File: chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png Graphic 
 file (type png)
 
 <use chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/example_dynami
-cs_5sp.png used on input line 784.
+cs_5sp.png used on input line 964.
 (pdftex.def)             Requested size: 448.0pt x 248.89066pt.
 
-<chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png, id=3014, 5
-78.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png, id=803, 57
+8.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png Graphi
 c file (type png)
 
 <use chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_num_sta
-ble_nets.png used on input line 792.
+ble_nets.png used on input line 972.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-<chapters/chapter06/figures/IBM/5species/highIR_stable_models.png, id=3015, 578
-.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/5species/highIR_stable_models.png, id=804, 578.
+16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_stable_models.png Graphic 
 file (type png)
 
 <use chapters/chapter06/figures/IBM/5species/highIR_stable_models.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_stable_
-models.png used on input line 798.
+models.png used on input line 978.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-<chapters/chapter06/figures/IBM/5species/highIR_eq_err.png, id=3016, 578.16pt x
- 433.62pt>
+<chapters/chapter06/figures/IBM/5species/highIR_eq_err.png, id=805, 578.16pt x 
+433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_eq_err.png Graphic file (t
 ype png)
  <use chapters/chapter06/figures/IBM/5species/highIR_eq_err.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_eq_err.
-png used on input line 805.
+png used on input line 985.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-<chapters/chapter06/figures/IBM/5species/highIR_errfn.png, id=3017, 578.16pt x 
-433.62pt>
+<chapters/chapter06/figures/IBM/5species/highIR_errfn.png, id=806, 578.16pt x 4
+33.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_errfn.png Graphic file (ty
 pe png)
  <use chapters/chapter06/figures/IBM/5species/highIR_errfn.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_errfn.p
-ng used on input line 812.
+ng used on input line 992.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-<chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png, id=3018, 578.1
-6pt x 433.62pt>
+<chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png, id=807, 578.16
+pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png Graphic fi
 le (type png)
 
 <use chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_rate_er
-rors.png used on input line 819.
+rors.png used on input line 999.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
- [184
+ [50
 
 ]
-[185 <./chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png>]
-[186 <./chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png>]
-[187 <./chapters/chapter06/figures/IBM/5species/highIR_stable_models.png>]
-[188 <./chapters/chapter06/figures/IBM/5species/highIR_eq_err.png>] [189 <./cha
-pters/chapter06/figures/IBM/5species/highIR_errfn.png>] [190 <./chapters/chapte
-r06/figures/IBM/5species/highIR_rate_errors.png>]
-<chapters/chapter06/figures/IBM/5species/highIR_fitted_FR.png, id=3061, 1300.86
-pt x 867.24pt>
+[51 <./chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png>]
+[52 <./chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png>]
+[53 <./chapters/chapter06/figures/IBM/5species/highIR_stable_models.png>]
+[54 <./chapters/chapter06/figures/IBM/5species/highIR_eq_err.png>] [55 <./chapt
+ers/chapter06/figures/IBM/5species/highIR_errfn.png>] [56 <./chapters/chapter06
+/figures/IBM/5species/highIR_rate_errors.png>]
+<chapters/chapter06/figures/IBM/5species/highIR_fitted_FR.png, id=849, 1300.86p
+t x 867.24pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_fitted_FR.png Graphic file
  (type png)
 
 <use chapters/chapter06/figures/IBM/5species/highIR_fitted_FR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_fitted_
-FR.png used on input line 827.
+FR.png used on input line 1007.
 (pdftex.def)             Requested size: 448.0pt x 298.66881pt.
 
-<chapters/chapter06/figures/IBM/5species/lowIR_fitted_FR.png, id=3062, 1300.86p
-t x 867.24pt>
+<chapters/chapter06/figures/IBM/5species/lowIR_fitted_FR.png, id=850, 1300.86pt
+ x 867.24pt>
 File: chapters/chapter06/figures/IBM/5species/lowIR_fitted_FR.png Graphic file 
 (type png)
-
-<use chapters/chapter06/figures/IBM/5species/lowIR_fitted_FR.png>
+ <use chapters/chapter06/figures/IBM/5species/lowIR_fitted_FR.png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/lowIR_fitted_F
-R.png used on input line 834.
+R.png used on input line 1014.
 (pdftex.def)             Requested size: 448.0pt x 298.66881pt.
- [191 <./chapters/chapter06/figures/IBM/5species/highIR_fitted_FR.png>] [192 <.
-/chapters/chapter06/figures/IBM/5species/lowIR_fitted_FR.png>])) [193
+
+[57 <./chapters/chapter06/figures/IBM/5species/highIR_fitted_FR.png>] [58 <./ch
+apters/chapter06/figures/IBM/5species/lowIR_fitted_FR.png>]
+<chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png, id=863, 1084.05pt
+ x 722.7pt>
+File: chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png Graphic file 
+(type png)
+ <use chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png>
+Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/3sp_phase_plan
+e.png used on input line 1051.
+(pdftex.def)             Requested size: 448.0pt x 298.6688pt.
+
+<chapters/chapter06/figures/IBM/3species/3sp_fourier_corr.png, id=864, 1084.05p
+t x 722.7pt>
+File: chapters/chapter06/figures/IBM/3species/3sp_fourier_corr.png Graphic file
+ (type png)
+
+<use chapters/chapter06/figures/IBM/3species/3sp_fourier_corr.png>
+Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/3sp_fourier_co
+rr.png used on input line 1058.
+(pdftex.def)             Requested size: 448.0pt x 298.6688pt.
 
 
-] [194
+LaTeX Warning: Reference `fig:3s_phase' on page 59 undefined on input line 1059
+.
+
+
+LaTeX Warning: Reference `fig:3s_phase' on page 59 undefined on input line 1059
+.
+
+)) [59
+
+
+] [60 <./chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png>]
+[61 <./chapters/chapter06/figures/IBM/3species/3sp_fourier_corr.png>] [62
 
 ]
 (./memoirthesis.bbl
@@ -4073,41 +2642,49 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 9.
+(nag)                Use \scshape or \textsc instead on input line 10.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 15.
+(nag)                Use \scshape or \textsc instead on input line 13.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 21.
+(nag)                Use \scshape or \textsc instead on input line 18.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 27.
+(nag)                Use \scshape or \textsc instead on input line 22.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 32.
+(nag)                Use \scshape or \textsc instead on input line 28.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 37.
+(nag)                Use \scshape or \textsc instead on input line 33.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 42.
+(nag)                Use \scshape or \textsc instead on input line 36.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 47.
+(nag)                Use \scshape or \textsc instead on input line 40.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 51.
+(nag)                Use \scshape or \textsc instead on input line 44.
 
-[195
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 48.
+
+
+Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
+(nag)                Use \scshape or \textsc instead on input line 52.
+
+[63
 
 
 ]
@@ -4117,463 +2694,38 @@ Package nag Warning: Command \sc is an old LaTeX 2.09 command.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 62.
+(nag)                Use \scshape or \textsc instead on input line 59.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 66.
+(nag)                Use \scshape or \textsc instead on input line 64.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 71.
+(nag)                Use \scshape or \textsc instead on input line 69.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 75.
+(nag)                Use \scshape or \textsc instead on input line 73.
 
 
 Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 81.
+(nag)                Use \scshape or \textsc instead on input line 77.
 
+) [64]
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 86.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 90.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 95.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 100.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 105.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 109.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 113.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 118.
-
-[196]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 122.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 128.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 134.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 139.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 144.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 149.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 153.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 158.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 165.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 172.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 177.
-
-[197]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 183.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 187.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 191.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 197.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 202.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 205.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 209.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 214.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 218.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 224.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 230.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 235.
-
-[198]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 240.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 244.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 249.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 253.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 257.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 263.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 268.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 272.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 276.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 280.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 285.
-
-LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 287.
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 291.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 295.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 299.
-
-[199]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 304.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 309.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 314.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 321.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 327.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 331.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 335.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 340.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 345.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 350.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 359.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 363.
-
-[200]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 370.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 373.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 377.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 383.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 388.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 393.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 397.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 401.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 406.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 412.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 417.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 421.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 426.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 431.
-
-[201]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 436.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 442.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 446.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 451.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 456.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 462.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 466.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 470.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 475.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 480.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 485.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 489.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 494.
-
-[202]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 499.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 504.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 509.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 515.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 520.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 525.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 530.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 536.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 540.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 545.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 550.
-
-[203]
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 557.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 562.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 569.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 574.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 579.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 588.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 592.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 596.
-
-) [204]
-
-Package natbib Warning: There were undefined citations.
-
-
-Package nag Warning: 137 complaints in total.
+Package nag Warning: 32 complaints in total.
 
 \tf@toc=\write7
 \openout7 = `memoirthesis.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
 (./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: FD64BB4A523AD45A5BADD3C722598A69;7977.
+(rerunfilecheck)             Checksum: 30060069F7D71806674665CFB3FBB2DD;2089.
 
 
 LaTeX Warning: There were undefined references.
@@ -4583,13 +2735,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 31153 strings out of 493109
- 597785 string characters out of 6135010
- 880313 words of memory out of 5000000
- 32641 multiletter control sequences out of 15000+600000
- 99119 words of font info for 419 fonts, out of 8000000 for 9000
+ 29964 strings out of 493109
+ 557213 string characters out of 6135010
+ 842646 words of memory out of 5000000
+ 32200 multiletter control sequences out of 15000+600000
+ 87370 words of font info for 332 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 54i,14n,67p,3716b,988s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,13n,67p,2003b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -4603,16 +2755,15 @@ exmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2014/te
 xmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2014/t
 exmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (208 pages, 18318199 bytes).
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/urw/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (66 pages, 6826015 bytes).
 PDF statistics:
- 3325 PDF objects out of 3580 (max. 8388607)
- 2742 compressed objects within 28 object streams
- 705 named destinations out of 1000 (max. 500000)
- 36375 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 983 PDF objects out of 1000 (max. 8388607)
+ 777 compressed objects within 8 object streams
+ 206 named destinations out of 1000 (max. 500000)
+ 34272 words of extra memory for PDF output out of 35830 (max. 10000000)
 

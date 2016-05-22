@@ -3,71 +3,62 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 842 of file thesisbiblio.bib
- : @article{thebault2010stability
+Repeated entry---line 299 of file thesisbiblio.bib
+ : @article{wootton2005measurement
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 308 of file thesisbiblio.bib
+ : @article{berlow2004interaction
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 855 of file thesisbiblio.bib
- : @article{lurgi2015effects
- :                          ,
+Repeated entry---line 1704 of file thesisbiblio.bib
+ : @article{barraquand2014functional
+ :                                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1256 of file thesisbiblio.bib
- : @article{bossio2005soil
- :                        ,
-I'm skipping whatever remains of this entry
-Warning--string name "december" is undefined
---line 1348 of file thesisbiblio.bib
-Warning--entry type for "mcwilliams2015anim" isn't style-file defined
---line 1501 of file thesisbiblio.bib
 Warning--entry type for "BC3" isn't style-file defined
---line 1519 of file thesisbiblio.bib
-Warning--I didn't find a database entry for "ceballos2015accelerated"
-Warning--I didn't find a database entry for "gibson2011sampling"
-Warning--I didn't find a database entry for "sole2006self"
-Warning--I didn't find a database entry for "lurgi2015"
-Warning--I didn't find a database entry for "newbold2015global"
-Warning--empty journal in ai2012immigration
-Warning--empty journal in condit2012thirty
-Warning--empty journal in tilman1994habitat
-You've used 121 entries,
+--line 1791 of file thesisbiblio.bib
+Warning--I didn't find a database entry for ""
+Warning--there's a number but no series in hastings2012encyclopedia
+Warning--empty journal in lotka1925elements
+You've used 18 entries,
             2030 wiz_defined-function locations,
-            1186 strings with 27037 characters,
-and the built_in function-call counts, 52105 in all, are:
-= -- 5157
-> -- 2690
+            615 strings with 6583 characters,
+and the built_in function-call counts, 6200 in all, are:
+= -- 588
+> -- 286
 < -- 0
-+ -- 1079
-- -- 941
-* -- 4250
-:= -- 7948
-add.period$ -- 121
-call.type$ -- 121
-change.case$ -- 812
++ -- 115
+- -- 96
+* -- 477
+:= -- 969
+add.period$ -- 18
+call.type$ -- 18
+change.case$ -- 99
 chr.to.int$ -- 0
-cite$ -- 124
-duplicate$ -- 2164
-empty$ -- 3307
-format.name$ -- 941
-if$ -- 11041
+cite$ -- 20
+duplicate$ -- 285
+empty$ -- 445
+format.name$ -- 96
+if$ -- 1309
 int.to.chr$ -- 0
-int.to.str$ -- 121
-missing$ -- 124
-newline$ -- 366
-num.names$ -- 240
-pop$ -- 659
+int.to.str$ -- 18
+missing$ -- 19
+newline$ -- 57
+num.names$ -- 36
+pop$ -- 100
 preamble$ -- 1
-purify$ -- 699
+purify$ -- 83
 quote$ -- 0
-skip$ -- 2089
+skip$ -- 249
 stack$ -- 0
-substring$ -- 3829
-swap$ -- 1068
+substring$ -- 384
+swap$ -- 122
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 470
-warning$ -- 3
-while$ -- 542
-width$ -- 124
-write$ -- 1074
+type$ -- 66
+warning$ -- 2
+while$ -- 65
+width$ -- 20
+write$ -- 157
 (There were 3 error messages)

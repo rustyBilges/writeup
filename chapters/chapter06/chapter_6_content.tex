@@ -14,6 +14,8 @@
 
 %% TODO: refer to cite{kefi2012more} if extending this to non-trophic interactions...
 
+%% TODO: search and replace Holling and linear with type I and II
+
 \section{Motivation}
 \label{sec:motivate_interactions}
 % more emphasis on interspecific interactions.
@@ -68,134 +70,365 @@ We implement and test a novel method for quantifying species interactions from p
 \begin{figure}[h]
 \centering 
 \includegraphics[width=\textwidth]{{{flow_chart/flow_chart}}}
-\caption{This is what we do.} 
+\caption{Methodological approach to estimate species interaction strengths from population dynamics, and evaluate the resulting estimates.} 
 \label{fig:method_flow}
 \end{figure}
 
+The methodological approach to the estimation of species interaction strengths is depicted in figure \ref{fig:method_flow}. The start point is a \emph{data generator} from which samples of population size are taken over a given period of time. The \emph{data generator} may be a natural ecosystem, or laboratory experiment, from which we wish to determine which species are interacting and quantify the strengths of those interactions. Given that the interaction strengths between species are not know \emph{a priori} for a natural system (hence the motivation for the current investigation), we use computer simulations of interacting species as a \emph{data generator} to develop the methodology. Sampling from the \emph{data generator} produces a \emph{data stream}, which is an N-dimensional time series $x_i(t)$ representing the population size of each of the $N$ species sampled at discrete time points $t$. Examples of \emph{data generators} and \emph{data streams} are plotted in section \ref{sec:method_examples}. An \emph{inference method} is then applied to the sampled time series, producing estimates of the strength of interactions between all pairings of the $N$ species in the original \emph{data generator}. The \emph{inference method} used here involves fitting a \emph{generalised Lotka-Volterra} (GLV) model, which is defined in section \ref{sec:def_GLV}. The procedure used to fit the GLV to time series is adapted from work by Shandylia and Timme \cite{shandilya2011inferring}, and is detailed in section \ref{sec:timme}.
 
-To summarise our methodology, we simulate population dynamics then sample these dynamics and fit a \emph{generalised Lotka-Volterra} (GLV) model. The fitted GLV parameters give us estimates of the species interaction strengths (and other parameters), which we then compare to those used in the original simulation. The details of all the stages are given below. In section \ref{sec:interaction_strength} the \emph{interaction matrix} (IM) is introduced. The IM is the metric used to quantify the strength of species interactions and is key to this chapter. We also introduce the \emph{generalised Lotka-Volterra} (GLV) model, and show that this model has constant interaction strengths, given by the coupling matrix $J$. In section \ref{sec:models} we give a general framework for ODE predator-prey modelling, and derive the two models that we use to simulate population dynamics. We then discuss, in section \ref{sec:simulation_method} the details of how these models are simulated \emph{in silico}, including the selection of model parameters. Section \ref{sec:timme} gives the details of the numerical method we use for fitting the GLV model to sampled population dynamics. In section \ref{sec:method_examples} we give an example of the full methodology in action.
+The performance of the \emph{inference method} is evaluated by comparing its results to known properties of the \emph{data generator}. In the first part of this chapter (section \ref{sec:results}) ordinary differential equation (ODE) models are used as \emph{data generators} to simulate population dynamics. These ODE models are defined in section \ref{sec:models} and are useful here because they allow analytic calculation of \emph{a priori} interaction strengths. Therefore we are able to compare the interaction strengths estimated by the \emph{inference method} (GLV fit), to those calculated directly from the \emph{data generator} (ODE model). To calculate interaction strengths from the ODE models we use a metric called the \emph{interaction matrix} ($\alpha$). The definition of $\alpha$ and its interpretation are given in section \ref{sec:interaction_strength}.
 
-\subsection{Interaction strength}
-\label{sec:interaction_strength}
+Latter in the chapter (section \ref{sec:ibm}) the IBM model, familiar from previous chapters, is used as the \emph{data generator}. Unlike the ODE models the IBM does not allow \emph{a priori} calculation of interaction strengths. However we do know \emph{which species interact} in the IBM, because this is specified by the underlying interaction network. Therefore one test of the \emph{inference method} when applied to the IBM is to see if it correctly identifies which species are interacting. Also, in the IBM, interaction strengths between species emerge as a result of interactions between individuals in the landscape. We have seen previously that the strength of these species interactions can be quantified from simulation output by the metric IS (section \ref{sec:def_iss}). Therefore the performance of the \emph{inference method} can also be evaluated by comparing IS and $\alpha$. More details on the use of the IBM as the \emph{data generator} are given at the beginning of section \ref{sec:ibm}. In the rest of this section full details of the methodology as applied to ODE \emph{data generators} are provided, in the order introduced above (and corresponding to the flow chart in figure \ref{fig:method_flow}).
 
-% emphasise that we know the interaction strength for our simulation model
+%To summarise our methodology, we simulate population dynamics then sample these dynamics and fit a . The fitted GLV parameters give us estimates of the species interaction strengths (and other parameters), which we then compare to those used in the original simulation. The details of all the stages are given below. In section \ref{sec:interaction_strength} the \emph{interaction matrix} (IM) is introduced. The IM is the metric used to quantify the strength of species interactions and is key to this chapter. We also introduce the \emph{generalised Lotka-Volterra} (GLV) model, and show that this model has constant interaction strengths, given by the coupling matrix $J$. In section \ref{sec:models} we give a general framework for ODE predator-prey modelling, and derive the two models that we use to simulate population dynamics. We then discuss, in section \ref{sec:simulation_method} the details of how these models are simulated \emph{in silico}, including the selection of model parameters. Section \ref{sec:timme} gives the details of the numerical method we use for fitting the GLV model to sampled population dynamics. In section \ref{sec:method_examples} we give an example of the full methodology in action.
 
-The metric used for species interaction strength is key to this chapter. As discussed in section \ref{sec:motivate_interactions} there are several metrics available [REF]. However there is one that is a natural choice, given our methodology. This metric allows us to calculate the interaction strengths from our simulation models, and to directly compare them to the estimates obtained by fitting the GLV model. The metric is called the \emph{interaction matrix} (IM). The elements of the IM, $\alpha_{ij}$, quantify the effect of a small change in the population density of species $j$ on the per capita growth rate of species $i$ [REF]. Therefore the IM elements are given by:
-
-\begin{equation}
-\alpha_{ij} = \frac{\partial}{\partial x_{j}}\left(\frac{1}{x_{i}} \frac{dx_i}{dt} \right),
-\label{eq:IM}
-\end{equation}
-
-where $x_i$ and $x_j$ are the population densities of species $i$ and $j$ respectively.  In the case of our two species systems the IM is a $2 \times 2$ matrix, but trivially extends to quantify all $N^2$ pair-wise interactions between species in a $N$-species system (including self-interactions). 
-
-Using the IM we are able to calculate the interaction strengths exactly from the models that we use for simulation. This is because they are ODE models with explicit expressions for $dx_i / dt$, so we can evaluate the partial derivative in equation \ref{eq:IM} to obtain analytic forms for all the IM elements ($\alpha_{00}$, $\alpha_{01}$, $\alpha_{10}$,$\alpha_{11}$). Depending on the model used the IM elements are either constants, or are functions of prey density. The interaction strengths for our simulation models are given at the end of section \ref{sec:models}, and are illustrated in figure \ref{fig:fr_example}.
-
-\paragraph*{Generalised Lotka-Volterra.} The GLV model is the extension of the Lotka-Volterra equations to $N$ species. We use this model to fit to simulated population dynamics and obtain estimates of the underlying interaction strengths. The GLV model is given by:
-
-\begin{equation}
-\frac{dx_i}{dt} = r_ix_i + \Sigma_{j=1}^N J_{ij}x_ix_j,
-\label{eq:glv}
-\end{equation}
-
-where $x_i$ is the population density of species $i$; $r_i$ is the intrinsic growth rate; $N$ is the number of species and $J_{ij}$ is the coupling between species $i$ and $j$. Applying equation \ref{eq:IM} to equation \ref{eq:glv} we see that $\alpha_{ij} = J_{ij}$, such that the IM for the GLV model is equal to the coupling matrix. Therefore, by fitting the GLV model to population dynamics, the fitted parameters $J_{ij}$ give us numeric estimates of interaction strength. To perform the fit we use the method detailed in section \ref{sec:timme}.
-
-\subsection{Population models}
+\subsection{Data generator: ordinary differential equation models}
 \label{sec:models}
 %LINEAR IS SAME AS GLV!!
 %% Parameter choices. Euler method. Timestep. Extinction boundary contiditions.
 %% Conventional to use N,P for predator prey, however our terminology allows easy extension to larger systems..(refer forwards to this)
 %% re-order this - good choice first!
 
-
-We use ordinary differential equation (ODE) models to simulate two species predator-prey dynamics. Therefore the mathematics presented in this section focuses on this case. However the framework may be easily extended to include other interaction types (completion and mutualism), and to model larger systems in a similar way. For a two species system the dynamics are governed by two coupled equations, one for each species. Importantly it is possible, using the IM introduced in section \ref{sec:interaction_strength}, to calculate the species interaction strengths from the model. The model equations take the general form:
+In section \ref{sec:results} ordinary differential equation (ODE) models are used to simulate population dynamics. In the terminology of figure \ref{fig:method_flow} the ODE models represent our \emph{data generator}. Later, in section \ref{sec:ibm}, the IBM model is used as the \emph{data generator} but for now we focus on the ODE models. The results presented in this chapter are for \emph{antagonistic} communities. Therefore all inter-specific interactions are of predator-prey type. The ODE modelling framework defined below is specific to predator-prey systems, but may be extended  to model other interaction types (e.g. competition and mutualism). For an $N$ species predator-prey system the ODE model is defined by $N$ coupled first-order differential equations, which take the general form
+\begin{equation}
+\frac{dx_i}{dt} = G_i(x_i) + \Sigma_{j=1}^N C_{ij}(x_i,x_j),
+\label{eq:general_form}
+\end{equation}
+%
+where $x_i$ represents the population density (or biomass/abundance) of species $i$; $G_i(x_i)$ is the intrinsic growth function of species $i$; and $C_{ij}(x_i,x_j)$ is a function that defines the coupling (or interaction term) between species $i$ and $j$. The form of \eqref{eq:general_form} is sufficiently general that most common models from the population dynamics literature may be expressed in this way by making suitable choices for $C$ and $G$. Examples of such models include those of Holling \cite{holling1959some}, Rosenzweig and MacArthur \cite{rosenzweig1963graphical}, Arditi \cite{arditi2012species}, and Lotka-Volterra \cite{volterra1926,lotka1925elements}. In section \ref{sec:results} the results presented are for two species systems\footnote{Would be nice to add three species system, but no time?}, for which the full model may be expressed as
 
 \begin{eqnarray}
-\frac{dx_0}{dt} &=& G_{0}(x_0) + a_{01}x_1H(x_0,x_1),  \nonumber \\
+\frac{dx_0}{dt} &=& G_{0}(x_0) + a_{01}x_1H(x_0,x_1),  \nonumber \\[10pt]
 \frac{dx_1}{dt} &=& G_{1}(x_1) + a_{10}x_1H(x_0,x_1)
 \label{eq:two_species}
 \end{eqnarray}
+%
+where species $x_0$ and $x_1$ are the population densities of the prey and the predator species respectively; and we have expressed the coupling term in terms of $H(x_0,x_1)$, the \emph{functional response} (FR) of the predator, which is multiplied by constant coupling coefficients $a_{ij}$. The FR defines the per-capita rate of consumption of the predator, and is a key feature of such predator-prey models \cite{barraquand2014functional,jost2000identifying}. The coefficients $a_{01}$ and $a_{10}$ are negative and positive respectively, such that the prey losses biomass, and the predator gains biomass as a result of the interaction. These coefficients may be used to introduce asymmetry into the interaction terms. For example it is common to choose $|a_{01}| > |a_{10}|$, to model the inefficiency of the predator in the conversion of biomass from the prey. For the intrinsic growth functions we use the functional forms:  
 
-where species $x_0$ and $x_1$ are the population densities of the prey and the predator species respectively; the $G_i(x_i)$ are the intrinsic growth functions of each species; the $a_{ij}$ are constant coefficients and $H(x_0,x_1)$ is the functional response (FR) of the predator. This form is standard in the literature [REFS] and many models may be expressed in this way by choosing different functional forms for $G$ and $H$. The coefficients $a_{01}$ and $a_{10}$ are negative and positive respectively, such that the prey losses biomass, and the predator gains biomass as a result of the interaction. These coefficients may be used to introduce asymmetry into the interaction terms. For example it is common to choose $|a_{01}| > |a_{10}|$, to model the inefficiency of the predator in the conversion of biomass from the prey. For the intrinsic growth functions we use the functional forms:  
+%the $G_i(x_i)$ are the intrinsic growth functions of each species; the $a_{ij}$ are constant coefficients and $H(x_0,x_1)$ is the functional response (FR) of the predator. This form is standard in the literature [REFS] and many models may be expressed in this way by choosing different functional forms for $G$ and $H$. 
 
 \begin{eqnarray}
-G_0(x_0) &=& r_0x_0\left(1-\frac{x_0}{K_c}\right)  \\
-G_1(x_1) &=& -r_1x_1,
-\label{eq:two_species}
+G_0(x_0) &=& r_0x_0\left(1-\frac{x_0}{K_c}\right)  \\[10pt]
+G_1(x_1) &=& r_1x_1,
+\label{eq:intrinsic_growth}
 \end{eqnarray}
+%
+where $r_0 > 0$ and $r_1 < 0$ are the intrinsic growth rates of the prey and predator respectively; and $K_c$ is the carrying capacity of the prey species. Therefore the predator has an exponential intrinsic mortality, whereas the prey species has logistic intrinsic growth. These use of these functional forms to model intrinsic growth was made popular by Rosenzweig and MacArthur \cite{rosenzweig1963graphical}. The justification for the use of logistic growth in the prey but not the predator is that it models a finite availability of resource (be it space, light, nutrients etc.) to the prey species, whereas the resource availability to the predator (i.e. $x_0$) is modelled directly. However some models, especially those of marine systems, have included similar limiting terms in the intrinsic growth function of the predator species \cite{mitra2009closure}. These limitations are known as \emph{closure terms}, and they attempt to model feeding effects on the predator from species in higher trophic levels which are not modelled directly. For simplicity we choose not to include closure terms in our modelling framework. 
 
-where $r_i \in \mathbb{R}^+$ is the intrinsic growth rate of species $i$, and $K_c$ is the carrying capacity of the prey species. Therefore the predator has an exponential intrinsic mortality, whereas the prey species has logistic intrinsic growth. These use of these functional forms in predator-prey modelling was made popular by Rosenzweig and MacArthur [REF]. They are now widely used [REFS]. 
-
-The FR defines the per-predator rate of consumption of prey. We focus on the forms proposed by Holling in the 1950s [REFs], which are also widely used [REFS]. However it is worth noting that various other forms have been proposed and there is an ongoing debate about which to use [REFS] (see discussion in section \ref{sec:discussion}). There are three types of Holling FR, referred to as types I, II, and III. These can be expressed as:
+The functional response (FR) defines the per-predator rate of consumption of prey. We focus on the forms proposed by Holling in the 1950s \cite{holling1959some}, which remain widely used in this field \cite{hastings2013population}. However it is worth noting that various other forms have been proposed and there is an ongoing debate about which form is most appropriate in different situations \cite{barraquand2014functional,jost2000identifying} (see discussion in section \ref{sec:intro_population_dynamics}). There are three types of Holling FR, referred to as types I, II, and III. These can be expressed as
 
 \begin{eqnarray}
-H_I(x_0,x_1) &=& x_0,  \label{eq:h1} \\
-H_{II}(x_0,x_1) &=& \frac{x_0}{x_0 + K_s},  \label{eq:h2} \\
+H_I(x_0,x_1) &=& x_0,  \label{eq:h1} \\[10pt]
+H_{II}(x_0,x_1) &=& \frac{x_0}{x_0 + K_s},  \label{eq:h2} \\[10pt]
 H_{III}(x_0,x_1) &=& \frac{x_0^2}{x_0^2 + K_s^2},
 \end{eqnarray}
+%
+where $x_0$ is the prey density, and $K_s$ is the saturation constant for the predator, giving the prey density at which the per-predator consumption rate reaches half-maximum. We choose to narrow our investigation by focusing here on the first two forms: Holling type I and type II. Based on the choice of FR we obtain two distinct simulation models, which we refer to as the \emph{type I} and \emph{type II} models.
 
-
-where $x_0$ is the prey density, and $K_s$ is the saturation constant for the predator, giving the prey density at which the per-predator consumption rate reaches half-maximum. We choose to narrow our investigation by focusing here on the first two forms: Holling type I and type II. Therefore we have two distinct simulation models, which we refer to as the \emph{linear} and \emph{holling} models.
-
-\paragraph*{Linear model.} 
-This model uses the type I FR. As is clear from equation \ref{eq:h1}, type I is the simplest of the Holling functions: the per-predator predation rate increases linearly as the abundance of available prey increases. The slope of this linear relationship given by the $a_{ij}$ parameters in equations \ref{eq:two_species}. The linear FR is the same as is used in the famous Lotka-Volterra equations [REF], meaning that our linear model may be expressed in GLV form (equation \ref{eq:glv}). We may rescale the equations of the linear model in order to reduce the number of parameters. This makes the local stability analysis simpler, and reduces the dimension of the search space when probing the equations numerically via simulation. The re-scaled equations are given by:
+\paragraph*{The type I model} uses the FR given by \eqref{eq:h1}. This is the simplest of the Holling functions. The per-predator predation rate is linear in prey-density. The full \emph{type I} model is given by
 
 \begin{eqnarray}
-\frac{d\chi_{0}}{dt} &=& A\chi_0(1-\chi_0) - B\chi_0\chi_1 \label{eq:lin_mod1} \\
-\frac{d\chi_{1}}{dt} &=& -\chi_1 + C\chi_0\chi_1 \label{eq:lin_mod2}, 
+\frac{dx_{0}}{dt} &=& r_0x_0\left(1-\frac{x_0}{K_c}\right) + a_{01}x_0x_1 \label{eq:1lin_mod1} \\[10pt]
+\frac{dx_{1}}{dt} &=& r_1x_1 + a_{10}x_0x_1 \label{eq:1lin_mod2}, 
 \end{eqnarray}
-
-where $\chi_0$ and $\chi_1$ are the re-scaled prey and predator population densities respectively; the parameters $A,B,C \in \mathbb{R}^+$. The equilibrium population densities are given by:
+%
+The type I model may be rescaled in order to reduce the number of parameters. This makes the local stability analysis simpler, and reduces the dimension of the search space when probing the equations numerically via simulation. We introduce the following non-negative parameters:
+\begin{eqnarray}
+\tilde{t} &=& -r_1 t, \\[10pt]
+A &=& \frac{r_0}{r_1}, \\[10pt]
+B &=& \frac{a_{01}}{r_1}, \\[10pt]
+C &=& \frac{-a_{10}K_c}{r_1}, \\[10pt]
+\tilde{x}_0 &=& \frac{x_0}{K_c}, \\[10pt]
+\tilde{x}_1 &=& x_1,
+\end{eqnarray}
+%
+such that equations \eqref{eq:1lin_mod1} and \eqref{eq:1lin_mod2} may be written:
 
 \begin{eqnarray}
-\chi_{0}^{*} &=& \frac{1}{C} \label{eq:lin_mod_sp1} \\
-\chi_{1}^{*} &=& \frac{A}{B}\left(1 - \frac{1}{C}\right) \label{eq:lin_mod_sp2}, 
+\frac{d\tilde{x}_{0}}{d\tilde{t}} &=& A\tilde{x}_0(1-\tilde{x}_0) - B\tilde{x}_0\tilde{x}_1 \label{eq:lin_mod1} \\[10pt]
+\frac{d\tilde{x}_{1}}{d\tilde{t}} &=& -\tilde{x}_1 + C\tilde{x}_0\tilde{x}_1 \label{eq:lin_mod2}, 
 \end{eqnarray}
+%
+which is the same \emph{type I} model, but expressed in a reduced parameter space. Henceforth for simplicity we drop the \emph{tildes} unless otherwise stated. The equilibrium population densities are given by
 
-Therefore $\chi_{0}^{*}$ is always positive, and $\chi_{1}^{*}$ is positive if $c > 0$. This is a requirement for physical realism, since it is not possible to have negative populations of species. In most applications it is also required that this equilibrium is stable, to allow for the coexistence of species. We use these conditions on the equilibrium for parameter selection, which is discussed in section \ref{sec:simulation_method}. By applying equation \ref{eq:IM} to equations \ref{eq:lin_mod1} and \ref{eq:lin_mod2} we can evaluate the elements of the IM for the linear model. This gives:
+\begin{eqnarray}
+x_{0}^{*} &=& \frac{1}{C} \label{eq:lin_mod_sp1} \\[10pt]
+x_{1}^{*} &=& \frac{A}{B}\left(1 - \frac{1}{C}\right) \label{eq:lin_mod_sp2}, 
+\end{eqnarray}
+%
+which are always positive given that $A,B,C \in \mathbb{R}^+$. This is a requirement for physical realism, since it is not possible to have negative populations of species. In most applications it is also required that the equilibrium is stable, to allow for the coexistence of species (i.e. \emph{persistence}, see section \ref{sec:closed_communities}). The equilibrium is locally stable if the eigenvalues of the \emph{Jacobian} matrix ($\mathbb{J}$) have negative real parts. The Jacobian for this model, evaluated at the equilibrium, is given by:
+\begin{equation}
+\mathbb{J}_{type\ I} = 
+\begin{bmatrix}
+-A/C & -B/C \\ A/B(C-1) & 0
+\end{bmatrix}  	.
+\end{equation}
+%
+We use conditions on the \emph{trace} and \emph{determinant} of the Jacobian to guide realistic parameter selection when simulating the model. Parameter selection is discussed further section \ref{sec:simulation_method}. 
+
+
+\paragraph*{The type II model} uses the FR given by \eqref{eq:h2}. The per-predator predation rate is a non-linear function of prey density. The type II FR models predator saturation - individuals take a certain amount of time to process and digest prey - such that the predation rate does not increase linearly as the availability of prey increases. Instead the response curve flattens out, or saturates, at high prey densities (see figure \ref{fig:fr_example} below). The full \emph{type II} model is given by
+
+\begin{eqnarray}
+\frac{dx_{0}}{dt} &=& r_0x_0\left(1-\frac{x_0}{K_c}\right) + \frac{a_{01}x_0x_1}{x_0 + K_s} \label{eq:2_mod1} \\[10pt]
+\frac{dx_{1}}{dt} &=& r_1x_1 + \frac{a_{10}x_0x_1}{x_0 + K_s} \label{eq:2_mod2}, 
+\end{eqnarray}
+%
+We may perform a similar rescaling as we did with the \emph{type I} model to reduce the number of parameters. We introduce the following non-negative parameters:
+\begin{eqnarray}
+\tilde{t} &=& -r_1 t, \\[10pt]
+A &=& \frac{r_0}{r_1}, \\[10pt]
+B &=& \frac{a_{01}}{r_1K_c}, \\[10pt]
+C &=& \frac{-a_{10}}{r_1}, \\[10pt]
+D &=& \frac{K_s}{K_c}, \\[10pt]
+\tilde{x}_0 &=& \frac{x_0}{K_c}, \\[10pt]
+\tilde{x}_1 &=& x_1,
+\end{eqnarray}
+%
+such that equations \eqref{eq:2_mod1} and \eqref{eq:2_mod2} may be written:
+
+\begin{eqnarray}
+\frac{d\tilde{x}_{0}}{d\tilde{t}} &=& A\tilde{x}_0(1-\tilde{x}_0) - \frac{B\tilde{x}_0\tilde{x}_1}{\tilde{x}_0 + D} \label{eq:hol_mod1} \\[10pt]
+\frac{d\tilde{x}_{1}}{d\tilde{t}} &=& -\tilde{x}_1 + \frac{C\tilde{x}_0\tilde{x}_1}{\tilde{x}_0 + D} \label{eq:hol_mod2}, 
+\end{eqnarray}
+%
+which defines the \emph{type II} model with seven instead of seven parameters. Again we drop the \emph{tildes} unless otherwise stated. The equilibrium populations for this model are given by:
+
+\begin{eqnarray}
+x_{0}^{*} &=& \frac{D}{C-1} \label{eq:hol_mod_sp1} \\[10pt]
+x_{1}^{*} &=& \frac{ACD(C-1-D)}{B(C-1)^2} \label{eq:hol_mod_sp2}, 
+\end{eqnarray}
+%
+such that $x_0^* > 0 $ if $C > 1$, and $x_1^* > 0 $ if $C - D > 1$. These conditions provide constraints on the possible choice of parameters. Further constraints are imposed by the aforementioned conditions on the trace and determinant of the \emph{Jacobian}. For this model the Jacobian, evaluated at the equilibrium, is given by:
 
 \begin{equation}
-\alpha_{linear} = 
+\mathbb{J}_{type\ II} = 
 \begin{bmatrix}
--A & -B \\ C & 0
-\end{bmatrix}  	,
+A\left(\frac{-CD +C -D + 1}{C(C-1)}\right) & \frac{-B}{D} \\ \frac{A(C-1-D)}{B} & 0
+\end{bmatrix}  	.
 \end{equation}
+%
+Parameter selection for this model is also discussed in section \ref{sec:simulation_method}. 
 
-such that all the interaction strengths are constants, which is illustrated in figure \ref{fig:ex_dynamics_linear}.
 
-\paragraph*{Holling model.} 
-This model uses the type II FR, which is a non-linear function of prey density. As we can see from equation \ref{eq:h2} and figure \ref{fig:fr_example}, this FR models predator saturation - individuals take a certain amount of time to process and digest prey - such that the response curve flattens out at high prey densities. The difference between the type I and II functions is illustrated in figure \ref{fig:fr_example}. We may perform a similar rescaling as we did with the linear model to reduce the number of parameters. The resulting equations for the holling model are given by:
+\subsection{Inference method: generalised Lotka-Volterra model}
+\label{sec:def_GLV}
 
-\begin{eqnarray}
-\frac{d\chi_{0}}{dt} &=& A\chi_0(1-\chi_0) - \frac{B\chi_0\chi_1}{\chi_0 + D} \label{eq:hol_mod1} \\
-\frac{d\chi_{1}}{dt} &=& -\chi_1 + \frac{C\chi_0\chi_1}{\chi_0 + D} \label{eq:hol_mod2}, 
-\end{eqnarray}
-
-where the saturation constant $D \in \mathbb{R}^+$, and the other symbols are the same as in equations \ref{eq:lin_mod1} and \ref{eq:lin_mod2}. The equilibrium populations for this model are given by:
-
-\begin{eqnarray}
-\chi_{0}^{*} &=& \frac{D}{C-1} \label{eq:hol_mod_sp1} \\
-\chi_{1}^{*} &=& \frac{ACD(C-1-D)}{B(C-1)^2} \label{eq:hol_mod_sp2}, 
-\end{eqnarray}
-
-Therefore $\chi_{0}^{*}$ is positive if $C > 1$, $\chi_{1}^{*}$ is positive if $C - D > 1$. Again we use these conditions, and the requirement of stability, to constrain our choice of parameters (\ref{sec:simulation_method}). As we did for the linear model, we can evaluate the IM for the holling model, giving:
+In section \ref{sec:models} we defined the models that are used to simulate predator-prey dynamics i.e. the \emph{data generators}. Having simulated population dynamics we then sample from the simulation output to produce a discrete time series $x_i(t)$ for each species $i$. The time series represents the population size of that species at discrete points in time. Together the $x_i(t)$ for all species represent the \emph{data stream}. To estimate species interaction strengths we fit a \emph{generalised Lotka-Volterra} (GLV) model to the data stream. The GLV model is the extension of the Lotka-Volterra equations to $N$ species, and is given by:
 
 \begin{equation}
-\alpha_{holling} = 
-\begin{bmatrix}
--A + \frac{B\chi_1}{(\chi_0 + D)^2} & \frac{-B}{\chi_0 + D} \\ \frac{CD}{(\chi_0 + D)^2} & 0
-\end{bmatrix}  	,
+\frac{dy_i}{dt} = r_iy_i + \Sigma_{j=1}^N J_{ij}y_iy_j,
+\label{eq:glv}
+\end{equation}
+%
+where $y_i$ is the population density of species $i$; $r_i$ is the intrinsic growth rate; $N$ is the number of species; and $J_{ij}$ is the coupling between species $i$ and $j$. Specifically $\mathbf{J}$ is the GLV coupling matrix, not to be confused with the \emph{Jacobian} $\mathbb{J}$ used in local stability analysis. All parameters here ($r_i$ and $J_{ij}$) may take positive or negative values. The estimated values of $J_{ij}$, obtained from the model fit, give estimates of species interaction strengths. The $J_{ij}$ values also define the type of interaction between two species. For example if $J_{ij} < 0$ and $J_{ji} > 0$, this suggests that species $j$ predates on species $i$. The diagonal elements of the coupling matrix ($i=j$) give estimates of intra-specific interactions.
+
+Our choice of the GLV model reflects its simplicity of breadth of application. As seen from equation \eqref{eq:glv} there are no assumptions about species roles built into the functional forms of the model. That is, before the model is parametrised, it does not specify if species $i$ is a prey or a predator. Therefore when the model is fitted to a \emph{data stream} the roles of predator and prey emerge from the fitted model parameters. This feature of the model is especially desirable for the application of our methodology to larger multi-trophic systems (section \ref{sec:ibm}). 
+
+The \emph{type I} model from section \ref{sec:models} can be expressed as a GLV model by assigning the parameters as follows:
+\begin{eqnarray}
+r_0 &=& A, \\[10pt]
+r_1 &=& -1, \\[10pt]
+J_{00} &=& A, \\[10pt]
+J_{01} &=& -B, \\[10pt]
+J_{10} &=& C, \\[10pt]
+J_{11} &=& 0.
+\end{eqnarray}
+%
+Therefore the GLV model should be able to exactly fit to a \emph{data stream} derived from the \emph{type I} model. In this instance we would be able to recover the interaction strengths (and other model parameters) with high accuracy. In practice such `perfect' results are hampered by the presence of noise and sparsity of sampling from the data generator (see results in section \ref{sec:res_glv}). The \emph{type II} model cannot be expressed in GLV form because of the non-linear functional response (equation \eqref{eq:h2}). Therefore fitting the GLV model to a \emph{data stream} derived from the \emph{type II} model can at best produce approximations of the true interaction strengths and rate parameters (see results in section \ref{sec:res_hii}). However such a situation represents an important test of the inference method, since functional responses found in nature likely take some non-linear form \cite{arditi2012species}.  
+ 
+\subsection{Inference method: model fitting}
+\label{sec:timme}
+
+%% Dealing with extinctions. Range sampling - diagrams!!
+%% make use of GLV more explicit
+
+To fit the GLV model to sampled \emph{data streams} we use the numerical method developed by Shandylia and Timme \cite{shandilya2011inferring}. We include here a derivation of the method, slightly adapted and simplified for our purposes. The method gives `best fit' estimates of the GLV parameters, which were introduced in section \ref{sec:def_GLV}. Conceptually these estimates are obtained by minimising the error between time derivatives calculated from the \emph{data stream}, and those predicted by the model given the \emph{data stream}. Consider we that we are trying to fit a population model that, for each species $i$, takes the general form:
+
+\begin{equation}\label{eq:timme1}
+ \dot{y}_i = r_if_i(y_i) + \Sigma_{j=1}^{N}J_{i,j}g_{ij}(y_i,y_j),\\
+\end{equation}
+%
+where $\dot{y}_i = \frac{dy_{i}}{dt}$; $N$ is the number of species in the system and $i,j$ index the species. The $r_i, J_{ij}$ are constants coefficients, and the functions $f_i$ and $g_{ij}$ are known. This form looks familiar, indeed all of the ODE models discussed so far in the chapter may be expressed in this form. There is an intrinsic growth term, and a linear sum of pairwise interaction terms. To express the GLV model (equation \ref{eq:glv}) in this form, we let:
+
+\begin{eqnarray}
+f_i(y_i) &=& y_i \\
+g_{ij}(y_i,y_j) &=& y_iy_j, 
+\end{eqnarray}
+%
+It would be possible to use this method to fit models other than the GLV, so long as the functions $f_i$ and $g_{ij}$ are \emph{known and parametrised}. Since the functions $f_i$ and $g_{ij}$ are known there are $N+1$ unknowns in equation \ref{eq:timme1}: $r_i$ and $J_{i,j}$ for $j=1,...,N$. Therefore, if we knew the exact values of $\dot{y_i},y_i$ and the $y_j$'s, at $N+1$ time points, then we could solve the equation for $r_i$ and the $J_{i,j}$'s. However in any practical application our knowledge of the system is not \emph{exact}; the system is subject to noise; and the model may be an imperfect description of the dynamics. So the equation cannot be solved exactly. We must look for an approximate solution. To do this the full \emph{data stream} is sampled at $M+1$ time points $t_m$ for $m \in {1,..,M,M+1}$. Therefore we obtain $M+1$ data samples $x_i{t_m}$ to which the model is fitted. 
+
+The data samples are used to construct estimates for the states ($\hat{y}_i$) and their time-derivatives ($\hat{\dot{y}}_i$ at $M$ intermediate time points, for every species $i$. The time-derivatives are estimated to first order, taking the finite difference between samples at two consecutive time points, giving estimates:
+
+\begin{equation}\label{eq:timme2}
+\hat{\dot{y}}_{i}(\tau_m) := \frac{x_i(t_m) - x_i(t_{m-1})}{t_m - t_{m-1}},\\
+\end{equation}
+%
+where $\tau_m \in{\mathbb{R}}, m \in{\{1,...,M\}}$ is the midpoint of the two time-points, given by:
+%
+\begin{equation}\label{eq:timme3}
+\tau_m := \frac{t_{m-1} + t_{m}}{2}.\\
+\end{equation}
+%
+To evaluate the functions $f_i, g_{ij}$ at these new time-points we must estimate the states $y_i(\tau_m)$ from our samples $x_i(t_m)$. We use the linear interpolation, such that:
+
+\begin{equation}\label{eq:timme4}
+\hat{y}_{i}(\tau_m) := \frac{x_i(t_{m-1}) + x_i(t_{m})}{2}.\\
+\end{equation}
+%
+So by evaluating \eqref{eq:timme2} and \eqref{eq:timme4} using the $M+1$ samples, and substituting the estimates $\hat{y}_i(\tau_m)$ and $\hat{\dot{y}_i(\tau_m)}$ into equation \ref{eq:timme1} we obtain $M$ equations, one for every time point $\tau_m$ :
+
+\begin{equation}\label{eq:timme5}
+\hat{\dot{y}}_{i}(\tau_m) = r_if_{i}(\hat{y}_i(\tau_m)) + \Sigma_{j=1}^{N}J_{i,j}g_{i,j}(\hat{y}_i(\tau_m), \hat{y}_j(\tau_m)).\\
+\end{equation}
+%
+We now simplify the notation such that equation \ref{eq:timme5} may be written 
+
+\begin{equation}\label{eq:timme6}
+\hat{\dot{x}}_{i,m} = r_if_{i,m} + \Sigma_{j=1}^{N}J_{i,j}g_{i,j,m},\\
+\end{equation}
+%
+where the subscripts  $i,j$ indicate the species, and $m$ indicates the time-point $\tau_m$ for which the equation holds. This system of $M$ equations can be expressed in matrix form:
+
+\begin{equation}\label{eq:timme7}
+Y_{i} = J_iG_i,\\
 \end{equation}
 
-such that the three non-zero elements of the IM are functions of prey density $\chi_0$, instead of constants. The shape of these interaction functions is shown in figure \ref{fig:fr_example}, and we will return to them in section \ref{sec:method_examples}.
+where we have
 
+\begin{equation}\label{eq:timme8}
+Y_{i} = 
+\begin{pmatrix}
+  \hat{\dot{y}}_{i,1} & \hat{\dot{y}}_{i,2} & \cdots & \hat{\dot{y}}_{i,M}
+\end{pmatrix}\\
+\in{\mathbb{R}^{1 \times M}},
+\end{equation}
+
+\begin{equation}\label{eq:timme9}
+J_{i} = 
+\begin{pmatrix}
+  r_i & J_{i,1} & J_{i,2} & \cdots & J_{i,N}
+\end{pmatrix}\\
+\in{\mathbb{R}^{1 \times(N+1)}},
+\end{equation}
+
+\begin{equation}\label{eq:timme10}
+G_{i} = 
+\begin{pmatrix}
+  f_{i,1}  &    f_{i,2} & \cdots & f_{i,M}         \\
+  g_{i,1,1} & g_{i,1,2} & \cdots & g_{i,1,M} \\
+  g_{i,2,1} & g_{i,2,2} & \cdots & g_{i,2,M} \\
+  \vdots    & \vdots    & \ddots & \vdots    \\
+  g_{i,N,1} & g_{i,N,2} & \cdots & g_{i,N,M} \\
+\end{pmatrix}\\
+\in{\mathbb{R}^{(N+1)\times M}}.
+\end{equation}
+%
+Therefore $J_i$ contains all the model parameters from \eqref{eq:timme1} as unknowns, whilst $Y_i$ and $G_i$ are evaluated from the \emph{data stream}. The system \ref{eq:timme7} has $N+1$ unknowns ($J_{i,k}$ for $k=1,..,N+1$) and $M$ equations. In the case when $M>N+1$ the system is overdetermined and there is no exact solution in general. We look for an approximate solution $\hat{J}_i$ that minimises the error between the LHS and RHS of equation \ref{eq:timme7}. We take the error function
+
+\begin{equation}\label{eq:timme11}
+E_i(\hat{J}_i) = \Sigma_{m=1}^{M}(Y_{i,m} - \Sigma_{k=1}^{N+1}\hat{J}_{i,k}G_{i,k,m})^2,
+\end{equation}
+%
+which we want to minimise with respect to the matrix elements $\hat{J}_{i,k}$. That is
+
+\begin{equation}\label{eq:timme12}
+\frac{\partial}{\partial \hat{J}_{i,k}} E_i(\hat{J}_i) \mbeq 0.
+\end{equation}
+%
+By taking the derivative of the RHS of equation\ref{eq:timme11} we have that
+
+\begin{eqnarray}
+\frac{\partial}{\partial \hat{J}_{i,k'}} E_i(\hat{J}_i) &=& \frac{\partial}{\partial \hat{J}_{i,k'}} [\Sigma_{m=1}^{M}(Y_{i,m} - \Sigma_{k=1}^{N}\hat{J}_{i,k}G_{i,k,m})^2] \nonumber \\
+    &=& -2\Sigma_{m=1}^{M}[(Y_{i,m} - \Sigma_{k=1}^{N}\hat{J}_{i,k}G_{i,k,m})G_{i,k',m}] \nonumber
+\end{eqnarray}
+
+To find the minimum of the error function we equate this derivative to zero, giving
+
+\begin{eqnarray}
+0 &=& \Sigma_{m=1}^{M}(-X_{i,m}G_{i,k',m} + G_{i,k',m}\Sigma_{k=1}^{N}\hat{J}_{i,k}G_{i,k,m}) \nonumber \\
+  &=& (-X_iG_i^T)_{k'} + \Sigma_{m=1}^{M}G_{i,k',m}(\hat{J}_iG_i)_m   \nonumber \\
+  &=& (-X_iG_i^T)_{k'} + \Sigma_{m=1}^{M}(\hat{J}_iG_i)_mG_{i,m,k'}^T  \nonumber \\
+   &=& -X_iG_i^T + \hat{J}_iG_iG_i^T 
+\end{eqnarray}
+%
+Therefore we conclude that:
+
+\begin{equation}\label{eq:timme_a2}
+\hat{J}_i = XG^T_i(G_iG^T_i)^{-1},
+\end{equation}
+%
+which, in our case, is the analytic form for the best estimate of the parameters in the GLV equation for species $i$. For a two species system, by applying equation \ref{eq:timme_a2} to each species in turn, we obtain the full set of GLV parameter estimates: 
+
+\begin{equation}\label{eq:timme_estimates}
+\hat{J} =
+\begin{pmatrix}
+ \hat{J}_{0,0} & \hat{J}_{0,1} \\
+ \hat{J}_{1,0} & \hat{J}_{1,1}
+ \end{pmatrix}\\,
+\end{equation}
+%
+and
+
+\begin{equation}\label{eq:timme_estimates2}
+\hat{r} =
+\begin{pmatrix}
+ \hat{r}_{0} & \hat{r}_{1} 
+ \end{pmatrix}\\.
+\end{equation}
+%
+The procedure extends trivially to systems of more than two species since each species is fitted separately. The calculations are performed in \emph{Python} \cite{python}, with matrix multiplication using the package \emph{numpy}. The analytic solution to the error minimisation problem makes this model fitting method computationally efficient, allowing us to perform many replicate calculations. However the performance of the method may be lower than other, more computationally expensive, model fitting algorithms (see discussion section \ref{sec:discussion}). Finally, it is possible to assess the goodness of fit achieved by evaluating the error function (equation \ref{eq:timme11}). 
+
+
+\subsection{Interaction matrix}
+\label{sec:interaction_strength}
+% emphasise that we know the interaction strength for our simulation model
 
 \begin{figure}[h]
 \centering 
 \includegraphics[width=0.8\textwidth]{{{figures/FR_example}}}
-\caption{Example of (A) the functional response curve, and (B) the corresponding inter-specific interaction strengths for one parameter set of the \emph{linear} model, and one of the \emph{holling} model.} 
+\caption{Example of (A) the functional response (FR) curve, and (B) the corresponding inter-specific interaction strengths $\alpha_{ij}$ for one parameter set of the \emph{type I} model (green), and one of the \emph{type II} model (red). The FR for the \emph{type I} model is calculated as $Bx_0$, and for the \emph{type II} model as $Bx_0/(x_0 + D)$. Definitions for $\alpha_{ij}$ in the two models are given in the text. Both parameter sets have values $A=13.58$, $B=85.87$, $7.79$, the \emph{type II} model has $D=0.88$. These parameter values were selected following the procedure described in section \ref{sec:simulation_method}. } 
 \label{fig:fr_example}
 \end{figure}
+
+Having estimated species interaction strengths using the inference method described above, we compare them to interaction strengths calculated directly from the \emph{data generator}. In doing so we evaluate the performance of the inference method. As discussed in section \ref{sec:intro_interactions} there are numerous metrics available to quantify species interaction strengths. The standard metric to quantify interaction strength from ODE population models is known as the \emph{interaction matrix} $\alpha $ \cite{wootton2005measurement}. This metric allows direct comparison between interaction strengths calculated from different ODE population models. The matrix element $\alpha_{ij}$, quantifies the effect of a small change in the population density of species $j$ on the per capita growth rate of species $i$, and is calculated by
+
+\begin{equation}
+\alpha_{ij} = \frac{\partial}{\partial x_{j}}\left(\frac{1}{x_{i}} \frac{dx_i}{dt} \right),
+\label{eq:IM}
+\end{equation}
+%
+where $x_i$ and $x_j$ are the population densities of species $i$ and $j$ respectively.  The element $\alpha_{ii}$ quantities an intra-specific interaction such as the density dependent term in the intrinsic growth function \eqref{eq:intrinsic_growth}. Evaluating \eqref{eq:IM} for the GLV model \eqref{eq:glv} gives
+
+\begin{equation}
+\alpha_{ij} = J_{ij},
+\label{eq:alpha_glv}
+\end{equation}
+% 
+such that the GLV coupling matrix is equal to the interaction matrix for this model. Evaluating \eqref{eq:IM} for the \emph{type I} model (\ref{eq:lin_mod1} and \ref{eq:lin_mod2}) gives
+
+\begin{equation}
+\alpha_{type\ I} = 
+\begin{bmatrix}
+-A & -B \\ C & 0
+\end{bmatrix}  	,
+\end{equation}
+%
+such that the \emph{type I} model has constant interaction strengths that can be directly compared to those of the GLV model. However evaluating \eqref{eq:IM} for the \emph{type II} model (\ref{eq:2_mod1} and \ref{eq:2_mod2}) gives
+
+\begin{equation}
+\alpha_{type\ II} = 
+\begin{bmatrix}
+-A + \frac{Bx_1}{(x_0 + D)^2} & \frac{-B}{x_0 + D} \\[10pt] \frac{CD}{(x_0 + D)^2} & 0
+\end{bmatrix}  	,
+\end{equation}
+%
+such that the three non-zero interaction strengths are functions of prey density $x_0$, rather than constants. The form of the functional response (FR) curves and inter-specific interaction strengths for the \emph{type I} and \emph{II} models are illustrated in figure \ref{fig:fr_example}. In panel A the non-linearity of the type II FR is visible, modelling the effect of predator saturation as discussed in section \ref{sec:models}. In panel B we see that the result of this non-linearity is interaction strengths which decrease as a function of prey density, whereas the \emph{type I} model has constant interaction strengths. In the fact the interaction strengths of the \emph{type II} model tend to zero in the limit that prey density tends to infinity. This property may seem counter intuitive for a measure of interaction strength, since we may expect a large effect of prey on predator when the prey population is very large. Indeed for large prey populations the \emph{biomass} flow does remain large, but the incremental effect of an increase in prey population on the predator growth rate is be small.
+
+Based on the comparison of the functional forms in figure \ref{fig:fr_example}, we expect that the ability of a model with constant interaction strengths (such as the GLV model) to approximate the dynamics of the \emph{type II} model may depend on the extent of the deviation of the FR from linearity. This deviation from linearity in turn is governed by the  
+
+% The shape of these interaction functions is shown in figure \ref{fig:fr_example}, and we will return to them in section \ref{sec:method_examples}.
+%Using the IM we are able to calculate the interaction strengths exactly from the models that we use for simulation. This is because they are ODE models with explicit expressions for $dx_i / dt$, so we can evaluate the partial derivative in equation \ref{eq:IM} to obtain analytic forms for all the IM elements ($\alpha_{00}$, $\alpha_{01}$, $\alpha_{10}$,$\alpha_{11}$). Depending on the model used the IM elements are either constants, or are functions of prey density. The interaction strengths for our simulation models are given at the end of section \ref{sec:models}, and are illustrated in figure \ref{fig:fr_example}.
 
 
 \subsection{Simulation procedure}
@@ -230,7 +463,7 @@ where $\Delta t$ is the integration time step, $\Delta\chi_{i}$ is given by the 
 
 The goal of fitting the GLV model to simulated population dynamics requires that the dynamics contain enough information to perform the fit - it is not possible to fit the a model if species populations are sitting at equilibrium. Therefore we follow the precedent set in [REF], such that all simulated dynamics of the \emph{deterministic models} exhibit two `large amplitude ' oscillations about a stable equilibrium (see condition 2 below). Every simulation is run with the initial population densities set to half of their equilibrium value. This ensures that all systems start consistently away from equilibrium.
 
-\paragraph*{Parameter selection.} We select an ensemble of 100 parameter sets for both simulation models (\emph{linear} and \emph{holling}). Parameters are selected uniformly at random from predefined ranges, which are given in table \ref{table:p_range}. This range ensures that a positive equilibrium population is possible (see equations \ref{eq:lin_mod_sp1}, \ref{eq:lin_mod_sp2}, \ref{eq:hol_mod_sp1}, \ref{eq:hol_mod_sp2}), but also allows for parameters to vary over at least three orders of magnitude so that our investigation covers a large region of parameter space. The selected parameters are then accepted if they meet the following conditions:
+\paragraph*{Parameter selection.} DISCUSS CONDITIONS ON THE JACOBIAN. We select an ensemble of 100 parameter sets for both simulation models (\emph{linear} and \emph{holling}). Parameters are selected uniformly at random from predefined ranges, which are given in table \ref{table:p_range}. This range ensures that a positive equilibrium population is possible (see equations \ref{eq:lin_mod_sp1}, \ref{eq:lin_mod_sp2}, \ref{eq:hol_mod_sp1}, \ref{eq:hol_mod_sp2}), but also allows for parameters to vary over at least three orders of magnitude so that our investigation covers a large region of parameter space. The selected parameters are then accepted if they meet the following conditions:
 
 \begin{enumerate}
 	\item The equilibrium population is positive, and is locally a stable spiral (eigenvalues of the Jacobian have negative real part and complex conjugate imaginary part).
@@ -239,151 +472,6 @@ The goal of fitting the GLV model to simulated population dynamics requires that
 \end{enumerate}
 
 The two parameter sets generated by the above procedure are used for the simulation results presented in section \ref{sec:results}. All simulations , including those with $\sigma_{noise} \neq 0$, are run for the length of time $T_{2P}$ required to achieve two full oscillations in the deterministic case, for that parameter set.
-
-\subsection{Numerical estimation method}
-\label{sec:timme}
-
-%% Dealing with extinctions. Range sampling - diagrams!!
-%% make use of GLV more explicit
-
-To estimate the inter-specific interaction strengths we use a numerical method, adapted from \cite{shandilya2011inferring}, to fit the GLV model to the population dynamics. The method gives `best fit' estimates of the GLV parameters, which include constant coefficients for the interaction strengths as we saw in section \ref{sec:interaction_strength}. We include here a derivation of the method, slightly adapted and simplified for our purposes. Say the dynamics of the population density of a species $x_i$ is governed by coupled differential equations of the form:
-
-\begin{equation}\label{eq:timme1}
- \dot{x_i} = r_if_i(x_i) + \Sigma_{j=1}^{N}J_{i,j}g_{ij}(x_i,x_j),\\
-\end{equation}
-
-where $\dot{x_i} = \frac{d}{dt}x_{i}$; $N$ is the number of species in the system and $i,j$ index the species. The $r_i, J_{ij} \in \mathbb{R}^+$ are constants, and the functions $f_i$ and $g_{ij}$ are known. This form looks familiar, indeed all of the ODE models discussed so far may be expressed in this form - there is an intrinsic growth term, and a linear sum of interaction terms. To express the GLV model (equation \ref{eq:glv}) in this form, we have:
-
-\begin{eqnarray}
-f_i(x_i) &=& x_i \\
-g_{ij}(x_i,x_j) &=& x_ix_j, 
-\end{eqnarray}
-
-It would be possible to use this method to fit models other than the GLV, so long as the functions $f_i$ and $g_{ij}$ are \emph{known and parametrised}. Since the functions $f_i$ and $g_{ij}$ are known there are $N+1$ unknowns in equation \ref{eq:timme1}: $r_i$ and $J_{i,j}$ for $j=1,...,N$. Therefore, if we knew the exact values of $\dot{x_i},x_i$ and the $x_j$'s, at $N+1$ time points, then we could solve the equation for $r_i$ and the $J_{i,j}$'s. However in any practical application our knowledge of the system is not \emph{exact}; the system is subject to noise; and the model may be an imperfect description of the dynamics. So the equation cannot be solved exactly. We must look for an approximate solution. To do this the full state of the system is sampled at $M+1$ time points $t_m$ for $m \in {1,..,M,M+1}$. These samples are used to construct estimates for the states $x_i$ and their time-derivatives $\dot{x}_i$ at $M$ intermediate time points, for every species $i$.
-
-The simplest way to estimate the time-derivatives is to take the finite difference between observations at two consecutive time points, giving estimates:
-
-\begin{equation}\label{eq:timme2}
-\hat{\dot{x}}_{i}(\tau_m) := \frac{x_i(t_m) - x_i(t_{m-1})}{t_m - t_{m-1}},\\
-\end{equation}
-
-where $\tau_m \in{\mathbb{R}}, m \in{\{1,...,M\}}$ is the midpoint of the two time-points:
-
-\begin{equation}\label{eq:timme3}
-\tau_m := \frac{t_{m-1} + t_{m}}{2}.\\
-\end{equation}
-
-To evaluate the functions $f_i, g_{ij}$ at these new time-points we must estimate the states $x_i(\tau_m)$ from our observations. We use the linear interpolation:
-
-\begin{equation}\label{eq:timme4}
-\hat{x}_{i}(\tau_m) := \frac{x_i(t_{m-1}) + x_i(t_{m})}{2}.\\
-\end{equation}
-
-So from equation \ref{eq:timme1} we can now construct $M$ equations using our $M+1$ samples:
-
-\begin{equation}\label{eq:timme5}
-\hat{\dot{x}}_{i}(\tau_m) = r_if_{i}(\hat{x}_i(\tau_m)) + \Sigma_{j=1}^{N}J_{i,j}g_{ij}(\hat{x}_i(\tau_m), \hat{x}_j(\tau_m)).\\
-\end{equation}
-
-We now simplify the notation such that equation \ref{eq:timme5} may be written 
-
-\begin{equation}\label{eq:timme6}
-\hat{\dot{x}}_{i,m} = r_if_{i,m} + \Sigma_{j=1}^{N}J_{i,j}g_{ij,m},\\
-\end{equation}
-
-where the subscripts  $i,j$ indicate the species, and $m$ indicates the time-point $\tau_m$ for which the equation holds. This system of $M$ equations can be expressed in matrix form:
-
-\begin{equation}\label{eq:timme7}
-X_{i} = J_iG_i,\\
-\end{equation}
-
-where we have
-
-\begin{equation}\label{eq:timme8}
-X_{i} = 
-\begin{pmatrix}
-  \hat{\dot{x}}_{i,1} & \hat{\dot{x}}_{i,2} & \cdots & \hat{\dot{x}}_{i,M}
-\end{pmatrix}\\
-\in{\mathbb{R}^{1 \times M}},
-\end{equation}
-
-\begin{equation}\label{eq:timme9}
-J_{i} = 
-\begin{pmatrix}
-  r_i & J_{i,1} & J_{i,2} & \cdots & J_{i,N}
-\end{pmatrix}\\
-\in{\mathbb{R}^{1 \times(N+1)}},
-\end{equation}
-
-\begin{equation}\label{eq:timme10}
-G_{i} = 
-\begin{pmatrix}
-  f_{i,1}  &    f_{i,2} & \cdots & f_{i,M}         \\
-  g_{i,1,1} & g_{i,1,2} & \cdots & g_{i,1,M} \\
-  g_{i,2,1} & g_{i,2,2} & \cdots & g_{i,2,M} \\
-  \vdots    & \vdots    & \ddots & \vdots    \\
-  g_{i,N,1} & g_{i,N,2} & \cdots & g_{i,N,M} \\
-\end{pmatrix}\\
-\in{\mathbb{R}^{(N+1)\times M}}.
-\end{equation}
-
-%Here $J_i$ is the $i$th row of the full coupling matrix $J$ and represents the input coupling strengths to the unit $i$. 
-
-The system \ref{eq:timme7} has $N+1$ unknowns ($J_{i,k}$ for $k=1,..,N+1$) and $M$ equations. In the case when $M>N+1$ the system is over constrained and there is no exact solution in general. We look for an approximate solution $\hat{J}_i$ that minimises the error between the LHS and RHS of equation \ref{eq:timme7}. We take the error function:
-
-\begin{equation}\label{eq:timme11}
-E_i(\hat{J}_i) = \Sigma_{m=1}^{M}(X_{i,m} - \Sigma_{k=1}^{N+1}\hat{J}_{i,k}G_{i,k,m})^2,
-\end{equation}
-
-which we want to minimise with respect to the matrix elements $\hat{J}_{i,k}$. That is
-
-\begin{equation}\label{eq:timme12}
-\frac{\partial}{\partial \hat{J}_{i,k}} E_i(\hat{J}_i) \mbeq 0.
-\end{equation}
-
-By taking the derivative of the RHS of equation\ref{eq:timme11} we have that:
-
-
-\begin{eqnarray}
-\frac{\partial}{\partial \hat{J}_{i,k'}} E_i(\hat{J}_i) &=& \frac{\partial}{\partial \hat{J}_{i,k'}} [\Sigma_{m=1}^{M}(X_{i,m} - \Sigma_{k=1}^{N}\hat{J}_{i,k}G_{i,k,m})^2] \nonumber \\
-    &=& -2\Sigma_{m=1}^{M}[(X_{i,m} - \Sigma_{k=1}^{N}\hat{J}_{i,k}G_{i,k,m})G_{i,k',m}] \nonumber
-\end{eqnarray}
-
-To find the minimum of the error function we equate this to zero, giving:
-
-\begin{eqnarray}
-0 &=& \Sigma_{m=1}^{M}(-X_{i,m}G_{i,k',m} + G_{i,k',m}\Sigma_{k=1}^{N}\hat{J}_{i,k}G_{i,k,m}) \nonumber \\
-  &=& (-X_iG_i^T)_{k'} + \Sigma_{m=1}^{M}G_{i,k',m}(\hat{J}_iG_i)_m   \nonumber \\
-  &=& (-X_iG_i^T)_{k'} + \Sigma_{m=1}^{M}(\hat{J}_iG_i)_mG_{i,m,k'}^T  \nonumber \\
-   &=& -X_iG_i^T + \hat{J}_iG_iG_i^T 
-\end{eqnarray}
-
-Therefore we conclude that:
-
-\begin{equation}\label{eq:timme_a2}
-\hat{J}_i = XG^T_i(G_iG^T_i)^{-1},
-\end{equation}
-
-which, in our case, is the analytic form for the best estimate of the row corresponding to species $i$ in parameter matrix of the GLV model. For a two species system, by applying equation \ref{eq:timme_a2} to each species, we can obtain the full set of GLV parameter estimates: 
-
-\begin{equation}\label{eq:timme_estimates}
-\hat{J} =
-\begin{pmatrix}
- \hat{J}_{0,0} & \hat{J}_{0,1} \\
- \hat{J}_{1,0} & \hat{J}_{1,1}
- \end{pmatrix}\\,
-\end{equation}
-
-and
-
-\begin{equation}\label{eq:timme_estimates2}
-\hat{r} =
-\begin{pmatrix}
- \hat{r}_{0} & \hat{r}_{1} 
- \end{pmatrix}\\.
-\end{equation}
-
-We perform the computation by constructing the matrices $X_i$ and $G_i$ for both species, and do the matrix multiplication using the \emph{Python} package \emph{numpy}[REF]. The fact that the error minimisation has an analytic solution makes it very computationally efficient, allowing us to perform many replicate calculations. However the performance of the method may be lower than other, more computationally expensive, model fitting algorithms (see discussion section \ref{sec:discussion}). It is possible to assess the goodness of fit achieved by evaluating the error function (equation \ref{eq:timme11}). 
 
 \subsection{Examples}
 \label{sec:method_examples}
@@ -417,7 +505,7 @@ Here we show examples of the dynamics of both models, both with and without nois
 
 \section{Results}
 \label{sec:results}
-
+(Rename this to something like: ODES as a data generator)
 % some of this description goes above - for example some need explaining before previous section(examples)
 In this sections we characterise the numerical performance of the method, described in section \ref{sec:timme}, for estimating the strength of interactions between species. The method is tested on the dynamics of two different ODE systems: a Lotka-Volterra (LV) and a Holling type II (HII) system. In the first case it is simply a test of a model fitting procedure. This is because the method works by fitting a generalised Lotka-Volterra (GLV) model to the dynamics, and he LV systems can be expressed as a GLV systems. Therefore we are simply simulating using one model, and then testing a method of estimating the model parameters form the simulated dynamics. We test the effects of noise and sampling frequency. In the second case, the HII system cannot be expressed as a GLV system. Therefore the GLV model that we fit can only approximate the dynamics and we cannot make a direct comparison between the parameters of the simulation model and the GLV model used for estimation. In this case we comapre to the mean interaction strengths (see section \ref{sec:res_hii}.
 
@@ -612,7 +700,8 @@ Also show dependence on immigration (show that it is low and what happens if it 
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/IBM/2species/example_dynamics_2sp_ir_rr}}}
-	\caption{2 species dynamics}
+	\caption{\textbf{Example dynamics of the IBM for two species} with different reproduction rates (RR) and immigration rates (IR). Here low and high RR are 0.01 and 0.1 respectively. Low are high IR are $10^-4$ and $10^-5$ respectively. \textbf{Left column}: Population dynamics of the two species. \textbf{Right column}: time series of births and immigrations for both species. \textbf{First row]: low RR and low IR. \textbf{Second row}: high RR and low IR. \textbf{Third row}: high RR and low IR. \textbf{Fourth row}: high RR and high IR.
+	}
 	\label{fig:2sp_dynamics}
 \end{figure}
 

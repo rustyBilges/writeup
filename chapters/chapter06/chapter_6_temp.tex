@@ -1,0 +1,1066 @@
+%% TODO: finish application to IBM. 2 (and maybe 3 and 4 species). Habitat loss. Single pp-pair from large simulation, and functional grouping.
+%%  			> 3 species Jhat not wokring (for chain - ensemble_K estimates are too large. Why? Try other 3sp nets? Other options...)
+
+%% TODO: ODE application to Holling model - quaility versus noise and sampling, and Range sampling (conclude nice concept but very sucetible to noise)
+
+%% TODO:  fill in [REF]S
+%% TODO:  sort out noise: check equations(outline.pdf and email to MG dated 12/12/14) & simulations.
+%% TODO:  edit FR example figure
+%% TODO:  examples section - with inference
+
+%% TODO: be able to derive Timme method on paper - look at matrix calculus notation
+%% TODO: conduct local stability analysis for models, and reduce parameter space by subsitution.
+%% TODO: include stability analysis in section on simulation procedure?
+
+%% TODO: refer to cite{kefi2012more} if extending this to non-trophic interactions...
+
+%% TODO: search and replace Holling and linear with type I and II
+
+\section{Motivation}
+\label{sec:motivate_interactions}
+% more emphasis on interspecific interactions.
+
+Motivation and introduction here.
+
+\section{Methodology}
+\label{sec:methods}
+
+%% reorder and state where IM is given for simulation..
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=\textwidth]{{{flow_chart/flow_chart}}}
+\caption{Methodological approach to estimate species interaction strengths from population dynamics, and evaluate the resulting estimates.} 
+\label{fig:method_flow}
+\end{figure}
+
+The methodological approach\footnote{Check that somewhere I am explicit about how samples are drawn from the population dynamics i.e. evenly} to the estimation of species interaction strengths is depicted in figure \ref{fig:method_flow}. The starting point is a \emph{data generator} from which samples of population sizes are taken over a given period of time. The \emph{data generator} may be a natural ecosystem, or laboratory experiment, from which we wish to determine which species are interacting and quantify the strengths of those interactions. Given that the interaction strengths between species are not know \emph{a priori} for a natural system (hence the motivation for the current investigation), in this chapter we use computer simulations of interacting species as a \emph{data generator} to develop the methodology. Sampling from the \emph{data generator} produces a \emph{data stream}, which is an N-dimensional time series $x_i(t)$ representing the population size of each of the $N$ species sampled at discrete time points $t$. Examples of \emph{data generators} and \emph{data streams} are plotted in section \ref{sec:method_examples}. An \emph{inference method} is then applied to the sampled time series, producing estimates of the strength of interactions between all pairings of the $N$ species in the original \emph{data generator}. The \emph{inference method} used here involves fitting a \emph{generalised Lotka-Volterra} (GLV) model, which is defined in section \ref{sec:def_GLV}. The procedure used to fit the GLV to time series is adapted from work by Shandylia and Timme \cite{shandilya2011inferring}, and is detailed in section \ref{sec:timme}.
+
+The performance of the \emph{inference method} is evaluated by comparing its results to known properties of the \emph{data generator}. In the first part of this chapter (section \ref{sec:results}) ordinary differential equation (ODE) models are used as \emph{data generators} to simulate population dynamics. These ODE models are defined in section \ref{sec:models} and are useful here because they allow analytic calculation of \emph{a priori} interaction strengths. Therefore we are able to compare the interaction strengths estimated by the \emph{inference method} (the GLV fit), to those calculated directly from the \emph{data generator} (the ODE model). To calculate interaction strengths from the ODE models we use a metric called the \emph{interaction matrix} ($\alpha$) \cite{berlow2004interaction}. The definition of $\alpha$ and its interpretation are given in section \ref{sec:interaction_strength}.
+
+Later in the chapter (section \ref{sec:ibm}) the IBM model, familiar from previous chapters, is used as the \emph{data generator}. Unlike the ODE models the IBM does not allow \emph{a priori} calculation of interaction strengths. However we do know \emph{which species interact} in the IBM, because this is specified by the underlying interaction network. Therefore one test of the \emph{inference method} when applied to the IBM is to see if it correctly identifies which species are interacting. Also, in the IBM, interaction strengths between species emerge as a result of interactions between individuals in the landscape. We have seen previously that the strength of these species interactions can be quantified from simulation output by the metric IS (defined in section \ref{sec:def_iss}). Therefore the performance of the \emph{inference method} can also be evaluated by comparing IS and $\alpha$. More details on the use of the IBM as the \emph{data generator} are given at the beginning of section \ref{sec:ibm}. In the rest of this section full details of the methodology as applied to ODE \emph{data generators} are provided, in the order introduced above (and corresponding to the flow chart in figure \ref{fig:method_flow}).
+
+%To summarise our methodology, we simulate population dynamics then sample these dynamics and fit a . The fitted GLV parameters give us estimates of the species interaction strengths (and other parameters), which we then compare to those used in the original simulation. The details of all the stages are given below. In section \ref{sec:interaction_strength} the \emph{interaction matrix} (IM) is introduced. The IM is the metric used to quantify the strength of species interactions and is key to this chapter. We also introduce the \emph{generalised Lotka-Volterra} (GLV) model, and show that this model has constant interaction strengths, given by the coupling matrix $J$. In section \ref{sec:models} we give a general framework for ODE predator-prey modelling, and derive the two models that we use to simulate population dynamics. We then discuss, in section \ref{sec:simulation_method} the details of how these models are simulated \emph{in silico}, including the selection of model parameters. Section \ref{sec:timme} gives the details of the numerical method we use for fitting the GLV model to sampled population dynamics. In section \ref{sec:method_examples} we give an example of the full methodology in action.
+
+\subsection{Data generator: ordinary differential equation models}
+\label{sec:models}
+%LINEAR IS SAME AS GLV!!
+%% Parameter choices. Euler method. Timestep. Extinction boundary contiditions.
+%% Conventional to use N,P for predator prey, however our terminology allows easy extension to larger systems..(refer forwards to this)
+%% re-order this - good choice first!
+
+In section \ref{sec:results} ordinary differential equation (ODE) models are as the \emph{data generator}. The results presented in this chapter are all for \emph{antagonistic} communities. Therefore each inter-specific interaction is modelled as predator-prey type. The ODE modelling framework defined below is specific to predator-prey systems, but may be extended  to model other interaction types (e.g. competition and mutualism). For an $N$ species predator-prey system the ODE model is defined by $N$ coupled first-order differential equations, which take the general form
+\begin{equation}
+\frac{dx_i}{dt} = G_i(x_i) + \Sigma_{j=1}^N C_{ij}(x_i,x_j),
+\label{eq:general_form}
+\end{equation}
+%
+where $x_i$ represents the population density (or biomass/abundance) of species $i$; $G_i(x_i)$ is the intrinsic growth function of species $i$; and $C_{ij}(x_i,x_j)$ is a function that defines the coupling (or interaction term) between species $i$ and $j$. The form of \eqref{eq:general_form} is sufficiently general that most common models from the population dynamics literature may be expressed in this way by making suitable choices for $C$ and $G$. Examples of such models include those of Holling \cite{holling1959some}, Rosenzweig and MacArthur \cite{rosenzweig1963graphical}, Arditi \cite{arditi2012species}, and Lotka-Volterra \cite{volterra1926,lotka1925elements}. In section \ref{sec:results} the results presented are for two species systems\footnote{Would be nice to add three species system, but no time?}, for which the full model may be expressed as
+
+\begin{eqnarray}
+\frac{dx_0}{dt} &=& G_{0}(x_0) + a_{01}x_1H(x_0,x_1),  \nonumber \\[10pt]
+\frac{dx_1}{dt} &=& G_{1}(x_1) + a_{10}x_1H(x_0,x_1)
+\label{eq:two_species}
+\end{eqnarray}
+%
+where species $x_0$ and $x_1$ are the population densities of the prey and the predator species respectively; and we have expressed the coupling term in terms of $H(x_0,x_1)$, the \emph{functional response} (FR) of the predator, which is multiplied by constant coupling coefficients $a_{ij}$. The FR defines the per-capita rate of consumption of the predator, and is a key feature of such predator-prey models \cite{barraquand2014functional,jost2000identifying}. The coefficients $a_{01}$ and $a_{10}$ are negative and positive respectively, such that the prey losses biomass, and the predator gains biomass as a result of the interaction. These coefficients may be used to introduce asymmetry into the interaction terms. For example it is common to choose $|a_{01}| > |a_{10}|$, to model the inefficiency of the predator in the conversion of biomass from the prey. For the intrinsic growth functions we use the functional forms  
+
+%the $G_i(x_i)$ are the intrinsic growth functions of each species; the $a_{ij}$ are constant coefficients and $H(x_0,x_1)$ is the functional response (FR) of the predator. This form is standard in the literature [REFS] and many models may be expressed in this way by choosing different functional forms for $G$ and $H$. 
+
+\begin{eqnarray}
+G_0(x_0) &=& r_0x_0\left(1-\frac{x_0}{K_c}\right)  \\[10pt]
+G_1(x_1) &=& r_1x_1,
+\label{eq:intrinsic_growth}
+\end{eqnarray}
+%
+where $r_0 > 0$ and $r_1 < 0$ are the intrinsic growth rates of the prey and predator respectively; and $K_c$ is the carrying capacity of the prey species. Therefore the predator has an exponential intrinsic mortality, whereas the prey species has logistic intrinsic growth. These use of these functional forms to model intrinsic growth was made popular by Rosenzweig and MacArthur \cite{rosenzweig1963graphical}. The justification for the use of logistic growth in the prey but not the predator is that it models a finite availability of resource (be it space, light, nutrients etc.) to the prey species, whereas the resource availability to the predator (i.e. $x_0$) is modelled directly. However some models, especially those of marine systems, have included similar limiting terms in the intrinsic growth function of the predator species \cite{mitra2009closure}. These limitations are known as \emph{closure terms}, and they attempt to model feeding effects on the predator from species in higher trophic levels which are not modelled directly. For simplicity we choose not to include closure terms in our modelling framework. 
+
+The functional response (FR) defines the per-predator rate of consumption of prey. We focus on the forms proposed by Holling in the 1950s \cite{holling1959some}, which remain widely used in this field \cite{hastings2013population}. However it is worth noting that various other forms have been proposed and there is an ongoing debate about which form is most appropriate in different situations \cite{barraquand2014functional,jost2000identifying} (see discussion in section \ref{sec:intro_population_dynamics}). There are three types of Holling FR, referred to as types I, II, and III. These can be expressed as
+
+\begin{eqnarray}
+H_I(x_0,x_1) &=& x_0,  \label{eq:h1} \\[10pt]
+H_{II}(x_0,x_1) &=& \frac{x_0}{x_0 + K_s},  \label{eq:h2} \\[10pt]
+H_{III}(x_0,x_1) &=& \frac{x_0^2}{x_0^2 + K_s^2},
+\end{eqnarray}
+%
+where $x_0$ is the prey density, and $K_s$ is the saturation constant for the predator, giving the prey density at which the per-predator consumption rate reaches half-maximum. We choose to narrow our investigation by focusing here on the first two forms: Holling type I and type II. Based on the choice of FR we obtain two distinct simulation models, which we refer to as the \emph{type I} and \emph{type II} models.
+
+\paragraph*{The type I model} uses the FR given by \eqref{eq:h1}. This is the simplest of the Holling functions. The per-predator predation rate is linear in prey-density. The full \emph{type I} model is given by
+
+\begin{eqnarray}
+\frac{dx_{0}}{dt} &=& r_0x_0\left(1-\frac{x_0}{K_c}\right) + a_{01}x_0x_1 \label{eq:1lin_mod1} \\[10pt]
+\frac{dx_{1}}{dt} &=& r_1x_1 + a_{10}x_0x_1 \label{eq:1lin_mod2}, 
+\end{eqnarray}
+%
+The type I model may be rescaled in order to reduce the number of parameters. This makes the local stability analysis simpler, and reduces the dimension of the search space when probing the equations numerically via simulation. We introduce the following non-negative parameters
+%\begin{eqnarray}
+%\tilde{t} &=& -r_1 t, \\[10pt]
+%A &=& \frac{r_0}{r_1}, \\[10pt]
+%B &=& \frac{a_{01}}{r_1}, \\[10pt]
+%C &=& \frac{-a_{10}K_c}{r_1}, \\[10pt]
+%\tilde{x}_0 &=& \frac{x_0}{K_c}, \\[10pt]
+%\tilde{x}_1 &=& x_1,
+%\end{eqnarray}
+\begin{eqnarray}
+\tilde{t} &=& -r_1 t, \qquad A = \frac{r_0}{r_1}, \qquad B = \frac{a_{01}}{r_1}, \\[10pt]
+C &=& \frac{-a_{10}K_c}{r_1}, \qquad \tilde{x}_0 = \frac{x_0}{K_c}, \qquad \tilde{x}_1 = x_1,
+\end{eqnarray}
+%
+such that equations \eqref{eq:1lin_mod1} and \eqref{eq:1lin_mod2} may be written
+
+\begin{eqnarray}
+\frac{d\tilde{x}_{0}}{d\tilde{t}} &=& A\tilde{x}_0(1-\tilde{x}_0) - B\tilde{x}_0\tilde{x}_1 \label{eq:lin_mod1} \\[10pt]
+\frac{d\tilde{x}_{1}}{d\tilde{t}} &=& -\tilde{x}_1 + C\tilde{x}_0\tilde{x}_1 \label{eq:lin_mod2}, 
+\end{eqnarray}
+%
+which is the same \emph{type I} model, but expressed in a reduced parameter space. Henceforth for simplicity we drop the \emph{tildes} unless otherwise stated. The equilibrium population densities are given by
+
+\begin{equation}\label{eq:lin_mod_eq}
+x_{0}^{*} = \frac{1}{C}, 
+\qquad
+x_{1}^{*} = \frac{A}{B}\left(1 - \frac{1}{C}\right) , 
+\end{equation}
+%
+such that $x_0^*$ is always positive since $C \in \mathbb{R}^+$; and $x_1^*$ is positive when $C>1$. This is a requirement for physical realism, since it is not possible to have negative populations of species. In most applications it is also required that the equilibrium is stable, to allow for the coexistence of species (i.e. \emph{persistence}, see section \ref{sec:closed_communities}). The equilibrium is locally stable if the eigenvalues of the \emph{Jacobian} matrix ($\mathbb{J}$) have negative real parts. The Jacobian for this model, evaluated at the equilibrium, is given by
+\begin{equation}\label{eq:jac2}
+\mathbb{J}_{type\ I} = 
+\begin{bmatrix}
+-A/C & -B/C \\ A/B(C-1) & 0
+\end{bmatrix}  	.
+\end{equation}
+%
+We use conditions on the \emph{trace} and \emph{determinant} of the Jacobian to guide realistic parameter selection when simulating the model. Parameter selection is discussed further section \ref{sec:simulation_method}\footnote{Change this to say we use conditions on the Jacobian to ensure stable spirals..}. 
+
+
+\paragraph*{The type II model} uses the FR given by \eqref{eq:h2}. The per-predator predation rate is a non-linear function of prey density. The type II FR models predator saturation - individuals take a certain amount of time to process and digest prey - such that the predation rate does not increase linearly as the availability of prey increases. Instead the response curve flattens out, or saturates, at high prey densities (see figure \ref{fig:fr_example} below). The full \emph{type II} model is given by
+
+\begin{eqnarray}
+\frac{dx_{0}}{dt} &=& r_0x_0\left(1-\frac{x_0}{K_c}\right) + \frac{a_{01}x_0x_1}{x_0 + K_s} \label{eq:2_mod1} \\[10pt]
+\frac{dx_{1}}{dt} &=& r_1x_1 + \frac{a_{10}x_0x_1}{x_0 + K_s} \label{eq:2_mod2}, 
+\end{eqnarray}
+%
+We may perform a similar rescaling as we did with the \emph{type I} model to reduce the number of parameters. We introduce the following non-negative parameters
+%\begin{eqnarray}
+%\tilde{t} &=& -r_1 t, \\[10pt]
+%A &=& \frac{r_0}{r_1}, \\[10pt]
+%B &=& \frac{a_{01}}{r_1K_c}, \\[10pt]
+%C &=& \frac{-a_{10}}{r_1}, \\[10pt]
+%D &=& \frac{K_s}{K_c}, \\[10pt]
+%\tilde{x}_0 &=& \frac{x_0}{K_c}, \\[10pt]
+%\tilde{x}_1 &=& x_1,
+%\end{eqnarray}
+\begin{eqnarray}
+\tilde{t} = -r_1 t, \qquad A = \frac{r_0}{r_1},  \qquad B = \frac{a_{01}}{r_1K_c}, \qquad C = \frac{-a_{10}}{r_1}, \\[10pt]
+D = \frac{K_s}{K_c}, \qquad  \tilde{x}_0 = \frac{x_0}{K_c}, \qquad \tilde{x}_1 = x_1,
+\end{eqnarray}
+%
+such that equations \eqref{eq:2_mod1} and \eqref{eq:2_mod2} may be written
+
+\begin{eqnarray}
+\frac{d\tilde{x}_{0}}{d\tilde{t}} &=& A\tilde{x}_0(1-\tilde{x}_0) - \frac{B\tilde{x}_0\tilde{x}_1}{\tilde{x}_0 + D} \label{eq:hol_mod1} \\[10pt]
+\frac{d\tilde{x}_{1}}{d\tilde{t}} &=& -\tilde{x}_1 + \frac{C\tilde{x}_0\tilde{x}_1}{\tilde{x}_0 + D} \label{eq:hol_mod2}, 
+\end{eqnarray}
+%
+which defines the \emph{type II} model with seven instead of seven parameters. Again we drop the \emph{tildes} unless otherwise stated. The equilibrium populations for this model are given by
+
+\begin{eqnarray}
+x_{0}^{*} &=& \frac{D}{C-1} \label{eq:hol_mod_sp1} \\[10pt]
+x_{1}^{*} &=& \frac{ACD(C-1-D)}{B(C-1)^2} \label{eq:hol_mod_sp2}, 
+\end{eqnarray}
+%
+such that $x_0^* > 0 $ if $C > 1$, and $x_1^* > 0 $ if $C - D > 1$. These conditions provide constraints on the possible choice of parameters. Further constraints are imposed by the aforementioned conditions on the trace and determinant of the \emph{Jacobian}. For this model the Jacobian, evaluated at the equilibrium, is given by
+
+\begin{equation}\label{eq:jac2}
+\mathbb{J}_{type\ II} = 
+\begin{bmatrix}
+A\left(\frac{-CD +C -D + 1}{C(C-1)}\right) & \frac{-B}{D} \\ \frac{A(C-1-D)}{B} & 0
+\end{bmatrix}  	.
+\end{equation}
+%
+Parameter selection for this model is also discussed in section \ref{sec:simulation_method}. 
+
+
+\subsection{Inference method: generalised Lotka-Volterra model}
+\label{sec:def_GLV}
+
+Having simulated population dynamics, using the ODE \emph{data generators} just defined, we then sample from the simulation output to produce a discrete time series $x_i(t)$ for each species $i$. The time series represents the population size of that species at discrete points in time. Together the $x_i(t)$ for all species represent the \emph{data stream}. To estimate species interaction strengths we fit a \emph{generalised Lotka-Volterra} (GLV) model to the data stream. The GLV model is the extension of the Lotka-Volterra equations to $N$ species, and is given by
+
+\begin{equation}
+\frac{dy_i}{dt} = r_iy_i + \Sigma_{j=1}^N J_{ij}y_iy_j,
+\label{eq:glv}
+\end{equation}
+%
+where $y_i$ is the population density of species $i$; $r_i$ is the intrinsic growth rate; $N$ is the number of species; and $J_{ij}$ is the coupling between species $i$ and $j$. Specifically $\mathbf{J}$ is the GLV coupling matrix, not to be confused with the \emph{Jacobian} $\mathbb{J}$ used in local stability analysis. All parameters here ($r_i$ and $J_{ij}$) may take positive or negative values. The estimated values of $J_{ij}$, obtained from the model fit, give estimates of species interaction strengths. The $J_{ij}$ values also define the type of interaction between two species. For example if $J_{ij} < 0$ and $J_{ji} > 0$, this suggests that species $j$ predates on species $i$. The diagonal elements of the coupling matrix ($i=j$) give estimates of intra-specific interactions.
+
+Our choice of the GLV model reflects its simplicity and therefore its breadth of application. As seen from equation \eqref{eq:glv} there are no assumptions about species roles built into the functional forms of the model. That is, before the model is parametrised, it does not specify if species $i$ is a prey or a predator. Therefore when the model is fitted to a \emph{data stream} the roles of predator and prey emerge from the fitted model parameters. This feature of the model is especially desirable for the application of our methodology to larger multi-trophic systems (section \ref{sec:ibm}). 
+
+The \emph{type I} model from section \ref{sec:models} can be expressed as a GLV model by assigning the parameters as follows
+\begin{eqnarray}
+r_0 = A, \qquad r_1 = -1, \qquad J_{00} = A, \\[10pt]
+J_{01} = -B, \qquad J_{10} = C, \qquad J_{11} = 0.
+\end{eqnarray}
+%
+Therefore the GLV model should be able to exactly fit to a \emph{data stream} derived from the \emph{type I} model. In this instance we would be able to recover the interaction strengths (and other model parameters) with high accuracy. In practice such `perfect' results are hampered by the presence of noise and sparsity of sampling from the data generator (see results in section \ref{sec:res_glv}). In contrasts the \emph{type II} model cannot be expressed in GLV form because of the non-linear functional response (equation \eqref{eq:h2}). Therefore fitting the GLV model to a \emph{data stream} derived from the \emph{type II} model can at best produce approximations of the true interaction strengths and rate parameters (see results in section \ref{sec:res_hii}). However such a situation represents an important test of the inference method, since functional responses found in nature likely take some non-linear form \cite{arditi2012species}.  
+ 
+\subsection{Inference method: model fitting}
+\label{sec:timme}
+
+%% Dealing with extinctions. Range sampling - diagrams!!
+%% make use of GLV more explicit
+
+To fit the GLV model to sampled \emph{data streams} we use the numerical method developed by Shandylia and Timme \cite{shandilya2011inferring}. We include here a derivation of the method, slightly adapted and simplified for our purposes. The method gives `best fit' estimates of the GLV parameters, which were introduced in section \ref{sec:def_GLV}. Conceptually these estimates are obtained by minimising the error between time derivatives calculated from the \emph{data stream}, and those predicted by the model given the \emph{data stream}. Suppose we that we are trying to fit a population model that, for each species $i$, takes the general form
+
+\begin{equation}\label{eq:timme1}
+ \dot{y}_i = r_if_i(y_i) + \Sigma_{j=1}^{N}J_{ij}g_{ij}(y_i,y_j),\\
+\end{equation}
+%
+where $\dot{y}_i = \frac{dy_{i}}{dt}$; $N$ is the number of species in the system and $i,j$ index the species. The $r_i$ and $J_{ij}$ are constants coefficients, whereas $f_i$ and $g_{ij}$ are known functions. This form looks familiar, indeed all of the ODE models discussed so far in the chapter may be expressed in this form. There is an intrinsic growth term, and a linear sum of pairwise interaction terms. To express the GLV model (equation \ref{eq:glv}) in this form, we let
+
+\begin{eqnarray}
+f_i(y_i) &=& y_i \\
+g_{ij}(y_i,y_j) &=& y_iy_j.
+\end{eqnarray}
+%
+It would be possible to use this method to fit models other than the GLV, so long as the functions $f_i$ and $g_{ij}$ are \emph{known and parametrised}. Since the functions $f_i$ and $g_{ij}$ are known there are $N+1$ unknowns in equation \eqref{eq:timme1}: $r_i$ and $J_{i,j}$ for $j=1,...,N$. Therefore, if we knew the exact values of $\dot{y_i},y_i$ and the $y_j$'s, at $N+1$ time points, then we could solve the equation for $r_i$ and the $J_{i,j}$'s. However in any practical application our knowledge of the system is not \emph{exact}; the system is subject to noise; and the model may be an imperfect description of the dynamics. So the equation cannot be solved exactly. We must look for an approximate solution. To do this the full \emph{data stream} is sampled at $M+1$ time points $t_m$ for $m \in {1,..,M,M+1}$. Therefore we obtain $M+1$ data samples $x_i(t_m)$ to which the model is fitted. 
+
+The data samples are used to construct estimates for the states($\hat{y}_i$ and their time-derivatives $\hat{\dot{y}}_i$ at $M$ intermediate time points, for every species $i$. The time-derivatives are estimated to first order, taking the finite difference between samples at two consecutive time points, giving estimates
+
+\begin{equation}\label{eq:timme2}
+\hat{\dot{y}}_{i}(\tau_m) := \frac{x_i(t_m) - x_i(t_{m-1})}{t_m - t_{m-1}},\\
+\end{equation}
+%
+where $\tau_m \in{\mathbb{R}}, m \in{\{1,...,M\}}$ is the midpoint of the two time-points, given by
+%
+\begin{equation}\label{eq:timme3}
+\tau_m := \frac{t_{m-1} + t_{m}}{2}.\\
+\end{equation}
+%
+To evaluate the functions $f_i, g_{ij}$ at these new time-points we must estimate the states $y_i(\tau_m)$ from our samples $x_i(t_m)$. We use the linear interpolation, such that
+
+\begin{equation}\label{eq:timme4}
+\hat{y}_{i}(\tau_m) := \frac{x_i(t_{m-1}) + x_i(t_{m})}{2}.\\
+\end{equation}
+%
+So by evaluating \eqref{eq:timme2} and \eqref{eq:timme4} using the $M+1$ samples, and substituting the estimates $\hat{y}_i(\tau_m)$ and $\hat{\dot{y}}_i(\tau_m)$ into equation \ref{eq:timme1} we obtain $M$ equations, one for every time point $\tau_m$:
+
+\begin{equation}\label{eq:timme5}
+\hat{\dot{y}}_{i}(\tau_m) = r_if_{i}(\hat{y}_i(\tau_m)) + \Sigma_{j=1}^{N}J_{ij}g_{ij}(\hat{y}_i(\tau_m), \hat{y}_j(\tau_m)).\\
+\end{equation}
+%
+We now simplify the notation such that equation \eqref{eq:timme5} may be written 
+
+\begin{equation}\label{eq:timme6}
+\hat{\dot{x}}_{im} = r_if_{im} + \Sigma_{j=1}^{N}J_{ij}g_{ijm},\\
+\end{equation}
+%
+where the subscripts  $i,j$ indicate the species, and $m$ indicates the time-point $\tau_m$ for which the equation holds. This system of $M$ equations can be expressed in matrix form as
+
+\begin{equation}\label{eq:timme7}
+Y_{i} = J_iG_i,\\
+\end{equation}
+
+where we have
+
+\begin{equation}\label{eq:timme8}
+Y_{i} = 
+\begin{pmatrix}
+  \hat{\dot{y}}_{i1} & \hat{\dot{y}}_{i2} & \cdots & \hat{\dot{y}}_{iM}
+\end{pmatrix}\\
+\in{\mathbb{R}^{1 \times M}},
+\end{equation}
+
+\begin{equation}\label{eq:timme9}
+J_{i} = 
+\begin{pmatrix}
+  r_i & J_{i1} & J_{i2} & \cdots & J_{iN}
+\end{pmatrix}\\
+\in{\mathbb{R}^{1 \times(N+1)}},
+\end{equation}
+
+\begin{equation}\label{eq:timme10}
+G_{i} = 
+\begin{pmatrix}
+  f_{i1}  &    f_{i2} & \cdots & f_{iM}         \\
+  g_{i11} & g_{i12} & \cdots & g_{i1M} \\
+  g_{i21} & g_{i22} & \cdots & g_{i2M} \\
+  \vdots    & \vdots    & \ddots & \vdots    \\
+  g_{iN1} & g_{iN2} & \cdots & g_{iNM} \\
+\end{pmatrix}\\
+\in{\mathbb{R}^{(N+1)\times M}}.
+\end{equation}
+%
+Therefore $J_i$ contains all the model parameters from \eqref{eq:timme1} as unknowns, whilst $Y_i$ and $G_i$ are evaluated from the \emph{data stream}. The system \ref{eq:timme7} has $N+1$ unknowns ($J_{ik}$ for $k=1,..,N+1$) and $M$ equations. In the case when $M>N+1$ the system is overdetermined and there is no exact solution in general. We look for an approximate solution $\hat{J}_i$ that minimises the error between the LHS and RHS of equation \ref{eq:timme7}. Therefore we seek to minimise an error function $E_i(\hat{J}_i)$ with respect to the matrix elements $\hat{J}_{ik}$:
+
+\begin{equation}\label{eq:timme11}
+\min_{\hat{J}_{ik}} \left\lbrace E_i(\hat{J}_i) = \Sigma_{m=1}^{M}\left(Y_{im} - \Sigma_{k=1}^{N+1}\hat{J}_{ik}G_{ikm}\right)^2 \right\rbrace,
+\end{equation}
+%
+To minimise this function we look for solutions for which
+
+\begin{equation}\label{eq:timme12}
+\frac{\partial}{\partial \hat{J}_{ik}} E_i(\hat{J}_i) = 0.
+\end{equation}
+%
+By taking the derivative of the RHS of equation \eqref{eq:timme11} we have that
+
+\begin{eqnarray}
+\frac{\partial}{\partial \hat{J}_{il}} E_i(\hat{J}_i) &=& \frac{\partial}{\partial \hat{J}_{il}} \left[\Sigma_{m=1}^{M}\left(Y_{im} - \Sigma_{k=1}^{N}\hat{J}_{ik}G_{ikm}\right)^2\right] \nonumber \\
+    &=& -2\Sigma_{m=1}^{M}\left[\left(Y_{im} - \Sigma_{k=1}^{N}\hat{J}_{ik}G_{ikm}\right)G_{ilm}\right]. \nonumber
+\end{eqnarray}
+
+To find the minimum of the error function we equate this derivative to zero, giving
+
+\begin{eqnarray}
+0 &=& \Sigma_{m=1}^{M}\left(-X_{im}G_{ilm} + G_{ilm}\Sigma_{k=1}^{N}\hat{J}_{ik}G_{ikm}\right) \nonumber \\
+  &=& \left(-X_iG_i^T\right)_{l} + \Sigma_{m=1}^{M}G_{ilm}\left(\hat{J}_iG_i\right)_m   \nonumber \\
+  &=& \left(-X_iG_i^T\right)_{l} + \Sigma_{m=1}^{M}\left(\hat{J}_iG_i\right)_mG_{iml}^T  \nonumber \\
+   &=& -X_iG_i^T + \hat{J}_iG_iG_i^T. 
+\end{eqnarray}
+%
+Therefore we conclude that
+
+\begin{equation}\label{eq:timme_a2}
+\hat{J}_i = XG^T_i\left(G_iG^T_i\right)^{-1},
+\end{equation}
+%
+which is the same result as derived in \cite{}. In our case this solution represents the analytic form for the best estimate of the parameters in the GLV equation for species $i$. However, without constraints on the second derivative of the error function $E_i(\hat{J}_i)$, there is no guarantee that this solution is a minimum rather than another type of stationary point. In \cite{} there is no justification given for the assumption that this solution represents a minimum. We do not investigate this problem analytically, instead we evaluate the resulting parameter estimates to determine the success of the estimation procedure. For an $N$ species system, by applying equation \eqref{eq:timme_a2} to each species in turn, we obtain the full set of GLV parameter estimates $\hat{J} \in \mathbb{R}^{N \times N}$ and $r \in \mathbb{R}^N$.
+
+%\begin{equation}\label{eq:timme_estimates}
+%\hat{J} =
+%\begin{pmatrix}
+% \hat{J}_{0,0} & \hat{J}_{0,1} \\
+% \hat{J}_{1,0} & \hat{J}_{1,1}
+% \end{pmatrix}\\,
+%\end{equation}
+%%
+%and
+%
+%\begin{equation}\label{eq:timme_estimates2}
+%\hat{r} =
+%\begin{pmatrix}
+% \hat{r}_{0} & \hat{r}_{1} 
+% \end{pmatrix}\\.
+%\end{equation}
+%%
+%The procedure extends trivially to systems of more than two species since each species is fitted separately. 
+
+The model fitting method described in this section was implemented in \emph{Python} \cite{python}, with matrix multiplication using the package \emph{numpy}. The analytic solution to the error minimisation problem makes this model fitting method computationally efficient, allowing us to perform many replicate calculations. However the performance of the method may be lower than other, more computationally expensive, model fitting algorithms (see discussion section \ref{sec:discussion})\footnote{Make sure this is discussed. Alan thinks we need more detail here. What method does numpy use?}. Finally, it is possible to assess the goodness of fit achieved by evaluating the error function (equation \ref{eq:timme11}). 
+
+
+\subsection{Interaction matrix}
+\label{sec:interaction_strength}
+% emphasise that we know the interaction strength for our simulation model
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=0.8\textwidth]{{{figures/FR_example}}}
+\caption{Example of (A) the functional response (FR) curve, and (B) the corresponding inter-specific interaction strengths $\alpha_{ij}$ for one parameter set of the \emph{type I} model (green), and one of the \emph{type II} model (red). The FR for the \emph{type I} model is calculated as $Bx_0$, and for the \emph{type II} model as $Bx_0/(x_0 + D)$. Definitions for $\alpha_{ij}$ in the two models are given in the text. Both parameter sets have values $A=13.58$, $B=85.87$, $7.79$, the \emph{type II} model has $D=0.88$. These parameter values were selected following the procedure described in section \ref{sec:simulation_method}. } 
+\label{fig:fr_example}
+\end{figure}
+
+Having estimated species interaction strengths using the inference method described above, we compare them to interaction strengths calculated directly from the \emph{data generator}. In doing so we evaluate the performance of the inference method. As discussed in section \ref{sec:intro_interactions} there are numerous metrics available to quantify species interaction strengths. The standard metric to quantify interaction strength from ODE population models is known as the \emph{interaction matrix} $\alpha $ \cite{wootton2005measurement}. This metric allows direct comparison between interaction strengths calculated from different ODE population models. The matrix element $\alpha_{ij}$, quantifies the effect of a small change in the population density of species $j$ on the per capita growth rate of species $i$, and is calculated by
+
+\begin{equation}
+\alpha_{ij} = \frac{\partial}{\partial x_{j}}\left(\frac{1}{x_{i}} \frac{dx_i}{dt} \right),
+\label{eq:IM}
+\end{equation}
+%
+where $x_i$ and $x_j$ are the population densities of species $i$ and $j$ respectively.  The element $\alpha_{ii}$ quantities an intra-specific interaction such as the density dependent term in the intrinsic growth function \eqref{eq:intrinsic_growth}. Evaluating \eqref{eq:IM} for the GLV model \eqref{eq:glv} gives
+
+\begin{equation}
+\alpha_{ij} = J_{ij},
+\label{eq:alpha_glv}
+\end{equation}
+% 
+such that the GLV coupling matrix is equal to the interaction matrix for this model. Evaluating \eqref{eq:IM} for the \emph{type I} model (\ref{eq:lin_mod1} and \ref{eq:lin_mod2}) gives
+
+\begin{equation}
+\alpha_{type\ I} = 
+\begin{bmatrix}
+-A & -B \\ C & 0
+\end{bmatrix}  	,
+\end{equation}
+%
+such that the \emph{type I} model has constant interaction strengths that can be directly compared to those of the GLV model. However evaluating \eqref{eq:IM} for the \emph{type II} model (\ref{eq:2_mod1} and \ref{eq:2_mod2}) gives
+
+\begin{equation}\label{eq:im_hii}
+\alpha_{type\ II} = 
+\begin{bmatrix}
+-A + \frac{Bx_1}{(x_0 + D)^2} & \frac{-B}{x_0 + D} \\[10pt] \frac{CD}{(x_0 + D)^2} & 0
+\end{bmatrix}  	,
+\end{equation}
+%
+such that the three non-zero interaction strengths are functions of prey density $x_0$, rather than constants. The form of the functional response (FR) curves and inter-specific interaction strengths for the \emph{type I} and \emph{II} models are illustrated in figure \ref{fig:fr_example}. In panel A the non-linearity of the type II FR is visible, modelling the effect of predator saturation as discussed in section \ref{sec:models}. In panel B we see that the result of this non-linearity is interaction strengths that decrease as a function of prey density, whereas the \emph{type I} model has constant interaction strengths. In fact the interaction strengths of the \emph{type II} model tend to zero in the limit that prey density tends to infinity. This property may seem counter intuitive for a measure of interaction strength, since we may expect a large effect of prey on predator when the prey population is very large. Indeed for large prey populations the \emph{biomass} flow does remain large, but the incremental effect of an increase in prey population on the predator growth rate is small.
+
+Based on the comparison of the functional forms in figure \ref{fig:fr_example}, we expect that the ability of a model with constant interaction strengths (such as the GLV model) to approximate the dynamics of the \emph{type II} model may depend on the extent to which the FR deviates from linearity. This hypothesis is investigated in section \ref{sec:res_hii}. FINISH CHECKING.
+
+\subsection{Summary of methodology}
+\label{sec:method_summary}
+
+Here we summarise the methodology which is depicted in figure \ref{fig:method_flow} and detailed in the sections above. First ODE models (section \ref{sec:models}) are used to simulate population dynamics. This step represents the \emph{data generator}. The population dynamics are then sampled discretely to produce a \emph{data stream}, to which the GLV model (section \ref{sec:def_GLV}) is fitted using the method described in section \ref{sec:timme}. The GLV fit produces constant numeric estimates of interaction strengths in the form of $\hat{J}$, the fitted coupling matrix. Also produced are estimates of the intrinsic growth rate parameters $\hat{r}_i$ for each species. The fitted parameters are compared to those calculated analytically from the \emph{data generator}. The main focus of the analysis is on the estimates of interaction strength given by $\hat{J}$. In particular we are interested in whether $\hat{J}$ correctly identifies the types of interaction between species (i.e. which species eats which), and if so, how accurate are the estimated strengths of the interactions. A secondary concern is the accuracy of the estimated intrinsic growth rates $\hat{r}_i$. However this is related to the main question since the accuracy of all estimates is broadly determined by the \emph{quality} of the GLV fit to the \emph{data stream}.
+
+%The intrinsic growth rates may be compared directly, while the coupling matrix is compared to the interaction matrix $\alpha$ (section \ref{sec:interaction_strength}). 
+
+% The shape of these interaction functions is shown in figure \ref{fig:fr_example}, and we will return to them in section \ref{sec:method_examples}.
+%Using the IM we are able to calculate the interaction strengths exactly from the models that we use for simulation. This is because they are ODE models with explicit expressions for $dx_i / dt$, so we can evaluate the partial derivative in equation \ref{eq:IM} to obtain analytic forms for all the IM elements ($\alpha_{00}$, $\alpha_{01}$, $\alpha_{10}$,$\alpha_{11}$). Depending on the model used the IM elements are either constants, or are functions of prey density. The interaction strengths for our simulation models are given at the end of section \ref{sec:models}, and are illustrated in figure \ref{fig:fr_example}.
+
+
+
+\section{Results: ODE as data generator}
+\label{sec:results}
+
+In this section we analyse the performance of the inference method (sections \ref{sec:def_GLV} and \ref{sec:timme}) in estimating interaction strengths from noisy two species predator-prey dynamics. The dynamics are simulated using the \emph{type I} and \emph{type II} ODE models (section \ref{sec:models}). In section \ref{sec:noise} we discuss how noise is modelled, and in section \ref{sec:simulation_method} the procedure for numerical simulation of the ODE models is given. Constraints on the parameter values used for simulations are detailed in section \ref{sec:param_selection}. Sections \ref{sec:res_glv} and \ref{sec:res_hii} present results for the \emph{type I} and \emph{type II} models respectively. Both sections analyse the effects of noise and sampling intensity on the accuracy of estimated interaction strengths. In section \ref{sec:res_range_sampling} the impact of non-linearity in the functional response of the predator (a feature of the \emph{type II} model) is studied directly. We quantify the extent of this non-linearity and the effect that it has on the accuracy of results. A novel method for dealing with the non-linearity, referred to as \emph{range sampling}, is also introduced. The focus of this section is on two species systems. In section \ref{sec:ibm} the analysis is extended to systems with more species.
+
+\subsection{Modelling noise}
+\label{sec:noise}
+
+A key feature of the simulations is the inclusion of \emph{noise}. Random effects are ubiquitous in natural systems and in ecological data. Therefore in developing a methodology to estimate species interaction strengths it is necessary to characterise its performance under noisy conditions. In modelling population dynamics it is common to distinguish between two different types of error: \emph{process} and \emph{observation} error \cite{hastings2012encyclopedia,jost2000identifying}. Process error results from randomness that is inherent to the mechanisms of the system itself. For example the IBM model used previously (section\ref{sec:the_model}) has randomness built into the behaviour of the individuals. Similarly a natural ecosystem is subject to demographic stochasticity resulting from numerous sources (e.g. environmental forcing, disease etc.). Observation error results from imperfect knowledge of the system being studied. Empirical sampling cannot exactly measure the state of a natural system and therefore some level of observation error is inevitable. In the current analysis we \emph{restrict the focus to process error}, since this type of error is inherent to the system being studied and therefore cannot be reduced. Observation error, on the other hand, may be reduced by experimental design. Therefore we argue that consideration of process error is more important for the development of the methodology presented in this chapter. The exclusion of observation error is also consistent with all previous analyses of the IBM, in which exact knowledge of the system state at any given time point was assumed. Therefore treatment of observation error represents an extension to this work that lies beyond the scope of the current thesis.
+
+In population biology it is conventional to model process error using \emph{multiplicative noise} \cite{carpenter1994fitting,jost2000identifying}. One reason for this is the \emph{postulate of parenthood} (coined by Hutchinson \cite{hutchinson1978introduction}), which states that the growth rate of a species must be equal to zero when the population size is zero. Multiplicative noise is so-name because it consists of a random variable multiplied by the population size $x_i$, such that the term vanishes for zero populations as required by the postulate of parenthood. It is worth noting that the postulate only pertains to \emph{closed-systems}, where there is no external source of individuals (see section \ref{sec:ibm}). Based on convention \cite{jost2000identifying} we define a multiplicative noise term
+
+\begin{equation}
+\xi_{i,t} = x_{i,t} \epsilon_{i,t},
+\label{eq:mult_noise}
+\end{equation}
+%
+where $\epsilon_{i,t}$ is a random number drawn from a normal distribution with mean zero and variance $\sigma_{noise}\Delta t$. The value $\sigma_{noise}$ is hereafter referred to as the \emph{noise intensity}, and the value $\Delta t$ is the size of the integration time-step used in numerical simulation of the ODE models (see section \ref{sec:simulation_method}). For simplicity we use the same value of noise intensity for both species, although it is possible to define different noise distributions for each species in the system.
+
+\subsection{Simulation procedure}
+\label{sec:simulation_method}
+
+%Simulation procedure, parameter selection, additive noise. And plots: example dynamics.
+Simulations were run following a standard procedure that ensures consistency and allows comparison between numerical results. All simulations were run using the first-order forward Euler approximation to the deterministic ODE models. It was heuristically determined that this simple approximation produced solutions that were numerically stable for all of the two species systems simulated in this section. The Euler approximation may be defined by the stochastic difference equation
+
+\begin{equation}
+\label{eq:stochastic_diff}
+x_{i, t+1} = x_{i, t} + \Delta t f(X_t) + \xi_{i,t},
+\end{equation}
+%
+where $x_{i,t}$ is the population density of species $i$ at time $t$; $\Delta t$ is the integration time step; $\xi_{i,t}$ is the noise term \eqref{eq:mult_noise}; and $f_i(X_t)$ defines the time-derivative of $x_{i,t}$ as a function of the system state $X_t \in \mathbb{R}^N$. As such $f_i(X_t) = \dot{x}_i$, which is given by equations (\ref{eq:1lin_mod1},\ref{eq:1lin_mod2}) and (\ref{eq:2_mod1},\ref{eq:2_mod2}) for the \emph{type I} and \emph{type II} models respectively.
+
+All simulations used the initial condition $x_{i,0} = x_i^*/2 \quad \forall i$, where $x_i^*$ is the equilibrium population level of species $i$ (defined in section \ref{sec:models} for both models. As such the initial system state was consistently away form the equilibrium value. In the event of a stochastic extinction of either species, both population densities were reset to their initial conditions. The case with zero noise intensity ($\sigma_{noise} = 0$) is referred to as the \emph{deterministic case}. In all of the results presented below the simulations were run with a time step $\Delta t = 10^{-4}$. All code was implemented in the language \emph{Python} \cite{python}, and large computations were performed on the cluster \emph{Blue Crystal} \cite{BC3}.
+
+%Key to the experimental approach is the control of certain variables between simulations; the choice of parameter values for the two models; and the introduction of \emph{noise} to the \emph{data generator}. The latter is of particular importance because we are interested in how the possibility of estimating species interaction strengths from population dynamics is hampered by the presence of stochastic effects, which are ubiquitous in natural systems.   
+%% note we are noew referring to linear and holling simulation models..
+%We apply a strict recipe when running simulations in order to ensure consistency and to allow comparison of our numerical results. Key to this is the control of certain variables across simulations, and also our method for parameter selection, both of which are discussed below. 
+
+\subsection{Parameter selection}
+\label{sec:param_selection}
+\footnote{change references in section above to here..}
+Certain constraints are placed on the parameter values that may be chosen when simulating either ODE model. Two requirements for ecological realism are that the equilibrium populations given by the model are strictly positive, and that this equilibrium is stable. The conditions for the first requirement were given in section \ref{sec:models} as $C>1$ and $C-D>1$ for the \emph{type I} and \emph{type II} models respectively. The conditions for the second requirement are determined from the Jacobian of the model, given by \eqref{eq:jac1} and \eqref{eq:jac2} for the \emph{type I} and \emph{type II} models respectively. If the eigenvalues of the Jacobian have negative real parts then the equilibrium population is locally stable. A further requirement, due to the methodology, is that the simulated dynamics contain sufficient information to fit the GLV model. If the species populations relax to the stable equilibrium too rapidly then it may not be possible to fit the model. To avoid such a problem parameters are chosen such that the deterministic solution to the model is oscillatory (see condition 1 below). Following the precedent of Jost and Arditi (from their paper \cite{jost2000identifying} discussed in section \ref{sec:motivate_interactions}) we stipulate that the deterministic trajectory given by any parameter set must complete \emph{at least} two large amplitude oscillations en route to equilibrium (see condition 2 below). As stated in section \ref{sec:simulation_method}, every simulation is run with the initial population densities set to half of their equilibrium value. This ensures that the system always starts away from equilibrium.
+%The goal of fitting the GLV model to simulated population dynamics requires that the dynamics contain enough information to perform the fit - it is not possible to fit the a model if species populations are sitting at equilibrium. Therefore we follow the precedent set in [REF], such that all simulated dynamics of the \emph{deterministic models} exhibit two `large amplitude ' oscillations about a stable equilibrium (see condition 2 below). 
+
+\begin{center}
+\begin{table}
+\centering
+    \begin{tabular}{| l | l | l | l | l |}
+
+    \hline
+     & A & B & C & D\\ \hline
+    \emph{type I} & 0.1 - 100 & 0.1 - 100 & 1 - 100 & N/A \\ \hline
+    \emph{type II} & 0.1 - 100 & 0.1 - 100 & 1.1 - 100 & 0.1-99 \\
+    \hline
+    \end{tabular}
+\caption{Ranges from which parameters were selected unifomrly at random for the two ODE simulation models. The parameters are all allowed to vary over at least three orders of magnitude, to ensure that our investigation covers a large region of parameter space. The restrictions on parameters C and D ensure that it is always possible to achieve an equilibrium population of both species that is strictly positive (see equations \ref{eq:lin_mod_sp1}, \ref{eq:lin_mod_sp2}, \ref{eq:hol_mod_sp1}, \ref{eq:hol_mod_sp2}) and therefore ecologically meaningful.}
+\label{table:p_range}    
+\end{table}
+\end{center}
+
+Parameters are selected uniformly at random from predefined ranges, which are given in table \ref{table:p_range} for both models. These ranges allow parameter values to vary over at least three orders of magnitude so that our numerical investigation covers a large region of parameter space. Also these ranges ensure that it is possible to select from these ranges a combination of parameter values that produces a positive equilibrium population. If the equilibrium for the selected parameters is positive, then the values are accepted providing they met the following three conditions:
+ 
+\begin{enumerate}
+	\item The equilibrium is a locally stable spiral node: the eigenvalues of the Jacobian have negative real parts, and complex conjugate imaginary parts.
+	\item The deterministic dynamics exhibit at least two full rotations in the phase plane before relaxing to within $5\%$ of the equilibrium: the distance of the trajectory from the equilibrium as a percentage of the distance of the equilibrium from the origin of the phase plane.
+	\item The population densities do not differ by more than an order of magnitude in the deterministic case dynamics.
+\end{enumerate}
+%
+The final conditions helps to avoid the choice of parameters which produce numerical instability in the Euler method, since such numerical instability often leads to divergent population sizes. Using the procedure described above we select a set 100 parameter values for each of the ODE models. Parameter values from these two sets are used to generate all results presented in section \ref{sec:results}. Every simulation, including those with $\sigma_{noise} \neq 0$, is run for the length of time $T_{2P}$ required to achieve two full oscillations (in the deterministic case) for that parameter set.
+
+\subsection{Example dynamics}
+\label{sec:method_examples}
+
+\begin{figure}
+\centering 
+\includegraphics[width=\textwidth]{{{figures/example_dynamics_pID_0_and_87_noise_20.000000}}}
+\caption{\textbf{Example dynamics of the \emph{type I} model}. Panels A and B show different parameter sets. Green represents the prey species, and red the predator. The dashed lines show the deterministic trajectories ($\sigma_{noise}=0$); the solid lines show a stochastic trajectory with A: $\sigma_{noise}=20$ and B: $\sigma_{noise}=50$. The solid circles represent the \emph{data stream} of 100 samples, taken from the stochastic dynamics in each case.} 
+\label{fig:ex_dynamics_linear}
+\end{figure}
+
+%% include here an example of both Linear and HII dynamics (with mean interaction strength), and to demonstrate noise levels. And the results that we get from tinference. And an examples of range samplig (refer forwards to dsicusssion) 
+Figure \ref{fig:ex_dynamics_linear} shows examples of dynamics simulated for the \emph{type I} model, with and without noise. Two parameter sets are illustrated, one in each panel. It is clear that the deterministic trajectory completes two full oscillations within the simulation time. The figure also gives an intuition for different levels of noise intensity $\sigma{noise}$. Panel A shows a stochastic trajectory with noise intensity 20, whereas in panel B the noise intensity is 50. In the latter case the noise causes significant deviations from the deterministic trajectories. The peaks in the stochastic prey dynamics are more than double the peaks of the deterministic case. However in both cases depicted the period of oscillation is not significantly altered by noise, which is not necessarily the case in general.
+
+Figure \ref{fig:ex_dynamics_holling} shows examples of dynamics simulated for the \emph{type I} model, and the corresponding time series of the inter-specific interaction strengths $\alpha_{01}$ and $\alpha_{10}$ given by \eqref{eq:im_hii}. The stochastic dynamics illustrated in panels A and C both use $\sigma_{noise}=20$. These dynamics demonstrate that for some parameter sets the trajectories may be more sensitive to the addition of noise than for others. We also see, from panels B and D, that for the \emph{type II} model interaction strengths vary over the course of the simulation (in response to changes in $x_0$). However the extent of this temporal variation in $\alpha_{01}$ and $\alpha_{10}$ is again parameter dependent\footnote{Need to make it clear that the average interaction strength is what we compare the estimates to, and this looks like a reasonable thing to do.}.
+
+%\clearpage
+%\afterpage{%
+\thispagestyle{empty}
+\begin{sidewaysfigure}
+
+		\centering      
+		\hspace{-3cm}
+
+        %\includegraphics[width=\linewidth]{{{figures/example_dynamics_HII_pID_7_and_0}}}
+		\includegraphics[width=\textwidth]{{{figures/example_dynamics_HII_pID_7_and_0}}}
+        \caption{\textbf{Example dynamics and interaction strengths of the \emph{type II} model}. The top and bottom rows show different parameter sets. Green represents the prey species, and red the predator. The dynamics is plotted in panels A and C, using the same format as the \emph{type I} dynamics in figure \ref{fig:ex_dynamics_linear}. In both cases $\sigma_{noise}=20$. Panels B and D show how inter-specific interaction strengths $\alpha_{ij}$ vary with time, corresponding to the dynamics plotted. The black solid and dashed lines indicate the mean interaction strengths for the deterministic dynamics, as indicated in the legend.}\label{fig:ex_dynamics_holling}
+        %% Note: this figure generated by Documents/IM_vs_HL_heatmap/plot_sum_maps.py
+\end{sidewaysfigure}
+\clearpage
+%}
+
+
+\subsection{Type I model}
+\label{sec:res_glv}
+
+In this section we characterise the performance of the inference method (section \ref{sec:timme}) for the \emph{type I} model. Results are presented that compare the estimated GLV parameters (section \ref{sec:def_GLV}) to those of the simulation model. The accuracy of the estimates is evaluated under different levels of noise intensity ($\sigma_{noise}$), and using \emph{data streams} that contain different numbers of samples. As noted in section \ref{sec:def_GLV}, the \emph{type I} model may by expressed in GLV form. Therefore fitting the GLV to this model should produce `exact' estimates of the parameter values in the deterministic case ($\sigma_{noise}=0$). We anticipate that the accuracy of parameter estimates will be reduced at the noise intensity is increased, or as the number of samples is reduced. The noise intensity is varied between 0 (determinism) and 100 (highly stochastic), such that the dynamics depicted in panels A and B of figure \ref{fig:ex_dynamics_linear} correspond to low and intermediate levels of noise respectively. The lower limit on the number of samples that can be used is four, since the system of equations used in the error minimisation must be overdetermined (see section \ref{sec:timme}). The upper limit on the number of samples is constrained by the resolution of the simulated dynamics, which is in turn determined by $\Delta t$ and $T_{2P}$ (see section \ref{sec:param_selection}). It was determined that the upper limit on the number of samples that could be used with all 100 parameter sets was $10^4$. 
+
+\begin{figure}
+\centering 
+\includegraphics[width=\textwidth]{{{figures/single_params_v_noise_pID_0_nsamples_100}}}
+\caption{\textbf{Effect of noise on parameter estimates for \emph{type I} model}, using a single parameter set. Parameter estimates obtained by fitting GLV model as described in sections \ref{sec:def_GLV} and \ref{sec:timme}. The \emph{data stream} here consists of 100 samples from simulated dynamics, as depicted in figure \ref{fig:ex_dynamics_linear}. Noise intensity is varied between 0 and 100, with 1000 replicate simulations at each noise value. \textbf{Panel A}: Mean estimated parameter values (each dot representing mean over 1000 repeats). The true parameter values of the simulation model (\emph{data generator}) are shown by dashed lines. \textbf{Panel B:} Standard deviation in the parameter estimates. \textbf{Panel C:} Value of the error functions used in the model fitting method (given by \eqref{eq:timme11}), for each species. The circles show the mean error, and the bars show $\pm 1$ standard deviation.} 
+\label{fig:sp_v_n_100}
+\end{figure}
+
+Figure \ref{fig:sp_v_n_100} shows the effect of increasing noise intensity on parameter estimates, for simulations run using a single parameter set (the same parameter set depicted in panel A, figure \ref{fig:ex_dynamics_linear}). At each value of $\sigma_{noise}$ 1000 replicate simulations were run, and a \emph{data stream} constructed by drawing 100 samples from the simulated dynamics. The GLV model was then fitted to the \emph{data stream}. Panel A shows that, on average, the resulting estimates are close to the true parameter values for low levels of noise. As $\sigma_{noise}$ increases the mean estimated parameter values diverge from the true values. The variability in the parameter estimates, shown in pane B, is zero in the deterministic case, and also increases with noise. It appears that some parameter values  become harder to estimate than others, for this parameter set. For example the estimates of intrinsic growth rate of the prey ($\hat{r}_0$) remain close to the true value, and have relatively low standard deviation, even at the highest noise value ($\sigma_{noise=100}$). Comparatively the estimates of prey intra-specific interaction strength ($\hat{J}_{00}$) perform poorly as noise is increased. Panel C shows the `best-fit' value of the error function \eqref{eq:timme11} for each species, which results from the GLV model fit. The error functions for both species increase approximately linearly with noise. Therefore it is clear that the \emph{quality} of the GLV fit to the simulated dynamics is reduced by noise, as we expected.
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.67\textwidth]{{{figures/single_params_v_nsamples_pID_0_noise_10.000000}}}
+\caption{\textbf{Effect of the number of samples on parameter estimates for \emph{type I} model}, using the same parameter set as in figure \ref{fig:sp_v_n_100}. Format is similar to that figure, but here 1000 replicate simulations are run at each number of samples, all using $\sigma_{noise}=10$. \textbf{Panel A}: Mean estimated parameter values. The true parameter values of the simulation model (\emph{data generator}) are shown by dashed lines. \textbf{Panel B}: Standard deviation in the parameter estimates.}
+\label{fig:sp_v_ns_10}
+\end{figure}
+
+Figures \ref{fig:sp_v_ns_10} and \ref{fig:sp_v_ns_50} show the effect of the number of samples on the accuracy of parameter estimates for $\sigma_{noise}=10$ and $\sigma_{noise}=50$ respectively. Both figures show results for the same parameter set as in figure \ref{fig:sp_v_n_100}. In general low numbers of samples ($<10$) produce estimates that are not close to the true values. However as the number of samples is increased the estimates improve. In the low noise case (figure \ref{fig:sp_v_ns_10}) the means of the parameter estimates converge close to the true parameter values (panel A), and  the standard deviations converge to a low but non-zero value. The rate of convergence is such that there appears to be little improvement in parameter estimates for numbers of samples greater than 100. In the intermediate noise case (figure \ref{fig:sp_v_ns_50}) the means of the parameter estimates approximately converge, but not necessarily on the true parameter values. In panel A we see that, even with $10^4$ samples, there are a clear discrepancies between the true and the estimated values of some parameters. Additionally the standard deviations converge (panel B), but on higher values than in figure \ref{fig:sp_v_ns_10} due to the increased level of noise. As in the low noise case there appears to be little improvement in the estimates above 100 samples.\footnote{Two key points: even at low noise a single simulation may produce estimates that are slightly off due to the non-zero standard deviation. At higher levels of noise the mean value is also off. We conclude that noise can induce systemative errors in the estimates..}
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.67\textwidth]{{{figures/single_params_v_nsamples_pID_0_noise_50.000000}}}
+\caption{Similar to figure \ref{fig:sp_v_ns_10} but with noise intensity $\sigma_{noise}=50$.} 
+\label{fig:sp_v_ns_50}
+\end{figure}
+
+%% Probably not include this figure as its basically the same!!
+%\begin{figure}[h]
+%\centering 
+%\includegraphics[width=\textwidth]{{{figures/single_params_v_noise_pID_0_nsamples_10000}}}
+%\caption{Exactly as in figure \ref{fig:sp_v_n_100} but using 10,000 samples from the simulated dynamics.} 
+%\label{fig:sp_v_n_10000}
+%\end{figure}
+
+We now generalise the above results by considering an ensemble of 100 parameter sets. To quantify the accuracy of parameter estimates we define a metric for \emph{relative error}:
+
+\begin{equation}
+RE(p_i) = \frac{|p_i - \hat{p}_{i}|}{|p_i|},
+\label{eq:rel_error_param}
+\end{equation}  
+%
+where $p_i$ and $\hat{p}_i$ are the true and estimated value of parameter $i$ respectively. As such $RE$ is equal to zero if the estimated and true value are equal. This metric may be evaluated for any of the model parameters (unless $p_i=0$). In the analysis that follows we focus on the inter-specific interaction strengths $J_{01}$ and $J_{10}$, since quantification of these is the main motivation for the work. Also, as suggested by figures \ref{fig:sp_v_n_100}-\ref{fig:sp_v_ns_50}, the error in these parameters may be used as a proxy for the quality of the model fit as a whole. 
+
+Figures \ref{fig:ep_v_n} and \ref{fig:ep_v_ns} show the effect of noise and number of samples on the relative errors $RE(J_{01})$ and $RE(J_{10})$. At each value of noise intensity, and for each number of samples, 100 replicate simulations were run for each of the 100 parameter sets. The mean and standard deviations of the $RE$ metric over these 10,000 simulations, are plotted in panels A and B of both figures. From figure \ref{fig:ep_v_n} we observe the general feature that both the mean and the variability of the error increase with noise intensity. Figure \ref{fig:ep_v_ns} shows that both the mean and the variability of the error are reduced by increasing the number of samples. In this case $\sigma_{noise}=50$, and as a result the mean relative error does not converge to zero (panel A). This is consistent with our results derived from a single parameter set.
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.67\textwidth]{{{figures/ensemble_params_vs_noise_nsamples_1000}}}
+\caption{\textbf{Effect of noise on parameter estimates for \emph{type I} model}, over 100 different parameter sets. The \emph{data stream} here consists of 1000 samples. At each value of $\sigma_{noise}$ 100 replicate simulations were run for each of the 100 parameter sets. Results shown are statistics for the full ensemble of simulations. \textbf{Panel A}: Mean relative error (defined in text) in estimates of the two inter-specific interaction strengths ($\hat{J}_{01}$ and $\hat{J}_{10}$). \textbf{Panel B}: Standard deviation in these errors over all replicates.}
+\label{fig:ep_v_n}
+\end{figure}
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.67\textwidth]{{{figures/ensemble_params_vs_nsamples_noise_50.000000.IS}}}
+\caption{Similar to figure \ref{fig:ep_v_n}, but the relative errors in the estimates are plotted against number of samples. Noise intensity $\sigma_{noise}=50$.}
+\label{fig:ep_v_ns}
+\end{figure}
+
+
+\subsection{Type II model}
+\label{sec:res_hii}
+
+In this section we conduct a similar analysis of the inference method as in section \ref{sec:res_glv}, but this time using the \emph{type II} model as the \emph{data generator}. As we have seen (for example in figure \ref{fig:ex_dynamics_holling}) the interaction strengths $\alpha_{ij}$ in the \emph{type II} model are not constants. They are functions of prey density $x_0$, and therefore vary over the course of a simulation. In order to draw comparisons with $\hat{J}_{ij}$, the constant numeric estimates of interaction strength produced by the GLV fit, we take the mean values of the $\alpha_{ij}$ over a simulation. In the analysis below we assess whether the GLV estimates of interaction strength are close to these mean values. The intrinsic growth rates of the \emph{type II} model are constant, and therefore may be compared directly to the GLV estimates $\hat{r}_i$.
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.67\textwidth]{{{figures/single_params_v_noise_pID_87_nsamples_10000.HII}}}
+\caption{Similar to figure \ref{fig:sp_v_n_100}, but for the \emph{type II} model, and using a \emph{data stream} of 10,000 samples. In this case the simulation interaction strengths $\alpha_{ij}$ are functions of prey density. Therefore the estimates $J_{ij}$ are compared to the mean values of $\alpha_{ij}$, plotted as dashed lines.}
+\label{fig:hii_sp_v_n}
+\end{figure}
+
+Figure \ref{fig:hii_sp_v_n} show how the GLV estimates respond to increasing levels of noise, for a single parameter set. In general it was found that the estimates of interaction strength were less accurate for the \emph{type II} model than for \emph{type I}. This was expected since the GLV can only approximate the \emph{type II} model, whereas it can exactly represent the \emph{type I}. In an attempt to improve the results, the calculations shown in figure \ref{fig:hii_sp_v_n} use 10,000 samples (whereas those in figure \ref{fig:sp_v_n_100} used 100 samples). To provide a benchmark interaction strength for this parameter set that is consistent across all simulations we use the mean values of the $\alpha_{ij}$ over the deterministic trajectory. These are the value displayed as dashed lines in figure \ref{fig:hii_sp_v_n}. Panel A shows that, for low noise intensities, the GLV parameter estimates are close to those of the \emph{data generator}. As the noise intensity increases the estimates diverge. Comparing figure \ref{fig:hii_sp_v_n} to figure \ref{fig:sp_v_n_100} is appears that the estimates are more sensitive to noise in the \emph{type II} case, despite the use of a larger number of samples. Therefore it appears that, with low levels of noise, the GLV model can well approximate the mean interaction strengths of the \emph{type II} model, as least for this parameter set. However these estimates may become unreliable as the level of noise increases.
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.67\textwidth]{{{figures/ensemble_params_vs_noise_nsamples_1000.B}}}
+\caption{Similar to figure \ref{fig:ep_v_n}, but showing relative errors for both the \emph{type I} and \emph{type II} models. Number of samples is 1000.}
+\label{fig:hii_ep_v_n}
+\end{figure}
+
+
+In order to generalise the analysis over a range of parameter values we again define a metric for \emph{relative error}:
+
+\begin{equation}
+RE(p_i) = \frac{|\bar{p}_i - \hat{p}_{i}|}{|\bar{p}_i|},
+\label{eq:rel_error_param_II}
+\end{equation}  
+%
+which is the same as for the \emph{type I} relative error, except that $\bar{p}_i$ is the mean value of model parameter $p_i$ over the simulation in question. This allows us to again draw comparisons between the accuracy of estimates obtained from simulations using different parameter values. We conduct the same analysis as for the \emph{type I} model, with 1000 replicates for each of the 100 parameter sets over a range of noise intensities and sample numbers. Figures \ref{fig:hii_ep_v_n} and \ref{fig:hii_ep_v_ns} provide a direct comparison between the relative errors for the \emph{type I} and \emph{type II} models. The errors for both models respond to noise and number of samples in qualitatively the same way. However the mean errors, and often the variability in the errors, are larger for the \emph{type II} than for the \emph{type II} model. For example the mean relative errors for the \emph{type I} model converge on value between about 0.2 and 0.3 for high number of samples, whereas they converge on values between about 0.3 and 0.4 for the \emph{type II} model (figure \ref{fig:hii_ep_v_ns}).
+
+%Conclusion: noise can introduce systematic errors. Larger number of samples required when noise is high. \textbf{Deviation of FR form linearity} - new plots.
+
+%% Note sure this is informative:
+%\begin{figure}
+%\centering 
+%\includegraphics[width=0.67\textwidth]{{{figures/single_params_v_nsamples_pID_87_noise_50.000000.HII}}}
+%\caption{Noise is 50.} 
+%\label{fig:hii_sp_v_ns}
+%\end{figure}
+
+\begin{figure}
+\centering 
+\includegraphics[width=0.67\textwidth]{{{figures/ensemble_params_vs_nsamples_noise_50.000000.B.IS}}}
+\caption{Similar to figure \ref{fig:ep_v_ns}, but showing relative errors for both the \emph{type I} and \emph{type II} models. $\sigma_{noise}=50$.} 
+\label{fig:hii_ep_v_ns}
+\end{figure}
+
+
+\subsection{Range sampling}
+\label{sec:res_range_sampling}
+\footnote{Rename this section because it does not just contain range sampling.}
+
+The observation that the errors in the estimates of interaction strength are higher for the \emph{type II} model are larger than for the \emph{type I} is related to the form of the functional response (FR). The \emph{type II} model has a non-linear FR, which results in variable interaction strengths that can only be approximated by the GLV. This leads us to propose that the quality of estimates obtained from the dynamics of the \emph{type II} model may depend on the extent of the non-linearity in the FR. The more linear the FR, the better we expect the GLV approximation to be. In order to test this hypothesis we develop a method for quantifying the extent of the non-linearity in the \emph{type II} FR. This method is depicted in figure \ref{fig:nonlinear_fr_rsq}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/example_FR_linear_nonlinear}}}
+	\caption{\textbf{The functional response (FR) of the predator} for two different parameter sets. The FRs plotted are given by $Bx_0 / (x_0 + D)$. The green dashed line shows the analytic form of the function, the red line shows the region of the function explored during a deterministic simulation with those parameters. The black dashed line shows a linear regression fit to the explored FR (red line). The $R^2$ value of this fit can be used as a proxy for how linear the FR is in the region explored by the dynamics. The blue vertical line indicates the prey equilibrium population $x_0^*$. \textbf{Panel A}: The least linear (lowest $R^2$) FR from the 100 parameter sets investigated. \textbf{Panel B}: The most linear (highest $R^2$) FR from the same 100 parameter sets.}
+	\label{fig:nonlinear_fr_rsq}
+\end{figure}
+
+Panels A and B of figure \ref{fig:nonlinear_fr_rsq} show the \emph{type II} FR for two different parameter sets. The FR is defined by $Bx_0 / (x_0 + D)$. The red lines indicate the region of the FR that is explored by the deterministic trajectory when dynamics are simulated with these parameter values. A linear regression model is fitted to this region of the FR, and the $R^2$ value of the fit is used as a proxy for how good the linear approximation is. If the FR were completely linear in this region then the $R^2$ value would be one. The lower the $R^2$ value the further, the deviation of the FR from linearity. Panels A and B show the least and most linear FRs, according to the $R^2$ values, from the 100 parameter sets chosen for the \emph{type II} model (i.e. same parameter sets used to generate figure \ref{fig:hii_ep_v_ns}).
+
+%% These rather confusing!
+%%Plotted by: second_year/functional_response_paper/final_code_version/hollingIIFR/many_short_params/FR_nonlinearity.py
+%% But using the 100 params with lowest Rsq value, selected from the 1000 params generated on BC3.
+%% Both plotted using same script with different plot flags at the end.
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/nonlinearity_predicts_quality}}}
+	\caption{\textbf{Linearity of FR as a predictor for estimate quality.} One simulation for each parameter set at each noise value: $\sigma_{noise}=0$ (green triangles), and $\sigma_{noise}=5$ (red crosses). Linearity of the FR is measured by the $R^2$ of the regression fit, as in figure \ref{fig:nonlinear_fr_rsq}. The $R^2$ value is plotted against the relative error (RE) in the estimates of inter-specific interaction strength. The correlation coefficient between the two variables is given in the legends. \textbf{Panel A}: Prey interaction strength $\hat{J}_{01}$, \textbf{Panel B}: Predator interaction strength $\hat{J}_{10}$.}
+	\label{fig:nonlinearity_error}
+\end{figure}
+
+Using this $R^2$ measure for linearity in the FR, we then investigate the correlation between linearity and the relative error (RE) in the estimates of interaction strength. The same RE metric \eqref{eq:rel_error_param_II} is used to quantify the error in the estimates of inter-specific interaction strength $\hat{J}_{01}$ and $\hat{J}_{10}$. The relative errors are plotted against $R^2$ for each of the 100 parameter sets in figure \ref{fig:nonlinearity_error}. There are two simulations for each parameter set, one for $\sigma_{noise}=0$ (green triangles) and one for $\sigma_{noise}=5$ (red crosses). In general we observe that the relative error is higher for parameter sets with less linear FR (lower $R^2$), as predicted. The correlation is weakened by noise, especially for the predator interaction strength $J_{10}$. At $\sigma_{noise}=5$ the correlation between $RE(J_{10})$ and $R^2$ is only 0.40, compared to 0.71 at $\sigma_{noise}=0$. This reduction in correlation suggests that, although the linearity of the FR is significant at low (or zero) noise values, the introduction of noise represents a source of error in the estimates which is not dependant on linearity. Indeed the extent to which noise produces error in the estimates is likely to depend on the sensitivity of the dynamics to stochastic perturbations. As we saw in figure \ref{fig:ex_dynamics_holling}, the same level of noise can cause the dynamics to deviate to different extents from the deterministic trajectory, depending on the parameter values. This sensitivity to nosie can be studied analytically using stability concepts such as \emph{reactance} and \emph{resilience} \cite{arnoldi2015}. However we do not pursue this line of investigation here.  
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{{{figures/range_sample_didactic}}}
+	\caption{\textbf{Demonstration of \emph{range sampling}} from dynamics, in order to perform a piece-wise fit of the GLV. The dynamics shown is from the \emph{type II} model. The dynamics is split into two ranges according to prey density $x_0$ such that half of the time points fall into one range and half into the other. The region of prey density that defines the lower range is shaded in blue, and the portions of the dynamics that fall into this range are highlighted in black.}
+	\label{fig:range_didact}
+\end{figure}
+%% These rather confusing!
+%%Plotted by: second_year/functional_response_paper/final_code_version/hollingIIFR/many_short_params/range_sample.py
+%% But using the least linear of 100 params with lowest Rsq value, selected from the 1000 params generated on BC3.
+%% Both plotted using same script with different plot flags at the end.
+%% Noise is zero or 5.
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/range_sample}}}
+	\caption{\textbf{Range sampling results} for the parameter set depicted in panel A of figure \ref{fig:nonlinear_fr_rsq}. The dynamics is split into seven ranges using the same procedure illustrated in figure \ref{fig:range_didact}. The GLV is then fitted separately (piece-wise) to these seven ranges, producing estimates of the interaction strength within each range. Results are calculated from single simulations, one with $\sigma_{noise}=0$ (green triangles), and one with $\sigma_{noise}=5$ (red triangles). Also plotted, as a blue line, is the analytic form of the interaction strength calculated from the \emph{type II} model using \eqref{eq:im_hii}. \textbf{Panel A}: Prey interaction strength $\alpha_{01}$, \textbf{Panel B}: Predator interaction strength $\alpha_{10}$.}
+	\label{fig:range_example}
+\end{figure}
+
+From figure \ref{fig:nonlinearity_error} we observe that most of the parameter sets investigated have FRs that are approximately linear ($R^2$ values close to one) within the region of phase-space explored by the deterministic dynamics. This is an unintended feature of the parameters sets, resulting from the constraints imposed in parameter selection. The approximate linearity of the FR in many cases leads us to question if a signature of non-linearity can be detected using our methodology. Previous work by Jost and Arditi \cite{jost2000identifying} has attempted to detect the presence of different forms of functional response from population dynamics data. Their approach was to fit ODE models with different forms of FR, selecting the model that produced the `best fit'. As discussed in section \ref{sec:motivate_interactions} this approach produced mixed results. Here we propose an alternative approach that involves fitting the GLV model piece-wise to subsets of the population dynamics.   
+
+The proposed method is referred to as \emph{range sampling}, since it involves fitting the GLV to subsets of the dynamics sampled from different ranges of prey density. The sampling procedure is illustrated in figure \ref{fig:range_didact}. We define a number of ranges $R$, with boundaries distributed according to prey density $x_0$ such that an equal number of time points falls within each range. In the case depicted there are two ranges, and the boundary between them is approximately $x_0 = 0.3$. For half of the time series the prey density is lower than this boundary, and for the other half it is greater than it. Therefore the ranges define two subsets of the dynamics. The GLV model is then fitted to a \emph{data stream} sampled from within these ranges, using the same model fitting method (section \ref{sec:timme}). The result is an estimate of the interaction strengths (and growth rate parameters) within each range of prey density. Increasing the number of ranges reduces their size, and therefore improves the approximation that the FR is linear within each range. However the more ranges there are, the fewer data points each contains to which the GLV can be fitted. If the estimates of interaction strengths vary between ranges, this represents evidence of functional dependence of the interaction strength on prey density, which we have seen previously results from non-linearity in the FR.
+
+Figure \ref{fig:range_example} shows the estimates of interaction strength resulting from range sampling with $R=7$. The results are calculated for a single parameter set (same as panel A in figure \ref{fig:nonlinear_fr_rsq}), from one simulation with $\sigma_{noise}=0$ (green triangles), and one simulation with $\sigma_{noise}=5$ (red triangles). The analytic forms for the interaction strengths $\alpha_{01}$ and $\alpha_{10}$ are shown as blue lines. In the deterministic case the estimates of interaction strength lie close to the analytic form. Not only can we detect functional dependence of the interaction strengths on prey density $x_0$, but we are able to approximate the functional form of the interaction strengths $\alpha_{01}(x_0)$ and $\alpha_{10}(x_0)$. However the addition of a moderate amount of noise ($\sigma_{noise}=5$) produces significant error in the range sampling estimates. In panel A, a dependence of the estimates $\hat{J}_{01}$ on prey density is still clear, although the estimates are scattered about the analytic function. The estimates of predator interaction strength $\hat{J}_{10}$ show greater sensitivity to noise. At low prey densities the estimates are so far from the analytic function that they take the wrong sign (negative estimates $\hat{J}_{10}$ suggesting that the predator is being eaten by the prey). Consequently the correct dependence of $\alpha_{10}(x_0)$ cannot be identified. In general we found that the range sampling approach is highly sensitive noise. At values of $\sigma_{noise}$ much greater than 10 all evidence that interaction strengths are functionally dependent on  $x_0$ is lost (results not shown). Therefore we conclude that the range sampling approach, in its current form, is not practically useful for the detection of non-linear functional responses from population dynamics data. 
+
+%Here we present the concept of range sampling: essentially fitting the GLV to subsets of the time series in order to characterise the non-linear behaviour of the interaction strengths. We show that it works well for deterministic data generators, but is very sensitive to the addition of noise. We do not pursue this approach any further. \textbf{Also quantify the non-linearity} and the effect this has on accuracy of results.
+%% Discussion of these results first??
+
+
+\subsection{Summary}
+\label{sec:res_ODE_summary}
+
+Include this section to summarise ODE results before moving on to IBM? If so refer to this in section intro.
+
+\begin{itemize}
+	\item Appears that noise is more important source of error than non-linearity in the FR...in nature?
+	\item Range sampling very sensitive to noise - boundary effects?..is there a way to improve this?
+	\item Predator estimates more sensitive to noise
+\end{itemize}
+% > only very few samples needed really!
+
+%\section{TEMP : other results}
+%
+%This section shows some plots which I was not planning to put into the thesis but are worth discussing..
+%
+%\begin{figure}[h]
+%\centering 
+%\includegraphics[width=0.67\textwidth]{{{figures/ensemble_params_vs_noise_nsamples_1000.ALL}}}
+%\caption{Nonsense. 1000 samples used.} 
+%\label{fig:ep_v_n}
+%\end{figure}
+%
+%\begin{figure}[h]
+%\centering 
+%\includegraphics[width=0.67\textwidth]{{{figures/ensemble_params_vs_nsamples_noise_50.000000.ALL}}}
+%\caption{Nonsense. Noise is 50.} 
+%\label{fig:ep_v_ns}
+%\end{figure}
+
+\section{Results: IBM as data generator}
+\label{sec:ibm}
+
+In this section we apply the inference method to population dynamics simulated using the IBM model. We first characterise the functional forms of the intrinsic growth and mortality rates for prey and predator species. We then determine that the functional responses in the IBM are approximately linear. And argue that this would be expected because there is no saturation or prey handling included in the model. We then present results for:
+\begin{itemize}
+	\item Two species: works well. Identifies with is prey, which is predator. IS closely resembles GLV estimates. Rate parameters and biomass flows accurately recovered.
+	\item Three species: Good rate estimates and biomass flows. The inference method often finds that the best fit is given by a model where the top predator is eaten by the plant species! Explore ways to identify correct model topology. Inconclusive. Model fit is good for intermediate species.
+	\item Five species: Similar results to three species. In particular, we cannot reliably identify the correct topology, and the best fit model is often one in which the top-predator is eaten by one of the plants.
+	\item 60 species communities, with species group into trophic levels such that the network size is reduced to four.   Will present a brief discussion of this. But based on the results for three and five species it is not worth going into too much detail. There is clearly a problem... 
+\end{itemize} 
+Discuss postulate of parenthood.
+
+In this section we apply the methodology for inferring species interactions to the IBM simulations. In the previous section we have seen that the method works well when fitting the GLV to two species predator-prey dynamics simulated with ODE models. In the case that the dynamics is governed by the Lotkva-Volterra equations, and in the absence of noise, fitting the GLV model produces true estimates of the underlying parameters which include the inter-specific interaction strengths. The estimates require relatively few samples in order to achieve high accuracy, and which converge on the true parameter values as the sampling intensity increases. However as noise is added to the simulations the accuracy of the estimates decreases. In particular we found that, in the presence of noise, the estimates do not converge on the true parameter values - that is, noise introduces systematic error in to the estimates. In the case that the dynamics are governed by the Holling II model matters are complicated - but in general we find that the GLV can approximately capture the strength of species interactions (and also the dynamics?), provided there is not too much noise, and the FR is not too non-linear\footnote{This is all need to be demonstrated - WORK TO DO!}.
+
+Can the IBM dynamics by approximated by the GLV model? The hypothesis is that is can. Argue this..and refer to previous mention of LV type dynamics. Refer forward to testing linearity of FR. Exponential growth and decay, linear FR. However there are certain problem/factors that may hinder this approach/represent a departure from GLV dynamics...Noise, spatial effects, bioenergetic model - time delay? Immigration (one component of noise).
+
+The issue of noise is important since, as we have shown in chapter REF, there is a strong stochastic component to the IBM simulations. 
+
+Modelling individuals, not biomass or energy. Is this problematic? Set herb-frac to 1. Other issues?
+
+\subsection{Testing functional response (and intrinsic growth functions)}
+
+Here we demonstrate the linearity of the predator functional response for animal predators in the second and third trophic levels (using 2sp and 3sp chain) - demonstrate that there is a slight difference. But basically linear. Other issues that may arise - high noise and low abundances create error. 
+
+We also conduct an experiment to test the intrinsic growth and death rates of plant and animal species - by setting herb-frac=0.0. Demonstrate they are well approximated by exponential. In the absence of immigration. 
+
+Carrying capacity: is there evidence for density dependent birth/death? - use this fact in later analysis. Also discuss that the carrying capacity will vary with the number of species, not just a single species thing (non-pairwise interactions in competition for space - argghh!)
+
+THE FR AND GROWTH RATE PLOTS NEED TO FOLLOW THE 2 SPECIES DYNAMICS PLOT.
+CHANGE OF PARAMS; HERBIVORES CONSUME WHOLE PLANT.
+THE TERMS LOW AND HIGH IR TAKE A DIFFERENT MEANING HERE FROM PREVIOUS CHAPTERS.
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/plant_FR}}}
+	\caption{\textbf{Functional response (FR) of the herbivore} at two different immigration rates (IR), experimentally derived from two IBM simulations. Both simulations are of two species plant-herbivore systems, with reproduction rate (RR) 0.1 and run for 10,000 time steps. Each green circle represents the number of plants consumed during a window of 50 time steps, divided by the mean herbivore abundance during that window, plotted against the mean plant abundance during the window. The black lines represent linear regression fits to the data. $R^2$ values for the fits are given in legends, and significance at $95\%$ confidence is indicated by *. \textbf{Panel A}: Low immigration rate ($IR=10^{-5}$). \textbf{Panel B}: High immigration rate ($IR=10^{-4}$).}
+	\label{fig:plantFR}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/predator_FR}}}
+	\caption{Similar to figure \ref{fig:plantFR}, but for the \textbf{numerical response (NR) of the herbivore}. Each green circle represents the number of herbivores born during a window of 50 time steps, divided by the mean herbivore abundance during that window, plotted against the mean plant abundance during the window.}
+	\label{fig:herbFR}
+\end{figure} 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/intrinsic_fn}}}
+	\caption{\textbf{Intrinsic growth and mortality functions} derived experimentally from two species IBM simulations. \textbf{Panel A}: How the plant population grows from different initial abundances, in the absence of any herbivores. \textbf{Panel B}: How the herbivore population declines from different initial populations, in the absence of any plants.} 
+	\label{fig:intrinsic}
+\end{figure}
+
+
+\subsection{2 Species IBM model}
+
+IMPORTANT: carrying capacity depends on other species...introduce a new term into the model and test it?
+
+Define the model and what the inferred parameters represent:
+
+\begin{itemize}
+	\item $J_{01}$: per-capita of rate consumption of the prey
+	\item $J_{10}$: per-capita of rate reproduction of predator, due to consumption of prey. Not as well defined. But only source of predator births? Numerical response! (get REF)
+	
+	\item $J_{00}$: intra-specific regulation of prey growth - see carrying capacity experiment.
+	
+	\item $J_{11}$: intra-specific regulation of predator mortality? Check this. Expect zero? Or expect high number of predator means more reproduction because easier to find partner, therefore reduce mortality? Or increase birth rate. Not clear. Again SEE EXPERIMENT. 
+	
+	\item $r_0$: prey intrinsic growth rate. Estimate from exp?
+	
+	\item $r_1$: predator intrinsic mortality rate. Estimate from exp?
+\end{itemize}
+
+So we know what values to expect, or at least the signs. We can evaluate the model fit by comparing the values of these estimates with birth/death rates from the simulations. Although not totally fair. We can also simulate GLV with the inferred parameters - does it match. Is the equilibrium the same? And check the error function of the fit. We show all this in the results section below.
+
+\paragraph*{Dynamics of the model} we two species is a new thing. Here we show that with the default parameters we get relaxation-type oscillations. This is interesting, we try fitting to these in the two species case. But they become problematic for larger number of species. Argue why. Therefore we increase the reproduction rate (refer to previous chapter), which creates more WORD dynamics. We also fit to these. 
+
+PLOT: DYNAMICS UNDER IR, RR AND HL.
+
+Also show dependence on immigration (show that it is low and what happens if it is high), concede that this is a limitation.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/example_dynamics_2sp_ir_rr}}}
+	\caption{\textbf{Example dynamics of the IBM for two species} with different reproduction rates (RR) and immigration rates (IR). Here low and high RR are 0.01 and 0.1 respectively. Low are high IR are $10^-4$ and $10^-5$ respectively. \textbf{Left column}: Population dynamics of the two species. \textbf{Right column}: Time series of births and immigrations for both species. \textbf{First row}: low RR and low IR. \textbf{Second row}: high RR and low IR. \textbf{Third row}: high RR and low IR. \textbf{Fourth row}: high RR and high IR.}
+	\label{fig:2sp_dynamics}
+\end{figure}
+
+
+\subsection{Extend methodology (3, 4 and 5 species)}
+
+MULTI-SPECIES DENSITY DEPENDENCE?!
+
+This does not require much since we presented a general framework previously. 
+
+Show 3 species dynamics with the two different RR. Conclude which is better. 
+
+\subsection{Results}
+\clearpage
+\subsection{2 species}
+
+Here we compare the results of two species. 
+
+For a single IR we look at convergence of all 6 parameters (over the ensemble) - correct signs, correct magnitudes?
+
+Maybe repeat for other IRs and HL.
+
+We then show rate estimates as time series and introduce quality metric for this\footnote{Still not sure about this}.
+
+Demonstrate the quality decreases with IR and HL (box plot?).
+And how estimated parameters respond to the two HL scenarios (refer to previous findings). Hopefully support!
+
+DIFFERENCE BETWEEN M0 AND M1 - WHERE DO WE INTRODUCE TOPOLOGY RESTRICTION.
+NEED A PLOT TO DEMONSTARATE SAMPLE LEGNTH AND SAMPLE FREQUENCY?
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1}}}
+	\caption{\textbf{Convergence of parameter estimates for low immigration rate} ($IR=10^{-5}$). Solid lines represent mean values, shaded areas represent $\pm 1$ standard deviation, over 25 replicates. M0 indicates GLV model fit without intra-specific interactions ($J_{ii}=0$). M1 indicates GLV model fit without constraints. \textbf{Top row}: interaction strength estimates. \textbf{Bottom row}: growth rate estimates. \textbf{Left column}: convergence as sample length increased. \textbf{Right column}: convergence as sampling frequency increased.}
+	\label{fig:2sp_convergence_LI}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.1}}}
+	\caption{Similar to figure \ref{fig:2sp_convergence_LI}, but for \textbf{high immigration rate} ($IR=10^{-4}$).}
+	\label{fig:2sp_convergence_HI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/rate_estimate_series_2sp_hr_li}}}
+	\caption{Predicted births/deaths. Low IR.}
+	\label{fig:rate_estimates_2sp_li}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/rate_estimate_series_2sp_hr_hi}}}
+	\caption{Predicted births/deaths. High IR.}
+	\label{fig:rate_estimates_2sp_hi}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/inferred_dynamics_2sp}}}
+	\caption{Fitted dynamics. }
+	\label{fig:inferred_dynamics_2sp}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/estimate_quality_2sp_lowIR}}}
+	\caption{Quality. LI.}
+	\label{fig:quality_2sp_li}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/2species/estimate_quality_2sp_highIR}}}
+	\caption{Fitted dynamics. }
+	\label{fig:quality_2sp_hi}
+\end{figure}
+
+\clearpage
+\subsection{3 species}
+
+The two species results suggest that intra-specific interactions contribute to predator deaths, whereas they contribute to prey births\footnote{Actually it looks more like intra-specific interactions give negligible benefit!..Shit.}. This is problematic for rate estimation since we are starting from the position of not knowing which species are basal. For the purposes of calculating the rate we pretend that we know...This is in agreement with the Lotka-Volterra formulation.
+
+The alternative convention is that intra-specific interactions are 
+
+Extra term does not improve the estimates.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/example_dynamics_3sp}}}
+	\caption{3 species dynamics}
+	\label{fig:3sp_dynamics}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/convergence_3sp_length_lowIR}}}
+	\caption{Convergence of estimates. 3 species.}
+	\label{fig:3sp_convergence_LI}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/convergence_3sp_length_highIR}}}
+	\caption{Convergence of estimates. 3 species.}
+	\label{fig:3sp_convergence_HI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/rate_estimates_3speices_li}}}
+	\caption{Predicted births/deaths. Low IR.}
+	\label{fig:rate_estimates_3sp_li}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/rate_estimates_3speices_hi}}}
+	\caption{Predicted births/deaths. High IR.}
+	\label{fig:rate_estimates_3sp_hi}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/inferred_dynamics_3sp}}}
+	\caption{Fitted dynamics. }
+	\label{fig:inferred_dynamics_3sp}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/stability_and_error_3sp_LI}}}
+	\caption{Stability and error }
+	\label{fig:stability_and_error_3sp_LI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/stability_and_error_3sp_HI}}}
+	\caption{Stability and error }
+	\label{fig:stability_and_error_3sp_HI}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/estimate_quality_3sp_LI}}}
+	\caption{Quality 3sp LI}
+	\label{fig:estimate_quality_3sp_LI}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/estimate_quality_3sp_HI}}}
+	\caption{Quality 3sp HI}
+	\label{fig:estimate_quality_3sp_HI}
+\end{figure}
+%% TOD DISCUSS RE IBM APPLICATION:
+
+% > could introduce non-linearities to IS. E.g. hanlding time?
+% > discuss application to larger system. Functional groupings...etc.
+
+\clearpage
+\subsection{5 species}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/example_dynamics_5sp}}}
+	\caption{5 species dynamics}
+	\label{fig:5sp_dynamics}
+\end{figure}
+
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_num_stable_nets}}}
+	\caption{5 species: number of stable models}
+	\label{fig:5sp_stable_nets}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_stable_models}}}
+	\caption{5 species: stability of selected models}
+	\label{fig:5sp_stable_models}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_eq_err}}}
+	\caption{5 species: error in equilibrium}
+	\label{fig:5speqerr}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_errfn}}}
+	\caption{5 species: error in gradient fit function}
+	\label{fig:5sp_errfn}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_rate_errors}}}
+	\caption{5 species: errors in rate estimates}
+	\label{fig:5s_rate_errors}
+\end{figure}
+
+\clearpage
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_fitted_FR}}}
+	\caption{5 species: functional response (High IR)}
+	\label{fig:5sp_FR_fit_highIR}
+\end{figure}
+
+\begin{figure}[p]
+	\centering
+	\includegraphics[width=\textwidth]{{{figures/IBM/5species/lowIR_fitted_FR}}}
+	\caption{5 species: functional response (Low IR)}
+	\label{fig:5sp_FR_fit_lowIR}
+\end{figure}
+
+\clearpage
+\section{Discussion}
+\label{sec:discussion}
+
+Points referenced in text above, make sure to discuss them!..
+
+\begin{itemize}
+	\item Discuss how this methodology could be used on empircal data...
+	\item Limitations of ODE models (non-spatial, repsonse to debate on FR)
+	\item Possibility of extending to more than two specie systems (if this is actually done then change ref in text above)
+	\item discussion of other forms of FR (not H) - or disucssed already in inro?
+	
+	\item good GLV fit to LV even with 100 sample points - realistic?
+	
+	\item how good is the method of model fitting. Discuss more computationally expensive options (mentioned in section on Timme method)
+	
+	\item Spatial heterogeneity - we do not explore this here, but acknowledge that it represents are source of error. Gives example in extremis - 2 species only interacting on boundary. Also we know that there is some level of spatial aggregation, especially at low IR - possibly show one plot of this?
+	
+	\item Could introduce prey handling to IBM to create non-linear FR.
+	
+	\item Our method could be used to pick out coupling to other variables e.g evironmental (temperature) if expressed in a certain way.
+	
+	\item In real application would not have luxury of selecting the section of time series with best fit! Would be lucky to have 1000 time points at all! 
+\end{itemize}
+
+
+\subsection{Phase space analysis}
+
+In this section we discuss why we think the method is not working. We refer to various other studies that have observed reversed phase-relationships between predator and prey. We finish with a discuss of alternative methodologies that may be less vulnerable to this error.
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/3sp_phase_plane}}}
+	\caption{Dynamics of a 3 species food chain projected onto the three phase planes. Anti-clockwise rotation in the phase plane is characteristic of the species on the x-axis being the prey. Here we see clockwise-rotation in panel B suggesting that the predator is eaten by the plant.}
+	\label{fig:3sp_phase}
+\end{figure}
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=\textwidth]{{{figures/IBM/3species/3sp_fourier_corr}}}
+	\caption{A Fourier spectrum for the dynamics of each of the three species in the food-chain dynamics shown in figure \ref{fig:3s_phase}. Also shown is cross-correlation for the three pairing of species dynamics, indicating the directions of phase lags.}
+	\label{fig:3sp_phase}
+\end{figure}
+
+\section{Discussion}
+\label{sec:discussion}
+
+In this section we discuss limitations, and possible improvements to the method. Perspective: is the goal of applying such a methodology to natural ecosystems achievable in the futre?

@@ -6,9 +6,11 @@
 \usepackage[latin1]{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
+
 \begin{document}
 \pagestyle{empty}
 
+\tikzstyle arrowstyle=[scale=10]
 
 % Define block styles
 \tikzstyle{decision} = [diamond, draw, fill=blue!20, 
@@ -16,7 +18,7 @@
 \tikzstyle{block} = [rectangle, draw, fill=blue!20, 
     text width=5em, text centered, rounded corners, minimum height=4em]
 \tikzstyle{exp_block} = [rectangle, draw, fill=blue!20, text width = 21em, text centered, rounded corners, minimum height=4em]
-\tikzstyle{line} = [draw, -latex']
+\tikzstyle{line} = [draw, -latex', line width=2]
 \tikzstyle{cloud} = [draw, text width=10em, ellipse,fill=red!20, node distance=3cm,
     minimum height=2em]
 %\tikzstyle{words} = [draw] %, ellipse,fill=red!20, node distance=3cm,    minimum height=2em]

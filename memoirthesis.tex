@@ -4,6 +4,7 @@
 \usepackage{accents}
 \usepackage{mathtools}
 \mathtoolsset{showonlyrefs=true}
+\usepackage{relsize}
 %\usepackage{cleveref}
 %\usepackage{autonum}
 %
@@ -61,22 +62,23 @@
 %% subdirectories.
 \mainmatter
 %%
-%\import{chapters/chapter01/}{chap01.tex}
-%\clearemptydoublepage
-%%%
-%%\setcounter{chapter}{+1}
-%\import{chapters/chapter02/}{chap02.tex}
-%\clearemptydoublepage
-%
-%%\setcounter{chapter}{+2}
-%\import{chapters/chapter03/}{chap03.tex}
-%\clearemptydoublepage
+\import{chapters/chapter01/}{chap01.tex}
+\clearemptydoublepage
 %%
-%\import{chapters/chapter13/}{chap13.tex}
-%\clearemptydoublepage
+%\setcounter{chapter}{+1}
+\import{chapters/chapter02/}{chap02.tex}
+\clearemptydoublepage
+
+%\setcounter{chapter}{+2}
+\import{chapters/chapter03/}{chap03.tex}
+\clearemptydoublepage
+%
+\import{chapters/chapter13/}{chap13.tex}
+\clearemptydoublepage
 %%%
-%\import{chapters/chapter04/}{chap04.tex}
-%\clearemptydoublepage
+%\setcounter{chapter}{+4}
+\import{chapters/chapter04/}{chap04.tex}
+\clearemptydoublepage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\import{chapters/chapter04b/}{chap04b.tex}
@@ -84,7 +86,7 @@
 %\import{chapters/chapter05/}{chap05.tex}
 %\clearemptydoublepage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setcounter{chapter}{+5}
+%\setcounter{chapter}{+5}
 \import{chapters/chapter06/}{chap06.tex}
 \clearemptydoublepage
 %

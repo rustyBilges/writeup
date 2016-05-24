@@ -345,7 +345,7 @@ A group of theoreticians at the \emph{Station d'Ecologie Th\'eorique et Exp\'eri
 I_{eco} &=& \frac{1}{CV(X_{tot})^2}, \\[5pt] 
 I_{pop} &=& \frac{(X_{tot}^*)^2}{(\Sigma_i \sqrt{Var(X_i)})^2}, \\[5pt]
 I_{min} &=& \underaccent{i}{min} \frac{(X_i^*)^2}{Var(X_i)}, \\[5pt]
-Sync    &=& \frac{Var(X_{tot})}{(\Sigma_i \sqrt{Var(X_i)})^2},
+Sync    &=& \frac{Var(X_{tot})}{(\Sigma_i \sqrt{Var(X_i)})^2},\label{eq:def_eco_sync}
 \end{eqnarray}
 where $X_i$ is the abundance time-series vector of species $i$; $X_{tot}$ is the total abundance time-series (i.e.  $\Sigma_i X_i$);  $CV$ is the coefficient of variation (as defined in \eqref{eq:cov}); and $X_i^*$, $X_{tot}^*$ are the species level and total abundance values of the stable equilibrium point respectively. Therefore $I_{eco}$ is the squared inverse of the metric $mean\_CV$, whilst $I_{min}$ is the squared inverse of the coefficient of variation of the \emph{most variable species}. $I_{pop}$ is a weighted sum of the species level invariabilities, and $Sync$ is given by the ratio $I_{pop} / I_{eco}$. In \cite{montoya2016invariability} it is shown that AR is strongly dependent on species composition, and is closely related to $I_{min}$ - it is often dominated by the least abundant and most variable species. Therefore they conclude that AR is not a reliable metric, and advocate some combination of invariability metrics to characterise stability. We implement and test these metrics in our analysis (chapter \ref{chap:habitat_loss_high_immigration}\footnote{And chapter 5?}), and note here the following relevant properties:
 

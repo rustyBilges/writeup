@@ -3,62 +3,85 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 299 of file thesisbiblio.bib
+Repeated entry---line 311 of file thesisbiblio.bib
  : @article{wootton2005measurement
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 308 of file thesisbiblio.bib
+Repeated entry---line 320 of file thesisbiblio.bib
  : @article{berlow2004interaction
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1704 of file thesisbiblio.bib
+Repeated entry---line 995 of file thesisbiblio.bib
+ : @article{thebault2010stability
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1008 of file thesisbiblio.bib
+ : @article{lurgi2015effects
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1442 of file thesisbiblio.bib
+ : @article{bossio2005soil
+ :                        ,
+I'm skipping whatever remains of this entry
+Warning--string name "december" is undefined
+--line 1558 of file thesisbiblio.bib
+Repeated entry---line 1765 of file thesisbiblio.bib
  : @article{barraquand2014functional
  :                                  ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "mcwilliams2015anim" isn't style-file defined
+--line 1834 of file thesisbiblio.bib
 Warning--entry type for "BC3" isn't style-file defined
---line 1791 of file thesisbiblio.bib
+--line 1852 of file thesisbiblio.bib
+Warning--I didn't find a database entry for "ceballos2015accelerated"
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "gibson2011sampling"
+Warning--I didn't find a database entry for "lurgi2015"
+Warning--I didn't find a database entry for "newbold2015global"
+Warning--empty journal in ai2012immigration
+Warning--empty journal in condit2012thirty
 Warning--there's a number but no series in hastings2012encyclopedia
 Warning--empty journal in lotka1925elements
-You've used 18 entries,
+Warning--empty journal in tilman1994habitat
+You've used 145 entries,
             2030 wiz_defined-function locations,
-            615 strings with 6583 characters,
-and the built_in function-call counts, 6200 in all, are:
-= -- 588
-> -- 286
+            1305 strings with 30089 characters,
+and the built_in function-call counts, 60413 in all, are:
+= -- 5990
+> -- 2985
 < -- 0
-+ -- 115
-- -- 96
-* -- 477
-:= -- 969
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 99
++ -- 1202
+- -- 1035
+* -- 4854
+:= -- 9188
+add.period$ -- 145
+call.type$ -- 145
+change.case$ -- 925
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 285
-empty$ -- 445
-format.name$ -- 96
-if$ -- 1309
+cite$ -- 150
+duplicate$ -- 2571
+empty$ -- 3939
+format.name$ -- 1035
+if$ -- 12847
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 19
-newline$ -- 57
-num.names$ -- 36
-pop$ -- 100
+int.to.str$ -- 145
+missing$ -- 151
+newline$ -- 438
+num.names$ -- 288
+pop$ -- 766
 preamble$ -- 1
-purify$ -- 83
+purify$ -- 792
 quote$ -- 0
-skip$ -- 249
+skip$ -- 2460
 stack$ -- 0
-substring$ -- 384
-swap$ -- 122
+substring$ -- 4473
+swap$ -- 1254
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 66
-warning$ -- 2
-while$ -- 65
-width$ -- 20
-write$ -- 157
-(There were 3 error messages)
+type$ -- 558
+warning$ -- 5
+while$ -- 640
+width$ -- 148
+write$ -- 1283
+(There were 6 error messages)

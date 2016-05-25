@@ -438,7 +438,7 @@ We introduce here three tests for second-order (or `weak') stationarity in time 
 	R_X(t,s) &=& \mathbf{E}[X(t)X(s)] = R_X(|s-t|),\label{eq:define_stationarity2}
 \end{eqnarray}
 %
-where $R_X(t,s)$ is the \emph{autocorrelation} function of the process. Conceptually these conditions state that a second-order stationary time series has constant mean, and an autocorrelation dependent only on time separation. From now on we refer to a time series satisfying \ref{eq:define_stationarity1} and \ref{eq:define_stationarity2} as \emph{stationary}. If the conditions are not met we call the time series \emph{non-stationary}. Non-stationary time series cannot be fit to a constant distribution. Non-stationarity may be due, for example, to a trend in the data or a change in the parameters of the data generator.
+where $R_X(t,s)$ is the \emph{autocorrelation} function of the process. Conceptually these conditions state that a second-order stationary time series has constant mean, and an autocorrelation dependent only on time separation. From now on we refer to a time series satisfying \eqref{eq:define_stationarity1} and \eqref{eq:define_stationarity2} as \emph{stationary}. If the conditions are not met we call the time series \emph{non-stationary}. Non-stationary time series cannot be fit to a constant distribution. Non-stationarity may be due, for example, to a trend in the data or a change in the parameters of the data generator.
 
 In our case the data generator is the IBM model and there are several possible causes of non-stationarity. It may be that there is no steady-state equilibrium in the model. For example the number of individuals may undergo a random-walk. From previous analysis this situation seems unlikely, since we have observed what appear to be deterministic population cycles. However randomness has not been explicitly tested for. Another possibility is that the dynamics is characterised by large amplitude oscillations in abundance, which produce non-stationarity. Again such oscillations have not been tested for. Alternatively a steady-state equilibrium may exist, but a long period of transience means it is not reached during the time frame of our simulations (5000 time steps previously).
 
@@ -694,7 +694,7 @@ We calculate the $\%$DET for each simulation in the HI and LI ensemble. In each 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{{{figures/stationarity/percentage_determinism}}}
-    \caption{\textbf{Percentage determinism ($\%$DET)} defined by equation \ref{eq:pd}. Value calculated for whole community, ten least and ten most abundant species, and for two randomised versions of the data (see text). For 100 repeat simulations at: (A) High immigration rate (IR=$0.001$); and (B) Low immigration rate (IR=$0.001$). In simulations for both A and B: HL$=0$ and MAI$=0.0$}    
+    \caption{\textbf{Percentage determinism ($\%$DET)} defined by equation \eqref{eq:pd}. Value calculated for whole community, ten least and ten most abundant species, and for two randomised versions of the data (see text). For 100 repeat simulations at: (A) High immigration rate (IR=$0.001$); and (B) Low immigration rate (IR=$0.001$). In simulations for both A and B: HL$=0$ and MAI$=0.0$}    
     \label{fig:percentage_detemrinism}
 \end{figure}
 

@@ -1,5 +1,9 @@
 \begin{thebibliography}{100}
 
+\bibitem{aho2014model}
+{\sc K.~Aho, D.~Derryberry, and T.~Peterson}, {\em Model selection for
+  ecologists: the worldviews of aic and bic}, Ecology, 95 (2014), pp.~631--636.
+
 \bibitem{ai2012immigration}
 {\sc D.~Ai, P.~Desjardins-Proulx, C.~Chu, and G.~Wang}, {\em Immigration, local
   dispersal limitation, and the repeatability of community composition under
@@ -224,6 +228,10 @@
 \bibitem{gause1934experimental}
 {\sc G.~F. Gause}, {\em Experimental analysis of vito volterra’s mathematical
   theory of the struggle for existence}, Science, 79 (1934), pp.~16--17.
+
+\bibitem{gilpin1973hares}
+{\sc M.~E. Gilpin}, {\em Do hares eat lynx?}, The American Naturalist, 107
+  (1973), pp.~727--730.
 
 \bibitem{gonzalez2011disentangled}
 {\sc A.~Gonzalez, B.~Rayfield, and Z.~Lindo}, {\em The disentangled bank: how
@@ -471,6 +479,11 @@
   ecosystem management?}, Current Opinion in Environmental Sustainability, 7
   (2014), pp.~22--27.
 
+\bibitem{mutshinda2009drives}
+{\sc C.~M. Mutshinda, R.~B. O'Hara, and I.~P. Woiwod}, {\em What drives
+  community dynamics?}, Proceedings of the Royal Society of London B:
+  Biological Sciences, 276 (2009), pp.~2923--2929.
+
 \bibitem{neutel2002stability}
 {\sc A.-M. Neutel, J.~A. Heesterbeek, and P.~C. de~Ruiter}, {\em Stability in
   real food webs: weak links in long loops}, Science, 296 (2002),
@@ -570,6 +583,11 @@
 \bibitem{sanderson2015patterns}
 {\sc J.~G. Sanderson and S.~L. Pimm}, {\em Patterns in Nature: The Analysis of
   Species Co-Occurrences}, University of Chicago Press, 2015.
+
+\bibitem{sandvik2004using}
+{\sc G.~Sandvik, C.~M. Jessup, K.~L. Seip, and B.~J. Bohannan}, {\em Using the
+  angle frequency method to detect signals of competition and predation in
+  experimental time series}, Ecology Letters, 7 (2004), pp.~640--652.
 
 \bibitem{sauve2014structure}
 {\sc A.~Sauve, C.~Fontaine, and E.~Th{\'e}bault}, {\em Structure--stability

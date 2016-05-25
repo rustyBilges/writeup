@@ -11,28 +11,28 @@ Repeated entry---line 320 of file thesisbiblio.bib
  : @article{berlow2004interaction
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 995 of file thesisbiblio.bib
+Repeated entry---line 1033 of file thesisbiblio.bib
  : @article{thebault2010stability
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1008 of file thesisbiblio.bib
+Repeated entry---line 1046 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1442 of file thesisbiblio.bib
+Repeated entry---line 1480 of file thesisbiblio.bib
  : @article{bossio2005soil
  :                        ,
 I'm skipping whatever remains of this entry
 Warning--string name "december" is undefined
---line 1558 of file thesisbiblio.bib
-Repeated entry---line 1765 of file thesisbiblio.bib
+--line 1596 of file thesisbiblio.bib
+Repeated entry---line 1817 of file thesisbiblio.bib
  : @article{barraquand2014functional
  :                                  ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "mcwilliams2015anim" isn't style-file defined
---line 1834 of file thesisbiblio.bib
+--line 1886 of file thesisbiblio.bib
 Warning--entry type for "BC3" isn't style-file defined
---line 1852 of file thesisbiblio.bib
+--line 1904 of file thesisbiblio.bib
 Warning--I didn't find a database entry for "ceballos2015accelerated"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "gibson2011sampling"
@@ -43,45 +43,45 @@ Warning--empty journal in condit2012thirty
 Warning--there's a number but no series in hastings2012encyclopedia
 Warning--empty journal in lotka1925elements
 Warning--empty journal in tilman1994habitat
-You've used 145 entries,
+You've used 149 entries,
             2030 wiz_defined-function locations,
-            1305 strings with 30089 characters,
-and the built_in function-call counts, 60413 in all, are:
-= -- 5990
-> -- 2985
+            1325 strings with 30624 characters,
+and the built_in function-call counts, 62139 in all, are:
+= -- 6172
+> -- 3051
 < -- 0
-+ -- 1202
-- -- 1035
-* -- 4854
-:= -- 9188
-add.period$ -- 145
-call.type$ -- 145
-change.case$ -- 925
++ -- 1228
+- -- 1057
+* -- 4987
+:= -- 9437
+add.period$ -- 149
+call.type$ -- 149
+change.case$ -- 948
 chr.to.int$ -- 0
-cite$ -- 150
-duplicate$ -- 2571
-empty$ -- 3939
-format.name$ -- 1035
-if$ -- 12847
+cite$ -- 154
+duplicate$ -- 2649
+empty$ -- 4058
+format.name$ -- 1057
+if$ -- 13226
 int.to.chr$ -- 0
-int.to.str$ -- 145
-missing$ -- 151
-newline$ -- 438
-num.names$ -- 288
-pop$ -- 766
+int.to.str$ -- 149
+missing$ -- 155
+newline$ -- 450
+num.names$ -- 296
+pop$ -- 781
 preamble$ -- 1
-purify$ -- 792
+purify$ -- 811
 quote$ -- 0
-skip$ -- 2460
+skip$ -- 2539
 stack$ -- 0
-substring$ -- 4473
-swap$ -- 1254
+substring$ -- 4629
+swap$ -- 1296
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 558
+type$ -- 574
 warning$ -- 5
-while$ -- 640
-width$ -- 148
-write$ -- 1283
+while$ -- 660
+width$ -- 152
+write$ -- 1319
 (There were 6 error messages)

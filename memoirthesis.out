@@ -35,7 +35,7 @@
 \BOOKMARK [3][-]{subsubsection.2.7.4.1}{Qualitative network descriptors}{subsection.2.7.4}% 35
 \BOOKMARK [3][-]{subsubsection.2.7.4.2}{Quantitative network descriptors}{subsection.2.7.4}% 36
 \BOOKMARK [3][-]{subsubsection.2.7.4.3}{Interaction strength metrics}{subsection.2.7.4}% 37
-\BOOKMARK [0][-]{chapter.3}{Habitat loss with high immigration}{}% 38
+\BOOKMARK [0][-]{chapter.3}{Habitat loss with high immigration rate}{}% 38
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 39
 \BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 40
 \BOOKMARK [2][-]{subsection.3.2.1}{Simulation procedure}{section.3.2}% 41
@@ -47,7 +47,7 @@
 \BOOKMARK [2][-]{subsection.3.3.4}{Invariability}{section.3.3}% 47
 \BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 48
 \BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 49
-\BOOKMARK [0][-]{chapter.4}{Persistence and Stationarity}{}% 50
+\BOOKMARK [0][-]{chapter.4}{Community dynamics under variable immigration rate}{}% 50
 \BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 51
 \BOOKMARK [1][-]{section.4.2}{Persistence in closed communities}{chapter.4}% 52
 \BOOKMARK [2][-]{subsection.4.2.1}{Mutualistic-to-antagonistic interaction \(MAI\) ratio}{section.4.2}% 53
@@ -68,8 +68,8 @@
 \BOOKMARK [2][-]{subsection.4.6.1}{Convergence}{section.4.6}% 68
 \BOOKMARK [2][-]{subsection.4.6.2}{Repeatability}{section.4.6}% 69
 \BOOKMARK [1][-]{section.4.7}{Conclusion}{chapter.4}% 70
-\BOOKMARK [0][-]{chapter.5}{Varying Immigration rate}{}% 71
-\BOOKMARK [1][-]{section.5.1}{Motivation}{chapter.5}% 72
+\BOOKMARK [0][-]{chapter.5}{Habitat loss under variable immigration rate}{}% 71
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 72
 \BOOKMARK [1][-]{section.5.2}{Experimental approach}{chapter.5}% 73
 \BOOKMARK [2][-]{subsection.5.2.1}{Sampling procedure}{section.5.2}% 74
 \BOOKMARK [1][-]{section.5.3}{Initial analysis}{chapter.5}% 75
@@ -84,8 +84,8 @@
 \BOOKMARK [1][-]{section.5.5}{Bivariate analysis: fixed HL}{chapter.5}% 84
 \BOOKMARK [1][-]{section.5.6}{Discussion}{chapter.5}% 85
 \BOOKMARK [1][-]{section.5.7}{Conclusion and perspectives}{chapter.5}% 86
-\BOOKMARK [0][-]{chapter.6}{Inferring species interactions}{}% 87
-\BOOKMARK [1][-]{section.6.1}{Motivation}{chapter.6}% 88
+\BOOKMARK [0][-]{chapter.6}{Towards inferring species interactions from population dynamics}{}% 87
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 88
 \BOOKMARK [1][-]{section.6.2}{Methodology}{chapter.6}% 89
 \BOOKMARK [2][-]{subsection.6.2.1}{Data generator: ordinary differential equation models}{section.6.2}% 90
 \BOOKMARK [2][-]{subsection.6.2.2}{Inference method: generalised Lotka-Volterra model}{section.6.2}% 91
@@ -106,7 +106,8 @@
 \BOOKMARK [2][-]{subsection.6.4.2}{Properties of the data generator}{section.6.4}% 106
 \BOOKMARK [2][-]{subsection.6.4.3}{Two species results}{section.6.4}% 107
 \BOOKMARK [2][-]{subsection.6.4.4}{Three species results}{section.6.4}% 108
-\BOOKMARK [2][-]{subsection.6.4.5}{5 species}{section.6.4}% 109
+\BOOKMARK [2][-]{subsection.6.4.5}{Five species results}{section.6.4}% 109
 \BOOKMARK [2][-]{subsection.6.4.6}{Phase space analysis}{section.6.4}% 110
 \BOOKMARK [1][-]{section.6.5}{Discussion}{chapter.6}% 111
-\BOOKMARK [0][-]{section*.22}{Bibliography}{}% 112
+\BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 112
+\BOOKMARK [0][-]{section*.22}{Bibliography}{}% 113

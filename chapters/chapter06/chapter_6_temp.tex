@@ -16,11 +16,18 @@
 
 %% TODO: search and replace Holling and linear with type I and II
 
-\section{Motivation}
+\section{Introduction}
+%\section{Motivation}
 \label{sec:motivate_interactions}
 % more emphasis on interspecific interactions.
 
-Motivation and introduction here.
+In this chapter we develop a methodology for the estimation of species interaction strengths from population dynamics data. The primary motivation for this task was provided in section \ref{sec:}. Throughout this thesis we have seen that species interactions play a key role in driving the structure and dynamics of the simulated communities. In particular strong interactions have been shown to increase the temporal variability of population dynamics. They have also represented one main difference between communities under the two types of habitat loss (HL) studied: random and contiguous. Random HL has been shown to present barriers to the motion of individuals, which reduced species interaction strengths. In contrast contiguous HL was found to increase interaction strengths by compressing individuals into a smaller region of space. These changes in interaction strengths partly explained the different responses of communities to the two types of HL. For example contiguous HL produce more extinctions, and did not result in trophic collapse of communities to the same extent as random HL. The important role of interaction strengths in understanding the results of previous chapters, further motivates the study of methods to quantify them. Previously the metric IS (equation \eqref{eq:def_iss}) has been used. However this metric requires accurate knowledge of all interaction frequencies and species abundances. The method developed in this chapter requires only the latter, although abundance time series are required rather than snapshots. The method also makes explicit the connection between community dynamics and interaction strengths, by fitting a population dynamics model.   
+
+Plankton mention here? (Or only in intro?) Mention Timme here - yes! Mention interaction types other than antagonism?
+
+The original intention for this chapter was to obtain an empirical dataset with high resolution population time series and quantified interaction strengths. Such a dataset would provide the ideal test of the methodology presented. However such data was not forthcoming, either in the form of experimental mesocosm data, or that sampled from a real-world community. Therefore the methodology is developed with application to simulated community dynamics. Such an approach ensures knowledge of the interactions involved in the study system, and allows detailed analysis of the results over a range of experimental conditions. Section \ref{sec:methods} provides full details of the methodology, which is summarised in figure \ref{fig:method_flow}.  In section \ref{sec:results} interaction strengths are inferred from two species predator-prey dynamics, simulated using ordinary differential equation models. The accuracy of the inferred results are evaluated for two different simulation models, under noise and using different sampling regimes. In section \ref{sec:ibm} interaction strengths are inferred from community dynamics simulated using the IBM model. Two, three and five species communities are investigated. In section \ref{sec:si_discussion} the performance and limitations of the methodology are discussed. Finally in section \ref{sec:si_conc} the findings are summarised, and further developments are considered, including the potential for applications to empirical data. 
+
+    %We described how population dynamics are simulated (section \ref{sec:models}); how species interactions are inferred from these dynamics (sections \ref{sec:def_GLV} and \ref{sec:timme}); and define the quantities that these estimates are compared to (section \ref{sec:interaction_strength}).
 
 \section{Methodology}
 \label{sec:methods}
@@ -241,7 +248,7 @@ To evaluate the functions $f_i, g_{ij}$ at these new time-points we must estimat
 \hat{y}_{i}(\tau_m) := \frac{x_i(t_{m-1}) + x_i(t_{m})}{2}.\\
 \end{equation}
 %
-So by evaluating \eqref{eq:timme2} and \eqref{eq:timme4} using the $M+1$ samples, and substituting the estimates $\hat{y}_i(\tau_m)$ and $\hat{\dot{y}}_i(\tau_m)$ into equation \ref{eq:timme1} we obtain $M$ equations, one for every time point $\tau_m$:
+So by evaluating \eqref{eq:timme2} and \eqref{eq:timme4} using the $M+1$ samples, and substituting the estimates $\hat{y}_i(\tau_m)$ and $\hat{\dot{y}}_i(\tau_m)$ into equation \eqref{eq:timme1} we obtain $M$ equations, one for every time point $\tau_m$:
 
 \begin{equation}\label{eq:timme5}
 \hat{\dot{y}}_{i}(\tau_m) = r_if_{i}(\hat{y}_i(\tau_m)) + \Sigma_{j=1}^{N}J_{ij}g_{ij}(\hat{y}_i(\tau_m), \hat{y}_j(\tau_m)).\\
@@ -289,7 +296,7 @@ G_{i} =
 \in{\mathbb{R}^{(N+1)\times M}}.
 \end{equation}
 %
-Therefore $J_i$ contains all the model parameters from \eqref{eq:timme1} as unknowns, whilst $Y_i$ and $G_i$ are evaluated from the \emph{data stream}. The system \ref{eq:timme7} has $N+1$ unknowns ($J_{ik}$ for $k=1,..,N+1$) and $M$ equations. In the case when $M>N+1$ the system is overdetermined and there is no exact solution in general. We look for an approximate solution $\hat{J}_i$ that minimises the error between the LHS and RHS of equation \ref{eq:timme7}. Therefore we seek to minimise an error function $E_i(\hat{J}_i)$ with respect to the matrix elements $\hat{J}_{ik}$:
+Therefore $J_i$ contains all the model parameters from \eqref{eq:timme1} as unknowns, whilst $Y_i$ and $G_i$ are evaluated from the \emph{data stream}. The system \eqref{eq:timme7} has $N+1$ unknowns ($J_{ik}$ for $k=1,..,N+1$) and $M$ equations. In the case when $M>N+1$ the system is overdetermined and there is no exact solution in general. We look for an approximate solution $\hat{J}_i$ that minimises the error between the LHS and RHS of equation \eqref{eq:timme7}. Therefore we seek to minimise an error function $E_i(\hat{J}_i)$ with respect to the matrix elements $\hat{J}_{ik}$:
 
 \begin{equation}\label{eq:timme11}
 \min_{\hat{J}_{ik}} \left\lbrace E_i(\hat{J}_i) = \Sigma_{m=1}^{M}\left(Y_{im} - \Sigma_{k=1}^{N+1}\hat{J}_{ik}G_{ikm}\right)^2 \right\rbrace,
@@ -344,7 +351,7 @@ which is the same result as derived in \cite{}. In our case this solution repres
 %%
 %The procedure extends trivially to systems of more than two species since each species is fitted separately. 
 
-The model fitting method described in this section was implemented in \emph{Python} \cite{python}, with matrix multiplication using the package \emph{numpy}. The analytic solution to the error minimisation problem makes this model fitting method computationally efficient, allowing us to perform many replicate calculations. However the performance of the method may be lower than other, more computationally expensive, model fitting algorithms (see discussion section \ref{sec:discussion})\footnote{Make sure this is discussed. Alan thinks we need more detail here. What method does numpy use?}. Finally, it is possible to assess the goodness of fit achieved by evaluating the error function (equation \ref{eq:timme11}). 
+The model fitting method described in this section was implemented in \emph{Python} \cite{python}, with matrix multiplication using the package \emph{numpy}. The analytic solution to the error minimisation problem makes this model fitting method computationally efficient, allowing us to perform many replicate calculations. However the performance of the method may be lower than other, more computationally expensive, model fitting algorithms (see discussion section \ref{sec:discussion})\footnote{Make sure this is discussed. Alan thinks we need more detail here. What method does numpy use?}. Finally, it is possible to assess the goodness of fit achieved by evaluating the error function (equation \eqref{eq:timme11}). 
 
 
 \subsection{Interaction matrix}
@@ -372,7 +379,7 @@ where $x_i$ and $x_j$ are the population densities of species $i$ and $j$ respec
 \label{eq:alpha_glv}
 \end{equation}
 % 
-such that the GLV coupling matrix is equal to the interaction matrix for this model. Evaluating \eqref{eq:IM} for the \emph{type I} model (\ref{eq:lin_mod1} and \ref{eq:lin_mod2}) gives
+such that the GLV coupling matrix is equal to the interaction matrix for this model. Evaluating \eqref{eq:IM} for the \emph{type I} model (\eqref{eq:lin_mod1} and \eqref{eq:lin_mod2}) gives
 
 \begin{equation}
 \alpha_{type\ I} = 
@@ -381,7 +388,7 @@ such that the GLV coupling matrix is equal to the interaction matrix for this mo
 \end{bmatrix}  	,
 \end{equation}
 %
-such that the \emph{type I} model has constant interaction strengths that can be directly compared to those of the GLV model. However evaluating \eqref{eq:IM} for the \emph{type II} model (\ref{eq:2_mod1} and \ref{eq:2_mod2}) gives
+such that the \emph{type I} model has constant interaction strengths that can be directly compared to those of the GLV model. However evaluating \eqref{eq:IM} for the \emph{type II} model (\eqref{eq:2_mod1} and \eqref{eq:2_mod2}) gives
 
 \begin{equation}\label{eq:im_hii}
 \alpha_{type\ II} = 
@@ -402,7 +409,7 @@ Here we summarise the methodology which is depicted in figure \ref{fig:method_fl
 %The intrinsic growth rates may be compared directly, while the coupling matrix is compared to the interaction matrix $\alpha$ (section \ref{sec:interaction_strength}). 
 
 % The shape of these interaction functions is shown in figure \ref{fig:fr_example}, and we will return to them in section \ref{sec:method_examples}.
-%Using the IM we are able to calculate the interaction strengths exactly from the models that we use for simulation. This is because they are ODE models with explicit expressions for $dx_i / dt$, so we can evaluate the partial derivative in equation \ref{eq:IM} to obtain analytic forms for all the IM elements ($\alpha_{00}$, $\alpha_{01}$, $\alpha_{10}$,$\alpha_{11}$). Depending on the model used the IM elements are either constants, or are functions of prey density. The interaction strengths for our simulation models are given at the end of section \ref{sec:models}, and are illustrated in figure \ref{fig:fr_example}.
+%Using the IM we are able to calculate the interaction strengths exactly from the models that we use for simulation. This is because they are ODE models with explicit expressions for $dx_i / dt$, so we can evaluate the partial derivative in equation \eqref{eq:IM} to obtain analytic forms for all the IM elements ($\alpha_{00}$, $\alpha_{01}$, $\alpha_{10}$,$\alpha_{11}$). Depending on the model used the IM elements are either constants, or are functions of prey density. The interaction strengths for our simulation models are given at the end of section \ref{sec:models}, and are illustrated in figure \ref{fig:fr_example}.
 
 
 
@@ -436,7 +443,7 @@ Simulations were run following a standard procedure that ensures consistency and
 x_{i, t+1} = x_{i, t} + \Delta t f(X_t) + \xi_{i,t},
 \end{equation}
 %
-where $x_{i,t}$ is the population density of species $i$ at time $t$; $\Delta t$ is the integration time step; $\xi_{i,t}$ is the noise term \eqref{eq:mult_noise}; and $f_i(X_t)$ defines the time-derivative of $x_{i,t}$ as a function of the system state $X_t \in \mathbb{R}^N$. As such $f_i(X_t) = \dot{x}_i$, which is given by equations (\ref{eq:1lin_mod1},\ref{eq:1lin_mod2}) and (\ref{eq:2_mod1},\ref{eq:2_mod2}) for the \emph{type I} and \emph{type II} models respectively.
+where $x_{i,t}$ is the population density of species $i$ at time $t$; $\Delta t$ is the integration time step; $\xi_{i,t}$ is the noise term \eqref{eq:mult_noise}; and $f_i(X_t)$ defines the time-derivative of $x_{i,t}$ as a function of the system state $X_t \in \mathbb{R}^N$. As such $f_i(X_t) = \dot{x}_i$, which is given by equations (\eqref{eq:1lin_mod1},\eqref{eq:1lin_mod2}) and (\eqref{eq:2_mod1},\eqref{eq:2_mod2}) for the \emph{type I} and \emph{type II} models respectively.
 
 All simulations used the initial condition $x_{i,0} = x_i^*/2 \quad \forall i$, where $x_i^*$ is the equilibrium population level of species $i$ (defined in section \ref{sec:models} for both models. As such the initial system state was consistently away form the equilibrium value. In the event of a stochastic extinction of either species, both population densities were reset to their initial conditions. The case with zero noise intensity ($\sigma_{noise} = 0$) is referred to as the \emph{deterministic case}. In all of the results presented below the simulations were run with a time step $\Delta t = 10^{-4}$. All code was implemented in the language \emph{Python} \cite{python}, and large computations were performed on the cluster \emph{Blue Crystal} \cite{BC3}.
 
@@ -461,7 +468,7 @@ Certain constraints are placed on the parameter values that may be chosen when s
     \emph{type II} & 0.1 - 100 & 0.1 - 100 & 1.1 - 100 & 0.1-99 \\
     \hline
     \end{tabular}
-\caption{Ranges from which parameters were selected unifomrly at random for the two ODE simulation models. The parameters are all allowed to vary over at least three orders of magnitude, to ensure that our investigation covers a large region of parameter space. The restrictions on parameters C and D ensure that it is always possible to achieve an equilibrium population of both species that is strictly positive (see equations \ref{eq:lin_mod_sp1}, \ref{eq:lin_mod_sp2}, \ref{eq:hol_mod_sp1}, \ref{eq:hol_mod_sp2}) and therefore ecologically meaningful.}
+\caption{Ranges from which parameters were selected unifomrly at random for the two ODE simulation models. The parameters are all allowed to vary over at least three orders of magnitude, to ensure that our investigation covers a large region of parameter space. The restrictions on parameters C and D ensure that it is always possible to achieve an equilibrium population of both species that is strictly positive (see equations \eqref{eq:lin_mod_sp1}, \eqref{eq:lin_mod_sp2}, \eqref{eq:hol_mod_sp1}, \eqref{eq:hol_mod_sp2}) and therefore ecologically meaningful.}
 \label{table:p_range}    
 \end{table}
 \end{center}
@@ -1028,72 +1035,80 @@ The correct model (M1) may produce the best rate predictions, but without knowle
 % > discuss application to larger system. Functional groupings...etc.
 %
 %\clearpage
-\subsection{5 species}
+\subsection{Five species results}
+\label{sec:5sp_res_ibm}
 
+In this section we briefly consider the application of the inference method to a five species system. The step from three to five species significantly increases the complexity of the problem. Given the difficulty of identifying the correct interaction topology for three species, we that anticipate this goal may be impossible using the current methodology. However, based on the three species results, we may expect that fitting the correct model (again called M1) will provide the best predictions of demographic rates. With five species there are a total of ten possible inter-specific interactions. This fully connected topology is shown as M0 in figure \ref{fig:5sp_topo}. There are a combinatorially large number of subsets of M0, depending on how many links L are included. For a network with L links there are ${10 \choose L}$ distinct interaction topologies. For the IBM simulations we choose a symmetrical network with four links, shown as M1. It was experimentally determined that the symmetry of this network promoted stability in the population dynamics (results not shown). For example the introduction of the link $\hat{J}_{03}$ to M1 makes the network asymmetric, benefiting species 3 over species 1 (two feeding links versus one), and benefiting species 2 over species 0 (one predator versus two). The network M1 contains two plants (species 0 and 2), two herbivores (species 1 and 3) and a single predator (species 4).
 
 \begin{figure}
 \centering
 \includegraphics[width=0.5\textwidth]{{{figures/5sp_topologies}}}
-\caption{The four candidate models investigated in this section. M0: fully connected. M1, M2, M3: one links removed. M1 is the `correct' model i.e. the food chain simulated by the IBM, to which the models are fitted. All four models include intra-specific interactions (self-loops), although these are not drawn.}
+\caption{Seven candidate 5 species models. M0: fully connected. M1: the true topology of the IBM simulations to which the GLV is fitted. M2 and M3: One link added to M1, as indicated. M4-6: Different but plausible topologies. All models include intra-specific interactions (self-loops), although these are not drawn.}
 \label{fig:5sp_topo}
 \end{figure}
 
-\begin{figure}[p]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/IBM/5species/example_dynamics_5sp}}}
-	\caption{5 species dynamics}
+	\caption{Similar to figure \ref{fig:3sp_dynamics}, but for five specie simulations of the IBM with interaction topology M1 (shown in figure \ref{fig:5sp_topo}). Panels A and B: low IR. Panel C and D: high IR. The regions plotted in black represent selected \emph{data streams} to which the GLV is fitted (selected using same criteria as in section \ref{sec:3sp_res_ibm}).}
 	\label{fig:5sp_dynamics}
 \end{figure}
 
+Five species IBM dynamics with interaction topology M1 are shown in figure \ref{fig:5sp_dynamics}. Panels A and B show dynamics at low IR, which are more variable than the high IR dynamics shown in panels C and D. In what follows we focus on the high IR case based on previous observations that it is easier to fit to dynamics that are less complex\footnote{Did I comment on this in the three species case, regarding high versus low IR?}. This choice reflects an attempt to slightly simplify the challenge posed by the inference of interactions from the 5 species system. We again select the optimum region of 1000 time steps from the dynamics to use as the data stream. The regions are selected in the same way as in section \ref{sec:3sp_res_ibm}, and are illustrated in figure \ref{fig:5sp_dynamics}. In this analysis we focus on the seven models depicted in figure \ref{fig:5sp_topo}. M0 is the full unconstrained GLV topology, while M1 is the true topology as discussed. The other models are selected as plausible alternatives to M1\footnote{M2 and M3 by allowing possible competitions?}.
 
-\begin{figure}[p]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_num_stable_nets}}}
-	\caption{5 species: number of stable models}
+	\caption{\textbf{The number of stable 5 species topologies} with L inter-specific interactions, when fitted to 25 replicate IBM simulations at \textbf{high IR}. The IBM simulations use topology M1 (figure \ref{fig:5sp_topo}), which has L$=4$. The inset shows the total number of possible networks with L links, all were tested. Stability is defined as the local stability of the equilibrium of the fitted model.}
 	\label{fig:5sp_stable_nets}
 \end{figure}
-\begin{figure}[p]
+
+Given the large number of possible topologies we first study the stability properties of all the potential competing models. Figure \ref{fig:5sp_stable_nets} summarises how many stable models exist at each value of L, for all 25 repeat simulations. Stability is again defined by the Jacobian of the fitted models. The number of stable models varies with L in a manner the approximately matches the total number of possible models (shown as an inset in the figure). However the most possible models exist at $L=5$,  whereas the greatest number of stable models exist at $L=6$. The true model M1 contains four links. At this value of L there are $10 \choose 4 = 210$ possible models, of which only between 5 and 25 are dynamically stable. This raises the question as to whether M1 belongs to the stable set of models with $L=4$. Figure \ref{fig:5sp_stable_models} shows the frequency with which each model M0-6 is stable over the 25 replicates. We see that M1 is stable in all 25 cases, as are M2, M3 and M4. The latter models represent M1 with addition of either one or two links between species in the same trophic level (plant-plant, herbivore-herbivore, or both). We discuss the frequent stability of these three models further in section \ref{sec:discussion}\footnote{Or in final section with plots to show competition?}. Model M0 is stable in around half of the simulations, while models M5 and M6 are rarely stable. Therefore it appears that focus on dynamics stability can indeed reduce the search space for identification of the correct topology, especially if the number of links in the true network is known.
+
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_stable_models}}}
-	\caption{5 species: stability of selected models}
+	\caption{\textbf{The frequency with which each model (M0-6) is stable} when fitted to 5 species dynamics at \textbf{high IR} (25 replicate simulations). Stability is defined as the local stability of the equilibrium of the fitted model. The models M0-6 are shown in figure \ref{fig:5sp_topo}.} 
 	\label{fig:5sp_stable_models}
 \end{figure}
 
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_eq_err}}}
-	\caption{5 species: error in equilibrium}
-	\label{fig:5speqerr}
-\end{figure}
+%% These are not included because we cannot choose the right model with 3 species even.
+%\begin{figure}[p]
+%	\centering
+%	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_eq_err}}}
+%	\caption{5 species: error in equilibrium}
+%	\label{fig:5speqerr}
+%\end{figure}
+%
+%\begin{figure}[p]
+%	\centering
+%	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_errfn}}}
+%	\caption{5 species: error in gradient fit function}
+%	\label{fig:5sp_errfn}
+%\end{figure}
 
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_errfn}}}
-	\caption{5 species: error in gradient fit function}
-	\label{fig:5sp_errfn}
-\end{figure}
-
-\begin{figure}[p]
+\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_rate_errors}}}
-	\caption{5 species: errors in rate estimates}
+	\caption{\textbf{Relative errors in the demographic rate predictions} of the models M0-6 (figure \ref{fig:5sp_topo}), plus two additional models: M7 and M8. M7 is selected as the model in the set of stable models with four links (L$=4$) that has the lowest relative error. M8 is the same but for L$=5$. As such the topologies of M7 and M8 are not fixed. The errors shown are the maximum relative error in the predicted births (top row) and predicted deaths (middle row) for each simulations, and the maximum relative error in all rate predictions (bottom row). Relative error is defined in equation \eqref{eq:rel_er_rate_2sp}, and example rate predictions for three species are illustrated in figure \ref{fig:rate_estimates_3sp_li}.}
 	\label{fig:5s_rate_errors}
 \end{figure}
 
-\clearpage
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_fitted_FR}}}
-	\caption{5 species: functional response (High IR)}
-	\label{fig:5sp_FR_fit_highIR}
-\end{figure}
-
-\begin{figure}[p]
-	\centering
-	\includegraphics[width=\textwidth]{{{figures/IBM/5species/lowIR_fitted_FR}}}
-	\caption{5 species: functional response (Low IR)}
-	\label{fig:5sp_FR_fit_lowIR}
-\end{figure}
+Figure \ref{fig:5s_rate_errors} summarise the relative errors in the demographic rate predictions for the seven models M0-6, and an additional two models. These models, M7 and M8, are selected on a case by case basis from the set of stable models with L$=4$ and L$=5$ respectively. The models are selected such that the maximum relative error in any rate prediction is minimised. Therefore the topology of these models can vary between simulations. From the figure we observe that, on aggregate, the predictions of M1, M3 and M5 are of comparable quality. The models M6-8 perform better, but only slightly. All models have a median maximum relative error (bottom panel) that is approximately equal to or greater than one. Therefore none of the models give accurate rate predictions for all species. We acknowledge that some information is lost by the use of the maximum relative error metric. For example a model may produce very accurate predictions in all but one of the rates. Additionally we note that the use or greater L values increases the number degrees of freedom, and therefore is likely to improve fit of the constrained GLV. Therefore further analysis should employ more sophisticated techniques for model comparison, such as the \emph{Akaike information criterion} (AIC) \cite{aho2014model}. In general we conclude that the true model (M1) performs favourably compared to competing alternative models in terms of stability and rate predictions. However no consistent criteria for the selection of the correct network topology have been identified.  
+%\clearpage
+%\begin{figure}[p]
+%	\centering
+%	\includegraphics[width=\textwidth]{{{figures/IBM/5species/highIR_fitted_FR}}}
+%	\caption{5 species: functional response (High IR)}
+%	\label{fig:5sp_FR_fit_highIR}
+%\end{figure}
+%
+%\begin{figure}[p]
+%	\centering
+%	\includegraphics[width=\textwidth]{{{figures/IBM/5species/lowIR_fitted_FR}}}
+%	\caption{5 species: functional response (Low IR)}
+%	\label{fig:5sp_FR_fit_lowIR}
+%\end{figure}
 
 %\clearpage
 %\section{Discussion}
@@ -1124,26 +1139,52 @@ The correct model (M1) may produce the best rate predictions, but without knowle
 \subsection{Phase space analysis}
 \label{sec:phase_space}
 %
-In this section we discuss why we think the method is not working. We refer to various other studies that have observed reversed phase-relationships between predator and prey. We finish with a discuss of alternative methodologies that may be less vulnerable to this error.
+One feature of the inference method, emerging from the three and five species analysis, is its tendency to detect spurious types of interaction between plant and predator species. In this three species case the estimated model parameter suggested that the predator was being eaten by the plant. In the five species case the same phenomenon was observed. When fitting M5 (from figure \ref{fig:5sp_topo}) the estimates $\hat{J}_{04}$  and $\hat{J}_{40}$ were invariably greater than and less than zero respectively (results not shown)\footnote{Show them!}. In this section we propose an explanation for why the inference method produces this spurious result.
+
+A robust feature of predator-prey dynamics, such as those modelled by the GLV, is that the oscillations of the predator population lag behind those of the prey population. The phase lag described results in trajectories with anti-clockwise rotation in the phase plane when the prey population is plotted on the x-axis, and the predator on the y-axis.  This feature has been used to attempt to infer the presence of predator-prey interactions from population dynamics. For example Sandvik et al. \cite{sandvik2004using} developed a method to quantify the direction and extent of this rotation, in order to detect signatures of predation from empirical population dynamics. However in certain situations the phase relationship may be reversed. For example Gilpin showed that certain sections of the famous Hudson Bay hare-lynx time series \cite{} display clockwise rotation in the phase-plane. This led to the playful title of his publication: `\emph{Do hares eat lynx?}' \cite{gilpin1973hares}. Various models have managed to produce predator-prey dynamics the display such clockwise rotation, for example by including \emph{time-delay} in the interaction \cite{}. However it could be that the clockwise rotation results from other factors. The hare-lynx system is embedded in a larger food web \cite{}. It may be that trophic interactions with other species are enough to disrupt the usually robust anti-clockwise rotation. Alternatively the dynamics may be disrupted by environmental forcing, which Mutshida et al. \cite{mutshinda2009drives} suggest have a stronger effect on population dynamics than trophic interactions in natural systems.
+
+%In this section we discuss why we think the method is not working. We refer to various other studies that have observed reversed phase-relationships between predator and prey. We finish with a discuss of alternative methodologies that may be less vulnerable to this error.
 
 \begin{figure}
 	\centering 
 	\includegraphics[width=\textwidth]{{{figures/IBM/3species/3sp_phase_plane}}}
-	\caption{Dynamics of a 3 species food chain projected onto the three phase planes. Anti-clockwise rotation in the phase plane is characteristic of the species on the x-axis being the prey. Here we see clockwise-rotation in panel B suggesting that the predator is eaten by the plant.}
+	\caption{\textbf{Phase plane projections} of 3 species food chain dynamics of the IBM model. Anti-clockwise rotation in the phase plane is characteristic of the species on the x-axis being the prey. Dynamics are standardised as described in the text. Panels A-C: projections onto phase plane defined by the three pairs of species. Arrows indicate average direction of trajectories in each quadrant. Blue and red circles show begging and end of trajectories respectively. Panel D: The standardised three species dynamics. This is the same dynamics as the black region in panel A of figure \ref{fig:3sp_dynamics} (i.e. low IR).}
 	\label{fig:3sp_phase}
 \end{figure}
 
-\begin{figure}
-	\centering 
-	\includegraphics[width=\textwidth]{{{figures/IBM/3species/3sp_fourier_corr}}}
-	\caption{A Fourier spectrum for the dynamics of each of the three species in the food-chain dynamics shown in figure \ref{fig:3s_phase}. Also shown is cross-correlation for the three pairing of species dynamics, indicating the directions of phase lags.}
-	\label{fig:3sp_phase}
-\end{figure}
+In figure \ref{fig:3sp_phase} we employ a simplified version of Sandvik's method \cite{sandvik2004using} to study the dynamics of the 3 species IBM in the phase plane. We use the portion of low IR dynamics from panel A of figure \ref{fig:3sp_dynamics} that was used to fit the GLV model in that case (region plotted in black). The dynamics is standardised by subtracting the mean and dividing each species population time series by its standard deviation. As such the trajectories are centred on the origin when projected in each phase-plane. The average direction of the trajectories in each quadrant are then calculated. The figure reveals anti-clockwise rotation in the plant-herbivore (panel A) and herbivore-predator (panel C) phase plane. As discussed these rotations are the standard characteristic of the trophic interactions involved between these two pairs of species. However the plant-predator phase plane (panel B) displays clockwise rotation, which is characteristic of the plant eating the predator. We suggest that this rotation is the cause of the spurious link detected by the GLV fit. It may be that the robust phase relationship between plant and predator is the result of some underlying feature of the IBM dynamics, which the GLV does not model (for example time delay). Alternatively it may simply be the result of the incremental phase lags produced by the two interactions depicted in panels A and C. In either case this result represents a simple proof that reliance on phase relationships for the detection of species interactions in multi-trophic communities is unwise. The implications of this result for our inference method are discussed further in section \ref{sec:si_disucssion}.
+
+% Don't think we need this after all!
+%\begin{figure}
+%	\centering 
+%	\includegraphics[width=\textwidth]{{{figures/IBM/3species/3sp_fourier_corr}}}
+%	\caption{A Fourier spectrum for the dynamics of each of the three species in the food-chain dynamics shown in figure \ref{fig:3s_phase}. Also shown is cross-correlation for the three pairing of species dynamics, indicating the directions of phase lags.}
+%	\label{fig:3sp_phase}
+%\end{figure}
 
 \section{Discussion}
-\label{sec:discussion}
+\label{sec:si_discussion}
 
 In this section we discuss limitations, and possible improvements to the method. Perspective: is the goal of applying such a methodology to natural ecosystems achievable in the futre?
 
 
-Cannot fit complex dyanmics? - see three species section. clearly this is a weakness. But of the GLV or of the modle fitting method. A more sophisticated method that treats noise might work better?
+Cannot fit complex dyanmics? - see three species section. clearly this is a weakness. But of the GLV or of the model fitting method. A more sophisticated method that treats noise might work better?
+
+Using the maximum relative error may not be the best way to characterise the predictions a whole - may be bang on for all rate, except one which is way off...
+
+Is the GLV always vulnerable to such phase relationships, or is it artefact of the model fitting method?
+
+In theory the range sampling method can be adapted to higher dimensions..However, only if the sensitivity to noise can be overcome..More sophisticated binning algorithm? Somehow continuous binning?
+
+The assumptions behind the work presented in this chapter are that...Therefore in some ways this represents a naive treatment of the topic. In empirical applications the ecologist would have some \emph{a priori} knowledge of the system. Taking the example of plankton communities once again, there is reasonable information about which species may interact and the approximate trophic positions of these species. Therefore, using an informed approach, it may be possible to adapt the inference method to produce better results in empirical application. Explain how..topological constraints..using prior information to select between competing stable models..
+
+Further adaptations that may improve the method...(different model fit method..what else?)
+
+Desire to test is on an empirical system..either to see if infer the correct topology..or perhaps more interestingly, to compare rate estimates with empirical biomass rates!
+
+Limitations due to the modelling assumptions..in particular environmental variables. 
+
+\section{Conclusion}
+\label{sec:si_conc}
+
+Finally in section \ref{sec:si_conc} the findings are summarised, and further developments are considered, including the potential for applications to empirical data. 

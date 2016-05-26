@@ -3,111 +3,94 @@
 \BOOKMARK [1][-]{section.1.2}{Community ecology}{chapter.1}% 3
 \BOOKMARK [2][-]{subsection.1.2.1}{Species interactions}{section.1.2}% 4
 \BOOKMARK [2][-]{subsection.1.2.2}{The role of network structure}{section.1.2}% 5
-\BOOKMARK [1][-]{section.1.3}{Ecology in silico}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.4}{Habitat loss}{chapter.1}% 7
-\BOOKMARK [2][-]{subsection.1.4.1}{Modelling studies}{section.1.4}% 8
-\BOOKMARK [2][-]{subsection.1.4.2}{Empirical studies}{section.1.4}% 9
-\BOOKMARK [2][-]{subsection.1.4.3}{Situation of current work}{section.1.4}% 10
-\BOOKMARK [1][-]{section.1.5}{Literature review for immigration}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.6}{Inferring species interactions}{chapter.1}% 12
-\BOOKMARK [2][-]{subsection.1.6.1}{Modelling population dynamics}{section.1.6}% 13
-\BOOKMARK [1][-]{section.1.7}{Outline of thesis}{chapter.1}% 14
-\BOOKMARK [2][-]{subsection.1.7.1}{Communities of single and multiple interaction types}{section.1.7}% 15
-\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 16
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.2}{The interaction network}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.1}{The niche model}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.2}{Trophic constraints}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.3}{Link replacement}{section.2.2}% 21
-\BOOKMARK [1][-]{section.2.3}{Individual-based model}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.3.1}{Local rules}{section.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.3.2}{Model Parameters}{section.2.3}% 24
-\BOOKMARK [1][-]{section.2.4}{Modelling habitat loss}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.5}{Implementation}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.6}{Dynamics of the model}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.7}{Ecological metrics and analysis methods}{chapter.2}% 28
-\BOOKMARK [2][-]{subsection.2.7.1}{Biodiversity metrics}{section.2.7}% 29
-\BOOKMARK [3][-]{subsubsection.2.7.1.1}{Rank abundance distributions}{subsection.2.7.1}% 30
-\BOOKMARK [2][-]{subsection.2.7.2}{Stability metrics}{section.2.7}% 31
-\BOOKMARK [3][-]{subsubsection.2.7.2.1}{Invariability}{subsection.2.7.2}% 32
-\BOOKMARK [2][-]{subsection.2.7.3}{Spatial metrics}{section.2.7}% 33
-\BOOKMARK [2][-]{subsection.2.7.4}{Network metrics}{section.2.7}% 34
-\BOOKMARK [3][-]{subsubsection.2.7.4.1}{Qualitative network descriptors}{subsection.2.7.4}% 35
-\BOOKMARK [3][-]{subsubsection.2.7.4.2}{Quantitative network descriptors}{subsection.2.7.4}% 36
-\BOOKMARK [3][-]{subsubsection.2.7.4.3}{Interaction strength metrics}{subsection.2.7.4}% 37
-\BOOKMARK [0][-]{chapter.3}{Habitat loss with high immigration rate}{}% 38
-\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 39
-\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 40
-\BOOKMARK [2][-]{subsection.3.2.1}{Simulation procedure}{section.3.2}% 41
-\BOOKMARK [2][-]{subsection.3.2.2}{Sampling and analysis}{section.3.2}% 42
-\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.3.1}{Diversity}{section.3.3}% 44
-\BOOKMARK [2][-]{subsection.3.3.2}{Network properties}{section.3.3}% 45
-\BOOKMARK [2][-]{subsection.3.3.3}{Stability and spatial metrics}{section.3.3}% 46
-\BOOKMARK [2][-]{subsection.3.3.4}{Invariability}{section.3.3}% 47
-\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 48
-\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 49
-\BOOKMARK [0][-]{chapter.4}{Community dynamics under variable immigration rate}{}% 50
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.2}{Persistence in closed communities}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.2.1}{Mutualistic-to-antagonistic interaction \(MAI\) ratio}{section.4.2}% 53
-\BOOKMARK [2][-]{subsection.4.2.2}{Reproduction rate}{section.4.2}% 54
-\BOOKMARK [2][-]{subsection.4.2.3}{Landscape size}{section.4.2}% 55
-\BOOKMARK [2][-]{subsection.4.2.4}{Number of initial species}{section.4.2}% 56
-\BOOKMARK [2][-]{subsection.4.2.5}{Network structure}{section.4.2}% 57
-\BOOKMARK [2][-]{subsection.4.2.6}{Summary}{section.4.2}% 58
-\BOOKMARK [1][-]{section.4.3}{Temporal variability and immigration}{chapter.4}% 59
-\BOOKMARK [1][-]{section.4.4}{Second-order stationarity}{chapter.4}% 60
-\BOOKMARK [2][-]{subsection.4.4.1}{Tests for stationarity}{section.4.4}% 61
-\BOOKMARK [2][-]{subsection.4.4.2}{Characterising the tests}{section.4.4}% 62
-\BOOKMARK [2][-]{subsection.4.4.3}{General stationarity results}{section.4.4}% 63
-\BOOKMARK [1][-]{section.4.5}{Determinism tests}{chapter.4}% 64
-\BOOKMARK [2][-]{subsection.4.5.1}{Recurrence quantification analysis}{section.4.5}% 65
-\BOOKMARK [3][-]{subsubsection.4.5.1.1}{Results}{subsection.4.5.1}% 66
-\BOOKMARK [1][-]{section.4.6}{Convergence and repeatability}{chapter.4}% 67
-\BOOKMARK [2][-]{subsection.4.6.1}{Convergence}{section.4.6}% 68
-\BOOKMARK [2][-]{subsection.4.6.2}{Repeatability}{section.4.6}% 69
-\BOOKMARK [1][-]{section.4.7}{Conclusion}{chapter.4}% 70
-\BOOKMARK [0][-]{chapter.5}{Habitat loss under variable immigration rate}{}% 71
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 72
-\BOOKMARK [1][-]{section.5.2}{Experimental approach}{chapter.5}% 73
-\BOOKMARK [2][-]{subsection.5.2.1}{Sampling procedure}{section.5.2}% 74
-\BOOKMARK [1][-]{section.5.3}{Initial analysis}{chapter.5}% 75
-\BOOKMARK [2][-]{subsection.5.3.1}{Diversity}{section.5.3}% 76
-\BOOKMARK [2][-]{subsection.5.3.2}{Variability and species interactions}{section.5.3}% 77
-\BOOKMARK [2][-]{subsection.5.3.3}{Key points and outstanding questions}{section.5.3}% 78
-\BOOKMARK [1][-]{section.5.4}{Bivariate analysis: fixed IR}{chapter.5}% 79
-\BOOKMARK [2][-]{subsection.5.4.1}{Evenness}{section.5.4}% 80
-\BOOKMARK [2][-]{subsection.5.4.2}{Rank-abundance distributions}{section.5.4}% 81
-\BOOKMARK [2][-]{subsection.5.4.3}{Relative abundance by functional group}{section.5.4}% 82
-\BOOKMARK [2][-]{subsection.5.4.4}{Network properties}{section.5.4}% 83
-\BOOKMARK [1][-]{section.5.5}{Bivariate analysis: fixed HL}{chapter.5}% 84
-\BOOKMARK [1][-]{section.5.6}{Discussion}{chapter.5}% 85
-\BOOKMARK [1][-]{section.5.7}{Conclusion and perspectives}{chapter.5}% 86
-\BOOKMARK [0][-]{chapter.6}{Towards inferring species interactions from population dynamics}{}% 87
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 88
-\BOOKMARK [1][-]{section.6.2}{Methodology}{chapter.6}% 89
-\BOOKMARK [2][-]{subsection.6.2.1}{Data generator: ordinary differential equation models}{section.6.2}% 90
-\BOOKMARK [2][-]{subsection.6.2.2}{Inference method: generalised Lotka-Volterra model}{section.6.2}% 91
-\BOOKMARK [2][-]{subsection.6.2.3}{Inference method: model fitting}{section.6.2}% 92
-\BOOKMARK [2][-]{subsection.6.2.4}{Interaction matrix}{section.6.2}% 93
-\BOOKMARK [2][-]{subsection.6.2.5}{Summary of methodology}{section.6.2}% 94
-\BOOKMARK [1][-]{section.6.3}{Results: ODE as data generator}{chapter.6}% 95
-\BOOKMARK [2][-]{subsection.6.3.1}{Modelling noise}{section.6.3}% 96
-\BOOKMARK [2][-]{subsection.6.3.2}{Simulation procedure}{section.6.3}% 97
-\BOOKMARK [2][-]{subsection.6.3.3}{Parameter selection}{section.6.3}% 98
-\BOOKMARK [2][-]{subsection.6.3.4}{Example dynamics}{section.6.3}% 99
-\BOOKMARK [2][-]{subsection.6.3.5}{Type I model}{section.6.3}% 100
-\BOOKMARK [2][-]{subsection.6.3.6}{Type II model}{section.6.3}% 101
-\BOOKMARK [2][-]{subsection.6.3.7}{Range sampling}{section.6.3}% 102
-\BOOKMARK [2][-]{subsection.6.3.8}{Summary}{section.6.3}% 103
-\BOOKMARK [1][-]{section.6.4}{Results: IBM as data generator}{chapter.6}% 104
-\BOOKMARK [2][-]{subsection.6.4.1}{Topological constraints on the GLV}{section.6.4}% 105
-\BOOKMARK [2][-]{subsection.6.4.2}{Properties of the data generator}{section.6.4}% 106
-\BOOKMARK [2][-]{subsection.6.4.3}{Two species results}{section.6.4}% 107
-\BOOKMARK [2][-]{subsection.6.4.4}{Three species results}{section.6.4}% 108
-\BOOKMARK [2][-]{subsection.6.4.5}{Five species results}{section.6.4}% 109
-\BOOKMARK [2][-]{subsection.6.4.6}{Phase space analysis}{section.6.4}% 110
-\BOOKMARK [1][-]{section.6.5}{Discussion}{chapter.6}% 111
-\BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 112
-\BOOKMARK [0][-]{section*.22}{Bibliography}{}% 113
+\BOOKMARK [1][-]{section.1.3}{Habitat loss}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.3.1}{Modelling studies}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.2}{Empirical studies}{section.1.3}% 8
+\BOOKMARK [1][-]{section.1.4}{Ecology in silico}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.4.1}{The role of immigration}{section.1.4}% 10
+\BOOKMARK [1][-]{section.1.5}{Inferring species interactions}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.6}{Outline of thesis}{chapter.1}% 12
+\BOOKMARK [0][-]{chapter.2}{Methodology}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.2}{The interaction network}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{The niche model}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{Trophic constraints}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.3}{Link replacement}{section.2.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Individual-based model}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{Local rules}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{Model Parameters}{section.2.3}% 21
+\BOOKMARK [1][-]{section.2.4}{Modelling habitat loss}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.5}{Implementation}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.6}{Dynamics of the model}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.7}{Ecological metrics and analysis methods}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.7.1}{Biodiversity metrics}{section.2.7}% 26
+\BOOKMARK [3][-]{subsubsection.2.7.1.1}{Rank abundance distributions}{subsection.2.7.1}% 27
+\BOOKMARK [2][-]{subsection.2.7.2}{Stability metrics}{section.2.7}% 28
+\BOOKMARK [3][-]{subsubsection.2.7.2.1}{Invariability}{subsection.2.7.2}% 29
+\BOOKMARK [2][-]{subsection.2.7.3}{Spatial metrics}{section.2.7}% 30
+\BOOKMARK [2][-]{subsection.2.7.4}{Network metrics}{section.2.7}% 31
+\BOOKMARK [3][-]{subsubsection.2.7.4.1}{Qualitative network descriptors}{subsection.2.7.4}% 32
+\BOOKMARK [3][-]{subsubsection.2.7.4.2}{Quantitative network descriptors}{subsection.2.7.4}% 33
+\BOOKMARK [3][-]{subsubsection.2.7.4.3}{Interaction strength metrics}{subsection.2.7.4}% 34
+\BOOKMARK [0][-]{chapter.3}{Habitat loss with high immigration rate}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.2.1}{Simulation procedure}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.2}{Sampling and analysis}{section.3.2}% 39
+\BOOKMARK [1][-]{section.3.3}{Results}{chapter.3}% 40
+\BOOKMARK [2][-]{subsection.3.3.1}{Diversity}{section.3.3}% 41
+\BOOKMARK [2][-]{subsection.3.3.2}{Network properties}{section.3.3}% 42
+\BOOKMARK [2][-]{subsection.3.3.3}{Stability and spatial metrics}{section.3.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.4}{Invariability}{section.3.3}% 44
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 45
+\BOOKMARK [1][-]{section.3.5}{Conclusion}{chapter.3}% 46
+\BOOKMARK [0][-]{chapter.4}{Community dynamics under variable immigration rate}{}% 47
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.2}{Persistence in closed communities}{chapter.4}% 49
+\BOOKMARK [2][-]{subsection.4.2.1}{Mutualistic-to-antagonistic interaction \(MAI\) ratio}{section.4.2}% 50
+\BOOKMARK [2][-]{subsection.4.2.2}{Reproduction rate}{section.4.2}% 51
+\BOOKMARK [2][-]{subsection.4.2.3}{Landscape size}{section.4.2}% 52
+\BOOKMARK [2][-]{subsection.4.2.4}{Number of initial species}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.5}{Network structure}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.6}{Summary}{section.4.2}% 55
+\BOOKMARK [1][-]{section.4.3}{Temporal variability and immigration}{chapter.4}% 56
+\BOOKMARK [1][-]{section.4.4}{Second-order stationarity}{chapter.4}% 57
+\BOOKMARK [2][-]{subsection.4.4.1}{Tests for stationarity}{section.4.4}% 58
+\BOOKMARK [2][-]{subsection.4.4.2}{Characterising the tests}{section.4.4}% 59
+\BOOKMARK [2][-]{subsection.4.4.3}{General stationarity results}{section.4.4}% 60
+\BOOKMARK [1][-]{section.4.5}{Determinism tests}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.5.1}{Recurrence quantification analysis}{section.4.5}% 62
+\BOOKMARK [3][-]{subsubsection.4.5.1.1}{Results}{subsection.4.5.1}% 63
+\BOOKMARK [1][-]{section.4.6}{Convergence and repeatability}{chapter.4}% 64
+\BOOKMARK [2][-]{subsection.4.6.1}{Convergence}{section.4.6}% 65
+\BOOKMARK [2][-]{subsection.4.6.2}{Repeatability}{section.4.6}% 66
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{chapter.4}% 67
+\BOOKMARK [0][-]{chapter.5}{Towards inferring species interactions from population dynamics}{}% 68
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 69
+\BOOKMARK [1][-]{section.5.2}{Methodology}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.2.1}{Data generator: ordinary differential equation models}{section.5.2}% 71
+\BOOKMARK [2][-]{subsection.5.2.2}{Inference method: generalised Lotka-Volterra model}{section.5.2}% 72
+\BOOKMARK [2][-]{subsection.5.2.3}{Inference method: model fitting}{section.5.2}% 73
+\BOOKMARK [2][-]{subsection.5.2.4}{Interaction matrix}{section.5.2}% 74
+\BOOKMARK [2][-]{subsection.5.2.5}{Summary of methodology}{section.5.2}% 75
+\BOOKMARK [1][-]{section.5.3}{Results: ODE as data generator}{chapter.5}% 76
+\BOOKMARK [2][-]{subsection.5.3.1}{Modelling noise}{section.5.3}% 77
+\BOOKMARK [2][-]{subsection.5.3.2}{Simulation procedure}{section.5.3}% 78
+\BOOKMARK [2][-]{subsection.5.3.3}{Parameter selection}{section.5.3}% 79
+\BOOKMARK [2][-]{subsection.5.3.4}{Example dynamics}{section.5.3}% 80
+\BOOKMARK [2][-]{subsection.5.3.5}{Type I model}{section.5.3}% 81
+\BOOKMARK [2][-]{subsection.5.3.6}{Type II model}{section.5.3}% 82
+\BOOKMARK [2][-]{subsection.5.3.7}{Quantifying non-linearity}{section.5.3}% 83
+\BOOKMARK [2][-]{subsection.5.3.8}{Summary}{section.5.3}% 84
+\BOOKMARK [1][-]{section.5.4}{Results: IBM as data generator}{chapter.5}% 85
+\BOOKMARK [2][-]{subsection.5.4.1}{Topological constraints on the GLV}{section.5.4}% 86
+\BOOKMARK [2][-]{subsection.5.4.2}{Properties of the data generator}{section.5.4}% 87
+\BOOKMARK [2][-]{subsection.5.4.3}{Two species results}{section.5.4}% 88
+\BOOKMARK [2][-]{subsection.5.4.4}{Three species results}{section.5.4}% 89
+\BOOKMARK [2][-]{subsection.5.4.5}{Five species results}{section.5.4}% 90
+\BOOKMARK [2][-]{subsection.5.4.6}{Phase space analysis}{section.5.4}% 91
+\BOOKMARK [1][-]{section.5.5}{Discussion}{chapter.5}% 92
+\BOOKMARK [1][-]{section.5.6}{Further work}{chapter.5}% 93
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 94
+\BOOKMARK [1][-]{section.6.1}{Ideas for conclusion}{chapter.6}% 95
+\BOOKMARK [0][-]{section*.15}{Bibliography}{}% 96

@@ -1,10 +1,3 @@
 \select@language {english}
 \par \penalty \@M \textbf {{\scshape Table}} \hfill Page\par \penalty \@M 
 \addvspace {10pt}
-\addvspace {10pt}
-\contentsline {table}{\numberline {2.1}{\ignorespaces The parameters of the model and what they mean.}}{15}{table.2.1}
-\addvspace {10pt}
-\addvspace {10pt}
-\addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Results of applying the three stationarity tests to the example time series shown in figure \ref {fig:adf}. P-values that indicate evidence for stationarity at $95\%$ are highlighted in green. The test statistics are also given for the ADF and KPSS tests.}}{39}{table.5.1}
-\addvspace {10pt}

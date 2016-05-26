@@ -31,11 +31,11 @@
 \frontmatter
 \pagenumbering{roman}
 %
-%\input{frontmatter/title}
-%\clearemptydoublepage
+\input{frontmatter/title}
+\clearemptydoublepage
 %%
-%\input{frontmatter/abstract}
-%\clearemptydoublepage
+\input{frontmatter/abstract}
+\clearemptydoublepage
 %%
 %\input{frontmatter/dedication}
 %\clearemptydoublepage
@@ -47,7 +47,7 @@
 \maxtocdepth{subsubsection}
 \tableofcontents*
 \addtocontents{toc}{\par\nobreak \mbox{}\hfill{\textbf{Page}}\par\nobreak}
-%\clearemptydoublepage
+\clearemptydoublepage
 %%
 %\listoftables
 %\addtocontents{lot}{\par\nobreak\textbf{{\scshape Table}} \hfill Page\par\nobreak}
@@ -64,21 +64,21 @@
 %%
 \import{chapters/chapter01/}{chap01.tex}
 \clearemptydoublepage
-%%
+%
 %\setcounter{chapter}{+1}
 \import{chapters/chapter02/}{chap02.tex}
 \clearemptydoublepage
-
-%\setcounter{chapter}{+2}
+%
+%%\setcounter{chapter}{+2}
 \import{chapters/chapter03/}{chap03.tex}
 \clearemptydoublepage
 %
 \import{chapters/chapter13/}{chap13.tex}
 \clearemptydoublepage
-%%%
-%\setcounter{chapter}{+4}
-\import{chapters/chapter04/}{chap04.tex}
-\clearemptydoublepage
+%%%%
+%%\setcounter{chapter}{+4}
+%\import{chapters/chapter04/}{chap04.tex}
+%\clearemptydoublepage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\import{chapters/chapter04b/}{chap04b.tex}
@@ -89,6 +89,8 @@
 %\setcounter{chapter}{+5}
 \import{chapters/chapter06/}{chap06.tex}
 \clearemptydoublepage
+
+\import{chapters/chapter07/}{chap07.tex}
 %
 %
 %% And the appendix goes here

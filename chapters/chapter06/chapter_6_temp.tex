@@ -21,11 +21,11 @@
 \label{sec:motivate_interactions}
 % more emphasis on interspecific interactions.
 
-In this chapter we develop a methodology for the estimation of species interaction strengths from population dynamics data. The primary motivation for this task was provided in section \ref{sec:}. Throughout this thesis we have seen that species interactions play a key role in driving the structure and dynamics of the simulated communities. In particular strong interactions have been shown to increase the temporal variability of population dynamics. They have also represented one main difference between communities under the two types of habitat loss (HL) studied: random and contiguous. Random HL has been shown to present barriers to the motion of individuals, which reduced species interaction strengths. In contrast contiguous HL was found to increase interaction strengths by compressing individuals into a smaller region of space. These changes in interaction strengths partly explained the different responses of communities to the two types of HL. For example contiguous HL produce more extinctions, and did not result in trophic collapse of communities to the same extent as random HL. The important role of interaction strengths in understanding the results of previous chapters, further motivates the study of methods to quantify them. Previously the metric IS (equation \eqref{eq:def_iss}) has been used. However this metric requires accurate knowledge of all interaction frequencies and species abundances. The method developed in this chapter requires only the latter, although abundance time series are required rather than snapshots. The method also makes explicit the connection between community dynamics and interaction strengths, by fitting a population dynamics model.   
+In this chapter we develop a methodology for the estimation of species interaction strengths from population dynamics data. The primary motivation for this task was provided in section \ref{sec:}. Throughout this thesis we have seen that species interactions play a key role in driving the structure and dynamics of simulated communities. In particular strong interactions have been shown to increase the temporal variability of population dynamics. They have also represented one main difference between communities under the two types of habitat loss (HL) studied: random and contiguous. Random HL has been shown to present barriers to the motion of individuals, which reduced species interaction strengths. In contrast contiguous HL was found to increase interaction strengths by compressing individuals into a smaller region of space. These changes in interaction strengths partly explained the different responses of communities to the two types of HL. For example contiguous HL produce more extinctions, and did not result in trophic collapse of communities to the same extent as random HL. The important role of interaction strengths in understanding the results of previous chapters, further motivates the study of methods to quantify them. Previously the metric IS (equation \eqref{eq:def_iss}) has been used. However this metric requires accurate knowledge of all interaction frequencies and species abundances. The method developed in this chapter requires only the latter, although abundance time series are required rather than snapshots. The method also makes explicit the connection between community dynamics and interaction strengths, by fitting a population dynamics model.   
 
-Plankton mention here? (Or only in intro?) Mention Timme here - yes! Mention interaction types other than antagonism?
+%Plankton mention here? (Or only in intro?) Mention Timme here - yes! Mention interaction types other than antagonism?
 
-The original intention for this chapter was to obtain an empirical dataset with high resolution population time series and quantified interaction strengths. Such a dataset would provide the ideal test of the methodology presented. However such data was not forthcoming, either in the form of experimental mesocosm data, or that sampled from a real-world community. Therefore the methodology is developed with application to simulated community dynamics. Such an approach ensures knowledge of the interactions involved in the study system, and allows detailed analysis of the results over a range of experimental conditions. Section \ref{sec:methods} provides full details of the methodology, which is summarised in figure \ref{fig:method_flow}.  In section \ref{sec:results} interaction strengths are inferred from two species predator-prey dynamics, simulated using ordinary differential equation models. The accuracy of the inferred results are evaluated for two different simulation models, under noise and using different sampling regimes. In section \ref{sec:ibm} interaction strengths are inferred from community dynamics simulated using the IBM model. Two, three and five species communities are investigated. In section \ref{sec:si_discussion} the performance and limitations of the methodology are discussed. Finally in section \ref{sec:si_conc} the findings are summarised, and further developments are considered, including the potential for applications to empirical data. 
+The original intention for this chapter was to obtain an empirical dataset with high resolution abundance time series \emph{and} quantified interaction strengths. Such a dataset would provide the ideal test of the methodology presented. However such data was not forthcoming, either in the form of experimental mesocosm data, or that sampled from a real-world community. Therefore the methodology is developed with application to simulated community dynamics. Such an approach ensures knowledge of the interactions involved in the study system, and allows detailed analysis of the results over a range of experimental conditions. Section \ref{sec:methods} provides full details of the methodology, which is summarised in figure \ref{fig:method_flow}.  In section \ref{sec:results} interaction strengths are inferred from two species predator-prey dynamics, simulated using ordinary differential equation models. The accuracy of the inferred results are evaluated for two different simulation models, under noise and using different sampling regimes. In section \ref{sec:ibm} interaction strengths are inferred from community dynamics simulated using the IBM model. Two, three and five species communities are investigated. In section \ref{sec:si_discussion} the performance and limitations of the methodology are discussed. Finally in section \ref{sec:si_conc} further developments are considered, including the potential for applications to empirical data. Although the focus of this chapter is on antagonistic predator-prey interactions, the intention is that this methodology could be extended to infer other interaction types (mutualism and competition). This possibility is also discussed in the conclusion.
 
     %We described how population dynamics are simulated (section \ref{sec:models}); how species interactions are inferred from these dynamics (sections \ref{sec:def_GLV} and \ref{sec:timme}); and define the quantities that these estimates are compared to (section \ref{sec:interaction_strength}).
 
@@ -62,7 +62,7 @@ In section \ref{sec:results} ordinary differential equation (ODE) models are as 
 \label{eq:general_form}
 \end{equation}
 %
-where $x_i$ represents the population density (or biomass/abundance) of species $i$; $G_i(x_i)$ is the intrinsic growth function of species $i$; and $C_{ij}(x_i,x_j)$ is a function that defines the coupling (or interaction term) between species $i$ and $j$. The form of \eqref{eq:general_form} is sufficiently general that most common models from the population dynamics literature may be expressed in this way by making suitable choices for $C$ and $G$. Examples of such models include those of Holling \cite{holling1959some}, Rosenzweig and MacArthur \cite{rosenzweig1963graphical}, Arditi \cite{arditi2012species}, and Lotka-Volterra \cite{volterra1926,lotka1925elements}. In section \ref{sec:results} the results presented are for two species systems\footnote{Would be nice to add three species system, but no time?}, for which the full model may be expressed as
+where $x_i$ represents the population density (or biomass/abundance) of species $i$; $G_i(x_i)$ is the intrinsic growth function of species $i$; and $C_{ij}(x_i,x_j)$ is a function that defines the coupling (or interaction term) between species $i$ and $j$. The form of \eqref{eq:general_form} is sufficiently general that most common models from the population dynamics literature may be expressed in this way by making suitable choices for $C$ and $G$. Examples of such models include those of Holling \cite{holling1959some}, Rosenzweig and MacArthur \cite{rosenzweig1963graphical}, Arditi \cite{arditi2012species}, and Lotka-Volterra \cite{volterra1926,lotka1925elements}. In section \ref{sec:results} the results presented are for two species systems, for which the full model may be expressed as
 
 \begin{eqnarray}
 \frac{dx_0}{dt} &=& G_{0}(x_0) + a_{01}x_1H(x_0,x_1),  \nonumber \\[10pt]
@@ -136,7 +136,7 @@ such that $x_0^*$ is always positive since $C \in \mathbb{R}^+$; and $x_1^*$ is 
 \end{bmatrix}  	.
 \end{equation}
 %
-We use conditions on the \emph{trace} and \emph{determinant} of the Jacobian to guide realistic parameter selection when simulating the model. Parameter selection is discussed further section \ref{sec:simulation_method}\footnote{Change this to say we use conditions on the Jacobian to ensure stable spirals..}. 
+We use conditions on the model Jacobian to guide realistic parameter selection when simulating the model. Parameter selection is discussed further section \ref{sec:param_selection}. 
 
 
 \paragraph*{The type II model} uses the FR given by \eqref{eq:h2}. The per-predator predation rate is a non-linear function of prey density. The type II FR models predator saturation - individuals take a certain amount of time to process and digest prey - such that the predation rate does not increase linearly as the availability of prey increases. Instead the response curve flattens out, or saturates, at high prey densities (see figure \ref{fig:fr_example} below). The full \emph{type II} model is given by
@@ -180,11 +180,11 @@ such that $x_0^* > 0 $ if $C > 1$, and $x_1^* > 0 $ if $C - D > 1$. These condit
 \begin{equation}\label{eq:jac2}
 \mathbb{J}_{type\ II} = 
 \begin{bmatrix}
-A\left(\frac{-CD +C -D + 1}{C(C-1)}\right) & \frac{-B}{D} \\ \frac{A(C-1-D)}{B} & 0
+A\left(\frac{-CD +C -D + 1}{C(C-1)}\right) & \frac{-B}{D} \\[10pt] \frac{A(C-1-D)}{B} & 0
 \end{bmatrix}  	.
 \end{equation}
 %
-Parameter selection for this model is also discussed in section \ref{sec:simulation_method}. 
+Parameter selection for this model is also discussed in section \ref{sec:param_selection}. 
 
 
 \subsection{Inference method: generalised Lotka-Volterra model}
@@ -314,20 +314,20 @@ By taking the derivative of the RHS of equation \eqref{eq:timme11} we have that
 \frac{\partial}{\partial \hat{J}_{il}} E_i(\hat{J}_i) &=& \frac{\partial}{\partial \hat{J}_{il}} \left[\Sigma_{m=1}^{M}\left(Y_{im} - \Sigma_{k=1}^{N}\hat{J}_{ik}G_{ikm}\right)^2\right] \nonumber \\
     &=& -2\Sigma_{m=1}^{M}\left[\left(Y_{im} - \Sigma_{k=1}^{N}\hat{J}_{ik}G_{ikm}\right)G_{ilm}\right]. \nonumber
 \end{eqnarray}
-
-To find the minimum of the error function we equate this derivative to zero, giving
-
+%
+%To find the minimum of the error function we equate this derivative to zero, giving
+Equating this derivative to zero we have
 \begin{eqnarray}
-0 &=& \Sigma_{m=1}^{M}\left(-X_{im}G_{ilm} + G_{ilm}\Sigma_{k=1}^{N}\hat{J}_{ik}G_{ikm}\right) \nonumber \\
-  &=& \left(-X_iG_i^T\right)_{l} + \Sigma_{m=1}^{M}G_{ilm}\left(\hat{J}_iG_i\right)_m   \nonumber \\
-  &=& \left(-X_iG_i^T\right)_{l} + \Sigma_{m=1}^{M}\left(\hat{J}_iG_i\right)_mG_{iml}^T  \nonumber \\
-   &=& -X_iG_i^T + \hat{J}_iG_iG_i^T. 
+0 &=& \Sigma_{m=1}^{M}\left(-Y_{im}G_{ilm} + G_{ilm}\Sigma_{k=1}^{N}\hat{J}_{ik}G_{ikm}\right) \nonumber \\
+  &=& \left(-Y_iG_i^T\right)_{l} + \Sigma_{m=1}^{M}G_{ilm}\left(\hat{J}_iG_i\right)_m   \nonumber \\
+  &=& \left(-Y_iG_i^T\right)_{l} + \Sigma_{m=1}^{M}\left(\hat{J}_iG_i\right)_mG_{iml}^T  \nonumber \\
+   &=& -Y_iG_i^T + \hat{J}_iG_iG_i^T. 
 \end{eqnarray}
 %
 Therefore we conclude that
 
 \begin{equation}\label{eq:timme_a2}
-\hat{J}_i = XG^T_i\left(G_iG^T_i\right)^{-1},
+\hat{J}_i = YG^T_i\left(G_iG^T_i\right)^{-1},
 \end{equation}
 %
 which is the same result as derived in \cite{}. In our case this solution represents the analytic form for the best estimate of the parameters in the GLV equation for species $i$. However, without constraints on the second derivative of the error function $E_i(\hat{J}_i)$, there is no guarantee that this solution is a minimum rather than another type of stationary point. In \cite{} there is no justification given for the assumption that this solution represents a minimum. We do not investigate this problem analytically, instead we evaluate the resulting parameter estimates to determine the success of the estimation procedure. For an $N$ species system, by applying equation \eqref{eq:timme_a2} to each species in turn, we obtain the full set of GLV parameter estimates $\hat{J} \in \mathbb{R}^{N \times N}$ and $r \in \mathbb{R}^N$.
@@ -351,7 +351,7 @@ which is the same result as derived in \cite{}. In our case this solution repres
 %%
 %The procedure extends trivially to systems of more than two species since each species is fitted separately. 
 
-The model fitting method described in this section was implemented in \emph{Python} \cite{python}, with matrix multiplication using the package \emph{numpy}. The analytic solution to the error minimisation problem makes this model fitting method computationally efficient, allowing us to perform many replicate calculations. However the performance of the method may be lower than other, more computationally expensive, model fitting algorithms (see discussion section \ref{sec:discussion})\footnote{Make sure this is discussed. Alan thinks we need more detail here. What method does numpy use?}. Finally, it is possible to assess the goodness of fit achieved by evaluating the error function (equation \eqref{eq:timme11}). 
+The model fitting method described in this section was implemented in \emph{Python} \cite{python}, with matrix multiplication using the package \emph{numpy}. The analytic solution to the error minimisation problem makes this model fitting method computationally efficient, compared to algorithms that conduct a numerical search of parameter space. This efficiency allows us to perform many replicate calculations. However the quality of the parameter estimates produced may be lower than other, more computationally expensive, model fitting algorithms (see discussion section \ref{sec:discussion})\footnote{Suggestion to quantify how efficient, what does numpy use for linear algebra?}. Finally, it is possible to assess the goodness of fit achieved by evaluating the error function (equation \eqref{eq:timme11}). 
 
 
 \subsection{Interaction matrix}
@@ -399,7 +399,7 @@ such that the \emph{type I} model has constant interaction strengths that can be
 %
 such that the three non-zero interaction strengths are functions of prey density $x_0$, rather than constants. The form of the functional response (FR) curves and inter-specific interaction strengths for the \emph{type I} and \emph{II} models are illustrated in figure \ref{fig:fr_example}. In panel A the non-linearity of the type II FR is visible, modelling the effect of predator saturation as discussed in section \ref{sec:models}. In panel B we see that the result of this non-linearity is interaction strengths that decrease as a function of prey density, whereas the \emph{type I} model has constant interaction strengths. In fact the interaction strengths of the \emph{type II} model tend to zero in the limit that prey density tends to infinity. This property may seem counter intuitive for a measure of interaction strength, since we may expect a large effect of prey on predator when the prey population is very large. Indeed for large prey populations the \emph{biomass} flow does remain large, but the incremental effect of an increase in prey population on the predator growth rate is small.
 
-Based on the comparison of the functional forms in figure \ref{fig:fr_example}, we expect that the ability of a model with constant interaction strengths (such as the GLV model) to approximate the dynamics of the \emph{type II} model may depend on the extent to which the FR deviates from linearity. This hypothesis is investigated in section \ref{sec:res_hii}. FINISH CHECKING.
+Based on the comparison of the functional forms in figure \ref{fig:fr_example}, we expect that the ability of a model with constant interaction strengths (such as the GLV model) to approximate the dynamics of the \emph{type II} model may depend on the extent to which the FR deviates from linearity. This hypothesis is investigated in section \ref{sec:res_hii}.
 
 \subsection{Summary of methodology}
 \label{sec:method_summary}
@@ -453,7 +453,7 @@ All simulations used the initial condition $x_{i,0} = x_i^*/2 \quad \forall i$, 
 
 \subsection{Parameter selection}
 \label{sec:param_selection}
-\footnote{change references in section above to here..}
+
 Certain constraints are placed on the parameter values that may be chosen when simulating either ODE model. Two requirements for ecological realism are that the equilibrium populations given by the model are strictly positive, and that this equilibrium is stable. The conditions for the first requirement were given in section \ref{sec:models} as $C>1$ and $C-D>1$ for the \emph{type I} and \emph{type II} models respectively. The conditions for the second requirement are determined from the Jacobian of the model, given by \eqref{eq:jac1} and \eqref{eq:jac2} for the \emph{type I} and \emph{type II} models respectively. If the eigenvalues of the Jacobian have negative real parts then the equilibrium population is locally stable. A further requirement, due to the methodology, is that the simulated dynamics contain sufficient information to fit the GLV model. If the species populations relax to the stable equilibrium too rapidly then it may not be possible to fit the model. To avoid such a problem parameters are chosen such that the deterministic solution to the model is oscillatory (see condition 1 below). Following the precedent of Jost and Arditi (from their paper \cite{jost2000identifying} discussed in section \ref{sec:motivate_interactions}) we stipulate that the deterministic trajectory given by any parameter set must complete \emph{at least} two large amplitude oscillations en route to equilibrium (see condition 2 below). As stated in section \ref{sec:simulation_method}, every simulation is run with the initial population densities set to half of their equilibrium value. This ensures that the system always starts away from equilibrium.
 %The goal of fitting the GLV model to simulated population dynamics requires that the dynamics contain enough information to perform the fit - it is not possible to fit the a model if species populations are sitting at equilibrium. Therefore we follow the precedent set in [REF], such that all simulated dynamics of the \emph{deterministic models} exhibit two `large amplitude ' oscillations about a stable equilibrium (see condition 2 below). 
 
@@ -496,7 +496,8 @@ The final conditions helps to avoid the choice of parameters which produce numer
 %% include here an example of both Linear and HII dynamics (with mean interaction strength), and to demonstrate noise levels. And the results that we get from tinference. And an examples of range samplig (refer forwards to dsicusssion) 
 Figure \ref{fig:ex_dynamics_linear} shows examples of dynamics simulated for the \emph{type I} model, with and without noise. Two parameter sets are illustrated, one in each panel. It is clear that the deterministic trajectory completes two full oscillations within the simulation time. The figure also gives an intuition for different levels of noise intensity $\sigma{noise}$. Panel A shows a stochastic trajectory with noise intensity 20, whereas in panel B the noise intensity is 50. In the latter case the noise causes significant deviations from the deterministic trajectories. The peaks in the stochastic prey dynamics are more than double the peaks of the deterministic case. However in both cases depicted the period of oscillation is not significantly altered by noise, which is not necessarily the case in general.
 
-Figure \ref{fig:ex_dynamics_holling} shows examples of dynamics simulated for the \emph{type I} model, and the corresponding time series of the inter-specific interaction strengths $\alpha_{01}$ and $\alpha_{10}$ given by \eqref{eq:im_hii}. The stochastic dynamics illustrated in panels A and C both use $\sigma_{noise}=20$. These dynamics demonstrate that for some parameter sets the trajectories may be more sensitive to the addition of noise than for others. We also see, from panels B and D, that for the \emph{type II} model interaction strengths vary over the course of the simulation (in response to changes in $x_0$). However the extent of this temporal variation in $\alpha_{01}$ and $\alpha_{10}$ is again parameter dependent\footnote{Need to make it clear that the average interaction strength is what we compare the estimates to, and this looks like a reasonable thing to do.}.
+Figure \ref{fig:ex_dynamics_holling} shows examples of dynamics simulated for the \emph{type II} model, and the corresponding time series of the inter-specific interaction strengths $\alpha_{01}$ and $\alpha_{10}$ given by \eqref{eq:im_hii}. The stochastic dynamics illustrated in panels A and C both use $\sigma_{noise}=20$. These dynamics demonstrate that for some parameter sets the trajectories may be more sensitive to the addition of noise than for others. We also see, from panels B and D, that for the \emph{type II} model interaction strengths vary over the course of the simulation (in response to changes in $x_0$). However the extent of this temporal variation in $\alpha_{01}$ and $\alpha_{10}$ is again parameter dependent. The black solid and dashed lines in panels B and D represent the mean values of $\alpha_{01}$ and $\alpha_{10}$ respectively, over the course of the simulations. When fitting the GLV to the \emph{type II} models the estimates interaction strengths $\hat{J}_{ij}$ are compared to these \emph{average values}.
+
 
 %\clearpage
 %\afterpage{%
@@ -511,7 +512,7 @@ Figure \ref{fig:ex_dynamics_holling} shows examples of dynamics simulated for th
         \caption{\textbf{Example dynamics and interaction strengths of the \emph{type II} model}. The top and bottom rows show different parameter sets. Green represents the prey species, and red the predator. The dynamics is plotted in panels A and C, using the same format as the \emph{type I} dynamics in figure \ref{fig:ex_dynamics_linear}. In both cases $\sigma_{noise}=20$. Panels B and D show how inter-specific interaction strengths $\alpha_{ij}$ vary with time, corresponding to the dynamics plotted. The black solid and dashed lines indicate the mean interaction strengths for the deterministic dynamics, as indicated in the legend.}\label{fig:ex_dynamics_holling}
         %% Note: this figure generated by Documents/IM_vs_HL_heatmap/plot_sum_maps.py
 \end{sidewaysfigure}
-\clearpage
+%\clearpage
 %}
 
 
@@ -628,20 +629,20 @@ which is the same as for the \emph{type I} relative error, except that $\bar{p}_
 \end{figure}
 
 
-\subsection{Range sampling}
+%\subsection{Range sampling}
+\subsection{Quantifying non-linearity}
 \label{sec:res_range_sampling}
-\footnote{Rename this section because it does not just contain range sampling.}
 
-The observation that the errors in the estimates of interaction strength are higher for the \emph{type II} model are larger than for the \emph{type I} is related to the form of the functional response (FR). The \emph{type II} model has a non-linear FR, which results in variable interaction strengths that can only be approximated by the GLV. This leads us to propose that the quality of estimates obtained from the dynamics of the \emph{type II} model may depend on the extent of the non-linearity in the FR. The more linear the FR, the better we expect the GLV approximation to be. In order to test this hypothesis we develop a method for quantifying the extent of the non-linearity in the \emph{type II} FR. This method is depicted in figure \ref{fig:nonlinear_fr_rsq}.
+The observation that the errors in the estimates of interaction strength are larger for the \emph{type II} model than for the \emph{type I} is related to the form of the functional response (FR). The \emph{type II} model has a non-linear FR, which results in variable interaction strengths that can only be approximated by the GLV. This leads us to propose that the quality of estimates obtained from the dynamics of the \emph{type II} model may depend on the extent of the non-linearity in the FR. The more linear the FR, the better we expect the GLV approximation to be. In order to test this hypothesis we develop a method for quantifying the extent of the non-linearity in the \emph{type II} FR. This method is depicted in figure \ref{fig:nonlinear_fr_rsq}.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/example_FR_linear_nonlinear}}}
-	\caption{\textbf{The functional response (FR) of the predator} for two different parameter sets. The FRs plotted are given by $Bx_0 / (x_0 + D)$. The green dashed line shows the analytic form of the function, the red line shows the region of the function explored during a deterministic simulation with those parameters. The black dashed line shows a linear regression fit to the explored FR (red line). The $R^2$ value of this fit can be used as a proxy for how linear the FR is in the region explored by the dynamics. The blue vertical line indicates the prey equilibrium population $x_0^*$. \textbf{Panel A}: The least linear (lowest $R^2$) FR from the 100 parameter sets investigated. \textbf{Panel B}: The most linear (highest $R^2$) FR from the same 100 parameter sets.}
+	\caption{\textbf{The functional response (FR) of the predator} for two different parameter sets. The FRs plotted are given by $Bx_0 / (x_0 + D)$. The green dashed line shows the analytic form of the function, the red line shows the region of the function explored during a deterministic simulation with those parameters. The black dashed line shows a linear regression fit to the explored FR (red line). The $R^2$ value of this fit can be used to quantify how well the FR  is approximated by linearity, in the region explored by the dynamics. The blue vertical line indicates the prey equilibrium population $x_0^*$. \textbf{Panel A}: The least linear (lowest $R^2$) FR from the 100 parameter sets investigated. \textbf{Panel B}: The most linear (highest $R^2$) FR from the same 100 parameter sets.}
 	\label{fig:nonlinear_fr_rsq}
 \end{figure}
 
-Panels A and B of figure \ref{fig:nonlinear_fr_rsq} show the \emph{type II} FR for two different parameter sets. The FR is defined by $Bx_0 / (x_0 + D)$. The red lines indicate the region of the FR that is explored by the deterministic trajectory when dynamics are simulated with these parameter values. A linear regression model is fitted to this region of the FR, and the $R^2$ value of the fit is used as a proxy for how good the linear approximation is. If the FR were completely linear in this region then the $R^2$ value would be one. The lower the $R^2$ value the further, the deviation of the FR from linearity. Panels A and B show the least and most linear FRs, according to the $R^2$ values, from the 100 parameter sets chosen for the \emph{type II} model (i.e. same parameter sets used to generate figure \ref{fig:hii_ep_v_ns}).
+Panels A and B of figure \ref{fig:nonlinear_fr_rsq} show the \emph{type II} FR for two different parameter sets. The FR is defined by $Bx_0 / (x_0 + D)$. The red lines indicate the region of the FR that is explored by the deterministic trajectory when dynamics are simulated with these parameter values. A linear regression model is fitted to this region of the FR, and the $R^2$ value of the fit is to quantify how good the linear approximation is. If the FR were completely linear in this region then the $R^2$ value would be one. The lower the $R^2$ value, the further the deviation of the FR from linearity. Panels A and B show the least and most linear FRs, according to the $R^2$ values, from the 100 parameter sets chosen for the \emph{type II} model (i.e. same parameter sets used to generate figure \ref{fig:hii_ep_v_ns}).
 
 %% These rather confusing!
 %%Plotted by: second_year/functional_response_paper/final_code_version/hollingIIFR/many_short_params/FR_nonlinearity.py
@@ -654,7 +655,7 @@ Panels A and B of figure \ref{fig:nonlinear_fr_rsq} show the \emph{type II} FR f
 	\label{fig:nonlinearity_error}
 \end{figure}
 
-Using this $R^2$ measure for linearity in the FR, we then investigate the correlation between linearity and the relative error (RE) in the estimates of interaction strength. The same RE metric \eqref{eq:rel_error_param_II} is used to quantify the error in the estimates of inter-specific interaction strength $\hat{J}_{01}$ and $\hat{J}_{10}$. The relative errors are plotted against $R^2$ for each of the 100 parameter sets in figure \ref{fig:nonlinearity_error}. There are two simulations for each parameter set, one for $\sigma_{noise}=0$ (green triangles) and one for $\sigma_{noise}=5$ (red crosses). In general we observe that the relative error is higher for parameter sets with less linear FR (lower $R^2$), as predicted. The correlation is weakened by noise, especially for the predator interaction strength $J_{10}$. At $\sigma_{noise}=5$ the correlation between $RE(J_{10})$ and $R^2$ is only 0.40, compared to 0.71 at $\sigma_{noise}=0$. This reduction in correlation suggests that, although the linearity of the FR is significant at low (or zero) noise values, the introduction of noise represents a source of error in the estimates which is not dependant on linearity. Indeed the extent to which noise produces error in the estimates is likely to depend on the sensitivity of the dynamics to stochastic perturbations. As we saw in figure \ref{fig:ex_dynamics_holling}, the same level of noise can cause the dynamics to deviate to different extents from the deterministic trajectory, depending on the parameter values. This sensitivity to nosie can be studied analytically using stability concepts such as \emph{reactance} and \emph{resilience} \cite{arnoldi2015}. However we do not pursue this line of investigation here.  
+Using this $R^2$ measure for linearity in the FR, we then investigate the correlation between linearity and the relative error (RE) in the estimates of interaction strength. The same RE metric \eqref{eq:rel_error_param_II} is used to quantify the error in the estimates $\hat{J}_{01}$ and $\hat{J}_{10}$. The relative errors are plotted against $R^2$ for each of the 100 parameter sets in figure \ref{fig:nonlinearity_error}. There are two simulations for each parameter set, one for $\sigma_{noise}=0$ (green triangles) and one for $\sigma_{noise}=5$ (red crosses). In general we observe that the relative error is higher for parameter sets with less linear FR (lower $R^2$), as predicted. The correlation is weakened by noise, especially for the predator interaction strength $J_{10}$. At $\sigma_{noise}=5$ the correlation between $RE(J_{10})$ and $R^2$ is only 0.40, compared to 0.71 at $\sigma_{noise}=0$. This reduction in correlation suggests that, although the linearity of the FR is significant at low (or zero) noise values, the introduction of noise represents a source of error in the estimates which is not dependant on linearity. Indeed the extent to which noise produces error in the estimates is likely to depend on the sensitivity of the dynamics to stochastic perturbations. As we saw in figure \ref{fig:ex_dynamics_holling}, the same level of noise can cause the dynamics to deviate to different extents from the deterministic trajectory, depending on the parameter values. This sensitivity to nosie can be studied analytically using stability concepts such as \emph{reactance} and \emph{resilience} \cite{arnoldi2015}. However we do not pursue this line of investigation here.  
 
 \begin{figure}
 	\centering
@@ -674,7 +675,7 @@ Using this $R^2$ measure for linearity in the FR, we then investigate the correl
 	\label{fig:range_example}
 \end{figure}
 
-From figure \ref{fig:nonlinearity_error} we observe that most of the parameter sets investigated have FRs that are approximately linear ($R^2$ values close to one) within the region of phase-space explored by the deterministic dynamics. This is an unintended feature of the parameters sets, resulting from the constraints imposed in parameter selection. The approximate linearity of the FR in many cases leads us to question if a signature of non-linearity can be detected using our methodology. Previous work by Jost and Arditi \cite{jost2000identifying} has attempted to detect the presence of different forms of functional response from population dynamics data. Their approach was to fit ODE models with different forms of FR, selecting the model that produced the `best fit'. As discussed in section \ref{sec:motivate_interactions} this approach produced mixed results. Here we propose an alternative approach that involves fitting the GLV model piece-wise to subsets of the population dynamics.   
+From figure \ref{fig:nonlinearity_error} we observe that most of the parameter sets investigated have FRs that are approximately linear ($R^2$ values close to one) within the region of phase-space explored by the deterministic dynamics. This is an unintended feature of the parameters sets, resulting from the constraints imposed in parameter selection. The approximate linearity of the FR in many cases leads us to question if a signature of non-linearity can be detected using our methodology. Previous work by Jost and Arditi \cite{jost2000identifying} has attempted to detect the presence of different forms of functional response from population dynamics data. Their approach was to fit ODE models with different forms of FR, selecting the model that produced the `best fit'. As discussed in section \ref{sec:intro_inference} this approach produced mixed results. Here we propose an alternative approach that involves fitting the GLV model piece-wise to subsets of the population dynamics.   
 
 The proposed method is referred to as \emph{range sampling}, since it involves fitting the GLV to subsets of the dynamics sampled from different ranges of prey density. The sampling procedure is illustrated in figure \ref{fig:range_didact}. We define a number of ranges $R$, with boundaries distributed according to prey density $x_0$ such that an equal number of time points falls within each range. In the case depicted there are two ranges, and the boundary between them is approximately $x_0 = 0.3$. For half of the time series the prey density is lower than this boundary, and for the other half it is greater than it. Therefore the ranges define two subsets of the dynamics. The GLV model is then fitted to a \emph{data stream} sampled from within these ranges, using the same model fitting method (section \ref{sec:timme}). The result is an estimate of the interaction strengths (and growth rate parameters) within each range of prey density. Increasing the number of ranges reduces their size, and therefore improves the approximation that the FR is linear within each range. However the more ranges there are, the fewer data points each contains to which the GLV can be fitted. If the estimates of interaction strengths vary between ranges, this represents evidence of functional dependence of the interaction strength on prey density, which we have seen previously results from non-linearity in the FR.
 
@@ -687,13 +688,13 @@ Figure \ref{fig:range_example} shows the estimates of interaction strength resul
 \subsection{Summary}
 \label{sec:res_ODE_summary}
 
-Include this section to summarise ODE results before moving on to IBM? If so refer to this in section intro.
+In general we conclude that the inference method works well for a single prey and predator species. When applied to dynamics governed by stochastic differential equations the method accurately recovers the inter-specific interaction strengths. The parameter estimates converge as the number of samples in the \emph{data stream} is increased. Variability in the estimates is increased by the addition of noise, which may also produce systematic error in the estimates. In the case of non-linear FR the GLV fit can approximate the interaction strengths. However this approximation is sensitive to noise and the extent of the non-linearity in the FR. A novel method for detection of non-linearity in the FR was presented. This method was shown to be successful in the deterministic case, but sufficiently sensitive to noise as to not be useful in its current form.
 
-\begin{itemize}
-	\item Appears that noise is more important source of error than non-linearity in the FR...in nature?
-	\item Range sampling very sensitive to noise - boundary effects?..is there a way to improve this?
-	\item Predator estimates more sensitive to noise
-\end{itemize}
+%\begin{itemize}
+%	\item Appears that noise is more important source of error than non-linearity in the FR...in nature?
+%	\item Range sampling very sensitive to noise - boundary effects?..is there a way to improve this?
+%	\item Predator estimates more sensitive to noise
+%\end{itemize}
 % > only very few samples needed really!
 
 %\section{TEMP : other results}
@@ -717,31 +718,64 @@ Include this section to summarise ODE results before moving on to IBM? If so ref
 \section{Results: IBM as data generator}
 \label{sec:ibm}
 
-NEED TO WRITE ABOUT CONSTRAINTS ON TOPOLOGY. AND DISCUSS FOCUS ON ANTAGONISTIC INTERACTIONS ONLY, AND NO HL. ALSO STATE THAT ALL SIMUALTIONS HAVE TRANSIECNE REMOVED (HOW MANY TIME STEPS?)
+%NEED TO WRITE ABOUT CONSTRAINTS ON TOPOLOGY. AND DISCUSS FOCUS ON ANTAGONISTIC INTERACTIONS ONLY, AND NO HL. ALSO STATE THAT ALL SIMUALTIONS HAVE TRANSIECNE REMOVED (HOW MANY TIME STEPS?)
 
-In this section we apply the inference method to population dynamics simulated using the IBM model. We first characterise the functional forms of the intrinsic growth and mortality rates for prey and predator species. We then determine that the functional responses in the IBM are approximately linear. And argue that this would be expected because there is no saturation or prey handling included in the model. We then present results for:
-\begin{itemize}
-	\item Two species: works well. Identifies with is prey, which is predator. IS closely resembles GLV estimates. Rate parameters and biomass flows accurately recovered.
-	\item Three species: Good rate estimates and biomass flows. The inference method often finds that the best fit is given by a model where the top predator is eaten by the plant species! Explore ways to identify correct model topology. Inconclusive. Model fit is good for intermediate species.
-	\item Five species: Similar results to three species. In particular, we cannot reliably identify the correct topology, and the best fit model is often one in which the top-predator is eaten by one of the plants.
-	\item 60 species communities, with species group into trophic levels such that the network size is reduced to four.   Will present a brief discussion of this. But based on the results for three and five species it is not worth going into too much detail. There is clearly a problem... 
-\end{itemize} 
-Discuss postulate of parenthood.
+In this section we apply the inference method to population dynamics simulated using the IBM model. Here the dynamics is not explicitly governed by differential equations, and so this represents a more realistic test of the method. The analysis is extended to systems with three and five species, which significantly increases the complexity of the problem. In particular these systems have missing links, i.e. potential interactions between species which do not actually occur. We investigate if the inference method can detect these missing links. All simulations run using the IBM have the initial 2000 time steps removed unless otherwise stated. Similar to previous chapters this removal ensures that the initial period of transience, as the system relaxes from the initial conditions, is not included in our analysis. Before presenting the results of the inference method we introduce an extension that allows the fitting of the GLV with topological constraints (section \ref{sec:top_const}). We also analysis certain properties of the IBM output, in order to justify the fitting of the GLV model to its dynamics (section \ref{sec:prop_ibm_gen}). 
 
-In this section we apply the methodology for inferring species interactions to the IBM simulations. In the previous section we have seen that the method works well when fitting the GLV to two species predator-prey dynamics simulated with ODE models. In the case that the dynamics is governed by the Lotkva-Volterra equations, and in the absence of noise, fitting the GLV model produces true estimates of the underlying parameters which include the inter-specific interaction strengths. The estimates require relatively few samples in order to achieve high accuracy, and which converge on the true parameter values as the sampling intensity increases. However as noise is added to the simulations the accuracy of the estimates decreases. In particular we found that, in the presence of noise, the estimates do not converge on the true parameter values - that is, noise introduces systematic error in to the estimates. In the case that the dynamics are governed by the Holling II model matters are complicated - but in general we find that the GLV can approximately capture the strength of species interactions (and also the dynamics?), provided there is not too much noise, and the FR is not too non-linear\footnote{This is all need to be demonstrated - WORK TO DO!}.
+%We first characterise the functional forms of the intrinsic growth and mortality rates for prey and predator species. We then determine that the functional responses in the IBM are approximately linear. And argue that this would be expected because there is no saturation or prey handling included in the model. We then present results for:
+%\begin{itemize}
+%	\item Two species: works well. Identifies with is prey, which is predator. IS closely resembles GLV estimates. Rate parameters and biomass flows accurately recovered.
+%	\item Three species: Good rate estimates and biomass flows. The inference method often finds that the best fit is given by a model where the top predator is eaten by the plant species! Explore ways to identify correct model topology. Inconclusive. Model fit is good for intermediate species.
+%	\item Five species: Similar results to three species. In particular, we cannot reliably identify the correct topology, and the best fit model is often one in which the top-predator is eaten by one of the plants.
+%	\item 60 species communities, with species group into trophic levels such that the network size is reduced to four.   Will present a brief discussion of this. But based on the results for three and five species it is not worth going into too much detail. There is clearly a problem... 
+%\end{itemize} 
+%Discuss postulate of parenthood.
 
-Can the IBM dynamics by approximated by the GLV model? The hypothesis is that is can. Argue this..and refer to previous mention of LV type dynamics. Refer forward to testing linearity of FR. Exponential growth and decay, linear FR. However there are certain problem/factors that may hinder this approach/represent a departure from GLV dynamics...Noise, spatial effects, bioenergetic model - time delay? Immigration (one component of noise).
-
-The issue of noise is important since, as we have shown in chapter REF, there is a strong stochastic component to the IBM simulations. 
-
-Modelling individuals, not biomass or energy. Is this problematic? Set herb-frac to 1. Other issues?
+%In this section we apply the methodology for inferring species interactions to the IBM simulations. In the previous section we have seen that the method works well when fitting the GLV to two species predator-prey dynamics simulated with ODE models. In the case that the dynamics is governed by the Lotkva-Volterra equations, and in the absence of noise, fitting the GLV model produces true estimates of the underlying parameters which include the inter-specific interaction strengths. The estimates require relatively few samples in order to achieve high accuracy, and which converge on the true parameter values as the sampling intensity increases. However as noise is added to the simulations the accuracy of the estimates decreases. In particular we found that, in the presence of noise, the estimates do not converge on the true parameter values - that is, noise introduces systematic error in to the estimates. In the case that the dynamics are governed by the Holling II model matters are complicated - but in general we find that the GLV can approximately capture the strength of species interactions (and also the dynamics?), provided there is not too much noise, and the FR is not too non-linear\footnote{This is all need to be demonstrated - WORK TO DO!}.
+%
+%Can the IBM dynamics by approximated by the GLV model? The hypothesis is that is can. Argue this..and refer to previous mention of LV type dynamics. Refer forward to testing linearity of FR. Exponential growth and decay, linear FR. However there are certain problem/factors that may hinder this approach/represent a departure from GLV dynamics...Noise, spatial effects, bioenergetic model - time delay? Immigration (one component of noise).
+%The issue of noise is important since, as we have shown in chapter REF, there is a strong stochastic component to the IBM simulations. 
+%Modelling individuals, not biomass or energy. Is this problematic? Set herb-frac to 1. Other issues?
 
 \subsection{Topological constraints on the GLV}
 \label{sec:top_const}
 
-Introduce these in Rn here, because used throughout..
+Fitting the full GLV model to population dynamics never produces estimates of interaction strength that are exactly equal to zero. Therefore in some cases it is desirable to constrain the interaction topology which is used to fit the dynamics, in order to compare how the GLV fit performs without certain links. The method for conducting this constrained fit is outlined here. We reproduce the analytic solution for the GLV fit to species $i$ (equation \ref{eq:timme_a2}):
+\begin{equation}
+\hat{J}_i = YG^T_i\left(G_iG^T_i\right)^{-1},
+\end{equation}
+where the matrices are defined as
+\begin{equation}\label{eq:timme8}
+Y_{i} = 
+\begin{pmatrix}
+  \hat{\dot{y}}_{i1} & \hat{\dot{y}}_{i2} & \cdots & \hat{\dot{y}}_{iM}
+\end{pmatrix}\\
+\in{\mathbb{R}^{1 \times M}},
+\end{equation}
 
+\begin{equation}\label{eq:timme9}
+\hat{J}_{i} = 
+\begin{pmatrix}
+  r_i & J_{i1} & J_{i2} & \cdots & J_{iN}
+\end{pmatrix}\\
+\in{\mathbb{R}^{1 \times(N+1)}},
+\end{equation}
+
+\begin{equation}\label{eq:timme10}
+G_{i} = 
+\begin{pmatrix}
+  f_{i1}  &    f_{i2} & \cdots & f_{iM}         \\
+  g_{i11} & g_{i12} & \cdots & g_{i1M} \\
+  g_{i21} & g_{i22} & \cdots & g_{i2M} \\
+  \vdots    & \vdots    & \ddots & \vdots    \\
+  g_{iN1} & g_{iN2} & \cdots & g_{iNM} \\
+\end{pmatrix}\\
+\in{\mathbb{R}^{(N+1)\times M}}.
+\end{equation}
+%
+We can constrain the species $j$ with which species $i$ is allowed to interact in the fitted model. By removing the element $\hat{\dot{y}}_{ij}$ from $Y_{i}$, and the $j^{th}$ row from $G_i$, we effectively remove the $j^{th}$ species from the error minimisation. In this case we obtain an estimate $\hat{J}_{i} \in \mathbb{R}^{1 \times(N)}$ (rather than $\mathbb{R}^{1 \times(N+1)}$). As many species as required can be removed from the error minimisation, and when the full estimated interaction matrix $\hat{J}$ is reconstructed we insert zeros into the corresponding matrix entries.
 %\subsection{Testing functional response (and intrinsic growth functions)}
+
 \subsection{Properties of the data generator}
 \label{sec:prop_ibm_gen}
 
@@ -927,7 +961,7 @@ where $T$ is the number of time steps in the dynamics, $b(t)$ is the true number
 \end{figure}
 %
 
-Figure \ref{fig:quality_2sp_li} summarises the relative error in the predicted births and deaths over an ensemble of 25 replicate simulations at low IR. The models are fitted to the simulated dynamics using a sampling frequency of 1000, as before. The fitted model parameters are then used to predict the births and deaths of both species, and the relative errors (RE) calculated as just described. For prey births and deaths there is little difference between the three models. Based on the median RE (red lines), the model M1 produces the best estimates by a narrow margin. For the predator estimates M1 clearly has higher errors, while M2 and M0 perform best for births and deaths respectively. Figure \ref{fig:quality_2sp_hi} shows the equivalent results for 25 simulations at high IR. The prey estimates have similar, or slightly higher, errors than in the low IR case, whereas the predator estimates show significantly lower errors\footnote{This seems an important feature! - comes up again later. Discussion.}. In the high IR case M2 performs the worst for the prey estimates, and M1 performs the worst for the predator estimates. Comparing across both low and high IR it appears that M1 is the correct model for the prey, while M2 is the correct model for the predator. However the inclusion of intra-specific interactions does not necessarily improve the rate predictions over those of M0. The use of M1 for prey predictions, and M2 for predator predictions, is consistent with the intrinsic functions derived in section \ref{sec:prop_ibm_gen}. That is, intra-specific interactions contribute to prey growth rates, but to predator mortality rates\footnote{We take this convention in what follows? Despite not knowing which is predator and which is prey?}. 
+Figure \ref{fig:quality_2sp_li} summarises the relative error in the predicted births and deaths over an ensemble of 25 replicate simulations at low IR. The models are fitted to the simulated dynamics using a sampling frequency of 1000, as before. The fitted model parameters are then used to predict the births and deaths of both species, and the relative errors (RE) calculated as just described. For prey births and deaths there is little difference between the three models. Based on the median RE (red lines), the model M1 produces the best estimates by a narrow margin. For the predator estimates M1 clearly has higher errors, while M2 and M0 perform best for births and deaths respectively. Figure \ref{fig:quality_2sp_hi} shows the equivalent results for 25 simulations at high IR. The prey estimates have similar, or slightly higher, errors than in the low IR case, whereas the predator estimates show significantly lower errors\footnote{This seems an important feature! - comes up again later. Discussion.}. In the high IR case M2 performs the worst for the prey estimates, and M1 performs the worst for the predator estimates. Comparing across both low and high IR it appears that M1 is the correct model for the prey, while M2 is the correct model for the predator. However the inclusion of intra-specific interactions does not necessarily improve the rate predictions over those of M0. The use of M1 for prey predictions, and M2 for predator predictions, is consistent with the intrinsic functions derived in section \ref{sec:prop_ibm_gen}. That is, intra-specific interactions contribute to prey growth rates, but to predator mortality rates. 
 
 \clearpage
 \subsection{Three species results}
@@ -1027,7 +1061,7 @@ Figures \ref{fig:estimate_quality_3sp_LI} and \ref{fig:estimate_quality_3sp_HI} 
 	\label{fig:stability_and_error_3sp_HI}
 \end{figure}
 
-The correct model (M1) may produce the best rate predictions, but without knowledge of the true rates we cannot use this fact to identify the correct topology. We now attempt to identify which model (M0-4) represents the correct topology using only knowledge of the fitted models, and information about the IBM population dynamics (i.e. no knowledge of true demographic rates). We conduct three checks on the fitted models. First we evaluate the Jacobian of the model and determine if the equilibrium is locally stable (see section \ref{sec:models})\footnote{Is this correct ref?}. Secondly we calculate the relative error between the model equilibrium and the long term average of the population dynamics for each species. Thirdly we compute the error function of the model fit $E(\hat{J}_i)$ for each species $i$ (equation \eqref{eq:timme11}), normalised by the sum of the first derivatives of the population dynamics of species $i$\footnote{This explanation is not clear, and does not justify the use of this measure}. The results of these three checks are summarised in figures \ref{fig:stability_and_error_3sp_LI} and \ref{fig:stability_and_error_3sp_HI} for the low and high IR ensembles respectively. At low IR, M1 does not perform consistently better than the competing models in terms of either equilibrium or error function values. At high IR, M1 performs best in terms of the predicted equilibrium values for all species, although the predator equilibrium results are comparable to those of M3. However M1 again does not display the lowest error function value for any species. In both the low and high IR cases the fitted M1 model is stable more frequently that any other. M0 is also stable with relatively high frequency, compared to M2 and M3 which are usually unstable. If presented with a single \emph{data stream} of three species from which to infer the correct interaction topology, it may be possible to do so with reasonable confidence based on these results (with particular focus on stability). However no conclusive method for doing so emerges from the three checks presented. We concluded that the identification of the correct topology from three species food chain simulations remains an open problem\footnote{Need to comment on difference between low and high IR? Esp. equilibrium values. And the sustained success of M3?}.
+The correct model (M1) may produce the best rate predictions, but without knowledge of the true rates we cannot use this fact to identify the correct topology. We now attempt to identify which model (M0-4) represents the correct topology using only knowledge of the fitted models, and information about the IBM population dynamics (i.e. no knowledge of true demographic rates). We conduct three checks on the fitted models. First we evaluate the Jacobian of the model and determine if the equilibrium is locally stable (see section \ref{sec:models}). Secondly we calculate the relative error between the model equilibrium and the long term average of the population dynamics for each species. Thirdly we compute the error function of the model fit $E(\hat{J}_i)$ for each species $i$ (equation \eqref{eq:timme11}), normalised by the sum of the first derivatives of the population dynamics of species $i$\footnote{This explanation is not clear, and does not justify the use of this measure}. The results of these three checks are summarised in figures \ref{fig:stability_and_error_3sp_LI} and \ref{fig:stability_and_error_3sp_HI} for the low and high IR ensembles respectively. At low IR, M1 does not perform consistently better than the competing models in terms of either equilibrium or error function values. At high IR, M1 performs best in terms of the predicted equilibrium values for all species, although the predator equilibrium results are comparable to those of M3. However M1 again does not display the lowest error function value for any species. In both the low and high IR cases the fitted M1 model is stable more frequently that any other. M0 is also stable with relatively high frequency, compared to M2 and M3 which are usually unstable. If presented with a single \emph{data stream} of three species from which to infer the correct interaction topology, it may be possible to do so with reasonable confidence based on these results (with particular focus on stability). However no conclusive method for doing so emerges from the three checks presented. We concluded that the identification of the correct topology from three species food chain simulations remains an open problem\footnote{Need to comment on difference between low and high IR? Esp. equilibrium values. And the sustained success of M3?}.
 
 %% TOD DISCUSS RE IBM APPLICATION:
 
@@ -1054,7 +1088,7 @@ In this section we briefly consider the application of the inference method to a
 	\label{fig:5sp_dynamics}
 \end{figure}
 
-Five species IBM dynamics with interaction topology M1 are shown in figure \ref{fig:5sp_dynamics}. Panels A and B show dynamics at low IR, which are more variable than the high IR dynamics shown in panels C and D. In what follows we focus on the high IR case based on previous observations that it is easier to fit to dynamics that are less complex\footnote{Did I comment on this in the three species case, regarding high versus low IR?}. This choice reflects an attempt to slightly simplify the challenge posed by the inference of interactions from the 5 species system. We again select the optimum region of 1000 time steps from the dynamics to use as the data stream. The regions are selected in the same way as in section \ref{sec:3sp_res_ibm}, and are illustrated in figure \ref{fig:5sp_dynamics}. In this analysis we focus on the seven models depicted in figure \ref{fig:5sp_topo}. M0 is the full unconstrained GLV topology, while M1 is the true topology as discussed. The other models are selected as plausible alternatives to M1\footnote{M2 and M3 by allowing possible competitions?}.
+Five species IBM dynamics with interaction topology M1 are shown in figure \ref{fig:5sp_dynamics}. Panels A and B show dynamics at low IR, which are more variable than the high IR dynamics shown in panels C and D. In what follows we focus on the high IR case based on previous observations that it is easier to fit to dynamics that are less complex\footnote{Comment on this in the three species case, regarding high versus low IR?}. This choice reflects an attempt to slightly simplify the challenge posed by the inference of interactions from the 5 species system. We again select the optimum region of 1000 time steps from the dynamics to use as the data stream. The regions are selected in the same way as in section \ref{sec:3sp_res_ibm}, and are illustrated in figure \ref{fig:5sp_dynamics}. In this analysis we focus on the seven models depicted in figure \ref{fig:5sp_topo}. M0 is the full unconstrained GLV topology, while M1 is the true topology as discussed. The other models are selected as plausible alternatives to M1\footnote{M2 and M3 by allowing possible competitions?}.
 
 \begin{figure}
 	\centering
@@ -1063,7 +1097,7 @@ Five species IBM dynamics with interaction topology M1 are shown in figure \ref{
 	\label{fig:5sp_stable_nets}
 \end{figure}
 
-Given the large number of possible topologies we first study the stability properties of all the potential competing models. Figure \ref{fig:5sp_stable_nets} summarises how many stable models exist at each value of L, for all 25 repeat simulations. Stability is again defined by the Jacobian of the fitted models. The number of stable models varies with L in a manner the approximately matches the total number of possible models (shown as an inset in the figure). However the most possible models exist at $L=5$,  whereas the greatest number of stable models exist at $L=6$. The true model M1 contains four links. At this value of L there are $10 \choose 4 = 210$ possible models, of which only between 5 and 25 are dynamically stable. This raises the question as to whether M1 belongs to the stable set of models with $L=4$. Figure \ref{fig:5sp_stable_models} shows the frequency with which each model M0-6 is stable over the 25 replicates. We see that M1 is stable in all 25 cases, as are M2, M3 and M4. The latter models represent M1 with addition of either one or two links between species in the same trophic level (plant-plant, herbivore-herbivore, or both). We discuss the frequent stability of these three models further in section \ref{sec:discussion}\footnote{Or in final section with plots to show competition?}. Model M0 is stable in around half of the simulations, while models M5 and M6 are rarely stable. Therefore it appears that focus on dynamics stability can indeed reduce the search space for identification of the correct topology, especially if the number of links in the true network is known.
+Given the large number of possible topologies we first study the stability properties of all the potential competing models. Figure \ref{fig:5sp_stable_nets} summarises how many stable models exist at each value of L, for all 25 repeat simulations. Stability is again defined by the Jacobian of the fitted models. The number of stable models varies with L in a manner the approximately matches the total number of possible models (shown as an inset in the figure). However the most possible models exist at $L=5$,  whereas the greatest number of stable models exist at $L=6$. The true model M1 contains four links. At this value of L there are $10 \choose 4 = 210$ possible models, of which only between 5 and 25 are dynamically stable. This raises the question as to whether M1 belongs to the stable set of models with $L=4$. Figure \ref{fig:5sp_stable_models} shows the frequency with which each model M0-6 is stable over the 25 replicates. We see that M1 is stable in all 25 cases, as are M2, M3 and M4. The latter models represent M1 with addition of either one or two links between species in the same trophic level (plant-plant, herbivore-herbivore, or both). We discuss the frequent stability of these three models further in section \ref{sec:si_discussion}\footnote{Or in final section with plots to show competition?}. Model M0 is stable in around half of the simulations, while models M5 and M6 are rarely stable. Therefore it appears that focus on dynamics stability can indeed reduce the search space for identification of the correct topology, especially if the number of links in the true network is known.
 
 \begin{figure}
 	\centering
@@ -1152,7 +1186,7 @@ A robust feature of predator-prey dynamics, such as those modelled by the GLV, i
 	\label{fig:3sp_phase}
 \end{figure}
 
-In figure \ref{fig:3sp_phase} we employ a simplified version of Sandvik's method \cite{sandvik2004using} to study the dynamics of the 3 species IBM in the phase plane. We use the portion of low IR dynamics from panel A of figure \ref{fig:3sp_dynamics} that was used to fit the GLV model in that case (region plotted in black). The dynamics is standardised by subtracting the mean and dividing each species population time series by its standard deviation. As such the trajectories are centred on the origin when projected in each phase-plane. The average direction of the trajectories in each quadrant are then calculated. The figure reveals anti-clockwise rotation in the plant-herbivore (panel A) and herbivore-predator (panel C) phase plane. As discussed these rotations are the standard characteristic of the trophic interactions involved between these two pairs of species. However the plant-predator phase plane (panel B) displays clockwise rotation, which is characteristic of the plant eating the predator. We suggest that this rotation is the cause of the spurious link detected by the GLV fit. It may be that the robust phase relationship between plant and predator is the result of some underlying feature of the IBM dynamics, which the GLV does not model (for example time delay). Alternatively it may simply be the result of the incremental phase lags produced by the two interactions depicted in panels A and C. In either case this result represents a simple proof that reliance on phase relationships for the detection of species interactions in multi-trophic communities is unwise. The implications of this result for our inference method are discussed further in section \ref{sec:si_disucssion}.
+In figure \ref{fig:3sp_phase} we employ a simplified version of Sandvik's method \cite{sandvik2004using} to study the dynamics of the 3 species IBM in the phase plane. We use the portion of low IR dynamics from panel A of figure \ref{fig:3sp_dynamics} that was used to fit the GLV model in that case (region plotted in black). The dynamics is standardised by subtracting the mean and dividing each species population time series by its standard deviation. As such the trajectories are centred on the origin when projected in each phase-plane. The average direction of the trajectories in each quadrant are then calculated. The figure reveals anti-clockwise rotation in the plant-herbivore (panel A) and herbivore-predator (panel C) phase plane. As discussed these rotations are the standard characteristic of the trophic interactions involved between these two pairs of species. However the plant-predator phase plane (panel B) displays clockwise rotation, which is characteristic of the plant eating the predator. We suggest that this rotation is the cause of the spurious link detected by the GLV fit. It may be that the robust phase relationship between plant and predator is the result of some underlying feature of the IBM dynamics, which the GLV does not model (for example time delay). Alternatively it may simply be the result of the incremental phase lags produced by the two interactions depicted in panels A and C. In either case this result represents a simple proof that reliance on phase relationships for the detection of species interactions in multi-trophic communities is unwise. The implications of this result for our inference method are discussed further in the next section (\ref{sec:si_discussion}).
 
 % Don't think we need this after all!
 %\begin{figure}
@@ -1165,26 +1199,47 @@ In figure \ref{fig:3sp_phase} we employ a simplified version of Sandvik's method
 \section{Discussion}
 \label{sec:si_discussion}
 
-In this section we discuss limitations, and possible improvements to the method. Perspective: is the goal of applying such a methodology to natural ecosystems achievable in the futre?
+In this section we summarise the main results of the chapter and discuss the limitations that have been discovered.
+
+\begin{itemize}
+	\item Method works well for two species. Both ODE and IBM cases.
+	\item Range-sampling method looks interesting, but is highly sensitive to noise. Can this be improved on? More sophisticated binning algorithm? 
+	\item In the case of three and five species the method produces reasonable predictions of demographic rates. The use of the maximum error may be a poor metric for comparison.
+	\item We were not able to consistently detect the correct topology for the three and five species IBM dynamics. However the stability of the fitted model emerged as a significant feature. 
+	\item A more sophisticated model selection method (AIC) may tell us more about: A) the quality of the predict rates, and B) the correct topology (based on a range of features).  
+	
+	\item In general the method struggles to fit the GLV to complex dynamics. And is hindered by noise.
+	\item Are these the due to inadequacies of the GLV model, or in the model fitting method. Likely a combination. Analysis using an alternative method to fit the GLV model could reveal this. 
+	
+	\item The sensitivity of the method to spurious phase relationships appears a major weakness. Possibly the fact the each species is fitted separately is the reason for this. Propose an alternative method: s-step ahead method \cite{jost2000identifying} that may improve this because it involves simulating the fitted model.
+	
+\end{itemize}
+
+%Cannot fit complex dyanmics? - see three species section. clearly this is a weakness. But of the GLV or of the model fitting method. A more sophisticated method that treats noise might work better?
 
 
-Cannot fit complex dyanmics? - see three species section. clearly this is a weakness. But of the GLV or of the model fitting method. A more sophisticated method that treats noise might work better?
+%The assumptions behind the work presented in this chapter are that...Therefore in some ways this represents a naive treatment of the topic. In empirical applications the ecologist would have some \emph{a priori} knowledge of the system. Taking the example of plankton communities once again, there is reasonable information about which species may interact and the approximate trophic positions of these species. Therefore, using an informed approach, it may be possible to adapt the inference method to produce better results in empirical application. Explain how..topological constraints..using prior information to select between competing stable models..
 
-Using the maximum relative error may not be the best way to characterise the predictions a whole - may be bang on for all rate, except one which is way off...
+%Further adaptations that may improve the method...(different model fit method..what else?)
 
-Is the GLV always vulnerable to such phase relationships, or is it artefact of the model fitting method?
+%Desire to test is on an empirical system..either to see if infer the correct topology..or perhaps more interestingly, to compare rate estimates with empirical biomass rates!
 
-In theory the range sampling method can be adapted to higher dimensions..However, only if the sensitivity to noise can be overcome..More sophisticated binning algorithm? Somehow continuous binning?
+%Limitations due to the modelling assumptions..in particular environmental variables. 
 
-The assumptions behind the work presented in this chapter are that...Therefore in some ways this represents a naive treatment of the topic. In empirical applications the ecologist would have some \emph{a priori} knowledge of the system. Taking the example of plankton communities once again, there is reasonable information about which species may interact and the approximate trophic positions of these species. Therefore, using an informed approach, it may be possible to adapt the inference method to produce better results in empirical application. Explain how..topological constraints..using prior information to select between competing stable models..
 
-Further adaptations that may improve the method...(different model fit method..what else?)
-
-Desire to test is on an empirical system..either to see if infer the correct topology..or perhaps more interestingly, to compare rate estimates with empirical biomass rates!
-
-Limitations due to the modelling assumptions..in particular environmental variables. 
-
-\section{Conclusion}
+\section{Further work}
 \label{sec:si_conc}
 
-Finally in section \ref{sec:si_conc} the findings are summarised, and further developments are considered, including the potential for applications to empirical data. 
+In this section we consider further developments of the methodology, and the scope for application to empirical data.
+
+In some ways the use of the method presented this chapter represents a naive treatment of the subject. We assumed no \emph{a priori} knowledge about the \emph{data generator} that produced the dynamics.  In empirical applications the ecologist would have access to some information about the system. Therefore the results of the method could be improved by taking an informed approach to inferring species interactions. In the example of a marine plankton community, it may  not be clear which species are interacting, but approximate species roles (e.g. autotroph versus heterotroph) and trophic positions may be known. Therefore some constraints can be placed on the GLV fit. Additionally the results of the inference method can be compared with previous knowledge, in order to determine plausibility. For example we have seen that there are often only a small number of stable competing topologies (for five species). Therefore a reasoned comparison of these topologies may reveal which one is most likely to be correct.
+
+An additional result from this chapter is the relative success of demographic rate predictions by the fitted models. The predictions provide an alternative way to tests the methodology against empirical data. This would require a dataset with high resolution time series, and quantification of biomass/carbon flows between species. An candidate dataset for such a study comes from Lake Constance \cite{}.   
+
+Theoretically our investigation made certain modelling assumptions, which may need to be altered before empirical application. In particular \emph{seasonality} was neglected. In nature the influence of environmental variables cannot be ignored, and indeed it has been suggested that they are more important in driving population dynamics than species interactions \cite{mutshinda2009drives}. Therefore a natural extension of our methodology would be to consider seasonality. Also we have seen that the functional responses in the IBM are approximately linear. It would be informative to include prey-handling times into this model, and determine the effect that this has on our estimates.
+
+Use other methods to constrain topology e.g. \cite{Harris018861} can detect which interactions are direct
+
+In the context of inferring gene regulatory networks, Marbach et al. \cite{marbach2012wisdom} found that no single method (out of 30) performed optimally on all datasets tested. They concluded that the best practice was to use complementary methods for network detection to allow cross-validation. We propose that the same may be true for inferring species interactions. Therefore the most fruitful direction for future research may to studies that integrate and compare alternative methods.
+
+%Relate to gene regulatory networks - \cite{marbach2012wisdom} find that no single methods performs optimally, combined approach is best

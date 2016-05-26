@@ -3,85 +3,76 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 311 of file thesisbiblio.bib
+Repeated entry---line 451 of file thesisbiblio.bib
  : @article{wootton2005measurement
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 320 of file thesisbiblio.bib
+Repeated entry---line 460 of file thesisbiblio.bib
  : @article{berlow2004interaction
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1033 of file thesisbiblio.bib
+Repeated entry---line 1210 of file thesisbiblio.bib
  : @article{thebault2010stability
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1046 of file thesisbiblio.bib
+Repeated entry---line 1223 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1480 of file thesisbiblio.bib
- : @article{bossio2005soil
- :                        ,
-I'm skipping whatever remains of this entry
 Warning--string name "december" is undefined
---line 1596 of file thesisbiblio.bib
-Repeated entry---line 1817 of file thesisbiblio.bib
+--line 1773 of file thesisbiblio.bib
+Repeated entry---line 1994 of file thesisbiblio.bib
  : @article{barraquand2014functional
  :                                  ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "mcwilliams2015anim" isn't style-file defined
---line 1886 of file thesisbiblio.bib
+--line 2063 of file thesisbiblio.bib
 Warning--entry type for "BC3" isn't style-file defined
---line 1904 of file thesisbiblio.bib
-Warning--I didn't find a database entry for "ceballos2015accelerated"
+--line 2081 of file thesisbiblio.bib
 Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "gibson2011sampling"
 Warning--I didn't find a database entry for "lurgi2015"
-Warning--I didn't find a database entry for "newbold2015global"
 Warning--empty journal in ai2012immigration
-Warning--empty journal in condit2012thirty
 Warning--there's a number but no series in hastings2012encyclopedia
 Warning--empty journal in lotka1925elements
-Warning--empty journal in tilman1994habitat
-You've used 149 entries,
+You've used 151 entries,
             2030 wiz_defined-function locations,
-            1325 strings with 30624 characters,
-and the built_in function-call counts, 62139 in all, are:
-= -- 6172
-> -- 3051
+            1337 strings with 29994 characters,
+and the built_in function-call counts, 62239 in all, are:
+= -- 6216
+> -- 2949
 < -- 0
-+ -- 1228
-- -- 1057
-* -- 4987
-:= -- 9437
-add.period$ -- 149
-call.type$ -- 149
-change.case$ -- 948
++ -- 1186
+- -- 1015
+* -- 4941
+:= -- 9408
+add.period$ -- 151
+call.type$ -- 151
+change.case$ -- 934
 chr.to.int$ -- 0
 cite$ -- 154
-duplicate$ -- 2649
-empty$ -- 4058
-format.name$ -- 1057
-if$ -- 13226
+duplicate$ -- 2695
+empty$ -- 4128
+format.name$ -- 1015
+if$ -- 13303
 int.to.chr$ -- 0
-int.to.str$ -- 149
-missing$ -- 155
-newline$ -- 450
-num.names$ -- 296
-pop$ -- 781
+int.to.str$ -- 151
+missing$ -- 158
+newline$ -- 456
+num.names$ -- 300
+pop$ -- 767
 preamble$ -- 1
-purify$ -- 811
+purify$ -- 796
 quote$ -- 0
-skip$ -- 2539
+skip$ -- 2583
 stack$ -- 0
-substring$ -- 4629
-swap$ -- 1296
+substring$ -- 4713
+swap$ -- 1322
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 574
-warning$ -- 5
-while$ -- 660
-width$ -- 152
-write$ -- 1319
-(There were 6 error messages)
+type$ -- 580
+warning$ -- 3
+while$ -- 670
+width$ -- 154
+write$ -- 1339
+(There were 5 error messages)

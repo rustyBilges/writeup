@@ -140,6 +140,11 @@
 {\sc R.~A. Desharnais}, {\em Population dynamics and laboratory ecology},
   vol.~37, Elsevier, 2005.
 
+\bibitem{devoto2011night}
+{\sc M.~Devoto, S.~Bailey, and J.~Memmott}, {\em The ‘night shift’:
+  nocturnal pollen-transport networks in a boreal pine forest}, Ecological
+  Entomology, 36 (2011), pp.~25--35.
+
 \bibitem{dobson2006habitat}
 {\sc A.~Dobson, D.~Lodge, J.~Alder, G.~S. Cumming, J.~Keymer, J.~McGlade,
   H.~Mooney, J.~A. Rusak, O.~Sala, V.~Wolters, et~al.}, {\em Habitat loss,
@@ -169,6 +174,16 @@
 \bibitem{dytham1995effect}
 {\sc C.~Dytham}, {\em The effect of habitat destruction pattern on species
   persistence: a cellular model}, Oikos,  (1995), pp.~340--344.
+
+\bibitem{eklof2006species}
+{\sc A.~Ekl{\"o}f and B.~Ebenman}, {\em Species loss and secondary extinctions
+  in simple and complex model communities}, Journal of animal ecology, 75
+  (2006), pp.~239--246.
+
+\bibitem{englund2011temperature}
+{\sc G.~Englund, G.~{\"O}hlund, C.~L. Hein, and S.~Diehl}, {\em Temperature
+  dependence of the functional response}, Ecology letters, 14 (2011),
+  pp.~914--921.
 
 \bibitem{evans2013robustness}
 {\sc D.~M. Evans, M.~J. Pocock, and J.~Memmott}, {\em The robustness of a
@@ -292,6 +307,10 @@
 {\sc H.~P. Hsu}, {\em Schaum's outline of theory and problems of probability,
   random variables, and random processes}, McGraw-Hill, 1997.
 
+\bibitem{hubbell2001unified}
+{\sc S.~P. Hubbell}, {\em The unified neutral theory of biodiversity and
+  biogeography (MPB-32)}, vol.~32, Princeton University Press, 2001.
+
 \bibitem{hutchinson1978introduction}
 {\sc G.~Hutchinson}, {\em An introduction to population ecology yale university
   press}, New Haven,  (1978).
@@ -299,6 +318,11 @@
 \bibitem{hutchinson1961paradox}
 {\sc G.~E. Hutchinson}, {\em The paradox of the plankton}, The American
   Naturalist, 95 (1961), pp.~137--145.
+
+\bibitem{hwang2003global}
+{\sc T.-W. Hwang}, {\em Global analysis of the predator--prey system with
+  beddington--deangelis functional response}, Journal of Mathematical Analysis
+  and Applications, 281 (2003), pp.~395--401.
 
 \bibitem{ings2009review}
 {\sc T.~C. Ings, J.~M. Montoya, J.~Bascompte, N.~Bl{\"u}thgen, L.~Brown, C.~F.
@@ -337,11 +361,21 @@
   affects the species composition but not the quantitative structure of local
   food webs}, Journal of Animal Ecology, 80 (2011), pp.~622--631.
 
+\bibitem{kaiser2010robustness}
+{\sc C.~N. Kaiser-Bunbury, S.~Muff, J.~Memmott, C.~B. M{\"u}ller, and
+  A.~Caflisch}, {\em The robustness of pollination networks to the loss of
+  species and interactions: a quantitative approach incorporating pollinator
+  behaviour}, Ecology Letters, 13 (2010), pp.~442--452.
+
 \bibitem{kefi2012more}
 {\sc S.~K{\'e}fi, E.~L. Berlow, E.~A. Wieters, S.~A. Navarrete, O.~L. Petchey,
   S.~A. Wood, A.~Boit, L.~N. Joppa, K.~D. Lafferty, R.~J. Williams, et~al.},
   {\em More than a meal… integrating non-feeding interactions into food
   webs}, Ecology letters, 15 (2012), pp.~291--300.
+
+\bibitem{keller2014mutualistic}
+{\sc K.~R. Keller}, {\em Mutualistic rhizobia reduce plant diversity and alter
+  community composition}, Oecologia, 176 (2014), pp.~1101--1109.
 
 \bibitem{klausmeier2001habitat}
 {\sc C.~Klausmeier}, {\em Habitat destruction and extinction in competitive and
@@ -366,11 +400,20 @@
 {\sc J.~Ladyman, J.~Lambert, and K.~Wiesner}, {\em What is a complex system?},
   European Journal for Philosophy of Science, 3 (2013), pp.~33--67.
 
+\bibitem{laliberte2010deforestation}
+{\sc E.~Lalibert{\'e} and J.~M. Tylianakis}, {\em Deforestation homogenizes
+  tropical parasitoid-host networks}, Ecology, 91 (2010), pp.~1740--1747.
+
 \bibitem{leibold2004metacommunity}
 {\sc M.~A. Leibold, M.~Holyoak, N.~Mouquet, P.~Amarasekare, J.~Chase,
   M.~Hoopes, R.~Holt, J.~Shurin, R.~Law, D.~Tilman, et~al.}, {\em The
   metacommunity concept: a framework for multi-scale community ecology},
   Ecology letters, 7 (2004), pp.~601--613.
+
+\bibitem{logue2011empirical}
+{\sc J.~B. Logue, N.~Mouquet, H.~Peter, H.~Hillebrand, M.~W. Group, et~al.},
+  {\em Empirical approaches to metacommunities: a review and comparison with
+  theory}, Trends in ecology \& evolution, 26 (2011), pp.~482--491.
 
 \bibitem{loreau1999immigration}
 {\sc M.~Loreau and N.~Mouquet}, {\em Immigration and the maintenance of local
@@ -452,6 +495,11 @@
   zooplankton loss in nutrient--phytoplankton--zooplankton type models?},
   Ecological Modelling, 220 (2009), pp.~611--620.
 
+\bibitem{montoya2015functional}
+{\sc D.~Montoya, M.~Yallop, and J.~Memmott}, {\em Functional group diversity
+  increases with modularity in complex food webs}, Nature communications, 6
+  (2015).
+
 \bibitem{montoya2016invariability}
 {\sc J.~Montoya, J.~Arnoldi, and M.~Loreua}, {\em Resilience, invariability,
   and ecological stability across levels of organization}, WHICH JOURNAL,  (in
@@ -511,6 +559,10 @@
   models for extinction threshold in spatially correlated landscapes}, Journal
   of Theoretical Biology, 215 (2002), pp.~95--108.
 
+\bibitem{pachauri2015synthesis}
+{\sc R.~K. Pachauri, L.~Meyer, and C.~W. Team}, {\em Climate change 2014: Ipcc
+  synthesis report},  (2015).
+
 \bibitem{pimm1979complexity}
 {\sc S.~L. Pimm}, {\em Complexity and stability: another look at macarthur's
   original hypothesis}, Oikos,  (1979), pp.~351--357.
@@ -562,6 +614,10 @@
   stability conditions of predator-prey interactions}, American Naturalist, 97
   (1963), p.~209.
 
+\bibitem{rudgers2008invasive}
+{\sc J.~A. Rudgers and K.~Clay}, {\em An invasive plant--fungal mutualism
+  reduces arthropod diversity}, Ecology Letters, 11 (2008), pp.~831--840.
+
 \bibitem{said1984testing}
 {\sc S.~E. Said and D.~A. Dickey}, {\em Testing for unit roots in
   autoregressive-moving average models of unknown order}, Biometrika, 71
@@ -581,10 +637,19 @@
   angle frequency method to detect signals of competition and predation in
   experimental time series}, Ecology Letters, 7 (2004), pp.~640--652.
 
+\bibitem{sarnelle2008type}
+{\sc O.~Sarnelle and A.~E. Wilson}, {\em Type iii functional response in
+  daphnia}, Ecology, 89 (2008), pp.~1723--1732.
+
 \bibitem{sauve2014structure}
 {\sc A.~Sauve, C.~Fontaine, and E.~Th{\'e}bault}, {\em Structure--stability
   relationships in networks combining mutualistic and antagonistic
   interactions}, Oikos, 123 (2014), pp.~378--384.
+
+\bibitem{schenk2002functional}
+{\sc D.~Schenk and S.~Bacher}, {\em Functional response of a generalist insect
+  predator to one of its prey species in the field}, Journal of Animal Ecology,
+  71 (2002), pp.~524--531.
 
 \bibitem{shandilya2011inferring}
 {\sc S.~G. Shandilya and M.~Timme}, {\em Inferring network topology from
@@ -608,6 +673,11 @@
 {\sc P.~Staniczenko, O.~T. Lewis, N.~S. Jones, and F.~Reed-Tsochas}, {\em
   Structural dynamics and robustness of food webs}, Ecology Letters, 13 (2010),
   pp.~891--899.
+
+\bibitem{staudt2007understanding}
+{\sc A.~Staudt, N.~Huddleston, and S.~Rudenstein}, {\em Understanding and
+  responding to climate change}, The National Academy of Sciences. dels. nas.
+  edu/basc/Last accessed on, 14 (2007).
 
 \bibitem{stouffer2005quantitative}
 {\sc D.~Stouffer, J.~Camacho, R.~Guimera, C.~Ng, and L.~Nunes~Amaral}, {\em
@@ -652,10 +722,21 @@
   and weighted connectance: the complexity-stability debate revisited},
   Theoretical Ecology,  (2016), pp.~1--10.
 
+\bibitem{vanbergen2013threats}
+{\sc A.~J. Vanbergen, M.~Baude, J.~C. Biesmeijer, N.~F. Britton, M.~J. Brown,
+  M.~Brown, J.~Bryden, G.~E. Budge, J.~C. Bull, C.~Carvell, et~al.}, {\em
+  Threats to an ecosystem service: pressures on pollinators}, Frontiers in
+  Ecology and the Environment, 11 (2013), pp.~251--259.
+
+\bibitem{volkov2003neutral}
+{\sc I.~Volkov, J.~R. Banavar, S.~P. Hubbell, and A.~Maritan}, {\em Neutral
+  theory and relative species abundance in ecology}, Nature, 424 (2003),
+  pp.~1035--1037.
+
 \bibitem{volkov2009}
-{\sc I.~Volkov, J.~R. Banavar, S.~P. Hubbell, and A.~Maritan}, {\em Inferring
-  species interactions in tropical forests}, Proceedings of the National
-  Academy of Sciences, 106 (2009), pp.~13854--13859.
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Inferring species
+  interactions in tropical forests}, Proceedings of the National Academy of
+  Sciences, 106 (2009), pp.~13854--13859.
 
 \bibitem{volterra1926}
 {\sc V.~Volterra}, {\em Fluctuations in the abundance of a species considered
@@ -706,6 +787,12 @@
 {\sc J.~T. Wootton and M.~Emmerson}, {\em Measurement of interaction strength
   in nature}, Annual Review of Ecology, Evolution, and Systematics,  (2005),
   pp.~419--444.
+
+\bibitem{zamani2006temperature}
+{\sc A.~Zamani, A.~Talebi, Y.~Fathipour, and V.~Baniameri}, {\em
+  Temperature-dependent functional response of two aphid parasitoids, aphidius
+  colemani and aphidius matricariae (hymenoptera: Aphidiidae), on the cotton
+  aphid}, Journal of Pest Science, 79 (2006), pp.~183--188.
 
 \bibitem{zartman2006habitat}
 {\sc C.~E. Zartman and H.~E. Nascimento}, {\em Are habitat-tracking

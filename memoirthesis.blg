@@ -3,76 +3,77 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 451 of file thesisbiblio.bib
+Repeated entry---line 465 of file thesisbiblio.bib
  : @article{wootton2005measurement
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 460 of file thesisbiblio.bib
+Repeated entry---line 474 of file thesisbiblio.bib
  : @article{berlow2004interaction
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1210 of file thesisbiblio.bib
+Repeated entry---line 1271 of file thesisbiblio.bib
  : @article{thebault2010stability
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1223 of file thesisbiblio.bib
+Repeated entry---line 1284 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
 Warning--string name "december" is undefined
---line 1773 of file thesisbiblio.bib
-Repeated entry---line 1994 of file thesisbiblio.bib
- : @article{barraquand2014functional
- :                                  ,
+--line 1864 of file thesisbiblio.bib
+Repeated entry---line 2097 of file thesisbiblio.bib
+ : %@article{barraquand2014functional
+ :                                   ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "mcwilliams2015anim" isn't style-file defined
---line 2063 of file thesisbiblio.bib
+--line 2211 of file thesisbiblio.bib
 Warning--entry type for "BC3" isn't style-file defined
---line 2081 of file thesisbiblio.bib
-Warning--I didn't find a database entry for ""
+--line 2229 of file thesisbiblio.bib
 Warning--I didn't find a database entry for "lurgi2015"
+Warning--I didn't find a database entry for ""
 Warning--empty journal in ai2012immigration
 Warning--there's a number but no series in hastings2012encyclopedia
 Warning--empty journal in lotka1925elements
-You've used 151 entries,
+Warning--empty journal in pachauri2015synthesis
+You've used 169 entries,
             2030 wiz_defined-function locations,
-            1337 strings with 29994 characters,
-and the built_in function-call counts, 62239 in all, are:
-= -- 6216
-> -- 2949
+            1418 strings with 33114 characters,
+and the built_in function-call counts, 69513 in all, are:
+= -- 6949
+> -- 3282
 < -- 0
-+ -- 1186
-- -- 1015
-* -- 4941
-:= -- 9408
-add.period$ -- 151
-call.type$ -- 151
-change.case$ -- 934
++ -- 1322
+- -- 1129
+* -- 5521
+:= -- 10501
+add.period$ -- 169
+call.type$ -- 169
+change.case$ -- 1044
 chr.to.int$ -- 0
-cite$ -- 154
-duplicate$ -- 2695
-empty$ -- 4128
-format.name$ -- 1015
-if$ -- 13303
+cite$ -- 173
+duplicate$ -- 3011
+empty$ -- 4613
+format.name$ -- 1129
+if$ -- 14856
 int.to.chr$ -- 0
-int.to.str$ -- 151
-missing$ -- 158
-newline$ -- 456
-num.names$ -- 300
-pop$ -- 767
+int.to.str$ -- 169
+missing$ -- 177
+newline$ -- 510
+num.names$ -- 335
+pop$ -- 852
 preamble$ -- 1
-purify$ -- 796
+purify$ -- 889
 quote$ -- 0
-skip$ -- 2583
+skip$ -- 2888
 stack$ -- 0
-substring$ -- 4713
-swap$ -- 1322
+substring$ -- 5279
+swap$ -- 1475
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 580
-warning$ -- 3
-while$ -- 670
-width$ -- 154
-write$ -- 1339
+type$ -- 650
+warning$ -- 4
+while$ -- 747
+width$ -- 172
+write$ -- 1497
 (There were 5 error messages)

@@ -118,6 +118,11 @@
   and T.~M. Palmer}, {\em Accelerated modern human--induced species losses:
   Entering the sixth mass extinction}, Science Advances, 1 (2015), p.~e1400253.
 
+\bibitem{cortez2014coevolution}
+{\sc M.~H. Cortez and J.~S. Weitz}, {\em Coevolution can reverse predator--prey
+  cycles}, Proceedings of the National Academy of Sciences, 111 (2014),
+  pp.~7486--7491.
+
 \bibitem{coyte2015ecology}
 {\sc K.~Z. Coyte, J.~Schluter, and K.~R. Foster}, {\em The ecology of the
   microbiome: Networks, competition, and stability}, Science, 350 (2015),
@@ -268,11 +273,6 @@
   {\em Biodiversity, species interactions and ecological networks in a
   fragmented world}, Advances in Ecological Research, 46 (2012), pp.~89--120.
 
-\bibitem{hanski2013species}
-{\sc I.~Hanski, G.~A. Zurita, M.~I. Bellocq, and J.~Rybicki}, {\em
-  Species--fragmented area relationship}, Proceedings of the National Academy
-  of Sciences, 110 (2013), pp.~12715--12720.
-
 \bibitem{Harris018861}
 {\sc D.~J. Harris}, {\em Inferring species interactions from co-occurrence data
   with markov networks}, bioRxiv,  (2015).
@@ -290,6 +290,11 @@
   oscillations}}, PhD thesis, Department for Computational Systems Biology,
   John Innes Centre, 2009.
 
+\bibitem{helton2003latin}
+{\sc J.~C. Helton and F.~J. Davis}, {\em Latin hypercube sampling and the
+  propagation of uncertainty in analyses of complex systems}, Reliability
+  Engineering \& System Safety, 81 (2003), pp.~23--69.
+
 \bibitem{hill1999habitat}
 {\sc M.~Hill and H.~Caswell}, {\em Habitat fragmentation and extinction
   thresholds on fractal landscapes}, Ecology Letters, 2 (1999), pp.~121--127.
@@ -306,6 +311,11 @@
 \bibitem{hsu1997schaum}
 {\sc H.~P. Hsu}, {\em Schaum's outline of theory and problems of probability,
   random variables, and random processes}, McGraw-Hill, 1997.
+
+\bibitem{hsu1995global}
+{\sc S.-B. Hsu and T.-W. Huang}, {\em Global stability for a class of
+  predator-prey systems}, SIAM Journal on Applied Mathematics, 55 (1995),
+  pp.~763--783.
 
 \bibitem{hubbell2001unified}
 {\sc S.~P. Hubbell}, {\em The unified neutral theory of biodiversity and
@@ -403,6 +413,11 @@
 \bibitem{laliberte2010deforestation}
 {\sc E.~Lalibert{\'e} and J.~M. Tylianakis}, {\em Deforestation homogenizes
   tropical parasitoid-host networks}, Ecology, 91 (2010), pp.~1740--1747.
+
+\bibitem{lefcheck2015piecewisesem}
+{\sc J.~S. Lefcheck}, {\em piecewisesem: Piecewise structural equation
+  modelling in r for ecology, evolution, and systematics}, Methods in Ecology
+  and Evolution,  (2015).
 
 \bibitem{leibold2004metacommunity}
 {\sc M.~A. Leibold, M.~Holyoak, N.~Mouquet, P.~Amarasekare, J.~Chase,
@@ -679,6 +694,12 @@
   responding to climate change}, The National Academy of Sciences. dels. nas.
   edu/basc/Last accessed on, 14 (2007).
 
+\bibitem{stenseth1997population}
+{\sc N.~C. Stenseth, W.~Falck, O.~N. Bj{\o}rnstad, and C.~J. Krebs}, {\em
+  Population regulation in snowshoe hare and canadian lynx: asymmetric food web
+  configurations between hare and lynx}, Proceedings of the National Academy of
+  Sciences, 94 (1997), pp.~5147--5152.
+
 \bibitem{stouffer2005quantitative}
 {\sc D.~Stouffer, J.~Camacho, R.~Guimera, C.~Ng, and L.~Nunes~Amaral}, {\em
   Quantitative patterns in the structure of model and empirical food webs},
@@ -787,6 +808,12 @@
 {\sc J.~T. Wootton and M.~Emmerson}, {\em Measurement of interaction strength
   in nature}, Annual Review of Ecology, Evolution, and Systematics,  (2005),
   pp.~419--444.
+
+\bibitem{yvon2015five}
+{\sc G.~Yvon-Durocher, A.~P. Allen, M.~Cellamare, M.~Dossena, K.~J. Gaston,
+  M.~Leitao, J.~M. Montoya, D.~C. Reuman, G.~Woodward, and M.~Trimmer}, {\em
+  Five years of experimental warming increases the biodiversity and
+  productivity of phytoplankton}, PLoS Biol, 13 (2015), p.~e1002324.
 
 \bibitem{zamani2006temperature}
 {\sc A.~Zamani, A.~Talebi, Y.~Fathipour, and V.~Baniameri}, {\em

@@ -43,11 +43,11 @@
 \label{sec:intro}
 %% Having motivate the study of habitat loss, mutiple interaction types, species interactions, and spatial pattern of the disturbance.
 
-In this chapter we conduct a preliminary investigation of how simulated communities respond to habitat loss. Using the individual based model (IBM) defined in section \ref{sec:method} we study the response of communities with \emph{varying levels of mutualism} (MAI ratio) to the destruction of different percentages of the landscape. As discussed in section \ref{sec:intro_multiple_interaction_types}, a solid theoretical understanding of communities comprising multiple types of interaction is lacking. Studies in this area are relatively few and recent \cite{sauve2014structure,fontaine2011ecological,kefi2012more,pocock2012robustness,mougi2012diversity,evans2013robustness}. , compared with studies of single interaction communities, which have been ongoing for several decades. Therefore the inclusion of both mutualistic and antagonistic interactions in the model represents a key novel feature of this investigation.  
+In this chapter we conduct a preliminary investigation of how simulated communities respond to habitat loss. Using the individual based model (IBM) defined in section \ref{sec:the_model} we study the response of communities with \emph{varying levels of mutualism} (MAI ratio) to the destruction of different percentages of the landscape. As discussed in section \ref{sec:intro_community_ecology}, a solid theoretical understanding of communities comprising multiple types of interaction is lacking. Studies in this area are relatively few and recent \cite{sauve2014structure,fontaine2011ecological,kefi2012more,pocock2012robustness,mougi2012diversity,evans2013robustness}. , compared with studies of single interaction communities, which have been ongoing for several decades. Therefore the inclusion of both mutualistic and antagonistic interactions in the model represents a key novel feature of this investigation.  
 
 To destroy habitat we use the two algorithms described in section \ref{sec:model_HL}. Therefore there are two habitat loss (HL) scenarios to study, which we refer to as the \emph{random} and \emph{contiguous} scenarios according the way in which habitat is destroyed. As we saw in section \ref{sec:intro_modelling_HL} numerous studies have found that the spatial pattern of habitat destruction plays an important role in determining the effect on the community or meta-community (for example \cite{ovaskainen2002metapopulation,jager2006simulated,sole2006ecological}). The two HL scenarios represent two extremes of the of the way in which a natural habitat may be destroyed, ranging from almost complete spatial auto-correlation to complete randomness. Therefore we are able to study the differences between community responses at these two extremes, and drawn comparisons with the results of previous studies.
 
-To determine the effect of HL on the simulated communities we employ the suite of metrics defined in section \ref{sec:metrics_explained}, and study how they change along the gradient of increasing HL. These metrics capture aspects of diversity, stability, spatial organisation, and properties of the network of interactions between species. We predict that both diversity and stability will be negatively impacted by HL, and that beyond a threshold of destruction some species will become extinct from the landscape. Based on the findings of previous HL studies (discussed in section \ref{sec:intro_habitat_loss}) we also expect that random HL will impact communities more than contiguous HL, at least in terms of the number of extinctions. However, following the work of Tylianakis et al. \cite{tylianakis2007habitat}, we may also expect to see underlying changes in the community structure and network properties prior to the loss of any species from the landscape. This region of the HL gradient, prior to species extinctions, will be of particular interest since such underlying changes are not well understood, and may not be detected by conventional studies and metrics (see section \ref{sec:intro_HL_effects} for more discussion on this). Therefore we expect changes in network properties, which will be detectable in particular by the quantitative metrics introduced in section \ref{sec:def_quant_metrics}. The role of MAI ratio in mediating the effects of HL is also of interest. Based on the findings of Lurgi et al. \cite{lurgi2015effects}, which used the same IBM, we may expect communities with high MAI ratio to be more robust the HL. In that their paper it was shown that communities with higher MAI ratio tended have stronger interactions and be more highly aggregated in space, and were also suggested to be more stable. We hypothesise here that mutualism may confer stability in the face of habitat loss by improving the reproductive success of basal species, making more energy available to species in higher trophic levels. If this hypothesis holds we may also expect to see dominance of mutualistic plants and animals over their antagonistic counterparts. 
+To determine the effect of HL on the simulated communities we employ the suite of metrics defined in section \ref{sec:metrics_explained}, and study how they change along the gradient of increasing HL. These metrics capture aspects of diversity, stability, spatial organisation, and properties of the network of interactions between species. We predict that both diversity and stability will be negatively impacted by HL, and that beyond a threshold of destruction some species will become extinct from the landscape. Based on the findings of previous HL studies (discussed in section \ref{sec:intro_habitat_loss}) we also expect that random HL will impact communities more than contiguous HL, at least in terms of the number of extinctions. However, following the work of Tylianakis et al. \cite{tylianakis2007habitat}, we may also expect to see underlying changes in the community structure and network properties prior to the loss of any species from the landscape. This region of the HL gradient, prior to species extinctions, will be of particular interest since such underlying changes are not well understood, and may not be detected by conventional studies and metrics (see section \ref{sec:intro_habitat_loss} for more discussion on this). Therefore we expect changes in network properties, which will be detectable in particular by the quantitative metrics introduced in section \ref{sec:def_quant_metrics}. The role of MAI ratio in mediating the effects of HL is also of interest. Based on the findings of Lurgi et al. \cite{lurgi2015effects}, which used the same IBM, we may expect communities with high MAI ratio to be more robust to HL. In their paper it was shown that communities with higher MAI ratio tended have stronger interactions and be more highly aggregated in space, and were also suggested to be more stable (see section \ref{sec:lurgi_prev}). We hypothesise here that mutualism may confer stability in the face of habitat loss by improving the reproductive success of basal species, making more energy available to species in higher trophic levels. If this hypothesis holds we may also expect to see dominance of mutualistic plants and animals over their antagonistic counterparts. 
 
 %We study how the ecological metrics introduced in section \ref{sec:metrics_explained} vary along a HL gradient in these two scenarios. In particular we are interested in changes in community structure, spatial patterns and stability, and in the mechanisms that drive these changes. We investigate whether community responses differ between the two HL scenarios, and how they are affected by \emph{MAI ratio} - the proportion of mutualistic interactions at the base of the food web (as described in section \ref{sec:method}). 
 
@@ -61,7 +61,7 @@ To determine the effect of HL on the simulated communities we employ the suite o
 %Prediction on evenness - why is this important?
 
 \section{Methods}
-\label{sec:methods}
+\label{sec:methods_hi}
 
 Here we outline the experimental procedure used to generate the results presented in section \ref{sec:hir_results} below. Full details of the methodology are given in chapter \ref{chap:habitat_loss_modelling_approach}, including the analysis metrics which are defined in section \ref{sec:metrics_explained}. 
 
@@ -92,7 +92,7 @@ For clarity we separate the results into subsections according the type of metri
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{clean_figs/clean_lm_total_count_3mai}}}
-	\caption{\textbf{Total number of individuals} against percentage habitat loss, for both scenarios: (A) Random HL, and (B) Contiguous HL. Circles represent the number of individuals for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. \emph{p}-value $<0.001$ for all linear model fits (indicated by ***).}
+	\caption[Number of individuals versus HL.]{\textbf{Total number of individuals} against percentage habitat loss, for both scenarios: (A) Random HL, and (B) Contiguous HL. Circles represent the number of individuals for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. \emph{p}-value $<0.001$ for all linear model fits (indicated by ***).}
 	\label{fig:total_individuals}
 	% This fig and shannon_eq created with: linear_models/ecosystem/clean_lm_general.py
 \end{figure}
@@ -100,14 +100,14 @@ For clarity we separate the results into subsections according the type of metri
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{clean_figs/clean_lm_shannon_eq_3mai}}}
-	\caption{\textbf{Shannon equitability} against percentage habitat loss, for both scenarios: (A) Random HL, and (B) Contiguous HL. Circles represent the Shannon index value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. *** indicates p-value $<0.001$ for linear model fit, whilst no marker indicates p-value$>0.1$.}
+	\caption[Diversity versus HL.]{\textbf{Shannon equitability} against percentage habitat loss, for both scenarios: (A) Random HL, and (B) Contiguous HL. Circles represent the Shannon index value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. *** indicates p-value $<0.001$ for linear model fit, whilst no marker indicates p-value$>0.1$.}
 	\label{fig:shannon_eq}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\textwidth]{{{clean_figs/lm_fg_shannon_eq_hl_random_3mai}}}
-	\caption{\textbf{Shannon equitability} against percentage habitat loss, for each trophic level. Left column: random HL. Right column: contiguous HL. Circles represent the Shannon index value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. *** indicates p-value $<0.001$ for linear model fit, + indicates p-value $<0.1$, and no marker indicates p-value$>0.1$.}
+	\caption[Diversity by trophic level.]{\textbf{Shannon equitability} against percentage habitat loss, for each trophic level. Left column: random HL. Right column: contiguous HL. Circles represent the Shannon index value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. *** indicates p-value $<0.001$ for linear model fit, + indicates p-value $<0.1$, and no marker indicates p-value$>0.1$.}
 	\label{fig:shannon_eq_fg}
 \end{figure}
 
@@ -124,7 +124,7 @@ So, although the is no change in species richness under either HL scenario, ther
 \begin{figure}[hb]
 	\centering
 	\includegraphics[width=\textwidth]{{{clean_figs/rad_3examples_random_mai0.5}}}
-	\caption{\textbf{Example rank abundance distributions (RADs)} for three communities with \textbf{MAI=0.5} at different levels of \textbf{random HL}: (A) HL$=0\%$; (B) HL$=50\%$; (C) $90\%$. Species abundances are relative to the total number of individuals in the community, and plotted on a logarithmic scale. Points represent species, coloured according to trophic level: green=basal; blue=herbivore/animal-mutualist; yellow=primary predator; red=top predator. Blue and red lines give the pre-emption and Zipf model fits respectively (see text in section \ref{sec:define_rads} for definitions), best fit parameter value for each model given as annotations on plot.}
+	\caption[Rank abundance distributions for mutualistic communities under random HL.]{\textbf{Example rank abundance distributions (RADs)} for three communities with \textbf{MAI=0.5} at different levels of \textbf{random HL}: (A) HL$=0\%$; (B) HL$=50\%$; (C) $90\%$. Species abundances are relative to the total number of individuals in the community, and plotted on a logarithmic scale. Points represent species, coloured according to trophic level: green=basal; blue=herbivore/animal-mutualist; yellow=primary predator; red=top predator. Blue and red lines give the pre-emption and Zipf model fits respectively (see text in section \ref{sec:define_rads} for definitions), best fit parameter value for each model given as annotations on plot.}
 	\label{fig:example_rads_random}
 	%% This an other example rad created with r-script: RADs_neat_fit.r
 \end{figure}
@@ -132,7 +132,7 @@ So, although the is no change in species richness under either HL scenario, ther
 \begin{figure}[hb]
 	\centering
 	\includegraphics[width=\textwidth]{{{clean_figs/rad_3examples_contiguous_mai0.5}}}
-	\caption{Similar to figure \ref{fig:example_rads_random} but for \textbf{contiguous HL}.}
+	\caption[Rank abundance distributions for mutualistic communities under contiguous HL.]{Similar to figure \ref{fig:example_rads_random} but for \textbf{contiguous HL}.}
 	\label{fig:example_rads_contiguous}
 \end{figure}
  
@@ -143,7 +143,7 @@ To look explicitly at changes in evenness we construct \emph{rank abundance dist
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{clean_figs/lm_radfit_params_v_hl}}}
-	\caption{\textbf{Rank abundance model fit} parameters against HL. Panel A: Pre-emption model parameter $\alpha$ is smaller for more even distributions. Panel B: Absolute value of Zipf model parameter $\left| \gamma \right|$ is smaller for more even distributions. (See model definitions in section \ref{sec:define_rads}). Solid lines represent linear fits to the random HL data, dashed lines indicate linear fits to the contiguous HL data, and error bars give $\pm 1$ standard-deviation. *** indicates p-value $<0.001$ for linear model fit, whilst no marker indicates p-value$>0.1$.}
+	\caption[Evenness according to rank abundance model fits.]{\textbf{Rank abundance model fit} parameters against HL. Panel A: Pre-emption model parameter $\alpha$ is smaller for more even distributions. Panel B: Absolute value of Zipf model parameter $\left| \gamma \right|$ is smaller for more even distributions. (See model definitions in section \ref{sec:define_rads}). Solid lines represent linear fits to the random HL data, dashed lines indicate linear fits to the contiguous HL data, and error bars give $\pm 1$ standard-deviation. *** indicates p-value $<0.001$ for linear model fit, whilst no marker indicates p-value$>0.1$.}
 	\label{fig:radfit_params}
 	% Results compiled with radfit_param_v_hl.r
 	% Plotted with lm_rad_v_hl.py (bespoke!)
@@ -158,14 +158,14 @@ The RADs in figure \ref{fig:example_rads_random} suggest another trend in respon
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/lm_fg_relative_abundance_hl_random_3mai}}}
-	\caption{\textbf{Relative abundance} by functional group for \textbf{random HL}. Abundance relative to total number of individuals in the community. Circles represent the value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. The markers ***, **, * and + correspond to linear model fit p-values of $<0.001$, $<0.01$, $<0.05$ and $<0.1$ (marginal significance) respectively.}
+	\caption[Relative abundance by functional group, under random HL.]{\textbf{Relative abundance} by functional group for \textbf{random HL}. Abundance relative to total number of individuals in the community. Circles represent the value for a single community; lines represent a linear fit to the data and the shaded regions indicate the standard error of the mean. The markers ***, **, * and + correspond to linear model fit p-values of $<0.001$, $<0.01$, $<0.05$ and $<0.1$ (marginal significance) respectively.}
 	\label{fig:rel_abun_random}
 \end{figure}
 
 \begin{figure}[p]
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai}}}
-	\caption{Similar to figure \ref{fig:rel_abun_random}, but for \textbf{contiguous HL}.}
+	\caption[Relative abundance by functional group, under contiguous HL.]{Similar to figure \ref{fig:rel_abun_random}, but for \textbf{contiguous HL}.}
 	\label{fig:rel_abun_contiguous}
 \end{figure}
 
@@ -180,14 +180,14 @@ Figure \ref{fig:num_links} shows that, in both HL scenarios, there is a slight d
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/clean_lm_number_of_links_3mai}}}
-	\caption{\textbf{Number of links} of links in the realised network (see text in section \ref{sec:sampling} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Number of links versus HL.]{\textbf{Number of links} of links in the realised network (see text in section \ref{sec:sampling} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:num_links}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/clean_lm_total_interactions_3mai}}}
-	\caption{\textbf{Total number of interactions} between all species during final 200 time steps of a simulation. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Total interaction frequency versus HL.]{\textbf{Total number of interactions} between all species during final 200 time steps of a simulation. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:total_interactions}
 \end{figure}
 
@@ -205,14 +205,14 @@ The decrease in generality, shown in figure \ref{fig:generality}(A), tells us th
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/clean_lm_weighted_generality_3mai}}}
-	\caption{\textbf{Weighted quantitative generality}, of whole network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Generality versus HL.]{\textbf{Weighted quantitative generality}, of whole network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:generality}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/clean_lm_weighted_vulnerability_3mai}}}
-	\caption{\textbf{Weighted quantitative vulnerability}, of the whole network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Vulnerability versus HL.]{\textbf{Weighted quantitative vulnerability}, of the whole network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:vulnerability}
 \end{figure}
 
@@ -223,7 +223,7 @@ The fact that H2' does not change significantly means that interactions in the m
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/clean_lm_interaction_diversity_3mai}}}
-	\caption{\textbf{Interaction diversity} in the mutualistic sub-network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).} 
+	\caption[Interaction diversity versus HL.]{\textbf{Interaction diversity} in the mutualistic sub-network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).} 
 	\label{fig:interaction_diversity}
 \end{figure}
 
@@ -237,7 +237,7 @@ The fact that H2' does not change significantly means that interactions in the m
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/clean_lm_specialisation_3mai}}}
-	\caption{\textbf{Specialisation H2'} in the mutualistic sub-network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Specialisation versus HL.]{\textbf{Specialisation H2'} in the mutualistic sub-network (see section \ref{sec:define_network_metrics} for definition). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:specialisation}
 \end{figure}
 
@@ -249,14 +249,14 @@ The fact that H2' does not change significantly means that interactions in the m
 \begin{figure}[b]
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/clean_lm_mean_cv_area_3mai}}}
-	\caption{\textbf{Species area variability}: coefficient of variation in area of species range, averaged over all species (definition in section \ref{sec:def_stability_metrics}). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Species area variability versus HL.]{\textbf{Species area variability}: coefficient of variation in area of species range, averaged over all species (definition in section \ref{sec:def_stability_metrics}). Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:mean_cv_area}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{{{clean_figs/strong_fig}}}
-	\caption{\textbf{Interaction strengths and temporal variability.} Both natural log-transformed to linearise trends. Panels A-B: Interaction strength metric IS (defined in section \ref{sec:def_stability_metrics}) averaged over all interactions in realised network. Panels C-D: mean CV, coefficient of variation in species abundances (defined in section \ref{sec:def_stability_metrics}) averaged over all species. Panels E-F: IS as a linear predictor for mean CV, with low and high HL communities indicated by blue and red circle respectively. All communities for MAI$=0.0,0.5,1.0$ shown. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Interaction strength and variability versus HL.]{\textbf{Interaction strengths and temporal variability.} Both natural log-transformed to linearise trends. Panels A-B: Interaction strength metric IS (defined in section \ref{sec:def_stability_metrics}) averaged over all interactions in realised network. Panels C-D: mean CV, coefficient of variation in species abundances (defined in section \ref{sec:def_stability_metrics}) averaged over all species. Panels E-F: IS as a linear predictor for mean CV, with low and high HL communities indicated by blue and red circle respectively. All communities for MAI$=0.0,0.5,1.0$ shown. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:strong_fig}
 \end{figure}
 
@@ -273,14 +273,14 @@ The bottom row (panels E and F) of figure \ref{fig:strong_fig} shows the log-tra
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/clean_lm_morans_I_3mai}}}
-	\caption{\textbf{Moran's I} metric for global aggregation (defined in section \ref{sec:def_spatial_metrics}, averaged over all species. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Moran's I versus HL.]{\textbf{Moran's I} metric for global aggregation (defined in section \ref{sec:def_spatial_metrics}, averaged over all species. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:morans_I}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/clean_lm_gearys_c_3mai}}}
-	\caption{\textbf{Geary's C} metric for local aggregation (defined in section \ref{sec:def_spatial_metrics}, averaged over all species. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Geary's C versus HL.]{\textbf{Geary's C} metric for local aggregation (defined in section \ref{sec:def_spatial_metrics}, averaged over all species. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:gearys_C}
 \end{figure}
 
@@ -297,14 +297,14 @@ Figure \ref{fig:min_inv} shows the response of minimum invariability to HL. We u
 \begin{figure}[b]
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/lm_minimum_invariability_3mai}}}
-	\caption{\textbf{Minimum invariability} as defined in section \ref{sec:def_stability_metrics}. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Minimum invariability versus HL.]{\textbf{Minimum invariability} as defined in section \ref{sec:def_stability_metrics}. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:min_inv}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/lm_ecosystem_sync_3mai}}}
-	\caption{\textbf{Ecosystem synchrony} as defined in section \ref{sec:def_stability_metrics}. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Ecosystem synchrony versus HL.]{\textbf{Ecosystem synchrony} as defined in section \ref{sec:def_stability_metrics}. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:eco_sync}
 \end{figure}
 
@@ -327,7 +327,7 @@ We first address the question of interaction strengths. In both HL scenarios the
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/normalised_IS3_dist_random}}}
-	\caption{\textbf{Interaction strength distributions (IS) under random HL.} Panel A: MAI$=0.0$. Panel B: MAI$=1.0$. IS values for all interactions in each of 25 replicate simulations at the given MAI and HL value, frequency in 100 bins of equal width. }
+	\caption[Interaction strength distributions under random HL.]{\textbf{Interaction strength distributions (IS) under random HL.} Panel A: MAI$=0.0$. Panel B: MAI$=1.0$. IS values for all interactions in each of 25 replicate simulations at the given MAI and HL value, frequency in 100 bins of equal width. }
 	\label{fig:is3_dist_random}
 	%% Plotted with chrs_plots_python/scripts/nomralised...py
 \end{figure}
@@ -335,7 +335,7 @@ We first address the question of interaction strengths. In both HL scenarios the
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/normalised_IS3_dist_contiguous}}}
-	\caption{Similar to figure \ref{fig:is3_dist_random}, but for \textbf{contiguous HL.}}
+	\caption[Interaction strength distributions under contiguous HL.]{Similar to figure \ref{fig:is3_dist_random}, but for \textbf{contiguous HL.}}
 	\label{fig:is3_dist_contiguous}
 \end{figure}
 
@@ -346,14 +346,14 @@ Another consequence of the reduced mobility of individuals is that, \emph{ceteri
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{clean_figs/diffusion_example}}}
-	\caption{\textbf{An individual\textquotesingle s range of motion} in different habitat conditions. Top row: example trajectory for a single individual over 5000 time steps in (A) pristine landscape; (B) $40\%$ random HL; (C) $40\%$ contiguous HL. Pristine landscape cells shown in white, destroyed cells in  red and blue for random and contiguous destruction respectively. Bottom row (D): Percentage of the pristine landscape cells explored by an individual during 5000 time steps. Solid lines indicate mean over 100 repeat runs; errorbars indicate $\pm 1$ standard deviation.}
+	\caption[Species mobility in under random and contiguous HL.]{\textbf{An individual\textquotesingle s range of motion} in different habitat conditions. Top row: example trajectory for a single individual over 5000 time steps in (A) pristine landscape; (B) $40\%$ random HL; (C) $40\%$ contiguous HL. Pristine landscape cells shown in white, destroyed cells in  red and blue for random and contiguous destruction respectively. Bottom row (D): Percentage of the pristine landscape cells explored by an individual during 5000 time steps. Solid lines indicate mean over 100 repeat runs; errorbars indicate $\pm 1$ standard deviation.}
 	\label{fig:diffusion_example}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\textwidth]{{{clean_figs/lm_mean_proportion_immigration_3mai}}}
-	\caption{\textbf{Number of immigrants} as a fraction of the total number of new individuals created over the course of a simulation. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
+	\caption[Dependence on immigration.]{\textbf{Number of immigrants} as a fraction of the total number of new individuals created over the course of a simulation. Linear fits and p-value markers as in previous plots (see caption of figure \ref{fig:rel_abun_random}).}
 	\label{fig:res_proportion_immigrants}
 \end{figure}
 
@@ -361,7 +361,7 @@ This leads us to the second question posed above, regarding the distribution of 
 
 Another important change, observed in the random but not the contiguous scenario, is the shift in relative abundances of the functional groups. The greatest changes are the increase and decrease in relative abundance of basal and top-predator species respectively. However there is also a decrease in the relative abundance of species in the second trophic level (herbivores and mutualistic-animals). Only primary predator species display no change in relative abundance. We assert that all of these changes in relative abundance can be explained by the change in mobility and its knock on effect on interaction strengths, reproduction and dependence on immigration. 
 
-As previously discussed, the reduction in mobility makes it harder to find prey and therefore reduces interaction strengths. The result is an overall decrease in predation. So species lower in the food chains benefit from reduced predation pressure, whilst species higher in the food chains suffer because less energy is being transferred up the trophic pathway. In addition reduced mobility makes it harder for animal species to find partners with which to reproduce. This negatively affects all animal species and mutualistic plants. However mutualistic plants, although they may be reproducing less frequently, receive the incidental benefit of losing less energy to their mutualistic partners.  Therefore we see a shift in relative abundance towards basal species, which benefit from reduced consumption whilst all other species suffer from a reduced ability to find food and reproduction partners. Animal species in the lower trophic levels receive a compensatory benefit of lower predation pressure, which partly explains why species in the second trophic level are hit less hard than top predators. The fact that the relative abundance of primary predator species does not change must be a combination of reduced predation pressure, but also a slight quirk of the modelling framework. Due to the way the networks are constructed, there are significantly more primary predator species than any other functional group (this an known artefact of the niche model - see section \ref{sec:trophic_constraints} and figure \ref{fig:example_food_Web}). Therefore, since immigrant individuals are drawn uniformly at random from all species, immigrants are most likely to be primary predators. As we have seen (figure \ref{fig:diffusion_example}) random HL increases the community dependence on immigration. We now understand that this benefits primary predators disproportionately. Conversely the functional group with fewest species is the top-predators. Therefore this group receives fewest immigrants, compounding the other effects detailed above. Therefore it appears that mobility, along with immigration, accounts for all observed changes in species relative abundances.  
+As previously discussed, the reduction in mobility makes it harder to find prey and therefore reduces interaction strengths. The result is an overall decrease in predation. So species lower in the food chains benefit from reduced predation pressure, whilst species higher in the food chains suffer because less energy is being transferred up the trophic pathway. In addition reduced mobility makes it harder for animal species to find partners with which to reproduce. This negatively affects all animal species and mutualistic plants. However mutualistic plants, although they may be reproducing less frequently, receive the incidental benefit of losing less energy to their mutualistic partners.  Therefore we see a shift in relative abundance towards basal species, which benefit from reduced consumption whilst all other species suffer from a reduced ability to find food and reproduction partners. Animal species in the lower trophic levels receive a compensatory benefit of lower predation pressure, which partly explains why species in the second trophic level are hit less hard than top predators. The fact that the relative abundance of primary predator species does not change must be a combination of reduced predation pressure, but also a slight quirk of the modelling framework. Due to the way the networks are constructed, there are significantly more primary predator species than any other functional group (this an known artefact of the niche model - see section \ref{sec:trophic_constraints} and figure \ref{fig:example_food_web}). Therefore, since immigrant individuals are drawn uniformly at random from all species, immigrants are most likely to be primary predators. As we have seen (figure \ref{fig:diffusion_example}) random HL increases the community dependence on immigration. We now understand that this benefits primary predators disproportionately. Conversely the functional group with fewest species is the top-predators. Therefore this group receives fewest immigrants, compounding the other effects detailed above. Therefore it appears that mobility, along with immigration, accounts for all observed changes in species relative abundances.  
 
 %The difficulty for animal species to find partners with which to reproduce compounds the effect of reduced energy availability, and this impacts species in the higher trophic levels the most because of cascading effects. Therefore we see a shift in abundance toward basal species, which benefit from the reduced predation pressure and also, in the case of wind dispersed plants, do not require an interaction to reproduce\footnote{This argument does not yet include mutualism.}. Omnivore species benefit most from the increased dependence on immigration than other groups, because this group contains the most species, due to the way that the networks are constructed . This must explain the constant relative abundance of omnivores\footnote{Also mention that in this chapter predators are omnivorous!}.
 
@@ -383,7 +383,7 @@ We predicted that MAI ratio would mediate community response to HL. In fact, in 
 
 Nestedness and compartmentalisation showed no significant trends in response to either HL scenario. These metrics have often been associated with stability in mutualistic and antagonistic communities respectively \cite{thebault2010stability}. It is interesting to note that neither metric changed, despite significant and opposite trends in temporal stability under random and contiguous HL. However we did not explicitly test for the impact of these metrics on stability. It would be possible, and potentially informative, to study whether communities with higher nestedness/compartmentalisation responded differently to other communities.   
 
-Crucially we have found that, in the default parameter regime, the effects of HL are governed largely by interaction strengths and immigration. In particular interaction strengths are responsible for changes in temporal variability, and to some extent biodiversity patterns. In subsequent chapters (especially chapter \ref{chap:inferring_interactions}) we will return to the role of interaction strengths. Immigration has be shown to be a stochastic influence on the dynamics, and a levelling influence between species and throughout space. Also immigration was found to prevent species extinction, allowing communities to persist in the face of high levels of HL. In this sense the communities modelled in this chapter represent \emph{open systems} with a high rate of influx from an external source. In the an ecological context, although the local landscape is almost entirely destroyed there is sufficient immigration from surrounding sources (see IBT discussion in section \ref{sec:intro_community_ecology})\footnote{Remove this ref?} to maintain diversity. In what follows we will consider what happens when the immigration rate is varied. We begin chapter \ref{chap:stress_testing} with a study of \emph{closed-communities} ($IR=0$). In chapter \ref{chap:varrying_immigration} we investigate how communities respond to HL over a range of immigration rates. 
+Crucially we have found that, in the default parameter regime, the effects of HL are governed largely by interaction strengths and immigration. In particular interaction strengths are responsible for changes in temporal variability, and to some extent biodiversity patterns. In subsequent chapters (especially chapter \ref{chap:interactions}) we will return to the role of interaction strengths. Immigration has be shown to be a stochastic influence on the dynamics, and a levelling influence between species and throughout space. Also immigration was found to prevent species extinction, allowing communities to persist in the face of high levels of HL. In this sense the communities modelled in this chapter represent \emph{open systems} with a high rate of influx from an external source. In the an ecological context, although the local landscape is almost entirely destroyed there is sufficient immigration from surrounding sources (see IBT discussion in section \ref{sec:intro_community_ecology})\footnote{Remove this ref?} to maintain diversity. In what follows we will consider what happens when the immigration rate is varied. We begin chapter \ref{chap:stress_testing} with a study of \emph{closed-communities} ($IR=0$). In chapter \ref{chap:varying_immigration_rate} we investigate how communities respond to HL over a range of immigration rates. 
    
 
 %Here we have studied the difference between two HL scenarios in more detail, and without focus on extinctions. We have also shown that the main difference between the two scenarios is due to differences in mobility through the landscape, changes in interaction strengths, and differential dependence on immigration from an external source. 

@@ -1,103 +1,160 @@
 
-% TODO: get material from first year report 
+All results have been previously summarised and discussed in detail in the conclusions of the individual chapters. Particularly, sections \ref{sec:vir_conclusion} and \ref{sec:si_discussion} provide discussions of the results regarding habitat loss, and the inferences of species interactions respectively. In this chapter were reiterate the main findings from each of the research chapters (sections \ref{sec:hl_hi} - \ref{sec:tisifpd}), before summarising the main avenues for further work that have been revealed throughout the thesis (section \ref{sec:further_work}).
 
-\section{Ideas for conclusion}
-\label{sec:conc_ideas}
+\section{Habitat loss with high immigration rate}
+\label{sec:hl_hi}
 
-We have shown that a flat immigration rate produces evenness, and serves to counter the forces of mutualism and competition (trophic interactions?) which act against diversity.
+In this chapter we discovered that the default immigration rate ($IR=0.005$) was sufficiently high as to prevent the local extinction of species, even in landscapes where $90\%$ of the cells were destroyed. This feature allowed us to study changes in simulated communities in the absence of extinctions. Empirical studies have indicated that habitat loss can cause structural changes to communities without the loss of species \cite{albrecht2007interaction,tylianakis2007habitat,hagen2012biodiversity}. The results of this chapter are a relevant contribution towards understanding those structural changes.
 
-\begin{itemize}
-	\item Sensitivity analysis: latin hypercube
-	\item SEM modelling
-	\item Use of empricial networks, or an alternative network generation method
-	
-	\item Departure from our results in natural communities (what might be different?) - immigration mechanism. Functional response. The way animals move!
-	
-	\item Other way to construct networks: Each non-overlapping pairs? Thilos GM? Stability issues? (may refer to in chapter 4 also?)
-\end{itemize}
+Communities responded differently to the two types of habitat loss: random and contiguous. Random HL reduced the temporal variability in species population dynamics, and reduced the average strength of species interactions. Random HL also increased the evenness in species abundance distributions, with associated changes in network properties, and made communities less aggregated in space. All of these changes, it was argued, could be understood as resulting from an increased dependence of communities on immigration. The random distribution of destroyed cells throughout the landscape provided a barrier to the motion of individuals, meaning that it was harder to 1) find food, and 2) find a mate. As a results, immigration became the dominant source of new individuals in the landscape.
 
-Area verus stability result form Barro Island!..
+Contiguous HL increased the temporal variability in species population dynamics, due to an increase in species interactions strengths. The increased probability of interaction resulted from the confinement of individuals, with the same level of mobility, into smaller contiguous regions of habitat. Since trophic interactions remained strong, immigration did not come to dominate these communities. The structural properties of communities under contiguous HL, including network properties, were mainly unchanged. 
 
-Is there evidence for competition in GLV fitting??
+\section{Community dynamics under variable immigration rate}
+\label{sec:com_dyn_var}
 
-The AFM method in http://pages.uoregon.edu/bohannanlab/pubs/Sandviketal04.pdf, can be used to detect signatures of pairwise competition between species. Although we do not prusue this it could be informative given that we believe competition plays an important role in the model..
+Having established, in chapter \ref{chap:habitat_loss_high_immigration}, the importance of immigration in mediating community responses to HL, we then studied community dynamics under different immigration rates. This chapter focused on the effect of changing the immigration rate in the absence of habitat loss. We saw that, without any immigration ($IR=0.0$), many species go extinct when all other parameters take the default values. For antagonistic communities all non-basal species went extinct, while mutualistic communities displayed persistence of a few non-basal species (facilitated by the mutualism). Parameter adjustment was able to slightly improve species persistence, but in general communities were unstable without immigration. We concluded that competition between species in the IBM was strong, and partly responsible for the extinctions. It appears that immigration reduced the effects of competition.
 
-We did not put effort into searching the space of niche model topologies for stable configurations because of the combinatorially large number of possible networks. Such an exhaustive search would not be efficient given the computationally expensive nature of individual based modelling.  
+Reducing the immigration rate was found to increase temporal variability in population dynamics, resulting in more species with non-stationary long term distributions. Employing recurrence quantification analysis, we determined that reducing the immigration rate increased the signature of determinism in the population dynamics. In general, high abundance species were found to have dynamics that was less stationary and more deterministic, while low abundance species were more stationary and less deterministic. Taken together, these results developed a picture of the relative contributions of species interactions and immigration to the dynamics. Immigration represents a random mechanism, but one that suppresses temporal variability. Whilst species interactions contribute to high temporal variability via deterministic non-stationary fluctuations. 
 
-Note that structure (of web) is important - not efficient way to look for stable nets - but this method could be used to test hypotheses about stable architectures, test empirical webs, test other network generation procedures..(link this to discussion on niche model and its failings in final conclusion)
+At the end of this chapter we considered the effect that high temporal variability has on the accuracy of our results. We compared species abundance measurements, calculated from samples of increasing length. It was determined that short samples produced significant errors when temporal variability was high, but that infeasibly long samples ($>40,000$ time steps) were required in order to guarantee convergence on the long term average. This poor convergence is likely due to non-stationarity, as previously discussed, and highlights the need for a trade-off between accuracy and computational expense when sampling from the IBM simulations. In this chapter we also demonstrated a high level of repeatability between simulations using the same network structure (which was demonstrated using rank abundance spectra). 
 
+\section{Habitat loss under variable immigration rate}
+\label{sec:hl_var}
 
+In chapter \ref{chap:varying_immigration_rate} we returned to study the effects of habitat loss, this time under different immigration rates. The same two types of habitat loss were used: random and contiguous. Community responses were largely consistent with those observed at high IR in chapter \ref{chap:habitat_loss_high_immigration}. In particular, contiguous HL increased interaction strengths, resulting in more variable dynamics. The converse was observed for random HL. These results held across most of the region of parameter space explored, but not at some extreme values of IR and HL. 
 
-In nature habitat tends to be destroyed in a spatially-autocorrelated manner - for example urban development, agriculture and logging all occur in concentrations rather than being distributed totally at random throughout space. Therefore the result of human activity is often a patchy and fragmented landscape [REFS]\footnote{Reference in word final sent by Dani - email with correction to chapter 3.}. 
-\footnote{Human activity is often patchy (page 30 of your document)
+Certain new results were observed as the immigration rate was changed. Most notably, at lower immigration rates species extinctions were observed. Here we saw more extinctions under contiguous HL than random HL, and more extinctions in mutualistic communities than antagonistic ones. These differences were unexpected. Previous modelling studies suggested that random HL should produce more extinctions (see section \ref{sec:intro_modelling_HL}), and prior intuition suggested that mutualism may confer some benefit on the wider community that would mitigate extinctions. Contiguous HL resulted in more extinctions because of strong trophic interactions and highly variable dynamics. Mutualistic communities displayed more extinctions because mutualism acts to make communities uneven, with a dominant core of species out-competing the others. The observed effects of mutualism, and contiguous HL on species extinctions find some support from empirical studies (see section \ref{sec:vir_conclusion}). Further field work is required to determine the role of species interaction strengths in these cases.
 
-Seabloom et al (2002): Spatially aggregated loss dramatically increased the predicted rate of species loss. It is also likely, that the effects of aggregation are more general than the effects of local richness. Given that humans have clear preferences for certain habitats (30), it is likely that human activity will often be spatially aggregated. 
+The total number of individuals in communities with high levels of mutualism was insensitive the changes in IR. However, as IR was reduced, these communities became less even as the mutualistic core became more dominant. Therefore we see that, in the IBM, immigration serves to reduce the damaging effects of mutualism on the wider community. In general, we observed a subtle interplay between immigration rate, mutualism and habitat loss, in determining community evenness. For example, at $IR=0.0005$, antagonistic communities tended to become less even under random HL, while mutualistic communities became more even. Different changes in evenness were observed at different immigrations rates, but not studied in detail.
 
-Alados et al (Ecol Model XXXX): Evidence suggests that landscape disturbances are seldom randomly distributed; rather, they operate in a self-organized manner (Bak and Chan, 1991) or are subjected to multi-scaled randomness}
+\section{Towards inferring species interactions from population dynamics}
+\label{sec:tisifpd}
 
-\cite{hanski2013species} SAR updated to account for habitat fragmentation i.e. habitat loss that is not contgiuous. Veyr relevant for discussion somewhere.
+In chapter \ref{chap:interactions} we developed a novel method for inferring species interactions from population dynamics. The method was adapted from \cite{shandilya2011inferring}. The task was explained as the inverse of the research undertaken in the previous chapter, where we modelled low level mechanics and studied the high level properties that emerged. In this chapter we attempted to work back from the high level properties to recover the underlying structure of the system. The approach was met with limited success. Accurate inference of interaction strengths was possible for two species systems. For three and five species systems, the method produced reasonable prediction of demographic rates, but it was not possible to reliably infer the correct interaction topology. The method was hampered by a sensitivity to emergent phase relationships between non-interacting pairs of species, resulting in the identification of spurious interactions. The application of the method to infer interactions between functional groups of species in larger systems shows some promise. However further development of the method is required. 
 
+%\footnote{Evidence of competition, information lost in functional groupings} 
 
-A (meta-community) model of particular interest is due to Loreua et al. \emph{loreau1999immigration} where they find that stable competitive communities always persists under the influence of a `propgaule rain' (immigration), but that most species go extinct when immigration is removed.
+\section{Further work}
+\label{sec:further_work}
 
-\cite{mouquet2004immigration} : total biomass does not depened on immigration rate!!
+The results from the habitat loss simulations represent an important contribution to the field. However, given the complexity of the IBM model, it will be necessary to undertake a sensitivity analysis prior to publication. Specifically, we propose the use of \emph{latin hypercube sampling} \cite{helton2003latin} to determine the sensitivity of the main results presented in this thesis to variations in parameter values. Such an analysis would ensure that the conclusions presented are robust. Furthermore, much of the analysis in this thesis rests on conceptual arguments and qualitative interpretations of the results. Although we are confident in the conclusions reached, we suggest that further statistical analysis would improve the weight of these conclusions. One potential approach would be to use \emph{structural equation modelling} (SEM) to quantify the pathways of influence that drive changes in community properties. SEM is a type of graphical modelling the allows the user to quantify correlations between multiple variables that are connected by a hypothesised causal structure. Significant correlations indicate support for the hypothesis of causality. This type of analysis is becoming increasingly popular in the biological sciences, where it is often necessary to determine the relationships between multiple interconnected variables \cite{lefcheck2015piecewisesem,yvon2015five}. We propose that this approach could be used in the future to test our conclusions regarding community responses to habitat loss (and to changes in other variables such as MAI and IR).
 
-%%%
-Some of this (originally from chapter 5) may be useful in discussing what our simulated communities represent (open closed etc):
-In chapter \ref{whereis} we saw that no species go extinct, even at extreme levels of habitat destruction ($HL=90\%$), when using the default parameter set (see table \ref{tab:parameters}). Motivated by \cite{tylianakis2007habitat}, this allowed us to explore community responses to habitat loss that are not associated with, or may preceed, the loss of species. The lack of extinctions produced by the model were shown to be due to a resuce effect from immigration. Even species which go locally extinct from the landscape may be replaced by this immigraiton.    
+Any theoretical results regarding community dynamics and structure require empirical confirmation. With this in mind, it is worth considering the ways in which the modelling assumptions of the IBM may produce different results from those observed in natural communities. The relevant features of the model that represent simplifications of reality include: the simplicity of the immigration mechanism; the spatial heterogeneity of the landscape; the random-walk motion of individuals (which is a constant across all non-basal species); the absence of prey-handling times; the neutrality of species within trophic levels; and the binary nature of habitat loss (cells are either destroyed or pristine, rather than displaying a gradient of degradation). Extension of the IBM to alleviate all of these limitations would greatly increase its complexity. A pragmatic approach would be to develop the modelling framework in conjunction with field studies. It may be possible to identify which limitations are most significant when modelling a specific study system, and to update the model accordingly. A primary candidate for further development is the immigration mechanism, as discussed in section \ref{sec:vir_conclusion}.
 
-The simulations presented so far represent \emph{open} communities with a strong influx of individuals belonging to all species.
+In chapter \ref{chap:stress_testing} we confirmed that network structure does play a role in shaping the simulated communities. Although we have studied changes in network structure in response to habitat loss, we have not explicitly investigated the inverse. It would be informative to determine how certain structural properties effect community response to habitat loss. For example, if would be possible to create networks with high and low modularity, and test for differences in the response the HL. Fortuna and Bascompte \cite{fortuna2006habitat} have suggested that empirically derived network structures are more robust the HL than randomly assembled networks. It would also be possible to test this hypothesis by using empirical food webs as input to the IBM. 
 
-the default immigration rate (IR), as given in the default parameter values  is relatively high, corresponding to an open community. In particular, at the IR, we expect no extinction of species
+Avenues for further work in the area of inferring species interactions were discussed in section \ref{sec:si_discussion}, including the scope for application to empirical data. Plankton food webs were identified as possible systems to which the methodology could be applied. In any empirical application the study system will likely comprise of more than five species. The approach taken in section \ref{sec:ibm}, when applying the method to 60 species systems, was to aggregate the dynamics by functional group. This aggregation resulted in either four or six \emph{functional species}, depending on the inclusion of mutualism. However, aggregating in this way requires prior knowledge of the functional groups. It also results in loss of information. If the populations of the species within a functional group are not synchronised, then summing their dynamics will result in some cancellation of population variability. Furthermore, there is the problem of diversity of interaction types between any two functional groups. For example, some primary-predator species may feed on herbivores, while others mainly compete with them. Therefore it is unlikely that the use of functional groups is a good way to aggregate the species. We suggest that further work could investigate better methods for aggregation, based on properties of the dynamics alone (i.e. not requiring any prior knowledge). A natural approach would be to use the invariability metric for \emph{synchrony} (section \ref{sec:def_stability_metrics}). Species that share a high level of synchrony in their dynamics could be grouped, minimising the loss of information in time series summation. Finally, we note that a useful feature of the inference method is its ability to detect competitive interactions (section \ref{sec:av_inf_j}). Competition is hard to detect empirically because it cannot be observed directly. Further work is required in this area to develop methodologies that can reliably infer species interactions. The investigation in chapter \ref{chap:interactions} highlights some of the problems that need to be solved. 
 
-This behaviour  (control for species richness). However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature [REF]. This may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).
-
-The study of our simulated communities under contiguous HL represents the study of communities in single such fragment, with immigration from an external source. In reality we know that such fragments support a lower richness of species, beyond a certain size. In this chapter we saw that a high immigration rate prevented a loss of species richness. In the next chapter we begin to look at how communities respond to changes in the immigration rate.
-
-
-In agreement with \cite{spiesman2013habitat} we found that species abundance were the main driver of changes in network structure.
-
-Spatial compression generates stronger top-down trophic cascades and can cause high amplitude consumer-resource oscillations and instability!! from \cite{gonzalez2011disentangled}, but talking about McCann 2005.
-
-\begin{itemize}
-	\item propagule rain
-	\item Require a uniform species pool to be maintained (trad IBT -> continent), or hetegeneity at landscape level [REF]
-\end{itemize}
-
-% more on what the different scenarios represent, or is that already discussed?
-In this chapter we further investigate the impacts of habitat loss (HL)  on multi-species communities with different proportions of mutualistic and antagonistic interactions (MAI ratios). We now consider other realistic scenarios by varying the immigration rate parameter. At one extreme we have the above scenario of high immigration, where extinction is prevented. At the other extreme we have closed communities with zero immigration. In this case there is no rescue effect from surrounding habitats, and we may expect to see extinctions in response to habitat loss. Although a totally closed system does not exist in nature certain systems may come close to this ideal. For example an island community that is a sufficiently distant from other land (see discussion on Island bio-geography theory in section \ref{sec:whereis}) will have very low immigration rates, and systems that are effectively closed may be artificially achieved in controlled situations (e.g. laboratory mesocosm). Although extremely open and extremely closed systems are possible, most real-world communities lie within these two extremes. By changing immigration rates, the approach followed here allow us to explore the entire range of possible responses\footnote{Not sure about this..} of biological communities to habitat loss.
-
-For the default parameter values (see table \ref{tab:whereis}) zero IR results in the inevitable extinction of all non-plant species, in our simulated communities. We will refer to this scenario as \emph{community collapse}. Even for pristine habitats ($0\%$ HL) we do not see stable and persistent communities without some non-zero IR (some increase in persistence with MAI ratio - see chapter \ref{ch:whereis}). This result is demonstrated in chapter \ref{ch:stability}, where we explore factors contributing to stability. For now we accept the general result that, with the default parameters, zero IR results in community collapse \footnote{weaken this statement, parameter dependent, or at least refer forwards again to next chapter}. In this chapter we are interested in the regime between these two extremes of zero IR, where we see many extinctions even at $0\% HL$, and high IR where we see no extinctions even at $90\% HL$. We are particularly interested in finding IRs for which communities are stable at low levels of HL, but where collapse is initiated as HL is increased. This is a scenario that we see in real-world communities. We are also interested in how community composition and stability vary with HL and IR, and how this is mediated by MAI ratio. (And interaction strength distributions.)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-Further work:
-\begin{itemize}
-	\item Explicitly tests different network properties and how they affect stability 
-	\item Extent the use if rewiring algorithm - is it realistic.
-\end{itemize}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
-Points to read up on for viva!
-
-\begin{itemize}
-	\item All analysis methods and metrics, but in particular:
-	\begin{enumerate}
-		\item Lognormal and power law dists. \cite{mcgill2007species}
-		\item Review stability concepts \cite{donohue2013dimensionality}
-	\end{enumerate}		
-	
-	\item Why we do not conduct a proper study of structure-versus-stability (e.g. in persistence chapter) - beyond scope..
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
-Corrections they are likely to ask for:
-
-\begin{itemize}
-	\item More network properties in chapter 5 - prepare a justification for why we didn't include more\footnote{Dani says: Given that extinctions occur and that community size affects certain network properties, it would have been great to look at all properties. I assume they are not included due to time constraints to finish the thesis. However, in the viva they might ask you about it. I would argue that you wanted to focus more on diversity, stability and the network properties that significantly changed in chapter 3. But i would not be surprised if the referees ask you to include them for thesis corrections}.
-	\item More species ODEs (>2) to fit GLV to in chapter 6..
-	\item Why do you not trasnform the ODEs to make the non-dimensional?
-	\item Averaged RADs in chapter 5. Could produce these quite quickly?
-	\item How would you model direct competition in the IBM?
-	\item Why do we not compare our method directly to Ives or Mutshinda?Read up on their methods!
-\end{itemize}
+%\newpage
+%\section{Ideas for conclusion}
+%\label{sec:conc_ideas}
+%
+%
+%
+% regarding habitat loss, and the inference of species interactions, were previoulsy summarised and discussed in sections  respectively. In this section we reiterate the main findings
+% 
+% were previously summarised and discussed in section \ref{sec:}, and those regarding 
+%
+%We have shown that a flat immigration rate produces evenness, and serves to counter the forces of mutualism and competition (trophic interactions?) which act against diversity.
+%
+%\begin{itemize}
+%	\item Sensitivity analysis: latin hypercube
+%	\item SEM modelling
+%	\item Use of empricial networks, or an alternative network generation method
+%	
+%	\item Departure from our results in natural communities (what might be different?) - immigration mechanism. Functional response. The way animals move!
+%	
+%	\item Other way to construct networks: Each non-overlapping pairs? Thilos GM? Stability issues? (may refer to in chapter 4 also?)
+%\end{itemize}
+%
+%Area verus stability result form Barro Island!..
+%
+%Is there evidence for competition in GLV fitting??
+%
+%We only use two types of habitat - pristine or destoyred...
+%Comment on which type of HL is most realistic, Dani says: If we look at the size of the simulated biological communities (60 species) and the simulated 'world' (max of 80000 individuals at any time), it is reasonable to think that we our model approaches more fairly a regional scale, and therefore contiguous! habitat loss is more realistic.
+%
+%Chapter 6 and 4 suggest strong competition effects - these have not been focused on. BUt further work should look to undestand their role. Also is it only imigration in nature that mitigates competitive exclusion, or are there local mechanisms which allow local coexistence?
+%
+%The AFM method in http://pages.uoregon.edu/bohannanlab/pubs/Sandviketal04.pdf, can be used to detect signatures of pairwise competition between species. Although we do not prusue this it could be informative given that we believe competition plays an important role in the model..
+%
+%We did not put effort into searching the space of niche model topologies for stable configurations because of the combinatorially large number of possible networks. Such an exhaustive search would not be efficient given the computationally expensive nature of individual based modelling.  
+%
+%Note that structure (of web) is important - not efficient way to look for stable nets - but this method could be used to test hypotheses about stable architectures, test empirical webs, test other network generation procedures..(link this to discussion on niche model and its failings in final conclusion)
+%
+%
+%
+%In nature habitat tends to be destroyed in a spatially-autocorrelated manner - for example urban development, agriculture and logging all occur in concentrations rather than being distributed totally at random throughout space. Therefore the result of human activity is often a patchy and fragmented landscape [REFS]\footnote{Reference in word final sent by Dani - email with correction to chapter 3.}. 
+%\footnote{Human activity is often patchy (page 30 of your document)
+%
+%Seabloom et al (2002): Spatially aggregated loss dramatically increased the predicted rate of species loss. It is also likely, that the effects of aggregation are more general than the effects of local richness. Given that humans have clear preferences for certain habitats (30), it is likely that human activity will often be spatially aggregated. 
+%
+%Alados et al (Ecol Model XXXX): Evidence suggests that landscape disturbances are seldom randomly distributed; rather, they operate in a self-organized manner (Bak and Chan, 1991) or are subjected to multi-scaled randomness}
+%
+%\cite{hanski2013species} SAR updated to account for habitat fragmentation i.e. habitat loss that is not contgiuous. Veyr relevant for discussion somewhere.
+%
+%
+%A (meta-community) model of particular interest is due to Loreua et al. \emph{loreau1999immigration} where they find that stable competitive communities always persists under the influence of a `propgaule rain' (immigration), but that most species go extinct when immigration is removed.
+%
+%\cite{mouquet2004immigration} : total biomass does not depened on immigration rate!!
+%
+%%%%
+%Some of this (originally from chapter 5) may be useful in discussing what our simulated communities represent (open closed etc):
+%In chapter \ref{whereis} we saw that no species go extinct, even at extreme levels of habitat destruction ($HL=90\%$), when using the default parameter set (see table \ref{tab:parameters}). Motivated by \cite{tylianakis2007habitat}, this allowed us to explore community responses to habitat loss that are not associated with, or may preceed, the loss of species. The lack of extinctions produced by the model were shown to be due to a resuce effect from immigration. Even species which go locally extinct from the landscape may be replaced by this immigraiton.    
+%
+%The simulations presented so far represent \emph{open} communities with a strong influx of individuals belonging to all species.
+%
+%the default immigration rate (IR), as given in the default parameter values  is relatively high, corresponding to an open community. In particular, at the IR, we expect no extinction of species
+%
+%This behaviour  (control for species richness). However for such a heavily impacted community to not exhibit local extinctions would be unusual in nature [REF]. This may be considered an edge case - an open ecosystem with a strong influx of individuals from all species. Although the local habitat may be very close to total destruction the community is sustained by strong immigration from surrounding habitats. In reality such a strong and uniform rescue effect from immigration is unlikely due to spatial auto-correlation, differential dispersal rates and other effects (see discussion in section \ref{sec:whereis}[references - York pollinator study]).
+%
+%The study of our simulated communities under contiguous HL represents the study of communities in single such fragment, with immigration from an external source. In reality we know that such fragments support a lower richness of species, beyond a certain size. In this chapter we saw that a high immigration rate prevented a loss of species richness. In the next chapter we begin to look at how communities respond to changes in the immigration rate.
+%
+%
+%In agreement with \cite{spiesman2013habitat} we found that species abundance were the main driver of changes in network structure.
+%
+%Spatial compression generates stronger top-down trophic cascades and can cause high amplitude consumer-resource oscillations and instability!! from \cite{gonzalez2011disentangled}, but talking about McCann 2005.
+%
+%\begin{itemize}
+%	\item propagule rain
+%	\item Require a uniform species pool to be maintained (trad IBT -> continent), or hetegeneity at landscape level [REF]
+%\end{itemize}
+%
+%% more on what the different scenarios represent, or is that already discussed?
+%In this chapter we further investigate the impacts of habitat loss (HL)  on multi-species communities with different proportions of mutualistic and antagonistic interactions (MAI ratios). We now consider other realistic scenarios by varying the immigration rate parameter. At one extreme we have the above scenario of high immigration, where extinction is prevented. At the other extreme we have closed communities with zero immigration. In this case there is no rescue effect from surrounding habitats, and we may expect to see extinctions in response to habitat loss. Although a totally closed system does not exist in nature certain systems may come close to this ideal. For example an island community that is a sufficiently distant from other land (see discussion on Island bio-geography theory in section \ref{sec:whereis}) will have very low immigration rates, and systems that are effectively closed may be artificially achieved in controlled situations (e.g. laboratory mesocosm). Although extremely open and extremely closed systems are possible, most real-world communities lie within these two extremes. By changing immigration rates, the approach followed here allow us to explore the entire range of possible responses\footnote{Not sure about this..} of biological communities to habitat loss.
+%
+%For the default parameter values (see table \ref{tab:whereis}) zero IR results in the inevitable extinction of all non-plant species, in our simulated communities. We will refer to this scenario as \emph{community collapse}. Even for pristine habitats ($0\%$ HL) we do not see stable and persistent communities without some non-zero IR (some increase in persistence with MAI ratio - see chapter \ref{ch:whereis}). This result is demonstrated in chapter \ref{ch:stability}, where we explore factors contributing to stability. For now we accept the general result that, with the default parameters, zero IR results in community collapse \footnote{weaken this statement, parameter dependent, or at least refer forwards again to next chapter}. In this chapter we are interested in the regime between these two extremes of zero IR, where we see many extinctions even at $0\% HL$, and high IR where we see no extinctions even at $90\% HL$. We are particularly interested in finding IRs for which communities are stable at low levels of HL, but where collapse is initiated as HL is increased. This is a scenario that we see in real-world communities. We are also interested in how community composition and stability vary with HL and IR, and how this is mediated by MAI ratio. (And interaction strength distributions.)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%Further work:
+%\begin{itemize}
+%	\item Explicitly tests different network properties and how they affect stability 
+%	\item Extent the use if rewiring algorithm - is it realistic.
+%\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%
+%Points to read up on for viva!
+%
+%\begin{itemize}
+%	\item All analysis methods and metrics, but in particular:
+%	\begin{enumerate}
+%		\item Lognormal and power law dists. \cite{mcgill2007species}
+%		\item Review stability concepts \cite{donohue2013dimensionality}
+%	\end{enumerate}		
+%	
+%	\item Why we do not conduct a proper study of structure-versus-stability (e.g. in persistence chapter) - beyond scope..
+%\end{itemize}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%
+%Corrections they are likely to ask for:
+%
+%\begin{itemize}
+%	\item More network properties in chapter 5 - prepare a justification for why we didn't include more\footnote{Dani says: Given that extinctions occur and that community size affects certain network properties, it would have been great to look at all properties. I assume they are not included due to time constraints to finish the thesis. However, in the viva they might ask you about it. I would argue that you wanted to focus more on diversity, stability and the network properties that significantly changed in chapter 3. But i would not be surprised if the referees ask you to include them for thesis corrections}.
+%	\item More species ODEs (>2) to fit GLV to in chapter 6..
+%	\item Why do you not trasnform the ODEs to make the non-dimensional?
+%	\item Averaged RADs in chapter 5. Could produce these quite quickly?
+%	\item How would you model direct competition in the IBM?
+%	\item Why do we not compare our method directly to Ives or Mutshinda?Read up on their methods!
+%\end{itemize}

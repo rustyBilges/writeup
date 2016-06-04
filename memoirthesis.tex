@@ -5,7 +5,7 @@
 \usepackage{mathtools}
 \mathtoolsset{showonlyrefs=true}
 \usepackage{relsize}
-%\usepackage{cleveref}
+	%\usepackage{cleveref}
 %\usepackage{autonum}
 %
 %
@@ -37,11 +37,11 @@
 \input{frontmatter/abstract}
 \clearemptydoublepage
 %%
-%\input{frontmatter/dedication}
-%\clearemptydoublepage
+\input{frontmatter/dedication}
+\clearemptydoublepage
 %%
-%\input{frontmatter/declaration}
-%\clearemptydoublepage
+\input{frontmatter/declaration}
+\clearemptydoublepage
 %%
 \renewcommand{\contentsname}{Table of Contents}
 \maxtocdepth{subsubsection}
@@ -49,13 +49,13 @@
 \addtocontents{toc}{\par\nobreak \mbox{}\hfill{\textbf{Page}}\par\nobreak}
 \clearemptydoublepage
 %%
-%\listoftables
-%\addtocontents{lot}{\par\nobreak\textbf{{\scshape Table}} \hfill Page\par\nobreak}
-%\clearemptydoublepage
-%%
-%\listoffigures
-%\addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure}} \hfill Page\par\nobreak}
-%\clearemptydoublepage
+\listoftables
+\addtocontents{lot}{\par\nobreak\textbf{{\scshape Table}} \hfill Page\par\nobreak}
+\clearemptydoublepage
+%%%
+\listoffigures
+\addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure}} \hfill Page\par\nobreak}
+\clearemptydoublepage
 %%
 %%
 %% The bulk of the document is delegated to these chapter files in
@@ -64,19 +64,19 @@
 %%
 \import{chapters/chapter01/}{chap01.tex}
 \clearemptydoublepage
-%
+
 %\setcounter{chapter}{+1}
 \import{chapters/chapter02/}{chap02.tex}
 \clearemptydoublepage
-%
-%%\setcounter{chapter}{+2}
+
+%\setcounter{chapter}{+2}
 \import{chapters/chapter03/}{chap03.tex}
 \clearemptydoublepage
-%
+%%
 \import{chapters/chapter13/}{chap13.tex}
 \clearemptydoublepage
-%%%%
-%%\setcounter{chapter}{+4}
+%%%%%
+%%%\setcounter{chapter}{+4}
 \import{chapters/chapter04/}{chap04.tex}
 \clearemptydoublepage
 
@@ -89,7 +89,7 @@
 %\setcounter{chapter}{+5}
 \import{chapters/chapter06/}{chap06.tex}
 \clearemptydoublepage
-
+%%
 \import{chapters/chapter07/}{chap07.tex}
 %
 %

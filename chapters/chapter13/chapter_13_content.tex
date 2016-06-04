@@ -28,7 +28,7 @@ In the chapter \ref{chap:habitat_loss_high_immigration} we analysed in detail ho
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{"figures/persistence/hist_species_per_tl_zeroIR"}
-	\caption{\textbf{Fractional persistence} by trophic level for three different MAI ratios, with \textbf{zero immigration} (IR=0). All other parameters set to default values. Fractional persistence measured by the fraction of speices intially belonging to a trophic level which have not gone extinct by the end of a simulation (5000 time steps). Solid bars give the mean value over 22 repeat simulations. Error bars show $\pm 1$ standard deviation.}
+	\caption[Fractional persistence at zero IR.]{\textbf{Fractional persistence} by trophic level for three different MAI ratios, with \textbf{zero immigration} (IR=0). All other parameters set to default values. Fractional persistence measured by the fraction of speices intially belonging to a trophic level which have not gone extinct by the end of a simulation (5000 time steps). Solid bars give the mean value over 22 repeat simulations. Error bars show $\pm 1$ standard deviation.}
 	\label{fig:mvp_hist_zeroIR}
 \end{figure}
 
@@ -58,7 +58,7 @@ In \cite{lurgi2015effects} it was shown that increasing the levels of mutualism 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{"figures/persistence/mean_trophic_dynamics"}
-	\caption{\textbf{Mean dynamics by functional group} for four different MAI ratios (A-D), without immigration. Lines given by number of individuals belonging to a functional group, averaged over 22 simulations. Colours indicate functional group (see legend).}
+	\caption[Dynamics at zero IR for different MAI ratios.]{\textbf{Mean dynamics by functional group} for four different MAI ratios (A-D), without immigration. Lines given by number of individuals belonging to a functional group, averaged over 22 simulations. Colours indicate functional group (see legend).}
 	\label{fig:mvp_mean_dynamics}
 \end{figure}
 
@@ -79,7 +79,7 @@ Figure \ref{fig:mvp_species_per_tl} shows the number of persistent species by tr
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{"figures/persistence/species_richness_per_trophic_level"}
-	\caption{\textbf{Number of persistent species} plotted against MAI ratio, for each trophic level (A-D). Blue circles give number of persistent species, for a single simulation, on the 5000$^{th}$ time step. 22 repeat simulations at each MAI ratio. Red lines show linear regression fits, with slope and p-value of fit given.}
+	\caption[Number of persistent species versus MAI ratio.]{\textbf{Number of persistent species} plotted against MAI ratio, for each trophic level (A-D). Blue circles give number of persistent species, for a single simulation, on the 5000$^{th}$ time step. 22 repeat simulations at each MAI ratio. Red lines show linear regression fits, with slope and p-value of fit given.}
 	\label{fig:mvp_species_per_tl}
 \end{figure}
 
@@ -103,7 +103,7 @@ Figure \ref{fig:mvp_species_per_tl} shows the number of persistent species by tr
 	%\caption{The mean initial number of species belogning to each functional gropup.}
 	%\label{fig:trophic_dynamics_example}
 	\subbottom[\textbf{ MAI ratio = 0.5}]{\includegraphics[width=0.49\linewidth]{"figures/persistence/rr_hist_species_per_tl_mai05"}}
-	\caption{\textbf{Fractional persistence} by trophic level for three different reproduction rates (RR), at two MAI ratios (A-B). Fractional persistence measured by the fraction of species initially belonging to a trophic level which have not gone extinct by the end of a simulation (5000 time steps). Solid bars give mean value over 22 repeat simulations. Error bars show $\pm 1$ standard deviation.}
+	\caption[Fractional persistence by trophic level, for different reproduction rates.]{\textbf{Fractional persistence} by trophic level for three different reproduction rates (RR), at two MAI ratios (A-B). Fractional persistence measured by the fraction of species initially belonging to a trophic level which have not gone extinct by the end of a simulation (5000 time steps). Solid bars give mean value over 22 repeat simulations. Error bars show $\pm 1$ standard deviation.}
 	\label{fig:rr_histograms}
 \end{figure}
 
@@ -176,7 +176,7 @@ Increasing the RR improves the fractional persistence of all trophic levels, as 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{"figures/persistence/rr_mean_trophic_dynamics_mai00"}
-	\caption{\textbf{Mean dynamics by functional group} for four different reproduction rates (A-D), at \textbf{MAI=0}. Lines given by number of individuals belonging to a functional group, averaged over 22 simulations. Colours indicate functional group (see legend).}
+	\caption[Dynamics at zero IR for different reproduction rates.]{\textbf{Mean dynamics by functional group} for four different reproduction rates (A-D), at \textbf{MAI=0}. Lines given by number of individuals belonging to a functional group, averaged over 22 simulations. Colours indicate functional group (see legend).}
 	\label{fig:rr_mean_troph_dynamics_mai0}
 \end{figure}
 
@@ -185,7 +185,7 @@ Increasing the RR improves the fractional persistence of all trophic levels, as 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{"figures/persistence/rr_mean_trophic_dynamics_mai05"}
-	\caption{\textbf{Mean dynamics by functional group} for four different reproduction rates (A-D), at \textbf{MAI=0.5}. Lines given by number of individuals belonging to a functional group, averaged over 22 simulations. Colours indicate functional group (see legend).}
+	\caption[Dynamics at zero IR for different reproduction rates, MAI=0.5.]{\textbf{Mean dynamics by functional group} for four different reproduction rates (A-D), at \textbf{MAI=0.5}. Lines given by number of individuals belonging to a functional group, averaged over 22 simulations. Colours indicate functional group (see legend).}
 	\label{fig:rr_mean_troph_dynamics_mai05}
 \end{figure}
 
@@ -216,7 +216,7 @@ Increasing the RR improves the fractional persistence of all trophic levels, as 
 	%\caption{The mean initial number of species belogning to each functional gropup.}
 	%\label{fig:trophic_dynamics_example}
 	\subbottom[\textbf{ MAI=0.5}]{\includegraphics[width=0.49\linewidth]{"figures/persistence/ls_v_comp_mai05_standard"}}
-	\caption{\textbf{Landscape size} against species persistence (on 5000$^{th}$ time step), for two MAI ratios (A,B). Total persistence, and persistence by trophic level. Points show mean value over 25 replicates. Error bars show $\pm 1$ standard deviation.}
+	\caption[Landscape size versus persistence.]{\textbf{Landscape size} against species persistence (on 5000$^{th}$ time step), for two MAI ratios (A,B). Total persistence, and persistence by trophic level. Points show mean value over 25 replicates. Error bars show $\pm 1$ standard deviation.}
 	\label{fig:ls_v_comp}
 \end{figure}
 
@@ -244,7 +244,7 @@ Figures \ref{fig:nsp_v_comp_mai00} and \ref{fig:nsp_v_comp_mai05} show how the n
 	%\caption{The mean initial number of species belogning to each functional gropup.}
 	%\label{fig:trophic_dynamics_example}
 	\subbottom[\textbf{Re-wired networks}]{\includegraphics[width=0.49\linewidth]{"figures/persistence/nsp_v_comp_mai00_rewired"}}
-	\caption{\textbf{Number of initial species} against species persistence at \textbf{MAI=0}, for two types of initial network: (A) Interaction network generated using standard niche model, and (B) generated using re-rewired niche model topology (see text). Total persistence, and persistence by trophic level. Points show mean value over 25 replicates. Error bars show $\pm 1$ standard deviation.}
+	\caption[Number of initial species versus persistence.]{\textbf{Number of initial species} against species persistence at \textbf{MAI=0}, for two types of initial network: (A) Interaction network generated using standard niche model, and (B) generated using re-rewired niche model topology (see text). Total persistence, and persistence by trophic level. Points show mean value over 25 replicates. Error bars show $\pm 1$ standard deviation.}
 	\label{fig:nsp_v_comp_mai00}
 \end{figure}
 %% Plotted on uni comp. Script at: python_analysis_scripts/persistence_ch05/number_of_species
@@ -257,7 +257,7 @@ Figures \ref{fig:nsp_v_comp_mai00} and \ref{fig:nsp_v_comp_mai05} show how the n
 	%\caption{The mean initial number of species belogning to each functional gropup.}
 	%\label{fig:trophic_dynamics_example}
 	\subbottom[\textbf{Re-wired networks}]{\includegraphics[width=0.49\linewidth]{"figures/persistence/nsp_v_comp_mai05_rewired"}}
-	\caption{Similar to figure \ref{fig:nsp_v_comp_mai00}, but with \textbf{MAI=0.5}.}
+	\caption[Number of initial species versus persistence, MAI=0.5.]{Similar to figure \ref{fig:nsp_v_comp_mai00}, but with \textbf{MAI=0.5}.}
 	\label{fig:nsp_v_comp_mai05}
 \end{figure}
 
@@ -293,14 +293,14 @@ However we find that they have very different and repeatable persistence propert
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/persistence/net_struct/good_network_page}}}
-	\caption{Example of a \textbf{`good network structure'.} Colours represent trophic level. (A) Antagonistic network of 120 species, rewired from the niche model (see text), used as input for simulations. (B) Example of `pruned' network consisting of the species that persist after 5000 time steps. (C) Mean number of species belonging to each trophic level in the pruned network, averaged over 100 replicate simulations (all using A as the initial network).}
+	\caption[Network structure with high persistence.]{Example of a \textbf{`good network structure'.} Colours represent trophic level. (A) Antagonistic network of 120 species, rewired from the niche model (see text), used as input for simulations. (B) Example of `pruned' network consisting of the species that persist after 5000 time steps. (C) Mean number of species belonging to each trophic level in the pruned network, averaged over 100 replicate simulations (all using A as the initial network).}
 	\label{fig:good_net_example}
 \end{figure}
 %% Plotted with script in: prunning_for_stability/bc3_results/network_structure_vs_persistence
 \begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{{{figures/persistence/net_struct/bad_network_page}}}
-	\caption{Example of a \textbf{`bad network structure'.} Similar to figure \ref{fig:good_net_example}, but with a different initial network of 120 species used as input for the simulations.}
+	\caption[Network structure with low persistence.]{Example of a \textbf{`bad network structure'.} Similar to figure \ref{fig:good_net_example}, but with a different initial network of 120 species used as input for the simulations.}
 	\label{fig:bad_net_example}
 \end{figure}
 %
@@ -399,7 +399,7 @@ We demonstrated in section \ref{sec:netstruct_v_p} that network structure \emph{
 \begin{figure}
 	\centering
 	\includegraphics[width=0.8\textwidth]{"figures/stationarity/cov_vs_ir"}
-	\caption{\textbf{Temporal variability} against immigration rate (IR). Variability calculated as $mean\_CV$ (defined in section \ref{sec:def_stability_metrics}). Points show mean value over 50 repeat simulations. Error bars show $\pm 1$ standard deviation. $HL=0$, all other parameters take \emph{default values}.}
+	\caption[Temporal variability versus immigration rate.]{\textbf{Temporal variability} against immigration rate (IR). Variability calculated as $mean\_CV$ (defined in section \ref{sec:def_stability_metrics}). Points show mean value over 50 repeat simulations. Error bars show $\pm 1$ standard deviation. $HL=0$, all other parameters take \emph{default values}.}
 	\label{fig:cov_vs_ir}
 \end{figure}
 
@@ -449,7 +449,7 @@ In our case the data generator is the IBM model and there are several possible c
 
 We compare three different tests of stationarity: the Kwiatkowski-Phillips-Schmidt-Shin (KPSS) \cite{kwiatkowski1992testing}; the Augmented Dickey-Fuller (ADF) \cite{said1984testing}; and the the Priestley-Subba Rao (PSR) \cite{priestley1969test} tests. These tests were chosen for their popularity in the time series literature. All three are implemented in the programming language \emph{R} \cite{Rlanguage}. The KPSS and ADF are provided in the \emph{tseries} package, and the PSR is in the \emph{fractal} package. All three tests are applicable to univariate time series.
 
-The ADF test has a null hypothesis (H0) that the time series is non-stationary. The test models the data as an auto-regressive process (see section \ref{sec:stationarity_discussion}), and the null hypothesis is that this process has a \emph{unit root}. The test produces a statistic that is negative. The greater the magnitude of the test statistic the more evidence there is to reject H0 in favour of stationarity.
+The ADF test has a null hypothesis (H0) that the time series is non-stationary. The test models the data as an auto-regressive process, and the null hypothesis is that this process has a \emph{unit root}. The test produces a statistic that is negative. The greater the magnitude of the test statistic the more evidence there is to reject H0 in favour of stationarity.
 
 The KPSS test complements the ADF test in that the null hypothesis is stationarity. The data is modelled as the sum of a random-walk and an error component, and tests the hypothesis that the variance of the random walk is zero. The test statistic is always positive, and the greater its magnitude the more evidence there is to reject H0 in favour of non-stationarity.
 
@@ -477,7 +477,7 @@ where $Z_i$ are independent random variables that may take a value of either $-1
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.8\linewidth]{{{figures/stationarity/hi_rw_ns_dynamics}}}
-     \caption{The three time series used to characterise the performance of the stationarity tests (see text for details of how they are generated). The initial 1000 points are removed such that all are 49,000 points long. \textbf{(A) HI}: total abundance dynamics of a simulation with high immigration rate; \textbf{(B) RW}: a random walk without drift; and \textbf{(C) NS}: a series generated by independent sampling from a normal distribution.} 
+     \caption[Control dynamics for testing stationarity metrics.]{The three time series used to characterise the performance of the stationarity tests (see text for details of how they are generated). The initial 1000 points are removed such that all are 49,000 points long. \textbf{(A) HI}: total abundance dynamics of a simulation with high immigration rate; \textbf{(B) RW}: a random walk without drift; and \textbf{(C) NS}: a series generated by independent sampling from a normal distribution.} 
      \label{fig:adf}   
 \end{figure}
 
@@ -493,14 +493,14 @@ HI & -15.401                      & {\color[HTML]{333333} \textless0.01} & -    
 RW & -4.0386                      & {\color[HTML]{333333} \textless0.01} & -                            & \cellcolor[HTML]{9AFF99}0.9929773 & 18.7453                      & \textless0.01                           \\ \hline
 NS & -37.5348                     & {\color[HTML]{333333} \textless0.01} & -                            & \cellcolor[HTML]{9AFF99}0.811097  & 0.0466                       & \cellcolor[HTML]{9AFF99}\textgreater0.1 \\ \hline
 \end{tabular}
-\caption{Results of applying the three stationarity tests to the three time series shown in figure \ref{fig:adf}. P-values that indicate evidence for stationarity at $95\%$ confidence are highlighted in green. The test statistics are also given for the ADF and KPSS tests.}
+\caption[Testing stationarity metrics.]{Results of applying the three stationarity tests to the three time series shown in figure \ref{fig:adf}. P-values that indicate evidence for stationarity at $95\%$ confidence are highlighted in green. The test statistics are also given for the ADF and KPSS tests.}
 \label{tab:adf_psr_kpss_whole}
 \end{table}
 
 Initially we apply the three stationarity tests to the entire length of the time series. The results are shown in table \ref{tab:adf_psr_kpss_whole}. ADF finds significant evidence that all three series are stationary, at $99\%$ confidence. We may be suspicious of this result since we know that RW is generated by a non-stationary process.  However RW is a particular instance of a random walk, chosen from several thousand to closely match the mean and variance of HI. Therefore this random walk is likely to appear more stationary than others in the ensemble generated. The test statistic for ADF indicates that there is most evidence for NS to be stationary, followed by HI, then RW.
   The KPSS test ranks the series in the same order, based on the magnitude of the test statistic. According to this test NS is clearly stationary (accept H0), and RW is clearly non-stationary (reject h0 at $99\%$ confidence), whilst HI is borderline. For HI we would accept the null-hypothesis of stationarity at $95\%$ confidence, but reject it at $99\%$. 
 
-The PSR test gives unexpected results. It concludes that RW and NS are both stationary, whilst HI is non-stationary with a high degree of confidence (p-value$<0.001$). In fact, according to PSR, RW is more likely to be stationary than NS. This result contradicts what we know about the data generators that produced the time series. Therefore we do not use this test in the analysis that follows. Nevertheless the apparently erroneous result may contain interesting information about the HI series and the process that generated it (see the discussion in section \ref{sec:stationarity_discussion}). 
+The PSR test gives unexpected results. It concludes that RW and NS are both stationary, whilst HI is non-stationary with a high degree of confidence (p-value$<0.001$). In fact, according to PSR, RW is more likely to be stationary than NS. This result contradicts what we know about the data generators that produced the time series. Therefore we do not use this test in the analysis that follows. Nevertheless the apparently erroneous result may contain interesting information about the HI series and the process that generated it. 
 
 
 %% WUOLD BE NICE BUT ANALYSIS NEEDS RE-DOING...
@@ -516,7 +516,7 @@ The PSR test gives unexpected results. It concludes that RW and NS are both stat
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.80\linewidth]{{{figures/stationarity/Rtests/stat_tests_v_wl}}}
-     \caption{Two tests for stationarity applied to samples of varying size (window length). Samples are taken from the three time series (HI,RW,NS) shown in figure \ref{fig:adf}. All three time series contain 49,000 points. Sample windows begin at the first point and increase in length from 1000 to 49,000 points. Minimum p-value plotted is 0.01, actual values may be lower. (A) ADF test, with p-values capped at 0.20. The 95th and 99th percentile shaded yellow and green respectively, indicate significant evidence for stationarity. (B) KPSS test, with p-values capped at 0.1. The 95th and 99th percentile shaded orange and red respectively, indicate significant evidence for non-stationarity.} 
+     \caption[Testing stationarity metrics: sample length.]{Two tests for stationarity applied to samples of varying size (window length). Samples are taken from the three time series (HI,RW,NS) shown in figure \ref{fig:adf}. All three time series contain 49,000 points. Sample windows begin at the first point and increase in length from 1000 to 49,000 points. Minimum p-value plotted is 0.01, actual values may be lower. (A) ADF test, with p-values capped at 0.20. The 95th and 99th percentile shaded yellow and green respectively, indicate significant evidence for stationarity. (B) KPSS test, with p-values capped at 0.1. The 95th and 99th percentile shaded orange and red respectively, indicate significant evidence for non-stationarity.} 
      \label{fig:stat_tests_v_wl}   
 \end{figure}
 
@@ -539,7 +539,7 @@ We consider the possibility that the method of sampling from the time series aff
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{{{figures/stationarity/hi_trophic_dynamics}}}
-     \caption{Population dynamics from HI ($Ir=0.001$) simulation: total number of individuals, and by trophic level. (A) First 10,000 time steps of simulation run (total = 50,000 time steps). (B) Enlargement of first 1000 tim steps, showing transience.} 
+     \caption[IBM dynamics at IR=0.001.]{Population dynamics from HI ($IR=0.001$) simulation: total number of individuals, and by trophic level. (A) First 10,000 time steps of simulation run (total = 50,000 time steps). (B) Enlargement of first 1000 tim steps, showing transience.} 
      \label{fig:hi_trophic_dynamics}   
 \end{figure}
 
@@ -554,7 +554,7 @@ The dynamics of the HI simulation are aggregated by trophic level to create four
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{{{figures/stationarity/Rtests/tl_stat_tests_v_wl}}}
-     \caption{Similar to figure \ref{fig:stat_tests_v_wl}, but here the tests are applied separately to each trophic level of the HI simulation shown in figure \ref{fig:hi_trophic_dynamics}.} 
+     \caption[Stationarity by trophic level at high immigration.]{Similar to figure \ref{fig:stat_tests_v_wl}, but here the tests are applied separately to each trophic level of the HI simulation shown in figure \ref{fig:hi_trophic_dynamics}.} 
      \label{fig:tl_stat_tests_v_wl}   
 \end{figure}
 
@@ -564,7 +564,7 @@ The dynamics of all the species belonging to each trophic level are plotted in f
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{{{figures/stationarity/hi_sp_by_tl_part10000}}}
-    \caption{Dynamics of all species in the first 10,000 time steps of the HI simulation shown in figure \ref{fig:hi_trophic_dynamics}. Each colour represents of different species, each panel (A-D) shows a different trophic level (TL$1-4$).}    
+    \caption[Species dynamics at high IR, by trophic level.]{Dynamics of all species in the first 10,000 time steps of the HI simulation shown in figure \ref{fig:hi_trophic_dynamics}. Each colour represents of different species, each panel (A-D) shows a different trophic level (TL$1-4$).}    
     \label{fig:dynamics_by_species}
 \end{figure}
 
@@ -584,7 +584,7 @@ In general we conclude that the choice of metric used to generate the time serie
 	\centering
 	\subbottom[Three most abundant species]{\includegraphics[width=0.8\linewidth]{{{figures/stationarity/Rtests/sp_ma_stat_tests_v_wl}}}}
 		\subbottom[Three least abundant species]{\includegraphics[width=0.8\linewidth]{{{figures/stationarity/Rtests/sp_la_stat_tests_v_wl}}}}
-     \caption{Similar to figure \ref{fig:stat_tests_v_wl}, but here the tests are applied separately to individual species from the HI simulation shown in figure \ref{fig:hi_trophic_dynamics}. (A) The three species with highest long-term average abundance. (B) The three species with lowest long-term average abundance.} 
+     \caption[Stationarity of high and low abundance species.]{Similar to figure \ref{fig:stat_tests_v_wl}, but here the tests are applied separately to individual species from the HI simulation shown in figure \ref{fig:hi_trophic_dynamics}. (A) The three species with highest long-term average abundance. (B) The three species with lowest long-term average abundance.} 
      \label{fig:sp_stat_tests_v_wl}   
 \end{figure}
 
@@ -607,17 +607,17 @@ On average we see that the LI ensemble is less stationary than the HI ensemble. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\linewidth]{{{figures/stationarity/hi_v_li_net7_ensemble}}}
-    \caption{The number of stationary species (NSSP) according to the two stationarity tests (ADF and KPSS) at the $95\%$ confidence level. Results averaged over three different ensembles of simulations: HI; NM1 (high immigration) and LI as described in the text. The first two are high immigration ensembles, whilst the latter is low immigration. Solid lines indicate mean results for the ensemble. Error bars indicate $\pm 1$ standard deviation. (A) Each species abundance time series is sampled with a window of increasing length, as in figure \ref{fig:sp_stat_tests_v_wl}. (B) Each species time series is sampled with a window of length 3000 time steps, which is scanned along the series to check for changes in stationarity over time.}    
+    \caption[Average number of stationary species for a single network.]{The number of stationary species (NSSP) according to the two stationarity tests (ADF and KPSS) at the $95\%$ confidence level. Results averaged over three different ensembles of simulations: HI; NM1 (high immigration) and LI as described in the text. The first two are high immigration ensembles, whilst the latter is low immigration. Solid lines indicate mean results for the ensemble. Error bars indicate $\pm 1$ standard deviation. (A) Each species abundance time series is sampled with a window of increasing length, as in figure \ref{fig:sp_stat_tests_v_wl}. (B) Each species time series is sampled with a window of length 3000 time steps, which is scanned along the series to check for changes in stationarity over time.}    
     \label{fig:hi_v_li_net7_ensemble}
 \end{figure}
 
 
-\paragraph*{In chapter \ref{chap:varrying_immigration_rate} we will} explore a slice of the IBM parameter space by varying both immigration rate and habitat loss. Here we study the stationarity of the simulations that we will use in that chapter. All simulations are 5000 time steps long. The initial 1000 time steps are discarded and the ADF and KPSS tests applied, species by species, to the remaining 4000. Figure \ref{fig:nssp_ir_v_hl} shows the average NSSP across the region of parameter space investigated, for three MAI ratios (MAI$=0.0,0.5,1.0$). The results are qualitatively the same for both tests, although NSSP is higher for ADF than for KPSS as expected. On average reducing IR reduces the NSSP. A weaker, but still visible, effect is that increasing HL reduces the NSSP. Most striking is the effect of MAI ratio on stationarity. The average NSSP is greater across the whole parameter region at MAI$=0.0$ than at MAI$=1.0$, with MAI=$0.5$ in between the two. Increasing mutualism also appears to reduce the dependence of NSSP on IR.  Figure \ref{fig:nssp_v_ir_and_hl} summarises these trends using cross sections taken from the ADF heat maps (panels A,C,E) in figure \ref{fig:nssp_ir_v_hl}, with error bars added. It is clear that there is high variability across replicate simulations, and this variability appears to be greatest for high mutualism (MAI=$1.0$).
+\paragraph*{In chapter \ref{chap:varying_immigration_rate} we will} explore a slice of the IBM parameter space by varying both immigration rate and habitat loss. Here we study the stationarity of the simulations that we will use in that chapter. All simulations are 5000 time steps long. The initial 1000 time steps are discarded and the ADF and KPSS tests applied, species by species, to the remaining 4000. Figure \ref{fig:nssp_ir_v_hl} shows the average NSSP across the region of parameter space investigated, for three MAI ratios (MAI$=0.0,0.5,1.0$). The results are qualitatively the same for both tests, although NSSP is higher for ADF than for KPSS as expected. On average reducing IR reduces the NSSP. A weaker, but still visible, effect is that increasing HL reduces the NSSP. Most striking is the effect of MAI ratio on stationarity. The average NSSP is greater across the whole parameter region at MAI$=0.0$ than at MAI$=1.0$, with MAI=$0.5$ in between the two. Increasing mutualism also appears to reduce the dependence of NSSP on IR.  Figure \ref{fig:nssp_v_ir_and_hl} summarises these trends using cross sections taken from the ADF heat maps (panels A,C,E) in figure \ref{fig:nssp_ir_v_hl}, with error bars added. It is clear that there is high variability across replicate simulations, and this variability appears to be greatest for high mutualism (MAI=$1.0$).
 
 \begin{figure}[hp]
 	\centering
 	\includegraphics[width=1.0\linewidth]{{{figures/stationarity/nssp_ir_v_hl}}}
-    \caption{The average number of stationary species (NSSP) according to the two stationarity tests (ADF and KPSS) at the $95\%$ confidence level. Each cell on the grid represents the mean value over 50 repeat simulations. All simulations are 5000 time steps with default parameter values. Tests are applied to the final 4000 time steps of each species abundance time series. These correspond to the simulations presented in chapter \ref{chap:varrying_immigration_rate}.}
+    \caption[Average number of stationary species over a region of parameter space.]{The average number of stationary species (NSSP) according to the two stationarity tests (ADF and KPSS) at the $95\%$ confidence level. Each cell on the grid represents the mean value over 50 repeat simulations. All simulations are 5000 time steps with default parameter values. Tests are applied to the final 4000 time steps of each species abundance time series. These correspond to the simulations presented in chapter \ref{chap:varying_immigration_rate}.}
     \label{fig:nssp_ir_v_hl}
 \end{figure}
 
@@ -626,7 +626,7 @@ On average we see that the LI ensemble is less stationary than the HI ensemble. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{{{figures/stationarity/nssp_v_ir_and_hl}}}
-    \caption{The number of stationary species (NSSP) according to the ADF test at the $95\%$ confidence level. Points show mean value over 50 replicates. Error bars show $\pm 1$ standard deviation. Tests are performed on the same simulations depicted in figure \ref{fig:nssp_ir_v_hl}. (A) Plotted against immigration rate (IR), with zero habitat destruction. (B) Plotted against habitat destruction, with IR$=0.001$ (high immigration regime). }    
+    \caption[Average number of stationary species versus HL, and IR.]{The number of stationary species (NSSP) according to the ADF test at the $95\%$ confidence level. Points show mean value over 50 replicates. Error bars show $\pm 1$ standard deviation. Tests are performed on the same simulations depicted in figure \ref{fig:nssp_ir_v_hl}. (A) Plotted against immigration rate (IR), with zero habitat destruction. (B) Plotted against habitat destruction, with IR$=0.001$ (high immigration regime). }    
     \label{fig:nssp_v_ir_and_hl}
 \end{figure}
 
@@ -686,7 +686,7 @@ We calculate the $\%$DET for each simulation in the HI and LI ensemble. In each 
 \begin{figure}[hp!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{{{figures/stationarity/RP_high_low_shuffle_random}}}
-    \caption{\textbf{Recurrence plots} defined by equation \ref{eq:rm}. (A) High immigration simulation (IR=$0.001$). (B) Low immigration simulation (IR=$0.0001$). (C) Randomised recurrence matrix (permutation of the elements of the matrix in B). (D) Randomised time series (permutation of species population time series from B, such that mean and variance for each species are preserved). In simulations for both A and B: HL$=0$ and MAI$=0.0$; number of time steps$=50,000$; sampled every 50 time steps to construct plots.}    
+    \caption[Recurrence quantification plots for various time series.]{\textbf{Recurrence plots} defined by equation \ref{eq:rm}. (A) High immigration simulation (IR=$0.001$). (B) Low immigration simulation (IR=$0.0001$). (C) Randomised recurrence matrix (permutation of the elements of the matrix in B). (D) Randomised time series (permutation of species population time series from B, such that mean and variance for each species are preserved). In simulations for both A and B: HL$=0$ and MAI$=0.0$; number of time steps$=50,000$; sampled every 50 time steps to construct plots.}    
     \label{fig:rec_plot}
 \end{figure}
 
@@ -694,7 +694,7 @@ We calculate the $\%$DET for each simulation in the HI and LI ensemble. In each 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\textwidth]{{{figures/stationarity/percentage_determinism}}}
-    \caption{\textbf{Percentage determinism ($\%$DET)} defined by equation \eqref{eq:pd}. Value calculated for whole community, ten least and ten most abundant species, and for two randomised versions of the data (see text). For 100 repeat simulations at: (A) High immigration rate (IR=$0.001$); and (B) Low immigration rate (IR=$0.001$). In simulations for both A and B: HL$=0$ and MAI$=0.0$}    
+    \caption[Percentage determinism calculated from the IBM.]{\textbf{Percentage determinism ($\%$DET)} defined by equation \eqref{eq:pd}. Value calculated for whole community, ten least and ten most abundant species, and for two randomised versions of the data (see text). For 100 repeat simulations at: (A) High immigration rate (IR=$0.001$); and (B) Low immigration rate (IR=$0.001$). In simulations for both A and B: HL$=0$ and MAI$=0.0$}    
     \label{fig:percentage_detemrinism}
 \end{figure}
 
@@ -742,10 +742,10 @@ where $T$ is the number of time steps in the time series, and $x_{i,t}$ is the a
 
 Figure \ref{fig:regression_exmaple} shows three different estimators, $e1,e2,e3$, plotted against long-term average abundances for all the species in a community. $e1$ is the snapshot estimator, while $e2$ and $e3$ use sample lengths of $4000$ and $29,000$ respectively. Results are shown for two simulations, one with high IR (0.001) and one with low IR (0.0001). The line $y=x$ is shown on all plots, giving an intuition for estimator accuracy (since a perfect estimator would lie on this line for all species). Linear regression fits to the estimator values are also plotted, with the \emph{coefficients of determination} $R^2$ given. The better the estimator, the closer the value of $R^2$ is to one. In this way $R^2$ can be used as a measure of estimator quality over the community as a whole. The figure shows that, as expected, longer samples produce better estimates. The fits to $e2$ and $e3$ have higher $R^2$ than the fits to $e1$. In particular at low IR, where there is increased temporal variability, the performance of the snapshot estimator is poor ($R^2$ = 0.54 and 0.94 for $e1$ and $e2$).
 
- We define another metric for estimator quality, which we call \emph{mean relative error} MRE:
+We define another metric for estimator quality, which we call \emph{mean relative error} MRE:
 \begin{equation}
 MRE = \frac{1}{N} \Sigma_{i=1}^N | \bar{X}_i - e_i |,
-\label{eq:lta}
+\label{eq:mre_est}
 \end{equation}
 %
 where $N$ is the number of species, and $e_i$ is the value of the estimator in question for species $i$. This metric is equal to zero for a perfect estimator. Figure \ref{fig:error_versus_estimator} shows the performance of estimators, calculated from increasing sample lengths, applied to the HI and the LI ensembles. Performance is measured by both the $R^2$ value and by MRE. The performance of the snapshot estimators is poor, with MREs of around $0.3$ and $0.8$ for the HI and LI ensembles respectively. In all cases the estimators converge on the long term average as the sample length is increased. That is, the $R^2$ and MRE values converge on one and zero respectively. Convergence is slower for the LI ensemble, where even with sample lengths of 30,000 time steps the MRE is still around 0.1. However the $R^2$ values converge more rapidly than the MRE values. For the LI ensemble a sample length of 4000 gives an average estimator $R^2$ of about $0.9$. From these results it appears that the snapshot estimator would introduce large errors into our results in cases where there is high temporal variability. The use of longer samples, it seems, can reduce these errors. However it is also clear that some trade-off must be made, because the length of sample required to guarantee convergence to the long-term average is very large. Based on the $R^2$ values it appears that samples of around 4000 time steps may be sufficient to characterise species abundances with reasonable accuracy, even in simulations with high temporal variability.
@@ -780,7 +780,7 @@ where $N$ is the number of species, and $e_i$ is the value of the estimator in q
 	\centering
 	\subbottom[HI simulation (IR$=0.001$)]{\includegraphics[width=1.0\linewidth]{{{figures/stationarity/Reliability/HI/three_estimator_regression}}}}
 	\subbottom[LI simulation (IR$=0.0001$)]{\includegraphics[width=1.0\linewidth]{{{figures/stationarity/Reliability/LI/three_estimator_regression}}}}    
-    \caption{Performance of three different estimators of species abundance, applied to a (A) single HI simulation and (B) a single LI simulation. Estimator `e1' is a snapshot of abundance on 5000th time step; `e2' is an average over 4000 time steps; and `e3' is an average over 29,000 time steps. Points are the long-term mean abundance of a species, plotted against the estimator value for that species. Red lines show linear regression fits for the estimator, and how close the estimator is to modelling the `true value' of species abundances (dashed blue line).}
+    \caption[Linear regression to evaluate estimator performance.]{Performance of three different estimators of species abundance, applied to a (A) single HI simulation and (B) a single LI simulation. Estimator `e1' is a snapshot of abundance on 5000th time step; `e2' is an average over 4000 time steps; and `e3' is an average over 29,000 time steps. Points are the long-term mean abundance of a species, plotted against the estimator value for that species. Red lines show linear regression fits for the estimator, and how close the estimator is to modelling the `true value' of species abundances (dashed blue line).}
     \label{fig:regression_exmaple}
 \end{figure}
 
@@ -789,7 +789,7 @@ where $N$ is the number of species, and $e_i$ is the value of the estimator in q
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1.0\linewidth]{{{figures/stationarity/Reliability/error_versus_estimator}}}
-    \caption{Performance of 50 different estimators for species abundance, measured by $R^2$ value and mean relative error MRE (see text for definitions) The first estimator (estimator ID=1) is uses `snapshot' of simulation state at 5000th time step (as used in previous chapter), the remaining estimators (IDs$=2,..,50$) use average abundances over sample windows ranging from length 1000 to 50,000 in steps of 1000. Points indicate mean value of metric over ensemble of simulations. Error bars indicate $\pm 1$ standard deviation.}    
+    \caption[Accuracy of estimators versus sample length.]{Performance of 50 different estimators for species abundance, measured by $R^2$ value and mean relative error MRE (see text for definitions) The first estimator (estimator ID=1) is uses `snapshot' of simulation state at 5000th time step (as used in previous chapter), the remaining estimators (IDs$=2,..,50$) use average abundances over sample windows ranging from length 1000 to 50,000 in steps of 1000. Points indicate mean value of metric over ensemble of simulations. Error bars indicate $\pm 1$ standard deviation.}    
     \label{fig:error_versus_estimator}
 \end{figure}
 
@@ -818,7 +818,7 @@ Here we briefly consider the issue of repeatability in our experiments. The moti
 \begin{figure}[hp]
 	\centering
 	\includegraphics[width=1.0\linewidth]{{{figures/stationarity/ras_3examples}}}
-    \caption{\textbf{Rank abundance spectra (RAS)} for three simulations from the NM1 ensemble (see text). Species abundances measured as long term average (over time steps 1000-9,000). Species are ranked according to their abundances in the first simulation (panel (A)). Ranking is retained in panels (B) and (C), which show abundances from two different simulations. Colouring of species by trophic level is consistent with previous figures.}    
+    \caption[Rank abundance spectra to test repeatability.]{\textbf{Rank abundance spectra (RAS)} for three simulations from the NM1 ensemble (see text). Species abundances measured as long term average (over time steps 1000-9,000). Species are ranked according to their abundances in the first simulation (panel (A)). Ranking is retained in panels (B) and (C), which show abundances from two different simulations. Colouring of species by trophic level is consistent with previous figures.}    
     \label{fig:ras_3examples}
 \end{figure}
 

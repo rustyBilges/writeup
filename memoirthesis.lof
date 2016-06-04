@@ -1,5 +1,147 @@
 \select@language {english}
 \par \penalty \@M \textbf {{\scshape Figure}} \hfill Page\par \penalty \@M 
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces \textbf {An example of a trophic cascade} that crosses community boundaries. The presence of fish in ponds was empirically determined to indirectly benefit plant reproduction in neighbouring communities. Figure reproduced from Knight et al. \cite {knight2005trophic}.}}{5}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces \textbf {Nestedness} is the property that the diets of specialist species are subsets of the diets of generalist species. It is common in mutualistic communities. Figure reproduced from \cite {allesina2012ecology}: `\textbf {a}, In the mutualistic interactions that occur between plants and their pollinators, some species (generalists, such as the pink-eyed bee) interact with many partners, whereas other species (specialists, such as the blue-eyed bee) have few partners. \textbf {b}, Such networks have been described as 'nested', as they produce a triangular pattern when the interactions (depicted by black squares) are arranged in a matrix. '}}{9}{figure.1.2}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A trophic cascade.}}{4}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Illustration of nestedness.}}{9}{figure.1.2}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Niche space.}}{24}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A sixty species food web.}}{25}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Schematic of interaction network, with mutualism.}}{27}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Motion of individuals.}}{28}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Community dynamics by trophic level.}}{35}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Community dynamics by trophic level, with mutualism and habitat loss.}}{36}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Spatial depiction of IBM community.}}{37}{figure.2.7}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Number of individuals versus HL.}}{50}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diversity versus HL.}}{51}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diversity by trophic level.}}{52}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Rank abundance distributions for mutualistic communities under random HL.}}{53}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Rank abundance distributions for mutualistic communities under contiguous HL.}}{53}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Evenness according to rank abundance model fits.}}{54}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Relative abundance by functional group, under random HL.}}{56}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Relative abundance by functional group, under contiguous HL.}}{57}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Number of links versus HL.}}{58}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Total interaction frequency versus HL.}}{59}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Generality versus HL.}}{61}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Vulnerability versus HL.}}{61}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Interaction diversity versus HL.}}{62}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Specialisation versus HL.}}{62}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Species area variability versus HL.}}{63}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Interaction strength and variability versus HL.}}{64}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Moran's I versus HL.}}{66}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Geary's C versus HL.}}{66}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Minimum invariability versus HL.}}{68}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Ecosystem synchrony versus HL.}}{69}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Interaction strength distributions under random HL.}}{72}{figure.3.21}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Interaction strength distributions under contiguous HL.}}{72}{figure.3.22}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Species mobility in under random and contiguous HL.}}{74}{figure.3.23}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Dependence on immigration.}}{75}{figure.3.24}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Fractional persistence at zero IR.}}{80}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Dynamics at zero IR for different MAI ratios.}}{82}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Number of persistent species versus MAI ratio.}}{83}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Fractional persistence by trophic level, for different reproduction rates.}}{84}{figure.4.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces \textbf { MAI ratio = 0.0}}}{84}{figure.4.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces \textbf { MAI ratio = 0.5}}}{84}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Dynamics at zero IR for different reproduction rates.}}{85}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Dynamics at zero IR for different reproduction rates, MAI=0.5.}}{86}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Landscape size versus persistence.}}{87}{figure.4.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces \textbf { MAI=0.0}}}{87}{figure.4.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces \textbf { MAI=0.5}}}{87}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Number of initial species versus persistence.}}{89}{figure.4.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces \textbf {Niche model}}}{89}{figure.4.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces \textbf {Re-wired networks}}}{89}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Number of initial species versus persistence, MAI=0.5.}}{89}{figure.4.9}
+\contentsline {subfigure}{\numberline {}{\ignorespaces \textbf {Niche model}}}{89}{figure.4.9}
+\contentsline {subfigure}{\numberline {}{\ignorespaces \textbf {Re-wired networks}}}{89}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Network structure with high persistence.}}{91}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Network structure with low persistence.}}{91}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Temporal variability versus immigration rate.}}{93}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Control dynamics for testing stationarity metrics.}}{96}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Testing stationarity metrics: sample length.}}{97}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces IBM dynamics at IR=0.001.}}{99}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Stationarity by trophic level at high immigration.}}{100}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Species dynamics at high IR, by trophic level.}}{101}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Stationarity of high and low abundance species.}}{102}{figure.4.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces Three most abundant species}}{102}{figure.4.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces Three least abundant species}}{102}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Average number of stationary species for a single network.}}{104}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Average number of stationary species over a region of parameter space.}}{105}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Average number of stationary species versus HL, and IR.}}{106}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Recurrence quantification plots for various time series.}}{110}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Percentage determinism calculated from the IBM.}}{111}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Linear regression to evaluate estimator performance.}}{114}{figure.4.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces HI simulation (IR$=0.001$)}}{114}{figure.4.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces LI simulation (IR$=0.0001$)}}{114}{figure.4.24}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Accuracy of estimators versus sample length.}}{115}{figure.4.25}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Rank abundance spectra to test repeatability.}}{116}{figure.4.26}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of sampling methods for calculation of diversity.}}{123}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diversity metrics for random HL.}}{125}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diversity metrics for contiguous HL.}}{126}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Interactions and variability for random HL.}}{129}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Interactions and variability for contiguous HL.}}{130}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Ecosystem synchrony.}}{131}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Shannon equitability versus HL, fixed IR.}}{133}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Shannon equitability by trophic level versus HL, fixed IR.}}{135}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Rank abundance distributions under random HL, MAI=0.0.}}{136}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Rank abundance distributions under random HL, MAI=1.0.}}{137}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Rank abundance distributions under contiguous HL, MAI=0.0.}}{138}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Rank abundance distributions under contiguous HL, MAI=1.0.}}{138}{figure.5.12}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Relative abundance by functional group, under random HL.}}{140}{figure.5.13}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Relative abundance by functional group, under contiguous HL.}}{141}{figure.5.14}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Generality versus habitat loss.}}{142}{figure.5.15}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Vulnerability versus habitat loss.}}{143}{figure.5.16}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Rank abundance distributions under fixed random HL, MAI=0.0.}}{144}{figure.5.17}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Rank abundance distributions under fixed contiguous HL, MAI=0.0.}}{144}{figure.5.18}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Rank abundance distributions under fixed random HL, MAI=1.0.}}{145}{figure.5.19}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Rank abundance distributions under fixed contiguous HL, MAI=1.0.}}{145}{figure.5.20}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Schematic of inference methodology.}}{153}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Functional response for \emph {type I} and \emph {type II} models.}}{162}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Dynamics of the \emph {type I} model.}}{168}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Dynamics of the \emph {type II} model.}}{169}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Effect of noise on parameter estimates for \emph {type I} model.}}{170}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Effect of the number of samples on parameter estimates for \emph {type I} model.}}{171}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Effect of the number of samples on parameter estimates for \emph {type I} model, with high noise.}}{172}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Effect of noise on parameter estimates, ensemble of 100 simulations of \emph {type I} model.}}{173}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Effect of number of samples on parameter estimates, ensemble of 100 simulations of \emph {type I} model.}}{173}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Effect of noise on parameter estimates, \emph {type II} model.}}{174}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Effect of noise on parameter estimates for both \emph {type I} and \emph {type II} models.}}{175}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Effect of number of samples on parameter estimates for both \emph {type I} and \emph {type II} models.}}{175}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Non-linear functional response in \emph {type II} model.}}{176}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Linearity of functional response as a predictor for estimate quality.}}{177}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Demonstration of range sampling procedure.}}{178}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Range sampling results}}{178}{figure.6.16}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Example dynamics of the IBM for two species}}{183}{figure.6.17}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Functional response (FR) of the herbivore}}{185}{figure.6.18}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Numerical response (FR) of the herbivore}}{186}{figure.6.19}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Intrinsic growth and mortality functions}}{186}{figure.6.20}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Convergence of parameter estimates for low immigration rate, 2 species.}}{188}{figure.6.21}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Convergence of parameter estimates for high immigration rate}}{190}{figure.6.22}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Comparison between true and fitted dynamics}}{191}{figure.6.23}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Two species demographic rate predictions, low IR.}}{192}{figure.6.24}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Two species demographic rate predictions, high IR.}}{193}{figure.6.25}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Relative error in rate predictions, low IR.}}{195}{figure.6.26}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Relative error in rate predictions, high IR.}}{196}{figure.6.27}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Potential topologies for three species.}}{197}{figure.6.28}
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Convergence of parameter estimates, three species.}}{198}{figure.6.29}
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Three species IBM dynamics.}}{199}{figure.6.30}
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Demographic rate predictions, three species, low IR.}}{200}{figure.6.31}
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Demographic rate predictions, three species, high IR.}}{201}{figure.6.32}
+\contentsline {figure}{\numberline {6.33}{\ignorespaces Relative error in three species predictions, low IR.}}{202}{figure.6.33}
+\contentsline {figure}{\numberline {6.34}{\ignorespaces Relative error in three species predictions, high IR.}}{203}{figure.6.34}
+\contentsline {figure}{\numberline {6.35}{\ignorespaces Model selection, three species, low IR.}}{204}{figure.6.35}
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Model selection, three species, high IR.}}{205}{figure.6.36}
+\contentsline {figure}{\numberline {6.37}{\ignorespaces Competing topologies, five species.}}{206}{figure.6.37}
+\contentsline {figure}{\numberline {6.38}{\ignorespaces Five species IBM dynamics.}}{206}{figure.6.38}
+\contentsline {figure}{\numberline {6.39}{\ignorespaces Number of stable five species topologies.}}{207}{figure.6.39}
+\contentsline {figure}{\numberline {6.40}{\ignorespaces Frequency of stability for competing five species topologies.}}{208}{figure.6.40}
+\contentsline {figure}{\numberline {6.41}{\ignorespaces Five species demographic rate predictions.}}{209}{figure.6.41}
+\contentsline {figure}{\numberline {6.42}{\ignorespaces Inferred topology, five species.}}{211}{figure.6.42}
+\contentsline {figure}{\numberline {6.43}{\ignorespaces Inferred topology, sixty species without mutualism (1).}}{212}{figure.6.43}
+\contentsline {figure}{\numberline {6.44}{\ignorespaces Inferred topology, sixty species without mutualism (2).}}{213}{figure.6.44}
+\contentsline {figure}{\numberline {6.45}{\ignorespaces Inferred topology, sixty species with mutualism (1).}}{213}{figure.6.45}
+\contentsline {figure}{\numberline {6.46}{\ignorespaces Inferred topology, sixty species with mutualism (2).}}{214}{figure.6.46}
+\contentsline {figure}{\numberline {6.47}{\ignorespaces Phase plane analysis, three species.}}{215}{figure.6.47}
+\addvspace {10pt}

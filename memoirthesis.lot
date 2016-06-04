@@ -1,3 +1,13 @@
 \select@language {english}
 \par \penalty \@M \textbf {{\scshape Table}} \hfill Page\par \penalty \@M 
 \addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Default parameter values.}}{32}{table.2.1}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Testing stationarity metrics.}}{96}{table.4.1}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Parameter ranges for \emph {type I} and \emph {type II} models.}}{166}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Demographic rate predictions.}}{194}{table.6.2}
+\addvspace {10pt}

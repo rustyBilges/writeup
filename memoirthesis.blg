@@ -3,77 +3,80 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: siam.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 465 of file thesisbiblio.bib
+Repeated entry---line 501 of file thesisbiblio.bib
  : @article{wootton2005measurement
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 474 of file thesisbiblio.bib
+Repeated entry---line 510 of file thesisbiblio.bib
  : @article{berlow2004interaction
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1271 of file thesisbiblio.bib
+Repeated entry---line 648 of file thesisbiblio.bib
+ : @article{stenseth1997population
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1307 of file thesisbiblio.bib
  : @article{thebault2010stability
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1284 of file thesisbiblio.bib
+Repeated entry---line 1320 of file thesisbiblio.bib
  : @article{lurgi2015effects
  :                          ,
 I'm skipping whatever remains of this entry
 Warning--string name "december" is undefined
---line 1864 of file thesisbiblio.bib
-Repeated entry---line 2097 of file thesisbiblio.bib
+--line 1932 of file thesisbiblio.bib
+Repeated entry---line 2165 of file thesisbiblio.bib
  : %@article{barraquand2014functional
  :                                   ,
 I'm skipping whatever remains of this entry
 Warning--entry type for "mcwilliams2015anim" isn't style-file defined
---line 2211 of file thesisbiblio.bib
+--line 2279 of file thesisbiblio.bib
 Warning--entry type for "BC3" isn't style-file defined
---line 2229 of file thesisbiblio.bib
-Warning--I didn't find a database entry for "lurgi2015"
+--line 2297 of file thesisbiblio.bib
 Warning--I didn't find a database entry for ""
 Warning--empty journal in ai2012immigration
 Warning--there's a number but no series in hastings2012encyclopedia
 Warning--empty journal in lotka1925elements
 Warning--empty journal in pachauri2015synthesis
-You've used 169 entries,
+You've used 174 entries,
             2030 wiz_defined-function locations,
-            1418 strings with 33114 characters,
-and the built_in function-call counts, 69513 in all, are:
-= -- 6949
-> -- 3282
+            1443 strings with 34164 characters,
+and the built_in function-call counts, 71515 in all, are:
+= -- 7149
+> -- 3381
 < -- 0
-+ -- 1322
-- -- 1129
-* -- 5521
-:= -- 10501
-add.period$ -- 169
-call.type$ -- 169
-change.case$ -- 1044
++ -- 1361
+- -- 1163
+* -- 5675
+:= -- 10804
+add.period$ -- 174
+call.type$ -- 174
+change.case$ -- 1076
 chr.to.int$ -- 0
-cite$ -- 173
-duplicate$ -- 3011
-empty$ -- 4613
-format.name$ -- 1129
-if$ -- 14856
+cite$ -- 178
+duplicate$ -- 3104
+empty$ -- 4738
+format.name$ -- 1163
+if$ -- 15285
 int.to.chr$ -- 0
-int.to.str$ -- 169
-missing$ -- 177
-newline$ -- 510
-num.names$ -- 335
-pop$ -- 852
+int.to.str$ -- 174
+missing$ -- 182
+newline$ -- 525
+num.names$ -- 345
+pop$ -- 877
 preamble$ -- 1
-purify$ -- 889
+purify$ -- 916
 quote$ -- 0
-skip$ -- 2888
+skip$ -- 2980
 stack$ -- 0
-substring$ -- 5279
-swap$ -- 1475
+substring$ -- 5408
+swap$ -- 1523
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 650
+type$ -- 670
 warning$ -- 4
-while$ -- 747
-width$ -- 172
-write$ -- 1497
-(There were 5 error messages)
+while$ -- 767
+width$ -- 177
+write$ -- 1541
+(There were 6 error messages)

@@ -15,7 +15,7 @@
 \section{Introduction}
 %% Refer somewhere to immigration discussion in chapter 1
 
-In the chapter \ref{chap:habitat_loss_high_immigration} we analysed in detail how simulated communities responded to two habitat loss scenarios. These simulations used the \emph{default parameter values} for the IBM model, as published in \cite{lurgi2015effects}. An important feature of these simulations was that they exhibited almost no species extinctions, even up to $90\%$ habitat loss (HL). This due to a high immigration rate ($IR=0.005$), providing a rescue effect for all species. In nature the destruction or degradation of habitat often leads to a loss of species \cite{newbold2015global,foley2005global}. Therefore we also intend to use the IBM to investigate the regime where habitat loss causes extinctions. The obvious way to do this is to reduce the IR. Since immigration proved to be a key driver of the dynamics in chapter \ref{chap:habitat_loss_high_immigration}, in this chapter we conduct a detailed analysis into the consequences of varying the IR parameter. This is largely in preparation for chapter \ref{chap:varying_immigration_rate} where we will study, from a more ecological perspective, how changing IR affects the response of communities to HL. We restrict the scope of this chapter to pristine landscapes ($HL=0$). In the first part of this chapter (section \ref{sec:closed_communities}) we study \emph{closed communities} by removing immigration from the model altogether (IR$=0.0$). We find that \emph{close communities} are characterised by many species extinctions, and attempt to reduce these extinctions by varying certain model parameters. In the second part (sections \ref{sec:intro_stationarity} to \ref{sec:reliability}) we address an issue that is found to arise from reduced IR, namely \emph{increased temporal variability}. In section \ref{sec:stationarity} we revisit the assumption made in the previous analysis, that simulations reach steady-state after 5000 time steps (see section \ref{sec:sampling}). In section \ref{sec:determinism} we test for determinism in the simulated population dynamics, and in section \ref{sec:reliability} we apply different sampling regimes to compare the convergence and repeatability of our experimental results. 
+In the chapter \ref{chap:habitat_loss_high_immigration} we analysed in detail how simulated communities responded to two habitat loss scenarios. These simulations used the \emph{default parameter values} for the IBM model, as published in \cite{lurgi2015effects}. An important feature of these simulations was that they exhibited almost no species extinctions, even up to $90\%$ habitat loss (HL). This due to a high immigration rate ($IR=0.005$), providing a rescue effect for all species. In nature the destruction or degradation of habitat often leads to a loss of species \cite{newbold2015global,foley2005global}. Therefore we also intend to use the IBM to investigate the regime where habitat loss causes extinctions. The obvious way to do this is to reduce the IR. Since immigration proved to be a key driver of the dynamics in chapter \ref{chap:habitat_loss_high_immigration}, in this chapter we conduct a detailed analysis into the consequences of varying the IR parameter. This is largely in preparation for chapter \ref{chap:varying_immigration_rate} where we will study, from a more ecological perspective, how changing IR affects the response of communities to HL. We restrict the scope of this chapter to pristine landscapes ($HL=0$). In the first part of this chapter (section \ref{sec:closed_communities}) we study \emph{closed communities} by removing immigration from the model altogether (IR$=0.0$). We find that \emph{close communities} are characterised by many species extinctions, and we attempt to reduce these extinctions by varying certain model parameters. In the second part of the chapter (sections \ref{sec:intro_stationarity} to \ref{sec:reliability}) we address an issue that is found to arise from reduced IR, namely \emph{increased temporal variability}. In section \ref{sec:stationarity} we revisit the assumption made in the previous analysis, that simulations reach steady-state after 5000 time steps (see section \ref{sec:sampling}). In section \ref{sec:determinism} we test for determinism in the simulated population dynamics, and in section \ref{sec:reliability} we apply different sampling regimes to compare the convergence and repeatability of our experimental results. 
 
 % In particular we focus on the concern that simulations may become dominated by stochastic effects, leading to unreliable results and loss of ecological meaning
 %Because this represents a departure from the default parameters and the way in which the model has been used previously, it requires a careful and systematic approach. Therefore in this chapter we `stress test' the model to analyse how it copes with changing IR. 
@@ -55,7 +55,7 @@ In \cite{lurgi2015effects} it was shown that increasing the levels of mutualism 
 %A key theme throughout this thesis, and one of the main novel aspects of this research, is the inclusion of mutualistic interactions into simulated of trophic dynamics. In some cases we have seen that these mutualistic interactions play a stabilising role in the community (in contrast to May's classic `orgy of mutual benefaction'). Therefore is seems natural to aks what role the MAI ratio plays in the persistence of communities are zero IR.
 
 %% Plotted on uni comp. Script at: parameter_fiddling/bc3_results/ 
-\begin{figure}[h!]
+\begin{figure}
 	\centering
 	\includegraphics[width=0.8\linewidth]{"figures/persistence/mean_trophic_dynamics"}
 	\caption[Dynamics at zero IR for different MAI ratios.]{\textbf{Mean dynamics by functional group} for four different MAI ratios (A-D), without immigration. Lines given by number of individuals belonging to a functional group, averaged over 22 simulations. Colours indicate functional group (see legend).}
@@ -90,7 +90,7 @@ Figure \ref{fig:mvp_species_per_tl} shows the number of persistent species by tr
 %	\label{fig:mvp_prop_per_fg}
 %\end{figure}
 
-\newpage
+%\newpage
 \subsection{Reproduction rate}
 \label{sec:rr_v_p}
 
@@ -189,7 +189,7 @@ Increasing the RR improves the fractional persistence of all trophic levels, as 
 	\label{fig:rr_mean_troph_dynamics_mai05}
 \end{figure}
 
-\clearpage
+%\clearpage
 \subsection{Landscape size}
 \label{sec:lsvp}
 
@@ -223,7 +223,7 @@ Increasing the RR improves the fractional persistence of all trophic levels, as 
 One might hypothesise that competition for space is causing species extinctions, in which case increasing the size of the landscape may improve persistence. We varied the width of the square landscape between 100 and 1000 cells, running 25 repeat simulations at each width. These simulations were run for MAI$=0.0,0.5,1.0$, and used the increased reproduction rate RR$=0.1$. Figure \ref{fig:ls_v_comp} shows how the number of persistent species changes in response to landscape size for MAI$=0.0$ and $0.5$ (results qualitatively similar for MAI$=1.0$). For both MAI ratios depicted there is an overall increase in species persistence up to a landscape width of 800. This increase in persistence is driven by small increases in the species richness of each trophic level. Beyond a width of 800 cells persistence appears to decline, although this may be a statistical anomaly and we do not explore this result further. Even with a landscape of $800 \times 800$ the results show that we should not expect more than 20 persistent species, which represents the extinction of two thirds of the initial species pool. Therefore we conclude that landscape size does not resolve the problem of extinctions. This does not rule out competition as a cause of species extinctions in the model. However the observation that increasing the available space does not remove competition pressure suggests that competition for resources may be more significant than competition for space. Since increased space does not greatly improve persistence, further simulations in this section are run using the default landscape width of 200 which requires significantly less CPU time than for a width of 800.
 
 %and the number of intial species. This was done for MAI = 0.0 and 0.5. 25 repeat networks (except for nsvp, 240 species, only 14 repeats, and lsvp only 7 and 15 repeats for mai = 0 and 0.5 respectively.). 
-\newpage
+%\newpage
 \subsection{Number of initial species}
 \label{sec:numsp_vp}
 
@@ -261,7 +261,7 @@ Figures \ref{fig:nsp_v_comp_mai00} and \ref{fig:nsp_v_comp_mai05} show how the n
 	\label{fig:nsp_v_comp_mai05}
 \end{figure}
 
-\newpage
+%\newpage
 \subsection{Network structure}
 \label{sec:netstruct_v_p}
 %From Dani re: community collpase at low IR : This may be different for different parameter values or if we assume that phenotypic plasticity (which can lead to plasticity in the interactions, so that the 1 and 0 in the interaction matrix can change) in closed systems occurs. However, these mechanisms are not in place in our model.
@@ -588,7 +588,7 @@ In general we conclude that the choice of metric used to generate the time serie
      \label{fig:sp_stat_tests_v_wl}   
 \end{figure}
 
-\newpage
+%\newpage
 \subsection{General stationarity results}
 \label{sec:ensemble}
 
@@ -632,7 +632,7 @@ On average we see that the LI ensemble is less stationary than the HI ensemble. 
 
 
 \clearpage
-\section{Determinism tests}
+\section{Testing for determinism}
 \label{sec:determinism}
 
 %From inspection of the population dynamics it appears that there is a strong stochastic component, even in the case of high immigration (for example Figure \ref{fig:dynamics_by_species}). 
@@ -713,6 +713,7 @@ We calculate the $\%$DET for each simulation in the HI and LI ensemble. In each 
 
 
 %\subsection{Reliability of results}
+\newpage
 \section{Convergence and repeatability}
 \label{sec:reliability}
 %% SHOULD BE CALLED: Accuracy and Repeatability??
@@ -883,14 +884,14 @@ Here we briefly consider the issue of repeatability in our experiments. The moti
 
 
 
-\clearpage
+%\clearpage
 \section{Conclusion}
 \label{sec:stress_conclusion}
 %% CHANGE REFERENCES TO THIS SECTION (previously discussion)
 
 In this chapter we have discovered that immigration is required for the IBM to generate persistent communities (section \ref{sec:closed_communities}. In the absence of immigration the majority of species in higher trophic levels go extinct, and we have argued that this is due to competition effects (section \ref{sec:disucss_persitence}). We have also demonstrated the population dynamics becomes more variable as the immigration rate is reduced (section \ref{sec:intro_stationarity}). This may be a feature of the system passing between a regime of stable persistence at high IR into an unstable regime at low IR. Furthermore we have demonstrated that species population dynamics may be non-stationary, especially at low IR (section \ref{sec:stationarity}). However results from the recurrence quantification analysis suggest that this non-stationarity is due to deterministic population dynamics rather than stochastic effects (section \ref{sec:determinism}). We have also shown that the dynamics of species with low abundance tend to be more stationary and less deterministic, whereas species with high abundance tend to be less stationary and more deterministic. Together these results suggest that the abundant species are undergoing larger amplitude trophic dynamics, generated by their interactions with other species. The least abundant species, we propose, are those maintained mostly by immigration (even at lower IR values) because their relative scarcity makes them less likely to interact with other species. As we argued in chapter \ref{chap:habitat_loss_high_immigration}, immigration is a random process. So the dependence of low abundance species on immigration would explain their lower $\%$DET values and, together with their reduced ability to interact with other species, explains their higher stationarity.
 
-We have addressed the impact of increased variability on our experimental results (section \ref{sec:reliability}). We showed that, especially at low IR, snapshot sampling can produce abundances measures with large deviation from the long-term average. However it is also clear that, for highly variable communities, the length of sample required for the measured abundance to converge on the long term average is not practical given computational limits. Therefore we accept that increased variability may introduce random error into our results. In chapter \ref{chap:varrying_immigration} we further address this issue by comparing two different sampling regimes in the analysis. We have also briefly considered the issue of repeatability in our experimental results (section \ref{sec:repeatability}). In particular we saw that replicate simulations using the same interaction network produced very similar rank-abundance spectra. The reproducible rank-abundance spectra, together with the observed signature of determinism in the IBM output, give us confidence in the repeatability of our results. Although clearly the strong stochastic component requires that replicates are part of the experimental procedure, as they are throughout the thesis.   
+We have addressed the impact of increased variability on our experimental results (section \ref{sec:reliability}). We showed that, especially at low IR, snapshot sampling can produce abundances measures with large deviation from the long-term average. However it is also clear that, for highly variable communities, the length of sample required for the measured abundance to converge on the long term average is not practical given computational limits. Therefore we accept that increased variability may introduce random error into our results. In chapter \ref{chap:varying_immigration_rate} we further address this issue by comparing two different sampling regimes in the analysis. We have also briefly considered the issue of repeatability in our experimental results (section \ref{sec:repeatability}). In particular we saw that replicate simulations using the same interaction network produced very similar rank-abundance spectra. The reproducible rank-abundance spectra, together with the observed signature of determinism in the IBM output, give us confidence in the repeatability of our results. Although clearly the strong stochastic component requires that replicates are part of the experimental procedure, as they are throughout the thesis.   
 
 %`Tells us a lot about the dynamics of the model..'
 

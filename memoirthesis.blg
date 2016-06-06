@@ -1,82 +1,49 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
-The style file: siam.bst
+The style file: ieeetr.bst
 Database file #1: thesisbiblio.bib
-Repeated entry---line 501 of file thesisbiblio.bib
- : @article{wootton2005measurement
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 510 of file thesisbiblio.bib
- : @article{berlow2004interaction
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 648 of file thesisbiblio.bib
- : @article{stenseth1997population
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1307 of file thesisbiblio.bib
- : @article{thebault2010stability
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1320 of file thesisbiblio.bib
- : @article{lurgi2015effects
- :                          ,
-I'm skipping whatever remains of this entry
-Warning--string name "december" is undefined
---line 1932 of file thesisbiblio.bib
-Repeated entry---line 2165 of file thesisbiblio.bib
- : %@article{barraquand2014functional
- :                                   ,
-I'm skipping whatever remains of this entry
-Warning--entry type for "mcwilliams2015anim" isn't style-file defined
---line 2279 of file thesisbiblio.bib
-Warning--entry type for "BC3" isn't style-file defined
---line 2297 of file thesisbiblio.bib
-Warning--I didn't find a database entry for ""
-Warning--empty journal in ai2012immigration
+Warning--empty journal in montoya2016invariability
 Warning--there's a number but no series in hastings2012encyclopedia
-Warning--empty journal in lotka1925elements
-Warning--empty journal in pachauri2015synthesis
-You've used 174 entries,
-            2030 wiz_defined-function locations,
-            1443 strings with 34164 characters,
-and the built_in function-call counts, 71515 in all, are:
-= -- 7149
-> -- 3381
+You've used 176 entries,
+            1876 wiz_defined-function locations,
+            1439 strings with 34597 characters,
+and the built_in function-call counts, 56052 in all, are:
+= -- 5904
+> -- 2098
 < -- 0
-+ -- 1361
-- -- 1163
-* -- 5675
-:= -- 10804
-add.period$ -- 174
-call.type$ -- 174
-change.case$ -- 1076
++ -- 772
+- -- 596
+* -- 4058
+:= -- 7703
+add.period$ -- 196
+call.type$ -- 176
+change.case$ -- 159
 chr.to.int$ -- 0
 cite$ -- 178
-duplicate$ -- 3104
-empty$ -- 4738
-format.name$ -- 1163
-if$ -- 15285
+duplicate$ -- 2772
+empty$ -- 4916
+format.name$ -- 596
+if$ -- 13712
 int.to.chr$ -- 0
-int.to.str$ -- 174
-missing$ -- 182
-newline$ -- 525
-num.names$ -- 345
-pop$ -- 877
+int.to.str$ -- 176
+missing$ -- 186
+newline$ -- 551
+num.names$ -- 177
+pop$ -- 336
 preamble$ -- 1
-purify$ -- 916
+purify$ -- 0
 quote$ -- 0
-skip$ -- 2980
+skip$ -- 2187
 stack$ -- 0
-substring$ -- 5408
-swap$ -- 1523
+substring$ -- 4588
+swap$ -- 1383
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 670
-warning$ -- 4
-while$ -- 767
-width$ -- 177
-write$ -- 1541
-(There were 6 error messages)
+type$ -- 0
+warning$ -- 2
+while$ -- 605
+width$ -- 179
+write$ -- 1845
+(There were 2 warnings)

@@ -28,7 +28,7 @@
     \node [block] (wild_eco) {Natural ecosystem};
     \node [block, left of=wild_eco] (lab_exp) {Laboratory experiment };
     \node [block, left of=lab_exp] (comp_sim) {Computer simulation};
-    \node [block, above of=comp_sim] (im_calc) {$\mathbf{\alpha} \in \mathbb{R}^{NxN}$};
+    \node [block, above of=comp_sim] (im_calc) {$\mathbf{\alpha} \in \mathbb{R}^{N \times N}$};
     
     \node [align=left, left of = comp_sim] (dat_gen) {\textbf{Data generator}};
     \node [align=left, below of = dat_gen] (dat_stream) {\textbf{Data stream}};
@@ -55,14 +55,14 @@
 	\item Fitted  to data stream $x_i(t)$
 	\item Returns best fit estimates of:
 		\begin{enumerate}
-			\item Interaction strengths: $\hat{\mathbf{J}} \in \mathbb{R}^{NxN}$		
-			\item Intrinsic growth rates: $\hat{\mathbf{r}} \in \mathbb{R}^{1xN}$		
+			\item Interaction strengths: $\hat{\mathbf{J}} \in \mathbb{R}^{N \times N}$		
+			\item Intrinsic growth rates: $\hat{\mathbf{r}} \in \mathbb{R}^{1 \times N}$		
 		\end{enumerate}
 
 \end{itemize}	    
     };
     \node [right of=glv] (empty){};
-    \node [cloud, right of=empty] (compare) {Compare estimated interaction strength to those computed from data generator (if possible): \\ $\hat{\mathbf{J}}$ vs $\mathbf{\alpha}$};
+    \node [cloud, right of=empty] (compare) {Compare estimated interaction strengths to those computed from data generator (if possible): \\ $\hat{\mathbf{J}}$ vs $\mathbf{\alpha}$};
 %\end{scope}
     %\node [cloud, right of=init] (system) {system};
     %\node [block, below of=init] (identify) {identify candidate models};

@@ -33,6 +33,12 @@
 %
 \input{frontmatter/title}
 \clearemptydoublepage
+
+\begin{quote}
+\emph{It is interesting to contemplate a tangled bank, clothed with many plants of many kinds, with birds singing on the bushes, with various insects flitting about, and with worms crawling through the damp earth, and to reflect that these elaborately constructed forms, so different from each other, and dependent upon each other in so complex a manner, have all been produced by laws acting around us.}
+\end{quote}
+- Charles Darwin, 1859 \cite{darwin2009origin}
+\clearemptydoublepage
 %%
 \input{frontmatter/abstract}
 \clearemptydoublepage
@@ -64,12 +70,12 @@
 %%
 \import{chapters/chapter01/}{chap01.tex}
 \clearemptydoublepage
-
-%\setcounter{chapter}{+1}
+%
+%%\setcounter{chapter}{+1}
 \import{chapters/chapter02/}{chap02.tex}
 \clearemptydoublepage
-
-%\setcounter{chapter}{+2}
+%
+%%\setcounter{chapter}{+2}
 \import{chapters/chapter03/}{chap03.tex}
 \clearemptydoublepage
 %%
@@ -89,7 +95,7 @@
 %\setcounter{chapter}{+5}
 \import{chapters/chapter06/}{chap06.tex}
 \clearemptydoublepage
-%%
+%%%
 \import{chapters/chapter07/}{chap07.tex}
 %
 %
@@ -103,7 +109,8 @@
 % Apparently the guidelines don't say anything about citations or
 % bibliography styles so I guess we can use anything.
 \backmatter
-\bibliographystyle{siam}
+%\bibliographystyle{siam}
+\bibliographystyle{ieeetr}
 \refstepcounter{chapter}
 \bibliography{thesisbiblio}  % MAKE SURE TO UPDATE THIS FILE MANUALLY.
 \clearemptydoublepage

@@ -12,7 +12,7 @@
 \BOOKMARK [2][-]{subsection.1.4.1}{The role of immigration}{section.1.4}% 12
 \BOOKMARK [1][-]{section.1.5}{Inferring species interactions}{chapter.1}% 13
 \BOOKMARK [1][-]{section.1.6}{Scope of the present research}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.7}{Outline of thesis}{chapter.1}% 15
+\BOOKMARK [1][-]{section.1.7}{Outline of the thesis}{chapter.1}% 15
 \BOOKMARK [0][-]{chapter.2}{Methodology}{}% 16
 \BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 17
 \BOOKMARK [1][-]{section.2.2}{Previous use of the model}{chapter.2}% 18
@@ -24,7 +24,7 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Local rules}{section.2.4}% 24
 \BOOKMARK [2][-]{subsection.2.4.2}{Model Parameters}{section.2.4}% 25
 \BOOKMARK [1][-]{section.2.5}{Modelling habitat loss}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.6}{Implementation}{chapter.2}% 27
+\BOOKMARK [1][-]{section.2.6}{Implementation in code}{chapter.2}% 27
 \BOOKMARK [1][-]{section.2.7}{Dynamics of the model}{chapter.2}% 28
 \BOOKMARK [1][-]{section.2.8}{Ecological metrics and analysis methods}{chapter.2}% 29
 \BOOKMARK [2][-]{subsection.2.8.1}{Biodiversity metrics}{section.2.8}% 30
@@ -62,7 +62,7 @@
 \BOOKMARK [2][-]{subsection.4.4.1}{Tests for stationarity}{section.4.4}% 62
 \BOOKMARK [2][-]{subsection.4.4.2}{Characterising the tests}{section.4.4}% 63
 \BOOKMARK [2][-]{subsection.4.4.3}{General stationarity results}{section.4.4}% 64
-\BOOKMARK [1][-]{section.4.5}{Determinism tests}{chapter.4}% 65
+\BOOKMARK [1][-]{section.4.5}{Testing for determinism}{chapter.4}% 65
 \BOOKMARK [2][-]{subsection.4.5.1}{Recurrence quantification analysis}{section.4.5}% 66
 \BOOKMARK [3][-]{subsubsection.4.5.1.1}{Results}{subsection.4.5.1}% 67
 \BOOKMARK [1][-]{section.4.6}{Convergence and repeatability}{chapter.4}% 68
@@ -98,8 +98,8 @@
 \BOOKMARK [2][-]{subsection.6.3.2}{Simulation procedure}{section.6.3}% 98
 \BOOKMARK [2][-]{subsection.6.3.3}{Parameter selection}{section.6.3}% 99
 \BOOKMARK [2][-]{subsection.6.3.4}{Example dynamics}{section.6.3}% 100
-\BOOKMARK [2][-]{subsection.6.3.5}{Type I model}{section.6.3}% 101
-\BOOKMARK [2][-]{subsection.6.3.6}{Type II model}{section.6.3}% 102
+\BOOKMARK [2][-]{subsection.6.3.5}{Type I model results}{section.6.3}% 101
+\BOOKMARK [2][-]{subsection.6.3.6}{Type II model results}{section.6.3}% 102
 \BOOKMARK [2][-]{subsection.6.3.7}{Quantifying non-linearity}{section.6.3}% 103
 \BOOKMARK [2][-]{subsection.6.3.8}{Summary}{section.6.3}% 104
 \BOOKMARK [1][-]{section.6.4}{Results: IBM as data generator}{chapter.6}% 105

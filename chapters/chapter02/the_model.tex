@@ -230,7 +230,7 @@ In order to study the effect of habitat loss (HL) on simulated communities we ex
 \paragraph*{2) Contiguous habitat loss} proceeds by selecting a `seed cell' uniformly at random from the pristine landscape. Destruction then spreads radially outwards form the seed cell, according to the distance metric defined in section \ref{sec:the_model} and the toroidal boundary conditions of the lattice. This results in contiguous regions destroyed and pristine habitat.
  
 
-\section{Implementation}
+\section{Implementation in code}
 \label{sec:implementation}
 
 The code for the simulation model was originally written by Miguel Lurgi for research leading to the publication \cite{lurgi2015effects}. He and Daniel Montoya were responsible for the bulk of the model development, testing and parameter selection - a considerable task. My task was to take this `legacy code' and apply it to a study of habitat loss. The model is implemented in \emph{Python} \cite{python}, with several switches that ensure portability between different versions of the language. The programme makes extensive use of \emph{numpy} and \emph{networkx}, amongst other \emph{Python} libraries. A change in the return value of some methods in \emph{networkx} (specifically some methods from v1.9 return \emph{generator} objects, whereas in v1.7 they return \emph{lists}) forced me to make some amendments to the code. During this process I profiled the code using \emph{cProfile} and \emph{pstats}, because I noticed it was running very slowly. I determined that the cause was repeated calls to methods of the \emph{networkx} library, which were made every time an interaction needed to be checked in the network (for example to see if two individuals are able to interact). By storing two representations of the network - one as a \emph{networkx} object and one as a simple \emph{numpy} array - I was able to speed up the simulations by almost an order of magnitude. The \emph{networkx} methods need only be called when some network metric needs to be calculated. Having made the above changes I ran an ensemble of test simulations. Cross-checking the results with those in \cite{lurgi2015effects} confirmed that the simulations were behaving as expected.    
@@ -264,7 +264,11 @@ In the absence of habitat loss the dynamics of the model is characterised by an 
 	\label{fig:spatial_state_mai0.5}
 \end{figure}
 
-Figure \ref{fig:spatial_state_mai0.5} shows the spatial state of the system on the 5000$^{th}$ time step, for a community with $MAI=0.5$. There is no HL. Obviously we cannot generalise from a single image. However observing the communities in space does provide intuition about the dynamics and other properties of interest. For example the community shown displays visibly higher aggregations in the lower two trophic levels (panels A-D) than in the top two (panels E-F). It also appears that the more aggregated species are the most abundant. Such insights, gained from \emph{watching} the system, feed into the analysis and discussion (at least implicitly) throughout the thesis. I have also produced \emph{animations} of the spatial dynamics under various conditions which can be viewed at \cite{mcwilliams2015anim}, and are referenced at relevant points in the thesis.
+Figure \ref{fig:spatial_state_mai0.5} shows the spatial state of the system on the 5000$^{th}$ time step, for a community with $MAI=0.5$. There is no HL. Obviously we cannot generalise from a single image. However observing the communities in space does provide intuition about the dynamics and other properties of interest. \emph{Animations} of the spatial dynamics under various conditions can be viewed online at \cite{mcwilliams2015anim}. Insights gained from \emph{watching} the simulated communities feed implicitly into the analysis and discussion throughout the thesis.
+
+% For example the community shown displays visibly higher aggregations in the lower two trophic levels (panels A-D) than in the top two (panels E-F). It also appears that the more aggregated species are the most abundant. Such insights, gained from \emph{watching} the system, feed into the analysis and discussion (at least implicitly) throughout the thesis. 
+ 
+
 
 \section{Ecological metrics and analysis methods}
 \label{sec:metrics_explained}
@@ -313,7 +317,7 @@ In natural communities it has been observed that RADs tend to be \emph{long-tail
 \label{eq:zipf}
 \end{equation}
 %
-where $\hat{a}_r$ is the predicted abundance of the species rank $r$; $N$ is the total number of individuals; $\hat{p}_1$ is the estimated proportion of the most abundant species (rank 1); and $\gamma \in \mathbf{R}^-$ is the estimated exponent of the power law. So $\gamma$ gives the gradient of the line defined by \eqref{eq:zipf} in log-log space. Therefore a smaller value of $\left| \gamma \right|$ indicates a shallower line and more even distribution of abundances (see for example figure \ref{fig:example_rads_random}). The \textbf{preemption model} is given by a geometric sequence:
+where $\hat{a}_r$ is the predicted abundance of the species rank $r$; $N$ is the total number of individuals; $\hat{p}_1$ is the estimated proportion of the most abundant species (rank 1); and $\gamma \in \mathbb{R}^-$ is the estimated exponent of the power law. So $\gamma$ gives the gradient of the line defined by \eqref{eq:zipf} in log-log space. Therefore a smaller value of $\left| \gamma \right|$ indicates a shallower line and more even distribution of abundances (see for example figure \ref{fig:example_rads_random}). The \textbf{preemption model} is given by a geometric sequence:
 
 \begin{equation}
 \hat{a}_r = N\alpha(1-\alpha)^{r-1}
@@ -472,4 +476,4 @@ IS_{ij} = \frac{b_{ij}}{N_iN_j},
 \label{eq:is3}
 \end{equation}
 %
-and as such represents the per-capita effect of a predator, per-capita of prey. In subsequent analysis $IS$ refers to the mean value of \eqref{eq:is3} over all interactions in the network. This metric is useful because it is analogous to the Lotka-Volterra interaction coefficients and their generalisation to other ODE population dynamic models \cite{berlow2004interaction}. We return to look in more detail at this metric and its interpretation in chapter \ref{chap:interactions}.
+and as such represents the per-capita effect of a predator, per-capita of prey. In subsequent analysis $IS$ refers to the mean value of \eqref{eq:is3} over all interactions in the network. This metric is useful because it is analogous to the Lotka-Volterra interaction coefficients and their generalisation to other ODE population dynamic models \cite{berlow2004interaction}. In the context of the IBM simulations, IS can also be interpreted as an estimate of the encounter probability between individuals of species $i$ and $j$ (see discussion in section \ref{sec:res_synthesis}). We return to look in more detail at the quantification of species interaction strengths in chapter \ref{chap:interactions}.

@@ -1,3 +1,5 @@
+%% tracking corrections using: http://tex.stackexchange.com/questions/65453/track-changes-in-latex
+
 \input{thesis_preamble}
 \newcommand{\mbeq}{\overset{!}{=}}  %% move to preamble!
 \newcommand\anno[1]{\textcolor{red}{#1}}
@@ -9,6 +11,13 @@
 %\usepackage{autonum}
 %
 %
+\let\added\undefined      % neutralize \added command
+\let\deleted\undefined    % neutralize \deleted command
+\usepackage{changes}
+\definechangesauthor[name={Per cusse}, color=orange]{per}
+\setremarkmarkup{(#2)}
+
+
 \begin{document}
 % UoB guidlines:
 %
@@ -49,11 +58,11 @@
 \input{frontmatter/declaration}
 \clearemptydoublepage
 %%
-\renewcommand{\contentsname}{Table of Contents}
-\maxtocdepth{subsubsection}
-\tableofcontents*
-\addtocontents{toc}{\par\nobreak \mbox{}\hfill{\textbf{Page}}\par\nobreak}
-\clearemptydoublepage
+%\renewcommand{\contentsname}{Table of Contents}
+%\maxtocdepth{subsubsection}
+%\tableofcontents*
+%\addtocontents{toc}{\par\nobreak \mbox{}\hfill{\textbf{Page}}\par\nobreak}
+%\clearemptydoublepage
 %%
 \listoftables
 \addtocontents{lot}{\par\nobreak\textbf{{\scshape Table}} \hfill Page\par\nobreak}
@@ -70,15 +79,15 @@
 %%
 \import{chapters/chapter01/}{chap01.tex}
 \clearemptydoublepage
-%
-%%\setcounter{chapter}{+1}
+
+%\setcounter{chapter}{+1}
 \import{chapters/chapter02/}{chap02.tex}
 \clearemptydoublepage
 %
 %%\setcounter{chapter}{+2}
 \import{chapters/chapter03/}{chap03.tex}
 \clearemptydoublepage
-%%
+%%%
 \import{chapters/chapter13/}{chap13.tex}
 \clearemptydoublepage
 %%%%%
@@ -118,4 +127,5 @@
 % Add index
 %\printindex
 %   
+\listofchanges
 \end{document}

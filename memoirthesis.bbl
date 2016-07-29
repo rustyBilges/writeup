@@ -127,6 +127,16 @@ I.~Volkov, J.~R. Banavar, S.~P. Hubbell, and A.~Maritan, ``Neutral theory and
   relative species abundance in ecology,'' {\em Nature}, vol.~424, no.~6952,
   pp.~1035--1037, 2003.
 
+\bibitem{staniczenko2014selecting}
+P.~Staniczenko, M.~J. Smith, and S.~Allesina, ``Selecting food web models using
+  normalized maximum likelihood,'' {\em Methods in Ecology and Evolution},
+  vol.~5, no.~6, pp.~551--562, 2014.
+
+\bibitem{bluthgen2008interaction}
+N.~Bl{\"u}thgen, J.~Fr{\"u}nd, D.~P. V{\'a}zquez, and F.~Menzel, ``What do
+  interaction network metrics tell us about specialization and biological
+  traits,'' {\em Ecology}, vol.~89, no.~12, pp.~3387--3399, 2008.
+
 \bibitem{knight2005trophic}
 T.~M. Knight, M.~W. McCoy, J.~M. Chase, K.~A. McCoy, and R.~D. Holt, ``Trophic
   cascades across ecosystems,'' {\em Nature}, vol.~437, no.~7060, pp.~880--883,
@@ -216,11 +226,6 @@ A.~Mougi and M.~Kondoh, ``Diversity of interaction types and ecological
 L.-F. Bersier, C.~Banašek-Richter, and M.-F. Cattin, ``Quantitative
   descriptors of food-web matrices,'' {\em Ecology}, vol.~83, no.~9,
   pp.~2394--2407, 2002.
-
-\bibitem{bluthgen2008interaction}
-N.~Bl{\"u}thgen, J.~Fr{\"u}nd, D.~P. V{\'a}zquez, and F.~Menzel, ``What do
-  interaction network metrics tell us about specialization and biological
-  traits,'' {\em Ecology}, vol.~89, no.~12, pp.~3387--3399, 2008.
 
 \bibitem{bluthgen2006measuring}
 N.~Bl{\"u}thgen, F.~Menzel, and N.~Bl{\"u}thgen, ``Measuring specialization in
@@ -393,6 +398,11 @@ J.~E. Duffy, ``Biodiversity loss, trophic skew and ecosystem functioning,''
 D.~Raffaelli, ``How extinction patterns affect ecosystems,'' {\em Science},
   vol.~306, no.~5699, pp.~1141--1142, 2004.
 
+\bibitem{gavish2012decoupling}
+Y.~Gavish, Y.~Ziv, and M.~L. Rosenzweig, ``Decoupling fragmentation from
+  habitat loss for spiders in patchy agricultural landscapes,'' {\em
+  Conservation Biology}, vol.~26, no.~1, pp.~150--159, 2012.
+
 \bibitem{ewers2011large}
 R.~M. Ewers, R.~K. Didham, L.~Fahrig, G.~Ferraz, A.~Hector, R.~D. Holt,
   V.~Kapos, G.~Reynolds, W.~Sinun, J.~L. Snaddon, {\em et~al.}, ``A large-scale
@@ -406,15 +416,57 @@ N.~M. Haddad, L.~A. Brudvig, J.~Clobert, K.~F. Davies, A.~Gonzalez, R.~D. Holt,
   ``Habitat fragmentation and its lasting impact on earth’s ecosystems,''
   {\em Science Advances}, vol.~1, no.~2, p.~e1500052, 2015.
 
+\bibitem{rybicki2013species}
+J.~Rybicki and I.~Hanski, ``Species--area relationships and extinctions caused
+  by habitat loss and fragmentation,'' {\em Ecology letters}, vol.~16, no.~s1,
+  pp.~27--38, 2013.
+
+\bibitem{tambosi2014framework}
+L.~R. Tambosi, A.~C. Martensen, M.~C. Ribeiro, and J.~P. Metzger, ``A framework
+  to optimize biodiversity restoration efforts based on habitat amount and
+  landscape connectivity,'' {\em Restoration Ecology}, vol.~22, no.~2,
+  pp.~169--177, 2014.
+
+\bibitem{fischer2007landscape}
+J.~Fischer and D.~B. Lindenmayer, ``Landscape modification and habitat
+  fragmentation: a synthesis,'' {\em Global Ecology and Biogeography}, vol.~16,
+  no.~3, pp.~265--280, 2007.
+
+\bibitem{chen2009habitat}
+L.-l. Chen and C.~Hui, ``Habitat destruction and the extinction debt revisited:
+  The allee effect,'' {\em Mathematical Biosciences}, vol.~221, no.~1,
+  pp.~26--32, 2009.
+
 \bibitem{ewers2006continuous}
 R.~M. Ewers and R.~K. Didham, ``Continuous response functions for quantifying
   the strength of edge effects,'' {\em Journal of Applied Ecology}, vol.~43,
   no.~3, pp.~527--536, 2006.
 
+\bibitem{fahrig2003effects}
+L.~Fahrig, ``Effects of habitat fragmentation on biodiversity,'' {\em Annual
+  review of ecology, evolution, and systematics}, pp.~487--515, 2003.
+
+\bibitem{valladares2006habitat}
+G.~Valladares, A.~Salvo, and L.~Cagnolo, ``Habitat fragmentation effects on
+  trophic processes of insect-plant food webs,'' {\em Conservation Biology},
+  vol.~20, no.~1, pp.~212--217, 2006.
+
 \bibitem{kaartinen2011shrinking}
 R.~Kaartinen and T.~Roslin, ``Shrinking by numbers: landscape context affects
   the species composition but not the quantitative structure of local food
   webs,'' {\em Journal of Animal Ecology}, vol.~80, no.~3, pp.~622--631, 2011.
+
+\bibitem{osorio2015local}
+S.~Osorio, X.~Arnan, E.~Bassols, N.~Vicens, and J.~Bosch, ``Local and landscape
+  effects in a host--parasitoid interaction network along a forest--cropland
+  gradient,'' {\em Ecological Applications}, vol.~25, no.~7, pp.~1869--1879,
+  2015.
+
+\bibitem{rossetti2014not}
+M.~R. Rossetti, E.~Gonz{\'a}lez, A.~Salvo, and G.~Valladares, ``Not all in the
+  same boat: trends and mechanisms in herbivory responses to forest
+  fragmentation differ among insect guilds,'' {\em Arthropod-Plant
+  Interactions}, vol.~8, no.~6, pp.~593--603, 2014.
 
 \bibitem{memmott2007conservation}
 J.~Memmott, R.~Gibson, L.~Carvalheiro, K.~Henson, R.~Heleno, M.~Lopezaraiza,
@@ -709,6 +761,32 @@ M.~J. Pocock, D.~M. Evans, and J.~Memmott, ``The robustness and restoration of
   a network of ecological networks,'' {\em Science}, vol.~335, no.~6071,
   pp.~973--977, 2012.
 
+\bibitem{white2014ecologists}
+J.~W. White, A.~Rassweiler, J.~F. Samhouri, A.~C. Stier, and C.~White,
+  ``Ecologists should not use statistical significance tests to interpret
+  simulation model results,'' {\em Oikos}, vol.~123, no.~4, pp.~385--388, 2014.
+
+\bibitem{lin2013research}
+M.~Lin, H.~C. Lucas~Jr, and G.~Shmueli, ``Too big to fail: large samples and
+  the p-value problem,'' {\em Information Systems Research}, vol.~24, no.~4,
+  pp.~906--917, 2013.
+
+\bibitem{lee2015complexities}
+J.-S. Lee, T.~Filatova, A.~Ligmann-Zielinska, B.~Hassani-Mahmooei,
+  F.~Stonedahl, I.~Lorscheid, A.~Voinov, J.~G. Polhill, Z.~Sun, and D.~C.
+  Parker, ``The complexities of agent-based modeling output analysis,'' {\em
+  Journal of Artificial Societies and Social Simulation}, vol.~18, no.~4, p.~4,
+  2015.
+
+\bibitem{runkel2012large}
+P.~Runkel, ``Large samples: Too much of a good thing?.''
+  \url{http://http://blog.minitab.com/blog/statistics-and-quality-data-analysis}.
+\newblock Published: 2012-06-04.
+
+\bibitem{greene2003econometric}
+W.~H. Greene, {\em Econometric analysis}.
+\newblock Pearson Education India, 2003.
+
 \bibitem{neutel2002stability}
 A.-M. Neutel, J.~A. Heesterbeek, and P.~C. de~Ruiter, ``Stability in real food
   webs: weak links in long loops,'' {\em Science}, vol.~296, no.~5570,
@@ -832,6 +910,11 @@ K.~Aho, D.~Derryberry, and T.~Peterson, ``Model selection for ecologists: the
   worldviews of aic and bic,'' {\em Ecology}, vol.~95, no.~3, pp.~631--636,
   2014.
 
+\bibitem{sunnaaker2013approximate}
+M.~Sunn{\aa}ker, A.~G. Busetto, E.~Numminen, J.~Corander, M.~Foll, and
+  C.~Dessimoz, ``Approximate bayesian computation,'' {\em PLoS Comput Biol},
+  vol.~9, no.~1, p.~e1002803, 2013.
+
 \bibitem{hsu1995global}
 S.-B. Hsu and T.-W. Huang, ``Global stability for a class of predator-prey
   systems,'' {\em SIAM Journal on Applied Mathematics}, vol.~55, no.~3,
@@ -858,6 +941,21 @@ K.~H. Wiltshire, A.~Kraberg, I.~Bartsch, M.~Boersma, H.-D. Franke, J.~Freund,
   C.~Geb{\"u}hr, G.~Gerdts, K.~Stockmann, and A.~Wichels, ``Helgoland roads,
   north sea: 45 years of change,'' {\em Estuaries and Coasts}, vol.~33, no.~2,
   pp.~295--310, 2010.
+
+\bibitem{luckinbill1974effects}
+L.~S. Luckinbill, ``The effects of space and enrichment on a predator-prey
+  system,'' {\em Ecology}, vol.~55, no.~5, pp.~1142--1147, 1974.
+
+\bibitem{fahrig2011functional}
+L.~Fahrig, J.~Baudry, L.~Brotons, F.~G. Burel, T.~O. Crist, R.~J. Fuller,
+  C.~Sirami, G.~M. Siriwardena, and J.-L. Martin, ``Functional landscape
+  heterogeneity and animal biodiversity in agricultural landscapes,'' {\em
+  Ecology letters}, vol.~14, no.~2, pp.~101--112, 2011.
+
+\bibitem{elith2008working}
+J.~Elith, J.~R. Leathwick, and T.~Hastie, ``A working guide to boosted
+  regression trees,'' {\em Journal of Animal Ecology}, vol.~77, no.~4,
+  pp.~802--813, 2008.
 
 \bibitem{helton2003latin}
 J.~C. Helton and F.~J. Davis, ``Latin hypercube sampling and the propagation of

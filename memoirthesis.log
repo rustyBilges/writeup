@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  6 JUN 2016 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  29 JUL 2016 18:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1682,79 +1682,130 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/changes/changes.sty
+Package: changes 2014/10/15 v2.0.3 changes package
+
+*** changes package 2014/10/15 v2.0.3 ***
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks64
+\XKV@tempa@toks=\toks65
+)
+\XKV@depth=\count342
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2009/04/17 v1.3 Extended ifthen features
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/pdfcolmk.sty
+Package: pdfcolmk 2008/08/11 v1.2 Color support for pdfTeX via marks (HO)
+Package pdfcolmk Info: The color stack of pdfTeX >= 1.40 is used. Therefore
+(pdfcolmk)             this package is not necessary and not loaded.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box79
+\UL@hyphenbox=\box80
+\UL@skip=\skip261
+\UL@hook=\toks66
+\UL@height=\dimen275
+\UL@pe=\count343
+\UL@pixel=\dimen276
+\ULC@box=\box81
+Package: ulem 2012/05/18
+\ULdepth=\dimen277
+)
+\c@Changes@AuthorCount=\count344
+\c@Changes@Author=\count345
+\c@Changes@AddCount=\count346
+\c@Changes@DeleteCount=\count347
+\c@Changes@ReplaceCount=\count348
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/truncate/truncate.sty
+Package: truncate 2001/08/20  ver 3.6
+\@Trunc@RestHyph=\toks67
+)
+\Changes@Len@summ=\skip262
+)
+\c@Changes@AddCountper=\count349
+\c@Changes@DeleteCountper=\count350
+\c@Changes@ReplaceCountper=\count351
+
 (./memoirthesis.aux)
 \openout1 = `memoirthesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 12.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 12
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 21.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 21
 .
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 12.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 21.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 12.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 21.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 12.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 12.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 12.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 12.
+(Font)              scaled to size 10.18341pt on input line 21.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 21.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 12.
+Package layouts Warning: Layout scale set to 0.5 on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count342
-\scratchdimen=\dimen275
-\scratchbox=\box79
-\nofMPsegments=\count343
-\nofMParguments=\count344
-\everyMPshowfont=\toks64
-\MPscratchCnt=\count345
-\MPscratchDim=\dimen276
-\MPnumerator=\count346
-\makeMPintoPDFobject=\count347
-\everyMPtoPDFconversion=\toks65
+\scratchcounter=\count352
+\scratchdimen=\dimen278
+\scratchbox=\box82
+\nofMPsegments=\count353
+\nofMParguments=\count354
+\everyMPshowfont=\toks68
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen279
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
+\everyMPtoPDFconversion=\toks69
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1770,8 +1821,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box80
-Package hyperref Info: Link coloring ON on input line 12.
+\AtBeginShipoutBox=\box83
+Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1779,19 +1830,19 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count348
+\c@section@level=\count358
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 12.
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 (./memoirthesis.out) (./memoirthesis.out)
 \@outlinefile=\write6
 \openout6 = `memoirthesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 12.
+LaTeX Info: Redefining \microtypecontext on input line 21.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1808,15 +1859,15 @@ Package microtype Info: Loading generic settings for font family
 
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 12.
+put line 21.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 12.
+t line 21.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 12.
+t line 21.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 12.
+line 21.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 12.
+line 21.
  (./frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -1829,7 +1880,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
 
-<logos/bristolcrest_colour.pdf, id=493, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=228, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 
 <use logos/bristolcrest_colour.pdf>
@@ -1906,19 +1957,19 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 
 ])
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 38.
+(Font)              scaled to size 10.18341pt on input line 47.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 \clearemptydoublepage
+l.50 \clearemptydoublepage
                            [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 \clearemptydoublepage
+l.50 \clearemptydoublepage
                            [2
 
 ] (./frontmatter/abstract.tex
@@ -1960,783 +2011,551 @@ Overfull \hbox (1.05093pt too wide) in paragraph at lines 27--29
 ]) [8
 
 
-] (./memoirthesis.toc
+] (./memoirthesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
-
-Overfull \hbox (1.74115pt too wide) detected at line 3
- \T1/fnc/b/n/10.95 xiii
- []
-
-[9]
-Overfull \hbox (1.20142pt too wide) detected at line 66
- \T1/fnc/m/n/10.95 100
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 67
- \T1/fnc/m/n/10.95 106
- []
-
-[10]
-Overfull \hbox (1.20142pt too wide) detected at line 68
- \T1/fnc/m/n/10.95 106
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 69
- \T1/fnc/m/n/10.95 107
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 70
- \T1/fnc/m/n/10.95 110
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 71
- \T1/fnc/m/n/10.95 111
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 72
- \T1/fnc/m/n/10.95 113
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 73
- \T1/fnc/m/n/10.95 114
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 74
- \T1/fnc/b/n/10.95 117
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 75
- \T1/fnc/m/n/10.95 117
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 76
- \T1/fnc/m/n/10.95 119
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 77
- \T1/fnc/m/n/10.95 120
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 78
- \T1/fnc/m/n/10.95 122
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 79
- \T1/fnc/m/n/10.95 122
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 80
- \T1/fnc/m/n/10.95 127
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 81
- \T1/fnc/m/n/10.95 130
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 82
- \T1/fnc/m/n/10.95 131
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 83
- \T1/fnc/m/n/10.95 131
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 84
- \T1/fnc/m/n/10.95 132
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 85
- \T1/fnc/m/n/10.95 137
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 86
- \T1/fnc/m/n/10.95 140
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 87
- \T1/fnc/m/n/10.95 141
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 88
- \T1/fnc/m/n/10.95 144
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 89
- \T1/fnc/m/n/10.95 146
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 90
- \T1/fnc/b/n/10.95 149
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 91
- \T1/fnc/m/n/10.95 149
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 92
- \T1/fnc/m/n/10.95 150
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 93
- \T1/fnc/m/n/10.95 152
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 94
- \T1/fnc/m/n/10.95 155
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 95
- \T1/fnc/m/n/10.95 157
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 96
- \T1/fnc/m/n/10.95 160
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 97
- \T1/fnc/m/n/10.95 162
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 98
- \T1/fnc/m/n/10.95 162
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 99
- \T1/fnc/m/n/10.95 162
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 100
- \T1/fnc/m/n/10.95 163
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 101
- \T1/fnc/m/n/10.95 164
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 102
- \T1/fnc/m/n/10.95 165
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 103
- \T1/fnc/m/n/10.95 166
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 104
- \T1/fnc/m/n/10.95 170
- []
-
-[11]
-Overfull \hbox (1.20142pt too wide) detected at line 105
- \T1/fnc/m/n/10.95 174
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 106
- \T1/fnc/m/n/10.95 178
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 107
- \T1/fnc/m/n/10.95 178
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 108
- \T1/fnc/m/n/10.95 178
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 109
- \T1/fnc/m/n/10.95 179
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 110
- \T1/fnc/m/n/10.95 185
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 111
- \T1/fnc/m/n/10.95 195
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 112
- \T1/fnc/m/n/10.95 202
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 113
- \T1/fnc/m/n/10.95 208
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 114
- \T1/fnc/m/n/10.95 211
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 115
- \T1/fnc/m/n/10.95 214
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 116
- \T1/fnc/m/n/10.95 216
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 117
- \T1/fnc/b/n/10.95 219
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 118
- \T1/fnc/m/n/10.95 219
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 119
- \T1/fnc/m/n/10.95 220
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 120
- \T1/fnc/m/n/10.95 221
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 121
- \T1/fnc/m/n/10.95 221
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 122
- \T1/fnc/m/n/10.95 222
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 123
- \T1/fnc/b/n/10.95 225
- []
-
-) [12] (./memoirthesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 
-Overfull \hbox (1.20142pt too wide) detected at line 11
- \T1/fnc/m/n/10.95 164
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 12
- \T1/fnc/m/n/10.95 192
- []
-
-) [13
-
-] [14
-
-] (./memoirthesis.lof [15]
-Overfull \hbox (1.20142pt too wide) detected at line 64
+Overfull \hbox (1.20142pt too wide) detected at line 8
  \T1/fnc/m/n/10.95 100
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 65
- \T1/fnc/m/n/10.95 101
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 68
- \T1/fnc/m/n/10.95 103
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 69
- \T1/fnc/m/n/10.95 104
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 70
- \T1/fnc/m/n/10.95 105
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 71
- \T1/fnc/m/n/10.95 109
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 72
- \T1/fnc/m/n/10.95 110
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 73
- \T1/fnc/m/n/10.95 112
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 76
- \T1/fnc/m/n/10.95 113
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 77
- \T1/fnc/m/n/10.95 115
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 79
- \T1/fnc/m/n/10.95 121
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 80
- \T1/fnc/m/n/10.95 123
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 81
- \T1/fnc/m/n/10.95 124
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 82
- \T1/fnc/m/n/10.95 126
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 83
- \T1/fnc/m/n/10.95 127
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 84
- \T1/fnc/m/n/10.95 129
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 85
- \T1/fnc/m/n/10.95 131
- []
-
-[16]
-Overfull \hbox (1.20142pt too wide) detected at line 86
- \T1/fnc/m/n/10.95 133
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 87
- \T1/fnc/m/n/10.95 134
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 88
- \T1/fnc/m/n/10.95 135
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 89
- \T1/fnc/m/n/10.95 136
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 90
- \T1/fnc/m/n/10.95 136
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 91
- \T1/fnc/m/n/10.95 138
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 92
- \T1/fnc/m/n/10.95 139
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 93
- \T1/fnc/m/n/10.95 140
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 94
- \T1/fnc/m/n/10.95 141
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 95
- \T1/fnc/m/n/10.95 142
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 96
- \T1/fnc/m/n/10.95 142
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 97
- \T1/fnc/m/n/10.95 143
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 98
- \T1/fnc/m/n/10.95 143
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 100
- \T1/fnc/m/n/10.95 151
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 101
- \T1/fnc/m/n/10.95 160
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 102
- \T1/fnc/m/n/10.95 166
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 103
- \T1/fnc/m/n/10.95 167
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 104
- \T1/fnc/m/n/10.95 168
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 105
+Overfull \hbox (1.20142pt too wide) detected at line 11
  \T1/fnc/m/n/10.95 169
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 106
+Overfull \hbox (1.20142pt too wide) detected at line 12
+ \T1/fnc/m/n/10.95 194
+ []
+
+) [9] [10
+
+] (./memoirthesis.lof [11]
+Overfull \hbox (1.20142pt too wide) detected at line 61
+ \T1/fnc/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 62
+ \T1/fnc/m/n/10.95 102
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 63
+ \T1/fnc/m/n/10.95 103
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 64
+ \T1/fnc/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 65
+ \T1/fnc/m/n/10.95 105
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 68
+ \T1/fnc/m/n/10.95 107
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 69
+ \T1/fnc/m/n/10.95 108
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 70
+ \T1/fnc/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 71
+ \T1/fnc/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 72
+ \T1/fnc/m/n/10.95 114
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 73
+ \T1/fnc/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 76
+ \T1/fnc/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 77
+ \T1/fnc/m/n/10.95 119
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 79
+ \T1/fnc/m/n/10.95 125
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 80
+ \T1/fnc/m/n/10.95 127
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 81
+ \T1/fnc/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 82
+ \T1/fnc/m/n/10.95 130
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 83
+ \T1/fnc/m/n/10.95 131
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 84
+ \T1/fnc/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 85
+ \T1/fnc/m/n/10.95 135
+ []
+
+[12]
+Overfull \hbox (1.20142pt too wide) detected at line 86
+ \T1/fnc/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 87
+ \T1/fnc/m/n/10.95 138
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 88
+ \T1/fnc/m/n/10.95 139
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 89
+ \T1/fnc/m/n/10.95 140
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 90
+ \T1/fnc/m/n/10.95 140
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 91
+ \T1/fnc/m/n/10.95 142
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 92
+ \T1/fnc/m/n/10.95 143
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 93
+ \T1/fnc/m/n/10.95 144
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 94
+ \T1/fnc/m/n/10.95 145
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 95
+ \T1/fnc/m/n/10.95 146
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 96
+ \T1/fnc/m/n/10.95 146
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 97
+ \T1/fnc/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 98
+ \T1/fnc/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 100
+ \T1/fnc/m/n/10.95 155
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 101
+ \T1/fnc/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 102
  \T1/fnc/m/n/10.95 170
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 107
+Overfull \hbox (1.20142pt too wide) detected at line 103
  \T1/fnc/m/n/10.95 171
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 108
- \T1/fnc/m/n/10.95 171
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 109
+Overfull \hbox (1.20142pt too wide) detected at line 104
  \T1/fnc/m/n/10.95 172
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 110
+Overfull \hbox (1.20142pt too wide) detected at line 105
  \T1/fnc/m/n/10.95 173
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 111
- \T1/fnc/m/n/10.95 173
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 112
+Overfull \hbox (1.20142pt too wide) detected at line 106
  \T1/fnc/m/n/10.95 174
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 113
+Overfull \hbox (1.20142pt too wide) detected at line 107
  \T1/fnc/m/n/10.95 175
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 114
+Overfull \hbox (1.20142pt too wide) detected at line 108
+ \T1/fnc/m/n/10.95 175
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 109
  \T1/fnc/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 110
+ \T1/fnc/m/n/10.95 177
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 111
+ \T1/fnc/m/n/10.95 178
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 112
+ \T1/fnc/m/n/10.95 179
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 113
+ \T1/fnc/m/n/10.95 180
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 114
+ \T1/fnc/m/n/10.95 180
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 115
- \T1/fnc/m/n/10.95 176
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 116
  \T1/fnc/m/n/10.95 181
  []
 
 
+Overfull \hbox (1.20142pt too wide) detected at line 116
+ \T1/fnc/m/n/10.95 185
+ []
+
+
 Overfull \hbox (1.20142pt too wide) detected at line 117
- \T1/fnc/m/n/10.95 183
+ \T1/fnc/m/n/10.95 187
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 118
- \T1/fnc/m/n/10.95 184
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 119
- \T1/fnc/m/n/10.95 184
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 120
- \T1/fnc/m/n/10.95 186
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 121
  \T1/fnc/m/n/10.95 188
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 122
+Overfull \hbox (1.20142pt too wide) detected at line 119
  \T1/fnc/m/n/10.95 189
  []
 
-[17]
-Overfull \hbox (1.20142pt too wide) detected at line 123
- \T1/fnc/m/n/10.95 190
- []
 
-
-Overfull \hbox (1.20142pt too wide) detected at line 124
+Overfull \hbox (1.20142pt too wide) detected at line 120
  \T1/fnc/m/n/10.95 191
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 125
- \T1/fnc/m/n/10.95 193
+Overfull \hbox (1.20142pt too wide) detected at line 121
+ \T1/fnc/m/n/10.95 192
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 126
+Overfull \hbox (1.20142pt too wide) detected at line 122
  \T1/fnc/m/n/10.95 193
  []
 
-
-Overfull \hbox (1.20142pt too wide) detected at line 127
+[13]
+Overfull \hbox (1.20142pt too wide) detected at line 123
  \T1/fnc/m/n/10.95 195
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 128
+Overfull \hbox (1.20142pt too wide) detected at line 124
  \T1/fnc/m/n/10.95 196
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 129
+Overfull \hbox (1.20142pt too wide) detected at line 125
  \T1/fnc/m/n/10.95 197
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 130
- \T1/fnc/m/n/10.95 198
+Overfull \hbox (1.20142pt too wide) detected at line 126
+ \T1/fnc/m/n/10.95 197
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 131
+Overfull \hbox (1.20142pt too wide) detected at line 127
  \T1/fnc/m/n/10.95 199
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 132
+Overfull \hbox (1.20142pt too wide) detected at line 128
  \T1/fnc/m/n/10.95 200
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 133
+Overfull \hbox (1.20142pt too wide) detected at line 129
  \T1/fnc/m/n/10.95 201
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 134
+Overfull \hbox (1.20142pt too wide) detected at line 130
  \T1/fnc/m/n/10.95 202
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 135
+Overfull \hbox (1.20142pt too wide) detected at line 131
  \T1/fnc/m/n/10.95 203
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 136
+Overfull \hbox (1.20142pt too wide) detected at line 132
  \T1/fnc/m/n/10.95 204
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 137
- \T1/fnc/m/n/10.95 204
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 138
+Overfull \hbox (1.20142pt too wide) detected at line 133
  \T1/fnc/m/n/10.95 205
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 139
+Overfull \hbox (1.20142pt too wide) detected at line 134
  \T1/fnc/m/n/10.95 206
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 140
+Overfull \hbox (1.20142pt too wide) detected at line 135
  \T1/fnc/m/n/10.95 207
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 141
+Overfull \hbox (1.20142pt too wide) detected at line 136
+ \T1/fnc/m/n/10.95 208
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 137
+ \T1/fnc/m/n/10.95 208
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 138
  \T1/fnc/m/n/10.95 209
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 142
+Overfull \hbox (1.20142pt too wide) detected at line 139
  \T1/fnc/m/n/10.95 210
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 143
- \T1/fnc/m/n/10.95 210
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 144
+Overfull \hbox (1.20142pt too wide) detected at line 140
  \T1/fnc/m/n/10.95 211
  []
 
 
+Overfull \hbox (1.20142pt too wide) detected at line 141
+ \T1/fnc/m/n/10.95 213
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 142
+ \T1/fnc/m/n/10.95 214
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 143
+ \T1/fnc/m/n/10.95 214
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 144
+ \T1/fnc/m/n/10.95 215
+ []
+
+
 Overfull \hbox (1.20142pt too wide) detected at line 145
- \T1/fnc/m/n/10.95 212
+ \T1/fnc/m/n/10.95 216
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 146
- \T1/fnc/m/n/10.95 213
+ \T1/fnc/m/n/10.95 217
  []
 
-) [18] (./chapters/chapter01/chap01.tex (./chapters/chapter01/introduction.tex
+) [14] (./chapters/chapter01/chap01.tex (./chapters/chapter01/introduction.tex
 [1
 
 
 
 ] [2] [3]
-<chapters/chapter01/diagrams/natureKnight.jpg, id=1030, 602.25pt x 454.69875pt>
+<chapters/chapter01/diagrams/natureKnight.jpg, id=633, 602.25pt x 454.69875pt>
 File: chapters/chapter01/diagrams/natureKnight.jpg Graphic file (type jpg)
+
 <use chapters/chapter01/diagrams/natureKnight.jpg>
 Package pdftex.def Info: chapters/chapter01/diagrams/natureKnight.jpg used on i
 nput line 50.
 (pdftex.def)             Requested size: 268.80273pt x 202.95433pt.
 
-Underfull \vbox (badness 6625) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4 <./chapters/chapter01/diagrams/natureKnight.jpg>]
+ [4]
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 85.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 85.
- [5]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [5 <./chapters/chapter01/diagrams/natureKnight.jpg>]
+Underfull \vbox (badness 2119) has occurred while \output is active []
+
  [6]
-[7] <chapters/chapter01/diagrams/nest.jpg, id=1145, 949.5475pt x 438.63875pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+<chapters/chapter01/diagrams/nest.jpg, id=766, 949.5475pt x 438.63875pt>
 File: chapters/chapter01/diagrams/nest.jpg Graphic file (type jpg)
 
 <use chapters/chapter01/diagrams/nest.jpg>
 Package pdftex.def Info: chapters/chapter01/diagrams/nest.jpg used on input lin
 e 149.
 (pdftex.def)             Requested size: 313.59863pt x 144.865pt.
+ [9 <./chapters/chapter01/diagrams/nest.jpg>]
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Reference `sec:' on page 10 undefined on input line 181.
 
- [8]
-[9 <./chapters/chapter01/diagrams/nest.jpg>] [10] [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[10]
 
- [12]
-LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 247.
-LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 13.39188pt on input line 247.
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 257.
+LaTeX Warning: Reference `sec:' on page 11 undefined on input line 198.
 
-[13]
+[11] [12]
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
+LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/fnc/b/it' tried instead on input line 258.
+LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
+(Font)              scaled to size 13.39188pt on input line 258.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 9.29993pt on input line 266.
+
 [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
-[17])) [18] [19] [20
+[17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] (./chapters/chapter02/chap02.tex
-(./chapters/chapter02/the_model.tex [21
+ [18]
+[19]
 
-] [22]
+LaTeX Warning: Reference `sec:' on page 20 undefined on input line 404.
+
+
+LaTeX Warning: Reference `sec:' on page 20 undefined on input line 404.
+
+
+LaTeX Warning: Reference `sec:' on page 20 undefined on input line 404.
+
+[20]
+
+LaTeX Warning: Reference `sec:' on page 21 undefined on input line 406.
+
+
+LaTeX Warning: Reference `sec:' on page 21 undefined on input line 406.
+
+
+LaTeX Warning: Reference `sec:' on page 21 undefined on input line 406.
+
+
+LaTeX Warning: Reference `sec:' on page 21 undefined on input line 408.
+
+
+LaTeX Warning: Reference `sec:' on page 21 undefined on input line 408.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]))
+[22] (./chapters/chapter02/chap02.tex (./chapters/chapter02/the_model.tex
+[23
+
+
+] [24]
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 7.71893pt on input line 46.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 5.57996pt on input line 46.
 
-<chapters/chapter02/"diagrams/niche_space".png, id=1439, 1038.12843pt x 320.698
+<chapters/chapter02/"diagrams/niche_space".png, id=1097, 1038.12843pt x 320.698
 12pt>
 File: chapters/chapter02/"diagrams/niche_space".png Graphic file (type png)
  <use chapters/chapter02/"diagrams/niche_space".png>
 Package pdftex.def Info: chapters/chapter02/"diagrams/niche_space".png used on 
 input line 50.
 (pdftex.def)             Requested size: 448.0pt x 138.39174pt.
- [23]
+ [25]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 69.
@@ -2745,8 +2564,8 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 77.
 
-[24 <./chapters/chapter02/diagrams/niche_space.png>]
-<chapters/chapter02/random_plots/example_food_web.png, id=1460, 578.16pt x 433.
+[26 <./chapters/chapter02/diagrams/niche_space.png>]
+<chapters/chapter02/random_plots/example_food_web.png, id=1117, 578.16pt x 433.
 62pt>
 File: chapters/chapter02/random_plots/example_food_web.png Graphic file (type p
 ng)
@@ -2754,8 +2573,8 @@ ng)
 Package pdftex.def Info: chapters/chapter02/random_plots/example_food_web.png u
 sed on input line 96.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
- [25 <./chapters/chapter02/random_plots/example_food_web.png>]
-<chapters/chapter02/"diagrams/trophic_cartoon".png, id=1477, 991.705pt x 623.32
+ [27 <./chapters/chapter02/random_plots/example_food_web.png>]
+<chapters/chapter02/"diagrams/trophic_cartoon".png, id=1136, 991.705pt x 623.32
 875pt>
 File: chapters/chapter02/"diagrams/trophic_cartoon".png Graphic file (type png)
 
@@ -2763,15 +2582,15 @@ File: chapters/chapter02/"diagrams/trophic_cartoon".png Graphic file (type png)
 Package pdftex.def Info: chapters/chapter02/"diagrams/trophic_cartoon".png used
  on input line 120.
 (pdftex.def)             Requested size: 268.80273pt x 168.94777pt.
- [26] [27 <./chapters/chapter02/diagrams/trophic_cartoon.png>]
-<chapters/chapter02/"diagrams/IBM_movement".png, id=1499, 771.88374pt x 814.041
+ [28] [29 <./chapters/chapter02/diagrams/trophic_cartoon.png>]
+<chapters/chapter02/"diagrams/IBM_movement".png, id=1160, 771.88374pt x 814.041
 24pt>
 File: chapters/chapter02/"diagrams/IBM_movement".png Graphic file (type png)
  <use chapters/chapter02/"diagrams/IBM_movement".png>
 Package pdftex.def Info: chapters/chapter02/"diagrams/IBM_movement".png used on
  input line 152.
 (pdftex.def)             Requested size: 134.40137pt x 141.7389pt.
- [28 <./chapters/chapter02/diagrams/IBM_movement.png>]
+ [30 <./chapters/chapter02/diagrams/IBM_movement.png>]
 LaTeX Font Info:    Try loading font information for TS1+fnc on input line 180.
 
 
@@ -2784,9 +2603,9 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `fnc' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [29]
-[30]
-<chapters/chapter02/"tables/IBM_parameters".pdf, id=1543, 597.23125pt x 845.157
+ [31]
+[32]
+<chapters/chapter02/"tables/IBM_parameters".pdf, id=1204, 597.23125pt x 845.157
 5pt>
 File: chapters/chapter02/"tables/IBM_parameters".pdf Graphic file (type pdf)
  <use chapters/chapter02/"tables/IBM_parameters".pdf>
@@ -2796,9 +2615,9 @@ Package pdftex.def Info: chapters/chapter02/"tables/IBM_parameters".pdf used on
 
 Underfull \vbox (badness 4492) has occurred while \output is active []
 
- [31]
-[32 <./chapters/chapter02/tables/IBM_parameters.pdf>] [33]
-<chapters/chapter02/random_plots/example_trophic_dynamics_default.png, id=1597,
+ [33]
+[34 <./chapters/chapter02/tables/IBM_parameters.pdf>] [35]
+<chapters/chapter02/random_plots/example_trophic_dynamics_default.png, id=1259,
  722.7pt x 433.62pt>
 File: chapters/chapter02/random_plots/example_trophic_dynamics_default.png Grap
 hic file (type png)
@@ -2809,7 +2628,7 @@ cs_default.png used on input line 248.
 (pdftex.def)             Requested size: 448.0pt x 268.80193pt.
 
 <chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai1.png
-, id=1598, 722.7pt x 433.62pt>
+, id=1260, 722.7pt x 433.62pt>
 File: chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai
 1.png Graphic file (type png)
 
@@ -2819,7 +2638,7 @@ Package pdftex.def Info: chapters/chapter02/random_plots/example_trophic_dynami
 cs_default_HL40_mai1.png used on input line 255.
 (pdftex.def)             Requested size: 448.0pt x 268.80193pt.
 
-<chapters/chapter02/random_plots/space/spatial_state_mai0.5.png, id=1601, 831.1
+<chapters/chapter02/random_plots/space/spatial_state_mai0.5.png, id=1263, 831.1
 05pt x 1300.86pt>
 File: chapters/chapter02/random_plots/space/spatial_state_mai0.5.png Graphic fi
 le (type png)
@@ -2828,21 +2647,25 @@ le (type png)
 Package pdftex.def Info: chapters/chapter02/random_plots/space/spatial_state_ma
 i0.5.png used on input line 262.
 (pdftex.def)             Requested size: 358.40137pt x 560.96672pt.
- [34]
-[35 <./chapters/chapter02/random_plots/example_trophic_dynamics_default.png>]
-[36 <./chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_ma
-i1.png>] [37 <./chapters/chapter02/random_plots/space/spatial_state_mai0.5.png>
-] [38] [39]
+ [36]
+[37 <./chapters/chapter02/random_plots/example_trophic_dynamics_default.png>]
+[38 <./chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_ma
+i1.png>] [39 <./chapters/chapter02/random_plots/space/spatial_state_mai0.5.png>
+] [40] [41]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 358.
 
-[40] [41] [42]
+
+Underfull \vbox (badness 2818) has occurred while \output is active []
+
+ [42]
+[43] [44]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 409.
 
-[43]
+[45]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 429.
@@ -2855,320 +2678,327 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 442.
 
-[44])) [45] [46] (./chapters/chapter03/chap03.tex
+[46] [47])) [48] (./chapters/chapter03/chap03.tex
 (./chapters/chapter03/chapter_3_content.tex
 Underfull \vbox (badness 6708) has occurred while \output is active []
 
- [47
+ [49
 
 
 ]
-Underfull \vbox (badness 3029) has occurred while \output is active []
+[50] [51]
 
- [48]
-[49]
-<chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png, id=1822, 867.24pt
+LaTeX Warning: Reference `sec:' on page 52 undefined on input line 83.
+
+
+LaTeX Warning: Reference `sec:' on page 52 undefined on input line 83.
+
+
+LaTeX Warning: Reference `sec:' on page 52 undefined on input line 83.
+
+[52]
+<chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png, id=1509, 867.24pt
  x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png Graphic file 
 (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_count_3ma
-i.png used on input line 94.
+i.png used on input line 98.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
-<chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png, id=1823, 867.24pt 
+<chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png, id=1510, 867.24pt 
 x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png Graphic file (
 type png)
  <use chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai
-.png used on input line 102.
+.png used on input line 106.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
-<chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png, id=1824, 72
+<chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png, id=1511, 72
 2.7pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png Graphic
  file (type png)
 
 <use chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_rand
-om_3mai.png used on input line 109.
+om_3mai.png used on input line 113.
 (pdftex.def)             Requested size: 313.59863pt x 564.48007pt.
 
 
-LaTeX Warning: Float too large for page by 11.59282pt on input line 112.
+LaTeX Warning: Float too large for page by 11.59282pt on input line 116.
 
-[50 <./chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>]
-<chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png, id=1837, 1487.5
+[53 <./chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>] [54 <./cha
+pters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>] [55 <./chapters/chapt
+er03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>]
+<chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png, id=1538, 1487.5
 575pt x 550.055pt>
 File: chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png Graphic fil
 e (type png)
 
 <use chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_random_mai
-0.5.png used on input line 126.
+0.5.png used on input line 130.
 (pdftex.def)             Requested size: 448.0pt x 165.65564pt.
 
-<chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png, id=1840, 14
+<chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png, id=1541, 14
 87.5575pt x 550.055pt>
 File: chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png Graphic
  file (type png)
 
 <use chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_contiguous
-_mai0.5.png used on input line 134.
+_mai0.5.png used on input line 138.
 (pdftex.def)             Requested size: 448.0pt x 165.65564pt.
 
-[51 <./chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>] [52 <./chap
-ters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>]
-<chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png, id=1858, 1040.688pt x
+[56 <./chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png (PNG copy)
+> <./chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png (PNG cop
+y)>]
+<chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png, id=1553, 1040.688pt x
  624.4128pt>
 File: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png Graphic file (typ
 e png)
  <use chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.pn
-g used on input line 145.
+g used on input line 149.
 (pdftex.def)             Requested size: 448.0pt x 268.80669pt.
 
-Underfull \vbox (badness 3815) has occurred while \output is active []
-
- [53 <./chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png (PNG copy
-)>]
+[57 <./chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>]
 <chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png, id=
-1876, 867.24pt x 1300.86pt>
+1572, 867.24pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png
  Graphic file (type png)
 
 <use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_random_3mai.png used on input line 160.
+_hl_random_3mai.png used on input line 164.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
 
 <chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.png,
- id=1877, 867.24pt x 1300.86pt>
+ id=1573, 867.24pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai
 .png Graphic file (type png)
 
 <use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.
 png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_contiguous_3mai.png used on input line 167.
+_hl_contiguous_3mai.png used on input line 171.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
- [54 <./chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png (PNG 
-copy)>] [55 <./chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>]
-[56 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.pn
-g>] [57 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous
-_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png, id=1906, 867.
+ [58] [59 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3
+mai.png>] [60 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_cont
+iguous_3mai.png>]
+<chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png, id=1597, 867.
 24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png Graphic f
 ile (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_number_of_links
-_3mai.png used on input line 182.
+_3mai.png used on input line 186.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-<chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png, id=1911, 8
+<chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png, id=1602, 8
 67.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png Graphi
 c file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_interacti
-ons_3mai.png used on input line 189.
+ons_3mai.png used on input line 193.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
 Underfull \vbox (badness 1960) has occurred while \output is active []
 
- [58
+ [61
 
- <./chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>] [59 <./ch
+ <./chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>] [62 <./ch
 apters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png, id=1940, 
+<chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png, id=1630, 
 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png Graph
 ic file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_genera
-lity_3mai.png used on input line 207.
+lity_3mai.png used on input line 211.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-<chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png, id=194
+<chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png, id=163
 5, 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png Gr
 aphic file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_vulner
-ability_3mai.png used on input line 214.
+ability_3mai.png used on input line 218.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-[60 <./chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png, id=1959
+[63 <./chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>]
+<chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png, id=1650
 , 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png Gra
 phic file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_interaction_div
-ersity_3mai.png used on input line 225.
+ersity_3mai.png used on input line 229.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-<chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png, id=1964, 867.2
+<chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png, id=1655, 867.2
 4pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png Graphic fi
 le (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_specialisation_
-3mai.png used on input line 239.
+3mai.png used on input line 243.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
- [61 <./chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
-] [62 <./chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
+ [64 <./chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
+] [65 <./chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
  <./chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png, id=1980, 867.24p
+<chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png, id=1671, 867.24p
 t x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png Graphic file
  (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3m
-ai.png used on input line 251.
+ai.png used on input line 255.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
-<chapters/chapter03/clean_figs/strong_fig.png, id=1985, 867.24pt x 1300.86pt>
+<chapters/chapter03/clean_figs/strong_fig.png, id=1676, 867.24pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/strong_fig.png Graphic file (type png)
 
 <use chapters/chapter03/clean_figs/strong_fig.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/strong_fig.png used on i
-nput line 258.
+nput line 262.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
 
 
-LaTeX Warning: Float too large for page by 11.91661pt on input line 261.
+LaTeX Warning: Float too large for page by 11.91661pt on input line 265.
 
-[63
+[66
 
- <./chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>] [64 <./chapt
+ <./chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>] [67 <./chapt
 ers/chapter03/clean_figs/strong_fig.png>]
-<chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png, id=2014, 867.24pt x 
+<chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png, id=1705, 867.24pt x 
 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png Graphic file (ty
 pe png)
  <use chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.p
-ng used on input line 275.
+ng used on input line 279.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
-<chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png, id=2019, 867.24pt x 
+<chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png, id=1710, 867.24pt x 
 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png Graphic file (ty
 pe png)
  <use chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.p
-ng used on input line 282.
+ng used on input line 286.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
-[66 <./chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png> <./chapters/ch
-apter03/clean_figs/clean_lm_gearys_c_3mai.png>] [67]
-<chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png, id=2049, 867.
+ [68]
+[69 <./chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png> <./chapters/ch
+apter03/clean_figs/clean_lm_gearys_c_3mai.png>] [70]
+<chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png, id=1740, 867.
 24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png Graphic f
 ile (type png)
 
 <use chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_minimum_invariability
-_3mai.png used on input line 299.
+_3mai.png used on input line 303.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
-<chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png, id=2054, 867.24pt x 
+<chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png, id=1745, 867.24pt x 
 520.344pt>
 File: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png Graphic file (ty
 pe png)
  <use chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.p
-ng used on input line 306.
+ng used on input line 310.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
 Underfull \vbox (badness 5105) has occurred while \output is active []
 
- [68
+ [71
 
- <./chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>] [69 <./ch
+ <./chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>] [72 <./ch
 apters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png>]
 Underfull \vbox (badness 1142) has occurred while \output is active []
 
- [70
+ [73
 
 ]
-<chapters/chapter03/clean_figs/normalised_IS3_dist_random.png, id=2097, 1300.86
+<chapters/chapter03/clean_figs/normalised_IS3_dist_random.png, id=1788, 1300.86
 pt x 722.7pt>
 File: chapters/chapter03/clean_figs/normalised_IS3_dist_random.png Graphic file
  (type png)
 
 <use chapters/chapter03/clean_figs/normalised_IS3_dist_random.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_rand
-om.png used on input line 329.
+om.png used on input line 333.
 (pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
 
-<chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png, id=2098, 130
+<chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png, id=1789, 130
 0.86pt x 722.7pt>
 File: chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png Graphic 
 file (type png)
 
 <use chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_cont
-iguous.png used on input line 337.
+iguous.png used on input line 341.
 (pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
-[72 <./chapters/chapter03/clean_figs/normalised_IS3_dist_random.png> <./chapter
+ [74]
+[75 <./chapters/chapter03/clean_figs/normalised_IS3_dist_random.png> <./chapter
 s/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>]
-<chapters/chapter03/clean_figs/diffusion_example.png, id=2116, 1164.9924pt x 76
+<chapters/chapter03/clean_figs/diffusion_example.png, id=1807, 1164.9924pt x 76
 0.2804pt>
 File: chapters/chapter03/clean_figs/diffusion_example.png Graphic file (type pn
 g)
  <use chapters/chapter03/clean_figs/diffusion_example.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/diffusion_example.png us
-ed on input line 348.
+ed on input line 352.
 (pdftex.def)             Requested size: 448.0pt x 292.36662pt.
 LaTeX Font Info:    Font shape `TS1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `TS1/fnc/b/n' tried instead on input line 349.
+(Font)              Font shape `TS1/fnc/b/n' tried instead on input line 353.
 LaTeX Font Info:    Font shape `TS1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 349.
+(Font)              scaled to size 10.18341pt on input line 353.
 
-<chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png, id=2117
+<chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png, id=1808
 , 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png Gra
 phic file (type png)
 
 <use chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_mean_proportion_immig
-ration_3mai.png used on input line 355.
+ration_3mai.png used on input line 359.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [73]
-[74 <./chapters/chapter03/clean_figs/diffusion_example.png>]
+ [76]
+[77 <./chapters/chapter03/clean_figs/diffusion_example.png>]
 Underfull \vbox (badness 3954) has occurred while \output is active []
 
- [75 <./chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>]
- [76]
-[77
+ [78 <./chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>]
+ [79]
+[80
 
-])) [78] (./chapters/chapter13/chap13.tex
+])) [81] [82
+
+] (./chapters/chapter13/chap13.tex
 (./chapters/chapter13/chapter_13_content.tex
-<chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png, id=21
-78, 578.16pt x 433.62pt>
+<chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png, id=18
+74, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png G
 raphic file (type png)
 
@@ -3179,15 +3009,14 @@ er_tl_zeroIR".png used on input line 30.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79
-
+ [83
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80 <./chapters/chapter13/figures/persistence/hist_species_per_tl_zeroIR.png>]
+ [84 <./chapters/chapter13/figures/persistence/hist_species_per_tl_zeroIR.png>]
 
-<chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png, id=2201, 5
+<chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png, id=1897, 5
 78.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png Graphi
 c file (type png)
@@ -3197,9 +3026,9 @@ Package pdftex.def Info: chapters/chapter13/"figures/persistence/mean_trophic_d
 ynamics".png used on input line 60.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
-[81]
+[85]
 <chapters/chapter13/"figures/persistence/species_richness_per_trophic_level".pn
-g, id=2209, 578.16pt x 433.62pt>
+g, id=1910, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/species_richness_per_trophic_leve
 l".png Graphic file (type png)
 
@@ -3210,7 +3039,7 @@ ss_per_trophic_level".png used on input line 81.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 <chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai00".png, id=
-2210, 578.16pt x 433.62pt>
+1911, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai00".png
  Graphic file (type png)
 
@@ -3226,7 +3055,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 8.36993pt on input line 102.
 
 <chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png, id=
-2211, 578.16pt x 433.62pt>
+1912, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png
  Graphic file (type png)
 
@@ -3234,13 +3063,13 @@ File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png
 Package pdftex.def Info: chapters/chapter13/"figures/persistence/rr_hist_specie
 s_per_tl_mai05".png used on input line 105.
 (pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-[82 <./chapters/chapter13/figures/persistence/mean_trophic_dynamics.png>]
-[83 <./chapters/chapter13/figures/persistence/species_richness_per_trophic_leve
+[86 <./chapters/chapter13/figures/persistence/mean_trophic_dynamics.png>]
+[87 <./chapters/chapter13/figures/persistence/species_richness_per_trophic_leve
 l.png> <./chapters/chapter13/figures/persistence/rr_hist_species_per_tl_mai00.p
 ng> <./chapters/chapter13/figures/persistence/rr_hist_species_per_tl_mai05.png>
 ]
 <chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai00".png, i
-d=2232, 578.16pt x 433.62pt>
+d=1933, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai00".p
 ng Graphic file (type png)
 
@@ -3251,7 +3080,7 @@ c_dynamics_mai00".png used on input line 178.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 <chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai05".png, i
-d=2233, 578.16pt x 433.62pt>
+d=1934, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai05".p
 ng Graphic file (type png)
 
@@ -3267,7 +3096,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
 l.215 	\subbottom
                  [\textbf{ MAI=0.0}]{\includegraphics[width=0.49\linewidth]{...
 
-<chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png, id=2234
+<chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png, id=1935
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png Gra
 phic file (type png)
@@ -3283,7 +3112,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
 l.218 	\subbottom
                  [\textbf{ MAI=0.5}]{\includegraphics[width=0.49\linewidth]{...
 
-<chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png, id=2235
+<chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png, id=1936
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png Gra
 phic file (type png)
@@ -3295,13 +3124,13 @@ Package pdftex.def Info: chapters/chapter13/"figures/persistence/ls_v_comp_mai0
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai00.p
+ [88 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai00.p
 ng>]
 Underfull \vbox (badness 3118) has occurred while \output is active []
 
- [85 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai05.p
+ [89 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai05.p
 ng>]
-[86 <./chapters/chapter13/figures/persistence/ls_v_comp_mai00_standard.png> <./
+[90 <./chapters/chapter13/figures/persistence/ls_v_comp_mai00_standard.png> <./
 chapters/chapter13/figures/persistence/ls_v_comp_mai05_standard.png>]pdfTeX war
 ning (ext4): destination with the same identifier (name{subfigure.1}) has been 
 already used, duplicate ignored
@@ -3310,7 +3139,7 @@ already used, duplicate ignored
 l.243 	\subbottom
                  [\textbf{Niche model}]{\includegraphics[width=0.49\linewidt...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png, id=2258, 
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png, id=1959, 
 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png Graph
 ic file (type png)
@@ -3326,7 +3155,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
 l.246 	\subbottom
                  [\textbf{Re-wired networks}]{\includegraphics[width=0.49\li...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png, id=2259
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png, id=1960
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png Gra
 phic file (type png)
@@ -3342,7 +3171,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
 l.256 	\subbottom
                  [\textbf{Niche model}]{\includegraphics[width=0.49\linewidt...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png, id=2260, 
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png, id=1961, 
 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png Graph
 ic file (type png)
@@ -3358,7 +3187,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
 l.259 	\subbottom
                  [\textbf{Re-wired networks}]{\includegraphics[width=0.49\li...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png, id=2261
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png, id=1962
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png Gra
 phic file (type png)
@@ -3368,12 +3197,12 @@ Package pdftex.def Info: chapters/chapter13/"figures/persistence/nsp_v_comp_mai
 05_rewired".png used on input line 259.
 (pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
 
-[87] [88 <./chapters/chapter13/figures/persistence/nsp_v_comp_mai00_niche.png> 
+[91] [92 <./chapters/chapter13/figures/persistence/nsp_v_comp_mai00_niche.png> 
 <./chapters/chapter13/figures/persistence/nsp_v_comp_mai00_rewired.png> <./chap
 ters/chapter13/figures/persistence/nsp_v_comp_mai05_niche.png> <./chapters/chap
 ter13/figures/persistence/nsp_v_comp_mai05_rewired.png>]
-<chapters/chapter13/figures/persistence/net_struct/good_network_page.png, id=22
-81, 1445.4pt x 722.7pt>
+<chapters/chapter13/figures/persistence/net_struct/good_network_page.png, id=19
+82, 1445.4pt x 722.7pt>
 File: chapters/chapter13/figures/persistence/net_struct/good_network_page.png G
 raphic file (type png)
 
@@ -3382,8 +3211,8 @@ Package pdftex.def Info: chapters/chapter13/figures/persistence/net_struct/good
 _network_page.png used on input line 295.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-<chapters/chapter13/figures/persistence/net_struct/bad_network_page.png, id=228
-2, 1445.4pt x 722.7pt>
+<chapters/chapter13/figures/persistence/net_struct/bad_network_page.png, id=198
+3, 1445.4pt x 722.7pt>
 File: chapters/chapter13/figures/persistence/net_struct/bad_network_page.png Gr
 aphic file (type png)
 
@@ -3392,10 +3221,30 @@ Package pdftex.def Info: chapters/chapter13/figures/persistence/net_struct/bad_
 network_page.png used on input line 302.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-[89] [90 <./chapters/chapter13/figures/persistence/net_struct/good_network_page
+
+LaTeX Warning: Reference `sec:sec:com_dyn_var' on page 93 undefined on input li
+ne 339.
+
+
+Package natbib Warning: Citation `gause1934experimental' on page 93 undefined o
+n input line 339.
+
+
+Package natbib Warning: Citation `desharnais2005population' on page 93 undefine
+d on input line 339.
+
+
+Package natbib Warning: Citation `hutchinson1961paradox' on page 93 undefined o
+n input line 339.
+
+
+Package natbib Warning: Citation `holyoak1996persistence' on page 93 undefined 
+on input line 339.
+
+[93] [94 <./chapters/chapter13/figures/persistence/net_struct/good_network_page
 .png> <./chapters/chapter13/figures/persistence/net_struct/bad_network_page.png
->] [91]
-<chapters/chapter13/"figures/stationarity/cov_vs_ir".png, id=2311, 578.16pt x 4
+>] [95]
+<chapters/chapter13/"figures/stationarity/cov_vs_ir".png, id=2004, 578.16pt x 4
 33.62pt>
 File: chapters/chapter13/"figures/stationarity/cov_vs_ir".png Graphic file (typ
 e png)
@@ -3403,277 +3252,357 @@ e png)
 Package pdftex.def Info: chapters/chapter13/"figures/stationarity/cov_vs_ir".pn
 g used on input line 401.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
- [92
+ [96
 
  <./chapters/chapter13/figures/stationarity/cov_vs_ir.png>]
 
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 436.
+Package natbib Warning: Citation `hsu1997schaum' on page 97 undefined on input 
+line 436.
 
-[93] [94]
-<chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png, id=2355, 731.37
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 438.
+
+[97]
+
+Package natbib Warning: Citation `kwiatkowski1992testing' on page 98 undefined 
+on input line 452.
+
+
+Package natbib Warning: Citation `said1984testing' on page 98 undefined on inpu
+t line 452.
+
+
+Package natbib Warning: Citation `priestley1969test' on page 98 undefined on in
+put line 452.
+
+
+Package natbib Warning: Citation `priestley1969test' on page 98 undefined on in
+put line 458.
+
+[98]
+<chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png, id=2044, 731.37
 24pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png Graphic fil
 e (type png)
 
 <use chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_rw_ns_dynam
-ics.png used on input line 479.
+ics.png used on input line 481.
 (pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
- [95 <./chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png>]
-<chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png, id=2365, 7
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[99 <./chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png>]
+<chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png, id=2054, 7
 31.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png Graphi
 c file (type png)
 
 <use chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/stat_te
-sts_v_wl.png used on input line 518.
+sts_v_wl.png used on input line 520.
 (pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
 
-[96 <./chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png>]
-<chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png, id=2378, 731.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[100]
+<chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png, id=2066, 731.
 3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png Graphic f
 ile (type png)
 
 <use chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_trophic_dyn
-amics.png used on input line 541.
+amics.png used on input line 543.
 (pdftex.def)             Requested size: 313.59863pt x 189.64886pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[97]
-<chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png, id=2389
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101 <./chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png>]
+Underfull \vbox (badness 8132) has occurred while \output is active []
+
+ [102 <./chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png>]
+<chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png, id=2083
 , 731.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png Gra
 phic file (type png)
 
 <use chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/tl_stat
-_tests_v_wl.png used on input line 556.
+_tests_v_wl.png used on input line 558.
 (pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 3428) has occurred while \output is active []
-
- [98 <./chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png>]
-<chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png, id=2401, 72
+<chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png, id=2090, 72
 2.7pt x 433.62pt>
 File: chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png Graphic
  file (type png)
 
 <use chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_sp_by_tl_pa
-rt10000.png used on input line 566.
+rt10000.png used on input line 568.
 (pdftex.def)             Requested size: 448.0pt x 268.80193pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
- has been already used, duplicate ignored
+
+Underfull \vbox (badness 1383) has occurred while \output is active []
+
+ [103 <./chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png>
+]pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1}
+) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.585 	\subbottom
+l.587 	\subbottom
                  [Three most abundant species]{\includegraphics[width=0.8\li...
 
 <chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png, id=2
-406, 731.3724pt x 442.2924pt>
+100, 731.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png 
 Graphic file (type png)
 
 <use chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/sp_ma_s
-tat_tests_v_wl.png used on input line 585.
+tat_tests_v_wl.png used on input line 587.
 (pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.586 		\subbottom
+l.588 		\subbottom
                   [Three least abundant species]{\includegraphics[width=0.8\...
 
 <chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png, id=2
-407, 731.3724pt x 442.2924pt>
+101, 731.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png 
 Graphic file (type png)
 
 <use chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/sp_la_s
-tat_tests_v_wl.png used on input line 586.
+tat_tests_v_wl.png used on input line 588.
 (pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
 
-Underfull \vbox (badness 6396) has occurred while \output is active []
-
- [99 <./chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png>]
-
-Underfull \vbox (badness 1701) has occurred while \output is active []
-
- [100 <./chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png>] [1
-01 <./chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png>
- <./chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png>]
-<chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png, id=2435, 72
+[104 <./chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png>]
+[105 <./chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.pn
+g> <./chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png>
+]
+<chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png, id=2125, 72
 2.7pt x 433.62pt>
 File: chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png Graphic
  file (type png)
 
 <use chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/hi_v_li_net7_e
-nsemble.png used on input line 609.
+nsemble.png used on input line 611.
 (pdftex.def)             Requested size: 448.0pt x 268.80193pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-<chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png, id=2442, 722.7pt x 7
+[106]
+<chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png, id=2137, 722.7pt x 7
 56.6669pt>
 File: chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png Graphic file (ty
 pe png)
  <use chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/nssp_ir_v_hl.p
-ng used on input line 619.
+ng used on input line 621.
 (pdftex.def)             Requested size: 448.0pt x 469.05936pt.
 
-<chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png, id=2445, 578.16p
+<chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png, id=2140, 578.16p
 t x 433.62pt>
 File: chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png Graphic file
  (type png)
 
 <use chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/nssp_v_ir_and_
-hl.png used on input line 628.
+hl.png used on input line 630.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[102] [103 <./chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png
->] [104 <./chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png>] [105 <./c
-hapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png>] [106
+[107 <./chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png>]
+[108 <./chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png>] [109 <./chap
+ters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png>]
 
-] [107]
-<chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png, id=250
-3, 1300.86pt x 1300.86pt>
+Package natbib Warning: Citation `marwan2007recurrence' on page 110 undefined o
+n input line 647.
+
+
+Package natbib Warning: Citation `aparicio2008detecting' on page 110 undefined 
+on input line 647.
+
+
+Package natbib Warning: Citation `saul09phd' on page 110 undefined on input lin
+e 647.
+
+
+Package natbib Warning: Citation `saul09phd' on page 110 undefined on input lin
+e 647.
+
+
+Package natbib Warning: Citation `saul09phd' on page 110 undefined on input lin
+e 647.
+
+
+Package natbib Warning: Citation `aparicio2008detecting' on page 110 undefined 
+on input line 655.
+
+
+Package natbib Warning: Citation `aparicio2008detecting' on page 110 undefined 
+on input line 657.
+
+
+Package natbib Warning: Citation `marwan2007recurrence' on page 110 undefined o
+n input line 657.
+
+[110
+
+]
+
+Package natbib Warning: Citation `aparicio2008detecting' on page 111 undefined 
+on input line 664.
+
+
+Package natbib Warning: Citation `aparicio2008detecting' on page 111 undefined 
+on input line 678.
+
+
+Package natbib Warning: Citation `aparicio2008detecting' on page 111 undefined 
+on input line 680.
+
+
+Package natbib Warning: Citation `saul09phd' on page 111 undefined on input lin
+e 680.
+
+[111]
+<chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png, id=218
+1, 1300.86pt x 1300.86pt>
 File: chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png Gr
 aphic file (type png)
 
 <use chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/RP_high_low_sh
-uffle_random.png used on input line 688.
+uffle_random.png used on input line 690.
 (pdftex.def)             Requested size: 448.0pt x 448.0032pt.
 
-<chapters/chapter13/figures/stationarity/percentage_determinism.png, id=2506, 1
+<chapters/chapter13/figures/stationarity/percentage_determinism.png, id=2184, 1
 300.86pt x 722.7pt>
 File: chapters/chapter13/figures/stationarity/percentage_determinism.png Graphi
 c file (type png)
 
 <use chapters/chapter13/figures/stationarity/percentage_determinism.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/percentage_det
-erminism.png used on input line 696.
+erminism.png used on input line 698.
 (pdftex.def)             Requested size: 448.0pt x 248.89066pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[108] [109 <./chapters/chapter13/figures/stationarity/RP_high_low_shuffle_rando
+[112] [113 <./chapters/chapter13/figures/stationarity/RP_high_low_shuffle_rando
 m.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [110 <./chapters/chapter13/figures/stationarity/percentage_determinism.png>] [
-111]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
+ [114 <./chapters/chapter13/figures/stationarity/percentage_determinism.png>] [
+115]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.782 	\subbottom
+l.784 	\subbottom
                  [HI simulation (IR$=0.001$)]{\includegraphics[width=1.0\lin...
 
 <chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_regress
-ion.png, id=2536, 1309.5324pt x 442.2924pt>
+ion.png, id=2216, 1309.5324pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_re
 gression.png Graphic file (type png)
 
 <use chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_reg
 ression.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/Reliability/HI
-/three_estimator_regression.png used on input line 782.
+/three_estimator_regression.png used on input line 784.
 (pdftex.def)             Requested size: 448.0pt x 151.30876pt.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 7.06795pt on input line 782.
+(Font)              scaled to size 7.06795pt on input line 784.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 782.
+(Font)              scaled to size 8.27998pt on input line 784.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 782.
+(Font)              scaled to size 6.99199pt on input line 784.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.06795pt on input line 782.
+(Font)              scaled to size 7.06795pt on input line 784.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 782.
+(Font)              scaled to size 8.27998pt on input line 784.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 782.
+(Font)              scaled to size 6.99199pt on input line 784.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.783 	\subbottom
+l.785 	\subbottom
                  [LI simulation (IR$=0.0001$)]{\includegraphics[width=1.0\li...
 
 <chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_regress
-ion.png, id=2537, 1309.5324pt x 442.2924pt>
+ion.png, id=2217, 1309.5324pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_re
 gression.png Graphic file (type png)
 
 <use chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_reg
 ression.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/Reliability/LI
-/three_estimator_regression.png used on input line 783.
+/three_estimator_regression.png used on input line 785.
 (pdftex.def)             Requested size: 448.0pt x 151.30876pt.
 
 <chapters/chapter13/figures/stationarity/Reliability/error_versus_estimator.png
-, id=2538, 578.16pt x 433.62pt>
+, id=2218, 578.16pt x 433.62pt>
 File: chapters/chapter13/figures/stationarity/Reliability/error_versus_estimato
 r.png Graphic file (type png)
 
 <use chapters/chapter13/figures/stationarity/Reliability/error_versus_estimator
 .png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/Reliability/er
-ror_versus_estimator.png used on input line 792.
+ror_versus_estimator.png used on input line 794.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Package natbib Warning: Citation `mac2007use' on page 116 undefined on input li
+ne 809.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112 <./chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator
+ [116 <./chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator
 _regression.png> <./chapters/chapter13/figures/stationarity/Reliability/LI/thre
-e_estimator_regression.png>] [113 <./chapters/chapter13/figures/stationarity/Re
+e_estimator_regression.png>] [117 <./chapters/chapter13/figures/stationarity/Re
 liability/error_versus_estimator.png>]
-<chapters/chapter13/figures/stationarity/ras_3examples.png, id=2559, 722.7pt x 
+<chapters/chapter13/figures/stationarity/ras_3examples.png, id=2238, 722.7pt x 
 722.7pt>
 File: chapters/chapter13/figures/stationarity/ras_3examples.png Graphic file (t
 ype png)
  <use chapters/chapter13/figures/stationarity/ras_3examples.png>
 Package pdftex.def Info: chapters/chapter13/figures/stationarity/ras_3examples.
-png used on input line 821.
+png used on input line 823.
 (pdftex.def)             Requested size: 448.0pt x 448.0032pt.
 
-[114] [115 <./chapters/chapter13/figures/stationarity/ras_3examples.png>]))
-[116] (./chapters/chapter04/chap04.tex
+[118] [119 <./chapters/chapter13/figures/stationarity/ras_3examples.png>]))
+[120] (./chapters/chapter04/chap04.tex
 (./chapters/chapter04/chapter_4_content.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [117
+ [121
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [118]
-[119]
-<chapters/chapter04/figures/clean_analysis/heatmap_ttest.png, id=2632, 1589.94p
+ [122]
+[123]
+<chapters/chapter04/figures/clean_analysis/heatmap_ttest.png, id=2311, 1589.94p
 t x 867.24pt>
 File: chapters/chapter04/figures/clean_analysis/heatmap_ttest.png Graphic file 
 (type png)
@@ -3682,11 +3611,11 @@ File: chapters/chapter04/figures/clean_analysis/heatmap_ttest.png Graphic file
 Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/heatmap_ttes
 t.png used on input line 97.
 (pdftex.def)             Requested size: 448.0pt x 244.36058pt.
- [120]
+ [124]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121 <./chapters/chapter04/figures/clean_analysis/heatmap_ttest.png>]
-<chapters/chapter04/figures/clean_analysis/random/heatmap1.png, id=2657, 1589.9
+ [125 <./chapters/chapter04/figures/clean_analysis/heatmap_ttest.png>]
+<chapters/chapter04/figures/clean_analysis/random/heatmap1.png, id=2336, 1589.9
 4pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/random/heatmap1.png Graphic fil
 e (type png)
@@ -3696,7 +3625,7 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/random/heatm
 ap1.png used on input line 118.
 (pdftex.def)             Requested size: 448.0pt x 366.54086pt.
 
-<chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png, id=2658, 15
+<chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png, id=2337, 15
 89.94pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png Graphic
  file (type png)
@@ -3706,10 +3635,10 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/contiguous/h
 eatmap1.png used on input line 124.
 (pdftex.def)             Requested size: 448.0pt x 366.54086pt.
 
-[122] [123 <./chapters/chapter04/figures/clean_analysis/random/heatmap1.png>]
-[124 <./chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png>]
-[125]
-<chapters/chapter04/figures/clean_analysis/random/heatmap3.png, id=2704, 1589.9
+[126] [127 <./chapters/chapter04/figures/clean_analysis/random/heatmap1.png>]
+[128 <./chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png>]
+[129]
+<chapters/chapter04/figures/clean_analysis/random/heatmap3.png, id=2384, 1589.9
 4pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/random/heatmap3.png Graphic fil
 e (type png)
@@ -3719,7 +3648,7 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/random/heatm
 ap3.png used on input line 155.
 (pdftex.def)             Requested size: 448.0pt x 366.54086pt.
 
-<chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png, id=2707, 15
+<chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png, id=2387, 15
 89.94pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png Graphic
  file (type png)
@@ -3731,9 +3660,9 @@ eatmap3.png used on input line 161.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [126 <./chapters/chapter04/figures/clean_analysis/random/heatmap3.png>] [127 <
+ [130 <./chapters/chapter04/figures/clean_analysis/random/heatmap3.png>] [131 <
 ./chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png>]
-<chapters/chapter04/figures/clean_analysis/heatmap_sync.png, id=2739, 1589.94pt
+<chapters/chapter04/figures/clean_analysis/heatmap_sync.png, id=2420, 1589.94pt
  x 867.24pt>
 File: chapters/chapter04/figures/clean_analysis/heatmap_sync.png Graphic file (
 type png)
@@ -3742,10 +3671,10 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/heatmap_sync
 .png used on input line 185.
 (pdftex.def)             Requested size: 448.0pt x 244.36058pt.
 
-[128] [129 <./chapters/chapter04/figures/clean_analysis/heatmap_sync.png>]
-[130]
-<chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png, id=277
-9, 867.24pt x 520.344pt>
+[132] [133 <./chapters/chapter04/figures/clean_analysis/heatmap_sync.png>]
+[134]
+<chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png, id=246
+1, 867.24pt x 520.344pt>
 File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png Gr
 aphic file (type png)
 
@@ -3754,10 +3683,10 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/clean_lm_sha
 nnon_eq_3mai.png used on input line 275.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
-[131 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png>
+[135 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png>
 ]
 <chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_3mai.
-png, id=2796, 722.7pt x 1300.86pt>
+png, id=2478, 722.7pt x 1300.86pt>
 File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_
 3mai.png Graphic file (type png)
 
@@ -3767,8 +3696,8 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/lm_fg_shanno
 n_eq_hl_contiguous_3mai.png used on input line 289.
 (pdftex.def)             Requested size: 313.59863pt x 564.48007pt.
 
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png, id=280
-2, 1182.4175pt x 440.64626pt>
+<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png, id=248
+4, 1182.4175pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png Gr
 aphic file (type png)
 
@@ -3777,10 +3706,10 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/example_RADS
 _mai0_random.png used on input line 302.
 (pdftex.def)             Requested size: 448.0pt x 166.94975pt.
 
-[132] [133 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_con
+[136] [137 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_con
 tiguous_3mai.png>]
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png, id=281
-6, 1421.31pt x 550.055pt>
+<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png, id=249
+9, 1421.31pt x 550.055pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png Gr
 aphic file (type png)
 
@@ -3791,10 +3720,10 @@ _mai1_random.png used on input line 319.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [134 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png
+ [138 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png
  (PNG copy)>]
 <chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous.png, id
-=2827, 1421.31pt x 550.055pt>
+=2510, 1421.31pt x 550.055pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous.pn
 g Graphic file (type png)
 
@@ -3805,7 +3734,7 @@ _mai0_contiguous.png used on input line 328.
 (pdftex.def)             Requested size: 448.0pt x 173.37735pt.
 
 <chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous.png, id
-=2836, 1179.40625pt x 440.64626pt>
+=2519, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous.pn
 g Graphic file (type png)
 
@@ -3817,12 +3746,12 @@ _mai1_contiguous.png used on input line 343.
 
 Underfull \vbox (badness 6204) has occurred while \output is active []
 
- [135 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png
- (PNG copy)>] [136 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_ma
+ [139 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png
+ (PNG copy)>] [140 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_ma
 i0_contiguous.png (PNG copy)> <./chapters/chapter04/figures/bivariate_v_HL/exam
 ple_RADS_mai1_contiguous.png (PNG copy)>]
 <chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_random_3
-mai.png, id=2852, 867.24pt x 1300.86pt>
+mai.png, id=2536, 867.24pt x 1300.86pt>
 File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_ran
 dom_3mai.png Graphic file (type png)
 
@@ -3833,7 +3762,7 @@ ve_abundance_hl_random_3mai.png used on input line 366.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
 
 <chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_contiguo
-us_3mai.png, id=2862, 867.24pt x 1300.86pt>
+us_3mai.png, id=2546, 867.24pt x 1300.86pt>
 File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_con
 tiguous_3mai.png Graphic file (type png)
 
@@ -3842,11 +3771,11 @@ iguous_3mai.png>
 Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relati
 ve_abundance_hl_contiguous_3mai.png used on input line 386.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
- [137] [138 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundan
-ce_hl_random_3mai.png>] [139 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg
+ [141] [142 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundan
+ce_hl_random_3mai.png>] [143 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg
 _relative_abundance_hl_contiguous_3mai.png>]
 <chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality_3mai.pn
-g, id=2883, 867.24pt x 520.344pt>
+g, id=2568, 867.24pt x 520.344pt>
 File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality_3m
 ai.png Graphic file (type png)
 
@@ -3857,7 +3786,7 @@ ghted_generality_3mai.png used on input line 409.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
 <chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_vulnerability_3mai
-.png, id=2888, 867.24pt x 520.344pt>
+.png, id=2573, 867.24pt x 520.344pt>
 File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_vulnerability
 _3mai.png Graphic file (type png)
 
@@ -3866,11 +3795,11 @@ _3mai.png Graphic file (type png)
 Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/clean_lm_wei
 ghted_vulnerability_3mai.png used on input line 415.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
- [140 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality
-_3mai.png>] [141 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted
+ [144 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality
+_3mai.png>] [145 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted
 _vulnerability_3mai.png>]
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png, id=291
-9, 1179.40625pt x 440.64626pt>
+<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png, id=260
+4, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png Gr
 aphic file (type png)
 
@@ -3880,7 +3809,7 @@ _mai0_random.png used on input line 480.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
 
 <chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_contiguous.png, id
-=2922, 1179.40625pt x 440.64626pt>
+=2607, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_contiguous.pn
 g Graphic file (type png)
 
@@ -3890,8 +3819,8 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
 _mai0_contiguous.png used on input line 486.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
 
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png, id=292
-5, 1179.40625pt x 440.64626pt>
+<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png, id=261
+0, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png Gr
 aphic file (type png)
 
@@ -3901,7 +3830,7 @@ _mai1_random.png used on input line 493.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
 
 <chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_contiguous.png, id
-=2928, 1179.40625pt x 440.64626pt>
+=2613, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_contiguous.pn
 g Graphic file (type png)
 
@@ -3910,30 +3839,46 @@ g Graphic file (type png)
 Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
 _mai1_contiguous.png used on input line 499.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
- [142 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png
+ [146 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png
  (PNG copy)> <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_con
 tiguous.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [143 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png
+ [147 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png
  (PNG copy)> <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_con
-tiguous.png (PNG copy)>] [144]
+tiguous.png (PNG copy)>] [148]
 Underfull \vbox (badness 5504) has occurred while \output is active []
 
- [145]
-[146]
+ [149]
+
+Package natbib Warning: Citation `rudgers2008invasive' on page 150 undefined on
+ input line 551.
+
+
+Package natbib Warning: Citation `keller2014mutualistic' on page 150 undefined 
+on input line 551.
+
+
+Package natbib Warning: Citation `keller2014mutualistic' on page 150 undefined 
+on input line 551.
+
+
+Package natbib Warning: Citation `rudgers2008invasive' on page 150 undefined on
+ input line 551.
+
+[150]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [147]))
-[148] (./chapters/chapter06/chap06.tex (./chapters/chapter06/chapter_6_temp.tex
+ [151]))
+[152] (./chapters/chapter06/chap06.tex (./chapters/chapter06/chapter_6_temp.tex
 
 Underfull \vbox (badness 4779) has occurred while \output is active []
 
- [149
+ [153
 
 
 ]
-<chapters/chapter06/flow_chart/flow_chart.pdf, id=3044, 637.55487pt x 505.49654
+<chapters/chapter06/flow_chart/flow_chart.pdf, id=2723, 637.55487pt x 505.49654
 pt>
 File: chapters/chapter06/flow_chart/flow_chart.pdf Graphic file (type pdf)
  <use chapters/chapter06/flow_chart/flow_chart.pdf>
@@ -3954,10 +3899,14 @@ either increase the head height or redesign the header
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[150]
+[154]
 Underfull \vbox (badness 3189) has occurred while \output is active []
 
- [151 <./chapters/chapter06/flow_chart/flow_chart.pdf>]
+ [155 <./chapters/chapter06/flow_chart/flow_chart.pdf>]
+
+Package natbib Warning: Citation `rosenzweig1963graphical' on page 156 undefine
+d on input line 65.
+
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 67.
@@ -3970,7 +3919,19 @@ Package nag Warning: Environment eqnarray is obsolete.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[152]
+[156]
+
+Package natbib Warning: Citation `rosenzweig1963graphical' on page 157 undefine
+d on input line 83.
+
+
+Package natbib Warning: Citation `mitra2009closure' on page 157 undefined on in
+put line 83.
+
+
+Package natbib Warning: Citation `hastings2013population' on page 157 undefined
+ on input line 85.
+
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 87.
@@ -3979,24 +3940,24 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 97.
 
+[157]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 111.
 
-[153]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 118.
 
 
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 144.
-
-
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[154]
+[158]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 144.
+
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 159.
@@ -4005,28 +3966,25 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 166.
 
-[155]
+[159]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 206.
 
 
-Underfull \vbox (badness 1990) has occurred while \output is active []
-
-
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[156]
+[160]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 227.
 
-[157]
+[161]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[158]
+[162]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 314.
@@ -4035,14 +3993,14 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 321.
 
-[159pdfTeX warning (ext4): destination with the same identifier (name{equation.
+[163pdfTeX warning (ext4): destination with the same identifier (name{equation.
 6.2.33}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.356 
       ]
-<chapters/chapter06/figures/FR_example.png, id=3227, 722.7pt x 433.62pt>
+<chapters/chapter06/figures/FR_example.png, id=2909, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/FR_example.png Graphic file (type png)
 
 <use chapters/chapter06/figures/FR_example.png>
@@ -4053,17 +4011,31 @@ t line 364.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[160 <./chapters/chapter06/figures/FR_example.png>] [161]
+[164 <./chapters/chapter06/figures/FR_example.png>] [165]
+
+Package natbib Warning: Citation `hastings2012encyclopedia' on page 166 undefin
+ed on input line 425.
+
+
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[162] [163]
+[166]
+
+Package natbib Warning: Citation `carpenter1994fitting' on page 167 undefined o
+n input line 427.
+
+
+Package natbib Warning: Citation `hutchinson1978introduction' on page 167 undef
+ined on input line 427.
+
+[167]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[164]
+[168]
 <chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.000000.png, 
-id=3313, 1084.05pt x 433.62pt>
+id=2994, 1084.05pt x 433.62pt>
 File: chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.000000.
 png Graphic file (type png)
 
@@ -4076,8 +4048,8 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/it' tried instead on input line 493.
 LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
 (Font)              scaled to size 10.18341pt on input line 493.
- [165]
-<chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png, id=3324, 1734
+ [169]
+<chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png, id=3005, 1734
 .48pt x 867.24pt>
 File: chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png Graphic f
 ile (type png)
@@ -4086,11 +4058,11 @@ ile (type png)
 Package pdftex.def Info: chapters/chapter06/figures/example_dynamics_HII_pID_7_
 and_0.png used on input line 512.
 (pdftex.def)             Requested size: 636.60028pt x 318.30658pt.
- [166 <./chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.0000
+ [170 <./chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.0000
 00.png>]
-[167 <./chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png>]
-<chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png, id=33
-44, 1084.05pt x 433.62pt>
+[171 <./chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png>]
+<chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png, id=30
+25, 1084.05pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png G
 raphic file (type png)
 
@@ -4099,8 +4071,16 @@ Package pdftex.def Info: chapters/chapter06/figures/single_params_v_noise_pID_0
 _nsamples_100.png used on input line 527.
 (pdftex.def)             Requested size: 448.0pt x 179.20128pt.
 
+Underfull \vbox (badness 1924) has occurred while \output is active []
+
+
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+
+[172 <./chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png
+>]
 <chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000000.png,
- id=3356, 722.7pt x 433.62pt>
+ id=3042, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000000
 .png Graphic file (type png)
 
@@ -4110,16 +4090,8 @@ Package pdftex.def Info: chapters/chapter06/figures/single_params_v_nsamples_pI
 D_0_noise_10.000000.png used on input line 536.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
-Underfull \vbox (badness 1924) has occurred while \output is active []
-
-
-Overfull \vbox (13.59999pt too high) has occurred while \output is active []
-
-
-[168 <./chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png
->]
 <chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000000.png,
- id=3370, 722.7pt x 433.62pt>
+ id=3051, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000000
 .png Graphic file (type png)
 
@@ -4128,9 +4100,12 @@ png>
 Package pdftex.def Info: chapters/chapter06/figures/single_params_v_nsamples_pI
 D_0_noise_50.000000.png used on input line 546.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
- [169 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [173 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000
 000.png>]
-<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png, id=3385
+<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png, id=3065
 , 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png Gra
 phic file (type png)
@@ -4141,7 +4116,7 @@ amples_1000.png used on input line 572.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
 <chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS.png,
- id=3386, 722.7pt x 433.62pt>
+ id=3066, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS
 .png Graphic file (type png)
 
@@ -4151,8 +4126,15 @@ Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_nsamples
 _noise_50.000000.IS.png used on input line 579.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+
+[174 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.0000
+00.png>] [175 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1
+000.png> <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000
+000.IS.png>]
 <chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.HII.png
-, id=3391, 722.7pt x 433.62pt>
+, id=3082, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.HI
 I.png Graphic file (type png)
 
@@ -4162,15 +4144,8 @@ Package pdftex.def Info: chapters/chapter06/figures/single_params_v_noise_pID_8
 7_nsamples_10000.HII.png used on input line 592.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
-Overfull \vbox (13.59999pt too high) has occurred while \output is active []
-
-
-[170 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.0000
-00.png>] [171 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1
-000.png> <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000
-000.IS.png>]
-<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png, id=34
-11, 722.7pt x 433.62pt>
+<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png, id=30
+91, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png G
 raphic file (type png)
 
@@ -4182,10 +4157,10 @@ amples_1000.B.png used on input line 601.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[172 <./chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.
+[176 <./chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.
 HII.png>]
 <chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.IS.pn
-g, id=3423, 722.7pt x 433.62pt>
+g, id=3103, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.
 IS.png Graphic file (type png)
 
@@ -4195,12 +4170,7 @@ Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_nsamples
 _noise_50.000000.B.IS.png used on input line 628.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [173 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.pn
-g> <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.
-IS.png>]
-<chapters/chapter06/figures/example_FR_linear_nonlinear.png, id=3434, 867.24pt 
+<chapters/chapter06/figures/example_FR_linear_nonlinear.png, id=3107, 867.24pt 
 x 433.62pt>
 File: chapters/chapter06/figures/example_FR_linear_nonlinear.png Graphic file (
 type png)
@@ -4209,11 +4179,14 @@ Package pdftex.def Info: chapters/chapter06/figures/example_FR_linear_nonlinear
 .png used on input line 642.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
+[177 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png
+>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[174 <./chapters/chapter06/figures/example_FR_linear_nonlinear.png>]
-<chapters/chapter06/figures/nonlinearity_predicts_quality.png, id=3442, 867.24p
+[178 <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.
+B.IS.png> <./chapters/chapter06/figures/example_FR_linear_nonlinear.png>]
+<chapters/chapter06/figures/nonlinearity_predicts_quality.png, id=3123, 867.24p
 t x 433.62pt>
 File: chapters/chapter06/figures/nonlinearity_predicts_quality.png Graphic file
  (type png)
@@ -4222,8 +4195,8 @@ File: chapters/chapter06/figures/nonlinearity_predicts_quality.png Graphic file
 Package pdftex.def Info: chapters/chapter06/figures/nonlinearity_predicts_quali
 ty.png used on input line 655.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
-
-<chapters/chapter06/figures/range_sample_didactic.png, id=3449, 578.16pt x 433.
+ [179 <./chapters/chapter06/figures/nonlinearity_predicts_quality.png>]
+<chapters/chapter06/figures/range_sample_didactic.png, id=3135, 578.16pt x 433.
 62pt>
 File: chapters/chapter06/figures/range_sample_didactic.png Graphic file (type p
 ng)
@@ -4232,28 +4205,27 @@ Package pdftex.def Info: chapters/chapter06/figures/range_sample_didactic.png u
 sed on input line 664.
 (pdftex.def)             Requested size: 268.80273pt x 201.59813pt.
 
-<chapters/chapter06/figures/range_sample.png, id=3450, 867.24pt x 433.62pt>
+<chapters/chapter06/figures/range_sample.png, id=3136, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/range_sample.png Graphic file (type png)
 
 <use chapters/chapter06/figures/range_sample.png>
 Package pdftex.def Info: chapters/chapter06/figures/range_sample.png used on in
 put line 675.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
- [175 <./chapters/chapter06/figures/nonlinearity_predicts_quality.png>]
+
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[176 <./chapters/chapter06/figures/range_sample_didactic.png> <./chapters/chapt
-er06/figures/range_sample.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[180 <./chapters/chapter06/figures/range_sample_didactic.png>]
+Underfull \vbox (badness 1132) has occurred while \output is active []
 
- [177]
+ [181 <./chapters/chapter06/figures/range_sample.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[178] [179]
-<chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png, id=349
-5, 1300.86pt x 1300.86pt>
+[182] [183]
+<chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png, id=317
+9, 1300.86pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png Gr
 aphic file (type png)
 
@@ -4268,9 +4240,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[180] [181 <./chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_r
+[184] [185 <./chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_r
 r.png>]
-<chapters/chapter06/figures/IBM/2species/plant_FR.png, id=3516, 867.24pt x 433.
+<chapters/chapter06/figures/IBM/2species/plant_FR.png, id=3200, 867.24pt x 433.
 62pt>
 File: chapters/chapter06/figures/IBM/2species/plant_FR.png Graphic file (type p
 ng)
@@ -4279,7 +4251,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/plant_FR.png u
 sed on input line 807.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-<chapters/chapter06/figures/IBM/2species/predator_FR.png, id=3517, 867.24pt x 4
+<chapters/chapter06/figures/IBM/2species/predator_FR.png, id=3201, 867.24pt x 4
 33.62pt>
 File: chapters/chapter06/figures/IBM/2species/predator_FR.png Graphic file (typ
 e png)
@@ -4294,8 +4266,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[182]
-<chapters/chapter06/figures/IBM/2species/intrinsic_fn.png, id=3532, 867.24pt x 
+[186]
+
+Package natbib Warning: Citation `solomon1949natural' on page 187 undefined on 
+input line 820.
+
+
+Underfull \vbox (badness 3302) has occurred while \output is active []
+
+ [187 <./chapters/chapter06/figures/IBM/2species/plant_FR.png>]
+<chapters/chapter06/figures/IBM/2species/intrinsic_fn.png, id=3220, 867.24pt x 
 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/intrinsic_fn.png Graphic file (ty
 pe png)
@@ -4304,16 +4284,15 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/intrinsic_fn.p
 ng used on input line 824.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-Underfull \vbox (badness 3302) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [183 <./chapters/chapter06/figures/IBM/2species/plant_FR.png>]
+
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[184 <./chapters/chapter06/figures/IBM/2species/predator_FR.png> <./chapters/ch
-apter06/figures/IBM/2species/intrinsic_fn.png>]
+[188 <./chapters/chapter06/figures/IBM/2species/predator_FR.png>]
 <chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1.png,
- id=3549, 867.24pt x 867.24pt>
+ id=3230, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1
 .png Graphic file (type png)
 
@@ -4322,14 +4301,9 @@ png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/convergence_2s
 p_M0_M1_lowIR_rr0.1.png used on input line 889.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
- [185]
-Overfull \vbox (13.59999pt too high) has occurred while \output is active []
-
-
-[186 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0
-.1.png>]
+ [189 <./chapters/chapter06/figures/IBM/2species/intrinsic_fn.png>]
 <chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.1.png
-, id=3566, 867.24pt x 867.24pt>
+, id=3243, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.
 1.png Graphic file (type png)
 
@@ -4341,13 +4315,18 @@ p_M0_M1_highIR_rr0.1.png used on input line 900.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [187]
+
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[188 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr
+[190] [191 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_low
+IR_rr0.1.png>]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+
+[192 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr
 0.1.png>]
-<chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png, id=3580, 86
+<chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png, id=3263, 86
 7.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png Graphic
  file (type png)
@@ -4357,12 +4336,9 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/inferred_dynam
 ics_2sp.png used on input line 909.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
+[193 <./chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png>]
 <chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.png, id
-=3584, 1084.05pt x 1300.86pt>
+=3272, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.pn
 g Graphic file (type png)
 
@@ -4373,7 +4349,7 @@ series_2sp_hr_li.png used on input line 933.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
 <chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.png, id
-=3585, 1084.05pt x 1300.86pt>
+=3273, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.pn
 g Graphic file (type png)
 
@@ -4382,13 +4358,6 @@ g Graphic file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/rate_estimate_
 series_2sp_hr_hi.png used on input line 940.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
- [189 <./chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png>]
-Overfull \vbox (13.59999pt too high) has occurred while \output is active []
-
-
-[190 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.
-png>] [191 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_
-hr_hi.png>]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 12.22005pt on input line 948.
 LaTeX Font Info:    Calculating math sizes for size <13.13995> on input line 94
@@ -4491,8 +4460,8 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.46082> not available
 (Font)              size <9> substituted on input line 948.
 
 
-<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png, id=360
-8, 578.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png, id=328
+0, 578.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png Gr
 aphic file (type png)
 
@@ -4501,8 +4470,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/estimate_quali
 ty_2sp_lowIR.png used on input line 956.
 (pdftex.def)             Requested size: 313.59863pt x 235.19672pt.
 
-<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png, id=36
-13, 578.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png, id=32
+85, 578.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png G
 raphic file (type png)
 
@@ -4514,14 +4483,20 @@ ty_2sp_highIR.png used on input line 962.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[192] [193 <./chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowI
+[194] [195 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_
+hr_li.png>]
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+
+[196 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.
+png>] [197 <./chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowI
 R.png> <./chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.p
 ng>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[194]
-<chapters/chapter06/figures/3sp_topologies.png, id=3636, 845.40843pt x 597.7331
+[198]
+<chapters/chapter06/figures/3sp_topologies.png, id=3318, 845.40843pt x 597.7331
 2pt>
 File: chapters/chapter06/figures/3sp_topologies.png Graphic file (type png)
  <use chapters/chapter06/figures/3sp_topologies.png>
@@ -4530,7 +4505,7 @@ input line 978.
 (pdftex.def)             Requested size: 224.0pt x 158.37115pt.
 
 <chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.png, id=
-3637, 867.24pt x 867.24pt>
+3319, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.png
  Graphic file (type png)
 
@@ -4539,7 +4514,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/convergence_3s
 p_length_highIR.png used on input line 985.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
 
-<chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png, id=3641, 130
+<chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png, id=3323, 130
 0.86pt x 722.7pt>
 File: chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png Graphic 
 file (type png)
@@ -4548,16 +4523,16 @@ file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/example_dynami
 cs_3sp.png used on input line 998.
 (pdftex.def)             Requested size: 448.0pt x 248.89066pt.
- [195
+ [199
 
  <./chapters/chapter06/figures/3sp_topologies.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[196 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.p
+[200 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.p
 ng>]
-<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png, id=365
-5, 1084.05pt x 1300.86pt>
+<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png, id=333
+8, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png Gr
 aphic file (type png)
 
@@ -4566,8 +4541,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/rate_estimates
 _3speices_li.png used on input line 1015.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
-<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png, id=366
-2, 1084.05pt x 1300.86pt>
+<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png, id=334
+5, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png Gr
 aphic file (type png)
 
@@ -4576,14 +4551,14 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/rate_estimates
 _3speices_hi.png used on input line 1022.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
-[197 <./chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png>]
+[201 <./chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[198 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png>
-] [199 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.pn
+[202 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png>
+] [203 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.pn
 g>]
-<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png, id=3687, 
+<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png, id=3370, 
 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png Graph
 ic file (type png)
@@ -4593,7 +4568,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/estimate_quali
 ty_3sp_LI.png used on input line 1033.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png, id=3690, 
+<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png, id=3373, 
 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png Graph
 ic file (type png)
@@ -4609,9 +4584,9 @@ Underfull \vbox (badness 1442) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[200 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png>]
-<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png, id=370
-5, 867.24pt x 505.89pt>
+[204 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png>]
+<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png, id=338
+9, 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png Gr
 aphic file (type png)
 
@@ -4620,8 +4595,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/stability_and_
 error_3sp_LI.png used on input line 1056.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png, id=370
-6, 867.24pt x 505.89pt>
+<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png, id=339
+0, 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png Gr
 aphic file (type png)
 
@@ -4630,7 +4605,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/stability_and_
 error_3sp_HI.png used on input line 1063.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-[201 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png>]
+[205 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png>]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
@@ -4640,9 +4615,9 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[202 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png>
+[206 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png>
 ]
-<chapters/chapter06/figures/5sp_topologies.png, id=3724, 845.40843pt x 597.7331
+<chapters/chapter06/figures/5sp_topologies.png, id=3410, 845.40843pt x 597.7331
 2pt>
 File: chapters/chapter06/figures/5sp_topologies.png Graphic file (type png)
  <use chapters/chapter06/figures/5sp_topologies.png>
@@ -4650,7 +4625,7 @@ Package pdftex.def Info: chapters/chapter06/figures/5sp_topologies.png used on
 input line 1083.
 (pdftex.def)             Requested size: 224.0pt x 158.37115pt.
 
-<chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png, id=3725, 130
+<chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png, id=3411, 130
 0.86pt x 722.7pt>
 File: chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png Graphic 
 file (type png)
@@ -4659,14 +4634,14 @@ file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/example_dynami
 cs_5sp.png used on input line 1090.
 (pdftex.def)             Requested size: 448.0pt x 248.89066pt.
- [203 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png
+ [207 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png
 >]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[204 <./chapters/chapter06/figures/5sp_topologies.png> <./chapters/chapter06/fi
+[208 <./chapters/chapter06/figures/5sp_topologies.png> <./chapters/chapter06/fi
 gures/IBM/5species/example_dynamics_5sp.png>]
-<chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png, id=3750, 5
+<chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png, id=3436, 5
 78.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png Graphi
 c file (type png)
@@ -4676,7 +4651,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_num_sta
 ble_nets.png used on input line 1099.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
-<chapters/chapter06/figures/IBM/5species/highIR_stable_models.png, id=3756, 578
+[209 <./chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png>]
+<chapters/chapter06/figures/IBM/5species/highIR_stable_models.png, id=3448, 578
 .16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_stable_models.png Graphic 
 file (type png)
@@ -4685,8 +4661,8 @@ file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_stable_
 models.png used on input line 1108.
 (pdftex.def)             Requested size: 313.59863pt x 235.19672pt.
- [205 <./chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png>]
-<chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png, id=3764, 578.1
+
+<chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png, id=3451, 578.1
 6pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png Graphic fi
 le (type png)
@@ -4696,15 +4672,21 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_rate_er
 rors.png used on input line 1130.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package natbib Warning: Citation `aho2014model' on page 210 undefined on input 
+line 1135.
+
+
+Package natbib Warning: Citation `sunnaaker2013approximate' on page 210 undefin
+ed on input line 1135.
 
 
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[206 <./chapters/chapter06/figures/IBM/5species/highIR_stable_models.png>]
-[207 <./chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png>]
-<chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png, id=3785, 86
+[210 <./chapters/chapter06/figures/IBM/5species/highIR_stable_models.png>]
+[211 <./chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png>]
+<chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png, id=3469, 86
 7.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png Graphic
  file (type png)
@@ -4715,7 +4697,7 @@ ge_Jhat.png used on input line 1185.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
 <chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jhat.png,
- id=3790, 867.24pt x 433.62pt>
+ id=3474, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jhat
 .png Graphic file (type png)
 
@@ -4725,15 +4707,12 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/60species/60species_ori
 g_mut0_average_Jhat.png used on input line 1196.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-Underfull \vbox (badness 2119) has occurred while \output is active []
-
-
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[208]
+[212]
 <chapters/chapter06/figures/IBM/60species/60species_new_mut0_average_Jhat.png, 
-id=3801, 867.24pt x 433.62pt>
+id=3485, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_new_mut0_average_Jhat.
 png Graphic file (type png)
 
@@ -4744,7 +4723,7 @@ _mut0_average_Jhat.png used on input line 1208.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
 <chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average_Jhat.pn
-g, id=3804, 867.24pt x 433.62pt>
+g, id=3488, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average_Jh
 at.png Graphic file (type png)
 
@@ -4756,15 +4735,15 @@ g_mut0.5_average_Jhat.png used on input line 1217.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [209 <./chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png>]
+ [213 <./chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[210 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jh
+[214 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jh
 at.png> <./chapters/chapter06/figures/IBM/60species/60species_new_mut0_average_
 Jhat.png>]
 <chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_Jhat.png
-, id=3821, 867.24pt x 433.62pt>
+, id=3505, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_Jha
 t.png Graphic file (type png)
 
@@ -4773,9 +4752,22 @@ t.png Graphic file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/60species/60species_new
 _mut0.5_average_Jhat.png used on input line 1229.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
- [211 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average
-_Jhat.png>]
-<chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png, id=3839, 1084.05p
+
+
+Package natbib Warning: Citation `hsu1995global' on page 215 undefined on input
+ line 1241.
+
+
+Package natbib Warning: Citation `cortez2014coevolution' on page 215 undefined 
+on input line 1241.
+
+
+Package natbib Warning: Citation `stenseth1997population' on page 215 undefined
+ on input line 1241.
+
+[215 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average_
+Jhat.png>]
+<chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png, id=3520, 1084.05p
 t x 722.7pt>
 File: chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png Graphic file 
 (type png)
@@ -4790,36 +4782,73 @@ Underfull \vbox (badness 2418) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[212 <./chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_J
+[216 <./chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_J
 hat.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [213 <./chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png>]
+ [217 <./chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[214]
+[218]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [215]
+ [219]
+
+Package natbib Warning: Citation `straile2000meteorological' on page 220 undefi
+ned on input line 1317.
+
+
+Package natbib Warning: Citation `wiltshire2010helgoland' on page 220 undefined
+ on input line 1317.
+
+
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[216])) [217] [218
+[220])) [221] [222
 
 ] (./chapters/chapter07/chap07.tex
-(./chapters/chapter07/conclusion.tex [219
-
-] [220] [221] [222])) [223] [224
+(./chapters/chapter07/conclusion.tex [223
 
 ]
-(./memoirthesis.bbl [225
 
-] [226] [227] [228] [229] [230] [231] [232] [233]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 637.
+Package natbib Warning: Citation `luckinbill1974effects' on page 224 undefined 
+on input line 18.
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
+Package natbib Warning: Citation `fahrig2011functional' on page 224 undefined o
+n input line 18.
+
+
+Package natbib Warning: Citation `elith2008working' on page 224 undefined on in
+put line 18.
+
+[224] [225]
+
+Package natbib Warning: Citation `helton2003latin' on page 226 undefined on inp
+ut line 43.
+
+
+Package natbib Warning: Citation `lefcheck2015piecewisesem' on page 226 undefin
+ed on input line 43.
+
+
+Package natbib Warning: Citation `yvon2015five' on page 226 undefined on input 
+line 43.
+
+[226]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [227]))
+[228] (./memoirthesis.bbl [229
+
+
+] [230] [231] [232] [233] [234] [235] [236]
+[237] [238]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 689.
+
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic settings for font family
@@ -4827,76 +4856,108 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1365) in paragraph at lines 636--638
+Underfull \hbox (badness 1365) in paragraph at lines 688--690
 []\T1/fnc/m/n/10.95 (+20) C. McWilliams, ``Ibm an-i-ma-tions.'' [][]$\T1/cmtt/m
 /n/10.95 http : / / chrismcwilliams201 . wix . com / bristol #
  []
 
-[234] [235] [236] [237]) [238]
+[239] [240] [241] [242] [243]) [244] (./memoirthesis.loc)
 
 Class memoir Warning: The material used in the headers is too large
 (27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 121.
+(in both cases you will find help in the memoir manual). on input line 131.
+
+
+Package natbib Warning: There were undefined citations.
+
+\Changes@OutFile=\write7
+\openout7 = `memoirthesis.soc'.
 
 
 Package nag Warning: 21 complaints in total.
 
-\tf@toc=\write7
-\openout7 = `memoirthesis.toc'.
+[245
 
+]
 \tf@lot=\write8
 \openout8 = `memoirthesis.lot'.
 
 \tf@lof=\write9
 \openout9 = `memoirthesis.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
-(./memoirthesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+\tf@loc=\write10
+\openout10 = `memoirthesis.loc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
+ (./memoirthesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: BAAE8FE8AB807351969A927A006AB872;8814.
+(rerunfilecheck)             Checksum: 03056C98483A4A72CB97D3AC008818E4;3730.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.36789pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 32210 strings out of 493109
- 620144 string characters out of 6135010
- 856424 words of memory out of 5000000
- 33671 multiletter control sequences out of 15000+600000
+ 32767 strings out of 493109
+ 630117 string characters out of 6135010
+ 876128 words of memory out of 5000000
+ 34173 multiletter control sequences out of 15000+600000
  155156 words of font info for 436 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 54i,14n,67p,3680b,1214s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
-rw/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (258 pages, 18658623 bytes).
+ 54i,14n,67p,3680b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{equation.6.2.11} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.6.2.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.6.2.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{equation.6.2.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2014/texmf-d
+ist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
+pe1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
+/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (261 pages, 18798782 bytes).
 PDF statistics:
- 4252 PDF objects out of 4296 (max. 8388607)
- 3563 compressed objects within 36 object streams
- 770 named destinations out of 1000 (max. 500000)
- 56435 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 3979 PDF objects out of 4296 (max. 8388607)
+ 3290 compressed objects within 33 object streams
+ 796 named destinations out of 1000 (max. 500000)
+ 55907 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  29 JUL 2016 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.18)  10 AUG 2016 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1880,7 +1880,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 32.
 
-<logos/bristolcrest_colour.pdf, id=228, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=493, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 
 <use logos/bristolcrest_colour.pdf>
@@ -2011,441 +2011,753 @@ Overfull \hbox (1.05093pt too wide) in paragraph at lines 27--29
 ]) [8
 
 
-] (./memoirthesis.lot
+] (./memoirthesis.toc
 LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
+
+Overfull \hbox (1.74115pt too wide) detected at line 3
+ \T1/fnc/b/n/10.95 xiii
+ []
+
+[9]
+Overfull \hbox (1.20142pt too wide) detected at line 64
+ \T1/fnc/m/n/10.95 100
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 65
+ \T1/fnc/m/n/10.95 100
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 66
+ \T1/fnc/m/n/10.95 106
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 67
+ \T1/fnc/m/n/10.95 112
+ []
+
+[10]
+Overfull \hbox (1.20142pt too wide) detected at line 68
+ \T1/fnc/m/n/10.95 112
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 69
+ \T1/fnc/m/n/10.95 113
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 70
+ \T1/fnc/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 71
+ \T1/fnc/m/n/10.95 117
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 72
+ \T1/fnc/m/n/10.95 119
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 73
+ \T1/fnc/m/n/10.95 120
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 74
+ \T1/fnc/b/n/10.95 123
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 75
+ \T1/fnc/m/n/10.95 123
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 76
+ \T1/fnc/m/n/10.95 125
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 77
+ \T1/fnc/m/n/10.95 126
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 78
+ \T1/fnc/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 79
+ \T1/fnc/m/n/10.95 128
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 80
+ \T1/fnc/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 81
+ \T1/fnc/m/n/10.95 136
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 82
+ \T1/fnc/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 83
+ \T1/fnc/m/n/10.95 137
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 84
+ \T1/fnc/m/n/10.95 138
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 85
+ \T1/fnc/m/n/10.95 143
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 86
+ \T1/fnc/m/n/10.95 146
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 87
+ \T1/fnc/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 88
+ \T1/fnc/m/n/10.95 150
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 89
+ \T1/fnc/m/n/10.95 152
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 90
+ \T1/fnc/b/n/10.95 157
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 91
+ \T1/fnc/m/n/10.95 157
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 92
+ \T1/fnc/m/n/10.95 158
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 93
+ \T1/fnc/m/n/10.95 160
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 94
+ \T1/fnc/m/n/10.95 164
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 95
+ \T1/fnc/m/n/10.95 165
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 96
+ \T1/fnc/m/n/10.95 168
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 97
+ \T1/fnc/m/n/10.95 170
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 98
+ \T1/fnc/m/n/10.95 170
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 99
+ \T1/fnc/m/n/10.95 170
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 100
+ \T1/fnc/m/n/10.95 171
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 101
+ \T1/fnc/m/n/10.95 172
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 102
+ \T1/fnc/m/n/10.95 173
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 103
+ \T1/fnc/m/n/10.95 174
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 104
+ \T1/fnc/m/n/10.95 178
+ []
+
+[11]
+Overfull \hbox (1.20142pt too wide) detected at line 105
+ \T1/fnc/m/n/10.95 181
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 106
+ \T1/fnc/m/n/10.95 186
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 107
+ \T1/fnc/m/n/10.95 186
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 108
+ \T1/fnc/m/n/10.95 187
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 109
+ \T1/fnc/m/n/10.95 187
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 110
+ \T1/fnc/m/n/10.95 193
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 111
+ \T1/fnc/m/n/10.95 203
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 112
+ \T1/fnc/m/n/10.95 210
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 113
+ \T1/fnc/m/n/10.95 216
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 114
+ \T1/fnc/m/n/10.95 219
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 115
+ \T1/fnc/m/n/10.95 222
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 116
+ \T1/fnc/m/n/10.95 224
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 117
+ \T1/fnc/b/n/10.95 227
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 118
+ \T1/fnc/m/n/10.95 227
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 119
+ \T1/fnc/m/n/10.95 228
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 120
+ \T1/fnc/m/n/10.95 229
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 121
+ \T1/fnc/m/n/10.95 230
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 122
+ \T1/fnc/m/n/10.95 230
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 123
+ \T1/fnc/b/n/10.95 233
+ []
+
+) [12] (./memoirthesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 
 Overfull \hbox (1.20142pt too wide) detected at line 8
- \T1/fnc/m/n/10.95 100
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 11
- \T1/fnc/m/n/10.95 169
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 12
- \T1/fnc/m/n/10.95 194
- []
-
-) [9] [10
-
-] (./memoirthesis.lof [11]
-Overfull \hbox (1.20142pt too wide) detected at line 61
- \T1/fnc/m/n/10.95 101
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 62
  \T1/fnc/m/n/10.95 102
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 63
- \T1/fnc/m/n/10.95 103
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 64
- \T1/fnc/m/n/10.95 104
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 65
- \T1/fnc/m/n/10.95 105
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 68
- \T1/fnc/m/n/10.95 107
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 69
- \T1/fnc/m/n/10.95 108
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 70
- \T1/fnc/m/n/10.95 109
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 71
- \T1/fnc/m/n/10.95 113
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 72
- \T1/fnc/m/n/10.95 114
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 73
- \T1/fnc/m/n/10.95 116
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 76
- \T1/fnc/m/n/10.95 117
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 77
- \T1/fnc/m/n/10.95 119
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 79
- \T1/fnc/m/n/10.95 125
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 80
- \T1/fnc/m/n/10.95 127
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 81
- \T1/fnc/m/n/10.95 128
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 82
- \T1/fnc/m/n/10.95 130
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 83
- \T1/fnc/m/n/10.95 131
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 84
- \T1/fnc/m/n/10.95 133
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 85
- \T1/fnc/m/n/10.95 135
- []
-
-[12]
-Overfull \hbox (1.20142pt too wide) detected at line 86
- \T1/fnc/m/n/10.95 137
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 87
- \T1/fnc/m/n/10.95 138
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 88
- \T1/fnc/m/n/10.95 139
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 89
- \T1/fnc/m/n/10.95 140
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 90
- \T1/fnc/m/n/10.95 140
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 91
- \T1/fnc/m/n/10.95 142
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 92
- \T1/fnc/m/n/10.95 143
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 93
- \T1/fnc/m/n/10.95 144
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 94
- \T1/fnc/m/n/10.95 145
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 95
- \T1/fnc/m/n/10.95 146
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 96
- \T1/fnc/m/n/10.95 146
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 97
- \T1/fnc/m/n/10.95 147
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 98
- \T1/fnc/m/n/10.95 147
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 100
- \T1/fnc/m/n/10.95 155
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 101
- \T1/fnc/m/n/10.95 165
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 102
- \T1/fnc/m/n/10.95 170
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 103
- \T1/fnc/m/n/10.95 171
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 104
- \T1/fnc/m/n/10.95 172
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 105
+Overfull \hbox (1.20142pt too wide) detected at line 11
  \T1/fnc/m/n/10.95 173
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 106
+Overfull \hbox (1.20142pt too wide) detected at line 12
+ \T1/fnc/m/n/10.95 198
+ []
+
+) [13
+
+] [14
+
+] (./memoirthesis.lof [15]
+Overfull \hbox (1.20142pt too wide) detected at line 60
+ \T1/fnc/m/n/10.95 101
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 61
+ \T1/fnc/m/n/10.95 103
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 62
+ \T1/fnc/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 63
+ \T1/fnc/m/n/10.95 105
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 64
+ \T1/fnc/m/n/10.95 106
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 65
+ \T1/fnc/m/n/10.95 107
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 68
+ \T1/fnc/m/n/10.95 109
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 69
+ \T1/fnc/m/n/10.95 110
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 70
+ \T1/fnc/m/n/10.95 111
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 71
+ \T1/fnc/m/n/10.95 115
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 72
+ \T1/fnc/m/n/10.95 116
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 73
+ \T1/fnc/m/n/10.95 118
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 76
+ \T1/fnc/m/n/10.95 119
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 77
+ \T1/fnc/m/n/10.95 121
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 79
+ \T1/fnc/m/n/10.95 127
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 80
+ \T1/fnc/m/n/10.95 129
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 81
+ \T1/fnc/m/n/10.95 130
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 82
+ \T1/fnc/m/n/10.95 132
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 83
+ \T1/fnc/m/n/10.95 133
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 84
+ \T1/fnc/m/n/10.95 135
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 85
+ \T1/fnc/m/n/10.95 137
+ []
+
+[16]
+Overfull \hbox (1.20142pt too wide) detected at line 86
+ \T1/fnc/m/n/10.95 139
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 87
+ \T1/fnc/m/n/10.95 140
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 88
+ \T1/fnc/m/n/10.95 141
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 89
+ \T1/fnc/m/n/10.95 142
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 90
+ \T1/fnc/m/n/10.95 142
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 91
+ \T1/fnc/m/n/10.95 144
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 92
+ \T1/fnc/m/n/10.95 145
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 93
+ \T1/fnc/m/n/10.95 146
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 94
+ \T1/fnc/m/n/10.95 147
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 95
+ \T1/fnc/m/n/10.95 148
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 96
+ \T1/fnc/m/n/10.95 148
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 97
+ \T1/fnc/m/n/10.95 149
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 98
+ \T1/fnc/m/n/10.95 149
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 100
+ \T1/fnc/m/n/10.95 159
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 101
+ \T1/fnc/m/n/10.95 168
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 102
  \T1/fnc/m/n/10.95 174
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 107
+Overfull \hbox (1.20142pt too wide) detected at line 103
  \T1/fnc/m/n/10.95 175
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 108
- \T1/fnc/m/n/10.95 175
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 109
+Overfull \hbox (1.20142pt too wide) detected at line 104
  \T1/fnc/m/n/10.95 176
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 110
+Overfull \hbox (1.20142pt too wide) detected at line 105
  \T1/fnc/m/n/10.95 177
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 111
+Overfull \hbox (1.20142pt too wide) detected at line 106
  \T1/fnc/m/n/10.95 178
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 112
+Overfull \hbox (1.20142pt too wide) detected at line 107
  \T1/fnc/m/n/10.95 179
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 113
+Overfull \hbox (1.20142pt too wide) detected at line 108
+ \T1/fnc/m/n/10.95 179
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 109
  \T1/fnc/m/n/10.95 180
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 114
- \T1/fnc/m/n/10.95 180
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 115
+Overfull \hbox (1.20142pt too wide) detected at line 110
  \T1/fnc/m/n/10.95 181
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 116
+Overfull \hbox (1.20142pt too wide) detected at line 111
+ \T1/fnc/m/n/10.95 182
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 112
+ \T1/fnc/m/n/10.95 182
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 113
+ \T1/fnc/m/n/10.95 183
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 114
+ \T1/fnc/m/n/10.95 184
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 115
  \T1/fnc/m/n/10.95 185
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 117
- \T1/fnc/m/n/10.95 187
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 118
- \T1/fnc/m/n/10.95 188
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 119
+Overfull \hbox (1.20142pt too wide) detected at line 116
  \T1/fnc/m/n/10.95 189
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 120
+Overfull \hbox (1.20142pt too wide) detected at line 117
  \T1/fnc/m/n/10.95 191
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 121
+Overfull \hbox (1.20142pt too wide) detected at line 118
  \T1/fnc/m/n/10.95 192
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 122
+Overfull \hbox (1.20142pt too wide) detected at line 119
  \T1/fnc/m/n/10.95 193
  []
 
-[13]
-Overfull \hbox (1.20142pt too wide) detected at line 123
+
+Overfull \hbox (1.20142pt too wide) detected at line 120
  \T1/fnc/m/n/10.95 195
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 124
+Overfull \hbox (1.20142pt too wide) detected at line 121
  \T1/fnc/m/n/10.95 196
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 125
+Overfull \hbox (1.20142pt too wide) detected at line 122
  \T1/fnc/m/n/10.95 197
  []
 
-
-Overfull \hbox (1.20142pt too wide) detected at line 126
- \T1/fnc/m/n/10.95 197
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 127
+[17]
+Overfull \hbox (1.20142pt too wide) detected at line 123
  \T1/fnc/m/n/10.95 199
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 128
+Overfull \hbox (1.20142pt too wide) detected at line 124
  \T1/fnc/m/n/10.95 200
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 129
+Overfull \hbox (1.20142pt too wide) detected at line 125
  \T1/fnc/m/n/10.95 201
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 130
- \T1/fnc/m/n/10.95 202
+Overfull \hbox (1.20142pt too wide) detected at line 126
+ \T1/fnc/m/n/10.95 201
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 131
+Overfull \hbox (1.20142pt too wide) detected at line 127
  \T1/fnc/m/n/10.95 203
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 132
+Overfull \hbox (1.20142pt too wide) detected at line 128
  \T1/fnc/m/n/10.95 204
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 133
+Overfull \hbox (1.20142pt too wide) detected at line 129
  \T1/fnc/m/n/10.95 205
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 134
+Overfull \hbox (1.20142pt too wide) detected at line 130
  \T1/fnc/m/n/10.95 206
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 135
+Overfull \hbox (1.20142pt too wide) detected at line 131
  \T1/fnc/m/n/10.95 207
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 136
+Overfull \hbox (1.20142pt too wide) detected at line 132
  \T1/fnc/m/n/10.95 208
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 137
- \T1/fnc/m/n/10.95 208
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 138
+Overfull \hbox (1.20142pt too wide) detected at line 133
  \T1/fnc/m/n/10.95 209
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 139
+Overfull \hbox (1.20142pt too wide) detected at line 134
  \T1/fnc/m/n/10.95 210
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 140
+Overfull \hbox (1.20142pt too wide) detected at line 135
  \T1/fnc/m/n/10.95 211
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 141
+Overfull \hbox (1.20142pt too wide) detected at line 136
+ \T1/fnc/m/n/10.95 212
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 137
+ \T1/fnc/m/n/10.95 212
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 138
  \T1/fnc/m/n/10.95 213
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 142
+Overfull \hbox (1.20142pt too wide) detected at line 139
  \T1/fnc/m/n/10.95 214
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 143
- \T1/fnc/m/n/10.95 214
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 144
+Overfull \hbox (1.20142pt too wide) detected at line 140
  \T1/fnc/m/n/10.95 215
  []
 
 
+Overfull \hbox (1.20142pt too wide) detected at line 141
+ \T1/fnc/m/n/10.95 217
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 142
+ \T1/fnc/m/n/10.95 218
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 143
+ \T1/fnc/m/n/10.95 218
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 144
+ \T1/fnc/m/n/10.95 219
+ []
+
+
 Overfull \hbox (1.20142pt too wide) detected at line 145
- \T1/fnc/m/n/10.95 216
+ \T1/fnc/m/n/10.95 220
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 146
- \T1/fnc/m/n/10.95 217
+ \T1/fnc/m/n/10.95 221
  []
 
-) [14] (./chapters/chapter01/chap01.tex (./chapters/chapter01/introduction.tex
+) [18] (./chapters/chapter01/chap01.tex (./chapters/chapter01/introduction.tex
 [1
 
 
 
 ] [2] [3]
-<chapters/chapter01/diagrams/natureKnight.jpg, id=633, 602.25pt x 454.69875pt>
+<chapters/chapter01/diagrams/natureKnight.jpg, id=1037, 602.25pt x 454.69875pt>
 File: chapters/chapter01/diagrams/natureKnight.jpg Graphic file (type jpg)
-
 <use chapters/chapter01/diagrams/natureKnight.jpg>
 Package pdftex.def Info: chapters/chapter01/diagrams/natureKnight.jpg used on i
 nput line 50.
@@ -2471,34 +2783,26 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
-<chapters/chapter01/diagrams/nest.jpg, id=766, 949.5475pt x 438.63875pt>
+<chapters/chapter01/diagrams/nest.jpg, id=1166, 949.5475pt x 438.63875pt>
 File: chapters/chapter01/diagrams/nest.jpg Graphic file (type jpg)
 
 <use chapters/chapter01/diagrams/nest.jpg>
 Package pdftex.def Info: chapters/chapter01/diagrams/nest.jpg used on input lin
 e 149.
 (pdftex.def)             Requested size: 313.59863pt x 144.865pt.
- [9 <./chapters/chapter01/diagrams/nest.jpg>]
-
-LaTeX Warning: Reference `sec:' on page 10 undefined on input line 181.
-
-[10]
-
-LaTeX Warning: Reference `sec:' on page 11 undefined on input line 198.
-
-[11] [12]
-Underfull \vbox (badness 2818) has occurred while \output is active []
+ [9 <./chapters/chapter01/diagrams/nest.jpg>] [10] [11] [12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
 LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/fnc/b/it' tried instead on input line 258.
+(Font)              Font shape `T1/fnc/b/it' tried instead on input line 255.
 LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
-(Font)              scaled to size 13.39188pt on input line 258.
+(Font)              scaled to size 13.39188pt on input line 255.
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 9.29993pt on input line 266.
+(Font)              scaled to size 9.29993pt on input line 263.
 
 [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2508,33 +2812,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18]
-[19]
-
-LaTeX Warning: Reference `sec:' on page 20 undefined on input line 404.
-
-
-LaTeX Warning: Reference `sec:' on page 20 undefined on input line 404.
-
-
-LaTeX Warning: Reference `sec:' on page 20 undefined on input line 404.
-
-[20]
-
-LaTeX Warning: Reference `sec:' on page 21 undefined on input line 406.
-
-
-LaTeX Warning: Reference `sec:' on page 21 undefined on input line 406.
-
-
-LaTeX Warning: Reference `sec:' on page 21 undefined on input line 406.
-
-
-LaTeX Warning: Reference `sec:' on page 21 undefined on input line 408.
-
-
-LaTeX Warning: Reference `sec:' on page 21 undefined on input line 408.
-
-
+[19] [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]))
@@ -2548,7 +2826,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 5.57996pt on input line 46.
 
-<chapters/chapter02/"diagrams/niche_space".png, id=1097, 1038.12843pt x 320.698
+<chapters/chapter02/"diagrams/niche_space".png, id=1527, 1038.12843pt x 320.698
 12pt>
 File: chapters/chapter02/"diagrams/niche_space".png Graphic file (type png)
  <use chapters/chapter02/"diagrams/niche_space".png>
@@ -2565,7 +2843,7 @@ Package nag Warning: Environment eqnarray is obsolete.
 (nag)                Use amsmath's align instead on input line 77.
 
 [26 <./chapters/chapter02/diagrams/niche_space.png>]
-<chapters/chapter02/random_plots/example_food_web.png, id=1117, 578.16pt x 433.
+<chapters/chapter02/random_plots/example_food_web.png, id=1546, 578.16pt x 433.
 62pt>
 File: chapters/chapter02/random_plots/example_food_web.png Graphic file (type p
 ng)
@@ -2574,7 +2852,7 @@ Package pdftex.def Info: chapters/chapter02/random_plots/example_food_web.png u
 sed on input line 96.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
  [27 <./chapters/chapter02/random_plots/example_food_web.png>]
-<chapters/chapter02/"diagrams/trophic_cartoon".png, id=1136, 991.705pt x 623.32
+<chapters/chapter02/"diagrams/trophic_cartoon".png, id=1563, 991.705pt x 623.32
 875pt>
 File: chapters/chapter02/"diagrams/trophic_cartoon".png Graphic file (type png)
 
@@ -2583,7 +2861,7 @@ Package pdftex.def Info: chapters/chapter02/"diagrams/trophic_cartoon".png used
  on input line 120.
 (pdftex.def)             Requested size: 268.80273pt x 168.94777pt.
  [28] [29 <./chapters/chapter02/diagrams/trophic_cartoon.png>]
-<chapters/chapter02/"diagrams/IBM_movement".png, id=1160, 771.88374pt x 814.041
+<chapters/chapter02/"diagrams/IBM_movement".png, id=1587, 771.88374pt x 814.041
 24pt>
 File: chapters/chapter02/"diagrams/IBM_movement".png Graphic file (type png)
  <use chapters/chapter02/"diagrams/IBM_movement".png>
@@ -2605,7 +2883,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
  [31]
 [32]
-<chapters/chapter02/"tables/IBM_parameters".pdf, id=1204, 597.23125pt x 845.157
+<chapters/chapter02/"tables/IBM_parameters".pdf, id=1630, 597.23125pt x 845.157
 5pt>
 File: chapters/chapter02/"tables/IBM_parameters".pdf Graphic file (type pdf)
  <use chapters/chapter02/"tables/IBM_parameters".pdf>
@@ -2617,7 +2895,7 @@ Underfull \vbox (badness 4492) has occurred while \output is active []
 
  [33]
 [34 <./chapters/chapter02/tables/IBM_parameters.pdf>] [35]
-<chapters/chapter02/random_plots/example_trophic_dynamics_default.png, id=1259,
+<chapters/chapter02/random_plots/example_trophic_dynamics_default.png, id=1684,
  722.7pt x 433.62pt>
 File: chapters/chapter02/random_plots/example_trophic_dynamics_default.png Grap
 hic file (type png)
@@ -2628,7 +2906,7 @@ cs_default.png used on input line 248.
 (pdftex.def)             Requested size: 448.0pt x 268.80193pt.
 
 <chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai1.png
-, id=1260, 722.7pt x 433.62pt>
+, id=1685, 722.7pt x 433.62pt>
 File: chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_mai
 1.png Graphic file (type png)
 
@@ -2638,7 +2916,7 @@ Package pdftex.def Info: chapters/chapter02/random_plots/example_trophic_dynami
 cs_default_HL40_mai1.png used on input line 255.
 (pdftex.def)             Requested size: 448.0pt x 268.80193pt.
 
-<chapters/chapter02/random_plots/space/spatial_state_mai0.5.png, id=1263, 831.1
+<chapters/chapter02/random_plots/space/spatial_state_mai0.5.png, id=1688, 831.1
 05pt x 1300.86pt>
 File: chapters/chapter02/random_plots/space/spatial_state_mai0.5.png Graphic fi
 le (type png)
@@ -2652,33 +2930,33 @@ i0.5.png used on input line 262.
 [38 <./chapters/chapter02/random_plots/example_trophic_dynamics_default_HL40_ma
 i1.png>] [39 <./chapters/chapter02/random_plots/space/spatial_state_mai0.5.png>
 ] [40] [41]
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 358.
-
-
-Underfull \vbox (badness 2818) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 359.
+
 [43] [44]
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 409.
+(nag)                Use amsmath's align instead on input line 410.
 
 [45]
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 429.
+(nag)                Use amsmath's align instead on input line 430.
+
+[46]
+
+Package nag Warning: Environment eqnarray is obsolete. 
+(nag)                Use amsmath's align instead on input line 437.
 
 
 Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 436.
+(nag)                Use amsmath's align instead on input line 443.
 
-
-Package nag Warning: Environment eqnarray is obsolete. 
-(nag)                Use amsmath's align instead on input line 442.
-
-[46] [47])) [48] (./chapters/chapter03/chap03.tex
+[47])) [48] (./chapters/chapter03/chap03.tex
 (./chapters/chapter03/chapter_3_content.tex
 Underfull \vbox (badness 6708) has occurred while \output is active []
 
@@ -2686,218 +2964,214 @@ Underfull \vbox (badness 6708) has occurred while \output is active []
 
 
 ]
-[50] [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `sec:' on page 52 undefined on input line 83.
+ [50]
+[51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Reference `sec:' on page 52 undefined on input line 83.
-
-
-LaTeX Warning: Reference `sec:' on page 52 undefined on input line 83.
-
-[52]
-<chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png, id=1509, 867.24pt
+ [52]
+<chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png, id=1946, 867.24pt
  x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png Graphic file 
 (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_count_3ma
-i.png used on input line 98.
+i.png used on input line 100.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
-<chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png, id=1510, 867.24pt 
+<chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png, id=1947, 867.24pt 
 x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png Graphic file (
 type png)
  <use chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai
-.png used on input line 106.
+.png used on input line 108.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
-<chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png, id=1511, 72
+<chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png, id=1948, 72
 2.7pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png Graphic
  file (type png)
 
 <use chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_shannon_eq_hl_rand
-om_3mai.png used on input line 113.
+om_3mai.png used on input line 115.
 (pdftex.def)             Requested size: 313.59863pt x 564.48007pt.
 
 
-LaTeX Warning: Float too large for page by 11.59282pt on input line 116.
+LaTeX Warning: Float too large for page by 11.59282pt on input line 118.
 
-[53 <./chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>] [54 <./cha
-pters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>] [55 <./chapters/chapt
-er03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>]
-<chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png, id=1538, 1487.5
+[53]
+<chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png, id=1961, 1487.5
 575pt x 550.055pt>
 File: chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png Graphic fil
 e (type png)
 
 <use chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_random_mai
-0.5.png used on input line 130.
+0.5.png used on input line 132.
 (pdftex.def)             Requested size: 448.0pt x 165.65564pt.
 
-<chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png, id=1541, 14
+<chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png, id=1964, 14
 87.5575pt x 550.055pt>
 File: chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png Graphic
  file (type png)
 
 <use chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/rad_3examples_contiguous
-_mai0.5.png used on input line 138.
+_mai0.5.png used on input line 140.
 (pdftex.def)             Requested size: 448.0pt x 165.65564pt.
 
-[56 <./chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png (PNG copy)
-> <./chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png (PNG cop
-y)>]
-<chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png, id=1553, 1040.688pt x
+[54 <./chapters/chapter03/clean_figs/clean_lm_total_count_3mai.png>]
+<chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png, id=1977, 1040.688pt x
  624.4128pt>
 File: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png Graphic file (typ
 e png)
  <use chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_radfit_params_v_hl.pn
-g used on input line 149.
+g used on input line 151.
 (pdftex.def)             Requested size: 448.0pt x 268.80669pt.
 
-[57 <./chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>]
+[55 <./chapters/chapter03/clean_figs/clean_lm_shannon_eq_3mai.png>] [56 <./chap
+ters/chapter03/clean_figs/lm_fg_shannon_eq_hl_random_3mai.png>]
 <chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png, id=
-1572, 867.24pt x 1300.86pt>
+2000, 867.24pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png
  Graphic file (type png)
 
 <use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_random_3mai.png used on input line 164.
+_hl_random_3mai.png used on input line 166.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
 
 <chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.png,
- id=1573, 867.24pt x 1300.86pt>
+ id=2001, 867.24pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai
 .png Graphic file (type png)
 
 <use chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous_3mai.
 png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_fg_relative_abundance
-_hl_contiguous_3mai.png used on input line 171.
+_hl_contiguous_3mai.png used on input line 173.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
- [58] [59 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3
-mai.png>] [60 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_cont
-iguous_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png, id=1597, 867.
+ [57 <./chapters/chapter03/clean_figs/rad_3examples_random_mai0.5.png (PNG copy
+)>] [58 <./chapters/chapter03/clean_figs/rad_3examples_contiguous_mai0.5.png (P
+NG copy)> <./chapters/chapter03/clean_figs/lm_radfit_params_v_hl.png>]
+[59 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_random_3mai.pn
+g>] [60 <./chapters/chapter03/clean_figs/lm_fg_relative_abundance_hl_contiguous
+_3mai.png>]
+<chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png, id=2031, 867.
 24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png Graphic f
 ile (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_number_of_links
-_3mai.png used on input line 186.
+_3mai.png used on input line 188.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-<chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png, id=1602, 8
+<chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png, id=2036, 8
 67.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png Graphi
 c file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_total_interacti
-ons_3mai.png used on input line 193.
+ons_3mai.png used on input line 195.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-Underfull \vbox (badness 1960) has occurred while \output is active []
+Underfull \vbox (badness 1009) has occurred while \output is active []
 
  [61
 
  <./chapters/chapter03/clean_figs/clean_lm_number_of_links_3mai.png>] [62 <./ch
 apters/chapter03/clean_figs/clean_lm_total_interactions_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png, id=1630, 
+<chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png, id=2064, 
 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png Graph
 ic file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_genera
-lity_3mai.png used on input line 211.
+lity_3mai.png used on input line 213.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-<chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png, id=163
-5, 867.24pt x 520.344pt>
+<chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png, id=206
+9, 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png Gr
 aphic file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_weighted_vulner
-ability_3mai.png used on input line 218.
+ability_3mai.png used on input line 220.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
 [63 <./chapters/chapter03/clean_figs/clean_lm_weighted_generality_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png, id=1650
+<chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png, id=2083
 , 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png Gra
 phic file (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_interaction_div
-ersity_3mai.png used on input line 229.
+ersity_3mai.png used on input line 231.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
 
-<chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png, id=1655, 867.2
+<chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png, id=2088, 867.2
 4pt x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png Graphic fi
 le (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_specialisation_
-3mai.png used on input line 243.
+3mai.png used on input line 245.
 (pdftex.def)             Requested size: 358.40137pt x 215.04153pt.
  [64 <./chapters/chapter03/clean_figs/clean_lm_weighted_vulnerability_3mai.png>
 ] [65 <./chapters/chapter03/clean_figs/clean_lm_interaction_diversity_3mai.png>
  <./chapters/chapter03/clean_figs/clean_lm_specialisation_3mai.png>]
-<chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png, id=1671, 867.24p
+<chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png, id=2105, 867.24p
 t x 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png Graphic file
  (type png)
 
 <use chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3m
-ai.png used on input line 255.
+ai.png used on input line 257.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
-<chapters/chapter03/clean_figs/strong_fig.png, id=1676, 867.24pt x 1300.86pt>
+<chapters/chapter03/clean_figs/strong_fig.png, id=2110, 867.24pt x 1300.86pt>
 File: chapters/chapter03/clean_figs/strong_fig.png Graphic file (type png)
 
 <use chapters/chapter03/clean_figs/strong_fig.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/strong_fig.png used on i
-nput line 262.
+nput line 264.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
 
 
-LaTeX Warning: Float too large for page by 11.91661pt on input line 265.
+LaTeX Warning: Float too large for page by 11.91661pt on input line 267.
 
 [66
 
  <./chapters/chapter03/clean_figs/clean_lm_mean_cv_area_3mai.png>] [67 <./chapt
 ers/chapter03/clean_figs/strong_fig.png>]
-<chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png, id=1705, 867.24pt x 
+<chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png, id=2139, 867.24pt x 
 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png Graphic file (ty
 pe png)
  <use chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.p
-ng used on input line 279.
+ng used on input line 281.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
-<chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png, id=1710, 867.24pt x 
+<chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png, id=2144, 867.24pt x 
 520.344pt>
 File: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png Graphic file (ty
 pe png)
  <use chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/clean_lm_gearys_c_3mai.p
-ng used on input line 286.
+ng used on input line 288.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2905,23 +3179,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [68]
 [69 <./chapters/chapter03/clean_figs/clean_lm_morans_I_3mai.png> <./chapters/ch
 apter03/clean_figs/clean_lm_gearys_c_3mai.png>] [70]
-<chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png, id=1740, 867.
+<chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png, id=2173, 867.
 24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png Graphic f
 ile (type png)
 
 <use chapters/chapter03/clean_figs/lm_minimum_invariability_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_minimum_invariability
-_3mai.png used on input line 303.
+_3mai.png used on input line 305.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
-<chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png, id=1745, 867.24pt x 
+<chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png, id=2178, 867.24pt x 
 520.344pt>
 File: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png Graphic file (ty
 pe png)
  <use chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_ecosystem_sync_3mai.p
-ng used on input line 310.
+ng used on input line 312.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
 Underfull \vbox (badness 5105) has occurred while \output is active []
@@ -2935,24 +3209,24 @@ Underfull \vbox (badness 1142) has occurred while \output is active []
  [73
 
 ]
-<chapters/chapter03/clean_figs/normalised_IS3_dist_random.png, id=1788, 1300.86
+<chapters/chapter03/clean_figs/normalised_IS3_dist_random.png, id=2222, 1300.86
 pt x 722.7pt>
 File: chapters/chapter03/clean_figs/normalised_IS3_dist_random.png Graphic file
  (type png)
 
 <use chapters/chapter03/clean_figs/normalised_IS3_dist_random.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_rand
-om.png used on input line 333.
+om.png used on input line 335.
 (pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
 
-<chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png, id=1789, 130
+<chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png, id=2223, 130
 0.86pt x 722.7pt>
 File: chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png Graphic 
 file (type png)
 
 <use chapters/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/normalised_IS3_dist_cont
-iguous.png used on input line 341.
+iguous.png used on input line 343.
 (pdftex.def)             Requested size: 403.19727pt x 223.99057pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2960,27 +3234,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [74]
 [75 <./chapters/chapter03/clean_figs/normalised_IS3_dist_random.png> <./chapter
 s/chapter03/clean_figs/normalised_IS3_dist_contiguous.png>]
-<chapters/chapter03/clean_figs/diffusion_example.png, id=1807, 1164.9924pt x 76
+<chapters/chapter03/clean_figs/diffusion_example.png, id=2240, 1164.9924pt x 76
 0.2804pt>
 File: chapters/chapter03/clean_figs/diffusion_example.png Graphic file (type pn
 g)
  <use chapters/chapter03/clean_figs/diffusion_example.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/diffusion_example.png us
-ed on input line 352.
+ed on input line 354.
 (pdftex.def)             Requested size: 448.0pt x 292.36662pt.
 LaTeX Font Info:    Font shape `TS1/fnc/bx/n' in size <10.95> not available
-(Font)              Font shape `TS1/fnc/b/n' tried instead on input line 353.
+(Font)              Font shape `TS1/fnc/b/n' tried instead on input line 355.
 LaTeX Font Info:    Font shape `TS1/fnc/b/n' will be
-(Font)              scaled to size 10.18341pt on input line 353.
+(Font)              scaled to size 10.18341pt on input line 355.
 
-<chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png, id=1808
+<chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png, id=2241
 , 867.24pt x 520.344pt>
 File: chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png Gra
 phic file (type png)
 
 <use chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>
 Package pdftex.def Info: chapters/chapter03/clean_figs/lm_mean_proportion_immig
-ration_3mai.png used on input line 359.
+ration_3mai.png used on input line 361.
 (pdftex.def)             Requested size: 403.19727pt x 241.91776pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2991,14 +3265,17 @@ Underfull \vbox (badness 3954) has occurred while \output is active []
 
  [78 <./chapters/chapter03/clean_figs/lm_mean_proportion_immigration_3mai.png>]
  [79]
-[80
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-])) [81] [82
+ [80]
+[81] [82
+
+])) [83] [84
 
 ] (./chapters/chapter13/chap13.tex
 (./chapters/chapter13/chapter_13_content.tex
-<chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png, id=18
-74, 578.16pt x 433.62pt>
+<chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png, id=23
+47, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/hist_species_per_tl_zeroIR".png G
 raphic file (type png)
 
@@ -3009,14 +3286,14 @@ er_tl_zeroIR".png used on input line 30.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83
+ [85
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84 <./chapters/chapter13/figures/persistence/hist_species_per_tl_zeroIR.png>]
+ [86 <./chapters/chapter13/figures/persistence/hist_species_per_tl_zeroIR.png>]
 
-<chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png, id=1897, 5
+<chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png, id=2369, 5
 78.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/mean_trophic_dynamics".png Graphi
 c file (type png)
@@ -3026,9 +3303,9 @@ Package pdftex.def Info: chapters/chapter13/"figures/persistence/mean_trophic_d
 ynamics".png used on input line 60.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
-[85]
+[87]
 <chapters/chapter13/"figures/persistence/species_richness_per_trophic_level".pn
-g, id=1910, 578.16pt x 433.62pt>
+g, id=2377, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/species_richness_per_trophic_leve
 l".png Graphic file (type png)
 
@@ -3039,7 +3316,7 @@ ss_per_trophic_level".png used on input line 81.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 <chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai00".png, id=
-1911, 578.16pt x 433.62pt>
+2378, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai00".png
  Graphic file (type png)
 
@@ -3055,7 +3332,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 8.36993pt on input line 102.
 
 <chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png, id=
-1912, 578.16pt x 433.62pt>
+2379, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png
  Graphic file (type png)
 
@@ -3063,13 +3340,13 @@ File: chapters/chapter13/"figures/persistence/rr_hist_species_per_tl_mai05".png
 Package pdftex.def Info: chapters/chapter13/"figures/persistence/rr_hist_specie
 s_per_tl_mai05".png used on input line 105.
 (pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
-[86 <./chapters/chapter13/figures/persistence/mean_trophic_dynamics.png>]
-[87 <./chapters/chapter13/figures/persistence/species_richness_per_trophic_leve
+[88 <./chapters/chapter13/figures/persistence/mean_trophic_dynamics.png>]
+[89 <./chapters/chapter13/figures/persistence/species_richness_per_trophic_leve
 l.png> <./chapters/chapter13/figures/persistence/rr_hist_species_per_tl_mai00.p
 ng> <./chapters/chapter13/figures/persistence/rr_hist_species_per_tl_mai05.png>
 ]
 <chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai00".png, i
-d=1933, 578.16pt x 433.62pt>
+d=2400, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai00".p
 ng Graphic file (type png)
 
@@ -3080,7 +3357,7 @@ c_dynamics_mai00".png used on input line 178.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
 <chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai05".png, i
-d=1934, 578.16pt x 433.62pt>
+d=2401, 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/rr_mean_trophic_dynamics_mai05".p
 ng Graphic file (type png)
 
@@ -3096,7 +3373,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
 l.215 	\subbottom
                  [\textbf{ MAI=0.0}]{\includegraphics[width=0.49\linewidth]{...
 
-<chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png, id=1935
+<chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png, id=2402
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/ls_v_comp_mai00_standard".png Gra
 phic file (type png)
@@ -3112,7 +3389,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
 l.218 	\subbottom
                  [\textbf{ MAI=0.5}]{\includegraphics[width=0.49\linewidth]{...
 
-<chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png, id=1936
+<chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png, id=2403
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/ls_v_comp_mai05_standard".png Gra
 phic file (type png)
@@ -3124,13 +3401,13 @@ Package pdftex.def Info: chapters/chapter13/"figures/persistence/ls_v_comp_mai0
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai00.p
+ [90 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai00.p
 ng>]
 Underfull \vbox (badness 3118) has occurred while \output is active []
 
- [89 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai05.p
+ [91 <./chapters/chapter13/figures/persistence/rr_mean_trophic_dynamics_mai05.p
 ng>]
-[90 <./chapters/chapter13/figures/persistence/ls_v_comp_mai00_standard.png> <./
+[92 <./chapters/chapter13/figures/persistence/ls_v_comp_mai00_standard.png> <./
 chapters/chapter13/figures/persistence/ls_v_comp_mai05_standard.png>]pdfTeX war
 ning (ext4): destination with the same identifier (name{subfigure.1}) has been 
 already used, duplicate ignored
@@ -3139,7 +3416,7 @@ already used, duplicate ignored
 l.243 	\subbottom
                  [\textbf{Niche model}]{\includegraphics[width=0.49\linewidt...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png, id=1959, 
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png, id=2427, 
 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_niche".png Graph
 ic file (type png)
@@ -3155,7 +3432,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
 l.246 	\subbottom
                  [\textbf{Re-wired networks}]{\includegraphics[width=0.49\li...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png, id=1960
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png, id=2428
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai00_rewired".png Gra
 phic file (type png)
@@ -3171,7 +3448,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
 l.256 	\subbottom
                  [\textbf{Niche model}]{\includegraphics[width=0.49\linewidt...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png, id=1961, 
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png, id=2429, 
 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_niche".png Graph
 ic file (type png)
@@ -3187,7 +3464,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
 l.259 	\subbottom
                  [\textbf{Re-wired networks}]{\includegraphics[width=0.49\li...
 
-<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png, id=1962
+<chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png, id=2430
 , 578.16pt x 433.62pt>
 File: chapters/chapter13/"figures/persistence/nsp_v_comp_mai05_rewired".png Gra
 phic file (type png)
@@ -3197,12 +3474,12 @@ Package pdftex.def Info: chapters/chapter13/"figures/persistence/nsp_v_comp_mai
 05_rewired".png used on input line 259.
 (pdftex.def)             Requested size: 219.52246pt x 164.63837pt.
 
-[91] [92 <./chapters/chapter13/figures/persistence/nsp_v_comp_mai00_niche.png> 
+[93] [94 <./chapters/chapter13/figures/persistence/nsp_v_comp_mai00_niche.png> 
 <./chapters/chapter13/figures/persistence/nsp_v_comp_mai00_rewired.png> <./chap
 ters/chapter13/figures/persistence/nsp_v_comp_mai05_niche.png> <./chapters/chap
 ter13/figures/persistence/nsp_v_comp_mai05_rewired.png>]
-<chapters/chapter13/figures/persistence/net_struct/good_network_page.png, id=19
-82, 1445.4pt x 722.7pt>
+<chapters/chapter13/figures/persistence/net_struct/good_network_page.png, id=24
+50, 1445.4pt x 722.7pt>
 File: chapters/chapter13/figures/persistence/net_struct/good_network_page.png G
 raphic file (type png)
 
@@ -3211,8 +3488,8 @@ Package pdftex.def Info: chapters/chapter13/figures/persistence/net_struct/good
 _network_page.png used on input line 295.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-<chapters/chapter13/figures/persistence/net_struct/bad_network_page.png, id=198
-3, 1445.4pt x 722.7pt>
+<chapters/chapter13/figures/persistence/net_struct/bad_network_page.png, id=245
+1, 1445.4pt x 722.7pt>
 File: chapters/chapter13/figures/persistence/net_struct/bad_network_page.png Gr
 aphic file (type png)
 
@@ -3221,30 +3498,10 @@ Package pdftex.def Info: chapters/chapter13/figures/persistence/net_struct/bad_
 network_page.png used on input line 302.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-
-LaTeX Warning: Reference `sec:sec:com_dyn_var' on page 93 undefined on input li
-ne 339.
-
-
-Package natbib Warning: Citation `gause1934experimental' on page 93 undefined o
-n input line 339.
-
-
-Package natbib Warning: Citation `desharnais2005population' on page 93 undefine
-d on input line 339.
-
-
-Package natbib Warning: Citation `hutchinson1961paradox' on page 93 undefined o
-n input line 339.
-
-
-Package natbib Warning: Citation `holyoak1996persistence' on page 93 undefined 
-on input line 339.
-
-[93] [94 <./chapters/chapter13/figures/persistence/net_struct/good_network_page
+[95] [96 <./chapters/chapter13/figures/persistence/net_struct/good_network_page
 .png> <./chapters/chapter13/figures/persistence/net_struct/bad_network_page.png
->] [95]
-<chapters/chapter13/"figures/stationarity/cov_vs_ir".png, id=2004, 578.16pt x 4
+>] [97]
+<chapters/chapter13/"figures/stationarity/cov_vs_ir".png, id=2480, 578.16pt x 4
 33.62pt>
 File: chapters/chapter13/"figures/stationarity/cov_vs_ir".png Graphic file (typ
 e png)
@@ -3252,36 +3509,15 @@ e png)
 Package pdftex.def Info: chapters/chapter13/"figures/stationarity/cov_vs_ir".pn
 g used on input line 401.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
- [96
+ [98
 
  <./chapters/chapter13/figures/stationarity/cov_vs_ir.png>]
-
-Package natbib Warning: Citation `hsu1997schaum' on page 97 undefined on input 
-line 436.
-
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 438.
 
-[97]
-
-Package natbib Warning: Citation `kwiatkowski1992testing' on page 98 undefined 
-on input line 452.
-
-
-Package natbib Warning: Citation `said1984testing' on page 98 undefined on inpu
-t line 452.
-
-
-Package natbib Warning: Citation `priestley1969test' on page 98 undefined on in
-put line 452.
-
-
-Package natbib Warning: Citation `priestley1969test' on page 98 undefined on in
-put line 458.
-
-[98]
-<chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png, id=2044, 731.37
+[99] [100]
+<chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png, id=2526, 731.37
 24pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png Graphic fil
 e (type png)
@@ -3294,8 +3530,8 @@ ics.png used on input line 481.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[99 <./chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png>]
-<chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png, id=2054, 7
+[101 <./chapters/chapter13/figures/stationarity/hi_rw_ns_dynamics.png>]
+<chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png, id=2536, 7
 31.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png Graphi
 c file (type png)
@@ -3308,8 +3544,8 @@ sts_v_wl.png used on input line 520.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[100]
-<chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png, id=2066, 731.
+[102]
+<chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png, id=2548, 731.
 3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png Graphic f
 ile (type png)
@@ -3325,11 +3561,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [101 <./chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png>]
+ [103 <./chapters/chapter13/figures/stationarity/Rtests/stat_tests_v_wl.png>]
 Underfull \vbox (badness 8132) has occurred while \output is active []
 
- [102 <./chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png>]
-<chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png, id=2083
+ [104 <./chapters/chapter13/figures/stationarity/hi_trophic_dynamics.png>]
+<chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png, id=2566
 , 731.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png Gra
 phic file (type png)
@@ -3339,7 +3575,7 @@ Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/tl_stat
 _tests_v_wl.png used on input line 558.
 (pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
 
-<chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png, id=2090, 72
+<chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png, id=2573, 72
 2.7pt x 433.62pt>
 File: chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png Graphic
  file (type png)
@@ -3351,7 +3587,7 @@ rt10000.png used on input line 568.
 
 Underfull \vbox (badness 1383) has occurred while \output is active []
 
- [103 <./chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png>
+ [105 <./chapters/chapter13/figures/stationarity/Rtests/tl_stat_tests_v_wl.png>
 ]pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -3360,7 +3596,7 @@ l.587 	\subbottom
                  [Three most abundant species]{\includegraphics[width=0.8\li...
 
 <chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png, id=2
-100, 731.3724pt x 442.2924pt>
+583, 731.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.png 
 Graphic file (type png)
 
@@ -3376,7 +3612,7 @@ l.588 		\subbottom
                   [Three least abundant species]{\includegraphics[width=0.8\...
 
 <chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png, id=2
-101, 731.3724pt x 442.2924pt>
+584, 731.3724pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png 
 Graphic file (type png)
 
@@ -3385,11 +3621,11 @@ Package pdftex.def Info: chapters/chapter13/figures/stationarity/Rtests/sp_la_s
 tat_tests_v_wl.png used on input line 588.
 (pdftex.def)             Requested size: 358.40137pt x 216.74542pt.
 
-[104 <./chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png>]
-[105 <./chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.pn
+[106 <./chapters/chapter13/figures/stationarity/hi_sp_by_tl_part10000.png>]
+[107 <./chapters/chapter13/figures/stationarity/Rtests/sp_ma_stat_tests_v_wl.pn
 g> <./chapters/chapter13/figures/stationarity/Rtests/sp_la_stat_tests_v_wl.png>
 ]
-<chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png, id=2125, 72
+<chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png, id=2607, 72
 2.7pt x 433.62pt>
 File: chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png Graphic
  file (type png)
@@ -3402,8 +3638,8 @@ nsemble.png used on input line 611.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[106]
-<chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png, id=2137, 722.7pt x 7
+[108]
+<chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png, id=2619, 722.7pt x 7
 56.6669pt>
 File: chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png Graphic file (ty
 pe png)
@@ -3412,7 +3648,7 @@ Package pdftex.def Info: chapters/chapter13/figures/stationarity/nssp_ir_v_hl.p
 ng used on input line 621.
 (pdftex.def)             Requested size: 448.0pt x 469.05936pt.
 
-<chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png, id=2140, 578.16p
+<chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png, id=2622, 578.16p
 t x 433.62pt>
 File: chapters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png Graphic file
  (type png)
@@ -3425,63 +3661,13 @@ hl.png used on input line 630.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[107 <./chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png>]
-[108 <./chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png>] [109 <./chap
-ters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png>]
+[109 <./chapters/chapter13/figures/stationarity/hi_v_li_net7_ensemble.png>]
+[110 <./chapters/chapter13/figures/stationarity/nssp_ir_v_hl.png>] [111 <./chap
+ters/chapter13/figures/stationarity/nssp_v_ir_and_hl.png>] [112
 
-Package natbib Warning: Citation `marwan2007recurrence' on page 110 undefined o
-n input line 647.
-
-
-Package natbib Warning: Citation `aparicio2008detecting' on page 110 undefined 
-on input line 647.
-
-
-Package natbib Warning: Citation `saul09phd' on page 110 undefined on input lin
-e 647.
-
-
-Package natbib Warning: Citation `saul09phd' on page 110 undefined on input lin
-e 647.
-
-
-Package natbib Warning: Citation `saul09phd' on page 110 undefined on input lin
-e 647.
-
-
-Package natbib Warning: Citation `aparicio2008detecting' on page 110 undefined 
-on input line 655.
-
-
-Package natbib Warning: Citation `aparicio2008detecting' on page 110 undefined 
-on input line 657.
-
-
-Package natbib Warning: Citation `marwan2007recurrence' on page 110 undefined o
-n input line 657.
-
-[110
-
-]
-
-Package natbib Warning: Citation `aparicio2008detecting' on page 111 undefined 
-on input line 664.
-
-
-Package natbib Warning: Citation `aparicio2008detecting' on page 111 undefined 
-on input line 678.
-
-
-Package natbib Warning: Citation `aparicio2008detecting' on page 111 undefined 
-on input line 680.
-
-
-Package natbib Warning: Citation `saul09phd' on page 111 undefined on input lin
-e 680.
-
-[111]
-<chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png, id=218
-1, 1300.86pt x 1300.86pt>
+] [113]
+<chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png, id=267
+4, 1300.86pt x 1300.86pt>
 File: chapters/chapter13/figures/stationarity/RP_high_low_shuffle_random.png Gr
 aphic file (type png)
 
@@ -3490,7 +3676,7 @@ Package pdftex.def Info: chapters/chapter13/figures/stationarity/RP_high_low_sh
 uffle_random.png used on input line 690.
 (pdftex.def)             Requested size: 448.0pt x 448.0032pt.
 
-<chapters/chapter13/figures/stationarity/percentage_determinism.png, id=2184, 1
+<chapters/chapter13/figures/stationarity/percentage_determinism.png, id=2677, 1
 300.86pt x 722.7pt>
 File: chapters/chapter13/figures/stationarity/percentage_determinism.png Graphi
 c file (type png)
@@ -3503,12 +3689,12 @@ erminism.png used on input line 698.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[112] [113 <./chapters/chapter13/figures/stationarity/RP_high_low_shuffle_rando
+[114] [115 <./chapters/chapter13/figures/stationarity/RP_high_low_shuffle_rando
 m.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [114 <./chapters/chapter13/figures/stationarity/percentage_determinism.png>] [
-115]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
+ [116 <./chapters/chapter13/figures/stationarity/percentage_determinism.png>] [
+117]pdfTeX warning (ext4): destination with the same identifier (name{subfigure
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -3516,7 +3702,7 @@ l.784 	\subbottom
                  [HI simulation (IR$=0.001$)]{\includegraphics[width=1.0\lin...
 
 <chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_regress
-ion.png, id=2216, 1309.5324pt x 442.2924pt>
+ion.png, id=2708, 1309.5324pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator_re
 gression.png Graphic file (type png)
 
@@ -3545,7 +3731,7 @@ l.785 	\subbottom
                  [LI simulation (IR$=0.0001$)]{\includegraphics[width=1.0\li...
 
 <chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_regress
-ion.png, id=2217, 1309.5324pt x 442.2924pt>
+ion.png, id=2709, 1309.5324pt x 442.2924pt>
 File: chapters/chapter13/figures/stationarity/Reliability/LI/three_estimator_re
 gression.png Graphic file (type png)
 
@@ -3556,7 +3742,7 @@ Package pdftex.def Info: chapters/chapter13/figures/stationarity/Reliability/LI
 (pdftex.def)             Requested size: 448.0pt x 151.30876pt.
 
 <chapters/chapter13/figures/stationarity/Reliability/error_versus_estimator.png
-, id=2218, 578.16pt x 433.62pt>
+, id=2710, 578.16pt x 433.62pt>
 File: chapters/chapter13/figures/stationarity/Reliability/error_versus_estimato
 r.png Graphic file (type png)
 
@@ -3570,17 +3756,13 @@ ror_versus_estimator.png used on input line 794.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package natbib Warning: Citation `mac2007use' on page 116 undefined on input li
-ne 809.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116 <./chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator
+ [118 <./chapters/chapter13/figures/stationarity/Reliability/HI/three_estimator
 _regression.png> <./chapters/chapter13/figures/stationarity/Reliability/LI/thre
-e_estimator_regression.png>] [117 <./chapters/chapter13/figures/stationarity/Re
+e_estimator_regression.png>] [119 <./chapters/chapter13/figures/stationarity/Re
 liability/error_versus_estimator.png>]
-<chapters/chapter13/figures/stationarity/ras_3examples.png, id=2238, 722.7pt x 
+<chapters/chapter13/figures/stationarity/ras_3examples.png, id=2731, 722.7pt x 
 722.7pt>
 File: chapters/chapter13/figures/stationarity/ras_3examples.png Graphic file (t
 ype png)
@@ -3589,20 +3771,20 @@ Package pdftex.def Info: chapters/chapter13/figures/stationarity/ras_3examples.
 png used on input line 823.
 (pdftex.def)             Requested size: 448.0pt x 448.0032pt.
 
-[118] [119 <./chapters/chapter13/figures/stationarity/ras_3examples.png>]))
-[120] (./chapters/chapter04/chap04.tex
+[120] [121 <./chapters/chapter13/figures/stationarity/ras_3examples.png>]))
+[122] (./chapters/chapter04/chap04.tex
 (./chapters/chapter04/chapter_4_content.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [121
+ [123
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [122]
-[123]
-<chapters/chapter04/figures/clean_analysis/heatmap_ttest.png, id=2311, 1589.94p
+ [124]
+[125]
+<chapters/chapter04/figures/clean_analysis/heatmap_ttest.png, id=2804, 1589.94p
 t x 867.24pt>
 File: chapters/chapter04/figures/clean_analysis/heatmap_ttest.png Graphic file 
 (type png)
@@ -3611,11 +3793,11 @@ File: chapters/chapter04/figures/clean_analysis/heatmap_ttest.png Graphic file
 Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/heatmap_ttes
 t.png used on input line 97.
 (pdftex.def)             Requested size: 448.0pt x 244.36058pt.
- [124]
+ [126]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [125 <./chapters/chapter04/figures/clean_analysis/heatmap_ttest.png>]
-<chapters/chapter04/figures/clean_analysis/random/heatmap1.png, id=2336, 1589.9
+ [127 <./chapters/chapter04/figures/clean_analysis/heatmap_ttest.png>]
+<chapters/chapter04/figures/clean_analysis/random/heatmap1.png, id=2829, 1589.9
 4pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/random/heatmap1.png Graphic fil
 e (type png)
@@ -3625,7 +3807,7 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/random/heatm
 ap1.png used on input line 118.
 (pdftex.def)             Requested size: 448.0pt x 366.54086pt.
 
-<chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png, id=2337, 15
+<chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png, id=2830, 15
 89.94pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png Graphic
  file (type png)
@@ -3635,10 +3817,10 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/contiguous/h
 eatmap1.png used on input line 124.
 (pdftex.def)             Requested size: 448.0pt x 366.54086pt.
 
-[126] [127 <./chapters/chapter04/figures/clean_analysis/random/heatmap1.png>]
-[128 <./chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png>]
-[129]
-<chapters/chapter04/figures/clean_analysis/random/heatmap3.png, id=2384, 1589.9
+[128] [129 <./chapters/chapter04/figures/clean_analysis/random/heatmap1.png>]
+[130 <./chapters/chapter04/figures/clean_analysis/contiguous/heatmap1.png>]
+[131]
+<chapters/chapter04/figures/clean_analysis/random/heatmap3.png, id=2875, 1589.9
 4pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/random/heatmap3.png Graphic fil
 e (type png)
@@ -3648,7 +3830,7 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/random/heatm
 ap3.png used on input line 155.
 (pdftex.def)             Requested size: 448.0pt x 366.54086pt.
 
-<chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png, id=2387, 15
+<chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png, id=2878, 15
 89.94pt x 1300.86pt>
 File: chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png Graphic
  file (type png)
@@ -3660,9 +3842,9 @@ eatmap3.png used on input line 161.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [130 <./chapters/chapter04/figures/clean_analysis/random/heatmap3.png>] [131 <
+ [132 <./chapters/chapter04/figures/clean_analysis/random/heatmap3.png>] [133 <
 ./chapters/chapter04/figures/clean_analysis/contiguous/heatmap3.png>]
-<chapters/chapter04/figures/clean_analysis/heatmap_sync.png, id=2420, 1589.94pt
+<chapters/chapter04/figures/clean_analysis/heatmap_sync.png, id=2910, 1589.94pt
  x 867.24pt>
 File: chapters/chapter04/figures/clean_analysis/heatmap_sync.png Graphic file (
 type png)
@@ -3671,9 +3853,9 @@ Package pdftex.def Info: chapters/chapter04/figures/clean_analysis/heatmap_sync
 .png used on input line 185.
 (pdftex.def)             Requested size: 448.0pt x 244.36058pt.
 
-[132] [133 <./chapters/chapter04/figures/clean_analysis/heatmap_sync.png>]
-[134]
-<chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png, id=246
+[134] [135 <./chapters/chapter04/figures/clean_analysis/heatmap_sync.png>]
+[136]
+<chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png, id=295
 1, 867.24pt x 520.344pt>
 File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png Gr
 aphic file (type png)
@@ -3683,10 +3865,10 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/clean_lm_sha
 nnon_eq_3mai.png used on input line 275.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
-[135 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png>
+[137 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_shannon_eq_3mai.png>
 ]
 <chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_3mai.
-png, id=2478, 722.7pt x 1300.86pt>
+png, id=2967, 722.7pt x 1300.86pt>
 File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_contiguous_
 3mai.png Graphic file (type png)
 
@@ -3696,8 +3878,8 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/lm_fg_shanno
 n_eq_hl_contiguous_3mai.png used on input line 289.
 (pdftex.def)             Requested size: 313.59863pt x 564.48007pt.
 
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png, id=248
-4, 1182.4175pt x 440.64626pt>
+<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png, id=297
+3, 1182.4175pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png Gr
 aphic file (type png)
 
@@ -3706,10 +3888,10 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/example_RADS
 _mai0_random.png used on input line 302.
 (pdftex.def)             Requested size: 448.0pt x 166.94975pt.
 
-[136] [137 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_con
+[138] [139 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_shannon_eq_hl_con
 tiguous_3mai.png>]
-<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png, id=249
-9, 1421.31pt x 550.055pt>
+<chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png, id=298
+7, 1421.31pt x 550.055pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png Gr
 aphic file (type png)
 
@@ -3720,10 +3902,10 @@ _mai1_random.png used on input line 319.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [138 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png
+ [140 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_random.png
  (PNG copy)>]
 <chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous.png, id
-=2510, 1421.31pt x 550.055pt>
+=2998, 1421.31pt x 550.055pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai0_contiguous.pn
 g Graphic file (type png)
 
@@ -3734,7 +3916,7 @@ _mai0_contiguous.png used on input line 328.
 (pdftex.def)             Requested size: 448.0pt x 173.37735pt.
 
 <chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous.png, id
-=2519, 1179.40625pt x 440.64626pt>
+=3007, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_contiguous.pn
 g Graphic file (type png)
 
@@ -3746,12 +3928,12 @@ _mai1_contiguous.png used on input line 343.
 
 Underfull \vbox (badness 6204) has occurred while \output is active []
 
- [139 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png
- (PNG copy)>] [140 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_ma
+ [141 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_mai1_random.png
+ (PNG copy)>] [142 <./chapters/chapter04/figures/bivariate_v_HL/example_RADS_ma
 i0_contiguous.png (PNG copy)> <./chapters/chapter04/figures/bivariate_v_HL/exam
 ple_RADS_mai1_contiguous.png (PNG copy)>]
 <chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_random_3
-mai.png, id=2536, 867.24pt x 1300.86pt>
+mai.png, id=3023, 867.24pt x 1300.86pt>
 File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_ran
 dom_3mai.png Graphic file (type png)
 
@@ -3762,7 +3944,7 @@ ve_abundance_hl_random_3mai.png used on input line 366.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
 
 <chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_contiguo
-us_3mai.png, id=2546, 867.24pt x 1300.86pt>
+us_3mai.png, id=3033, 867.24pt x 1300.86pt>
 File: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundance_hl_con
 tiguous_3mai.png Graphic file (type png)
 
@@ -3771,11 +3953,11 @@ iguous_3mai.png>
 Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/lm_fg_relati
 ve_abundance_hl_contiguous_3mai.png used on input line 386.
 (pdftex.def)             Requested size: 358.40137pt x 537.60385pt.
- [141] [142 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundan
-ce_hl_random_3mai.png>] [143 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg
+ [143] [144 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg_relative_abundan
+ce_hl_random_3mai.png>] [145 <./chapters/chapter04/figures/bivariate_v_HL/lm_fg
 _relative_abundance_hl_contiguous_3mai.png>]
 <chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality_3mai.pn
-g, id=2568, 867.24pt x 520.344pt>
+g, id=3055, 867.24pt x 520.344pt>
 File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality_3m
 ai.png Graphic file (type png)
 
@@ -3786,7 +3968,7 @@ ghted_generality_3mai.png used on input line 409.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
 
 <chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_vulnerability_3mai
-.png, id=2573, 867.24pt x 520.344pt>
+.png, id=3060, 867.24pt x 520.344pt>
 File: chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_vulnerability
 _3mai.png Graphic file (type png)
 
@@ -3795,11 +3977,11 @@ _3mai.png Graphic file (type png)
 Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_HL/clean_lm_wei
 ghted_vulnerability_3mai.png used on input line 415.
 (pdftex.def)             Requested size: 448.0pt x 268.80191pt.
- [144 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality
-_3mai.png>] [145 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted
+ [146 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted_generality
+_3mai.png>] [147 <./chapters/chapter04/figures/bivariate_v_HL/clean_lm_weighted
 _vulnerability_3mai.png>]
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png, id=260
-4, 1179.40625pt x 440.64626pt>
+<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png, id=309
+0, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png Gr
 aphic file (type png)
 
@@ -3809,7 +3991,7 @@ _mai0_random.png used on input line 480.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
 
 <chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_contiguous.png, id
-=2607, 1179.40625pt x 440.64626pt>
+=3093, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_contiguous.pn
 g Graphic file (type png)
 
@@ -3819,8 +4001,8 @@ Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
 _mai0_contiguous.png used on input line 486.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
 
-<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png, id=261
-0, 1179.40625pt x 440.64626pt>
+<chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png, id=309
+6, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png Gr
 aphic file (type png)
 
@@ -3830,7 +4012,7 @@ _mai1_random.png used on input line 493.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
 
 <chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_contiguous.png, id
-=2613, 1179.40625pt x 440.64626pt>
+=3099, 1179.40625pt x 440.64626pt>
 File: chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_contiguous.pn
 g Graphic file (type png)
 
@@ -3839,46 +4021,49 @@ g Graphic file (type png)
 Package pdftex.def Info: chapters/chapter04/figures/bivariate_v_IR/example_RADS
 _mai1_contiguous.png used on input line 499.
 (pdftex.def)             Requested size: 448.0pt x 167.38007pt.
- [146 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png
+ [148 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_random.png
  (PNG copy)> <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai0_con
 tiguous.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [147 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png
+ [149 <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_random.png
  (PNG copy)> <./chapters/chapter04/figures/bivariate_v_IR/example_RADS_mai1_con
-tiguous.png (PNG copy)>] [148]
-Underfull \vbox (badness 5504) has occurred while \output is active []
+tiguous.png (PNG copy)>]
 
- [149]
-
-Package natbib Warning: Citation `rudgers2008invasive' on page 150 undefined on
- input line 551.
-
-
-Package natbib Warning: Citation `keller2014mutualistic' on page 150 undefined 
-on input line 551.
-
-
-Package natbib Warning: Citation `keller2014mutualistic' on page 150 undefined 
-on input line 551.
-
-
-Package natbib Warning: Citation `rudgers2008invasive' on page 150 undefined on
- input line 551.
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\replaced' on input line 517.
 
 [150]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [151]))
-[152] (./chapters/chapter06/chap06.tex (./chapters/chapter06/chapter_6_temp.tex
+ [151]
 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\replaced' on input line 548.
+
+
+Overfull \hbox (4.8376pt too wide) in paragraph at lines 551--552
+\T1/fnc/m/n/10.95 (-20) In this sec-tion []we dis-cuss the re-sults sum-marised
+ above|   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+[152]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [153]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [154]))
+[155] [156
+
+] (./chapters/chapter06/chap06.tex
+(./chapters/chapter06/chapter_6_temp.tex
 Underfull \vbox (badness 4779) has occurred while \output is active []
 
- [153
-
+ [157
 
 ]
-<chapters/chapter06/flow_chart/flow_chart.pdf, id=2723, 637.55487pt x 505.49654
+<chapters/chapter06/flow_chart/flow_chart.pdf, id=3230, 637.55487pt x 505.49654
 pt>
 File: chapters/chapter06/flow_chart/flow_chart.pdf Graphic file (type pdf)
  <use chapters/chapter06/flow_chart/flow_chart.pdf>
@@ -3899,14 +4084,10 @@ either increase the head height or redesign the header
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[154]
+[158]
 Underfull \vbox (badness 3189) has occurred while \output is active []
 
- [155 <./chapters/chapter06/flow_chart/flow_chart.pdf>]
-
-Package natbib Warning: Citation `rosenzweig1963graphical' on page 156 undefine
-d on input line 65.
-
+ [159 <./chapters/chapter06/flow_chart/flow_chart.pdf>]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 67.
@@ -3919,19 +4100,7 @@ Package nag Warning: Environment eqnarray is obsolete.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[156]
-
-Package natbib Warning: Citation `rosenzweig1963graphical' on page 157 undefine
-d on input line 83.
-
-
-Package natbib Warning: Citation `mitra2009closure' on page 157 undefined on in
-put line 83.
-
-
-Package natbib Warning: Citation `hastings2013population' on page 157 undefined
- on input line 85.
-
+[160]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 87.
@@ -3940,7 +4109,7 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 97.
 
-[157]
+[161]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 111.
@@ -3953,7 +4122,7 @@ Package nag Warning: Environment eqnarray is obsolete.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[158]
+[162]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 144.
@@ -3966,7 +4135,7 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 166.
 
-[159]
+[163]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 206.
@@ -3975,16 +4144,16 @@ Package nag Warning: Environment eqnarray is obsolete.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[160]
+[164]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 227.
 
-[161]
+[165]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[162]
+[166]
 
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 314.
@@ -3993,14 +4162,14 @@ Package nag Warning: Environment eqnarray is obsolete.
 Package nag Warning: Environment eqnarray is obsolete. 
 (nag)                Use amsmath's align instead on input line 321.
 
-[163pdfTeX warning (ext4): destination with the same identifier (name{equation.
+[167pdfTeX warning (ext4): destination with the same identifier (name{equation.
 6.2.33}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.356 
       ]
-<chapters/chapter06/figures/FR_example.png, id=2909, 722.7pt x 433.62pt>
+<chapters/chapter06/figures/FR_example.png, id=3415, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/FR_example.png Graphic file (type png)
 
 <use chapters/chapter06/figures/FR_example.png>
@@ -4011,31 +4180,17 @@ t line 364.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[164 <./chapters/chapter06/figures/FR_example.png>] [165]
-
-Package natbib Warning: Citation `hastings2012encyclopedia' on page 166 undefin
-ed on input line 425.
-
-
+[168 <./chapters/chapter06/figures/FR_example.png>] [169]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[166]
-
-Package natbib Warning: Citation `carpenter1994fitting' on page 167 undefined o
-n input line 427.
-
-
-Package natbib Warning: Citation `hutchinson1978introduction' on page 167 undef
-ined on input line 427.
-
-[167]
+[170] [171]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[168]
+[172]
 <chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.000000.png, 
-id=2994, 1084.05pt x 433.62pt>
+id=3501, 1084.05pt x 433.62pt>
 File: chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.000000.
 png Graphic file (type png)
 
@@ -4048,8 +4203,8 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/it' tried instead on input line 493.
 LaTeX Font Info:    Font shape `T1/fnc/b/it' will be
 (Font)              scaled to size 10.18341pt on input line 493.
- [169]
-<chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png, id=3005, 1734
+ [173]
+<chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png, id=3513, 1734
 .48pt x 867.24pt>
 File: chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png Graphic f
 ile (type png)
@@ -4058,11 +4213,11 @@ ile (type png)
 Package pdftex.def Info: chapters/chapter06/figures/example_dynamics_HII_pID_7_
 and_0.png used on input line 512.
 (pdftex.def)             Requested size: 636.60028pt x 318.30658pt.
- [170 <./chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.0000
+ [174 <./chapters/chapter06/figures/example_dynamics_pID_0_and_87_noise_20.0000
 00.png>]
-[171 <./chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png>]
-<chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png, id=30
-25, 1084.05pt x 433.62pt>
+[175 <./chapters/chapter06/figures/example_dynamics_HII_pID_7_and_0.png>]
+<chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png, id=35
+32, 1084.05pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png G
 raphic file (type png)
 
@@ -4077,10 +4232,10 @@ Underfull \vbox (badness 1924) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[172 <./chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png
+[176 <./chapters/chapter06/figures/single_params_v_noise_pID_0_nsamples_100.png
 >]
 <chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000000.png,
- id=3042, 722.7pt x 433.62pt>
+ id=3549, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000000
 .png Graphic file (type png)
 
@@ -4091,7 +4246,7 @@ D_0_noise_10.000000.png used on input line 536.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
 <chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000000.png,
- id=3051, 722.7pt x 433.62pt>
+ id=3558, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.000000
 .png Graphic file (type png)
 
@@ -4103,9 +4258,9 @@ D_0_noise_50.000000.png used on input line 546.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [173 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000
+ [177 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_10.000
 000.png>]
-<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png, id=3065
+<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png, id=3572
 , 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.png Gra
 phic file (type png)
@@ -4116,7 +4271,7 @@ amples_1000.png used on input line 572.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
 <chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS.png,
- id=3066, 722.7pt x 433.62pt>
+ id=3573, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.IS
 .png Graphic file (type png)
 
@@ -4129,12 +4284,12 @@ _noise_50.000000.IS.png used on input line 579.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[174 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.0000
-00.png>] [175 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1
+[178 <./chapters/chapter06/figures/single_params_v_nsamples_pID_0_noise_50.0000
+00.png>] [179 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1
 000.png> <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000
 000.IS.png>]
 <chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.HII.png
-, id=3082, 722.7pt x 433.62pt>
+, id=3590, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.HI
 I.png Graphic file (type png)
 
@@ -4144,8 +4299,8 @@ Package pdftex.def Info: chapters/chapter06/figures/single_params_v_noise_pID_8
 7_nsamples_10000.HII.png used on input line 592.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
-<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png, id=30
-91, 722.7pt x 433.62pt>
+<chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png, id=35
+99, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png G
 raphic file (type png)
 
@@ -4157,10 +4312,10 @@ amples_1000.B.png used on input line 601.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[176 <./chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.
+[180 <./chapters/chapter06/figures/single_params_v_noise_pID_87_nsamples_10000.
 HII.png>]
 <chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.IS.pn
-g, id=3103, 722.7pt x 433.62pt>
+g, id=3611, 722.7pt x 433.62pt>
 File: chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.B.
 IS.png Graphic file (type png)
 
@@ -4170,7 +4325,7 @@ Package pdftex.def Info: chapters/chapter06/figures/ensemble_params_vs_nsamples
 _noise_50.000000.B.IS.png used on input line 628.
 (pdftex.def)             Requested size: 300.15918pt x 180.0945pt.
 
-<chapters/chapter06/figures/example_FR_linear_nonlinear.png, id=3107, 867.24pt 
+<chapters/chapter06/figures/example_FR_linear_nonlinear.png, id=3615, 867.24pt 
 x 433.62pt>
 File: chapters/chapter06/figures/example_FR_linear_nonlinear.png Graphic file (
 type png)
@@ -4179,14 +4334,14 @@ Package pdftex.def Info: chapters/chapter06/figures/example_FR_linear_nonlinear
 .png used on input line 642.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-[177 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png
+[181 <./chapters/chapter06/figures/ensemble_params_vs_noise_nsamples_1000.B.png
 >]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[178 <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.
+[182 <./chapters/chapter06/figures/ensemble_params_vs_nsamples_noise_50.000000.
 B.IS.png> <./chapters/chapter06/figures/example_FR_linear_nonlinear.png>]
-<chapters/chapter06/figures/nonlinearity_predicts_quality.png, id=3123, 867.24p
+<chapters/chapter06/figures/nonlinearity_predicts_quality.png, id=3630, 867.24p
 t x 433.62pt>
 File: chapters/chapter06/figures/nonlinearity_predicts_quality.png Graphic file
  (type png)
@@ -4195,8 +4350,8 @@ File: chapters/chapter06/figures/nonlinearity_predicts_quality.png Graphic file
 Package pdftex.def Info: chapters/chapter06/figures/nonlinearity_predicts_quali
 ty.png used on input line 655.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
- [179 <./chapters/chapter06/figures/nonlinearity_predicts_quality.png>]
-<chapters/chapter06/figures/range_sample_didactic.png, id=3135, 578.16pt x 433.
+ [183 <./chapters/chapter06/figures/nonlinearity_predicts_quality.png>]
+<chapters/chapter06/figures/range_sample_didactic.png, id=3642, 578.16pt x 433.
 62pt>
 File: chapters/chapter06/figures/range_sample_didactic.png Graphic file (type p
 ng)
@@ -4205,7 +4360,7 @@ Package pdftex.def Info: chapters/chapter06/figures/range_sample_didactic.png u
 sed on input line 664.
 (pdftex.def)             Requested size: 268.80273pt x 201.59813pt.
 
-<chapters/chapter06/figures/range_sample.png, id=3136, 867.24pt x 433.62pt>
+<chapters/chapter06/figures/range_sample.png, id=3643, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/range_sample.png Graphic file (type png)
 
 <use chapters/chapter06/figures/range_sample.png>
@@ -4216,16 +4371,16 @@ put line 675.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[180 <./chapters/chapter06/figures/range_sample_didactic.png>]
+[184 <./chapters/chapter06/figures/range_sample_didactic.png>]
 Underfull \vbox (badness 1132) has occurred while \output is active []
 
- [181 <./chapters/chapter06/figures/range_sample.png>]
+ [185 <./chapters/chapter06/figures/range_sample.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[182] [183]
-<chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png, id=317
-9, 1300.86pt x 1300.86pt>
+[186] [187]
+<chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png, id=368
+3, 1300.86pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_rr.png Gr
 aphic file (type png)
 
@@ -4240,9 +4395,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[184] [185 <./chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_r
+[188] [189 <./chapters/chapter06/figures/IBM/2species/example_dynamics_2sp_ir_r
 r.png>]
-<chapters/chapter06/figures/IBM/2species/plant_FR.png, id=3200, 867.24pt x 433.
+<chapters/chapter06/figures/IBM/2species/plant_FR.png, id=3703, 867.24pt x 433.
 62pt>
 File: chapters/chapter06/figures/IBM/2species/plant_FR.png Graphic file (type p
 ng)
@@ -4251,7 +4406,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/plant_FR.png u
 sed on input line 807.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-<chapters/chapter06/figures/IBM/2species/predator_FR.png, id=3201, 867.24pt x 4
+<chapters/chapter06/figures/IBM/2species/predator_FR.png, id=3704, 867.24pt x 4
 33.62pt>
 File: chapters/chapter06/figures/IBM/2species/predator_FR.png Graphic file (typ
 e png)
@@ -4266,16 +4421,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[186]
-
-Package natbib Warning: Citation `solomon1949natural' on page 187 undefined on 
-input line 820.
-
-
+[190]
 Underfull \vbox (badness 3302) has occurred while \output is active []
 
- [187 <./chapters/chapter06/figures/IBM/2species/plant_FR.png>]
-<chapters/chapter06/figures/IBM/2species/intrinsic_fn.png, id=3220, 867.24pt x 
+ [191 <./chapters/chapter06/figures/IBM/2species/plant_FR.png>]
+<chapters/chapter06/figures/IBM/2species/intrinsic_fn.png, id=3726, 867.24pt x 
 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/intrinsic_fn.png Graphic file (ty
 pe png)
@@ -4290,9 +4440,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[188 <./chapters/chapter06/figures/IBM/2species/predator_FR.png>]
+[192 <./chapters/chapter06/figures/IBM/2species/predator_FR.png>]
 <chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1.png,
- id=3230, 867.24pt x 867.24pt>
+ id=3736, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_lowIR_rr0.1
 .png Graphic file (type png)
 
@@ -4301,9 +4451,9 @@ png>
 Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/convergence_2s
 p_M0_M1_lowIR_rr0.1.png used on input line 889.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
- [189 <./chapters/chapter06/figures/IBM/2species/intrinsic_fn.png>]
+ [193 <./chapters/chapter06/figures/IBM/2species/intrinsic_fn.png>]
 <chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.1.png
-, id=3243, 867.24pt x 867.24pt>
+, id=3748, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr0.
 1.png Graphic file (type png)
 
@@ -4319,14 +4469,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[190] [191 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_low
+[194] [195 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_low
 IR_rr0.1.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[192 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr
+[196 <./chapters/chapter06/figures/IBM/2species/convergence_2sp_M0_M1_highIR_rr
 0.1.png>]
-<chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png, id=3263, 86
+<chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png, id=3768, 86
 7.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png Graphic
  file (type png)
@@ -4336,9 +4486,9 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/inferred_dynam
 ics_2sp.png used on input line 909.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
-[193 <./chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png>]
+[197 <./chapters/chapter06/figures/IBM/2species/inferred_dynamics_2sp.png>]
 <chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.png, id
-=3272, 1084.05pt x 1300.86pt>
+=3778, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_li.pn
 g Graphic file (type png)
 
@@ -4349,7 +4499,7 @@ series_2sp_hr_li.png used on input line 933.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
 <chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.png, id
-=3273, 1084.05pt x 1300.86pt>
+=3779, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.pn
 g Graphic file (type png)
 
@@ -4460,8 +4610,8 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <9.46082> not available
 (Font)              size <9> substituted on input line 948.
 
 
-<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png, id=328
-0, 578.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png, id=378
+6, 578.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowIR.png Gr
 aphic file (type png)
 
@@ -4470,8 +4620,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/2species/estimate_quali
 ty_2sp_lowIR.png used on input line 956.
 (pdftex.def)             Requested size: 313.59863pt x 235.19672pt.
 
-<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png, id=32
-85, 578.16pt x 433.62pt>
+<chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png, id=37
+91, 578.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.png G
 raphic file (type png)
 
@@ -4483,20 +4633,20 @@ ty_2sp_highIR.png used on input line 962.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[194] [195 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_
+[198] [199 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_
 hr_li.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[196 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.
-png>] [197 <./chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowI
+[200 <./chapters/chapter06/figures/IBM/2species/rate_estimate_series_2sp_hr_hi.
+png>] [201 <./chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_lowI
 R.png> <./chapters/chapter06/figures/IBM/2species/estimate_quality_2sp_highIR.p
 ng>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[198]
-<chapters/chapter06/figures/3sp_topologies.png, id=3318, 845.40843pt x 597.7331
+[202]
+<chapters/chapter06/figures/3sp_topologies.png, id=3823, 845.40843pt x 597.7331
 2pt>
 File: chapters/chapter06/figures/3sp_topologies.png Graphic file (type png)
  <use chapters/chapter06/figures/3sp_topologies.png>
@@ -4505,7 +4655,7 @@ input line 978.
 (pdftex.def)             Requested size: 224.0pt x 158.37115pt.
 
 <chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.png, id=
-3319, 867.24pt x 867.24pt>
+3824, 867.24pt x 867.24pt>
 File: chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.png
  Graphic file (type png)
 
@@ -4514,7 +4664,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/convergence_3s
 p_length_highIR.png used on input line 985.
 (pdftex.def)             Requested size: 448.0pt x 448.00322pt.
 
-<chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png, id=3323, 130
+<chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png, id=3828, 130
 0.86pt x 722.7pt>
 File: chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png Graphic 
 file (type png)
@@ -4523,16 +4673,16 @@ file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/example_dynami
 cs_3sp.png used on input line 998.
 (pdftex.def)             Requested size: 448.0pt x 248.89066pt.
- [199
+ [203
 
  <./chapters/chapter06/figures/3sp_topologies.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[200 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.p
+[204 <./chapters/chapter06/figures/IBM/3species/convergence_3sp_length_highIR.p
 ng>]
-<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png, id=333
-8, 1084.05pt x 1300.86pt>
+<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png, id=384
+3, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png Gr
 aphic file (type png)
 
@@ -4541,8 +4691,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/rate_estimates
 _3speices_li.png used on input line 1015.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
-<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png, id=334
-5, 1084.05pt x 1300.86pt>
+<chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png, id=385
+0, 1084.05pt x 1300.86pt>
 File: chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.png Gr
 aphic file (type png)
 
@@ -4551,14 +4701,14 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/rate_estimates
 _3speices_hi.png used on input line 1022.
 (pdftex.def)             Requested size: 448.0pt x 537.60385pt.
 
-[201 <./chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png>]
+[205 <./chapters/chapter06/figures/IBM/3species/example_dynamics_3sp.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[202 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png>
-] [203 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.pn
+[206 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_li.png>
+] [207 <./chapters/chapter06/figures/IBM/3species/rate_estimates_3speices_hi.pn
 g>]
-<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png, id=3370, 
+<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png, id=3874, 
 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png Graph
 ic file (type png)
@@ -4568,7 +4718,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/estimate_quali
 ty_3sp_LI.png used on input line 1033.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png, id=3373, 
+<chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png, id=3877, 
 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png Graph
 ic file (type png)
@@ -4584,9 +4734,9 @@ Underfull \vbox (badness 1442) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[204 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png>]
-<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png, id=338
-9, 867.24pt x 505.89pt>
+[208 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_LI.png>]
+<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png, id=389
+3, 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png Gr
 aphic file (type png)
 
@@ -4595,8 +4745,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/stability_and_
 error_3sp_LI.png used on input line 1056.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png, id=339
-0, 867.24pt x 505.89pt>
+<chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png, id=389
+4, 867.24pt x 505.89pt>
 File: chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png Gr
 aphic file (type png)
 
@@ -4605,7 +4755,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/3species/stability_and_
 error_3sp_HI.png used on input line 1063.
 (pdftex.def)             Requested size: 448.0pt x 261.33519pt.
 
-[205 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png>]
+[209 <./chapters/chapter06/figures/IBM/3species/estimate_quality_3sp_HI.png>]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
@@ -4615,9 +4765,9 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[206 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png>
+[210 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_LI.png>
 ]
-<chapters/chapter06/figures/5sp_topologies.png, id=3410, 845.40843pt x 597.7331
+<chapters/chapter06/figures/5sp_topologies.png, id=3914, 845.40843pt x 597.7331
 2pt>
 File: chapters/chapter06/figures/5sp_topologies.png Graphic file (type png)
  <use chapters/chapter06/figures/5sp_topologies.png>
@@ -4625,7 +4775,7 @@ Package pdftex.def Info: chapters/chapter06/figures/5sp_topologies.png used on
 input line 1083.
 (pdftex.def)             Requested size: 224.0pt x 158.37115pt.
 
-<chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png, id=3411, 130
+<chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png, id=3915, 130
 0.86pt x 722.7pt>
 File: chapters/chapter06/figures/IBM/5species/example_dynamics_5sp.png Graphic 
 file (type png)
@@ -4634,14 +4784,14 @@ file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/example_dynami
 cs_5sp.png used on input line 1090.
 (pdftex.def)             Requested size: 448.0pt x 248.89066pt.
- [207 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png
+ [211 <./chapters/chapter06/figures/IBM/3species/stability_and_error_3sp_HI.png
 >]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[208 <./chapters/chapter06/figures/5sp_topologies.png> <./chapters/chapter06/fi
+[212 <./chapters/chapter06/figures/5sp_topologies.png> <./chapters/chapter06/fi
 gures/IBM/5species/example_dynamics_5sp.png>]
-<chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png, id=3436, 5
+<chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png, id=3939, 5
 78.16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png Graphi
 c file (type png)
@@ -4651,8 +4801,8 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_num_sta
 ble_nets.png used on input line 1099.
 (pdftex.def)             Requested size: 358.40137pt x 268.80193pt.
 
-[209 <./chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png>]
-<chapters/chapter06/figures/IBM/5species/highIR_stable_models.png, id=3448, 578
+[213 <./chapters/chapter06/figures/IBM/5species/highIR_num_stable_nets.png>]
+<chapters/chapter06/figures/IBM/5species/highIR_stable_models.png, id=3950, 578
 .16pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_stable_models.png Graphic 
 file (type png)
@@ -4662,7 +4812,7 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_stable_
 models.png used on input line 1108.
 (pdftex.def)             Requested size: 313.59863pt x 235.19672pt.
 
-<chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png, id=3451, 578.1
+<chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png, id=3953, 578.1
 6pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png Graphic fi
 le (type png)
@@ -4672,21 +4822,12 @@ Package pdftex.def Info: chapters/chapter06/figures/IBM/5species/highIR_rate_er
 rors.png used on input line 1130.
 (pdftex.def)             Requested size: 448.0pt x 335.9991pt.
 
-
-Package natbib Warning: Citation `aho2014model' on page 210 undefined on input 
-line 1135.
-
-
-Package natbib Warning: Citation `sunnaaker2013approximate' on page 210 undefin
-ed on input line 1135.
-
-
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[210 <./chapters/chapter06/figures/IBM/5species/highIR_stable_models.png>]
-[211 <./chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png>]
-<chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png, id=3469, 86
+[214 <./chapters/chapter06/figures/IBM/5species/highIR_stable_models.png>]
+[215 <./chapters/chapter06/figures/IBM/5species/highIR_rate_errors.png>]
+<chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png, id=3976, 86
 7.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png Graphic
  file (type png)
@@ -4697,7 +4838,7 @@ ge_Jhat.png used on input line 1185.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
 <chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jhat.png,
- id=3474, 867.24pt x 433.62pt>
+ id=3981, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jhat
 .png Graphic file (type png)
 
@@ -4710,9 +4851,9 @@ g_mut0_average_Jhat.png used on input line 1196.
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[212]
+[216]
 <chapters/chapter06/figures/IBM/60species/60species_new_mut0_average_Jhat.png, 
-id=3485, 867.24pt x 433.62pt>
+id=3992, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_new_mut0_average_Jhat.
 png Graphic file (type png)
 
@@ -4723,7 +4864,7 @@ _mut0_average_Jhat.png used on input line 1208.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
 
 <chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average_Jhat.pn
-g, id=3488, 867.24pt x 433.62pt>
+g, id=3995, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average_Jh
 at.png Graphic file (type png)
 
@@ -4735,15 +4876,15 @@ g_mut0.5_average_Jhat.png used on input line 1217.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [213 <./chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png>]
+ [217 <./chapters/chapter06/figures/IBM/5species/5species_average_Jhat.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[214 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jh
+[218 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0_average_Jh
 at.png> <./chapters/chapter06/figures/IBM/60species/60species_new_mut0_average_
 Jhat.png>]
 <chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_Jhat.png
-, id=3505, 867.24pt x 433.62pt>
+, id=4011, 867.24pt x 433.62pt>
 File: chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_Jha
 t.png Graphic file (type png)
 
@@ -4752,22 +4893,9 @@ t.png Graphic file (type png)
 Package pdftex.def Info: chapters/chapter06/figures/IBM/60species/60species_new
 _mut0.5_average_Jhat.png used on input line 1229.
 (pdftex.def)             Requested size: 448.0pt x 224.0016pt.
-
-
-Package natbib Warning: Citation `hsu1995global' on page 215 undefined on input
- line 1241.
-
-
-Package natbib Warning: Citation `cortez2014coevolution' on page 215 undefined 
-on input line 1241.
-
-
-Package natbib Warning: Citation `stenseth1997population' on page 215 undefined
- on input line 1241.
-
-[215 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average_
-Jhat.png>]
-<chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png, id=3520, 1084.05p
+ [219 <./chapters/chapter06/figures/IBM/60species/60species_orig_mut0.5_average
+_Jhat.png>]
+<chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png, id=4029, 1084.05p
 t x 722.7pt>
 File: chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png Graphic file 
 (type png)
@@ -4782,71 +4910,42 @@ Underfull \vbox (badness 2418) has occurred while \output is active []
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[216 <./chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_J
+[220 <./chapters/chapter06/figures/IBM/60species/60species_new_mut0.5_average_J
 hat.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [217 <./chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png>]
+ [221 <./chapters/chapter06/figures/IBM/3species/3sp_phase_plane.png>]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[218]
+[222]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [219]
-
-Package natbib Warning: Citation `straile2000meteorological' on page 220 undefi
-ned on input line 1317.
-
-
-Package natbib Warning: Citation `wiltshire2010helgoland' on page 220 undefined
- on input line 1317.
-
-
+ [223]
 Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-[220])) [221] [222
-
-] (./chapters/chapter07/chap07.tex
-(./chapters/chapter07/conclusion.tex [223
-
-]
-
-Package natbib Warning: Citation `luckinbill1974effects' on page 224 undefined 
-on input line 18.
-
-
-Package natbib Warning: Citation `fahrig2011functional' on page 224 undefined o
-n input line 18.
-
-
-Package natbib Warning: Citation `elith2008working' on page 224 undefined on in
-put line 18.
-
-[224] [225]
-
-Package natbib Warning: Citation `helton2003latin' on page 226 undefined on inp
-ut line 43.
-
-
-Package natbib Warning: Citation `lefcheck2015piecewisesem' on page 226 undefin
-ed on input line 43.
-
-
-Package natbib Warning: Citation `yvon2015five' on page 226 undefined on input 
-line 43.
-
-[226]
+[224]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [227]))
-[228] (./memoirthesis.bbl [229
+ [225]))
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
 
 
-] [230] [231] [232] [233] [234] [235] [236]
-[237] [238]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 689.
+[226] (./chapters/chapter07/chap07.tex (./chapters/chapter07/conclusion.tex
+[227
+
+
+] [228] [229] [230]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [231]))
+[232] (./memoirthesis.bbl [233
+
+
+] [234] [235] [236] [237] [238] [239] [240]
+[241] [242] [243]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 722.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -4856,20 +4955,859 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1365) in paragraph at lines 688--690
+Underfull \hbox (badness 1365) in paragraph at lines 721--723
 []\T1/fnc/m/n/10.95 (+20) C. McWilliams, ``Ibm an-i-ma-tions.'' [][]$\T1/cmtt/m
 /n/10.95 http : / / chrismcwilliams201 . wix . com / bristol #
  []
 
-[239] [240] [241] [242] [243]) [244] (./memoirthesis.loc)
+[244] [245] [246] [247] [248]) [249] [250
+
+] (./memoirthesis.loc
+Overfull \hbox (1136.73404pt too wide) detected at line 7
+\T1/fnc/m/n/10.95 It seems that community assembly in nature is driven by a com
+bination neutral and non-neutral processes [[], []]. Therefore departures from 
+neutrality are likely (although not necessarily [[], []]) indicative of non-ran
+dom and therefore ecologically meaningful mechanisms. 
+ []
+
+
+Overfull \hbox (802.82765pt too wide) detected at line 10
+\T1/fnc/m/n/10.95 these two extreme cases. Throughout we shall refer to either 
+random or contiguous habitat loss (see section [][]2.5[][]). However, in sectio
+n [][]1.3.1[][] we consider some of the subtle interplay between these two case
+s. 
+ []
+
+
+Overfull \hbox (1410.74757pt too wide) detected at line 11
+\T1/fnc/m/n/10.95 It will become clear in section [][]1.3.2[][], such an approa
+ch is insufficient for understanding the spatio-temporal effects of habitat los
+s. Therefore a more detailed modelling treatment, that captures spatially-expli
+cit and dynamic processes, is required in order to advance our understanding of
+ how hybrid-communities respond to habitat loss. 
+ []
+
+
+Overfull \hbox (2634.74959pt too wide) detected at line 12
+\T1/fnc/m/n/10.95 As we shall see in the following section, empirical studies h
+ave revealed that interaction networks may display structural changes in respon
+se to habitat loss. Such changes appear to result from the non-random loss of i
+nteractions between species. However, despite extensive empirical evidence for 
+how interaction networks respond to habitat loss, theoretical models have yet t
+o reproduce these effects. Therefore, by simulating multi-trophic community dyn
+amics under habitat loss, we intend to reveal some of the low level mechanisms 
+responsible for these known structural changes (see section [][]1.6[][]). 
+ []
+
+
+Overfull \hbox (872.21867pt too wide) detected at line 13
+\T1/fnc/m/n/10.95 Another key theoretical result - that communities respond dif
+ferently to random and correlated habitat loss - also has empirical support, al
+though the situation is more complex in nature than in the simple models cited.
+ 
+ []
+
+
+Overfull \hbox (1919.72655pt too wide) detected at line 15
+\T1/fnc/m/n/10.95 In empirical studies a distinction is often made between \T1/
+fnc/m/it/10.95 habitat fragmentation \T1/fnc/m/n/10.95 and \T1/fnc/m/it/10.95 a
+rea loss \T1/fnc/m/n/10.95 [[]]. In the context of this thesis we may broadly t
+hink of fragmentation as resulting from random destruction as some spatial scal
+e, whereas highly correlated destruction results in contiguous area loss. Howev
+er, there are certain issues with these analogies, which will become clear in t
+he discussion below. Habitat fragmentation is of particular concern 
+ []
+
+
+Overfull \hbox (1346.23747pt too wide) detected at line 16
+\T1/fnc/m/n/10.95 One such project, the \T1/fnc/m/it/10.95 Stability of altered
+ forest ecosystems \T1/fnc/m/n/10.95 (SAFE) project [[]], aims to do just that 
+by agreeing a fixed spatial pattern for the logging of an area of rainforest in
+ Borneo. This project is beginning to produce output on the effects of fragment
+ation and the resulting edge effects, which are particularly concerning 
+ []
+
+
+Overfull \hbox (1041.11082pt too wide) detected at line 17
+\T1/fnc/m/n/10.95 Most important, from a conservation perspective, is understan
+ding the relative contributions of fragmentation, area loss, and other spatial 
+factors such as fragment distribution [[], []] and landscape connectivity [[]],
+ in determining biodiversity patterns. 
+ []
+
+
+Overfull \hbox (4977.35568pt too wide) detected at line 18
+\T1/fnc/m/n/10.95 Perhaps the most general feature of habitat loss, in any form
+, is a reduction in area. When land use changes, some area of the original habi
+tat is lost. We can think of this in the context of a single forest fragment. T
+he fragment represents a certain area of forest habitat, embedded in a wider \T
+1/fnc/m/it/10.95 landscape matrix\T1/fnc/m/n/10.95 . In general, the smaller th
+e area of the fragment, the fewer species it can support. This result is known 
+as the species-area-relationship (SAR), and there appears to exist a power-law 
+scaling between the number of species present and the area of the habitat [[]].
+ To first-order, a smaller forest fragment has less productive ability in terms
+ of plant biomass, and therefore less ability to support species in higher trop
+hic levels [[]]. The aforementioned effect may be compound by increased competi
+tion between species in the reduced area [[]], and other second-order mechanism
+s such as \T1/fnc/m/it/10.95 Allee effects \T1/fnc/m/n/10.95 [[]]. However, the
+ scaling exponent of the SAR has been shown to be context dependent [[]]. It is
+ clear that there are mechanisms beyond area loss that drive changes in biodive
+rsity under habitat alteration. 
+ []
+
+
+Overfull \hbox (1165.42116pt too wide) detected at line 19
+\T1/fnc/m/n/10.95 One consequence of fragmentation results from the species-are
+a-relationship (SAR). It appears that the number of species found within a give
+n area, in a certain habitat, scales as a power law with the area of the habita
+t [[]]. Therefore smaller fragments have lower species richness. 
+ []
+
+
+Overfull \hbox (5517.51118pt too wide) detected at line 20
+\T1/fnc/m/n/10.95 Several of the mechanisms associated with habitat fragmentati
+on are distinct from, or supplemental to, those of area loss alone [[]]. Of par
+ticular importance are \T1/fnc/m/it/10.95 edge effects \T1/fnc/m/n/10.95 [[], [
+]]. The boundary length of a fragment scales linearly with its size, whereas th
+e internal area scales quadratically. Therefore, as habitat loss proceeds, edge
+ effects become more significant. There are numerous abiotic mechanisms respons
+ible for edge effects. For example, exposure to greater wind speeds and solar r
+adiation intensity have been demonstrated to alter diversity patterns at fragme
+nt edges [[]]. Biotic mechanisms may also contribute to edge effects. It has be
+en shown that rates of parasitism and herbivory vary with distance from a fragm
+ent edge [[]]. Additionally, some species may be more robust than others to the
+ presence of edge effects, resulting in differential responses at the species l
+evel. Pioneer tree species are better adapted to deal with exposure and poor so
+il conditions [[]], and generalist consumers are better able to exploit alterna
+tive resources from the landscape matrix (beyond the fragment boundary) [[], []
+]. The latter point highlights the importance of \T1/fnc/m/it/10.95 landscape c
+ontext \T1/fnc/m/n/10.95 in determining the effects of habitat loss. 
+ []
+
+
+Overfull \hbox (4258.64647pt too wide) detected at line 21
+\T1/fnc/m/n/10.95 Landscape context refers to the properties of the wider lands
+cape in which the local community is embedded (see section [][]1.2[][]). It has
+ been shown that close proximity of habitat fragments improves species richness
+ at both the community [[]] and meta-community level [[]]. Such a situation dis
+proportionately benefits those species with general diets and higher dispersal 
+abilities [[], []]. Other landscape features such as matrix type (edge effects 
+are reduced by a gradual transition to a similar habitat type rather than sharp
+ transition to a contrasting habitat [[]]), and landscape connectivity (reduced
+ connectivity limits dispersal making each fragment more isolated [[], []]) con
+tribute to diversity patterns. In general, we see the importance of explicitly 
+considering space. The response of communities to habitat loss cannot be explai
+ned only in terms of local processes, but must be understood in terms of the wi
+der landscape context (see section [][]1.6[][]). 
+ []
+
+
+Overfull \hbox (4814.30255pt too wide) detected at line 22
+\T1/fnc/m/n/10.95 Concerns about community stability provide more evidence for 
+the need to explicitly consider space when studying the effects of habitat loss
+. It has been shown the habitat loss can destabilise communities, in the sense 
+that population dynamics become more variable [[], [], []]. The drivers of this
+ destabilisation are not clear. Wang et al. [[]] have argued that it is driven 
+by a loss of area, resulting in less averaging out of spatially asynchronous dy
+namics. Alternatively it has been suggested that increased variability is assoc
+iated with edge effects [[]], previously discussed in the context of fragmentat
+ion, which may increase species interaction strengths [[]]. McCann suggests [[]
+] that the key to increased variability is \T1/fnc/m/it/10.95 spatial compressi
+on \T1/fnc/m/n/10.95 which increases predation pressure, but only if predators 
+are able exploit multiple fragments in the landscape. Therefore, it is not clea
+r to what extent changes in stability under habitat loss are due to local proce
+sses, and to what extent they are dependent on the landscape context. Our model
+ling aims to contribute to this dialogue. 
+ []
+
+
+Overfull \hbox (888.4248pt too wide) detected at line 23
+\T1/fnc/m/n/10.95 In addition to altering species richness, abundance patterns 
+and stability, habitat loss can change the structure of species interaction net
+works. This topic has received much attention in recent years (see review paper
+ [[]]). 
+ []
+
+
+Overfull \hbox (5753.84724pt too wide) detected at line 27
+\T1/fnc/m/n/10.95 It is clear that species interactions can be lost due to habi
+tat alteration. However, which mechanisms are driving these changes is a subjec
+t of ongoing research. Osorio et al. [[]] revealed host-parasitoid networks tha
+t displayed structural changes under a gradient of land use change (agricultura
+l intensity). They demonstrated that local processes and community competition 
+were driving these changes, with landscape context playing no significant role.
+ Similarly, Aizen et al [[]] demonstrated that a reduction in habitat area resu
+lted in a non-random loss of mutualistic interactions which was largely determi
+ned by local properties. Interactions that were less frequent and more speciali
+sed were found to be most vulnerable. Taken together these two studies suggest 
+that local community processes play an important role in driving structural cha
+nges under habitat loss. However, this is not to discount the role of landscape
+ context altogether. For example, Rossetti et al. [[]] suggest that insect herb
+ivory responses to fragmentation bay be largely determined by edge effects. Ult
+imately, we know that interaction networks change under habitat loss but a soli
+d theoretical understanding of which changes are important, and what processes 
+drive them is still being developed. 
+ []
+
+
+Overfull \hbox (937.81061pt too wide) detected at line 30
+\T1/fnc/m/n/10.95 We will study how simulated communities respond to habitat lo
+ss, determine the low level mechanisms that drive the observed responses, and r
+elate our findings to the body of empirical knowledge introduced in the previou
+s sections. 
+ []
+
+
+Overfull \hbox (8541.81732pt too wide) detected at line 33
+\T1/fnc/m/n/10.95 We have seen that the spatial pattern of habitat loss is a ke
+y determinant of community response. Theoretical studies suggest that random lo
+ss is more detrimental to species richness than contiguous loss (section [][]1.
+3.1[][]). This is broadly in agreement with empirical results, which suggest th
+at fragmentation compounds the effects of area loss alone (section [][]1.3.2[][
+]). The spatially explicit nature of our modelling allows us to investigate fur
+ther the role of spatial pattern, at the local scale, in determining the effect
+s of habitat loss. We have seen repeatedly in the previous sections that the lo
+cal community cannot be understood in isolation form the wider landscape contex
+t. In our modelling the landscape context is defined by the immigration mechani
+sm (section [][]1.4.1[][]), whereby the local community is coupled to an extern
+al species pool. The simplicity of this mechanism in our model (section [][]2.4
+[][]) represents basic assumptions about a stable landscape context (discussed 
+further in sections [][]3.5[][] and [][]5.7[][]). This simplicity allows us to 
+study community responses to habitat loss that are driven by local processes al
+one. Related to landscape context, it is necessary to state here that our model
+ling does not explicitly include edge effects (section [][]1.3.2[][]). This sim
+plification allows us to focus on spatial structure at the local scale. At this
+ scale the difference between random and contiguous habitat loss relates to con
+nectivity. Both types of habitat loss reduce the productivity (or carrying capa
+city) of the local landscape, by reducing the number of available sites that ca
+n support plants (or animals). However, contiguous loss results in a connected 
+area of sites, while random loss results in a fragmented area with reduced conn
+ectivity. We predict that random loss will hinder the ability of individuals to
+ interact, and therefore produce different changes in network structure and div
+ersity properties. 
+ []
+
+
+Overfull \hbox (6446.45995pt too wide) detected at line 34
+\T1/fnc/m/n/10.95 It is clear from empirical work (section [][]1.3.2[][]) that 
+interaction networks change in response to habitat loss, and it is believed tha
+t these changes are related to community dynamics and function. What is less cl
+ear is the mechanisms that drive these changes. Furthermore, most empirical stu
+dies in this area have focused on bipartite networks of single interaction type
+s. Although such systems are naturally embedded in a larger multi-trophic commu
+nity, little is known about how the observed changes in bipartite networks corr
+espond to responses at the whole community level. Our modelling allows us to in
+vestigate theses relationships. In particular, we look for changes in the mutua
+listic sub-network that are concurrent with community level responses. We know 
+that habitat loss can push mutualistic network towards high modularity and lowe
+r nestedness, and conversely push antagonistic networks towards lower modularit
+y and higher interaction strengths (section [][]1.3.2[][]). Traditionally both 
+of these changes are associated with a loss of stability. Therefore, we are int
+erested in whether such structural changes are observed when modelling hybrid- 
+rather than single-interaction communities, and if they are associated with cha
+nges in stability. Based on the work of Sauve et al. [[]], we predict that the 
+role of such structural properties (nestedness and modularity) may be reduced i
+n the context of hybrid-communities. 
+ []
+
+
+Overfull \hbox (5680.26694pt too wide) detected at line 35
+\T1/fnc/m/n/10.95 In section [][]1.3.2[][] we saw empirical evidence that habit
+at loss destabilises population dynamics. Therefore, we may expect to see a dec
+rease in the stability of simulated communities. In nature such destabilisation
+ has been observed to result from loss of area [[]], and possibly due to increa
+sed interaction strengths in habitat fragments [[]]. We will investigate these 
+as possible mechanisms behind any loss of stability detected. Additionally we w
+ill investigate the role of mutualism, both in driving stability and determinin
+g responses to habitat loss. We have seen evidence that the introduction of mut
+ualism can stabilise antagonistic communities [[]], and can promote spatial agg
+regation thus conferring reproductive stability [[]]. Based on these two findin
+gs, and the fact that the benefits of mutualism can increase the availability o
+f biomass at the base of food chains [[]], we predict that mutualistic communit
+ies may be more robust to habitat loss. If such an effect were detected it woul
+d constitute a novel result that warrant empirical investigation. Indeed, any d
+ifferential response to habitat loss between communities with and without mutua
+lism, will shed new light on the potential for mutualistic interactions to shap
+e multi-trophic hybrid communities. 
+ []
+
+
+Overfull \hbox (2013.49156pt too wide) detected at line 36
+\T1/fnc/m/n/10.95 The power of RADs is that they condense a large amount of inf
+ormation about species abundances into a single plot. This information can be i
+nterpreted qualitatively via inspection, or quantitatively via the fitting of t
+he aforementioned models. RADs may supplement other diversity metrics such as t
+he Shannon metrics defined above, which being coarse-grained may miss subtle fe
+atures of the abundance distribution (for example discontinuities or trophic so
+rting). 
+ []
+
+[251]
+Overfull \hbox (792.20302pt too wide) detected at line 39
+\T1/fnc/m/n/10.95 For example, community composition, species richness and othe
+r community properties can remain bounded despite significant extrinsic variabi
+lity. In this sense ecosystems can be thought of as \T1/fnc/m/it/10.95 stable\T
+1/fnc/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (4413.90016pt too wide) detected at line 40
+\T1/fnc/m/n/10.95 These concepts are defined below. However, we must first ackn
+owledge that the strong focus on stability in the literature may be misleading.
+ Ecosystems are also in a state of flux. As complex systems they are able to ad
+apt and evolve, and may display bounded properties in a non-equilibrium state v
+ia feedback control mechanisms [[]]. This may be analogous to the concept of or
+ganism \T1/fnc/m/it/10.95 homeodynamics \T1/fnc/m/n/10.95 [[]], whereby certain
+ biological parameters are held relatively constant despite highly adaptive and
+ variable underlying biochemical processes. During the life cycle of the organi
+sm, certain structural properties remain fixed, while the organism grows, ages 
+and dies. This analogy highlights the inadequacy of a simplistic focus on stabi
+lity. We must consider to what extent departures from stability represent a los
+s of `health', and to what extent they are due to acceptable adaptive processes
+. This distinction is perhaps less clear-cut for a community as it is for an or
+ganism. Therefore, 
+ []
+
+
+Overfull \hbox (1529.89316pt too wide) detected at line 42
+\T1/fnc/m/n/10.95 As we saw in section [][]1.3[][], the spatial structure of th
+e landscape at different scales has significant impacts on the community. Addit
+ionally we have seen that one main difference between mutualistic and antagonis
+tic communities in the IBM relates to spatial aggregation (section [][]2.2[][])
+. Therefore analysis of spatial patterns is pertinent to the current investigat
+ion. 
+ []
+
+
+Overfull \hbox (912.28258pt too wide) detected at line 47
+\T1/fnc/m/n/10.95 Such responses to HL are intuitive and well documented (see s
+ection [][]1.3[][]). In particular we have seen that HL commonly affects specie
+s in higher trophic levels the most [[], []], and we expect to see this in the 
+simulation results. 
+ []
+
+
+Overfull \hbox (2084.85486pt too wide) detected at line 49
+\T1/fnc/m/n/10.95 Based on the literature cited in section [][]1.3[][] we predi
+ct that the mutualistic sub-network will be pushed towards lower nestedness and
+ higher modularity [[]], and also expect a whole-network reduction in modularit
+y and increase in interaction strengths [[]]. It is not clear from the literatu
+re what mechanisms drive such structural changes in nature [[]--[]]. Therefore 
+we will investigate the local community processes that are related to any obser
+ved change in network structure. 
+ []
+
+
+Overfull \hbox (2259.76369pt too wide) detected at line 50
+\T1/fnc/m/n/10.95 We predict that HL will destabilise community dynamics. There
+ is evidence that both area loss and fragmentation can increase temporal variab
+ility in species abundances [[], [], []], and that this may be associated with 
+increased inter-specific interaction strengths [[], []]. Other causes of the af
+orementioned variability response have been proposed (e.g. edge effects [[]] or
+ spatial asynchrony [[]]). Therefore we are particularity interested to observe
+ changes in stability and determine their low level causes. Finally t 
+ []
+
+
+Overfull \hbox (2172.84085pt too wide) detected at line 57
+\T1/fnc/m/n/10.95 The \T1/fnc/m/it/10.95 p-value \T1/fnc/m/n/10.95 of the \T1/f
+nc/m/it/10.95 f-statistic \T1/fnc/m/n/10.95 of the fits are given, which is a s
+ignificance value for the test of the null hypothesis that the slope of the lin
+ear trend is equal to zero. Therefore a low p-value is evidence to reject the n
+ull hypothesis and conclude that the slope of the trend is non-zero. Different 
+levels of significance are indicated in the plots throughout this chapter. Howe
+ver we always follow the convention that p-values $\FMS/fncm/m/n/10.95 Ç \T1/fn
+c/m/n/10.95 0\FML/fncmi/m/it/10.95 :\T1/fnc/m/n/10.95 05$ are statistically sig
+nificant, whilst $0\FML/fncmi/m/it/10.95 :\T1/fnc/m/n/10.95 05 \FMS/fncm/m/n/10
+.95 Ç \FML/fncmi/m/it/10.95 p \FMS/fncm/m/n/10.95 Ç \T1/fnc/m/n/10.95 0\FML/fnc
+mi/m/it/10.95 :\T1/fnc/m/n/10.95 1$ indicates marginal significance. 
+ []
+
+
+Overfull \hbox (2633.28786pt too wide) detected at line 58
+\T1/fnc/m/n/10.95 When fitting linear models the \T1/fnc/m/it/10.95 p-value \T1
+/fnc/m/n/10.95 of the \T1/fnc/m/it/10.95 f-statistic \T1/fnc/m/n/10.95 may be u
+sed to test for significance. In this case the null hypothesis is that the true
+ slope of the linear trend is equal to zero. The \T1/fnc/m/it/10.95 p-value \T1
+/fnc/m/n/10.95 gives the probability of the observed trend arising by chance, f
+rom a random set of data. Therefore a low \T1/fnc/m/it/10.95 p-value \T1/fnc/m/
+n/10.95 indicates that the observed trend is unlikely to have arisen by chance,
+ and therefore represents evidence to reject the null hypothesis. However, ther
+e are certain issues with this interpretation of \T1/fnc/m/it/10.95 p-values \T
+1/fnc/m/n/10.95 that mean they must be treated with caution, especially in comp
+utational studies such as this. 
+ []
+
+
+Overfull \hbox (6603.4425pt too wide) detected at line 59
+\T1/fnc/m/n/10.95 One issue is related to the \T1/fnc/m/it/10.95 statistical po
+wer \T1/fnc/m/n/10.95 of the test. Broadly, if a large sample size is used the 
+test has high statistical power and can therefore detect small effects. However
+, it can be shown that, as sample size becomes large, p-values necessarily tend
+ to zero regardless of the presence of an actual trend in the data [[], []]. Co
+mputational studies are easily able to produce large numbers of replicates. The
+refore there is a potential danger for such studies to conclude that small or n
+on-existent trends are statistically significant. Various authors have raised t
+his spurious trend detection as a concern in computational experiments when sam
+ple sizes are on the order of 1000 and above [[]--[]]. For the linear regressio
+n modelling throughout this thesis we use sample sizes of 250 (25 replicates fo
+r each of the 10 levels of habitat loss). We argue that this number is sufficie
+ntly small that p-values are still meaningful. However, it is also sufficiently
+ large that we should not be surprised to obtain low p-values even when the siz
+e of the trend appears small. In acknowledgement of this issue we use a high co
+nfidence threshold when interpreting results. Such an approach is advocated by 
+Greene when using large samples [[]], although he does not provide a scaling ru
+le between confidence threshold and number of samples. We choose to use $99%$ c
+onfidence, such that a \T1/fnc/m/it/10.95 p-value \T1/fnc/m/n/10.95 must be les
+s than 0.01 before we accept evidence for the existence of a robust trend. 
+ []
+
+
+Overfull \hbox (4711.45622pt too wide) detected at line 60
+\T1/fnc/m/n/10.95 A second issue with linear modelling in this context relates 
+to the number of tests conducted. When testing trend significance at the $99%$ 
+confidence threshold one expects a \T1/fnc/m/it/10.95 type I error \T1/fnc/m/n/
+10.95 rate of $1%$. That is, on average one out of a hundred tests on data with
+ no trend will give sufficient evidence to reject the null hypothesis. In the a
+nalysis presented in section [][]3.3[][] (and in subsequent chapters), a large 
+number of response metrics are tested for trends. Therefore we must acknowledge
+ the possibility of \T1/fnc/m/it/10.95 type I error \T1/fnc/m/n/10.95 in our re
+sults. The consequences of such errors are mitigated by three factors. Firstly,
+ the high confidence threshold reduces the type I error rate. Secondly, the res
+ponse metrics tested are all metrics which we have prior reason to believe will
+ change under habitat loss. Thirdly, for all trends detected as significant, we
+ do not blindly accept the result. All response trends are discussed in the con
+text of the literature, and attempts are made to explain the observed trends in
+ terms of the low level mechanics of the model (see for example section [][]3.4
+[][]). 
+ []
+
+
+Overfull \hbox (842.68063pt too wide) detected at line 66
+\T1/fnc/m/n/10.95 (Although this effect is present in the model it is worth not
+ing that it may be unrealistic, since the energy investment involved in becomin
+g a mutualist occurs prior to any interaction. See discussion in section [][]7.
+1[][].) 
+ []
+
+
+Overfull \hbox (4928.4234pt too wide) detected at line 68
+\T1/fnc/m/n/10.95 Having provided a mechanistic synthesis of the results, we no
+w discuss them in the context of the habitat loss literature and our prediction
+s from section [][]3.1[][]. Prior to the investigation presented in this chapte
+r we expected to see species extinctions under both types of HL. In fact we dis
+covered that the value used for the immigration rate parameter ($\FML/fncmi/m/i
+t/10.95 IR \FMS/fncm/m/n/10.95 Å \T1/fnc/m/n/10.95 0\FML/fncmi/m/it/10.95 :\T1/
+fnc/m/n/10.95 05$) was sufficiently high as to prevent species extinctions, eve
+n up to $90%$ destruction of the local landscape. In general such a result is n
+ot realistic, because both area loss and fragmentation are usually observed to 
+cause species extinctions in nature [[]]. However it is also known that immigra
+tion from a healthy regional pool can buffer local extinctions, and facilitate 
+the maintenance of diversity [[]]. Therefore, the investigation in this chapter
+ corresponds to such a situation. The additional benefit of the constant specie
+s richness is that we are able to study community responses that are not driven
+ by loss of species, and indeed may precede extinctions in a natural setting (f
+or example changes in network structure [[]], or stability [[]]). 
+ []
+
+
+Overfull \hbox (2789.20715pt too wide) detected at line 69
+\T1/fnc/m/n/10.95 A striking features of our results is the difference in respo
+nses under random and contiguous HL. Based on theoretical [[]--[]] and empirica
+l studies [[], []], we expected random HL to be more detrimental than contiguou
+s. However, these previous studies have focused largely on species richness, wh
+ich as stated did not change in our results. Our analysis demonstrates that the
+se two types of HL act on communities in very different ways. In section [][]3.
+4[][] it was demonstrated that random and contiguous HL respectively decrease a
+nd increase individual mobility, and that this is the main mechanism driving th
+e differential responses. 
+ []
+
+
+Overfull \hbox (5860.65396pt too wide) detected at line 70
+\T1/fnc/m/n/10.95 Under contiguous HL, community dynamics became more variable,
+ and this was driven by increased interaction strengths. This finding is in agr
+eement with empirical observations of increased variability under area loss [[]
+], and supports a call for empirical studies to determine the role of interacti
+on strengths in this context [[]]. The surprising result under contiguous HL wa
+s that all other metrics (network properties, aggregation, evenness, relative a
+bundance by trophic level) did not change significantly. As was shown in sectio
+n [][]3.4[][] this lack of change was in part due to the immigration mechanism.
+ (In the absence of immigration we would have expected species extinctions, for
+ example). Regardless of the cause, the contiguous results suggest that HL is a
+ble to significantly destabilise local dynamics, without any detectable structu
+ral changes to the community. Furthermore, the fact that nestedness and modular
+ity did not change, suggest that the network properties traditionally associate
+d with stability [[]] need not \T1/fnc/m/it/10.95 necessarily \T1/fnc/m/n/10.95
+ vary in order for the community to destabilise. These results suggest that emp
+irical studies should consider temporal variability (mediated via interaction s
+trengths) as a potentially hidden effect of HL, which would not be detected by 
+other community metrics. 
+ []
+
+
+Overfull \hbox (6340.287pt too wide) detected at line 71
+\T1/fnc/m/n/10.95 Under random HL, diversity and structural changes were observ
+ed that are more in keeping with empirical observations. The relative abundance
+ of species in the top trophic level decreased [[]], and intermediate predators
+ were only spared due to a disproportionate benefit from immigration (section [
+][]3.4[][]). Also, some network properties did change, as expected form empiric
+al results [[]]. Quantitative generality and vulnerability decreased and increa
+sed respectively, and it was shown that these changes were consistent with the 
+interaction network structure being determined by species abundance distributio
+ns in the local landscape. The species abundance distributions themselves becam
+e more even as a result of increased dependence on immigration. Therefore the l
+andscape context played a key role under random HL. Unlike Osorio et al. [[]] a
+nd Aizen et al. [[]], who suggest that local processes drive changes in network
+ properties under HL, the change we observed are represent a shift away from lo
+cal processes toward dependence on the landscape context. The reason for this s
+hift is the reduced mobility of individuals in the local landscape, resulting i
+n weaker interaction and less local reproduction. Essentially the productivity 
+of the local landscape is reduced, and dependence on the wider landscape increa
+ses. This finding is akin to the shifting of limitations discussed Foster et al
+. [[]]. 
+ []
+
+
+Overfull \hbox (4803.10661pt too wide) detected at line 72
+\T1/fnc/m/n/10.95 In the random scenario, as in the contiguous, nestedness and 
+modularity did not change despite changes in other network properties, and in s
+tability. This is in keeping with previous findings that certain network proper
+ties may change while other remain fixed [[]], and the suggestion that quantita
+tive metrics are more sensitive to change than qualitative ones [[]]. The resul
+t again suggest that stability changes need not be accompanied by changes in mo
+dularity and nestedness [[]]. However, we propose that quantitative versions of
+ the modularity and nestedness metrics could be developed, and that these may u
+ncover subtle trends due to changing interaction frequencies. In general though
+ the stability response was again governed by interaction strengths, which were
+ significantly reduced due to restricted mobility. We are not aware of any stud
+ies that have suggested reduced interaction strengths resulting form habitat fr
+agmentation. Therefore we again support the call for studies into how interacti
+on strengths respond to different types of habitat loss [[]]. 
+ []
+
+
+Overfull \hbox (7266.43422pt too wide) detected at line 73
+\T1/fnc/m/n/10.95 In section [][]3.1[][] it was predicted that the introduction
+ of mutualism may make communities more robust to the effects of HL. This predi
+ction was based on previous theoretical studies that suggest introducing mutual
+istic interactions to antagonistic communities can stabilise the population dyn
+amics [[]], and promote reproductive stability due to high aggregation of speci
+es in space [[]]. However, the results presented in this chapter do not support
+ our hypothesis. High MAI communities responded in qualitatively the same way a
+s low MAI communities to both types of habitat loss. In particular, communities
+ at all MAI ratios displayed increased and decreased variability under contiguo
+us and random HL respectively. This finding highlights the important distinctio
+n between different aspects of stability, discussed in section [][]2.8.2[][]. A
+lthough mutualism may stabilise population dynamics in some contexts, this does
+ not necessarily translate to increased robustness to habitat loss. Finally, th
+e results discussed in this section correspond to a specific landscape context.
+ Immigration is sufficiently high as to prevent local extinction of species, an
+d it has been demonstrated that this context has other effects on community res
+ponses. In chapter [][]5[][] we will compare community responses to habitat los
+s when this landscape context is varied. In section [][]3.4[][] we saw that mut
+ualistic communities have a lower dependence on immigration than antagonistic c
+ommunities. Based on this observation, we may expect to see a greater distincti
+on between high and low MAI communities in different landscape contexts. 
+ []
+
+[252]
+Overfull \hbox (3729.07176pt too wide) detected at line 79
+\T1/fnc/m/n/10.95 In this section we consider the stationarity of the IBM simul
+ation output. As discussed above, the sampling procedure employed in chapter []
+[]3[][] assumed that the simulations reach steady-state. By testing for station
+arity we now examine that validity of this assumption. The ecological implicati
+ons of stationarity are less clear. We saw in section [][]2.8.2[][] that, altho
+ugh stability is an important topic in the ecological literature, there is no c
+onsensus on whether natural ecosystems exist in a steady-state. This is a philo
+sophical point, and we do not discuss it further here. However, it is important
+ to note that there is no \T1/fnc/m/it/10.95 a priori \T1/fnc/m/n/10.95 require
+ment for stationarity imposed by ecological realism. Rather, the modelling in t
+his section serves to shed light on the contexts in which non-stationarity may 
+be observed in nature, and the factors contributing to it. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 80
+ \T1/fnc/m/n/10.95 140
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 81
+ \T1/fnc/m/n/10.95 150
+ []
+
+
+Overfull \hbox (884.80898pt too wide) detected at line 82
+\T1/fnc/m/n/10.95 A wealth of numerical results have been presented in section 
+[][]5.3[][] through [][]5.5[][]. For clarity, we summarise the main findings in
+ this section, before discussing the results in the context of the ecological l
+iterature in section [][]5.7[][]. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 82
+ \T1/fnc/m/n/10.95 150
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 83
+ \T1/fnc/m/n/10.95 150
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 84
+ \T1/fnc/m/n/10.95 151
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 85
+ \T1/fnc/m/n/10.95 152
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 86
+ \T1/fnc/m/n/10.95 152
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 87
+ \T1/fnc/m/n/10.95 153
+ []
+
+
+Overfull \hbox (1704.36548pt too wide) detected at line 88
+\T1/fnc/m/n/10.95 A general feature of both contiguous and random HL is the lac
+k of a critical transition, beyond which species extinctions occur. Such a tran
+sition has been a feature of some other HL models [[], []], and may be induced 
+by non-linear mechanisms such as Allee effects [[]]. It may be that these non-l
+inearities are missing from the model, or that the transition is prevent by the
+ immigration mechanism. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 88
+ \T1/fnc/m/n/10.95 153
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 89
+ \T1/fnc/m/n/10.95 155
+ []
+
+
+Overfull \hbox (914.40117pt too wide) detected at line 90
+\T1/fnc/m/n/10.95 As discussed above, this approach allows analytic calculation
+ of \T1/fnc/m/it/10.95 a priori \T1/fnc/m/n/10.95 interaction strengths from th
+e simulation models. It also enables us to investigate problems arising from no
+n-linear functional interaction between species. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 90
+ \T1/fnc/m/n/10.95 160
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 91
+ \T1/fnc/m/n/10.95 172
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 92
+ \T1/fnc/m/n/10.95 172
+ []
+
+
+Overfull \hbox (921.70226pt too wide) detected at line 93
+\T1/fnc/m/n/10.95 Furthermore, in order for deterministic ODEs to produce persi
+stent populations, the equilibrium must be locally stable. (It is worth noting 
+that such local stability is not necessarily realistic in a natural settings - 
+see section [][]2.8.2[][].) 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 93
+ \T1/fnc/m/n/10.95 172
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 94
+ \T1/fnc/m/n/10.95 176
+ []
+
+
+Overfull \hbox (1314.44472pt too wide) detected at line 95
+\T1/fnc/m/n/10.95 In section [][]6.6[][] we suggest improvements to the methodo
+logy, including the use of prior knowledge, that may facilitate the reliable id
+entification of topology. We also argue that the method may prove useful regard
+less of topology identification, in particular in its ability to predict demogr
+aphic rates and biomass flows. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 95
+ \T1/fnc/m/n/10.95 210
+ []
+
+
+Overfull \hbox (1339.99806pt too wide) detected at line 96
+\T1/fnc/m/n/10.95 It was demonstrated that the mean estimates of interaction st
+rength converged with sample length. In the presence of noise a sample length o
+n the order of 1000 was required in order to produce convergence. Therefore hig
+h resolution time series would be required for empirical application of the met
+hod (see section [][]6.6[][]). 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 96
+ \T1/fnc/m/n/10.95 222
+ []
+
+
+Overfull \hbox (3210.03775pt too wide) detected at line 97
+\T1/fnc/m/n/10.95 However, this ability was severely hampered by the introducti
+on of noise. This in itself is not a new result. Using alternative model fittin
+g Jost and Arditi [[]] were able to distinguish predator-prey dynamics with dif
+ferent types of functional response at low noise. Similar to our findings, thei
+r model selection criteria failed under high levels of noise and sparse samplin
+g. The novelty of our approach lies in the modelling assumptions. Whereas their
+ modelling tested \T1/fnc/m/it/10.95 a prior \T1/fnc/m/n/10.95 hypotheses about
+ the form of the functional response, ours makes no assumptions other than loca
+l linearity. Therefore, our method provides the improved flexibility of detecti
+ng any functional form, at the cost of a potentially reduced robustness to nois
+e. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 97
+ \T1/fnc/m/n/10.95 222
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 98
+ \T1/fnc/m/n/10.95 222
+ []
+
+
+Overfull \hbox (890.59608pt too wide) detected at line 99
+\T1/fnc/m/n/10.95 Additionally, the use of prior information, such as allometri
+c scaling [[]], phylongenies [[]], or even simply trophic position, to constrai
+n fitted topology may improve results. However, this possibility was not invest
+igated. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 99
+ \T1/fnc/m/n/10.95 223
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 100
+ \T1/fnc/m/n/10.95 223
+ []
+
+
+Overfull \hbox (3151.59471pt too wide) detected at line 101
+\T1/fnc/m/n/10.95 In general, the appearance of spurious interaction signals in
+ complex food-web dynamics is supported by previous studies [[], []]. Our resul
+ts suggest that it is not necessary to invoke novel additional mechanisms such 
+as time-delay [[]], or rapid co-evolution of predator-prey pairs [[]], in order
+ to explain such signals. In fact apparent interaction signals can emerge in sy
+stems with simple (GLV type) dynamics, particularity between non-interacting pa
+irs of species, due to the influence of the other trophic interactions in the w
+eb. Therefore it is not, in general, safe to study the dynamics of species pair
+s (or indeed community subsets), in isolation from the rest of the community in
+ which they are embedded. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 101
+ \T1/fnc/m/n/10.95 224
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 102
+ \T1/fnc/m/n/10.95 225
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 103
+ \T1/fnc/m/n/10.95 227
+ []
+
+
+Overfull \hbox (2775.08035pt too wide) detected at line 104
+\T1/fnc/m/n/10.95 An unrealistic feature of the IBM emerged from the results pr
+esented in this chapter. In section [][]3.4[][] it was observed that mutualists
+ which lack interaction partners, although unable to reproduce, benefit by losi
+ng less energy to the interaction. In reality the energy investment involved in
+ becoming a mutualist occurs regardless of any interaction. For example, a flow
+ering plant produces fruit whether or not there are seed-dispersers to consume 
+it. We propose there should be a minor amendment to the way that mutualism is m
+odelled in future work, although we would not expect a significant departure fr
+om the results presented. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 104
+ \T1/fnc/m/n/10.95 228
+ []
+
+
+Overfull \hbox (945.99742pt too wide) detected at line 105
+\T1/fnc/m/n/10.95 Such an effect is not surprising given the simplified homogen
+eous landscape of the IBM. It is well known that landscape heterogeneity can re
+duce competition between species with differential traits, and promote coexiste
+nce [[], []]. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 105
+ \T1/fnc/m/n/10.95 228
+ []
+
+
+Overfull \hbox (935.80487pt too wide) detected at line 106
+\T1/fnc/m/n/10.95 We note here, that it would be possible to conduct a more sop
+histicated exploration of the parameter space, using \T1/fnc/m/it/10.95 boosted
+ regression trees \T1/fnc/m/n/10.95 [[]] to determine the relative contribution
+s of each parameter towards improving persistence. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 106
+ \T1/fnc/m/n/10.95 228
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 107
+ \T1/fnc/m/n/10.95 228
+ []
+
+
+Overfull \hbox (745.57307pt too wide) detected at line 108
+\T1/fnc/m/n/10.95 , and is a requirement for the IBM to produce persistent dive
+rsity. It is possible that the introduction of landscape heterogeneity would re
+duce this dependence on the immigration mechanism. 
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 108
+ \T1/fnc/m/n/10.95 228
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 109
+ \T1/fnc/m/n/10.95 231
+ []
+
+)
 
 Class memoir Warning: The material used in the headers is too large
 (27.2pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
 (in both cases you will find help in the memoir manual). on input line 131.
-
-
-Package natbib Warning: There were undefined citations.
 
 \Changes@OutFile=\write7
 \openout7 = `memoirthesis.soc'.
@@ -4877,87 +5815,65 @@ Package natbib Warning: There were undefined citations.
 
 Package nag Warning: 21 complaints in total.
 
-[245
+[253]
+\tf@toc=\write8
+\openout8 = `memoirthesis.toc'.
 
-]
-\tf@lot=\write8
-\openout8 = `memoirthesis.lot'.
+\tf@lot=\write9
+\openout9 = `memoirthesis.lot'.
 
-\tf@lof=\write9
-\openout9 = `memoirthesis.lof'.
+\tf@lof=\write10
+\openout10 = `memoirthesis.lof'.
 
-\tf@loc=\write10
-\openout10 = `memoirthesis.loc'.
+\tf@loc=\write11
+\openout11 = `memoirthesis.loc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 131.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 131.
- (./memoirthesis.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+ (./memoirthesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 131.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 131.
 Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 03056C98483A4A72CB97D3AC008818E4;3730.
+(rerunfilecheck)             Checksum: 0B731542C34993FC7520A73296349488;8804.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.36789pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 32767 strings out of 493109
- 630117 string characters out of 6135010
- 876128 words of memory out of 5000000
- 34173 multiletter control sequences out of 15000+600000
+ 32890 strings out of 493109
+ 632542 string characters out of 6135010
+ 889337 words of memory out of 5000000
+ 34273 multiletter control sequences out of 15000+600000
  155156 words of font info for 436 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 54i,14n,67p,3680b,1273s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{equation.6.2.11} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.6.2.13} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.6.2.7} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{equation.6.2.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw
-/ncntrsbk/uncri8a.pfb>
-Output written on memoirthesis.pdf (261 pages, 18798782 bytes).
+ 54i,14n,73p,3680b,1350s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/urw/ncntrsbk/uncbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/
+type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/u
+rw/ncntrsbk/uncri8a.pfb>
+Output written on memoirthesis.pdf (273 pages, 18877432 bytes).
 PDF statistics:
- 3979 PDF objects out of 4296 (max. 8388607)
- 3290 compressed objects within 33 object streams
- 796 named destinations out of 1000 (max. 500000)
- 55907 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 4908 PDF objects out of 5155 (max. 8388607)
+ 3913 compressed objects within 40 object streams
+ 816 named destinations out of 1000 (max. 500000)
+ 56435 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -451,6 +451,38 @@ G.~Valladares, A.~Salvo, and L.~Cagnolo, ``Habitat fragmentation effects on
   trophic processes of insect-plant food webs,'' {\em Conservation Biology},
   vol.~20, no.~1, pp.~212--217, 2006.
 
+\bibitem{tabarelli2010effects}
+M.~Tabarelli, A.~V. Aguiar, L.~C. Girao, C.~A. Peres, and A.~V. Lopes,
+  ``Effects of pioneer tree species hyperabundance on forest fragments in
+  northeastern brazil,'' {\em Conservation Biology}, vol.~24, no.~6,
+  pp.~1654--1663, 2010.
+
+\bibitem{banks2010edge}
+C.~Banks-Leite, R.~M. Ewers, and J.-P. Metzger, ``Edge effects as the principal
+  cause of area effects on birds in fragmented secondary forest,'' {\em Oikos},
+  vol.~119, no.~6, pp.~918--926, 2010.
+
+\bibitem{flaspohler2001species}
+D.~J. Flaspohler, S.~A. Temple, and R.~N. Rosenfield, ``Species-specific edge
+  effects on nest success and breeding bird density in a forested landscape,''
+  {\em Ecological Applications}, vol.~11, no.~1, pp.~32--46, 2001.
+
+\bibitem{silva2012experimental}
+F.~R. Silva, T.~A. Oliveira, J.~P. Gibbs, and D.~C. Rossa-Feres, ``An
+  experimental assessment of landscape configuration effects on frog and toad
+  abundance and diversity in tropical agro-savannah landscapes of southeastern
+  brazil,'' {\em Landscape Ecology}, vol.~27, no.~1, pp.~87--96, 2012.
+
+\bibitem{jesus2012importance}
+F.~M. Jesus, V.~R. Pivello, S.~T. Meirelles, G.~A. Franco, and J.~P. Metzger,
+  ``The importance of landscape structure for seed dispersal in rain forest
+  fragments,'' {\em Journal of Vegetation Science}, vol.~23, no.~6,
+  pp.~1126--1136, 2012.
+
+\bibitem{mccann2005dynamics}
+K.~McCann, J.~Rasmussen, and J.~Umbanhowar, ``The dynamics of spatially coupled
+  food webs,'' {\em Ecology Letters}, vol.~8, no.~5, pp.~513--523, 2005.
+
 \bibitem{kaartinen2011shrinking}
 R.~Kaartinen and T.~Roslin, ``Shrinking by numbers: landscape context affects
   the species composition but not the quantitative structure of local food
@@ -461,6 +493,11 @@ S.~Osorio, X.~Arnan, E.~Bassols, N.~Vicens, and J.~Bosch, ``Local and landscape
   effects in a host--parasitoid interaction network along a forest--cropland
   gradient,'' {\em Ecological Applications}, vol.~25, no.~7, pp.~1869--1879,
   2015.
+
+\bibitem{Aizen1486}
+M.~A. Aizen, M.~Sabatino, and J.~M. Tylianakis, ``Specialization and rarity
+  predict nonrandom loss of interactions from mutualist networks,'' {\em
+  Science}, vol.~335, no.~6075, pp.~1486--1489, 2012.
 
 \bibitem{rossetti2014not}
 M.~R. Rossetti, E.~Gonz{\'a}lez, A.~Salvo, and G.~Valladares, ``Not all in the
@@ -493,10 +530,6 @@ O.~P. Judson, ``The rise of the individual-based model in ecology,'' {\em
 \bibitem{grimm2013individual}
 V.~Grimm and S.~F. Railsback, {\em Individual-based modeling and ecology}.
 \newblock Princeton university press, 2013.
-
-\bibitem{mccann2005dynamics}
-K.~McCann, J.~Rasmussen, and J.~Umbanhowar, ``The dynamics of spatially coupled
-  food webs,'' {\em Ecology Letters}, vol.~8, no.~5, pp.~513--523, 2005.
 
 \bibitem{brose2006allometric}
 U.~Brose, R.~J. Williams, and N.~D. Martinez, ``Allometric scaling enhances
@@ -736,6 +769,16 @@ I.~Donohue, O.~L. Petchey, J.~M. Montoya, A.~L. Jackson, L.~McNally, M.~Viana,
   dimensionality of ecological stability,'' {\em Ecology letters}, vol.~16,
   no.~4, pp.~421--429, 2013.
 
+\bibitem{dewar2003information}
+R.~Dewar, ``Information theory explanation of the fluctuation theorem, maximum
+  entropy production and self-organized criticality in non-equilibrium
+  stationary states,'' {\em Journal of Physics A: Mathematical and General},
+  vol.~36, no.~3, p.~631, 2003.
+
+\bibitem{lloyd2001homeodynamics}
+D.~Lloyd, M.~A. Aon, and S.~Cortassa, ``Why homeodynamics, not homeostasis?,''
+  {\em The Scientific World Journal}, vol.~1, pp.~133--145, 2001.
+
 \bibitem{campbell2011experimental}
 V.~Campbell, G.~Murphy, and T.~N. Romanuk, ``Experimental design and the
   outcome and interpretation of diversity--stability relations,'' {\em Oikos},
@@ -930,6 +973,21 @@ N.~C. Stenseth, W.~Falck, O.~N. Bj{\o}rnstad, and C.~J. Krebs, ``Population
   regulation in snowshoe hare and canadian lynx: asymmetric food web
   configurations between hare and lynx,'' {\em Proceedings of the National
   Academy of Sciences}, vol.~94, no.~10, pp.~5147--5152, 1997.
+
+\bibitem{may1973qualitative}
+R.~M. May, ``Qualitative stability in model ecosystems,'' {\em Ecology},
+  vol.~54, no.~3, pp.~638--641, 1973.
+
+\bibitem{woodward2005body}
+G.~Woodward, B.~Ebenman, M.~Emmerson, J.~M. Montoya, J.~M. Olesen, A.~Valido,
+  and P.~H. Warren, ``Body size in ecological networks,'' {\em Trends in
+  ecology \& evolution}, vol.~20, no.~7, pp.~402--409, 2005.
+
+\bibitem{vazquez2007species}
+D.~P. V{\'a}zquez, C.~J. Meli{\'a}n, N.~M. Williams, N.~Bl{\"u}thgen, B.~R.
+  Krasnov, and R.~Poulin, ``Species abundance and asymmetric interaction
+  strength in ecological networks,'' {\em Oikos}, vol.~116, no.~7,
+  pp.~1120--1127, 2007.
 
 \bibitem{straile2000meteorological}
 D.~Straile, ``Meteorological forcing of plankton dynamics in a large and deep

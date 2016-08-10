@@ -3,48 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: memoirthesis.aux
 The style file: ieeetr.bst
 Database file #1: thesisbiblio.bib
-Warning--I didn't find a database entry for ""
 Warning--empty journal in montoya2016invariability
 Warning--there's a number but no series in hastings2012encyclopedia
-You've used 195 entries,
+You've used 206 entries,
             1876 wiz_defined-function locations,
-            1530 strings with 38143 characters,
-and the built_in function-call counts, 62232 in all, are:
-= -- 6554
-> -- 2336
+            1582 strings with 40322 characters,
+and the built_in function-call counts, 66093 in all, are:
+= -- 6965
+> -- 2479
 < -- 0
-+ -- 859
-- -- 664
-* -- 4514
-:= -- 8551
-add.period$ -- 217
-call.type$ -- 195
-change.case$ -- 177
++ -- 911
+- -- 705
+* -- 4808
+:= -- 9076
+add.period$ -- 228
+call.type$ -- 206
+change.case$ -- 188
 chr.to.int$ -- 0
-cite$ -- 197
-duplicate$ -- 3076
-empty$ -- 5449
-format.name$ -- 664
-if$ -- 15225
+cite$ -- 208
+duplicate$ -- 3265
+empty$ -- 5776
+format.name$ -- 705
+if$ -- 16168
 int.to.chr$ -- 0
-int.to.str$ -- 195
-missing$ -- 205
-newline$ -- 610
-num.names$ -- 196
-pop$ -- 370
+int.to.str$ -- 206
+missing$ -- 216
+newline$ -- 643
+num.names$ -- 207
+pop$ -- 383
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2433
+skip$ -- 2589
 stack$ -- 0
-substring$ -- 5086
-swap$ -- 1539
+substring$ -- 5428
+swap$ -- 1640
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 671
-width$ -- 198
-write$ -- 2048
-(There were 3 warnings)
+while$ -- 713
+width$ -- 209
+write$ -- 2168
+(There were 2 warnings)

@@ -6,118 +6,118 @@
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Community ecology}{3}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Species interactions}{6}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}The role of network structure}{8}{subsection.1.2.2}
 \contentsline {section}{\numberline {1.3}Habitat loss}{9}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Modelling studies}{10}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Empirical studies}{12}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Ecology \emph {in silico}}{14}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}The role of immigration}{16}{subsection.1.4.1}
-\contentsline {section}{\numberline {1.5}Inferring species interactions}{16}{section.1.5}
-\contentsline {section}{\numberline {1.6}Scope of the present research}{19}{section.1.6}
-\contentsline {section}{\numberline {1.7}Outline of the thesis}{20}{section.1.7}
-\contentsline {chapter}{\chapternumberline {2}Methodology}{21}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{21}{section.2.1}
-\contentsline {section}{\numberline {2.2}Previous use of the model}{21}{section.2.2}
-\contentsline {section}{\numberline {2.3}The interaction network}{22}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}The niche model}{23}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Trophic constraints}{25}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Link replacement}{26}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Individual-based model}{27}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Local rules}{28}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Model Parameters}{31}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Modelling habitat loss}{33}{section.2.5}
-\contentsline {section}{\numberline {2.6}Implementation in code}{33}{section.2.6}
-\contentsline {section}{\numberline {2.7}Dynamics of the model}{34}{section.2.7}
-\contentsline {section}{\numberline {2.8}Ecological metrics and analysis methods}{35}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Biodiversity metrics}{36}{subsection.2.8.1}
-\contentsline {subsubsection}{\numberline {2.8.1.1}Rank abundance distributions}{38}{subsubsection.2.8.1.1}
-\contentsline {subsection}{\numberline {2.8.2}Stability metrics}{39}{subsection.2.8.2}
-\contentsline {subsubsection}{\numberline {2.8.2.1}Invariability}{41}{subsubsection.2.8.2.1}
-\contentsline {subsection}{\numberline {2.8.3}Spatial metrics}{42}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}Network metrics}{43}{subsection.2.8.4}
-\contentsline {subsubsection}{\numberline {2.8.4.1}Qualitative network descriptors}{43}{subsubsection.2.8.4.1}
-\contentsline {subsubsection}{\numberline {2.8.4.2}Quantitative network descriptors}{44}{subsubsection.2.8.4.2}
-\contentsline {subsubsection}{\numberline {2.8.4.3}Interaction strength metrics}{45}{subsubsection.2.8.4.3}
-\contentsline {chapter}{\chapternumberline {3}Habitat loss with high immigration rate}{47}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{47}{section.3.1}
-\contentsline {section}{\numberline {3.2}Methods}{48}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Simulation procedure}{48}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Sampling and analysis}{49}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Results}{50}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Diversity}{51}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Network properties}{59}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Stability and spatial metrics}{64}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Invariability}{69}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Synthesis}{71}{section.3.4}
-\contentsline {section}{\numberline {3.5}Conclusion}{78}{section.3.5}
-\contentsline {chapter}{\chapternumberline {4}Community dynamics under variable immigration rate}{81}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{81}{section.4.1}
-\contentsline {section}{\numberline {4.2}Persistence in closed communities}{82}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Mutualistic-to-antagonistic interaction (MAI) ratio}{83}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Reproduction rate}{84}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Landscape size}{87}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Number of initial species}{88}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Network structure}{89}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Summary}{91}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Temporal variability and immigration}{94}{section.4.3}
-\contentsline {section}{\numberline {4.4}Second-order stationarity}{95}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Tests for stationarity}{96}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Characterising the tests}{96}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}General stationarity results}{102}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Testing for determinism}{108}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Recurrence quantification analysis}{108}{subsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.1.1}Results}{109}{subsubsection.4.5.1.1}
-\contentsline {section}{\numberline {4.6}Convergence and repeatability}{112}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Convergence}{113}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Repeatability}{115}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Conclusion}{116}{section.4.7}
-\contentsline {chapter}{\chapternumberline {5}Habitat loss under variable immigration rate}{119}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{119}{section.5.1}
-\contentsline {section}{\numberline {5.2}Experimental approach}{121}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Sampling procedure}{122}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Initial analysis}{124}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Diversity}{124}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Variability and species interactions}{129}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Key points and outstanding questions}{132}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Bivariate analysis: fixed IR}{133}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Evenness}{133}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Rank-abundance distributions}{134}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Relative abundance by functional group}{139}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Network properties}{142}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Bivariate analysis: fixed HL}{143}{section.5.5}
-\contentsline {section}{\numberline {5.6}Discussion}{146}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion and perspectives}{148}{section.5.7}
-\contentsline {chapter}{\chapternumberline {6}Towards inferring species interactions from population dynamics}{151}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{151}{section.6.1}
-\contentsline {section}{\numberline {6.2}Methodology}{152}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Data generator: ordinary differential equation models}{154}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Inference method: generalised Lotka-Volterra model}{158}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Inference method: model fitting}{159}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Interaction matrix}{162}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Summary of methodology}{164}{subsection.6.2.5}
-\contentsline {section}{\numberline {6.3}Results: ODE as data generator}{164}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Modelling noise}{164}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Simulation procedure}{165}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Parameter selection}{166}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Example dynamics}{167}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Type I model results}{168}{subsection.6.3.5}
-\contentsline {subsection}{\numberline {6.3.6}Type II model results}{172}{subsection.6.3.6}
-\contentsline {subsection}{\numberline {6.3.7}Quantifying non-linearity}{175}{subsection.6.3.7}
-\contentsline {subsection}{\numberline {6.3.8}Summary}{180}{subsection.6.3.8}
-\contentsline {section}{\numberline {6.4}Results: IBM as data generator}{180}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Topological constraints on the GLV}{181}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Properties of the data generator}{181}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Two species results}{187}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Three species results}{197}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Five species results}{204}{subsection.6.4.5}
-\contentsline {subsection}{\numberline {6.4.6}Inferred topologies}{210}{subsection.6.4.6}
-\contentsline {subsection}{\numberline {6.4.7}Phase space analysis}{213}{subsection.6.4.7}
-\contentsline {section}{\numberline {6.5}Discussion}{216}{section.6.5}
-\contentsline {section}{\numberline {6.6}Further work}{218}{section.6.6}
-\contentsline {chapter}{\chapternumberline {7}Conclusion}{221}{chapter.7}
-\contentsline {section}{\numberline {7.1}Habitat loss with high immigration rate}{221}{section.7.1}
-\contentsline {section}{\numberline {7.2}Community dynamics under variable immigration rate}{222}{section.7.2}
-\contentsline {section}{\numberline {7.3}Habitat loss under variable immigration rate}{223}{section.7.3}
-\contentsline {section}{\numberline {7.4}Towards inferring species interactions from population dynamics}{224}{section.7.4}
-\contentsline {section}{\numberline {7.5}Further work}{224}{section.7.5}
-\contentsline {chapter}{Bibliography}{227}{section*.27}
+\contentsline {section}{\numberline {1.4}Ecology \emph {in silico}}{15}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}The role of immigration}{17}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Inferring species interactions}{17}{section.1.5}
+\contentsline {section}{\numberline {1.6}Scope of the present research}{20}{section.1.6}
+\contentsline {section}{\numberline {1.7}Outline of the thesis}{22}{section.1.7}
+\contentsline {chapter}{\chapternumberline {2}Methodology}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{23}{section.2.1}
+\contentsline {section}{\numberline {2.2}Previous use of the model}{23}{section.2.2}
+\contentsline {section}{\numberline {2.3}The interaction network}{24}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}The niche model}{25}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Trophic constraints}{27}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Link replacement}{28}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Individual-based model}{29}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Local rules}{30}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Model Parameters}{33}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Modelling habitat loss}{35}{section.2.5}
+\contentsline {section}{\numberline {2.6}Implementation in code}{35}{section.2.6}
+\contentsline {section}{\numberline {2.7}Dynamics of the model}{36}{section.2.7}
+\contentsline {section}{\numberline {2.8}Ecological metrics and analysis methods}{37}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Biodiversity metrics}{38}{subsection.2.8.1}
+\contentsline {subsubsection}{\numberline {2.8.1.1}Rank abundance distributions}{40}{subsubsection.2.8.1.1}
+\contentsline {subsection}{\numberline {2.8.2}Stability metrics}{41}{subsection.2.8.2}
+\contentsline {subsubsection}{\numberline {2.8.2.1}Invariability}{43}{subsubsection.2.8.2.1}
+\contentsline {subsection}{\numberline {2.8.3}Spatial metrics}{44}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}Network metrics}{45}{subsection.2.8.4}
+\contentsline {subsubsection}{\numberline {2.8.4.1}Qualitative network descriptors}{45}{subsubsection.2.8.4.1}
+\contentsline {subsubsection}{\numberline {2.8.4.2}Quantitative network descriptors}{46}{subsubsection.2.8.4.2}
+\contentsline {subsubsection}{\numberline {2.8.4.3}Interaction strength metrics}{48}{subsubsection.2.8.4.3}
+\contentsline {chapter}{\chapternumberline {3}Habitat loss with high immigration rate}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{49}{section.3.1}
+\contentsline {section}{\numberline {3.2}Methods}{51}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Simulation procedure}{51}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Sampling and analysis}{51}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Results}{53}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Diversity}{53}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Network properties}{61}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Stability and spatial metrics}{66}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Invariability}{71}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Synthesis}{73}{section.3.4}
+\contentsline {section}{\numberline {3.5}Discussion}{79}{section.3.5}
+\contentsline {section}{\numberline {3.6}Conclusion}{82}{section.3.6}
+\contentsline {chapter}{\chapternumberline {4}Community dynamics under variable immigration rate}{85}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{85}{section.4.1}
+\contentsline {section}{\numberline {4.2}Persistence in closed communities}{86}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Mutualistic-to-antagonistic interaction (MAI) ratio}{87}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Reproduction rate}{88}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Landscape size}{91}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Number of initial species}{92}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Network structure}{93}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Summary}{95}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Temporal variability and immigration}{98}{section.4.3}
+\contentsline {section}{\numberline {4.4}Second-order stationarity}{99}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Tests for stationarity}{100}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Characterising the tests}{100}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}General stationarity results}{106}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Testing for determinism}{112}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Recurrence quantification analysis}{112}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Results}{113}{subsubsection.4.5.1.1}
+\contentsline {section}{\numberline {4.6}Convergence and repeatability}{116}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Convergence}{117}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Repeatability}{119}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Conclusion}{120}{section.4.7}
+\contentsline {chapter}{\chapternumberline {5}Habitat loss under variable immigration rate}{123}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{123}{section.5.1}
+\contentsline {section}{\numberline {5.2}Experimental approach}{125}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Sampling procedure}{126}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Initial analysis}{128}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Diversity}{128}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Variability and species interactions}{133}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Key points and outstanding questions}{136}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Bivariate analysis: fixed IR}{137}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Evenness}{137}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Rank-abundance distributions}{138}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Relative abundance by functional group}{143}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Network properties}{146}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Bivariate analysis: fixed HL}{147}{section.5.5}
+\contentsline {section}{\numberline {5.6}\replaced {Summary}{Discussion}}{150}{section.5.6}
+\contentsline {section}{\numberline {5.7}\replaced {Discussion}{Conclusion} and perspectives}{152}{section.5.7}
+\contentsline {chapter}{\chapternumberline {6}Towards inferring species interactions from population dynamics}{157}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{157}{section.6.1}
+\contentsline {section}{\numberline {6.2}Methodology}{158}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Data generator: ordinary differential equation models}{160}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Inference method: generalised Lotka-Volterra model}{164}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Inference method: model fitting}{165}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Interaction matrix}{168}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Summary of methodology}{170}{subsection.6.2.5}
+\contentsline {section}{\numberline {6.3}Results: ODE as data generator}{170}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Modelling noise}{170}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Simulation procedure}{171}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Parameter selection}{172}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Example dynamics}{173}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Type I model results}{174}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Type II model results}{178}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}Quantifying non-linearity}{181}{subsection.6.3.7}
+\contentsline {subsection}{\numberline {6.3.8}Summary}{186}{subsection.6.3.8}
+\contentsline {section}{\numberline {6.4}Results: IBM as data generator}{186}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Topological constraints on the GLV}{187}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Properties of the data generator}{187}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Two species results}{193}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Three species results}{203}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Five species results}{210}{subsection.6.4.5}
+\contentsline {subsection}{\numberline {6.4.6}Inferred topologies}{216}{subsection.6.4.6}
+\contentsline {subsection}{\numberline {6.4.7}Phase space analysis}{219}{subsection.6.4.7}
+\contentsline {section}{\numberline {6.5}Discussion}{222}{section.6.5}
+\contentsline {section}{\numberline {6.6}Further work}{224}{section.6.6}
+\contentsline {chapter}{\chapternumberline {7}Conclusion}{227}{chapter.7}
+\contentsline {section}{\numberline {7.1}Habitat loss with high immigration rate}{227}{section.7.1}
+\contentsline {section}{\numberline {7.2}Community dynamics under variable immigration rate}{228}{section.7.2}
+\contentsline {section}{\numberline {7.3}Habitat loss under variable immigration rate}{229}{section.7.3}
+\contentsline {section}{\numberline {7.4}Towards inferring species interactions from population dynamics}{230}{section.7.4}
+\contentsline {section}{\numberline {7.5}Further work}{230}{section.7.5}
+\contentsline {chapter}{Bibliography}{233}{section*.27}

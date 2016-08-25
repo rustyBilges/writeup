@@ -12,12 +12,12 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Community dynamics by trophic level, with mutualism and habitat loss.}}{38}{figure.2.6}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Spatial depiction of IBM community.}}{39}{figure.2.7}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Number of individuals versus HL.}}{54}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Diversity versus HL.}}{55}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Diversity by trophic level.}}{56}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Rank abundance distributions for mutualistic communities under random HL.}}{57}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Rank abundance distributions for mutualistic communities under contiguous HL.}}{58}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Evenness according to rank abundance model fits.}}{58}{figure.3.6}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Number of individuals versus HL.}}{53}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diversity versus HL.}}{54}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Diversity by trophic level.}}{55}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Rank abundance distributions for mutualistic communities under random HL.}}{56}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Rank abundance distributions for mutualistic communities under contiguous HL.}}{56}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Evenness according to rank abundance model fits.}}{57}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Relative abundance by functional group, under random HL.}}{59}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Relative abundance by functional group, under contiguous HL.}}{60}{figure.3.8}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Number of links versus HL.}}{61}{figure.3.9}
@@ -108,20 +108,20 @@
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Effect of number of samples on parameter estimates, ensemble of 100 simulations of \emph {type I} model.}}{179}{figure.6.9}
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Effect of noise on parameter estimates, \emph {type II} model.}}{180}{figure.6.10}
 \contentsline {figure}{\numberline {6.11}{\ignorespaces Effect of noise on parameter estimates for both \emph {type I} and \emph {type II} models.}}{181}{figure.6.11}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Effect of number of samples on parameter estimates for both \emph {type I} and \emph {type II} models.}}{182}{figure.6.12}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Effect of number of samples on parameter estimates for both \emph {type I} and \emph {type II} models.}}{181}{figure.6.12}
 \contentsline {figure}{\numberline {6.13}{\ignorespaces Non-linear functional response in \emph {type II} model.}}{182}{figure.6.13}
 \contentsline {figure}{\numberline {6.14}{\ignorespaces Linearity of functional response as a predictor for estimate quality.}}{183}{figure.6.14}
 \contentsline {figure}{\numberline {6.15}{\ignorespaces Demonstration of range sampling procedure.}}{184}{figure.6.15}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Range sampling results}}{185}{figure.6.16}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Range sampling results}}{184}{figure.6.16}
 \contentsline {figure}{\numberline {6.17}{\ignorespaces Example dynamics of the IBM for two species}}{189}{figure.6.17}
 \contentsline {figure}{\numberline {6.18}{\ignorespaces Functional response (FR) of the herbivore}}{191}{figure.6.18}
 \contentsline {figure}{\numberline {6.19}{\ignorespaces Numerical response (FR) of the herbivore}}{192}{figure.6.19}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Intrinsic growth and mortality functions}}{193}{figure.6.20}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Convergence of parameter estimates for low immigration rate, 2 species.}}{195}{figure.6.21}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Intrinsic growth and mortality functions}}{192}{figure.6.20}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Convergence of parameter estimates for low immigration rate, 2 species.}}{194}{figure.6.21}
 \contentsline {figure}{\numberline {6.22}{\ignorespaces Convergence of parameter estimates for high immigration rate}}{196}{figure.6.22}
 \contentsline {figure}{\numberline {6.23}{\ignorespaces Comparison between true and fitted dynamics}}{197}{figure.6.23}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Two species demographic rate predictions, low IR.}}{199}{figure.6.24}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Two species demographic rate predictions, high IR.}}{200}{figure.6.25}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Two species demographic rate predictions, low IR.}}{198}{figure.6.24}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Two species demographic rate predictions, high IR.}}{199}{figure.6.25}
 \contentsline {figure}{\numberline {6.26}{\ignorespaces Relative error in rate predictions, low IR.}}{201}{figure.6.26}
 \contentsline {figure}{\numberline {6.27}{\ignorespaces Relative error in rate predictions, high IR.}}{201}{figure.6.27}
 \contentsline {figure}{\numberline {6.28}{\ignorespaces Potential topologies for three species.}}{203}{figure.6.28}
